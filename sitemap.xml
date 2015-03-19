@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://www.thepaperpilot.org/images/space-game-favicon.ico</loc>
-    <lastmod>2015-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.thepaperpilot.org/images/54daa49b38d8c30849338b68_profile-u299.png</loc>
+    <loc>http://www.thepaperpilot.org/favicon.ico</loc>
     <lastmod>2015-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -50,42 +44,6 @@
   </url>
   <url>
     <loc>http://www.thepaperpilot.org/images/snap6.jpg</loc>
-    <lastmod>2015-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.thepaperpilot.org/images/snap1-crop-u336.jpg</loc>
-    <lastmod>2015-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.thepaperpilot.org/images/snap2-crop-u338.jpg</loc>
-    <lastmod>2015-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.thepaperpilot.org/images/snap3-crop-u342.jpg</loc>
-    <lastmod>2015-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.thepaperpilot.org/images/snap4-crop-u340.jpg</loc>
-    <lastmod>2015-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.thepaperpilot.org/images/snap5-crop-u334.jpg</loc>
-    <lastmod>2015-02-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://www.thepaperpilot.org/images/snap6-crop-u332.jpg</loc>
     <lastmod>2015-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -169,10 +127,28 @@
     <priority>0.5</priority>
   </url>
   <url>
+    <loc>http://www.thepaperpilot.org/images/logo.png</loc>
+    <lastmod>2015-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://www.thepaperpilot.org/images/snapshot.png</loc>
+    <lastmod>2015-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
     <loc>http://www.thepaperpilot.org/index.html</loc>
     <lastmod>2015-02-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
     <xhtml:link rel="alternate" media="only screen and (max-device-width: 370px)" href="http://www.thepaperpilot.org/phone/index.html"/>
+  </url>
+  <url>
+    <loc>http://www.thepaperpilot.org/presskit.html</loc>
+    <lastmod>2015-02-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
 </urlset>
