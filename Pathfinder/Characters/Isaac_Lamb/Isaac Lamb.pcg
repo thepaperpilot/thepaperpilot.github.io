@@ -3,11 +3,11 @@ PCGVERSION:2.0
 # System Information
 CAMPAIGN:Pathfinder RPG Core Supplements
 VERSION:6.05.00
-ROLLMETHOD:2|EXPRESSION:High Fantasy
-PURCHASEPOINTS:Y|TYPE:High Fantasy
+ROLLMETHOD:0|EXPRESSION:0
+PURCHASEPOINTS:N
 CHARACTERTYPE:PC
 PREVIEWSHEET:Standard.htm
-POOLPOINTS:20
+POOLPOINTS:0
 POOLPOINTSAVAIL:20
 GAMEMODE:Pathfinder_RPG
 TABLABEL:0
@@ -53,19 +53,20 @@ STAT:STR|SCORE:8
 STAT:DEX|SCORE:10
 STAT:CON|SCORE:10
 STAT:INT|SCORE:15
-STAT:WIS|SCORE:15
+STAT:WIS|SCORE:16
 STAT:CHA|SCORE:16
 ALIGN:NE
 RACE:Halfling
 
 # Character Class(es)
-CLASS:Cleric|LEVEL:3|SKILLPOOL:0
+CLASS:Cleric|LEVEL:4|SKILLPOOL:0
 CLASSABILITIESLEVEL:Cleric=1|HITPOINTS:8|PRESTAT:STR=1|PRESTAT:DEX=-1|PRESTAT:CON=-1|SKILLSGAINED:4|SKILLSREMAINING:0
 CLASSABILITIESLEVEL:Cleric=2|HITPOINTS:4|PRESTAT:DEX=-2|PRESTAT:WIS=2|SKILLSGAINED:4|SKILLSREMAINING:0
 CLASSABILITIESLEVEL:Cleric=3|HITPOINTS:4|SKILLSGAINED:4|SKILLSREMAINING:0
+CLASSABILITIESLEVEL:Cleric=4|HITPOINTS:4|PRESTAT:WIS=1|SKILLSGAINED:4|SKILLSREMAINING:0
 
 # Character Experience
-EXPERIENCE:5000
+EXPERIENCE:9000
 EXPERIENCETABLE:Medium
 
 # Character Templates
@@ -82,14 +83,14 @@ REGION:None
 SKILL:Acrobatics|OUTPUTORDER:1|
 SKILL:Acrobatics (Perform (Dance))|OUTPUTORDER:2|
 SKILL:Appraise|OUTPUTORDER:3|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
-SKILL:Bluff|OUTPUTORDER:4|
+SKILL:Bluff|OUTPUTORDER:4|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:N]
 SKILL:Bluff (Perform (Act))|OUTPUTORDER:5|
 SKILL:Bluff (Perform (Comedy))|OUTPUTORDER:6|
 SKILL:Bluff (Perform (Sing))|OUTPUTORDER:7|
 SKILL:Bluff (Perform (String Instruments))|OUTPUTORDER:8|
 SKILL:Climb|OUTPUTORDER:9|
 SKILL:Craft (Untrained)|OUTPUTORDER:10|
-SKILL:Diplomacy|OUTPUTORDER:11|CLASSBOUGHT:[CLASS:Cleric|RANKS:2.0|COST:1|CLASSSKILL:Y]
+SKILL:Diplomacy|OUTPUTORDER:11|CLASSBOUGHT:[CLASS:Cleric|RANKS:4.0|COST:1|CLASSSKILL:Y]
 SKILL:Diplomacy (Perform (Keyboard Instruments))|OUTPUTORDER:12|
 SKILL:Diplomacy (Perform (Oratory))|OUTPUTORDER:13|
 SKILL:Diplomacy (Perform (String Instruments))|OUTPUTORDER:14|
@@ -101,7 +102,7 @@ SKILL:Fly|OUTPUTORDER:20|
 SKILL:Fly (Perform (Dance))|OUTPUTORDER:21|
 SKILL:Handle Animal (Perform (Percussion Instruments))|OUTPUTORDER:23|
 SKILL:Handle Animal (Perform (Wind Instruments))|OUTPUTORDER:24|
-SKILL:Heal|OUTPUTORDER:25|CLASSBOUGHT:[CLASS:Cleric|RANKS:2.0|COST:1|CLASSSKILL:Y]
+SKILL:Heal|OUTPUTORDER:25|CLASSBOUGHT:[CLASS:Cleric|RANKS:3.0|COST:1|CLASSSKILL:Y]
 SKILL:Intimidate|OUTPUTORDER:26|
 SKILL:Intimidate (Perform (Comedy))|OUTPUTORDER:27|
 SKILL:Intimidate (Perform (Keyboard Instruments))|OUTPUTORDER:28|
@@ -118,7 +119,7 @@ SKILL:Samurai Mount|OUTPUTORDER:39|
 SKILL:Sense Motive|OUTPUTORDER:40|CLASSBOUGHT:[CLASS:Cleric|RANKS:2.0|COST:1|CLASSSKILL:Y]
 SKILL:Sense Motive (Perform (Oratory))|OUTPUTORDER:41|
 SKILL:Sense Motive (Perform (Sing))|OUTPUTORDER:42|
-SKILL:Spellcraft|OUTPUTORDER:44|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
+SKILL:Spellcraft|OUTPUTORDER:45|CLASSBOUGHT:[CLASS:Cleric|RANKS:1.0|COST:1|CLASSSKILL:Y]
 SKILL:Stealth|OUTPUTORDER:46|
 SKILL:Survival|OUTPUTORDER:47|
 SKILL:Swim|OUTPUTORDER:48|
@@ -131,7 +132,7 @@ SKILL:Untrained ~ Disable Device|OUTPUTORDER:16|
 SKILL:Untrained ~ Handle Animal|OUTPUTORDER:22|
 SKILL:Untrained ~ Linguistics|OUTPUTORDER:34|
 SKILL:Untrained ~ Sleight of Hand|OUTPUTORDER:43|
-SKILL:Untrained ~ Spellcraft|OUTPUTORDER:45|
+SKILL:Untrained ~ Spellcraft|OUTPUTORDER:44|
 SKILL:Untrained ~ Use Magic Device|OUTPUTORDER:54|
 
 # Character Languages
@@ -151,7 +152,7 @@ ABILITY:FEAT|TYPE:NORMAL|CATEGORY:FEAT|KEY:Selective Channeling|TYPE:General|DES
 USERPOOL:FEAT|POOLPOINTS:0.0
 ABILITY:Favored Class|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Cleric|TYPE:FavoredClass
 USERPOOL:Favored Class|POOLPOINTS:0.0
-ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Cleric Domain Power Use|APPLIEDTO:,,|TYPE:SpecialQuality.FavoredClassBonus.FavoredClassCleric|DESC:Select one domain power granted at 1st level that is normally usable for a number of times per day equal to 3 + the cleric's Wisdom modifier. The cleric adds 1/2 to the number of uses per day of that domain power.
+ABILITY:Favored Class Bonus|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Favored Class Bonus ~ Cleric Domain Power Use|APPLIEDTO:,,,|TYPE:SpecialQuality.FavoredClassBonus.FavoredClassCleric|DESC:Select one domain power granted at 1st level that is normally usable for a number of times per day equal to 3 + the cleric's Wisdom modifier. The cleric adds 1/2 to the number of uses per day of that domain power.
 USERPOOL:Favored Class Bonus|POOLPOINTS:0.0
 ABILITY:Lycanthrope Kind|TYPE:NORMAL|CATEGORY:Special Ability|KEY:Wererat|TYPE:SpecialQuality.LycanthropeKind
 USERPOOL:Lycanthrope Kind|POOLPOINTS:0.0
@@ -191,11 +192,13 @@ DOMAIN:Healing|DOMAINGRANTS:Your touch staves off pain and death, and your heali
 SPELLBOOK:Prepared Spells|TYPE:2
 SPELLNAME:Cure Light Wounds|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:DOMAIN|NAME:Healing]
 SPELLNAME:Cure Moderate Wounds|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:DOMAIN|NAME:Healing]
+SPELLNAME:Deathwatch|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Cleric]
 SPELLNAME:Guidance|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
 SPELLNAME:Inflict Moderate Wounds|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:CLASS|NAME:Cleric]
 SPELLNAME:Light|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
 SPELLNAME:Read Magic|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
 SPELLNAME:Sanctuary|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Cleric]
+SPELLNAME:Sound Burst|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:CLASS|NAME:Cleric]
 SPELLNAME:Summon Monster I|TIMES:2|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:1|SOURCE:[TYPE:CLASS|NAME:Cleric]
 SPELLNAME:Virtue|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:0|SOURCE:[TYPE:CLASS|NAME:Cleric]
 SPELLNAME:Zone of Truth|TIMES:1|CLASS:Cleric|BOOK:Prepared Spells|SPELLLEVEL:2|SOURCE:[TYPE:CLASS|NAME:Cleric]
