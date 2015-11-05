@@ -1,7 +1,7 @@
 body {
     margin: 20px auto;
     width: 60%;
-    background-color: #282C34;
+    background-image: url("/bg.jpg");
     margin-bottom: 10px;
 }
 
