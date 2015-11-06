@@ -53,7 +53,6 @@ ul.posts li {
 }
 
 img {
-    border:1px solid #FFFFFF;
-    border:1px solid rgba(256, 256, 256, .5);
+    border:1px solid #2F343F;
     border-radius: 3px;
 }
