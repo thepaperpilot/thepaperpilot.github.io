@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Digital Drawing
+permalink: /drawing
 ---
 # Digital Drawing!
 

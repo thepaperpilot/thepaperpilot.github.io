@@ -10,47 +10,13 @@ I have experience with ActionScript, Bash script, CSS, HTML, Java, JavaScript, P
 [Download my Resume](https://drive.google.com/uc?export=download&id=0B4xCmMA9eS2jZExWTGhtbS1nT0k)
 
 **Projects**
+{% for project in site.projects %}
 <div id="projects" style="overflow: hidden;">
   <div class="thumb">
-    <a href="/kiosk">
-    <img src="./kiosk/thumb.png">
+    <a href="{{ project.permalink }}">
+    <img src=".{{  project.permalink }}/thumb.png">
     <span class="thumbcaption"><p style="display: inline">
-      Computer Science Kiosk
+      {{ project.title }}
     </p></span></a>
   </div>
-  <div class="thumb">
-    <a href="/space">
-    <img src="./space/thumb.png">
-    <span class="thumbcaption"><p style="display: inline">
-      Space Game
-    </p></span></a>
-  </div>
-  <div class="thumb">
-    <a href="/ican">
-    <img src="./ican/thumb.png">
-    <span class="thumbcaption"><p style="display: inline">
-      iCan
-    </p></span></a>
-  </div>
-  <div class="thumb">
-    <a href="/strange">
-    <img src="./strange/thumb.png">
-    <span class="thumbcaption"><p style="display: inline">
-      12 is Strange
-    </p></span></a>
-  </div>
-  <div class="thumb">
-    <a href="/solar">
-    <img src="./solar/thumb.png">
-    <span class="thumbcaption"><p style="display: inline">
-      Solar TD
-    </p></span></a>
-  </div>
-  <div class="thumb">
-    <a href="/drawing">
-    <img src="./drawing/thumb.png">
-    <span class="thumbcaption"><p style="display: inline">
-      Digital Drawing
-    </p></span></a>
-  </div>
-</div>
+{% endfor %}

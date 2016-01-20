@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 12 is Strange
+permalink: /strange
 ---
 # 12 is Strange!
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: iCan
+permalink: /ican
 ---
 # iCan!
 

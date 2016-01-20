@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Solar TD
+permalink: /solar
 ---
 # Solar TD!
 

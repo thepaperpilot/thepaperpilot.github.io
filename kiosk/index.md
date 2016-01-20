@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Computer Science Kiosk
+permalink: /kiosk
 ---
 # Computer Science Kiosk!
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Space Game
+permalink: /space
 ---
 # Space Game!
 
