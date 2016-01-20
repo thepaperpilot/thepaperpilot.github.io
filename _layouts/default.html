@@ -38,7 +38,7 @@
   {% for project in site.projects %}
     {% for page in site.pages %}
       {% if page.short == project %}
-        <li><a href="{{ project.permalink }}">{{ project.title }}</a></li>
+        <li><a href="/{{ page.short }}">{{ page.title }}</a></li>
       {% endif %}
     {% endfor %}
   {% endfor %}
