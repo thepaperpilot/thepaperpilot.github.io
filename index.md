@@ -10,7 +10,7 @@ I have experience with ActionScript, Bash script, CSS, HTML, Java, JavaScript, P
 
 [Download my Resume](https://drive.google.com/uc?export=download&id=0B4xCmMA9eS2jZExWTGhtbS1nT0k)
 
-**Projects**
+## Projects
 <div id="projects" style="overflow: hidden;">
 {% for project in site.projects %}
   {% for page in site.pages %}

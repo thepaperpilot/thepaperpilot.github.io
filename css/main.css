@@ -32,6 +32,12 @@ h1 {
     color: #ABB2BF;
 }
 
+h2 {
+    font-size: 2em;
+    font-family:'Helvetica', 'Sans-Serif';
+    color: #ABB2BF;
+}
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
