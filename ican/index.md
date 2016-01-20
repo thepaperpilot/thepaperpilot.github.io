@@ -1,6 +1,7 @@
 ---
 layout: default
 title: iCan
+short: ican
 ---
 # iCan!
 

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Digital Drawing
+short: drawing
 ---
 # Digital Drawing!
 

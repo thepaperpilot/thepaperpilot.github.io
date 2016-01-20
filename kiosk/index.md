@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Computer Science Kiosk
+short: kiosk
 ---
 # Computer Science Kiosk!
 

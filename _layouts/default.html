@@ -35,12 +35,13 @@
     <nav>
 <ul>
   <li><a href="/">Home</a></li>
-  <li><a href="/kiosk">Computer Science Kiosk</a></li>
-  <li><a href="/space">Space Game</a></li>
-  <li><a href="/ican">iCan</a></li>
-  <li><a href="/strange">12 is Strange</a></li>
-  <li><a href="/solar">Solar TD</a></li>
-  <li><a href="/drawing">Digital Drawing</a></li>
+  {% for project in site.projects %}
+    {% for page in site.pages %}
+      {% if page.short == project %}
+        <li><a href="{{ project.permalink }}">{{ project.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
 </ul>
     </nav>
 <div class="container">

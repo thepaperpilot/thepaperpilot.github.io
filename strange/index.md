@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 12 is Strange
+short: strange
 ---
 # 12 is Strange!
 

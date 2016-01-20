@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Solar TD
+short: solar
 ---
 # Solar TD!
 
