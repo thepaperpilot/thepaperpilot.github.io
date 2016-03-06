@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <title>{{ page.title }}</title>
 
     <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <meta charset="utf-8">
 
     <!-- ****** faviconit.com favicons ****** -->
     <link rel="shortcut icon" href="/favicons/favicon.ico">
@@ -27,36 +29,31 @@
     <meta name="msapplication-TileImage" content="/favicons/favicon-144.png">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <!-- ****** faviconit.com favicons ****** -->
+</head>
 
-  </head>
-
-
-  <body>
+<body class="markdown-katex-preview" data-use-github-style="false">
     <nav>
-<ul>
-  <li><a href="/">Home</a></li>
-  {% for project in site.projects %}
-    {% for page in site.pages %}
-      {% if page.short == project %}
-        <li><a href="/{{ page.short }}">{{ page.title }}</a></li>
-      {% endif %}
-    {% endfor %}
-  {% endfor %}
-</ul>
+        <ul>
+            <li><a href="/">Home</a></li>
+            {% for project in site.project-categories %} {% for page in site.pages %} {% if page.project-category == project %}
+            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+            {% endif %} {% endfor %} {% endfor %}
+        </ul>
     </nav>
-<div class="container">
+    <div class="container">
 
-  {{ content }}
+        {{ content }}
 
-</div>
+    </div>
 
-  <footer>
-   <ul>
-     <li><a href="mailto:thepaperpilot@gmail.com">email</a></li>
-     <li><a href="https://github.com/thepaperpilot">github.com</a></li>
-     <li><a href="https://www.linkedin.com/pub/anthony-lawn/a9/a98/2">linkedin.com</a></li>
-   </ul>
-  </footer>
-  </body>
+    <footer>
+        <ul>
+            <li><a href="mailto:thepaperpilot@gmail.com">email</a></li>
+            <li><a href="https://github.com/thepaperpilot">github</a></li>
+            <li><a href="https://www.linkedin.com/pub/anthony-lawn/a9/a98/2">linkedin</a></li>
+            <li><a href="https://drive.google.com/uc?export=download&id=0B4xCmMA9eS2jZExWTGhtbS1nT0k">resume</a></li>
+        </ul>
+    </footer>
+</body>
 
 </html>

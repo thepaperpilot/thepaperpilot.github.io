@@ -8,21 +8,14 @@ I'm Anthony Lawn, or "The Paper Pilot". My passion is computer science, which yo
 
 I have experience with ActionScript, Bash script, CSS, HTML, Java, JavaScript, Python, and Ruby. Additionally, I can use Git, LaTeX, and Jekyll. I really like LaTeX and markdown for writing things, including this website.
 
-[Download my Resume](https://drive.google.com/uc?export=download&id=0B4xCmMA9eS2jZExWTGhtbS1nT0k)
-
 ## Projects
-<div id="projects" style="overflow: hidden;">
-{% for project in site.projects %}
+{% for project in site.project-categories %}
+### {{ project }}
+<ul>
   {% for page in site.pages %}
-    {% if page.short == project %}
-      <div class="thumb">
-        <a href="./{{ page.short }}">
-        <img src="./{{ page.short }}/thumb.png">
-        <span class="thumbcaption"><p style="display: inline">
-          {{ page.title }}
-        </p></span></a>
-      </div>
+    {% if page.project-category == project %}
+      <li><a href="{{ page.url }}">{{ page.title }}</a></li>
     {% endif %}
   {% endfor %}
+  </ul>
 {% endfor %}
-</div>

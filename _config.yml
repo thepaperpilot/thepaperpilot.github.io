@@ -2,5 +2,5 @@ name: The Paper Pilot
 markdown: kramdown
 kramdown:
   input: GFM
-permalink: /blog/:year/:month/:day/:title
-projects: [story, solar, strange, ican, space, kiosk, drawing]
+permalink: /:title
+project-categories: [Developing, Shelf, Games, Software, Other]
