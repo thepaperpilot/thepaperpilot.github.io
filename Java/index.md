@@ -7,23 +7,6 @@ project-category: Java
 # Java
 Split up into several categories, due to how many Java projects I've done.
 
-## Plain Java
-As in, programs that only use Java, and not any other libraries
-
-#### Gift Exchange [Source Code](https://github.com/thepaperpilot/christmasExchange)
-
-A program for creating psuedo-randomized gift exchanges with dynamic rules.
-
-## Android
-
-#### iCan [Source Code](https://github.com/brianqvpham/iCan)
-
-Made in beautiful material design, this app efficiently and intuitively collects data from users on recycling habits and provides information about the impact they are having, as well as enabling users to directly compare their impacts to the each through social medias.
-
-Made for HackTX 2015 in under 24 hours!
-
-![](./ican-assets/screenshot-1.png) ![](./ican-assets/screenshot-2.png) ![](./ican-assets/screenshot-3.png)
-
 ## libGDX
 A java-based game engine, more information [on their website](https://libgdx.badlogicgames.com/)
 
@@ -80,3 +63,20 @@ Create and mutate and breed planets. Browse a collection of procedurally generat
 This is a game made in under 48 hours for UT Dallas' SDGA Fall 2015 Game Jam!
 
 I want to at some point flesh this out into an entire, original game (and less of a Life is Strange fan game)
+
+## Android
+
+#### iCan [Source Code](https://github.com/brianqvpham/iCan)
+
+Made in beautiful material design, this app efficiently and intuitively collects data from users on recycling habits and provides information about the impact they are having, as well as enabling users to directly compare their impacts to the each through social medias.
+
+Made for HackTX 2015 in under 24 hours!
+
+![](./ican-assets/screenshot-1.png) ![](./ican-assets/screenshot-2.png) ![](./ican-assets/screenshot-3.png)
+
+## Plain Java
+As in, programs that only use Java, and not any other libraries
+
+#### Gift Exchange [Source Code](https://github.com/thepaperpilot/christmasExchange)
+
+A program for creating psuedo-randomized gift exchanges with dynamic rules.

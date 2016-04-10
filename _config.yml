@@ -3,4 +3,4 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: /:title
-project-categories: [Java, Photoshop, Other]
+project-categories: [Java, Photoshop/Gimp, Other]

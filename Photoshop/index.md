@@ -1,11 +1,11 @@
 ---
 layout: default
-title: Photoshop
-project-category: Photoshop
+title: Photoshop/Gimp
+project-category: Photoshop/Gimp
 ---
 
-# Photoshop
-Technically not just Photoshop, but digital art tools in general
+# Photoshop/Gimp
+Graphic Design.
 
 #### Digital Drawing
 
