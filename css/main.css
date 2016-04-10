@@ -1,5 +1,6 @@
+/* Based off of https://github.com/markdowncss/retro */
+
 nav ul, footer ul {
-    font-family:'Helvetica', 'Sans-Serif';
     padding: 0;
     list-style: none;
     font-weight: bold;
@@ -14,628 +15,207 @@ footer {
     border-top: 1px solid rgb(238, 238, 238);
     font-size: .8em;
 }
-.markdown-katex-preview[data-use-github-style="false"] { font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 1.2em; line-height: 1.6; color: rgb(170, 187, 195); overflow: auto; margin: 10px 13px; padding: 2em; background-color: rgb(38, 50, 56); }
-.markdown-katex-preview[data-use-github-style="false"] > :first-child { margin-top: 0px; }
-.markdown-katex-preview[data-use-github-style="false"] h1, .markdown-katex-preview[data-use-github-style="false"] h2, .markdown-katex-preview[data-use-github-style="false"] h3, .markdown-katex-preview[data-use-github-style="false"] h4, .markdown-katex-preview[data-use-github-style="false"] h5, .markdown-katex-preview[data-use-github-style="false"] h6 { line-height: 1.2; margin-top: 1em; margin-bottom: 16px; color: rgb(255, 255, 255); }
-.markdown-katex-preview[data-use-github-style="false"] h1 { font-size: 2.4em; font-weight: 300; padding-bottom: 0.3em; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(71, 93, 105); }
-.markdown-katex-preview[data-use-github-style="false"] h2 { font-size: 1.8em; font-weight: 400; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(71, 93, 105); }
-.markdown-katex-preview[data-use-github-style="false"] h3 { font-size: 1.5em; font-weight: 500; }
-.markdown-katex-preview[data-use-github-style="false"] h4 { font-size: 1.2em; font-weight: 600; }
-.markdown-katex-preview[data-use-github-style="false"] h5 { font-size: 1.1em; font-weight: 600; }
-.markdown-katex-preview[data-use-github-style="false"] h6 { font-size: 1em; font-weight: 600; }
-.markdown-katex-preview[data-use-github-style="false"] strong { color: rgb(255, 255, 255); }
-.markdown-katex-preview[data-use-github-style="false"] del { color: rgb(122, 149, 161); }
-.markdown-katex-preview[data-use-github-style="false"] a, .markdown-katex-preview[data-use-github-style="false"] a code { color: rgb(0, 150, 136); text-decoration: none; }
-.markdown-katex-preview[data-use-github-style="false"] img { max-width: 100%; }
-.markdown-katex-preview[data-use-github-style="false"] > p { margin-top: 0px; margin-bottom: 16px; }
-.markdown-katex-preview[data-use-github-style="false"] > ul, .markdown-katex-preview[data-use-github-style="false"] > ol { margin-bottom: 16px; }
-.markdown-katex-preview[data-use-github-style="false"] ul, .markdown-katex-preview[data-use-github-style="false"] ol { padding-left: 2em; }
-.markdown-katex-preview[data-use-github-style="false"] ul.no-list, .markdown-katex-preview[data-use-github-style="false"] ol.no-list { padding: 0px; list-style-type: none; }
-.markdown-katex-preview[data-use-github-style="false"] ul ul, .markdown-katex-preview[data-use-github-style="false"] ul ol, .markdown-katex-preview[data-use-github-style="false"] ol ol, .markdown-katex-preview[data-use-github-style="false"] ol ul { margin-top: 0px; margin-bottom: 0px; }
-.markdown-katex-preview[data-use-github-style="false"] > ul > li > p:first-child { margin-top: 16px; margin-bottom: 16px; }
-.markdown-katex-preview[data-use-github-style="false"] > ul > li > p:only-child { margin-top: 0px; margin-bottom: 0px; }
-.markdown-katex-preview[data-use-github-style="false"] li { margin-bottom: 0px; }
-.markdown-katex-preview[data-use-github-style="false"] li > p { margin-top: 0px; margin-bottom: 0px; }
-.markdown-katex-preview[data-use-github-style="false"] blockquote { margin: 16px 0px; font-size: inherit; padding: 0px 15px; color: rgb(122, 149, 161); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(71, 93, 105); }
-.markdown-katex-preview[data-use-github-style="false"] blockquote > :first-child { margin-top: 0px; }
-.markdown-katex-preview[data-use-github-style="false"] blockquote > :last-child { margin-bottom: 0px; }
-.markdown-katex-preview[data-use-github-style="false"] hr { margin: 32px 0px; border-top-width: 2px; border-top-style: dashed; border-top-color: rgb(71, 93, 105); background: none; }
-.markdown-katex-preview[data-use-github-style="false"] table { margin: 10px 0px 15px; border-collapse: collapse; }
-.markdown-katex-preview[data-use-github-style="false"] table th { font-weight: bold; color: rgb(255, 255, 255); }
-.markdown-katex-preview[data-use-github-style="false"] table td, .markdown-katex-preview[data-use-github-style="false"] table th { border: 1px solid rgb(71, 93, 105); padding: 5px 10px; }
-.markdown-katex-preview[data-use-github-style="false"] table th { padding: 5px 10px; }
-.markdown-katex-preview[data-use-github-style="false"] code { color: rgb(255, 255, 255); background-color: rgb(54, 72, 80); }
-.markdown-katex-preview[data-use-github-style="false"] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
-.markdown-katex-preview[data-use-github-style="false"] .highlight { margin-bottom: 16px; }
-.markdown-katex-preview[data-use-github-style="false"] .highlight pre, .markdown-katex-preview[data-use-github-style="false"] pre { padding: 16px; overflow: auto; font-size: 95%; line-height: 1.45; color: rgb(170, 187, 195); border: rgb(71, 93, 105); border-radius: 3px; background-color: rgb(46, 61, 68); }
-.markdown-katex-preview[data-use-github-style="false"] .highlight pre { margin-bottom: 0px; word-break: normal; }
-.markdown-katex-preview[data-use-github-style="false"] pre { word-wrap: normal; }
-.markdown-katex-preview[data-use-github-style="false"] pre code, .markdown-katex-preview[data-use-github-style="false"] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
-.markdown-katex-preview[data-use-github-style="false"] pre code::before, .markdown-katex-preview[data-use-github-style="false"] pre tt::before, .markdown-katex-preview[data-use-github-style="false"] pre code::after, .markdown-katex-preview[data-use-github-style="false"] pre tt::after { content: normal; }
-.markdown-katex-preview[data-use-github-style="false"] p, .markdown-katex-preview[data-use-github-style="false"] blockquote, .markdown-katex-preview[data-use-github-style="false"] ul, .markdown-katex-preview[data-use-github-style="false"] ol, .markdown-katex-preview[data-use-github-style="false"] dl, .markdown-katex-preview[data-use-github-style="false"] pre { margin-top: 0px; margin-bottom: 16px; }
-.markdown-katex-preview[data-use-github-style="false"] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
-.markdown-katex-preview[data-use-github-style="false"] atom-text-editor { margin: 16px 0px; padding: 1em; font-size: 0.92em; border-radius: 3px; background-color: rgb(46, 61, 68); }
-.markdown-katex-preview[data-use-github-style="false"] kbd { color: rgb(255, 255, 255); border-width: 1px 1px 2px; border-style: solid; border-color: rgb(71, 93, 105) rgb(71, 93, 105) rgb(59, 77, 86); background-color: rgb(54, 72, 80); }
-.markdown-katex-preview[data-use-github-style="false"] .newpage { page-break-before: always; }
-@media screen and (min-width: 1371px) {
-  .markdown-katex-preview[data-use-github-style="false"] { width: 1281px; margin: 10px auto; overflow-y: scroll; background: rgb(38, 50, 56); }
-}
-@media print {
-  .markdown-katex-preview[data-use-github-style="false"] { background-color: rgb(38, 50, 56); }
-  .markdown-katex-preview[data-use-github-style="false"] h1, .markdown-katex-preview[data-use-github-style="false"] h2, .markdown-katex-preview[data-use-github-style="false"] h3, .markdown-katex-preview[data-use-github-style="false"] h4, .markdown-katex-preview[data-use-github-style="false"] h5, .markdown-katex-preview[data-use-github-style="false"] h6 { color: rgb(255, 255, 255); }
-  .markdown-katex-preview[data-use-github-style="false"] blockquote { color: rgb(122, 149, 161); }
-  .markdown-katex-preview[data-use-github-style="false"] table, .markdown-katex-preview[data-use-github-style="false"] pre { page-break-inside: avoid; }
-  .markdown-katex-preview[data-use-github-style="false"] img { display: block; max-width: 100%; max-height: 100%; }
-}
-.markdown-katex-preview[data-use-github-style="true"] { overflow: hidden; font-family: 'Helvetica Neue', Helvetica, 'Segoe UI', Arial, freesans, sans-serif; font-size: 1.2em; line-height: 1.6; word-wrap: break-word; color: rgb(85, 85, 85); margin: 10px 13px; padding: 25px; background-color: rgb(255, 255, 255); }
-.markdown-katex-preview[data-use-github-style="true"] > :first-child { margin-top: 0px !important; }
-.markdown-katex-preview[data-use-github-style="true"] > :last-child { margin-bottom: 0px !important; }
-.markdown-katex-preview[data-use-github-style="true"] a:not([href]) { color: inherit; text-decoration: none; }
-.markdown-katex-preview[data-use-github-style="true"] a { color: rgb(0, 136, 204); text-decoration: none; }
-.markdown-katex-preview[data-use-github-style="true"] a:hover { color: rgb(0, 80, 163); text-decoration: none; }
-.markdown-katex-preview[data-use-github-style="true"] a img { border: none; }
-.markdown-katex-preview[data-use-github-style="true"] .absent { color: rgb(204, 0, 0); }
-.markdown-katex-preview[data-use-github-style="true"] .anchor { position: absolute; top: 0px; left: 0px; display: block; padding-right: 6px; padding-left: 30px; margin-left: -30px; }
-.markdown-katex-preview[data-use-github-style="true"] .anchor:focus { outline: none; }
-.markdown-katex-preview[data-use-github-style="true"] h1, .markdown-katex-preview[data-use-github-style="true"] h2, .markdown-katex-preview[data-use-github-style="true"] h3, .markdown-katex-preview[data-use-github-style="true"] h4, .markdown-katex-preview[data-use-github-style="true"] h5, .markdown-katex-preview[data-use-github-style="true"] h6 { position: relative; margin-top: 1em; margin-bottom: 16px; font-weight: bold; line-height: 1.4; }
-.markdown-katex-preview[data-use-github-style="true"] h1 .octicon-link, .markdown-katex-preview[data-use-github-style="true"] h2 .octicon-link, .markdown-katex-preview[data-use-github-style="true"] h3 .octicon-link, .markdown-katex-preview[data-use-github-style="true"] h4 .octicon-link, .markdown-katex-preview[data-use-github-style="true"] h5 .octicon-link, .markdown-katex-preview[data-use-github-style="true"] h6 .octicon-link { display: none; color: rgb(0, 0, 0); vertical-align: middle; }
-.markdown-katex-preview[data-use-github-style="true"] h1:hover .anchor, .markdown-katex-preview[data-use-github-style="true"] h2:hover .anchor, .markdown-katex-preview[data-use-github-style="true"] h3:hover .anchor, .markdown-katex-preview[data-use-github-style="true"] h4:hover .anchor, .markdown-katex-preview[data-use-github-style="true"] h5:hover .anchor, .markdown-katex-preview[data-use-github-style="true"] h6:hover .anchor { padding-left: 8px; margin-left: -30px; text-decoration: none; }
-.markdown-katex-preview[data-use-github-style="true"] h1:hover .anchor .octicon-link, .markdown-katex-preview[data-use-github-style="true"] h2:hover .anchor .octicon-link, .markdown-katex-preview[data-use-github-style="true"] h3:hover .anchor .octicon-link, .markdown-katex-preview[data-use-github-style="true"] h4:hover .anchor .octicon-link, .markdown-katex-preview[data-use-github-style="true"] h5:hover .anchor .octicon-link, .markdown-katex-preview[data-use-github-style="true"] h6:hover .anchor .octicon-link { display: inline-block; }
-.markdown-katex-preview[data-use-github-style="true"] h1 tt, .markdown-katex-preview[data-use-github-style="true"] h2 tt, .markdown-katex-preview[data-use-github-style="true"] h3 tt, .markdown-katex-preview[data-use-github-style="true"] h4 tt, .markdown-katex-preview[data-use-github-style="true"] h5 tt, .markdown-katex-preview[data-use-github-style="true"] h6 tt, .markdown-katex-preview[data-use-github-style="true"] h1 code, .markdown-katex-preview[data-use-github-style="true"] h2 code, .markdown-katex-preview[data-use-github-style="true"] h3 code, .markdown-katex-preview[data-use-github-style="true"] h4 code, .markdown-katex-preview[data-use-github-style="true"] h5 code, .markdown-katex-preview[data-use-github-style="true"] h6 code { font-size: inherit; }
-.markdown-katex-preview[data-use-github-style="true"] h1 { padding-bottom: 0.3em; font-size: 2.25em; line-height: 1.2; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
-.markdown-katex-preview[data-use-github-style="true"] h1 .anchor { line-height: 1; }
-.markdown-katex-preview[data-use-github-style="true"] h2 { padding-bottom: 0.3em; font-size: 1.75em; line-height: 1.225; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(238, 238, 238); }
-.markdown-katex-preview[data-use-github-style="true"] h2 .anchor { line-height: 1; }
-.markdown-katex-preview[data-use-github-style="true"] h3 { font-size: 1.5em; line-height: 1.43; }
-.markdown-katex-preview[data-use-github-style="true"] h3 .anchor { line-height: 1.2; }
-.markdown-katex-preview[data-use-github-style="true"] h4 { font-size: 1.25em; }
-.markdown-katex-preview[data-use-github-style="true"] h4 .anchor { line-height: 1.2; }
-.markdown-katex-preview[data-use-github-style="true"] h5 { font-size: 1em; }
-.markdown-katex-preview[data-use-github-style="true"] h5 .anchor { line-height: 1.1; }
-.markdown-katex-preview[data-use-github-style="true"] h6 { font-size: 1em; color: rgb(119, 119, 119); }
-.markdown-katex-preview[data-use-github-style="true"] h6 .anchor { line-height: 1.1; }
-.markdown-katex-preview[data-use-github-style="true"] p, .markdown-katex-preview[data-use-github-style="true"] blockquote, .markdown-katex-preview[data-use-github-style="true"] ul, .markdown-katex-preview[data-use-github-style="true"] ol, .markdown-katex-preview[data-use-github-style="true"] dl, .markdown-katex-preview[data-use-github-style="true"] table, .markdown-katex-preview[data-use-github-style="true"] pre { margin-top: 0px; margin-bottom: 16px; }
-.markdown-katex-preview[data-use-github-style="true"] hr { height: 4px; padding: 0px; margin: 16px 0px; border: 0px none; background-color: rgb(231, 231, 231); }
-.markdown-katex-preview[data-use-github-style="true"] ul, .markdown-katex-preview[data-use-github-style="true"] ol { padding-left: 2em; }
-.markdown-katex-preview[data-use-github-style="true"] ul.no-list, .markdown-katex-preview[data-use-github-style="true"] ol.no-list { padding: 0px; list-style-type: none; }
-.markdown-katex-preview[data-use-github-style="true"] ul ul, .markdown-katex-preview[data-use-github-style="true"] ul ol, .markdown-katex-preview[data-use-github-style="true"] ol ol, .markdown-katex-preview[data-use-github-style="true"] ol ul { margin-top: 0px; margin-bottom: 0px; }
-.markdown-katex-preview[data-use-github-style="true"] > ul > li > p:first-child { margin-top: 16px; margin-bottom: 16px; }
-.markdown-katex-preview[data-use-github-style="true"] > ul > li > p:only-child { margin-top: 0px; margin-bottom: 0px; }
-.markdown-katex-preview[data-use-github-style="true"] li { margin-bottom: 0px; }
-.markdown-katex-preview[data-use-github-style="true"] li > p { margin-top: 0px; margin-bottom: 0px; }
-.markdown-katex-preview[data-use-github-style="true"] dl { padding: 0px; }
-.markdown-katex-preview[data-use-github-style="true"] dl dt { padding: 0px; margin-top: 16px; font-size: 1em; font-style: italic; font-weight: bold; }
-.markdown-katex-preview[data-use-github-style="true"] dl dd { padding: 0px 16px; margin-bottom: 16px; }
-.markdown-katex-preview[data-use-github-style="true"] blockquote { padding: 0px 15px; color: rgb(119, 119, 119); border-left-width: 4px; border-left-style: solid; border-left-color: rgb(221, 221, 221); margin: 16px 0px; }
-.markdown-katex-preview[data-use-github-style="true"] blockquote > :first-child { margin-top: 0px; }
-.markdown-katex-preview[data-use-github-style="true"] blockquote > :last-child { margin-bottom: 0px; }
-.markdown-katex-preview[data-use-github-style="true"] table { margin: 10px 0px 15px; border-collapse: collapse; }
-.markdown-katex-preview[data-use-github-style="true"] table th { font-weight: bold; }
-.markdown-katex-preview[data-use-github-style="true"] table td, .markdown-katex-preview[data-use-github-style="true"] table th { border: 1px solid rgb(221, 221, 221); padding: 5px 10px; }
-.markdown-katex-preview[data-use-github-style="true"] table th { padding: 5px 10px; }
-.markdown-katex-preview[data-use-github-style="true"] img { max-width: 100%; box-sizing: border-box; }
-.markdown-katex-preview[data-use-github-style="true"] .emoji { max-width: none; }
-.markdown-katex-preview[data-use-github-style="true"] span.frame { display: block; overflow: hidden; }
-.markdown-katex-preview[data-use-github-style="true"] span.frame > span { display: block; float: left; width: auto; padding: 7px; margin: 13px 0px 0px; overflow: hidden; border: 1px solid rgb(221, 221, 221); }
-.markdown-katex-preview[data-use-github-style="true"] span.frame span img { display: block; float: left; }
-.markdown-katex-preview[data-use-github-style="true"] span.frame span span { display: block; padding: 5px 0px 0px; clear: both; color: rgb(51, 51, 51); }
-.markdown-katex-preview[data-use-github-style="true"] span.align-center { display: block; overflow: hidden; clear: both; }
-.markdown-katex-preview[data-use-github-style="true"] span.align-center > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: center; }
-.markdown-katex-preview[data-use-github-style="true"] span.align-center span img { margin: 0px auto; text-align: center; }
-.markdown-katex-preview[data-use-github-style="true"] span.align-right { display: block; overflow: hidden; clear: both; }
-.markdown-katex-preview[data-use-github-style="true"] span.align-right > span { display: block; margin: 13px 0px 0px; overflow: hidden; text-align: right; }
-.markdown-katex-preview[data-use-github-style="true"] span.align-right span img { margin: 0px; text-align: right; }
-.markdown-katex-preview[data-use-github-style="true"] span.float-left { display: block; float: left; margin-right: 13px; overflow: hidden; }
-.markdown-katex-preview[data-use-github-style="true"] span.float-left span { margin: 13px 0px 0px; }
-.markdown-katex-preview[data-use-github-style="true"] span.float-right { display: block; float: right; margin-left: 13px; overflow: hidden; }
-.markdown-katex-preview[data-use-github-style="true"] span.float-right > span { display: block; margin: 13px auto 0px; overflow: hidden; text-align: right; }
-.markdown-katex-preview[data-use-github-style="true"] code, .markdown-katex-preview[data-use-github-style="true"] tt { padding: 0.2em 0px; margin: 0px; font-size: 95%; border-radius: 3px; color: rgb(77, 77, 76); background-color: rgba(0, 0, 0, 0.0392157); }
-.markdown-katex-preview[data-use-github-style="true"] code::before, .markdown-katex-preview[data-use-github-style="true"] tt::before, .markdown-katex-preview[data-use-github-style="true"] code::after, .markdown-katex-preview[data-use-github-style="true"] tt::after { letter-spacing: -0.2em; content: " "; }
-.markdown-katex-preview[data-use-github-style="true"] code br, .markdown-katex-preview[data-use-github-style="true"] tt br { display: none; }
-.markdown-katex-preview[data-use-github-style="true"] del code { text-decoration: inherit; }
-.markdown-katex-preview[data-use-github-style="true"] pre > code { padding: 0px; margin: 0px; font-size: 100%; word-break: normal; white-space: pre; border: 0px; background: transparent; }
-.markdown-katex-preview[data-use-github-style="true"] .highlight { margin-bottom: 16px; }
-.markdown-katex-preview[data-use-github-style="true"] .highlight pre, .markdown-katex-preview[data-use-github-style="true"] pre { padding: 16px; overflow: auto; font-size: 95%; line-height: 1.45; border-radius: 3px; background-color: rgb(247, 247, 247); }
-.markdown-katex-preview[data-use-github-style="true"] .highlight pre { margin-bottom: 0px; word-break: normal; }
-.markdown-katex-preview[data-use-github-style="true"] pre { word-wrap: normal; }
-.markdown-katex-preview[data-use-github-style="true"] pre code, .markdown-katex-preview[data-use-github-style="true"] pre tt { display: inline; max-width: initial; padding: 0px; margin: 0px; overflow: initial; line-height: inherit; word-wrap: normal; border: 0px; background-color: transparent; }
-.markdown-katex-preview[data-use-github-style="true"] pre code::before, .markdown-katex-preview[data-use-github-style="true"] pre tt::before, .markdown-katex-preview[data-use-github-style="true"] pre code::after, .markdown-katex-preview[data-use-github-style="true"] pre tt::after { content: normal; }
-.markdown-katex-preview[data-use-github-style="true"] kbd { display: inline-block; padding: 3px 5px; font-size: 11px; line-height: 10px; color: rgb(85, 85, 85); vertical-align: middle; border-style: solid; border-width: 1px; border-color: rgb(204, 204, 204) rgb(204, 204, 204) rgb(187, 187, 187); border-radius: 3px; box-shadow: rgb(187, 187, 187) 0px -1px 0px inset; background-color: rgb(252, 252, 252); }
-.markdown-katex-preview[data-use-github-style="true"] .newpage { page-break-before: always; }
-@media screen and (min-width: 1371px) {
-  .markdown-katex-preview[data-use-github-style="true"] { width: 1281px; margin: 10px auto; overflow-y: scroll; background: rgb(253, 253, 253); }
-}
-@media print {
-  .markdown-katex-preview[data-use-github-style="true"] { background: rgb(255, 255, 255); }
-  .markdown-katex-preview[data-use-github-style="true"] h1, .markdown-katex-preview[data-use-github-style="true"] h2, .markdown-katex-preview[data-use-github-style="true"] h3, .markdown-katex-preview[data-use-github-style="true"] h4, .markdown-katex-preview[data-use-github-style="true"] h5, .markdown-katex-preview[data-use-github-style="true"] h6 { color: rgb(34, 34, 34); }
-  .markdown-katex-preview[data-use-github-style="true"] blockquote { color: rgb(119, 119, 119); }
-  .markdown-katex-preview[data-use-github-style="true"] table, .markdown-katex-preview[data-use-github-style="true"] pre { page-break-inside: avoid; }
-  .markdown-katex-preview[data-use-github-style="true"] pre { border: 2px solid rgb(246, 246, 246); }
-  .markdown-katex-preview[data-use-github-style="true"] code { font-weight: 500; }
-  .markdown-katex-preview[data-use-github-style="true"] img { display: block; max-width: 100%; max-height: 100%; }
-}
-.bracket-matcher .region {
-  border-bottom: 1px dotted lime;
-  position: absolute;
+
+pre,
+code {
+  font-family: Menlo, Monaco, "Courier New", monospace;
 }
 
-.spell-check-misspelling .region {
-  border-bottom: 2px dotted rgba(255, 51, 51, 0.75);
+pre {
+  padding: .5rem;
+  line-height: 1.25;
+  overflow-x: scroll;
 }
 
-atom-text-editor,
-:host {
-  background-color: #263238;
-  color: #aabbc3;
-}
-atom-text-editor .gutter,
-:host .gutter {
-  background-color: #263238;
-  color: #49656f;
-}
-atom-text-editor .gutter .line-number.cursor-line,
-:host .gutter .line-number.cursor-line {
-  background-color: rgba(0, 0, 0, 0.19);
-  color: #80cbc4;
-}
-atom-text-editor .gutter .line-number.cursor-line-no-selection,
-:host .gutter .line-number.cursor-line-no-selection {
-  color: #80cbc4;
-}
-atom-text-editor .wrap-guide,
-:host .wrap-guide {
-  color: #2b3940;
-}
-atom-text-editor .indent-guide,
-:host .indent-guide {
-  color: #2b3940;
-}
-atom-text-editor .invisible-character,
-:host .invisible-character {
-  color: #304047;
-}
-atom-text-editor .search-results .marker .region,
-:host .search-results .marker .region {
-  background-color: transparent;
-  border: #65737e;
-}
-atom-text-editor .search-results .marker.current-result .region,
-:host .search-results .marker.current-result .region {
-  border: #cdd3de;
-}
-atom-text-editor.is-focused .cursor,
-:host(.is-focused) .cursor {
-  border-color: #009688;
-  border-width: 2px;
-}
-atom-text-editor.is-focused .selection .region,
-:host(.is-focused) .selection .region {
-  background-color: #1d2529;
-}
-atom-text-editor.is-focused .line-number.cursor-line-no-selection,
-atom-text-editor.is-focused .line.cursor-line,
-:host(.is-focused) .line-number.cursor-line-no-selection,
-:host(.is-focused) .line.cursor-line {
-  background-color: rgba(0, 0, 0, 0.19);
-}
-.variable.parameter.function {
-  color: #eeffff;
-}
-.comment,
-.punctuation.definition.comment,
-.text.cancelled,
-.meta.punctuation.separator,
-.markup.strikethrough {
-  color: #49656f;
-}
-.notes {
-  color: #8EACE3;
-}
-.text,
-.source {
-  color: #CDD3DE;
-}
-.punctuation.definition.string,
-.punctuation.definition.string,
-.punctuation.definition.parameters,
-.punctuation.definition.string,
-.punctuation.definition.array {
-  color: #d9f5dd;
-}
-.none {
-  color: #99b89d;
-}
-.keyword.operator {
-  color: #c792ea;
-}
-.keyword {
-  color: #c792ea;
-}
-.variable {
-  color: #B2CCD6;
-}
-.entity.name.function,
-.meta.require,
-.support.function.any-method,
-.meta.function-call,
-.support.function,
-.keyword.other.special-method,
-.meta.block-level,
-.meta.function-call.method.with-arguments .variable.function,
-.source.js .meta.function-call.method.without-arguments.js .variable.function.js {
-  color: #82AAFF;
-}
-.support.class,
-.entity.name.class,
-.entity.name.type.class,
-.variable.language.this.js {
-  color: #ffcb6b;
-}
-.meta.class {
-  color: #B2CCD6;
-}
-.keyword.other.special-method {
-  color: #82B1FF;
-}
-.storage {
-  color: #c792ea;
-}
-.support.function,
-.keyword.operator,
-.constant.other.color,
-.meta.tag,
-.punctuation.definition.tag,
-.punctuation.separator.inheritance.php,
-.punctuation.definition.tag.html,
-.punctuation.definition.tag.begin.html,
-.punctuation.definition.tag.end.html,
-.meta.function-call .meta.function-call.arguments .variable.parameter.function,
-.text.html.markdown .meta.paragraph .meta.link.inline,
-.text.html.markdown .meta.paragraph .meta.link.inline .punctuation.definition.string.begin.markdown,
-.text.html.markdown .meta.paragraph .meta.link.inline .punctuation.definition.string.end.markdown,
-.source.gulpfile.js .variable.other.object.js {
-  color: #89DDFF;
-}
-.string,
-.constant.other.symbol,
-.entity.other.inherited-class {
-  color: #C3E88D;
-}
-.constant.numeric {
-  color: #F77669;
-}
-.none {
-  color: #F77669;
-}
-.meta.function-call .meta.function-call.arguments {
-  color: #C3E88D;
-}
-.none {
-  color: #F77669;
-}
-.constant {
-  color: #F77669;
-}
-.entity.name.tag,
-.text.html.basic .meta.tag.other.html .entity.other.attribute-name.html {
-  color: #ff5370;
-}
-.entity.other.attribute-name,
-.meta.tag.any.html .entity.other.attribute-name.html,
-.text.html.basic .meta.tag.other.html .entity.other.attribute-name.html {
-  color: #FFCB6B;
-}
-.entity.other.attribute-name.id {
-  color: #FAD430;
-}
-.meta.selector {
-  color: #c792ea;
-}
-.none {
-  color: #F77669;
-}
-.markup.heading .punctuation.definition.heading,
-.entity.name.section {
-  color: #78ccf0;
-}
-.keyword.other.unit {
-  color: #F77669;
-}
-.markup.bold,
-.punctuation.definition.bold,
-.todo.bold {
-  font-weight: bold;
-  color: #ffcb6b;
-}
-.markup.italic,
-.punctuation.definition.italic,
-.todo.italic {
-  font-style: italic;
-  color: #c792ea;
-}
-.markup.raw.inline {
-  color: #f1e655;
-}
-.string.other.link,
-.punctuation.definition.string.end.markdown {
-  color: #ff5370;
-}
-.meta.link {
-  color: #F77669;
-}
-.markup.list {
-  color: #ff5370;
-}
-.markup.quote {
-  color: #F77669;
-}
-.meta.separator {
-  color: #d9f5dd;
-  background-color: #1e3445;
-}
-.markup.inserted {
-  color: #F1E655;
-}
-.markup.deleted {
-  color: #ff5370;
-}
-.markup.changed {
-  color: #c792ea;
-}
-.constant.other.color,
-.meta.property-value .support.constant.named-color.css {
-  color: #FFEB95;
-}
-.string.regexp {
-  color: #80CBC4;
-}
-.constant.character.escape {
-  color: #F77669;
-}
-.punctuation.section.embedded,
-.variable.interpolation {
-  color: #d3423e;
-}
-.invalid.illegal {
-  color: #ffffff;
-  background-color: #EC5F67;
-}
-.invalid.broken {
-  color: #020e14;
-  background-color: #F77669;
-}
-.invalid.deprecated {
-  color: #ffffff;
-  background-color: #d3423e;
-}
-.invalid.unimplemented {
-  color: #ffffff;
-  background-color: #8BD649;
-}
-.sublimelinter.annotations {
-  color: #7b5157;
-  background-color: #fffff7;
-}
-.sublimelinter.outline.illegal {
-  color: #ffffff;
-  background-color: #ff9599;
-}
-.sublimelinter.underline.illegal {
-  background-color: #ff4941;
-}
-.sublimelinter.outline.warning {
-  color: #ffffff;
-  background-color: #FFCF1B;
-}
-.sublimelinter.underline.warning {
-  background-color: #ff4941;
-}
-.sublimelinter.outline.violation {
-  color: #ffffff;
-  background-color: rgba(255, 255, 255, 0.2);
-}
-.sublimelinter.underline.violation {
-  background-color: #ff4941;
-}
-.sublimelinter.mark.error {
-  color: #ff572d;
-}
-.sublimelinter.mark.warning {
-  color: #ffcf1b;
-}
-.sublimelinter.gutter-mark {
-  color: #ffffff;
-}
-.markup.deleted.git_gutter {
-  color: #EC5F67;
-}
-.markup.changed.git_gutter {
-  color: #FFCF1B;
-}
-.markup.inserted.git_gutter {
-  color: #C3E88D;
-}
-.markup.ignored.git_gutter {
-  color: #49656f;
-}
-.comment.line.double-slash .punctuation.definition.comment,
-.meta.structure.array .comment.block.json .punctuation.definition.comment {
-  color: #5C7E8C;
-}
-.text.find-in-files .entity.name.filename.find-in-files {
-  color: #FFEB95;
-}
-.support.type.property-name {
-  color: #80CBC4;
-}
-.meta.property-list .meta.property-name {
-  color: #80CBC4;
-}
-.source.css .keyword.other.unit,
-.source.less .keyword.other.unit,
-.source.scss .keyword.other.unit,
-.source.sass .keyword.other.unit {
-  color: #FFEB95;
-}
-.entity.other.less.mixin {
-  color: #7986CB;
-}
-.source.less .parameter.less .variable.parameter.misc.css {
-  color: #7986CB;
-}
-.source.less .meta.property-value.css .string.quoted.double.css .comment .markup.raw {
-  color: #C3E88D;
-}
-.constant.other.color.rgb-value .punctuation.definition.constant {
-  color: #F77669;
-}
-.meta.attribute-selector .string.unquoted.attribute-value {
-  color: #C3E88D;
-}
-.meta.attribute-selector .entity.other.attribute-name.attribute {
-  color: #F77669;
-}
-.source.gulpfile.js .meta.group.braces.round .meta.group.braces.curly .meta.group.braces.round .meta.function-call.with-arguments.js .variable.function.js,
-.source.gulpfile.js .meta.group.braces.round .meta.group.braces.curly .variable.function.js {
-  color: #7986CB;
-}
-.meta.function-call .support.type,
-.support.type {
-  color: #FFEB95;
-}
-.source.python .meta.function-call.arguments.python {
-  color: #7986CB;
-}
-.embedding.php .entity.name.tag {
-  color: #ff5370;
-}
-.source.go .meta.function-call.go {
-  color: #DDDDDD;
-}
-.meta.group.braces.curly.js .meta.property.object.js .variable.other.object.js {
-  color: #FFEB95;
-}
-.source.json .meta.structure.dictionary.json .meta.structure.dictionary.value .constant.language {
-  color: #f77669;
-}
-.source.elixir .support.type.elixir,
-.source.elixir .meta.module.elixir .entity.name.class.elixir {
-  color: #82AAFF;
-}
-.source.elixir .entity.name.function {
-  color: #ffcb6b;
-}
-.source.elixir .constant.other.symbol.elixir,
-.source.ruby .constant.other.symbol {
-  color: #F77669;
-}
-.source.elixir .punctuation.definition.string {
-  color: #C3E88D;
-}
-.source.elixir .variable.other.readwrite.module.elixir,
-.source.elixir .variable.other.readwrite.module.elixir .punctuation.definition.variable.elixir {
-  color: #ffcb6b;
-}
-.source.elixir .punctuation.binary.elixir {
-  color: #c792ea;
-}
-.support.type.sys-types {
-  color: #ffcb6b;
-}
-.constant.numeric.line-number.find-in-files:not(.match),
-.text.find-in-files .constant.numeric.line-number.find-in-files {
-  color: #37474F;
-}
-.entity.name.filename.find-in-files,
-.text.find-in-files .constant.numeric.line-number.match.find-in-files {
-  color: #FFEB95;
-}
-[data-grammar*="gfm"]::shadow .markup.underline.link {
-  color: #ff869a;
-}
-[data-grammar*="gfm"]::shadow .markup.underline.link span.punctuation {
-  color: #ff5370;
-}
-[data-grammar*="gfm"]::shadow .markup.strike {
-  position: relative;
-  color: rgba(170, 187, 195, 0.5);
-}
-[data-grammar*="gfm"]::shadow .markup.strike::after {
-  content: "";
-  position: absolute;
-  top: calc(54%);
-  left: 0;
-  right: 0;
-  height: 1px;
-  background-color: rgba(170, 187, 195, 0.2);
-}
-[data-grammar*="gfm"]::shadow .table .border {
-  color: rgba(170, 187, 195, 0.5);
-}
-[data-grammar*="gfm"]::shadow .markup.heading {
-  color: #82b1ff;
-}
-[data-grammar*="gfm"]::shadow .punctuation.definition.begin,
-[data-grammar*="gfm"]::shadow .punctuation.definition.end {
-  color: #82b1ff;
-}
-[data-grammar*="gfm"]::shadow .punctuation.definition.begin + span:not(.function.parameter) {
-  color: #9cc1ff;
-}
-.bracket-matcher .region {
-  border-bottom: 1px solid #009688;
-  box-sizing: border-box;
-  text-align: center;
-  background-color: rgba(170, 187, 195, 0.1);
-  box-shadow: inset 0 -1px 0 #009688;
-  z-index: 100;
-}
-atom-text-editor.is-focused .selection .region,
-:host(.is-focused) .selection .region {
-  background-color: #1d2529;
-}
-atom-text-editor.is-focused .selection .region:after,
-:host(.is-focused) .selection .region:after {
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  border: 2px solid #1d2529;
-  border-radius: 3px;
-}
-.variable.instance,
-.variable.instance > * {
-  color: #ff5370;
-}
-.meta.delimiter.period {
-  color: #c792ea;
-}
-.meta.brace {
-  color: #89DDFF;
-}
-.meta.tag.doctype {
-  color: #c792ea;
-}
-.meta .string.quoted {
-  color: #C3E88D;
-}
-.meta.array.json .string.quoted,
-.meta.array.json .string.quoted > * {
-  color: #80CBC4;
-}
-.meta .punctuation.separator.key-value + .string.quoted {
-  color: #80CBC4;
-}
-.meta .punctuation.separator.key-value + .string.quoted * {
-  color: #80CBC4;
-}
-.support.constant {
-  color: #89DDFF;
-}
-.keyword.operator.logical,
-.keyword.operator.comparison,
-.keyword.operator.assignment {
-  color: #c792ea;
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+a,
+a:visited {
+  color: #01ff70;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: #2ecc40;
+}
+
+.retro-no-decoration {
+  text-decoration: none;
+}
+
+html {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 32rem) and (max-width: 48rem) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 48rem) {
+  html {
+    font-size: 16px;
+  }
+}
+
+body {
+  line-height: 1.85;
+}
+
+p,
+.retro-p {
+  font-size: 1rem;
+  margin-bottom: 1.3rem;
+}
+
+h1,
+.retro-h1,
+h2,
+.retro-h2,
+h3,
+.retro-h3,
+h4,
+.retro-h4 {
+  margin: 1.414rem 0 .5rem;
+  font-weight: inherit;
+  line-height: 1.42;
+}
+
+h1,
+.retro-h1 {
+  margin-top: 0;
+  font-size: 3.998rem;
+}
+
+h2,
+.retro-h2 {
+  font-size: 2.827rem;
+}
+
+h3,
+.retro-h3 {
+  font-size: 1.999rem;
+}
+
+h4,
+.retro-h4 {
+  font-size: 1.414rem;
+}
+
+h5,
+.retro-h5 {
+  font-size: 1.121rem;
+}
+
+h6,
+.retro-h6 {
+  font-size: .88rem;
+}
+
+small,
+.retro-small {
+  font-size: .707em;
+}
+
+/* https://github.com/mrmrs/fluidity */
+
+canvas,
+iframe,
+video,
+svg,
+select,
+textarea {
+  max-width: 100%;
+}
+
+img {
+	max-width: 30%;
+}
+
+html,
+body {
+  background-color: #222;
+  min-height: 100%;
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  color: #fafafa;
+  font-family: "Courier New";
+  line-height: 1.45;
+  margin: 6rem auto 1rem;
+  max-width: 48rem;
+  padding: .25rem;
+}
+
+pre {
+  background-color: #333;
+}
+
+blockquote {
+  border-left: 3px solid #01ff70;
+  padding-left: 1rem;
 }

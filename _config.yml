@@ -3,4 +3,4 @@ markdown: kramdown
 kramdown:
   input: GFM
 permalink: /:title
-project-categories: [Developing, Shelf, Games, Software, Other]
+project-categories: [Java, Photoshop, Other]
