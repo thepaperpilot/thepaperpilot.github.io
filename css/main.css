@@ -1,19 +1,44 @@
 /* Based off of https://github.com/markdowncss/retro */
 
+nav {
+  text-align: center;
+  padding-top: 24px;
+}
+
 nav ul, footer ul {
-    padding: 0;
-    list-style: none;
-    font-weight: bold;
+  padding: 0;
+  list-style: none;
+  font-weight: bold;
+  display: inline;
+  text-align: center;
 }
 
 nav ul li, footer ul li {
-    display: inline;
-    margin-right: 16px;
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 8px;
+  padding-left: 8px;
+  width: 200px;
+  white-space: nowrap;
+}
+
+.home {
+  height: 64px;
+  max-width: 64px;
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  margin-left: -32px;
+  transition: all .2s ease-in-out;
+}
+
+.home:hover {
+  transform: scale(2);
 }
 
 footer {
-    border-top: 1px solid rgb(238, 238, 238);
-    font-size: .8em;
+  font-size: .8em;
+  text-align: center;
 }
 
 pre,
@@ -39,7 +64,7 @@ pre {
 
   a,
   a:visited {
-    text-decoration: underline;
+    text-decoration: none;
   }
 
   a[href]:after {
@@ -90,6 +115,7 @@ pre {
 a,
 a:visited {
   color: #01ff70;
+  text-decoration: none;
 }
 
 a:hover,
@@ -202,13 +228,16 @@ html {
   font-size: 18px;
 }
 
+.container {
+  max-width: 48rem;
+  margin: 6rem auto 1rem;
+  padding: .25rem;
+}
+
 body {
   color: #fafafa;
   font-family: "Courier New";
   line-height: 1.45;
-  margin: 6rem auto 1rem;
-  max-width: 48rem;
-  padding: .25rem;
 }
 
 pre {
@@ -218,4 +247,9 @@ pre {
 blockquote {
   border-left: 3px solid #01ff70;
   padding-left: 1rem;
+}
+
+hr {
+  border:0;
+  border-top: dashed 2px;
 }

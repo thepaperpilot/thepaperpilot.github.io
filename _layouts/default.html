@@ -31,15 +31,17 @@
     <!-- ****** faviconit.com favicons ****** -->
 </head>
 
-<body class="markdown-katex-preview" data-use-github-style="false">
+<body>
     <nav>
+        <a href="/"><img src="/profile.png" class="home"/></a>
         <ul>
-            <li><a href="/">Home</a></li>
-            {% for project in site.project-categories %} {% for page in site.pages %} {% if page.project-category == project %}
-            <li><a href="{{ page.url }}">{{ page.title }}</a></li>
-            {% endif %} {% endfor %} {% endfor %}
+            <li style="text-align: right;"><a style="padding-right: 50px;"></a></li>
+            <li style="text-align: right;"><a href="/Java" style="padding-right: 100px;">Java</a></li>
+            <li style="text-align: left;"><a href="/Art" style="padding-left: 100px;">Digital Art</a></li>
+            <li style="text-align: left;"><a href="/Other" style="padding-left: 50px;">Other</a></li>
         </ul>
     </nav>
+
     <div class="container">
 
         {{ content }}
@@ -47,6 +49,7 @@
     </div>
 
     <footer>
+        <hr/>
         <ul>
             <li><a href="mailto:thepaperpilot@gmail.com">email</a></li>
             <li><a href="https://github.com/thepaperpilot">github</a></li>
