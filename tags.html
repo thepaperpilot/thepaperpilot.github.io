@@ -28,11 +28,9 @@ title: Tags
         <div class="collection">
             {% for post in site.posts %}
     		    {% if post.tags contains tag %}
-                	<h3>
                 	<a href="{{ post.url }}" class="collection-item">
                 	{{ post.title }}
                 	</a>
-                	</h3>
                 {% endif %}
             {% endfor %}
         </div>

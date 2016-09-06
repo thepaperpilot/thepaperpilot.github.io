@@ -3,7 +3,13 @@ layout: default
 title: The Paper Pilot
 nocard: true
 ---
-{% for post in site.posts %}
+<div class="card">
+    <h1 style="cursor:unset;">Hello!</h1>
+
+    I'm The Paper Pilot, and I develop free, open source programs and games, using a variety of languages and engines. I'm currently working towards my B.S. in Computer Science, after which I hope to go on to getting a Masters degree, with a focus on Data Science.
+</div>
+
+{% for post in paginator.posts %}
 <div class="cite" style="background: #fff;border-radius: 2px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);">
 <a href="{{ post.url }}">
 <div class="card">
