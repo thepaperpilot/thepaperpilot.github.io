@@ -4,6 +4,7 @@
 <head>
     <title>{{ page.title }}</title>
 
+    <link rel="stylesheet" type="text/css" href="/css/markdown7.css">
     <link rel="stylesheet" type="text/css" href="/css/main.css">
     <meta charset="utf-8">
 
@@ -32,31 +33,66 @@
 </head>
 
 <body>
-    <nav>
-        <a href="/"><img src="/profile.png" class="home"/></a>
-        <ul>
-            <li style="text-align: right;"><a style="padding-right: 50px;"></a></li>
-            <li style="text-align: right;"><a href="/Java" style="padding-right: 100px;">Java</a></li>
-            <li style="text-align: left;"><a href="/Art" style="padding-left: 100px;">Digital Art</a></li>
-            <li style="text-align: left;"><a href="/Other" style="padding-left: 50px;">Other</a></li>
-        </ul>
-    </nav>
+    <div>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <div class="head">
+            <h1>{{ page.title }}</h1>
+            <a href="/"><img src="/profile.png" class="home"/></a>
+        </div>
 
-    <div class="container">
+        {% if page.cards %}
+            {% for card in page.cards %}
+                {% for page in site.content %}
+                    {% if page.title == card %}
+                        {% if page.nocard %}
+                            {{ page.content }}
+                        {% else %}
+                            <div class="card">
+                                {{ page.content }}
+                            </div>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+            {% endfor %}
+        {% elsif page.nocard %}
+            {{ content }}
+        {% else %}
+            <div class="card">
+                {{ content }}
+            </div>
+        {% endif %}
 
-        {{ content }}
+        {% if page.links %}
+            <div class="card">
+                <ul class="inline">
+                    {% for link in page.links %}
+                        {% assign split = link | split: "|" %}
+                        <li><a href="{{ split[1] }}">{{ split[0] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
 
+        {% if page.tags.size > 0 %}
+            <div class="card">
+                <ul class="inline">
+                    <li>tags:</li>
+                    {% for tag in page.tags %}
+                        <li><a href="/tags/#{{ tag | slugify }}"> {{ tag }} </a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
+        <footer>
+            <ul>
+                <li><a href="mailto:thepaperpilot@gmail.com">email</a></li>
+                <li><a href="https://github.com/thepaperpilot">github</a></li>
+                <li><a href="https://www.linkedin.com/pub/anthony-lawn/a9/a98/2">linkedin</a></li>
+                <li><a href="https://drive.google.com/uc?export=download&id=0B4xCmMA9eS2jZExWTGhtbS1nT0k">resume</a></li>
+            </ul>
+        </footer>
     </div>
-
-    <footer>
-        <hr/>
-        <ul>
-            <li><a href="mailto:thepaperpilot@gmail.com">email</a></li>
-            <li><a href="https://github.com/thepaperpilot">github</a></li>
-            <li><a href="https://www.linkedin.com/pub/anthony-lawn/a9/a98/2">linkedin</a></li>
-            <li><a href="https://drive.google.com/uc?export=download&id=0B4xCmMA9eS2jZExWTGhtbS1nT0k">resume</a></li>
-        </ul>
-    </footer>
 </body>
 
 </html>

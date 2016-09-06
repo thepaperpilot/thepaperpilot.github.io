@@ -1,0 +1,30 @@
+.button {
+    padding: .25em;
+    display: inline;
+    vertical-align: middle;
+    cursor: pointer;
+    cursor: hand;
+    font-size: 4em;
+}
+
+.buttons {
+    text-align: center;
+    padding-top: 2em;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+#versus {
+    text-align: center;
+    display: none;
+    position:relative;
+}
+
+html {
+    font-size: 18px;
+}

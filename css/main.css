@@ -1,25 +1,74 @@
-/* Based off of https://github.com/markdowncss/retro */
-
 nav {
-  text-align: center;
-  padding-top: 24px;
+    text-align: center;
+    color: #fff;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+nav a, nav a:visited {
+    color: #fff;
+    font-weight: normal;
 }
 
 nav ul, footer ul {
-  padding: 0;
-  list-style: none;
-  font-weight: bold;
-  display: inline;
-  text-align: center;
+    padding: 0;
+    display: inline;
+    font-weight: bold;
+    list-style: none;
+    text-align: center;
 }
 
 nav ul li, footer ul li {
-  display: table-cell;
-  vertical-align: middle;
-  padding-right: 8px;
-  padding-left: 8px;
-  width: 200px;
-  white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.inline {
+    list-style: none;
+    text-align: center;
+    display: inline;
+    font-weight: bold;
+}
+
+.inline li {
+    display: inline-block;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+footer {
+    font-size: .8em;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
+a, a:visited {
+    color: teal;
+    text-decoration: none;
+}
+
+a:hover, a:focus, a:active {
+    color: turquoise !important;
+    outline: 0;
+}
+
+html {
+    width:100%;
+    height: 100%;
+    background-color: #eee;
+}
+
+body {
+    background: transparent;
+    margin: 0;
+    padding: 0;
 }
 
 .home {
@@ -36,220 +85,94 @@ nav ul li, footer ul li {
   transform: scale(2);
 }
 
-footer {
-  font-size: .8em;
-  text-align: center;
+.head {
+    background: #ccc;
+    background: linear-gradient(to bottom right, teal, turquoise);
+    padding: 20px;
+    padding-bottom: 90px;
+    margin-bottom: -100px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
-pre,
-code {
-  font-family: Menlo, Monaco, "Courier New", monospace;
+.head h1 {
+    color: #fff;
+    font-size: 2em;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+    margin-top: 80px;
+    border-bottom: 1px solid;
 }
 
-pre {
-  padding: .5rem;
-  line-height: 1.25;
-  overflow-x: scroll;
+h1 {
+    cursor: pointer;
 }
 
-@media print {
-  *,
-  *:before,
-  *:after {
-    background: transparent !important;
-    color: #000 !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
-
-  a,
-  a:visited {
-    text-decoration: none;
-  }
-
-  a[href]:after {
-    content: " (" attr(href) ")";
-  }
-
-  abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  a[href^="#"]:after,
-  a[href^="javascript:"]:after {
-    content: "";
-  }
-
-  pre,
-  blockquote {
-    border: 1px solid #999;
-    page-break-inside: avoid;
-  }
-
-  thead {
-    display: table-header-group;
-  }
-
-  tr,
-  img {
-    page-break-inside: avoid;
-  }
-
-  img {
-    max-width: 100% !important;
-  }
-
-  p,
-  h2,
-  h3 {
-    orphans: 3;
-    widows: 3;
-  }
-
-  h2,
-  h3 {
-    page-break-after: avoid;
-  }
+.card {
+    background: #fff;
+    border-radius: 2px;
+    width: 90%;
+    max-width: 940px;
+    margin: auto;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    padding: 20px;
 }
 
-a,
-a:visited {
-  color: #01ff70;
-  text-decoration: none;
+.cite {
+    width: 90%;
+    max-width: 940px;
+    margin: auto;
+    position: relative;
 }
 
-a:hover,
-a:focus,
-a:active {
-  color: #2ecc40;
+.card, .cite {
+    margin-top: 20px;
 }
 
-.retro-no-decoration {
-  text-decoration: none;
+.cite .card {
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    width: 100%;
+    margin-left: -20px;
 }
 
-html {
-  font-size: 12px;
+.card:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-@media screen and (min-width: 32rem) and (max-width: 48rem) {
-  html {
-    font-size: 15px;
-  }
-}
-
-@media screen and (min-width: 48rem) {
-  html {
-    font-size: 16px;
-  }
-}
-
-body {
-  line-height: 1.85;
-}
-
-p,
-.retro-p {
-  font-size: 1rem;
-  margin-bottom: 1.3rem;
-}
-
-h1,
-.retro-h1,
-h2,
-.retro-h2,
-h3,
-.retro-h3,
-h4,
-.retro-h4 {
-  margin: 1.414rem 0 .5rem;
-  font-weight: inherit;
-  line-height: 1.42;
-}
-
-h1,
-.retro-h1 {
-  margin-top: 0;
-  font-size: 3.998rem;
-}
-
-h2,
-.retro-h2 {
-  font-size: 2.827rem;
-}
-
-h3,
-.retro-h3 {
-  font-size: 1.999rem;
-}
-
-h4,
-.retro-h4 {
-  font-size: 1.414rem;
-}
-
-h5,
-.retro-h5 {
-  font-size: 1.121rem;
-}
-
-h6,
-.retro-h6 {
-  font-size: .88rem;
-}
-
-small,
-.retro-small {
-  font-size: .707em;
-}
-
-/* https://github.com/mrmrs/fluidity */
-
-canvas,
-iframe,
-video,
-svg,
-select,
-textarea {
-  max-width: 100%;
+table {
+    margin: auto;
 }
 
 img {
-	max-width: 30%;
+    margin: auto;
+    display: block;
 }
 
-html,
-body {
-  background-color: #222;
-  min-height: 100%;
+.collection {
+	border-radius:2px;
+	overflow:hidden;
+	position:relative
 }
 
-html {
-  font-size: 18px;
+.collection .collection-item {
+	background-color:#fff;
+	line-height:1.5rem;
+	padding:10px 20px;
+	margin:0;
+	border-bottom:1px solid #e0e0e0
 }
 
-.container {
-  max-width: 48rem;
-  margin: 6rem auto 1rem;
-  padding: .25rem;
+.collection .collection-item:last-child {
+	border-bottom:none
 }
 
-body {
-  color: #fafafa;
-  font-family: "Courier New";
-  line-height: 1.45;
+.collection a.collection-item {
+	display:block;
+	transition:.25s;
+	color:#26a69a
 }
 
-pre {
-  background-color: #333;
-}
-
-blockquote {
-  border-left: 3px solid #01ff70;
-  padding-left: 1rem;
-}
-
-hr {
-  border:0;
-  border-top: dashed 2px;
+.collection a.collection-item:not(.active):hover {
+	background-color:#ddd
 }

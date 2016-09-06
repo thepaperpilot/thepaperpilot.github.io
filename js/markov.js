@@ -1,55 +1,3 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-    <title>Markov Chains are cool</title>
-
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <meta charset="utf-8">
-</head>
-
-<body>
-    <div class="container">
-        <div class="buttons">
-            <span class="button" onclick="rock();">&#9994;</span>
-            <span class="button" onclick="paper();">&#9995;</span>
-            <span class="button" onclick="scissors();">&#9996;</span>
-        </div>
-        <hr />
-        <div id="versus">
-            <span class="text">you &#8594;</span><span class="button" id="player">&#9994;</span>
-            <span class="text" style="display: inline-block; vertical-align: middle;">VS</span>
-            <span class="button" id="com">&#9994;</span><span class="text">&#8592; me</span>
-            <br />
-            <span style="color: gold" class="large" id="result">Computer Wins</span>
-            <hr />
-        </div>
-        <div class="stats">
-            <div class="large" style="vertical-align: middle;text-align: center;">stats</div>
-            <span class="text">
-                computer wins: <span id="loss">0</span><br />
-                &emsp;expected: <span id="loss_expected">0</span><br /><br />
-                player wins: <span id="win">0</span><br />
-                &emsp;expected: <span id="win_expected">0</span> <br /><br />
-                ties: <span id="tie">0</span><br />
-                &emsp;expected: <span id="tie_expected">0</span><br />
-            </span>
-            <br />
-        </div>
-    </div>
-
-    <footer>
-        <hr />
-        <ul>
-            <li><a href="http://www.thepaperpilot.org/">website</a></li>
-            <li><a href="https://github.com/thepaperpilot">github</a></li>
-            <li><a href="https://www.linkedin.com/pub/anthony-lawn/a9/a98/2">linkedin</a></li>
-            <li><a href="https://drive.google.com/uc?export=download&id=0B4xCmMA9eS2jZExWTGhtbS1nT0k">resume</a></li>
-        </ul>
-    </footer>
-</body>
-
-<script>
 var games = 0;
 
 var wins = 0;
@@ -159,6 +107,3 @@ function calcWinner(player, computer) {
         return 0;
     }
 }
-</script>
-
-</html>

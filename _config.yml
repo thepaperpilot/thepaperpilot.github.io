@@ -2,5 +2,8 @@ name: The Paper Pilot
 markdown: kramdown
 kramdown:
   input: GFM
-permalink: /:title
-project-categories: [Java, Photoshop/Gimp, Other]
+permalink: /:title/
+paginate: 5
+gems: [jekyll-paginate]
+collections:
+    content:
