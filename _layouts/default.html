@@ -40,6 +40,17 @@
             <a href="/"><img src="/profile.png" class="home"/></a>
         </div>
 
+        {% if page.links %}
+            <div class="card">
+                <ul class="inline">
+                    {% for link in page.links %}
+                        {% assign split = link | split: "|" %}
+                        <li><a href="{{ split[1] }}">{{ split[0] }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% endif %}
+
         {% if page.cards %}
             {% for card in page.cards %}
                 {% for page in site.content %}
@@ -59,17 +70,6 @@
         {% else %}
             <div class="card">
                 {{ content }}
-            </div>
-        {% endif %}
-
-        {% if page.links %}
-            <div class="card">
-                <ul class="inline">
-                    {% for link in page.links %}
-                        {% assign split = link | split: "|" %}
-                        <li><a href="{{ split[1] }}">{{ split[0] }}</a></li>
-                    {% endfor %}
-                </ul>
             </div>
         {% endif %}
 
