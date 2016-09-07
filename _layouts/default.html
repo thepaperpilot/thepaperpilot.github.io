@@ -48,7 +48,7 @@
                             {{ page.content }}
                         {% else %}
                             <div class="card">
-                                {{ page.content }}
+                                {{ page.content | markdownify }}
                             </div>
                         {% endif %}
                     {% endif %}
