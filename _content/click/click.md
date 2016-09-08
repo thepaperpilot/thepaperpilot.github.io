@@ -1,8 +1,5 @@
 ---
 layout: default
 title: One Click Man
-cards: [One Click Man, One Click Man Screenshot 1]
-links: ["Source Code|https://github.com/thepaperpilot/OneClickMan", "Store Page|https://thepaperpilot.itch.io/one-click-man"]
-tags: [java, libgdx, game, jam]
 ---
 A small game made for the one button jam that explores the idea of being able to defeat any opponent in a single click. Made for the One Button Jam 2016 in under a week.
