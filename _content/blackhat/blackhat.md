@@ -10,6 +10,7 @@ title: Black Hat
 .centerimages img {
 	width: 30%;
 	display: inline-block;
+	margin: unset;
 }
 </style>
 > by Anthony Lawn
