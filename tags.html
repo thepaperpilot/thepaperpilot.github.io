@@ -23,16 +23,14 @@ title: Tags
 {% endfor %}
 
 {% for tag in tags %}
-    <div class="card">
-    	<h2 id="{{ tag | slugify }}">{{ tag }}</h2>
-        <div class="collection">
-            {% for post in site.posts %}
-    		    {% if post.tags contains tag %}
-                	<a href="{{ post.url }}" class="collection-item">
-                	{{ post.title }}
-                	</a>
-                {% endif %}
-            {% endfor %}
-        </div>
-    </div>
+    <ul class="collection with-header">
+        <li id="{{ tag | slugify }}" class="collection-header">{{ tag }}</li>
+        {% for post in site.posts %}
+            {% if post.tags contains tag %}
+                <a href="{{ post.url }}" class="collection-item">
+                {{ post.title }}
+                </a>
+            {% endif %}
+        {% endfor %}
+    </ul>
 {% endfor %}

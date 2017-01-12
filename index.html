@@ -2,49 +2,102 @@
 layout: default
 title: The Paper Pilot
 nocard: true
+featured: [NaN, Solar TD, Red Pen, Name Draw, Black Hat]
 ---
 <div class="card">
-    <h1>Hello!</h1>
-
-    I'm The Paper Pilot, and I develop free, open source programs and games, using a variety of languages and engines. I'm currently working towards my B.S. in Computer Science, after which I hope to go on to getting a Masters degree, with a focus on Data Science.
+    <div class="card-content">
+        <span class="card-title">Hello!</span>
+        <p>I'm The Paper Pilot, and I develop free, open source programs and games, using a variety of languages and engines. I'm currently working towards my B.S. in Computer Science, after which I hope to go on to getting a Masters degree, with a focus on Data Science.</p>
+    </div>
 </div>
 
-{% for post in paginator.posts %}
-<div class="cite" style="background: #fff;border-radius: 2px;box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);">
-<div class="card">
-    <h1>{{ post.title }}</h1>
-    {{ post.content }}
-    <a style="font-weight: bold;" href="{{ post.url }}">read more</a>
-</div>
-<ul class="inline" style="display: inline-block; margin-bottom: 1em;">
-    {{ post.date | date: '%B %d, %Y' }}
-    {% for tag in post.tags %}
-        <li><a href="/tags/#{{ tag | slugify }}"> {{ tag }} </a></li>
-    {% endfor %}
-</ul>
-</div>
+<div class="carousel carousel-slider" data-indicators="true">
+{% for project in page.featured %}
+    {% assign post = site.posts | where:"title",project | first %}
+    <div class="carousel-item">
+    <div class="card" style="width: 100%; max-width: unset; height: 100%">
+        <div class="card-image">
+            <img src="/assets/banners/{{ post.banner }}.png">
+            <span class="card-title" style="font-weight: 500;">{{ project }}</span>
+        </div>
+        <div class="card-content">
+            {{ post.content }}
+        </div>
+        <div class="card-action" style="position: absolute; bottom: 0; width: 100%;">
+            <a href="{{ post.url }}">read more</a>
+        </div>
+    </div>
+    </div>
 {% endfor %}
-
-{% if paginator.total_pages > 1 %}
-<div class="card">
-    <ul class="inline">
-        {% if paginator.previous_page %}
-            <li><a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a></li>
-        {% endif %}
-
-        {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-                <li><em>{{ page }}</em></li>
-            {% elsif page == 1 %}
-                <li><a href="/">{{ page }}</a></li>
-            {% else %}
-                <li><a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a></li>
-            {% endif %}
-        {% endfor %}
-
-        {% if paginator.next_page %}
-            <li><a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a></li>
-        {% endif %}
-    </ul>
 </div>
-{% endif %}
+
+<div class="card">
+    <ul class="tabs">
+        <li class="tab col s4"><a class="active" href="#games">Games</a></li>
+        <li class="tab col s4"><a class="active" href="#software">Software</a></li>
+        <li class="tab col s4"><a class="active" href="#other">Others</a></li>
+    </ul>
+    <div id="games">
+    <ul class="collapsible" data-collapsible="accordion">
+        {% assign projects = site.posts | where:"category","Game" %}
+        {% for project in projects %}
+            <li>
+                <div class="collapsible-header">
+                    {{ project.title }}
+                    {% for tag in project.tags %}
+                        <div class="chip secondary-content"><a href="/tags/#{{ tag | slugify }}"> {{ tag }} </a></div>
+                    {% endfor %}
+                </div>
+                <div class="collapsible-body">
+                    {{ project.content }}
+                    <div class="card-action">
+                        <a href="{{ project.url }}">read more</a>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    </div>
+    <div id="software">
+    <ul class="collapsible" data-collapsible="accordion">
+        {% assign projects = site.posts | where:"category","Software" %}
+        {% for project in projects %}
+            <li>
+                <div class="collapsible-header">
+                    {{ project.title }}
+                    {% for tag in project.tags %}
+                        <div class="chip secondary-content"><a href="/tags/#{{ tag | slugify }}"> {{ tag }} </a></div>
+                    {% endfor %}
+                </div>
+                <div class="collapsible-body">
+                    {{ project.content }}
+                    <div class="card-action">
+                        <a href="{{ project.url }}">read more</a>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    </div>
+    <div id="other">
+    <ul class="collapsible" data-collapsible="accordion">
+        {% assign projects = site.posts | where:"category","Other" %}
+        {% for project in projects %}
+            <li>
+                <div class="collapsible-header">
+                    {{ project.title }}
+                    {% for tag in project.tags %}
+                        <div class="chip secondary-content"><a href="/tags/#{{ tag | slugify }}"> {{ tag }} </a></div>
+                    {% endfor %}
+                </div>
+                <div class="collapsible-body">
+                    {{ project.content }}
+                    <div class="card-action">
+                        <a href="{{ project.url }}">read more</a>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    </div>
+</div>

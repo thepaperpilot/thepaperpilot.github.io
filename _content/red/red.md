@@ -9,3 +9,5 @@ There are 5 chapters planned. This game is currently in development. If you want
 Much of what else I'd like to say borders on spoiler territory. If you'd like to learn more see the [story.md](https://github.com/thepaperpilot/Red-Pen/blob/master/story.md) document on the github page, or look at [thoughts.md](https://github.com/thepaperpilot/Red-Pen/blob/master/thoughts.md) for what I currently am working on!
 
 You can follow development in a telegram broadcast channel at [https://telegram.me/tppRedPen](https://telegram.me/tppRedPen)
+
+Development is temporarily paused, but will be resumed in a new engine. 

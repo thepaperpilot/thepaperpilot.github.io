@@ -6,27 +6,35 @@ title: Markov Chains
 <link rel="stylesheet" type="text/css" href="/css/markov.css">
 
 <div class="card buttons">
-    <span class="button" onclick="rock();">&#9994;</span>
-    <span class="button" onclick="paper();">&#9995;</span>
-    <span class="button" onclick="scissors();">&#9996;</span>
+    <div class="card-content">
+        <span class="button" onclick="rock();">&#9994;</span>
+        <span class="button" onclick="paper();">&#9995;</span>
+        <span class="button" onclick="scissors();">&#9996;</span>
+    </div>
 </div>
 
 <div id="versus" class="card">
-    <span class="text">you &#8594;</span><span class="button" id="player">&#9994;</span>
-    <span class="text" style="display: inline-block; vertical-align: middle;">VS</span>
-    <span class="button" id="com">&#9994;</span><span class="text">&#8592; me</span>
-    <br />
-    <h3 id="result">Computer Wins</h3>
+    <div class="card-content">
+        <span class="text">you &#8594;</span><span class="button" id="player">&#9994;</span>
+        <span class="text" style="display: inline-block; vertical-align: middle;">VS</span>
+        <span class="button" id="com">&#9994;</span><span class="text">&#8592; me</span>
+        <br />
+        <h3 id="result">Computer Wins</h3>
+    </div>
 </div>
 
 <div class="stats card">
-    <h2>Stats</h2>
-    computer wins: <span id="loss">0</span><br />
-    &emsp;expected: <span id="loss_expected">0</span><br /><br />
-    player wins: <span id="win">0</span><br />
-    &emsp;expected: <span id="win_expected">0</span> <br /><br />
-    ties: <span id="tie">0</span><br />
-    &emsp;expected: <span id="tie_expected">0</span><br />
+    <div class="card-content">
+        <span class="card-title">Stats</span>
+        <p>
+        computer wins: <span id="loss">0</span><br />
+        &emsp;expected: <span id="loss_expected">0</span><br /><br />
+        player wins: <span id="win">0</span><br />
+        &emsp;expected: <span id="win_expected">0</span> <br /><br />
+        ties: <span id="tie">0</span><br />
+        &emsp;expected: <span id="tie_expected">0</span><br />
+        </p>
+    </div>
 </div>
 
 <script src="/js/markov.js" type="text/javascript"></script>
