@@ -20,10 +20,14 @@ footer {
     padding-bottom: 10px;
 }
 
+a {
+    color: #ffab40;
+}
+
 html {
     width:100%;
     height: 100%;
-    background-color: #eee;
+    background-color: #2a323d;
 }
 
 body {
@@ -34,13 +38,12 @@ body {
 }
 
 .head {
-    background: #ccc;
-    background: linear-gradient(to bottom right, teal, turquoise);
+    background-color: #333c4a;
+    box-shadow: 0 2px 3px #222;
     padding: 20px;
     padding-bottom: 40px;
     margin-bottom: -50px;
     text-align: center;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 table {
@@ -87,6 +90,23 @@ body > .collapsible, body > .collection, body > .card, body > .carousel, body .s
     cursor: default;
 }
 
+.collapsible-header {
+    color: #fff;
+    background-color: #242a33;
+}
+
+.collapsible-header, .collapsible-body {
+    border-bottom-color: #666;
+}
+
+.tabs {
+    background-color: #242a33;
+}
+
+.tabs .indicator {
+    background-color: #8a6465;
+}
+
 .collection-header {
     padding: 0 1rem !important;
 }
@@ -131,6 +151,12 @@ footer ul li {
     padding-left: 8px;
 }
 
+.card {
+    background-color: #242a33;
+    color: #fff;
+    box-shadow: 2px 2px 3px #222;
+}
+
 .card .card-content p {
     margin: 15px 0;
 }
@@ -159,10 +185,15 @@ footer ul li {
 }
 
 .chip {
+    background: none;
     font-size: 12px;
     line-height: 18px;
     height: unset;
     margin-top: 12px;
+}
+
+.chip a {
+    color: #ffab40;
 }
 
 .card .collapsible {
@@ -171,11 +202,11 @@ footer ul li {
 }
 
 .indicator-item {
-    background-color: rgba(0, 0, 0, 0.5) !important;
+    background-color: rgba(156, 165, 180, 0.5) !important;
 }
 
 .indicator-item.active {
-    background-color: rgba(0, 0, 0, 1) !important;
+    background-color: rgba(156, 165, 180, 1) !important;
 }
 
 .carousel .indicators .indicator-item {
