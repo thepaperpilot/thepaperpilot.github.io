@@ -2,6 +2,8 @@
 layout: default
 title: Babble Buds
 ---
-A public, open source version of URealms' Puppet Pals software, written in electron and PIXI.js
+Babble buds is a free, open source virtual puppet show software. It is heavily based on the non-public software called "Puppet Pals", used in URealms Live. The software is written in javascript using a rendering library called PIXI.js and distributed as an electron app.
 
-It allows people to create digital 'puppets' and make them move and talk and emote, with others via networking. It can be used to make more authentic role play sessions, animations, interesting game dialogue/cutscenes, and anything else you can come up with! It's versatile engine allows for a large variety of different puppets with different art styles, themes, moods, etc. 
+Users can create puppets with different faces for different emotions, and then use the puppet on a stage where you and other users can each make your respective puppets move, change emotions, and "babble" at each other. The stage has a green screen feature and can be popped out, which gives the users tons of possibilities in terms of using the program for a role playing live stream, faux video chatting with friends, game development, or whatever else you want!
+
+Credit to [@TheGravyNator](https://forums.urealms.com/profile/TheGravyNator) for the awesome puppet on display in the screenshot.
