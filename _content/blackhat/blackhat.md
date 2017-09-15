@@ -39,8 +39,14 @@ To give an example of an ending that doesn't feel like a failure while still not
 The game will take place in the 80s, with dark or faded colors, especially faded gold. A good reference point would be the [Halt and Catch Fire](https://www.google.com/search?tbm=isch&q=halt+and+catch+fire+scene) or, to a lesser extent, [Mr.Robot](https://www.google.com/search?tbm=isch&q=mr+robot+scene) aesthetic. Try to include references to [1980s hackers](https://en.wikipedia.org/wiki/Timeline_of_computer_security_hacker_history#1980s) or other things that make it feel more authentically 80s.
 
 <div class="centerimages" markdown="1">
-![](https://media.giphy.com/media/Hk6sTNtswc2FG/giphy.gif) ![](https://media.giphy.com/media/9aCQ21o0Wllde/giphy.gif) ![](https://media.giphy.com/media/GgJXp1dFDHybm/giphy.gif) ![](http://67.media.tumblr.com/f346e6c3b9b21f46ab8b1bdb58f15d5a/tumblr_odgsd3oUhh1qgw158o1_500.gif) ![](https://67.media.tumblr.com/5810407432136fc6ec0ff23663f949e1/tumblr_nsho7qSu9q1r2tub6o3_540.gif) ![](http://67.media.tumblr.com/17abe0527d6f43467ff628a0069ae002/tumblr_nqowwvPwVj1r2tub6o1_540.gif) ![](http://i.imgur.com/dHXP3FO.gif) ![](https://66.media.tumblr.com/b819da38d729abb204bc682e507f7425/tumblr_obdn6lewjZ1u6zv0go4_1280.gif) ![](https://media.giphy.com/media/ifvLxeS0GO7q8/giphy.gif)
+![](https://media.giphy.com/media/Hk6sTNtswc2FG/giphy.gif) ![](http://i.imgur.com/dHXP3FO.gif) ![](https://66.media.tumblr.com/b819da38d729abb204bc682e507f7425/tumblr_obdn6lewjZ1u6zv0go4_1280.gif)
 </div>
+
+![](http://jamesminchin.com/blog/wp-content/uploads/2014/05/23-garage-3167_RET_AS.jpg)
+
+![](https://www.rockpapershotgun.com/images/15/aug/05deusex1s.jpg)
+
+![](https://ksamaarchvis.files.wordpress.com/2015/11/karsikipresentation-4.jpg?w=736)
 
 The atmosphere is filled with ambiguity and paranoia. Worries about making too big a splash as just a kid. Gets threats from people on IRC, maybe on one day before going to a mission someone comes to his house looking for him, etc. 
 
