@@ -61,6 +61,12 @@ let script = "move 1 0,\n" +
 
 function loaded() {
 	stage.resize(null, window.innerWidth, window.innerHeight / 2)
+	stage.registerPuppetListener("tap", (e) => {
+		if (cutscene) return
+		if (e.target.puppet.id === 2) {
+			startCutscene()
+		}
+	})
 	stage.registerPuppetListener("click", (e) => {
 		if (cutscene) return
 		if (e.target.puppet.id === 2) {
