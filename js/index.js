@@ -1,6 +1,5 @@
 // Set up fullscreen buttons (used on pages with embedded games)
 function fullscreen() {
-  console.log("Hi1")
   // check if fullscreen mode is available
   if (document.fullscreenEnabled || 
     document.webkitFullscreenEnabled || 
@@ -19,6 +18,7 @@ function fullscreen() {
     } else if (iframe.msRequestFullscreen) {
       iframe.msRequestFullscreen();
     }
+    iframe.contentWindow.focus();
   }
   else {
     console.log('Your browser is not supported');
