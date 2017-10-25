@@ -37,6 +37,17 @@ body {
     margin-bottom: 10px;
 }
 
+body > h4 {
+    width: 90%;
+    max-width: 940px;
+    margin: 20px auto -10px auto;
+    color: white;
+}
+
+.card > h5 {
+    padding: 10px 10px 0 10px;
+}
+
 .head {
     background-color: #333c4a;
     box-shadow: 0 2px 3px #222;
@@ -173,6 +184,14 @@ footer ul li {
     margin-top: 0;
 }
 
+.card .card-image .card-title {
+    padding: 0 8px;
+    margin: 20px;
+    border-radius: 20px;
+    opacity: .75;
+    background-color: #333c4a;
+}
+
 .card-content p img {
     display: block;
     border-radius: 2px 2px 0 0;
@@ -199,6 +218,7 @@ footer ul li {
 .card .collapsible {
     border: none;
     box-shadow: none;
+    border-top: 1px solid #666;
 }
 
 .indicator-item {
@@ -224,4 +244,35 @@ h1 {
 .carousel .indicators {
     left: 120px;
     right: 120px;
+}
+
+.collapsible-body p {
+    padding: unset;
+}
+
+.card-content p:only-child img:only-child {
+    margin: -20px;
+    width: calc(100% + 40px);
+}
+
+.embed {
+    position: relative;
+    margin: -20px;
+    margin-bottom: -25px;
+}
+
+.embed > button {
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.embed > iframe {
+    width: 100%;
+    height: 500px;
 }

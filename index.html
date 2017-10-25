@@ -2,7 +2,7 @@
 layout: default
 title: The Paper Pilot
 nocard: true
-featured: [NaN, Babble Buds, Slime Chargers!, Solar TD]
+featured: [Babble Buds, Tower Offense, Scripting for Games, NaN, Slime Chargers!, Solar TD]
 ---
 <div class="card">
     <div class="card-content">
@@ -11,6 +11,8 @@ featured: [NaN, Babble Buds, Slime Chargers!, Solar TD]
         <p>I really liked playing free online games growing up, but most of those sites have died. Armor games peaked in 2010! There needs to be more of those kind of sites, those kind of games, to inspire the next generation of game developers and computer scientists. That's why I want to make free online games anyone can play. No credit cards or even admin privileges required. All free, and open source. Enjoy :)</p>
     </div>
 </div>
+
+<h4>Featured Projects</h4>
 
 <div class="carousel carousel-slider" data-indicators="true">
 {% for project in page.featured %}
@@ -32,13 +34,10 @@ featured: [NaN, Babble Buds, Slime Chargers!, Solar TD]
 {% endfor %}
 </div>
 
+<h4>All Projects</h4>
+
 <div class="card">
-    <ul class="tabs">
-        <li class="tab col s4"><a class="active" href="#games">Games</a></li>
-        <li class="tab col s4"><a class="active" href="#software">Software</a></li>
-        <li class="tab col s4"><a class="active" href="#other">Others</a></li>
-    </ul>
-    <div id="games">
+    <h5>Games</h5>
     <ul class="collapsible" data-collapsible="accordion">
         {% assign projects = site.posts | where:"category","Game" %}
         {% for project in projects %}
@@ -50,7 +49,9 @@ featured: [NaN, Babble Buds, Slime Chargers!, Solar TD]
                     {% endfor %}
                 </div>
                 <div class="collapsible-body">
-                    {{ project.content }}
+                    <div class="card-content" markdown="1">
+                        {{ project.content }}
+                    </div>
                     <div class="card-action">
                         <a href="{{ project.url }}">read more</a>
                     </div>
@@ -58,8 +59,7 @@ featured: [NaN, Babble Buds, Slime Chargers!, Solar TD]
             </li>
         {% endfor %}
     </ul>
-    </div>
-    <div id="software">
+    <h5>Software</h5>
     <ul class="collapsible" data-collapsible="accordion">
         {% assign projects = site.posts | where:"category","Software" %}
         {% for project in projects %}
@@ -71,7 +71,9 @@ featured: [NaN, Babble Buds, Slime Chargers!, Solar TD]
                     {% endfor %}
                 </div>
                 <div class="collapsible-body">
-                    {{ project.content }}
+                    <div class="card-content" markdown="1">
+                        {{ project.content }}
+                    </div>
                     <div class="card-action">
                         <a href="{{ project.url }}">read more</a>
                     </div>
@@ -79,8 +81,7 @@ featured: [NaN, Babble Buds, Slime Chargers!, Solar TD]
             </li>
         {% endfor %}
     </ul>
-    </div>
-    <div id="other">
+    <h5>Other</h5>
     <ul class="collapsible" data-collapsible="accordion">
         {% assign projects = site.posts | where:"category","Other" %}
         {% for project in projects %}
@@ -92,7 +93,9 @@ featured: [NaN, Babble Buds, Slime Chargers!, Solar TD]
                     {% endfor %}
                 </div>
                 <div class="collapsible-body">
-                    {{ project.content }}
+                    <div class="card-content" markdown="1">
+                        {{ project.content }}
+                    </div>
                     <div class="card-action">
                         <a href="{{ project.url }}">read more</a>
                     </div>
@@ -100,5 +103,4 @@ featured: [NaN, Babble Buds, Slime Chargers!, Solar TD]
             </li>
         {% endfor %}
     </ul>
-    </div>
 </div>

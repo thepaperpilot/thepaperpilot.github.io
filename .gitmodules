@@ -1,0 +1,6 @@
+[submodule "assets/toweroffense-assets/Tower-Offense"]
+	path = assets/toweroffense-assets/Tower-Offense
+	url = https://github.com/thepaperpilot/Tower-Offense
+[submodule "assets/slime-assets/Slime-Chargers"]
+	path = assets/slime-assets/Slime-Chargers
+	url = https://github.com/thepaperpilot/Slime-Chargers

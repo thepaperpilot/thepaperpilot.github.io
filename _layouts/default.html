@@ -62,7 +62,16 @@
                     {% else %}
                         <div class="card">
                             <div class="card-content">
-                            {{ page.content | markdownify }}
+                                {% if page.embed %}
+                                    <div class="embed">
+                                        <button id="fullscreenBtn">
+                                            <img src="https://itch.io/static/images/enlarge.svg" style="width: 30px; height: 30px">
+                                        </button>
+                                        <iframe id="embed" msallowfullscreen="true" allowfullscreen="true" src="{{ page.embed }}" scrolling="no" allowtransparency="true" webkitallowfullscreen="true" mozallowfullscreen="true" frameborder="0"></iframe>
+                                    </div>
+                                {% else %}
+                                    {{ page.content | markdownify }}
+                                {% endif %}
                             </div>
                         </div>
                     {% endif %}
@@ -102,12 +111,7 @@
 
     <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js" type="text/javascript"></script>
-    <script type="text/javascript">
-        $(document).ready(function(){
-            // for the home page
-            $('.carousel.carousel-slider').carousel({full_width: true});
-        });
-    </script>
+    <script type="text/javascript" src="/js/index.js"></script>
 </body>
 
 </html>
