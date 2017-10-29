@@ -2,7 +2,7 @@
 layout: default
 title: Incarcerated
 ---
-Note: Web preview may be slow and resize undesirably. You can download it for windows ![here](/assets/scripting/Incarcerated/win.zip)
+Note: Web preview may be slow and resize undesirably. You can download it for windows [here](/assets/scripting/Incarcerated/win.zip).
 
 The purpose of this project was to demonstrate how to create a game where you use Unity's physics system to control a ball, with enemies and pickups and jump pads, etc. 
 
