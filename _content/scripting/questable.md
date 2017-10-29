@@ -2,6 +2,8 @@
 layout: default
 title: Questable
 ---
+Note: Web preview may be slow and resize undesirably. You can download it for windows ![here](/assets/scripting/Questable/win.zip)
+
 The purpose of this project was to demonstrate how to create a game where you use raycasts and projectiles to make guns, and nav meshes for basic AI. 
 
 **Controls:**
