@@ -32,3 +32,14 @@ if (btn) btn.addEventListener('click', fullscreen)
 $(document).ready(function(){
     $('.carousel.carousel-slider').carousel({full_width: true});
 });
+
+$('iframe').each(function() {
+	this.tmp = this.src;
+	this.src = '';
+	$(this).wrap('<div class="iframe_block">')
+})
+.parent('.iframe_block')
+.click(function() {
+	let frame = $(this).children("iframe")[0]
+	frame.src = frame.tmp
+})
