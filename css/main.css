@@ -28,6 +28,27 @@ html {
     width:100%;
     height: 100%;
     background-color: #2a323d;
+    font-family: "Roboto", sans-serif;
+    font-weight:normal;
+    line-height:1.5;
+}
+
+@media only screen and (min-width: 0) {
+ html {
+  font-size:14px
+ }
+}
+
+@media only screen and (min-width: 992px) {
+ html {
+  font-size:14.5px
+ }
+}
+
+@media only screen and (min-width: 1200px) {
+ html {
+  font-size:15px
+ }
 }
 
 body {
@@ -37,11 +58,199 @@ body {
     margin-bottom: 10px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+    line-height: 1.1;
+}
+
+h4 {
+    font-size: 2.28rem;
+    line-height: 110%;
+    margin: 1.14rem 0 0.912rem 0;
+}
+
+h5 {
+    font-size: 1.64rem;
+    line-height: 110%;
+    margin: 0.82rem 0 0.656rem 0;
+}
+
 body > h4 {
     width: 90%;
     max-width: 940px;
     margin: 20px auto -10px auto;
     color: white;
+}
+
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.collection {
+    margin: 0.5rem 0 1rem 0;
+    border: none;
+    overflow: hidden;
+    position: relative;
+}
+
+ul:not(.browser-default) {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.collection.with-header .collection-header {
+    background-color: #242a33;
+    border-bottom: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    color: white;
+}
+
+ul:not(.browser-default) li {
+    list-style-type: none;
+}
+
+.collection.with-header .collection-item {
+    padding-left: 30px;
+}
+.collection a.collection-item {
+    display: block;
+    transition: .25s;
+}
+.collection .collection-item {
+    background-color: #242a33;
+    line-height: 1.5rem;
+    padding: 10px 20px;
+    margin: 0;
+    border-top: 1px solid rgba(160,160,160,0.2) !important;
+    transition: 0.4s;
+}
+
+.collection .collection-item:hover {
+    background-color: #333c4a !important;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 90%;
+    text-align: justify;
+}
+
+@media only screen and (min-width: 601px) {
+ .container {
+  width:85%
+ }
+}
+
+@media only screen and (min-width: 993px) {
+ .container {
+  width:70%
+ }
+}
+
+.accordion {
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+    background-color: #242a33;
+    box-sizing: border-box;
+}
+
+.accordion:not(:first-child) {
+    border-top: 1px solid rgba(160,160,160,0.2) !important;
+}
+
+.active, .accordion:hover {
+    background-color: #333c4a !important;
+}
+
+.panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+button.accordion:focus {
+    background-color: unset;
+}
+
+.desc p {
+    display: inline;
+}
+
+.desc a {
+    margin-left: 1em;
+}
+
+.head {
+    color: white;
+}
+
+.page-title {
+    font-size: 4.2rem;
+    line-height: 110%;
+    font-weight: 400;
+}
+
+.card .card-content .card-title {
+    line-height: 48px;
+}
+
+.card .card-image .card-title {
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+}
+
+.card .card-title {
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.card .card-image {
+    position: relative;
+}
+
+.card .card-image img {
+    display: block;
+    border-radius: 2px 2px 0 0;
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+img {
+    border: 0;
+}
+
+.card .card-action {
+    position: relative;
+    background-color: inherit;
+    border-top: 1px solid rgba(160,160,160,0.2);
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-floating) {
+    color: #ffab40;
+    margin-right: 20px;
+    transition: color .3s ease;
+    text-transform: uppercase;
 }
 
 .card > h5 {
@@ -86,7 +295,7 @@ a.btn, a.btn-flat, input.btn, input.btn-flat {
     height: 100% !important;
 }
 
-body > .collapsible, body > .collection, body > .card, body > .carousel, body .slider {
+body > .collapsible, body > .collection, body > .card, body > .carousel, body .slider, body > .container {
     width: 90% !important;
     max-width:940px !important;
     margin:auto !important;
@@ -166,6 +375,15 @@ footer ul li {
     background-color: #242a33;
     color: #fff;
     box-shadow: 2px 2px 3px #222;
+    position: relative;
+    margin: 0.5rem 0 1rem 0;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+}
+
+.card .card-content {
+    padding: 20px;
+    border-radius: 0 0 2px 2px;
 }
 
 .card .card-content p {
@@ -208,7 +426,15 @@ footer ul li {
     font-size: 12px;
     line-height: 18px;
     height: unset;
-    margin-top: 12px;
+    margin-top: 0;
+    float: right;
+    display: inline-block;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+    padding: 0 12px;
+    border-radius: 16px;
+    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
 .chip a {
@@ -275,4 +501,12 @@ h1 {
 .embed > iframe {
     width: 100%;
     height: 500px;
+}
+
+.container .chip {
+    background-color: #2a323d;
+    float: unset;
+    font-size: 16px;
+    margin: 4px;
+    padding: 6px 12px;
 }

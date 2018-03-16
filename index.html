@@ -2,23 +2,21 @@
 layout: default
 title: The Paper Pilot
 nocard: true
-featured: [Babble Buds, Tower Offense, Scripting for Games, NaN, Slime Chargers!, Solar TD]
+featured: [Babble Buds]
 ---
 <div class="card">
     <div class="card-content">
         <span class="card-title">Hello!</span>
-        <p>I'm Anthony Lawn, or "The Paper Pilot", and I develop free, open source programs and games, using a variety of languages and engines. I'm currently working towards my B.S. in Computer Science, after which I hope to go on to getting a Masters degree, with a focus on Data Science.</p>
-        <p>I really liked playing free online games growing up, but most of those sites have died. Armor games peaked in 2010! There needs to be more of those kind of sites, those kind of games, to inspire the next generation of game developers and computer scientists. That's why I want to make free online games anyone can play. No credit cards or even admin privileges required. All free, and open source. Enjoy :)</p>
+        <p>I'm Anthony Lawn, or "The Paper Pilot", and I develop free, open source programs and games, using a variety of languages and engines. I'm currently working towards my B.S. in Computer Science, after which I plan to go on to earning a Masters degree in the same, with a focus on Data Science.</p>
+        <p>I really liked playing free online games growing up, but most of those sites have died- Armor games peaked in 2010! I do not believe mobile games have the same effect since you can't develop on a phone. I believe there needs to be a new generation of these kinds of sites, with those kinds of games, to inspire the next generation of game developers and computer scientists. That's why I want to make free online games anyone can play, and see how they work. No credit cards or even admin privileges required. All free, and open source. Enjoy :)</p>
     </div>
 </div>
 
-<h4>Featured Projects</h4>
+<h4>Active Projects</h4>
 
-<div class="carousel carousel-slider" data-indicators="true">
 {% for project in page.featured %}
     {% assign post = site.posts | where:"title",project | first %}
-    <div class="carousel-item">
-    <div class="card" style="width: 100%; max-width: unset; height: 100%">
+    <div class="card" style="padding-bottom: calc(1rem + 40px);">
         <div class="card-image">
             <img src="/assets/banners/{{ post.banner }}.png">
             <span class="card-title" style="font-weight: 500;">{{ project }}</span>
@@ -30,77 +28,56 @@ featured: [Babble Buds, Tower Offense, Scripting for Games, NaN, Slime Chargers!
             <a href="{{ post.url }}">read more</a>
         </div>
     </div>
-    </div>
 {% endfor %}
-</div>
 
-<h4>All Projects</h4>
+<h4>Featured Projects</h4>
 
 <div class="card">
-    <h5>Games</h5>
-    <ul class="collapsible" data-collapsible="accordion">
-        {% assign projects = site.posts | where:"category","Game" %}
-        {% for project in projects %}
-            <li>
-                <div class="collapsible-header">
-                    {{ project.title }}
-                    {% for tag in project.tags %}
-                        <div class="chip secondary-content"><a href="/tags/#{{ tag | slugify }}"> {{ tag }} </a></div>
-                    {% endfor %}
-                </div>
-                <div class="collapsible-body">
-                    <div class="card-content" markdown="1">
-                        {{ project.content }}
-                    </div>
-                    <div class="card-action">
-                        <a href="{{ project.url }}">read more</a>
-                    </div>
-                </div>
-            </li>
+    {% assign projects = site.posts | where:"featured","true" %}
+    {% for project in projects %}
+        <div class="accordion">
+            {{ project.title }}
+
+            {% for tag in project.tags %}
+                <div class="chip"><a href="/tags/#{{ tag | slugify }}"> {{ tag }} </a></div>
+            {% endfor %}
+        </div>
+        <div class="panel">
+            <div class="card-image">
+                <img src="/assets/banners/{{ project.banner }}.png">
+            </div>
+            <div class="card-content desc" markdown="1">
+                {{ project.content }} <a href="{{ project.url }}"> read more</a>
+            </div>
+        </div>
+    {% endfor %}
+</div>
+
+<h4>All Projects (by tag)</h4>
+
+<div class="card container">
+    <div class="card-content">
+        {% assign rawtags = "" %}
+        {% for post in site.posts %}
+            {% assign ttags = post.tags | join:'|' | append:'|' %}
+            {% assign rawtags = rawtags | append:ttags %}
         {% endfor %}
-    </ul>
-    <h5>Software</h5>
-    <ul class="collapsible" data-collapsible="accordion">
-        {% assign projects = site.posts | where:"category","Software" %}
-        {% for project in projects %}
-            <li>
-                <div class="collapsible-header">
-                    {{ project.title }}
-                    {% for tag in project.tags %}
-                        <div class="chip secondary-content"><a href="/tags/#{{ tag | slugify }}"> {{ tag }} </a></div>
-                    {% endfor %}
-                </div>
-                <div class="collapsible-body">
-                    <div class="card-content" markdown="1">
-                        {{ project.content }}
-                    </div>
-                    <div class="card-action">
-                        <a href="{{ project.url }}">read more</a>
-                    </div>
-                </div>
-            </li>
+        {% assign rawtags = rawtags | split:'|' | sort %}
+
+        {% assign tags = "" %}
+        {% for tag in rawtags %}
+            {% if tag != "" %}
+                {% if tags == "" %}
+                    {% assign tags = tag | split:'|' %}
+                {% endif %}
+                {% unless tags contains tag %}
+                    {% assign tags = tags | join:'|' | append:'|' | append:tag | split:'|' %}
+                {% endunless %}
+            {% endif %}
         {% endfor %}
-    </ul>
-    <h5>Other</h5>
-    <ul class="collapsible" data-collapsible="accordion">
-        {% assign projects = site.posts | where:"category","Other" %}
-        {% for project in projects %}
-            <li>
-                <div class="collapsible-header">
-                    {{ project.title }}
-                    {% for tag in project.tags %}
-                        <div class="chip secondary-content"><a href="/tags/#{{ tag | slugify }}"> {{ tag }} </a></div>
-                    {% endfor %}
-                </div>
-                <div class="collapsible-body">
-                    <div class="card-content" markdown="1">
-                        {{ project.content }}
-                    </div>
-                    <div class="card-action">
-                        <a href="{{ project.url }}">read more</a>
-                    </div>
-                </div>
-            </li>
+
+        {% for tag in tags %}
+            <div class="chip"><a href="/tags/#{{ tag | slugify }}"> {{ tag }} </a></div>
         {% endfor %}
-    </ul>
+    </div>
 </div>

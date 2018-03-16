@@ -1,3 +1,29 @@
+// Variables
+let acc = document.getElementsByClassName("accordion");
+
+// Set up accordion
+for (let i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", accordionClick);
+}
+
+function accordionClick() {
+  let active = false
+  let activeElements = document.getElementsByClassName("active")
+  while (activeElements[0]) {
+    let activeElement = activeElements[0]
+    activeElement.classList.remove("active");
+    activeElement.nextElementSibling.style.maxHeight = null;
+    if (activeElement == this)
+      active = true
+  }
+
+  if (active) return
+
+  this.classList.add("active")
+  let panel = this.nextElementSibling;
+  panel.style.maxHeight = panel.scrollHeight + "px";
+}
+
 // Set up fullscreen buttons (used on pages with embedded games)
 function fullscreen() {
   // check if fullscreen mode is available
@@ -5,9 +31,9 @@ function fullscreen() {
     document.webkitFullscreenEnabled || 
     document.mozFullScreenEnabled ||
     document.msFullscreenEnabled) {
-    
+
     // which element will be fullscreen
-    var iframe = document.getElementById('embed');
+  var iframe = document.getElementById('embed');
     // Do fullscreen
     if (iframe.requestFullscreen) {
       iframe.requestFullscreen();
@@ -27,8 +53,3 @@ function fullscreen() {
 
 let btn = document.getElementById('fullscreenBtn')
 if (btn) btn.addEventListener('click', fullscreen)
-
-// Setup Carousel (used on homepage)
-$(document).ready(function(){
-    $('.carousel.carousel-slider').carousel({full_width: true});
-});
