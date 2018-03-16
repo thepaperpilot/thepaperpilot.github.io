@@ -6,25 +6,26 @@ title: Start
 
 Note: If the web version is too slow, you can download it for windows [here](/assets/scripting-assets/Start/win.zip).
 
-The purpose of this project was to demonstrate how to create a game where you use Unity's physics system to control a ball, with enemies and pickups and jump pads, etc. 
+The purpose of this project was to demonstrate how to create a game with multiple mechanics and features. 
 
 **Controls:**
 
-In the level selection,
+Navigate the interface using the mouse
 
-- Arrow keys to switch level
-- Enter to select level
-- Escape to quit game
+*Keyboard:*
 
-In the game,
+- Join the game by pressing z in the player join screen
+- Leave the game or Deready yourself by pressing x in the player join screen
+- Ready yourself by pressing Enter in the player join screen
+- Move your character using arrow keys (recommended) or WASD
+- Perform actions using z, x, c, v (corresponding actions are listed in player join screen, but its setup like a, b, x, y for controllers)
 
-- Mouse to look, WASD to move
-- Try to reach the green "finish" platform as quickly as possible, without dying
-- Red objects are hazards
-- Blue powerups increase your speed
-- Red powerups make you smaller and lighter
-- Yellow pickups reduce your time taken
-- Green arrows make you jump
-- Blue platforms slow you down
-- Backspace to restart the level
-- Escape to return to level select
+*Controller:*
+
+- Join the game by pressing a in the player join screen
+- Leave the game or Deready yourself by pressing b in the player join screen
+- Ready yourself by pressing Start in the player join screen
+- Move your character using the joystick
+- Perform actions using a, b, x, y (corresponding actions are listed in player join screen, but its setup like how it appears on an xbox controller)
+
+
