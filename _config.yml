@@ -4,7 +4,5 @@ kramdown:
   input: GFM
   parse_block_html: true
 permalink: /:title/
-paginate: 5
-gems: [jekyll-paginate]
 collections:
     content:
