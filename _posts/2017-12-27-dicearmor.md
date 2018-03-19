@@ -3,7 +3,7 @@ layout: default
 title: Dice Armor
 category: Game
 banner: dice
-cards: [Dice Armor Embed, Dice Armor Summary, Dice Armor Cutscene Screenshot, Dice Armor Publishing, Dice Armor Mobile Screenshot]
+cards: [Dice Armor Embed, Dice Armor Web Disclaimer, Dice Armor Summary, Dice Armor Cutscene Screenshot, Dice Armor Publishing, Dice Armor Mobile Screenshot]
 links: ["Windows Download|/assets/dicearmor-assets/win.zip", "Android Download|/assets/dicearmor-assets/dicearmor.apk"]
 tags: [c#, unity]
 ---
