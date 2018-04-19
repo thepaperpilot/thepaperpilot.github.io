@@ -295,7 +295,7 @@ a.btn, a.btn-flat, input.btn, input.btn-flat {
     height: 100% !important;
 }
 
-body > .collapsible, body > .collection, body > .card, body > .carousel, body .slider, body > .container {
+body > .collapsible, body > .collection, body > .card, body .slider, body > .container {
     width: 90% !important;
     max-width:940px !important;
     margin:auto !important;
@@ -455,21 +455,8 @@ footer ul li {
     background-color: rgba(156, 165, 180, 1) !important;
 }
 
-.carousel .indicators .indicator-item {
-    margin: 16px 4px;
-}
-
-.carousel.carousel-slider {
-    min-height: 400px !important;
-}
-
 h1 {
     margin: 1.2rem;
-}
-
-.carousel .indicators {
-    left: 120px;
-    right: 120px;
 }
 
 .collapsible-body p {
@@ -509,4 +496,63 @@ h1 {
     font-size: 16px;
     margin: 4px;
     padding: 6px 12px;
+}
+
+.carousel {
+    position: relative;
+    height: 815px;
+}
+
+.slides {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms;
+}
+
+.slide img:not(.vertical) {
+    width: 100%;
+}
+
+.slide img.vertical {
+    float: left;
+    height: calc(100% - 40px);
+}
+
+.slide img.vertical ~ .slide-desc {
+    height: calc(100% - 50px);
+    width: calc(100% - 440px);
+    float: right;
+}
+
+.slide-desc {
+    margin: 15px;
+    overflow-y: auto;
+    height: 9em;
+}
+
+.indicators {
+    position: absolute;
+    bottom: 5px;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.indicator {
+    cursor: pointer;
+}
+
+.slide.active-slide {
+    opacity: 1;
+    pointer-events: initial;
 }
