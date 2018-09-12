@@ -463,9 +463,14 @@ h1 {
     padding: unset;
 }
 
-.card-content p:only-child img:only-child {
+.card-content p:first-child img:first-child {
     margin: -20px;
     width: calc(100% + 40px);
+}
+
+.card .card-content .card-caption:last-child {
+    margin-top: 35px;
+    margin-bottom: -5px;
 }
 
 .embed {
