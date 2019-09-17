@@ -75,6 +75,10 @@ h5 {
     margin: 0.82rem 0 0.656rem 0;
 }
 
+h1:first-child {
+    font-family: "Pacifico", cursive, sans-serif;
+}
+
 body > h4 {
     width: 90%;
     max-width: 940px;
