@@ -5,8 +5,6 @@
     <title>Home</title>
 
     <link rel="stylesheet" type="text/css" href="./firststyle.css">
-    <link rel="stylesheet" type="text/css" href="/css/pacifico.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     <meta charset="utf-8">
     <meta name="keywords" content="anthony lawn,portfolio,school, cs 6314,programming,html,css,javascript,web programming languages">
@@ -146,25 +144,25 @@
                     <label for="reason-4">Other</label>
                 </div>
             </div>
-            <input type="reset" />
+            <input id="reset" type="reset" />
         </form>
     </section>
 
     <section>
         <h2>Javascript Show-Off</h2>
-        <p>This is the part where I use Javascript instead of css!</p>
-        <p>Hover over the image to activate the mouse enter/leave events:</p>
-        <p>Press 'F' to play a sequence of fade animations:</p>
-        <p>Press 'A' down to play a sequence of non-fade animations:</p>
-        <img id="target" src="https://i.kym-cdn.com/photos/images/newsfeed/001/439/882/4f7.png" alt="This is how lil kids look when they cough" title="its a meme you dip" />
+        <p>This is the part where I use Javascript (even though most of this could be done with CSS)!</p>
+        <p class="instruction">Hover over the image to activate the mouse enter/leave events:</p>
+        <p class="instruction">Press 'F' to play a sequence of fade animations:</p>
+        <p class="instruction">Press 'A' down to play a sequence of non-fade animations:</p>
+        <img id="target" class="target" src="https://i.kym-cdn.com/photos/images/newsfeed/001/439/882/4f7.png" alt="This is how lil kids look when they cough" title="its a meme you dip" />
         <div class="button-row">
-            <p>Click to toggle Visibility:</p>
+            <p class="instruction">Click to toggle Visibility:</p>
             <button id="hide-button">Hide</button>
             <button id="show-button">Show</button>
             <button id="toggle-button">Toggle Visibility</button>
         </div>
         <div class="button-row">
-            <p>Double Click to change opacity:</p>
+            <p class="instruction">Double Click to change opacity:</p>
             <button id="fadein-button">Fade In</button>
             <button id="fadeout-button">Fade Out</button>
             <button id="fadeto-button">50% Opacity</button>
@@ -172,42 +170,8 @@
         </div>
     </section>
 
-    <section>
-        <h2>CSS Show-Off</h2>
-        <p>Both firefox or chrome-based browsers should be fine with everything you've seen on this page (assuming you have the most recent versions). I specifically tested on Vivaldi and Firefox.</p>
-        <h3>Example 1</h3>
-        <div id="example-1">
-            <div class="container">
-                HTML 1
-                <div class="yellow">
-                    2 2
-                </div>
-            </div>
-            <span class="dashed">
-                3 3 3
-            </span>
-        </div>
-        <h3>Example 2</h3>
-        <div id="example-2">
-            <div class="container">
-                <div class="inner-container">
-                    <span class="yellow">
-                        4 4 4 4
-                    </span><!--
-                    Comment to avoid adding an extra space here
-                    --><span class="no-left-padding">
-                        5 5 5 5 5
-                    </span>
-                    <div class="middle">
-                        6 6 6 6 6 6
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <span>Psst... I made </span><a href="http://thepaperpilot.org/toweroffense/">this game</a><span> with some friends. I did all the HTML, CSS, and Javascript coding (although I did use the pixi.js library instead of rendering directly to a canvas)</span>
+    <footer id="footer">
+        <span>Psst... I made </span><a class="link" href="http://thepaperpilot.org/toweroffense/">this game</a><span> with some friends. I did all the HTML, CSS, and Javascript coding (although I did use the pixi.js library instead of rendering directly to a canvas)</span>
     </footer>
 
     <script type="text/javascript" src="./school.js"></script>

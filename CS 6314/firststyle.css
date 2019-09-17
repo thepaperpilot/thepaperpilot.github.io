@@ -3,14 +3,12 @@ html {
     height: 100%;
     background-color: #2a323d;
     color: white;
-    font-family: "Roboto", sans-serif;
     font-weight: normal;
     line-height: 1.5;
 }
 
 #title {
     text-align: center;
-    font-family: 'Pacifico', cursive, sans-serif;
 }
 
 section {
@@ -68,7 +66,7 @@ section .field > :first-child {
     flex-shrink: 1;
 }
 
-footer {
+#footer {
     font-size: .8em;
     width: 95%;
     max-width: 1200px;
@@ -78,7 +76,7 @@ footer {
     text-align: center;
 }
 
-a {
+#footer .link {
     color: #ffab40;
 }
 
@@ -159,7 +157,7 @@ input[type=radio]:checked + label:before {
     color: #fff;
 }
 
-input[type=reset] {
+#reset {
     border-bottom: none;
     text-transform: uppercase;
     border-radius: 10px;
@@ -169,7 +167,7 @@ input[type=reset] {
     transition: background .2s;
 }
 
-input[type=reset]:hover {
+#reset:hover {
     background: red;
 }
 
@@ -177,8 +175,20 @@ input[type=reset]:hover {
     text-align: center;
 }
 
-.button-row p {
-    margin-bottom: 0;
+.instruction {
+    margin: 0;
+}
+
+/* 
+ * Fun fact: every selector using a #id selector was originally written using 
+ *  other types of selectors, apart from this one.
+ * I usually try to avoid using IDs altogether - even in Javascript I usually
+ *  use React, so I don't even use IDs there - but had to add a bunch here to
+ *  meet the requirements :/
+ */
+.instruction + #target {
+    box-shadow: 2px 2px 3px #222;
+    margin: 10px auto;
 }
 
 @keyframes rotate {
@@ -215,64 +225,4 @@ input[type=reset]:hover {
     100% {
         transform: translateY(0);
     }
-}
-
-#example-1 {
-    background-color: grey;
-    color: black;
-    padding: 4px;
-}
-
-#example-1 .yellow {
-    text-decoration: underline;
-    margin: auto;
-}
-
-#example-2 {
-    background-color: white;
-    color: black;
-    padding: 4px;
-}
-
-.container {
-    border: solid 1px black;
-    width: 50%;
-    margin: auto;
-    padding: 8px;
-}
-
-.container span, .container div:not(.inner-container) {
-    border: solid 1px black;
-    padding: 8px;
-}
-
-.dashed {
-    border: dashed 1px black;
-}
-
-.yellow {
-    background-color: yellow;
-    width: 50%
-}
-
-.inner-container {
-    width: 75%;
-}
-
-.inner-container span {
-    display: inline-block;
-    box-sizing: border-box;
-}
-
-.inner-container .yellow {
-    width: 75%;
-}
-
-.inner-container .no-left-padding {
-    padding-left: 0;
-    width: 25%;
-}
-
-.middle {
-    margin-left: 25%;
 }
