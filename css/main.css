@@ -194,12 +194,82 @@ button.accordion:focus {
 
 .head {
     color: white;
+    background-color: #333c4a;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.head > * {
+    flex-basis: 50%;
+}
+
+.sections {
+    text-align: right;
+}
+
+.sections div {
+    display: inline;
+    cursor: pointer;
+    font-size: large;
+    padding: 10px;
+    color: white;
+}
+
+#intro {
+    width: 100%;
+    height: 100vh;
+    background-color: #333c4a;    
+}
+
+#current_chat {
+    display: none;
+    width: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: xx-large;
+    background: rgba(1, 1, 1, .2);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#controls {
+    opacity: 0;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    color: grey;
+    font-size: 250%;
+    background: rgba(1, 1, 1, .1);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    transition: opacity 1s ease;
+}
+
+#controls .inline {
+    width: 2rem;
 }
 
 .page-title {
-    font-size: 4.2rem;
-    line-height: 110%;
+    font-size: xx-large;
     font-weight: 400;
+    text-align: center;
+}
+
+.section {
+    margin-top: -150px;
+    padding-top: 150px;
 }
 
 .card .card-content .card-title {
@@ -261,15 +331,6 @@ a {
     padding: 10px 10px 0 10px;
 }
 
-.head {
-    background-color: #333c4a;
-    box-shadow: 0 2px 3px #222;
-    padding: 20px;
-    padding-bottom: 40px;
-    margin-bottom: -50px;
-    text-align: center;
-}
-
 table {
     margin: auto;
 }
@@ -299,7 +360,7 @@ a.btn, a.btn-flat, input.btn, input.btn-flat {
     height: 100% !important;
 }
 
-body > .collapsible, body > .collection, body > .card, body .slider, body > .container {
+body > .collapsible, body > .collection, body .card, body .slider, body > .container {
     width: 90% !important;
     max-width:940px !important;
     margin:auto !important;

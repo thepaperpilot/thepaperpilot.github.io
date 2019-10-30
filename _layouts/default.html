@@ -35,10 +35,21 @@
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <div class="head">
+        <div class="breadcrumbs">
+            {% if page.title != "The Paper Pilot" %}
+                <h1><a href="/" style="color: #fff">The Paper Pilot</a></h1>
+            {% else %}
+                <h1>The Paper Pilot</h1>
+            {% endif %}
+        </div>
         {% if page.title != "The Paper Pilot" %}
-            <h5><a href="/" style="color: #fff">The Paper Pilot</a></h5>
+            <h1 class="page-title">{{ page.title }}</h1>
         {% endif %}
-        <h1 class="page-title">{{ page.title }}</h1>
+        <div class="sections">
+            {% for section in page.sections %}
+                <div onClick="document.getElementById('{{ section }}').scrollIntoView({ behavior: 'smooth' });">{{ section }}</div>
+            {% endfor %}
+        </div>
     </div>
 
     {% if page.links %}
@@ -59,6 +70,7 @@
                     {% if page.nocard %}
                         {{ page.content }}
                     {% else %}
+                        <div class="section">
                         <div class="card">
                             <div class="card-content">
                                 {% if page.embed %}
@@ -73,6 +85,7 @@
                                 {% endif %}
                             </div>
                         </div>
+                        </div>
                     {% endif %}
                 {% endif %}
             {% endfor %}
@@ -80,9 +93,11 @@
     {% elsif page.nocard %}
         {{ content }}
     {% else %}
-        <div class="card">
-            <div class="card-content">
-            {{ content }}
+        <div class="section">
+            <div class="card">
+                <div class="card-content">
+                {{ content }}
+                </div>
             </div>
         </div>
     {% endif %}

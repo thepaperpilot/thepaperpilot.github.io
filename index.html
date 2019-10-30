@@ -2,17 +2,24 @@
 layout: default
 title: The Paper Pilot
 nocard: true
+sections: [intro, about, featured, favorites]
 featured: [Dice Armor, Babble Buds]
 ---
+<div id="intro">
+    <div id="controls">Use <img class="inline" src="assets/home/arrowLeft.png" />, <img class="inline" src="assets/home/arrowUp.png" />, <img class="inline" src="assets/home/arrowRight.png" />, and <img class="inline" src="assets/home/deviceTilt.png" /> to control me!</div>
+    <div id="current_chat"></div>
+</div>
+
+<div class="section" id="about">
 <div class="card">
     <div class="card-content">
         <span class="card-title">Hello!</span>
-        <p>I'm Anthony Lawn, or "The Paper Pilot", and I develop free, open source programs and games in my spare time, using a variety of languages and engines. I'm currently working towards my B.S. in Computer Science, after which I plan to go on to earning a Masters degree in the same, with a focus on Data Science.</p>
-        <span class="card-title">Why are most of your projects free and open source?</span>
-        <p >I really liked playing free online games growing up, but most of those sites have died- Armor games peaked in 2010! I do not believe mobile games have the same effect since, as a kid playing a game on a phone, you can't just think "This is fun I want to make one of these" unless you also have a computer. I believe there needs to be a new generation of sites with free online games (like <a href="https://itch.io/">itch.io</a>!) to inspire the next generation of game developers and computer scientists. That's why I want to make free online games anyone can play, and see how they work. No credit cards or even admin privileges required. All free, and open source. Enjoy :)</p>
+        <p>I'm Anthony Lawn, or "The Paper Pilot", and I develop free, open source programs and games in my spare time, using a variety of languages and engines. I received my B.S. in Computer Science at the University of Texas at Dallas, and am still there as I pursue my M.S. in Computer Science, with a focus on Human Computer Interaction.</p>
     </div>
 </div>
+</div>
 
+<div class="section" id="featured">
 {% for project in page.featured %}
     {% assign post = site.posts | where:"title",project | first %}
     <div class="card" style="padding-bottom: calc(1rem + 40px);">
@@ -28,7 +35,9 @@ featured: [Dice Armor, Babble Buds]
         </div>
     </div>
 {% endfor %}
+</div>
 
+<div class="section" id="favorites">
 <div class="card">
     {% assign projects = site.posts | where:"featured","true" %}
     {% for project in projects %}
@@ -49,3 +58,7 @@ featured: [Dice Armor, Babble Buds]
         </div>
     {% endfor %}
 </div>
+</div>
+
+<script src="https://cdn.rawgit.com/thepaperpilot/babble.js/master/dist/babble.js"></script>
+<script src="js/home.js"></script>
