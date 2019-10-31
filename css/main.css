@@ -284,6 +284,18 @@ button.accordion:focus {
         padding: 10px;
     }
 
+    .head h1 {
+        font-size: 1.5em;
+    }
+
+    .page-title {
+        font-size: large;
+    }
+
+    .sections div {
+        font-size: medium;
+    }
+
     #current_chat {
         font-size: large;
     }
@@ -295,17 +307,11 @@ button.accordion:focus {
     #controls .inline {
         width: 1rem;
     }
+}
 
-    .head h1 {
-        font-size: 1.5em;
-    }
-
-    .page-title {
-        font-size: large;
-    }
-
-    .sections div {
-        font-size: medium;
+@media (pointer:coarse) {
+    #intro {
+        height: calc(100vh - 60px);
     }
 }
 

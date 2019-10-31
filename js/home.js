@@ -36,7 +36,7 @@ function startCutscene() {
     let add = cut.actions.add.bind(cut)
     cut.actions.add = function(callback, name, id, position) {
         add(callback, name, id, position)
-        stage.resize(null, Math.floor(stage.screen.clientWidth), Math.floor(stage.screen.clientHeight))
+        stage.resize()
     }
 
     cut.actions.chat = function(callback, target, chatId) {
