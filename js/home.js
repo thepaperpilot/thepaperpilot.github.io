@@ -17,9 +17,16 @@ let start = "delay 100;\n" +
 let stageElement = document.getElementById("intro")
 
 function loaded() {
-    stage.resize(null, stage.innerWidth, stage.innerHeight)
+    stage.resize()
+    // I want the puppet (who's height is 567) to be about 33% of the screen size
+    let puppetScale = stage.screen.clientHeight / 2.5 / 567 / stage.puppetStage.scale.y
+    stage.project.puppetScale = puppetScale
+    stage.resize()
     window.onresize = () => {
-        stage.resize(null, stage.innerWidth, stage.innerHeight)
+        stage.resize()
+        let puppetScale = stage.screen.clientHeight / 2.5 / 567 / stage.puppetStage.scale.y
+        stage.project.puppetScale = puppetScale
+        stage.resize()
     }
     startCutscene()
 }
@@ -29,7 +36,7 @@ function startCutscene() {
     let add = cut.actions.add.bind(cut)
     cut.actions.add = function(callback, name, id, position) {
         add(callback, name, id, position)
-        this.stage.resize()
+        stage.resize(null, Math.floor(stage.screen.clientWidth), Math.floor(stage.screen.clientHeight))
     }
 
     cut.actions.chat = function(callback, target, chatId) {

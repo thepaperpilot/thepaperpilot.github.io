@@ -56,6 +56,7 @@ body {
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
+    overflow-x: hidden;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -228,9 +229,15 @@ button.accordion:focus {
     background-color: #333c4a;    
 }
 
+#intro canvas {
+    pointer-events: none;
+}
+
 #current_chat {
     display: none;
-    width: 50%;
+    width: 95%;
+    max-width: 900px;
+    box-sizing: border-box;
     position: absolute;
     left: 50%;
     top: 50%;
@@ -270,6 +277,36 @@ button.accordion:focus {
 .section {
     margin-top: -150px;
     padding-top: 150px;
+}
+
+@media screen and (max-device-width: 480px) {
+    .head {
+        padding: 10px;
+    }
+
+    #current_chat {
+        font-size: large;
+    }
+
+    #controls {
+        font-size: 125%;
+    }
+
+    #controls .inline {
+        width: 1rem;
+    }
+
+    .head h1 {
+        font-size: 1.5em;
+    }
+
+    .page-title {
+        font-size: large;
+    }
+
+    .sections div {
+        font-size: medium;
+    }
 }
 
 .card .card-content .card-title {
