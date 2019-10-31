@@ -334,6 +334,10 @@ button.accordion:focus {
     #intro {
         height: calc(100vh - 60px);
     }
+
+    #controls {
+        display: none;
+    }
 }
 
 .card .card-content .card-title {
