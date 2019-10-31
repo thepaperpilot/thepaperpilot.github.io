@@ -21,12 +21,12 @@ function loaded() {
     // I want the puppet (who's height is 567) to be about 33% of the screen size
     let puppetScale = stage.screen.clientHeight / 2.5 / 567 / stage.puppetStage.scale.y
     stage.project.puppetScale = puppetScale
-    stage.resize()
+    stage.resize(null, stageElement.clientWidth, stageElement.clientHeight)
     window.onresize = () => {
         stage.resize()
-        let puppetScale = stage.screen.clientHeight / 2.5 / 567 / stage.puppetStage.scale.y
+        let puppetScale = stageElement.clientHeight / 2.5 / 567 / stage.puppetStage.scale.y
         stage.project.puppetScale = puppetScale
-        stage.resize()
+        stage.resize(null, stageElement.clientWidth, stageElement.clientHeight)
     }
     startCutscene()
 }
@@ -36,7 +36,7 @@ function startCutscene() {
     let add = cut.actions.add.bind(cut)
     cut.actions.add = function(callback, name, id, position) {
         add(callback, name, id, position)
-        stage.resize(null, Math.floor(stage.screen.clientWidth), Math.floor(stage.screen.clientHeight))
+        stage.resize(null, stageElement.clientWidth, stageElement.clientHeight)
     }
 
     cut.actions.chat = function(callback, target, chatId) {
@@ -97,3 +97,17 @@ function hideControls() {
 }
 
 hideControls()
+
+// First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+let vh = window.innerHeight * 0.01;
+
+// Then we set the value in the --vh custom property to the root of the document
+document.documentElement.style.setProperty('--vh', `${vh}px`);
+
+// We listen to the resize event
+window.addEventListener('resize', () => {
+
+    // We execute the same script as before
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+});
