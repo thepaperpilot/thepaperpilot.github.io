@@ -4,7 +4,6 @@ title: Tower Offense
 category: Game
 banner: toweroffense
 cards: [Tower Offense Embed, Tower Offense, Tower Offense Screenshot 1, Tower Offense Screenshot 2, Tower Offense Screenshot 3]
-featured: true
 links: ["Source Code|https://github.com/thepaperpilot/Tower-Offense", "Play Game|https://thepaperpilot.itch.io/tower-offense"]
 tags: [javascript, pixi.js, chillenium]
 ---

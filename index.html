@@ -3,10 +3,10 @@ layout: default
 title: The Paper Pilot
 nocard: true
 sections: [intro, about, featured, favorites]
-featured: [Dice Armor, Babble Buds]
+favorites: [NaN, Tower Offense, Slime Chargers!]
 ---
 <div id="intro">
-    <div id="controls">Use <img class="inline" src="assets/home/arrowLeft.png" />, <img class="inline" src="assets/home/arrowUp.png" />, <img class="inline" src="assets/home/arrowRight.png" />, and <img class="inline" src="assets/home/deviceTilt.png" /> to control me!</div>
+    <div id="controls">Use <img class="inline" src="assets/home/arrowLeft.png" />, <img class="inline" src="assets/home/arrowUp.png" />, <img class="inline" src="assets/home/arrowRight.png" />, <img class="inline" src="assets/home/deviceTilt.png" />, and <span style="color: white">1-7</span> to control me!</div>
     <div id="current_chat"></div>
 </div>
 
@@ -20,44 +20,57 @@ featured: [Dice Armor, Babble Buds]
 </div>
 
 <div class="section" id="featured">
-{% for project in page.featured %}
-    {% assign post = site.posts | where:"title",project | first %}
-    <div class="card" style="padding-bottom: calc(1rem + 40px);">
-        <div class="card-image">
-            <img src="/assets/banners/{{ post.banner }}.png">
-            <span class="card-title" style="font-weight: 500;">{{ project }}</span>
-        </div>
+    <h1>Featured Projects</h1>
+    <div class="card">
         <div class="card-content">
-            {{ post.content }}
-        </div>
-        <div class="card-action" style="position: absolute; bottom: 0; width: 100%;">
-            <a href="{{ post.url }}">read more</a>
+            <span class="card-title">I made Babble Buds!</span>
+            <div class="card-image">
+                <img src="/assets/babble-assets/screenshot.jpg">
+            </div>
+            <p>Babble Buds is a free, open source virtual puppet show engine I made for web and unity, as well as an accompanying electron-based puppet editor and multiplayer stage. Use it for enhancing your digital tabletop roleplaying game, creating silly videos, or even scripting cutscenes in a videogame!</p>
+            <div class="card-image">
+                <img src="/assets/babble-assets/babblemm screenshot.jpg">
+            </div>
+            <a href="/babble">read more</a>
         </div>
     </div>
-{% endfor %}
+    <div class="card">
+        <div class="card-content">
+            <span class="card-title">I was the lead programmer on Dice Armor!</span>
+            <div class="card-image">
+                <img src="/assets/dicearmor-assets/da2.jpg">
+            </div>
+            <p>I was the lead programmer on a team of nine creating this game in a semester long college course. I programmed all the gameplay systems as well as incorporated Babble Buds for the cutscenes and tutorial.</p>
+            <div class="card-image">
+                <img src="/assets/dicearmor-assets/editors.jpg">
+            </div>
+            <p>During the development of this game I discovered my passion for building tools for the game designers to be able to create content as quickly and easily as possible. I even designed a custom editor window that would run simulated matches between two AI opponents to help the game designers test and balance the dice and opponents.
+            <div class="card-image shrink">
+                <img src="/assets/dicearmor-assets/simulator.JPG">
+            </div>
+            <a href="/dicearmor">read more</a>
+        </div>
+    </div>
 </div>
 
 <div class="section" id="favorites">
-<div class="card">
-    {% assign projects = site.posts | where:"featured","true" %}
-    {% for project in projects %}
-        <div class="accordion">
-            {{ project.title }}
-
-            {% for tag in project.tags %}
-                <div class="chip"><a href="/tags/#{{ tag | slugify }}"> {{ tag }} </a></div>
-            {% endfor %}
-        </div>
-        <div class="panel">
-            <div class="card-image">
-                <img src="/assets/banners/{{ project.banner }}.png">
+<h1>Favorite Projects</h1>
+{% for project in page.favorites %}
+    {% for page in site.posts %}
+        {% if page.title == project %}
+            <div class="card">
+                <div class="card-content" markdown="1">
+                    <span class="card-title">{{ page.title }}</span>
+                    <div class="card-image">
+                        <img src="/assets/banners/{{ page.banner }}.png">
+                    </div>
+                    {{ page.content }}
+                    <a href="{{ page.url }}"> read more</a>
+                </div>
             </div>
-            <div class="card-content desc" markdown="1">
-                {{ project.content }} <a href="{{ project.url }}"> read more</a>
-            </div>
-        </div>
+        {% endif %}
     {% endfor %}
-</div>
+{% endfor %}
 </div>
 
 <script src="https://cdn.rawgit.com/thepaperpilot/babble.js/master/dist/babble.js"></script>

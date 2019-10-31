@@ -87,25 +87,3 @@ nocard: true
         <input class="indicator" name="indicator" type="radio" />
     </div>
 </div>
-
-<script type="text/javascript">
-    var carousel = document.getElementById('carousel');
-    let slides = carousel.querySelectorAll('.slide');
-    let indicators = carousel.querySelectorAll('.indicator');
-
-    function setSlide(slide) {
-        return function() {
-            // Reset all slides
-            for (let i = 0; i < indicators.length; i++) {
-                slides[i].classList.remove("active-slide");
-            }
-
-            // Set defined slide as active
-            slides[slide].classList.add("active-slide");
-        };
-    }
-
-    for (let i = 0; i < indicators.length; i++) {
-        indicators[i].addEventListener("click", setSlide(i));
-    }
-</script>

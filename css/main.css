@@ -195,13 +195,12 @@ button.accordion:focus {
 
 .head {
     color: white;
-    background-color: #333c4a;
     padding: 20px;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -209,6 +208,12 @@ button.accordion:focus {
 
 .head > * {
     flex-basis: 50%;
+}
+
+.head.head-background {
+    color: transparent;
+    background-color: #333c4a;
+    z-index: 1;
 }
 
 .sections {
@@ -226,7 +231,14 @@ button.accordion:focus {
 #intro {
     width: 100%;
     height: 100vh;
-    background-color: #333c4a;    
+    background-color: #333c4a;
+    z-index: 2;
+    position: absolute;
+    top: 0;
+}
+
+#intro + .section {
+    margin-top: calc(100vh - 150px);
 }
 
 #intro canvas {
@@ -244,9 +256,9 @@ button.accordion:focus {
     transform: translate(-50%, -50%);
     color: white;
     font-size: xx-large;
-    background: rgba(1, 1, 1, .2);
+    background-color: #242a33;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 2px;
 }
 
 #controls {
@@ -257,9 +269,9 @@ button.accordion:focus {
     transform: translate(-50%, -50%);
     color: grey;
     font-size: 250%;
-    background: rgba(1, 1, 1, .1);
+    background-color: #242a3388;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 2px;
     text-align: center;
     transition: opacity 1s ease;
 }
@@ -277,6 +289,15 @@ button.accordion:focus {
 .section {
     margin-top: -150px;
     padding-top: 150px;
+}
+
+.head + .section {
+    margin-top: 0;
+}
+
+.section h1 {
+    color: white;
+    text-align: center;
 }
 
 @media screen and (max-device-width: 480px) {
@@ -334,6 +355,10 @@ button.accordion:focus {
 
 .card .card-image {
     position: relative;
+}
+
+.card-content .card-image {
+    margin: 0 -20px 20px -20px;
 }
 
 .card .card-image img {
@@ -482,7 +507,6 @@ footer ul li {
 .card {
     background-color: #242a33;
     color: #fff;
-    box-shadow: 2px 2px 3px #222;
     position: relative;
     margin: 0.5rem 0 1rem 0;
     transition: box-shadow .25s;
@@ -516,6 +540,12 @@ footer ul li {
     border-radius: 20px;
     opacity: .75;
     background-color: #333c4a;
+}
+
+.card-content .card-image.shrink {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .card-content p img {
