@@ -274,6 +274,7 @@ button.accordion:focus {
     border-radius: 2px;
     text-align: center;
     transition: opacity 1s ease;
+    max-width: 95%;
 }
 
 #controls .inline {
@@ -298,6 +299,10 @@ button.accordion:focus {
 .section h1 {
     color: white;
     text-align: center;
+}
+
+.card-title a {
+    color: white;
 }
 
 @media screen and (max-device-width: 480px) {

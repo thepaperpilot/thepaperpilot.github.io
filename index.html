@@ -6,7 +6,7 @@ sections: [intro, about, featured, favorites]
 favorites: [NaN, Tower Offense, Slime Chargers!]
 ---
 <div id="intro">
-    <div id="controls">Use <img class="inline" src="assets/home/arrowLeft.png" />, <img class="inline" src="assets/home/arrowUp.png" />, <img class="inline" src="assets/home/arrowRight.png" />, <img class="inline" src="assets/home/deviceTilt.png" />, and <span style="color: white">1-7</span> to control me!</div>
+    <div id="controls">Use <img class="inline" src="assets/home/arrowLeft.png" />, <img class="inline" src="assets/home/arrowUp.png" />, <img class="inline" src="assets/home/arrowRight.png" />, <img class="inline" src="assets/home/deviceTilt.png" />, and <span style="color: white; white-space: nowrap;">1-7</span> to control me,<br/>or scroll down to see my other projects!</div>
     <div id="current_chat"></div>
 </div>
 
@@ -14,7 +14,7 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
 <div class="card">
     <div class="card-content">
         <span class="card-title">Hello!</span>
-        <p>I'm Anthony Lawn, or "The Paper Pilot", and I develop free, open source programs and games in my spare time, using a variety of languages and engines. I received my B.S. in Computer Science at the University of Texas at Dallas, and am still there as I pursue my M.S. in Computer Science, with a focus on Human Computer Interaction.</p>
+        <p>I'm Anthony Lawn, or "The Paper Pilot", and I develop free, open source programs and games in my spare time, using a variety of languages and engines. I received my B.S. in Computer Science at the University of Texas at Dallas, and am still there as I pursue my M.S. in Computer Science, with a focus on Computer Interaction.</p>
     </div>
 </div>
 </div>
@@ -23,30 +23,30 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
     <h1>Featured Projects</h1>
     <div class="card">
         <div class="card-content">
-            <span class="card-title">I made Babble Buds!</span>
+            <span class="card-title"><a href="/babble">I made Babble Buds!</a></span>
             <div class="card-image">
-                <img src="/assets/babble-assets/screenshot.jpg">
+                <a href="/babble"><img src="/assets/babble-assets/screenshot.jpg"></a>
             </div>
             <p>Babble Buds is a free, open source virtual puppet show engine I made for web and unity, as well as an accompanying electron-based puppet editor and multiplayer stage. Use it for enhancing your digital tabletop roleplaying game, creating silly videos, or even scripting cutscenes in a videogame!</p>
             <div class="card-image">
-                <img src="/assets/babble-assets/babblemm screenshot.jpg">
+                <a href="/babble"><img src="/assets/babble-assets/babblemm screenshot.jpg"></a>
             </div>
             <a href="/babble">read more</a>
         </div>
     </div>
     <div class="card">
         <div class="card-content">
-            <span class="card-title">I was the lead programmer on Dice Armor!</span>
+            <span class="card-title"><a href="/dicearmor">I was the lead programmer on Dice Armor!</a></span>
             <div class="card-image">
-                <img src="/assets/dicearmor-assets/da2.jpg">
+                <a href="/dicearmor"><img src="/assets/dicearmor-assets/da2.jpg"></a>
             </div>
             <p>I was the lead programmer on a team of nine creating this game in a semester long college course. I programmed all the gameplay systems as well as incorporated Babble Buds for the cutscenes and tutorial.</p>
             <div class="card-image">
-                <img src="/assets/dicearmor-assets/editors.jpg">
+                <a href="/dicearmor"><img src="/assets/dicearmor-assets/editors.jpg"></a>
             </div>
             <p>During the development of this game I discovered my passion for building tools for the game designers to be able to create content as quickly and easily as possible. I even designed a custom editor window that would run simulated matches between two AI opponents to help the game designers test and balance the dice and opponents.
             <div class="card-image shrink">
-                <img src="/assets/dicearmor-assets/simulator.JPG">
+                <a href="/dicearmor"><img src="/assets/dicearmor-assets/simulator.JPG"></a>
             </div>
             <a href="/dicearmor">read more</a>
         </div>
@@ -60,12 +60,11 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
         {% if page.title == project %}
             <div class="card">
                 <div class="card-content" markdown="1">
-                    <span class="card-title">{{ page.title }}</span>
+                    <span class="card-title"><a href="{{ page.url }}">{{ page.title }}</a></span>
                     <div class="card-image">
-                        <img src="/assets/banners/{{ page.banner }}.png">
+                        <a href="{{ page.url }}"><img src="/assets/banners/{{ page.banner }}.png"></a>
                     </div>
                     {{ page.content }}
-                    <a href="{{ page.url }}"> read more</a>
                 </div>
             </div>
         {% endif %}
