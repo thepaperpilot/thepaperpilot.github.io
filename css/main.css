@@ -220,7 +220,7 @@ button.accordion:focus {
     text-align: right;
 }
 
-.sections div {
+.sections div, .sections a {
     display: inline;
     cursor: pointer;
     font-size: large;
