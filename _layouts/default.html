@@ -73,6 +73,13 @@
             {% for section in page.sections %}
                 <div onClick="document.getElementById('{{ section }}').scrollIntoView({ behavior: 'smooth' });">{{ section }}</div>
             {% endfor %}
+
+            {% if page.links %}
+                {% for link in page.links %}
+                    {% assign split = link | split: "|" %}
+                    <a href="{{ split[1] }}">{{ split[0] }}</a>
+                {% endfor %}
+            {% endif %}
         </div>
     </div>
 
