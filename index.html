@@ -21,49 +21,68 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
 
 <div class="section" id="featured">
     <h1>Featured Projects</h1>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-title"><a href="/babble">I made Babble Buds!</a></span>
-            <div class="card-image">
-                <a href="/babble"><img src="/assets/babble-assets/screenshot.jpg"></a>
+    <div class="two-section">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <a href="/babble"><img src="/assets/babble-assets/screenshot.jpg"></a>
+                </div>
+                <span class="card-title"><a href="/babble">I made Babble Buds!</a></span>
+                <p>Babble Buds is a free, open source virtual puppet show engine I made for web and unity, as well as an accompanying electron-based puppet editor and multiplayer stage. Use it for enhancing your digital tabletop roleplaying game, creating silly videos, or even scripting cutscenes in a videogame!</p>
+                <a href="/babble">read more</a>
             </div>
-            <p>Babble Buds is a free, open source virtual puppet show engine I made for web and unity, as well as an accompanying electron-based puppet editor and multiplayer stage. Use it for enhancing your digital tabletop roleplaying game, creating silly videos, or even scripting cutscenes in a videogame!</p>
-            <a href="/babble">read more</a>
         </div>
-    </div>
-    <div class="card">
-        <div class="card-content">
-            <span class="card-title"><a href="/dicearmor">I was the lead programmer on Dice Armor!</a></span>
-            <div class="card-image">
-                <a href="/dicearmor"><img src="/assets/dicearmor-assets/da2.jpg"></a>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <a href="/dicearmor"><img src="/assets/dicearmor-assets/editors.jpg"></a>
+                </div>
+                <span class="card-title"><a href="/dicearmor">I was the lead programmer on Dice Armor!</a></span>
+                <p>I was the lead programmer on a team of nine creating this game in a semester long college course. I programmed all the gameplay systems as well as incorporated Babble Buds for the cutscenes and tutorial.</p>
+                <a href="/dicearmor">read more</a>
             </div>
-            <p>I was the lead programmer on a team of nine creating this game in a semester long college course. I programmed all the gameplay systems as well as incorporated Babble Buds for the cutscenes and tutorial.</p>
-            <p>During the development of this game I discovered my passion for building tools for the game designers to be able to create content as quickly and easily as possible. I even designed a custom editor window that would run simulated matches between two AI opponents to help the game designers test and balance the dice and opponents.</p>
-            <div class="card-image">
-                <a href="/dicearmor"><img src="/assets/dicearmor-assets/editors.jpg"></a>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <video src="" controls>
+                </div>
+                <span class="card-title">I'm a Computer Scientist!</span>
+                <p>I know many advanced topics of computer science, and have experience implementing complex systems including the Boids flocking algorithm, Inverse Kinematics, and many more!</p>
+                <p>Additionally I know many different programming languages and can pick up new tools and technologies quickly and thoroughly!</p>
             </div>
-            <a href="/dicearmor">read more</a>
+        </div>
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <img src="https://i.imgur.com/hIQB5g1.png">
+                </div>
+                <span class="card-title">I've worked with VR!</span>
+                <p>This is a screenshot from a prototype of a VR project I made with Grant Barbee. It involves manipulating cards in a rougelike dungeon crawler in VR, taking advantage of the medium with meta-abilities like throwing a card at an enemy to deal ranged damage and remove the card from your deck!</p>
+            </div>
         </div>
     </div>
 </div>
 
 <div class="section" id="favorites">
-<h1>Favorite Projects</h1>
-{% for project in page.favorites %}
+    <h1>Favorite Projects</h1>
+    <div class="three-section">
+    {% for project in page.favorites %}
     {% for page in site.posts %}
-        {% if page.title == project %}
-            <div class="card">
-                <div class="card-content" markdown="1">
-                    <span class="card-title"><a href="{{ page.url }}">{{ page.title }}</a></span>
-                    <div class="card-image">
-                        <a href="{{ page.url }}"><img src="/assets/banners/{{ page.banner }}.png"></a>
-                    </div>
-                    {{ page.content }}
+    {% if page.title == project %}
+        <div class="card">
+            <div class="card-content" markdown="1">
+                <div class="card-image">
+                    <a href="{{ page.url }}"><img src="/assets/banners/{{ page.banner }}.png"></a>
                 </div>
+                <span class="card-title"><a href="{{ page.url }}">{{ page.title }}</a></span>
+                {{ page.content }}
             </div>
-        {% endif %}
+        </div>
+    {% endif %}
     {% endfor %}
-{% endfor %}
+    {% endfor %}
+    </div>
 </div>
 
 <script src="https://cdn.rawgit.com/thepaperpilot/babble.js/master/dist/babble.js"></script>
