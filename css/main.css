@@ -256,12 +256,16 @@ button.accordion:focus {
 }
 
 #controls {
-    transform: translateY(-100%);
+    transform: translateY(-200%);
     color: grey;
     font-size: 175%;
     background-color: #242a3388;
     padding: 20px;
+}
+
+#controls.show {
     transition: transform 1s ease;
+    transform: translateY(0);
 }
 
 #controls p {
@@ -270,6 +274,29 @@ button.accordion:focus {
 
 #controls .inline {
     width: 2rem;
+}
+
+#babble {
+    position: absolute;
+    z-index: 3;
+    transition: opacity .5s ease;    
+    font-size: xx-large;
+    color: white;
+}
+
+#babble.hidden {
+    opacity: 0;
+}
+
+#babble div {
+    animation: babble-anim 3s infinite both;
+}
+
+@keyframes babble-anim {
+    0% { opacity: 0; }
+    25% { opacity: 1; }
+    80% { opacity: 0; }
+    100% { opacity: 0; }
 }
 
 .page-title {

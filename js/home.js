@@ -64,8 +64,14 @@ window.onkeydown = function(e) {
     current_chat.style.display = 'none'
 
     if (key == 32) {
-        stage.getPuppet(1).setBabbling(true)
         e.preventDefault()
+        if (stage.getPuppet(1).babbling) return
+        stage.getPuppet(1).setBabbling(true)
+        var temp = babbleEl
+        babbleEl = babbleEl.cloneNode(true)
+        temp.parentNode.replaceChild(babbleEl, temp)
+        babbleEl.className = ''
+        interval = requestAnimationFrame(showBabble)
     }
 }
 window.onkeyup = function(e) {
@@ -78,11 +84,26 @@ window.onkeyup = function(e) {
     else if (key == 39) stage.getPuppet(1).moveRight()
     else if (key == 32) {
         stage.getPuppet(1).setBabbling(false)
+        babbleEl.className = 'hidden'
+        cancelAnimationFrame(interval)
         e.preventDefault()
     }
 }
 
 function showControls() {
-    controls.style.transform = 'translateY(0)'
+    controls.className = 'show'
 }
 setTimeout(showControls, 4000)
+
+var interval = null
+var babbleEl = document.getElementById("babble")
+function showBabble() {
+    var puppet = stage.getPuppet(1)
+    var x = puppet.container.x + 150
+    var y = puppet.container.y - 400
+    if (puppet.facingLeft)
+        x -= 450
+    babbleEl.style.top = y + "px"
+    babbleEl.style.left = x + "px"
+    interval = requestAnimationFrame(showBabble)
+}
