@@ -31,24 +31,7 @@ html {
     font-family: "Roboto", sans-serif;
     font-weight:normal;
     line-height:1.5;
-}
-
-@media only screen and (min-width: 0) {
- html {
-  font-size:14px
- }
-}
-
-@media only screen and (min-width: 992px) {
- html {
-  font-size:14.5px
- }
-}
-
-@media only screen and (min-width: 1200px) {
- html {
-  font-size:15px
- }
+    font-size: 21px;
 }
 
 body {
@@ -382,7 +365,7 @@ button.accordion:focus {
 }
 
 .card .card-title {
-    font-size: 24px;
+    font-size: 27px;
     font-weight: 300;
 }
 
