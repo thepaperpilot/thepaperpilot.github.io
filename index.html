@@ -2,19 +2,25 @@
 layout: default
 title: The Paper Pilot
 nocard: true
-sections: [intro, about, featured, favorites]
+sections: [puppet, featured, favorites]
 favorites: [NaN, Tower Offense, Slime Chargers!]
 ---
-<div id="intro">
-    <div id="controls">Use <img class="inline" src="assets/home/arrowLeft.png" />, <img class="inline" src="assets/home/arrowUp.png" />, <img class="inline" src="assets/home/arrowRight.png" />, <img class="inline" src="assets/home/deviceTilt.png" />, and <span style="color: white; white-space: nowrap;">1-7</span> to control me,<br/>or scroll down to see my other projects!</div>
+<div id="puppet">
     <div id="current_chat"></div>
 </div>
 
-<div class="section" id="about">
+<div id="controls">
+    <p>Use <img class="inline" src="assets/home/arrowLeft.png" /> and <img class="inline" src="assets/home/arrowRight.png" /> to change direction and move</p>
+    <p>Use <img class="inline" src="assets/home/arrowUp.png" /> to bob up and down</p>
+    <p>Use <span style="color: white;">Space</span> to "babble"</p>
+    <p>Use <span style="color: white; white-space: nowrap;">1-7</span> to change my expression</p>
+</div>
+
+<div class="section">
 <div class="card">
     <div class="card-content">
         <span class="card-title">Hello!</span>
-        <p>I'm Anthony Lawn, or "The Paper Pilot", and I develop free, open source programs and games in my spare time, using a variety of languages and engines. I received my B.S. in Computer Science at the University of Texas at Dallas, and am still there as I pursue my M.S. in Computer Science, with a focus on Computer Interaction.</p>
+        <p>I'm Anthony "The Paper Pilot" Lawn, and I develop programs and games using a variety of languages and engines. I received my B.S. in Computer Science at the University of Texas at Dallas, and am studying there towards my M.S. as well, with a focus on Computer Interaction.</p>
     </div>
 </div>
 </div>
@@ -27,8 +33,8 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
                 <div class="card-image">
                     <a href="/babble"><img src="/assets/babble-assets/screenshot.jpg"></a>
                 </div>
-                <span class="card-title"><a href="/babble">I made Babble Buds!</a></span>
-                <p>Babble Buds is a free, open source virtual puppet show engine I made for web and unity, as well as an accompanying electron-based puppet editor and multiplayer stage. Use it for enhancing your digital tabletop roleplaying game, creating silly videos, or even scripting cutscenes in a videogame!</p>
+                <span class="card-title"><a href="/babble">I made Babble Buds!</a><span class="language">JS</span><span class="language">C#</span></span>
+                <p>Babble Buds is a free, open source virtual puppet show engine I made for various platforms including HTLM5 and Unity, as well as an accompanying electron-based puppet editor and multiplayer stage</p>
                 <a href="/babble">read more</a>
             </div>
         </div>
@@ -37,7 +43,7 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
                 <div class="card-image">
                     <a href="/dicearmor"><img src="/assets/dicearmor-assets/editors.jpg"></a>
                 </div>
-                <span class="card-title"><a href="/dicearmor">I was the lead programmer on Dice Armor!</a></span>
+                <span class="card-title"><a href="/dicearmor">I was the lead programmer on Dice Armor!</a><span class="language">C#</span></span>
                 <p>I was the lead programmer on a team of nine creating this game in a semester long college course. I programmed all the gameplay systems as well as incorporated Babble Buds for the cutscenes and tutorial.</p>
                 <a href="/dicearmor">read more</a>
             </div>
@@ -47,9 +53,8 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
                 <div class="card-image">
                     <video src="Boids.mp4" controls>
                 </div>
-                <span class="card-title">I'm a Computer Scientist!</span>
-                <p>I know many advanced topics of computer science, and have experience implementing complex systems including the Boids flocking algorithm, Inverse Kinematics, and many more!</p>
-                <p>Additionally I know many different programming languages and can pick up new tools and technologies quickly and thoroughly!</p>
+                <span class="card-title">I'm a Computer Scientist!<span class="language">C#</span><span class="language">C++</span></span>
+                <p>I know many advanced topics of computer science, and have experience implementing complex systems including the Boids flocking algorithm and Inverse Kinematics.</p>
             </div>
         </div>
         <div class="card">
@@ -57,8 +62,8 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
                 <div class="card-image">
                     <img src="vr.png">
                 </div>
-                <span class="card-title">I've worked with VR!</span>
-                <p>This is a screenshot from a prototype of a VR project I made with Grant Barbee. It involves manipulating cards in a rougelike dungeon crawler in VR, taking advantage of the medium with meta-abilities like throwing a card at an enemy to deal ranged damage and remove the card from your deck!</p>
+                <span class="card-title">I've worked with VR!<span class="language">C#</span></span>
+                <p>I'm one of two developers on a game prototype for a VR game with roguelike deckbuilding mechanics, similar to Slay the Spire.</p>
             </div>
         </div>
     </div>
@@ -75,7 +80,7 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
                 <div class="card-image">
                     <a href="{{ page.url }}"><img src="/assets/banners/{{ page.banner }}.png"></a>
                 </div>
-                <span class="card-title"><a href="{{ page.url }}">{{ page.title }}</a></span>
+                <span class="card-title"><a href="{{ page.url }}">{{ page.title }}</a>{% for language in page.languages %}<span class="language">{{ language }}</span>{% endfor %}</span>
                 {{ page.content }}
             </div>
         </div>

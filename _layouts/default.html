@@ -34,30 +34,6 @@
 
 <body>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <div class="head head-background">
-        <div class="breadcrumbs">
-            {% if page.title != "The Paper Pilot" %}
-                <h1><a href="/" style="color: #fff">The Paper Pilot</a></h1>
-            {% else %}
-                <h1>The Paper Pilot</h1>
-            {% endif %}
-        </div>
-        {% if page.title != "The Paper Pilot" %}
-            <h1 class="page-title">{{ page.title }}</h1>
-        {% endif %}
-        <div class="sections">
-            {% for section in page.sections %}
-                <div onClick="document.getElementById('{{ section }}').scrollIntoView({ behavior: 'smooth' });">{{ section }}</div>
-            {% endfor %}
-
-            {% if page.links %}
-                {% for link in page.links %}
-                    {% assign split = link | split: "|" %}
-                    <a href="{{ split[1] }}">{{ split[0] }}</a>
-                {% endfor %}
-            {% endif %}
-        </div>
-    </div>
     <div class="head">
         <div class="breadcrumbs">
             {% if page.title != "The Paper Pilot" %}

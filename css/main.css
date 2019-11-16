@@ -177,6 +177,7 @@ button.accordion:focus {
 
 .head {
     color: white;
+    background-color: #333c4a;
     padding: 20px;
     position: fixed;
     top: 0;
@@ -192,12 +193,6 @@ button.accordion:focus {
     flex-basis: 50%;
 }
 
-.head.head-background {
-    color: transparent;
-    background-color: #333c4a;
-    z-index: 1;
-}
-
 .sections {
     text-align: right;
 }
@@ -210,32 +205,38 @@ button.accordion:focus {
     color: white;
 }
 
-#intro {
-    width: 100%;
-    height: 100vh;
-    background-color: #333c4a;
-    z-index: 2;
-    position: absolute;
-    top: 0;
+.language {
+    font-size: medium;
+    margin-left: 10px;
+    color: grey;
 }
 
-#intro + .section {
+#puppet {
+    width: 100%;
+    height: 50vh;
+    background-color: #333c4a;
+    z-index: 2;
+    position: relative;
+    overflow: hidden;
+}
+
+#puppet + .section {
     margin-top: calc(100vh - 150px);
 }
 
-#intro canvas {
+#puppet canvas {
     pointer-events: none;
 }
 
 #current_chat {
     display: none;
-    width: 95%;
+    width: 25%;
     max-width: 900px;
     box-sizing: border-box;
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    left: calc(70% + 100px);
+    bottom: 18%;
+    transform: translateX(-50%);
     color: white;
     font-size: xx-large;
     background-color: #242a33;
@@ -243,20 +244,28 @@ button.accordion:focus {
     border-radius: 2px;
 }
 
-#controls {
-    opacity: 0;
+#current_chat::before {
+    width: 0;
+    height: 0;
+    border-top: 30px solid transparent;
+    border-right: 30px solid #242a33;
+    content: "";
     position: absolute;
-    left: 50%;
-    top: 25%;
-    transform: translate(-50%, -50%);
+    bottom: 15px;
+    right: 99%;
+}
+
+#controls {
+    transform: translateY(-100%);
     color: grey;
     font-size: 175%;
     background-color: #242a3388;
     padding: 20px;
-    border-radius: 2px;
-    text-align: center;
-    transition: opacity 1s ease;
-    max-width: 95%;
+    transition: transform 1s ease;
+}
+
+#controls p {
+    margin: 0;
 }
 
 #controls .inline {
@@ -312,7 +321,14 @@ button.accordion:focus {
     }
 }
 
-@media screen and (max-device-width: 480px) {
+@media screen and (max-width: 900px) {
+    #current_chat {
+        font-size: large;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 520px) {
     .head {
         padding: 10px;
     }
@@ -329,24 +345,33 @@ button.accordion:focus {
         font-size: medium;
     }
 
+    #puppet {
+        overflow: unset;
+        margin-bottom: 20vh;
+    }
+
     #current_chat {
-        font-size: large;
+        transform: none;
+        width: 80%;
+        max-width: unset;
+        top: 105%;
+        left: 10%;
+        bottom: unset;
+        font-size: x-large;
     }
 
-    #controls {
-        font-size: 125%;
-    }
-
-    #controls .inline {
-        width: 1rem;
+    #current_chat::before {
+        border: none;
+        border-right: 30px solid transparent;
+        border-bottom: 30px solid #242a33;
+        bottom: 100%;
+        right: 10%;
+        top: unset;
+        left: unset;
     }
 }
 
 @media (pointer:coarse) {
-    #intro {
-        height: calc(100vh - 60px);
-    }
-
     #controls {
         display: none;
     }
