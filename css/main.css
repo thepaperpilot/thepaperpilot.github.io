@@ -497,7 +497,7 @@ a.btn, a.btn-flat, input.btn, input.btn-flat {
     height: 100% !important;
 }
 
-body > .collapsible, body > .collection, body .card, body .slider, body > .container {
+body > .collapsible, body > .collection, body .card, body .slider, body > .section > .collection {
     width: 95% !important;
     max-width:940px !important;
     margin:auto !important;

@@ -1,7 +1,7 @@
 ---
 layout: default
 nocard: true
-title: Tags
+title: All Projects
 ---
 {% assign rawtags = "" %}
 {% for post in site.posts %}
@@ -22,6 +22,7 @@ title: Tags
 	{% endif %}
 {% endfor %}
 
+<div class="section">
 {% for tag in tags %}
     <ul class="collection with-header">
         <li id="{{ tag | slugify }}" class="collection-header">{{ tag }}</li>
@@ -34,3 +35,4 @@ title: Tags
         {% endfor %}
     </ul>
 {% endfor %}
+</div>

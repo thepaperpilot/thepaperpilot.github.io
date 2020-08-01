@@ -5,46 +5,69 @@ let controls = document.getElementById("controls")
 let stage = new babble.Stage("puppet", {
   "numCharacters": 3,
   "puppetScale": 1.5
-}, {
-    "94370077":{"name":"brow_excited","location":"eyebrows/94370077.png"},"-1478408941":{"name":"brow_normal","location":"eyebrows/-1478408941.png"},"-1370165314":{"name":"brow_confused","location":"eyebrows/-1370165314.png"},"-894109551":{"name":"brow_sad","location":"eyebrows/-894109551.png"},"-1624236206":{"name":"brow_angry","location":"eyebrows/-1624236206.png"},"-679379193":{"name":"eyes_normal","location":"eyes/-679379193.png"},"256135152":{"name":"mouth_teeth","location":"mouths/256135152.png"},"1802568030":{"name":"mouth_ooo","location":"mouths/1802568030.png"},"-1156489428":{"name":"mouth_normal","location":"mouths/-1156489428.png"},"-2006318913":{"name":"mouth_open","location":"mouths/-2006318913.png"},"-1834200705":{"name":"mouth_sad","location":"mouths/-1834200705.png"},"1879914476":{"name":"body","location":"shirts/1879914476.png"},"-925878550":{"name":"head","location":"skin/-925878550.png"},"-1259854622":{"name":"glasses_normal","location":"glasses/-1259854622.png"},"208380174":{"name":"kobold","location":"hats/208380174.png"},"354769791":{"name":"seachef","location":"hats/354769791.png"},"478565665":{"name":"tophat","location":"hats/478565665.png"},"-479894397":{"name":"elf","location":"hats/-479894397.png"},"-1611255066":{"name":"petalwalker","location":"hats/-1611255066.png"},"-5576877":{"name":"porc","location":"hats/-5576877.png"},"-1485571036":{"name":"wizard","location":"hats/-1485571036.png"}
-}, "assets/blackhat-assets/assets", loaded);
-let gravy = {"deadbonesStyle":false,"body":[{"tab":"shirts","id":"1879914476","x":1.5,"y":-54,"rotation":0,"scaleX":1,"scaleY":1}],"head":[{"tab":"skin","id":"-925878550","x":1,"y":-210.5,"rotation":0,"scaleX":1,"scaleY":1},{"tab":"hats","id":"478565665","x":-6,"y":-305,"rotation":0,"scaleX":1,"scaleY":1}],"hat":[],"mouths":["2","3","4","5"],"eyes":["0","1","5","6"],"emotes":[{"name":"default","enabled":true,"mouth":[{"tab":"mouths","id":"-1156489428","x":-15.5,"y":-125,"rotation":0,"scaleX":1,"scaleY":1}],"eyes":[{"tab":"eyes","id":"-679379193","x":-7,"y":-187.5,"rotation":0,"scaleX":1,"scaleY":1},{"tab":"eyebrows","id":"-1478408941","x":-6.5,"y":-210,"rotation":0,"scaleX":1,"scaleY":1}]},{"name":"happy","enabled":true,"mouth":[{"tab":"mouths","id":"-1156489428","x":-16,"y":-125.5,"rotation":0,"scaleX":1,"scaleY":1}],"eyes":[{"tab":"eyes","id":"-679379193","x":-7,"y":-187.5,"rotation":0,"scaleX":1,"scaleY":1},{"tab":"eyebrows","id":"94370077","x":-10.5,"y":-225,"rotation":0,"scaleX":1,"scaleY":1}]},{"name":"confused","enabled":true,"mouth":[{"tab":"mouths","id":"256135152","x":-6,"y":-126.5,"rotation":0,"scaleX":1,"scaleY":1}],"eyes":[{"tab":"eyes","id":"-679379193","x":-7,"y":-187.5,"rotation":0,"scaleX":1,"scaleY":1},{"tab":"eyebrows","id":"-1370165314","x":-9,"y":-212.5,"rotation":0,"scaleX":1,"scaleY":1}]},{"name":"gasp","enabled":true,"mouth":[{"tab":"mouths","id":"-2006318913","x":-5.5,"y":-123.5,"rotation":0,"scaleX":1,"scaleY":1}],"eyes":[{"tab":"eyebrows","id":"94370077","x":-10.5,"y":-225,"rotation":0,"scaleX":1,"scaleY":1},{"tab":"eyes","id":"-679379193","x":-7,"y":-187.5,"rotation":0,"scaleX":1,"scaleY":1}]},{"name":"ooo","enabled":true,"mouth":[{"tab":"mouths","id":"1802568030","x":-2,"y":-122.5,"rotation":0,"scaleX":1,"scaleY":1}],"eyes":[{"tab":"eyebrows","id":"94370077","x":-9.5,"y":-220,"rotation":0,"scaleX":1,"scaleY":1},{"tab":"eyes","id":"-679379193","x":-7,"y":-187.5,"rotation":0,"scaleX":1,"scaleY":1}]},{"name":"sad","enabled":true,"mouth":[{"tab":"mouths","id":"-1834200705","x":-14.5,"y":-125.5,"rotation":0,"scaleX":1,"scaleY":1}],"eyes":[{"tab":"eyes","id":"-679379193","x":-7,"y":-187.75,"rotation":0,"scaleX":1,"scaleY":1},{"tab":"eyebrows","id":"-894109551","x":-7.5,"y":-211.5,"rotation":0,"scaleX":1,"scaleY":1}]},{"name":"angry","enabled":true,"mouth":[{"tab":"mouths","id":"256135152","x":-12,"y":-128.5,"rotation":0,"scaleX":1,"scaleY":1}],"eyes":[{"tab":"eyes","id":"-679379193","x":-7,"y":-187.5,"rotation":0,"scaleX":1,"scaleY":1},{"tab":"eyebrows","id":"-1624236206","x":-7,"y":-207,"rotation":0,"scaleX":1,"scaleY":1}]},{"name":"wink","enabled":false,"mouth":[],"eyes":[]},{"name":"kiss","enabled":false,"mouth":[],"eyes":[]}],"props":[],"name":"Gravy","id":1,"position":0,"facingLeft":false,"emote":"0"}
-let start = "delay 500;\n" +
-"add gravy 1 0;\n" +
-"move 1 2;\n" +
-"chat 1 0;"
+},
+{"47027bbc-eed0-47a9-84cb-578c34fc8c46:28":{"name":"talking_mouth","type":"sprite","tab":"mouths","location":"47027bbc-eed0-47a9-84cb-578c34fc8c46/28.png","thumbnail":null,"version":1,"panning":[]},"47027bbc-eed0-47a9-84cb-578c34fc8c46:29":{"name":"talking2_mouth","type":"sprite","tab":"mouths","location":"47027bbc-eed0-47a9-84cb-578c34fc8c46/29.png","thumbnail":null,"version":1,"panning":[]},"47027bbc-eed0-47a9-84cb-578c34fc8c46:23":{"name":"funny_eyes","type":"sprite","tab":"eyes","location":"47027bbc-eed0-47a9-84cb-578c34fc8c46/23.png","thumbnail":null,"version":1,"panning":[]},"47027bbc-eed0-47a9-84cb-578c34fc8c46:25":{"name":"happy_mouth","type":"sprite","tab":"mouths","location":"47027bbc-eed0-47a9-84cb-578c34fc8c46/25.png","thumbnail":null,"version":1,"panning":[]},"47027bbc-eed0-47a9-84cb-578c34fc8c46:22":{"name":"body","type":"sprite","tab":"body","location":"47027bbc-eed0-47a9-84cb-578c34fc8c46/22.png","thumbnail":null,"version":1,"panning":[]},"47027bbc-eed0-47a9-84cb-578c34fc8c46:24":{"name":"funny_mouth","type":"sprite","tab":"mouths","location":"47027bbc-eed0-47a9-84cb-578c34fc8c46/24.png","thumbnail":null,"version":1,"panning":[]},"47027bbc-eed0-47a9-84cb-578c34fc8c46:26":{"name":"meh_mouth","type":"sprite","tab":"mouths","location":"47027bbc-eed0-47a9-84cb-578c34fc8c46/26.png","thumbnail":null,"version":1,"panning":[]},"47027bbc-eed0-47a9-84cb-578c34fc8c46:27":{"name":"normal_eyes","type":"sprite","tab":"eyes","location":"47027bbc-eed0-47a9-84cb-578c34fc8c46/27.png","thumbnail":null,"version":1,"panning":[]},"47027bbc-eed0-47a9-84cb-578c34fc8c46:30":{"name":"uwu_eyes","type":"sprite","tab":"eyes","location":"47027bbc-eed0-47a9-84cb-578c34fc8c46/30.png","thumbnail":null,"version":1,"panning":[]},"47027bbc-eed0-47a9-84cb-578c34fc8c46:31":{"name":"uwu_mouth","type":"sprite","tab":"mouths","location":"47027bbc-eed0-47a9-84cb-578c34fc8c46/31.png","thumbnail":null,"version":1,"panning":[]}},
+"assets/puppet", loaded);
+
+let pajer = {"deadbonesStyle":false,"name":"Pajer","layers":{"children":[{"name":"body","children":[{"name":"body","rotation":0,"scaleX":1,"scaleY":1,"x":0,"y":-330,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:22","leaf":true,"inherit":{},"path":[0,0]}],"inherit":{},"path":[0],"scaleX":-0.5,"scaleY":0.5},{"name":"head","children":[],"head":true,"inherit":{},"path":[1]},{"name":"emotes","head":true,"children":[{"name":"uwu","rotation":0,"scaleX":1,"scaleY":1,"x":0,"y":0,"children":[{"name":"uwu_eyes","rotation":0,"scaleX":1,"scaleY":1,"x":-44.494040351079754,"y":-432.10076571738944,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:30","leaf":true,"inherit":{"head":true,"emote":3},"path":[2,0,0]},{"name":"uwu_mouth","rotation":0,"scaleX":1,"scaleY":1,"x":-41.694941376469345,"y":-315.00512527951986,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:31","leaf":true,"inherit":{"head":true,"emote":3},"path":[2,0,1]}],"inherit":{"head":true},"path":[2,0],"emote":3},{"name":"funny","rotation":0,"scaleX":1,"scaleY":1,"x":0,"y":0,"children":[{"name":"funny_eyes","rotation":0,"scaleX":1,"scaleY":1,"x":-45.89358983838499,"y":-461.0247884550305,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:23","leaf":true,"inherit":{"head":true,"emote":2},"path":[2,1,0]},{"name":"funny_mouth","rotation":0,"scaleX":1,"scaleY":1,"x":-36.096743427248484,"y":-394.31292956014863,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:24","leaf":true,"inherit":{"head":true,"emote":2},"path":[2,1,1]}],"inherit":{"head":true},"path":[2,1],"collapsed":true,"emote":2},{"name":"excited","rotation":0,"scaleX":1,"scaleY":1,"x":0,"y":0,"children":[{"name":"normal_eyes","rotation":0,"scaleX":1,"scaleY":1,"x":-44.64999549436159,"y":-438.1792449911571,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:27","leaf":true,"inherit":{"head":true,"emote":5},"path":[2,2,0],"emoteLayer":"eyes"},{"name":"talking2_mouth","rotation":0,"scaleX":1,"scaleY":1,"x":-44,"y":-316,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:29","leaf":true,"inherit":{"head":true,"emote":5},"path":[2,2,1],"emoteLayer":"mouth"}],"inherit":{"head":true},"path":[2,2],"collapsed":true,"emote":5},{"name":"very happy","rotation":0,"scaleX":1,"scaleY":1,"x":0,"y":0,"children":[{"name":"normal_eyes","rotation":0,"scaleX":1,"scaleY":1,"x":-44.64999549436159,"y":-438.1792449911571,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:27","leaf":true,"inherit":{"head":true,"emote":4},"path":[2,3,0],"emoteLayer":"eyes"},{"name":"talking_mouth","rotation":0,"scaleX":1,"scaleY":1,"x":-44.02752385531136,"y":-316.4046747668251,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:28","leaf":true,"inherit":{"head":true,"emote":4},"path":[2,3,1],"emoteLayer":"mouth"}],"inherit":{"head":true},"path":[2,3],"collapsed":true,"emote":4},{"name":"meh","rotation":0,"scaleX":1,"scaleY":1,"x":0,"y":0,"emote":1,"children":[{"name":"normal_eyes","rotation":0,"scaleX":1,"scaleY":1,"x":-44.64999549436159,"y":-438.1792449911571,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:27","leaf":true,"inherit":{"head":true,"emote":1},"path":[2,4,0],"emoteLayer":"eyes"},{"name":"meh_mouth","rotation":0,"scaleX":1,"scaleY":1,"x":-44.02752385531135,"y":-315.0051252795199,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:26","leaf":true,"inherit":{"head":true,"emote":1},"path":[2,4,1],"emoteLayer":"mouth"}],"inherit":{"head":true},"path":[2,4],"collapsed":true},{"name":"happy","emote":0,"children":[{"name":"normal_eyes","rotation":0,"scaleX":1,"scaleY":1,"x":-44.64999549436159,"y":-438.1792449911571,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:27","leaf":true,"inherit":{"head":true,"emote":0},"path":[2,5,0],"emoteLayer":"eyes"},{"name":"happy_mouth","rotation":0,"scaleX":1,"scaleY":1,"x":-48.02867537861667,"y":-316.1511667631519,"id":"47027bbc-eed0-47a9-84cb-578c34fc8c46:25","leaf":true,"inherit":{"head":true,"emote":0},"path":[2,5,1],"emoteLayer":"mouth"}],"inherit":{"head":true},"path":[2,5],"collapsed":true}],"inherit":{},"path":[2],"scaleX":-0.5,"scaleY":0.5},{"name":"hat","children":[],"head":true,"inherit":{},"path":[3]},{"name":"props","children":[],"inherit":{},"path":[4]}]},"id":1,"emote":0,"creator":"47027bbc-eed0-47a9-84cb-578c34fc8c46","creatorNick":"Trisha Vinisto","oc":"47027bbc-eed0-47a9-84cb-578c34fc8c46","ocNick":"Trisha Vinisto"}
+let start = [
+    {
+        "command": "delay",
+        "delay": 500,
+        "wait": true
+    },
+    {
+        "command": "add",
+        "name": "pajer",
+        "id": "pajer",
+        "position": 0,
+        "facingLeft": false,
+        "emote": "0"
+    },
+    {
+        "command": "move",
+        "target": "pajer",
+        "position": 2,
+        "wait": true
+    },
+    {
+        "command": "chat",
+        "target": "pajer",
+        "chatId": "0"
+    }
+]
 
 let stageElement = document.getElementById("puppet")
 
 function loaded() {
     stage.resize()
     let puppetScale = stage.screen.clientHeight / 567 / stage.puppetStage.scale.y
-    stage.project.puppetScale = puppetScale
+    stage.environment.puppetScale = puppetScale
     stage.resize()
     window.onresize = () => {
         stage.resize()
         let puppetScale = stage.screen.clientHeight / 567 / stage.puppetStage.scale.y
-        stage.project.puppetScale = puppetScale
+        stage.environment.puppetScale = puppetScale
         stage.resize()
     }
     startCutscene()
 }
 
 function startCutscene() {
-    let cut = new babble.Cutscene(stage, start, {"gravy": gravy})
+    let cut = new babble.Cutscene(stage, start, {"pajer": pajer})
     let add = cut.actions.add.bind(cut)
-    cut.actions.add = function(callback, name, id, position) {
-        add(callback, name, id, position)
+    cut.actions.add = function(callback, action) {
+        add(callback, action)
         stage.resize()
     }
 
-    cut.actions.chat = function(callback, target, chatId) {
+    cut.actions.chat = function(callback, action) {
         let chats = [{
             message: "I'm Anthony, or The Paper Pilot, and I make fun games and tools using code!"
         }]
         current_chat.style.display = 'block'
-        this.stage.getPuppet(target).setBabbling(true)
-        chatter(callback, target, chats[chatId], this.stage, 0)
+        this.stage.getPuppet(action.target).setBabbling(true)
+        chatter(callback, action.target, chats[action.chatId], this.stage, 0)
     }
     cut.start()
 }
@@ -65,8 +88,8 @@ window.onkeydown = function(e) {
 
     if (key == 32) {
         e.preventDefault()
-        if (stage.getPuppet(1).babbling) return
-        stage.getPuppet(1).setBabbling(true)
+        if (stage.getPuppet("pajer").babbling) return
+        stage.getPuppet("pajer").setBabbling(true)
         var temp = babbleEl
         babbleEl = babbleEl.cloneNode(true)
         temp.parentNode.replaceChild(babbleEl, temp)
@@ -77,13 +100,27 @@ window.onkeydown = function(e) {
 window.onkeyup = function(e) {
     let key = e.keyCode ? e.keyCode : e.which
 
-    if (key > 48 && key < 58)
-        stage.getPuppet(1).changeEmote(key - 49)
-    else if (key == 37) stage.getPuppet(1).moveLeft()
-    else if (key == 38) stage.getPuppet(1).jiggle()
-    else if (key == 39) stage.getPuppet(1).moveRight()
-    else if (key == 32) {
-        stage.getPuppet(1).setBabbling(false)
+    if (key > 48 && key < 55)
+        stage.getPuppet("pajer").changeEmote(key - 49)
+    else if (key == 37) {
+        let puppet = stage.getPuppet("pajer")
+        if (puppet.facingLeft || puppet.position === stage.environment.numCharacters + 1)
+            puppet.target--
+        puppet.facingLeft = true
+        if (puppet.movingAnim === 0)
+            puppet.container.scale.x = -stage.environment.puppetScale
+        stage.dirty = true
+    } else if (key == 38) stage.getPuppet("pajer").jiggle()
+    else if (key == 39) {
+        let puppet = stage.getPuppet("pajer")
+        if (!puppet.facingLeft || puppet.position === 0)
+            puppet.target++
+        puppet.facingLeft = false
+        if (puppet.movingAnim === 0)
+            puppet.container.scale.x = stage.environment.puppetScale
+        stage.dirty = true
+    } else if (key == 32) {
+        stage.getPuppet("pajer").setBabbling(false)
         babbleEl.className = 'hidden'
         cancelAnimationFrame(interval)
         e.preventDefault()
@@ -98,7 +135,7 @@ setTimeout(showControls, 4000)
 var interval = null
 var babbleEl = document.getElementById("babble")
 function showBabble() {
-    var puppet = stage.getPuppet(1)
+    var puppet = stage.getPuppet("pajer")
     var x = puppet.container.x + 150
     var y = puppet.container.y - 400
     if (puppet.facingLeft)

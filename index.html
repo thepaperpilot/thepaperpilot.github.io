@@ -18,27 +18,37 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
     <p>Tap <img class="inline" src="assets/home/arrowLeft.png" /> and <img class="inline" src="assets/home/arrowRight.png" /> to change direction and move</p>
     <p>Tap <img class="inline" src="assets/home/arrowUp.png" /> to bob up and down</p>
     <p>Hold <span style="color: white;">Space</span> to "babble"</p>
-    <p>Tap <span style="color: white; white-space: nowrap;">1-7</span> to change my expression</p>
+    <p>Tap <span style="color: white; white-space: nowrap;">1-6</span> to change my expression</p>
 </div>
 
 <div class="section">
 <div class="card">
     <div class="card-content">
         <span class="card-title">Hello!</span>
-        <p>I'm Anthony "The Paper Pilot" Lawn, and I develop programs and games using a variety of languages and engines. I received my B.S. in Computer Science at the University of Texas at Dallas, and am studying there towards my M.S. as well, with a focus on Computer Interaction.</p>
+        <p>I'm Anthony "The Paper Pilot" Lawn, and I develop programs and games using a variety of languages and engines. I received my B.S. and M.S. in Computer Science at the University of Texas at Dallas, with a focus on Computer Interaction.</p>
     </div>
 </div>
 </div>
 
 <div class="section" id="featured">
     <h1>Featured Projects</h1>
-    <div class="two-section">
+    <div class="three-section">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <a href="/vecs"><img src="/assets/vecs-assets/screenshot.png"></a>
+                </div>
+                <span class="card-title"><a href="/vecs">V-ecs!</a><span class="language">C++</span><span class="language">lua</span></span>
+                <p>V-ecs (pronounced "Vex") is a vulkan-based engine I made for making highly moddable games and tools in lua, centered around the ECS design pattern and a work-stealing job system.</p>
+                <a href="/vecs">read more</a>
+            </div>
+        </div>
         <div class="card">
             <div class="card-content">
                 <div class="card-image">
                     <a href="/babble"><img src="/assets/babble-assets/screenshot.jpg"></a>
                 </div>
-                <span class="card-title"><a href="/babble">I made Babble Buds!</a><span class="language">JS</span><span class="language">C#</span></span>
+                <span class="card-title"><a href="/babble">Babble Buds!</a><span class="language">JS</span><span class="language">C#</span></span>
                 <p>Babble Buds is a free, open source virtual puppet show engine I made for various platforms including HTLM5 and Unity, as well as an accompanying electron-based puppet editor and multiplayer stage</p>
                 <a href="/babble">read more</a>
             </div>
@@ -48,11 +58,12 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
                 <div class="card-image">
                     <a href="/dicearmor"><img src="/assets/dicearmor-assets/editors.jpg"></a>
                 </div>
-                <span class="card-title"><a href="/dicearmor">I was the lead programmer on Dice Armor!</a><span class="language">C#</span></span>
+                <span class="card-title"><a href="/dicearmor">Dice Armor!</a><span class="language">C#</span></span>
                 <p>I was the lead programmer on a team of nine creating this game in a semester long college course. I programmed all the gameplay systems as well as incorporated Babble Buds for the cutscenes and tutorial.</p>
                 <a href="/dicearmor">read more</a>
             </div>
         </div>
+        {% comment %}
         <div class="card">
             <div class="card-content">
                 <div class="card-image">
@@ -71,6 +82,7 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
                 <p>I'm one of two developers on a game prototype for a VR game with roguelike deckbuilding mechanics, similar to Slay the Spire.</p>
             </div>
         </div>
+        {% endcomment %}
     </div>
 </div>
 
@@ -95,5 +107,5 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
     </div>
 </div>
 
-<script src="https://cdn.rawgit.com/thepaperpilot/babble.js/master/dist/babble.js"></script>
+<script src="js/babble.js"></script>
 <script src="js/home.js"></script>
