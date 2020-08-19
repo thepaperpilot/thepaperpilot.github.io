@@ -2,7 +2,7 @@
 layout: default
 title: The Paper Pilot
 nocard: true
-sections: [puppet, featured, favorites]
+sections: [puppet, featured projects]
 favorites: [NaN, Tower Offense, Slime Chargers!]
 ---
 <div id="puppet">
@@ -30,7 +30,7 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
 </div>
 </div>
 
-<div class="section" id="featured">
+<div class="section" id="featured projects">
     <h1>Featured Projects</h1>
     <div class="three-section">
         <div class="card">
@@ -84,10 +84,6 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
         </div>
         {% endcomment %}
     </div>
-</div>
-
-<div class="section" id="favorites">
-    <h1>Favorite Game Jam Games</h1>
     <div class="three-section">
     {% for project in page.favorites %}
     {% for page in site.posts %}
@@ -98,7 +94,8 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
                     <a href="{{ page.url }}"><img src="/assets/banners/{{ page.banner }}.png"></a>
                 </div>
                 <span class="card-title"><a href="{{ page.url }}">{{ page.title }}</a>{% for language in page.languages %}<span class="language">{{ language }}</span>{% endfor %}</span>
-                {{ page.content }}
+                <p>{{ page.content }}</p>
+                <a href="{{ page.url }}">read more</a>
             </div>
         </div>
     {% endif %}
