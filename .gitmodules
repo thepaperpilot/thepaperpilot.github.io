@@ -4,3 +4,7 @@
 [submodule "assets/slime-assets/Slime-Chargers"]
 	path = assets/slime-assets/Slime-Chargers
 	url = https://github.com/thepaperpilot/Slime-Chargers
+[submodule "gamedevtree"]
+	path = gamedevtree
+	url = https://github.com/thepaperpilot/The-Modding-Tree.git
+	branch = gamedevtree
