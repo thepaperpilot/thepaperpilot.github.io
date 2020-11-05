@@ -320,7 +320,8 @@ button.accordion:focus {
 }
 
 .two-section,
-.three-section {
+.three-section,
+.four-section {
     display: flex;
     flex-flow: wrap;
 }
@@ -333,6 +334,10 @@ button.accordion:focus {
     width: calc(33% - 40px) !important;
 }
 
+.four-section .card {
+    width: calc(25% - 40px) !important;
+}
+
 .card-title a {
     color: white;
 }
@@ -343,7 +348,8 @@ button.accordion:focus {
 
 @media screen and (max-width: 1200px) {
     .two-section .card,
-    .three-section .card {
+    .three-section .card,
+    .four-section .card {
         width: 95% !important;
     }
 }

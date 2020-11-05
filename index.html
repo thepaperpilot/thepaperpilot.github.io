@@ -3,7 +3,7 @@ layout: default
 title: The Paper Pilot
 nocard: true
 sections: [puppet, featured projects]
-favorites: [NaN, Tower Offense, Slime Chargers!]
+favorites: [NaN, Tower Offense, Slime Chargers!, The Modding Tree]
 ---
 <div id="puppet">
     <div id="current_chat"></div>
@@ -32,7 +32,17 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
 
 <div class="section" id="featured projects">
     <h1>Featured Projects</h1>
-    <div class="three-section">
+    <div class="four-section">
+        <div class="card">
+            <div class="card-content">
+                <div class="card-image">
+                    <a href="/optispeech"><img src="/assets/optispeech-assets/new-interface.png"></a>
+                </div>
+                <span class="card-title"><a href="/optispeech">OptiSpeech!</a><span class="language">C#</span></span>
+                <p>I led a team updating a legacy Unity project for research on speech therapy to use a modern version with a focus on extensability to facilitate future maintenance and features.</p>
+                <a href="/optispeech">read more</a>
+            </div>
+        </div>
         <div class="card">
             <div class="card-content">
                 <div class="card-image">
@@ -56,7 +66,7 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
         <div class="card">
             <div class="card-content">
                 <div class="card-image">
-                    <a href="/dicearmor"><img src="/assets/dicearmor-assets/editors.jpg"></a>
+                    <a href="/dicearmor"><img src="/assets/dicearmor-assets/da2.jpg"></a>
                 </div>
                 <span class="card-title"><a href="/dicearmor">Dice Armor!</a><span class="language">C#</span></span>
                 <p>I was the lead programmer on a team of nine creating this game in a semester long college course. I programmed all the gameplay systems as well as incorporated Babble Buds for the cutscenes and tutorial.</p>
@@ -84,7 +94,7 @@ favorites: [NaN, Tower Offense, Slime Chargers!]
         </div>
         {% endcomment %}
     </div>
-    <div class="three-section">
+    <div class="four-section">
     {% for project in page.favorites %}
     {% for page in site.posts %}
     {% if page.title == project %}
