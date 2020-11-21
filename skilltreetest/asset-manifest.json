@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/skilltreetest/static/css/main.e720c86e.chunk.css",
-    "main.js": "/skilltreetest/static/js/main.ff5e1520.chunk.js",
-    "main.js.map": "/skilltreetest/static/js/main.ff5e1520.chunk.js.map",
-    "runtime-main.js": "/skilltreetest/static/js/runtime-main.292a2610.js",
-    "runtime-main.js.map": "/skilltreetest/static/js/runtime-main.292a2610.js.map",
-    "static/js/2.307647ff.chunk.js": "/skilltreetest/static/js/2.307647ff.chunk.js",
-    "static/js/2.307647ff.chunk.js.map": "/skilltreetest/static/js/2.307647ff.chunk.js.map",
-    "static/js/3.31096446.chunk.js": "/skilltreetest/static/js/3.31096446.chunk.js",
-    "static/js/3.31096446.chunk.js.map": "/skilltreetest/static/js/3.31096446.chunk.js.map",
+    "main.css": "/skilltreetest/static/css/main.a3da64f4.chunk.css",
+    "main.js": "/skilltreetest/static/js/main.1eb94fec.chunk.js",
+    "main.js.map": "/skilltreetest/static/js/main.1eb94fec.chunk.js.map",
+    "runtime-main.js": "/skilltreetest/static/js/runtime-main.3a446403.js",
+    "runtime-main.js.map": "/skilltreetest/static/js/runtime-main.3a446403.js.map",
+    "static/js/2.ec28d3dc.chunk.js": "/skilltreetest/static/js/2.ec28d3dc.chunk.js",
+    "static/js/2.ec28d3dc.chunk.js.map": "/skilltreetest/static/js/2.ec28d3dc.chunk.js.map",
+    "static/js/3.fd51bca7.chunk.js": "/skilltreetest/static/js/3.fd51bca7.chunk.js",
+    "static/js/3.fd51bca7.chunk.js.map": "/skilltreetest/static/js/3.fd51bca7.chunk.js.map",
     "index.html": "/skilltreetest/index.html",
-    "static/css/main.e720c86e.chunk.css.map": "/skilltreetest/static/css/main.e720c86e.chunk.css.map",
-    "static/js/2.307647ff.chunk.js.LICENSE.txt": "/skilltreetest/static/js/2.307647ff.chunk.js.LICENSE.txt",
+    "static/css/main.a3da64f4.chunk.css.map": "/skilltreetest/static/css/main.a3da64f4.chunk.css.map",
+    "static/js/2.ec28d3dc.chunk.js.LICENSE.txt": "/skilltreetest/static/js/2.ec28d3dc.chunk.js.LICENSE.txt",
     "static/media/addon_01.c0fb4483.png": "/skilltreetest/static/media/addon_01.c0fb4483.png",
     "static/media/addon_02.1820823d.png": "/skilltreetest/static/media/addon_02.1820823d.png",
     "static/media/addon_03.957f9cec.png": "/skilltreetest/static/media/addon_03.957f9cec.png",
@@ -268,9 +268,9 @@
     "static/media/yellow_47.4dfe7e69.png": "/skilltreetest/static/media/yellow_47.4dfe7e69.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.292a2610.js",
-    "static/js/2.307647ff.chunk.js",
-    "static/css/main.e720c86e.chunk.css",
-    "static/js/main.ff5e1520.chunk.js"
+    "static/js/runtime-main.3a446403.js",
+    "static/js/2.ec28d3dc.chunk.js",
+    "static/css/main.a3da64f4.chunk.css",
+    "static/js/main.1eb94fec.chunk.js"
   ]
 }
