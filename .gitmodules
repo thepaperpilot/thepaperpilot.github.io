@@ -8,3 +8,7 @@
 	path = gamedevtree
 	url = https://github.com/thepaperpilot/The-Modding-Tree.git
 	branch = gamedevtree
+[submodule "kronos"]
+	path = kronos
+	url = https://github.com/thepaperpilot/The-Modding-Tree.git
+	branch = kronos
