@@ -12,3 +12,7 @@
 	path = kronos
 	url = https://github.com/thepaperpilot/The-Modding-Tree.git
 	branch = kronos
+[submodule "lit"]
+	path = lit
+	url = https://github.com/thepaperpilot/The-Modding-Tree.git
+	branch = lit
