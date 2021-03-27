@@ -16,3 +16,6 @@
 	path = lit
 	url = https://github.com/thepaperpilot/The-Modding-Tree.git
 	branch = lit
+[submodule "the_ascension_tree"]
+	path = the_ascension_tree
+	url = https://github.com/thepaperpilot/the_ascension_tree
