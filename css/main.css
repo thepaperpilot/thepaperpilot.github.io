@@ -279,7 +279,7 @@ button.accordion:focus {
 #babble {
     position: absolute;
     z-index: 3;
-    transition: opacity .5s ease;    
+    transition: opacity .5s ease;
     font-size: xx-large;
     color: white;
 }
@@ -312,6 +312,10 @@ button.accordion:focus {
 
 .head + .section {
     margin-top: 0;
+}
+
+.head + .card {
+    margin-top: 150px !important;
 }
 
 .section h1 {
