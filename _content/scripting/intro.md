@@ -1,5 +1,0 @@
----
-layout: default
-title: Scripting for Games Intro
----
-These games were each made over a couple of weeks as part of a college course called Scripting for Games. They were each intended to test our proficiency at a couple parts of Unity programming. Unfortunately the projects often, just through poor timing, coincided with projects and exams from other courses, but I did my best to innovate each time. I was a bit too ambitious with the final project, Start, where I had intended to use procedural generation to create music to the correct tempo for the player to take their actions to. Instead I had to remove that feature and replace it with some music I'm not super happy with. Additionally, needing to do everything - not just the programming but also making the enemies, particle effects, levels, etc. means these projects aren't the _best_ examples of what I can do in Unity, but should illustrate a decent level of competency. For a better example where I got to just focus on the programming and had time to add things like scriptable objects with custom editor scripts, check out [Dice Armor](/dicearmor). 

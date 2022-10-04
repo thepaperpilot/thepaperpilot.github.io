@@ -1,25 +1,22 @@
-[submodule "assets/toweroffense-assets/Tower-Offense"]
-	path = assets/toweroffense-assets/Tower-Offense
-	url = https://github.com/thepaperpilot/Tower-Offense
-[submodule "assets/slime-assets/Slime-Chargers"]
-	path = assets/slime-assets/Slime-Chargers
-	url = https://github.com/thepaperpilot/Slime-Chargers
 [submodule "gamedevtree"]
-	path = gamedevtree
+	path = site/public/gamedevtree
 	url = https://github.com/thepaperpilot/The-Modding-Tree.git
 	branch = gamedevtree
 [submodule "kronos"]
-	path = kronos
+	path = site/public/kronos
 	url = https://github.com/thepaperpilot/The-Modding-Tree.git
 	branch = kronos
 [submodule "lit"]
-	path = lit
+	path = site/public/lit
 	url = https://github.com/thepaperpilot/The-Modding-Tree.git
 	branch = lit
 [submodule "the_ascension_tree"]
-	path = the_ascension_tree
+	path = site/public/the_ascension_tree
 	url = https://github.com/thepaperpilot/the_ascension_tree
 [submodule "guide-to-incrementals"]
-	path = Guide-to-Incrementals
+	path = site/guide-to-incrementals
 	url = https://github.com/thepaperpilot/Guide-to-Incrementals
+[submodule "dream"]
+	path = site/public/dream
+	url = https://github.com/thepaperpilot/Dream-Hero
 	branch = gh-pages

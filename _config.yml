@@ -1,8 +1,0 @@
-name: The Paper Pilot
-markdown: kramdown
-kramdown:
-  input: GFM
-  parse_block_html: true
-permalink: /:title/
-collections:
-    content:

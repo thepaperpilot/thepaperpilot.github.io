@@ -1,0 +1,19 @@
+{
+  "name": "thepaperpilot",
+  "version": "1.0.0",
+  "description": "The Paper Pilot Portfolio",
+  "scripts": {
+    "serve": "vitepress serve site",
+    "dev": "vitepress dev site",
+    "build": "vitepress build site"
+  },
+  "repository": "git+https://github.com/thepaperpilot/thepaperpilot.github.io.git",
+  "author": "thepaperpilot",
+  "license": "ISC",
+  "homepage": "https://thepaperpilot.org/thepaperpilot.github.io",
+  "dependencies": {
+    "vitepress": "^1.0.0-alpha.19",
+    "vue": "^3.2.40"
+  },
+  "private": true
+}
