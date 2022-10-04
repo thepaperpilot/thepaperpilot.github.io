@@ -19,3 +19,7 @@
 [submodule "the_ascension_tree"]
 	path = the_ascension_tree
 	url = https://github.com/thepaperpilot/the_ascension_tree
+[submodule "guide-to-incrementals"]
+	path = Guide-to-Incrementals
+	url = https://github.com/thepaperpilot/Guide-to-Incrementals
+	branch = gh-pages
