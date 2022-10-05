@@ -17,7 +17,7 @@ Dice Armor is a dice dueling game. Players can use abilities, flip dice, and att
 
 For many of the objects I've created, I've made scriptable objects so that game designers can add and modify them easily. Additionally, I would create custom inspectors for the objects to help make them as easy to understand and edit as possible. The opponent's artificial intelligence is made up of many strategies, in a prioritized list. When it is the opponents' turn they go through each strategy and check if they can be run, and if so then the opponent performs the strategy and starts back over at the top of the list of strategies. The + sign under the list of strategies opens an organized dropdown of all the various strategies.
 
-![Simulator](./simulator.JPG)
+![Simulator](./simulator.jpg)
 
 In addition to custom inspector code, I've created new tools for the editor for our game designers to use. This is a duel simulator that will take two opponents and simulate an arbitrary number of duels between them, and output the results and summarize them for you, much much quicker than manually going through the duels, even with an absurdly high timeScale. This will become incredibly useful in making balance changes and testing new dice against existing sets. This is a screenshot of it in edit mode, but in play mode it removes the "Dueling Managers" field and will use whatever the current duel balance settings are, allowing for the GDs to test freely in play mode without worrying about undoing all their changes afterward.
 
