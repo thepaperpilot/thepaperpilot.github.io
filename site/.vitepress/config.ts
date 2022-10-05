@@ -40,11 +40,11 @@ module.exports = {
         {
           text: "Play Now",
           items: [
-            { text: "Kronos", link: "/kronos/" },
-            { text: "Game Dev Tree", link: "/gamedevtree/" },
-            { text: "Lit", link: "/lit/" },
-            { text: "The Ascension Tree", link: "/the_ascension_tree/" },
-            { text: "Dream Hero", link: "/dream/" },
+            { text: "Kronos", link: "https://thepaperpilot.org/kronos/" },
+            { text: "Game Dev Tree", link: "https://thepaperpilot.org/gamedevtree/" },
+            { text: "Lit", link: "https://thepaperpilot.org/lit/" },
+            { text: "The Ascension Tree", link: "https://thepaperpilot.org/the_ascension_tree/" },
+            { text: "Dream Hero", link: "https://thepaperpilot.org/dream/" },
             { text: "My Itch Page", link: "https://thepaperpilot.itch.io/" }
           ]
         },
