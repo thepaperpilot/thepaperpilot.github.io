@@ -1,0 +1,7 @@
+:root {
+  --vp-font-family-mono: Roboto Mono, monospace;
+}
+
+.main .name .clip {
+  font-family: Pacifico, cursive;
+}
