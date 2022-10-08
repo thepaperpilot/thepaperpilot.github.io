@@ -1,1 +1,0 @@
-import{_ as t,c as e,o as n}from"./app.9bfeb8de.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"guide-to-incrementals/ludology/content.md","lastUpdated":null}'),o={name:"guide-to-incrementals/ludology/content.md"};function a(c,r,s,d,l,i){return n(),e("div")}const m=t(o,[["render",a]]);export{_ as __pageData,m as default};
