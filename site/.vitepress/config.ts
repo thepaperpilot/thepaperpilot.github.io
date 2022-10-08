@@ -34,6 +34,12 @@ module.exports = {
             { text: "Appeal to Developers", link: "/guide-to-incrementals/ludology/appeal-developers" },
             { text: "What is Content?", link: "/guide-to-incrementals/ludology/content" }
           ]
+        },
+        {
+          text: "Development",
+          collapsible: true,
+          items: [
+          ]
         }
       ],
       "projects": [
