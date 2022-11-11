@@ -12,7 +12,7 @@
   "license": "ISC",
   "homepage": "https://thepaperpilot.org/thepaperpilot.github.io",
   "dependencies": {
-    "vitepress": "^1.0.0-alpha.19",
+    "vitepress": "^1.0.0-alpha.28",
     "vue": "^3.2.40"
   },
   "private": true

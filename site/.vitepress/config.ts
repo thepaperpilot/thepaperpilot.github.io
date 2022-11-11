@@ -30,7 +30,7 @@ module.exports = {
           collapsible: true,
           items: [
             { text: "Defining the Genre", link: "/guide-to-incrementals/ludology/definition" },
-            { text: "Appeal to Players", link: "/guide-to-incrementals/ludology/appeal-games" },
+            { text: "Appeal to Players", link: "/guide-to-incrementals/ludology/appeal-gamers" },
             { text: "Appeal to Developers", link: "/guide-to-incrementals/ludology/appeal-developers" },
             { text: "What is Content?", link: "/guide-to-incrementals/ludology/content" }
           ]
@@ -39,6 +39,7 @@ module.exports = {
           text: "Development",
           collapsible: true,
           items: [
+            { text: "Introduction", link: "/guide-to-incrementals/design/introduction"}
           ]
         }
       ],
