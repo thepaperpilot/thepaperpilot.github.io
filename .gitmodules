@@ -20,3 +20,7 @@
 	path = site/public/dream
 	url = https://github.com/thepaperpilot/Dream-Hero
 	branch = gh-pages
+[submodule "Advent-Incremental.git"]
+	path = site/public/advent
+	url = https://github.com/thepaperpilot/Advent-Incremental.git
+	branch = gh-pages
