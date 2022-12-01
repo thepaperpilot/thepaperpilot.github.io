@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,d as e}from"./app.dfaf5358.js";const u=JSON.parse('{"title":"Bars","description":"","frontmatter":{},"headers":[],"relativePath":"public/lit/docs/bars.md","lastUpdated":null}'),t={name:"public/lit/docs/bars.md"},o=e("",6),l=[o];function p(r,i,c,y,d,F){return n(),a("div",null,l)}const b=s(t,[["render",p]]);export{u as __pageData,b as default};
