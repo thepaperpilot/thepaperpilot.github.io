@@ -1,1 +1,0 @@
-import{_ as s,c as a,o as n,d as e}from"./app.f001dff6.js";const u=JSON.parse('{"title":"Grids","description":"","frontmatter":{},"headers":[],"relativePath":"public/kronos/docs/grids.md","lastUpdated":null}'),l={name:"public/kronos/docs/grids.md"},o=e("",10),t=[o];function p(r,i,c,d,y,F){return n(),a("div",null,t)}const g=s(l,[["render",p]]);export{u as __pageData,g as default};

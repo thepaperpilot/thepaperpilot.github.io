@@ -1,0 +1,1 @@
+import{_ as e,c as o,o as t,d as r}from"./app.99998402.js";const m=JSON.parse('{"title":"Kronos","description":"","frontmatter":{},"headers":[],"relativePath":"public/kronos/README.md","lastUpdated":null}'),a={name:"public/kronos/README.md"},s=r("",4),d=[s];function i(n,c,l,_,p,h){return t(),o("div",null,d)}const f=e(a,[["render",i]]);export{m as __pageData,f as default};
