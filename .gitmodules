@@ -24,3 +24,7 @@
 	path = site/public/advent
 	url = https://github.com/thepaperpilot/Advent-Incremental.git
 	branch = gh-pages
+[submodule "ludwig"]
+	path = site/public/ludwig
+	url = https://github.com/thepaperpilot/Super-Auto-Coots.git
+	branch = gh-pages
