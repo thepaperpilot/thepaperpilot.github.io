@@ -28,3 +28,7 @@
 	path = site/public/ludwig
 	url = https://github.com/thepaperpilot/Super-Auto-Coots.git
 	branch = gh-pages
+[submodule "site/public/planar"]
+	path = site/public/planar
+	url = https://github.com/thepaperpilot/planar-pioneers
+	branch = gh-pages
