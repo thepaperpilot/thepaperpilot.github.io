@@ -50,6 +50,7 @@ module.exports = {
         {
           text: "Play Now",
           items: [
+            { text: "Planar Pioneers", link: "https://thepaperpilot.org/planar" },
             { text: "Advent Incremental", link: "https://thepaperpilot.org/advent" },
             { text: "Kronos", link: "https://thepaperpilot.org/kronos/" },
             { text: "Game Dev Tree", link: "https://thepaperpilot.org/gamedevtree/" },
