@@ -42,7 +42,7 @@ module.exports = {
           text: "Development",
           collapsible: true,
           items: [
-            { text: "Introduction", link: "/guide-to-incrementals/design/introduction"}
+            { text: "Handling Criticism", link: "/guide-to-incrementals/design/criticism"}
           ]
         }
       ],
