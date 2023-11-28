@@ -50,14 +50,14 @@ module.exports = {
         {
           text: "Play Now",
           items: [
-            { text: "Planar Pioneers", link: "https://thepaperpilot.org/planar" },
-            { text: "Advent Incremental", link: "https://thepaperpilot.org/advent" },
-            { text: "Kronos", link: "https://thepaperpilot.org/kronos/" },
-            { text: "Game Dev Tree", link: "https://thepaperpilot.org/gamedevtree/" },
-            { text: "Lit", link: "https://thepaperpilot.org/lit/" },
-            { text: "The Ascension Tree", link: "https://thepaperpilot.org/the_ascension_tree/" },
-            { text: "Dream Hero", link: "https://thepaperpilot.org/dream/" },
-            { text: "My Itch Page", link: "https://thepaperpilot.itch.io/" }
+            { text: "Planar Pioneers", link: "https://www.thepaperpilot.org/planar" },
+            { text: "Advent Incremental", link: "https://www.thepaperpilot.org/advent" },
+            { text: "Kronos", link: "https://www.thepaperpilot.org/kronos/" },
+            { text: "Game Dev Tree", link: "https://www.thepaperpilot.org/gamedevtree/" },
+            { text: "Lit", link: "https://www.thepaperpilot.org/lit/" },
+            { text: "The Ascension Tree", link: "https://www.thepaperpilot.org/the_ascension_tree/" },
+            { text: "Dream Hero", link: "https://www.thepaperpilot.org/dream/" },
+            { text: "My Itch Page", link: "https://www.thepaperpilot.itch.io/" }
           ]
         },
         {

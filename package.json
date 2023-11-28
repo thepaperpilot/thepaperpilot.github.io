@@ -10,7 +10,7 @@
   "repository": "git+https://github.com/thepaperpilot/thepaperpilot.github.io.git",
   "author": "thepaperpilot",
   "license": "ISC",
-  "homepage": "https://thepaperpilot.org/thepaperpilot.github.io",
+  "homepage": "https://www.thepaperpilot.org/thepaperpilot.github.io",
   "dependencies": {
     "vitepress": "^1.0.0-rc.22",
     "vue": "^3.3.4"

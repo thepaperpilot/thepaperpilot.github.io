@@ -4,7 +4,7 @@ lastUpdated: false
 ---
 # Games!
 
-I make games regularly! Check them out in the sidebar or on my [itch.io](https://thepaperpilot.itch.io/) page.
+I make games regularly! Check them out in the sidebar or on my [itch.io](https://www.thepaperpilot.itch.io/) page.
 
 # Profectus!
 
