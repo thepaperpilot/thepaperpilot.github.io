@@ -48,28 +48,21 @@ module.exports = {
       ],
       "projects": [
         {
-          text: "Play Now",
+          text: "Games",
           items: [
             { text: "Planar Pioneers", link: "https://www.thepaperpilot.org/planar" },
             { text: "Advent Incremental", link: "https://www.thepaperpilot.org/advent" },
-            { text: "Kronos", link: "https://www.thepaperpilot.org/kronos/" },
             { text: "Game Dev Tree", link: "https://www.thepaperpilot.org/gamedevtree/" },
-            { text: "Lit", link: "https://www.thepaperpilot.org/lit/" },
-            { text: "The Ascension Tree", link: "https://www.thepaperpilot.org/the_ascension_tree/" },
-            { text: "Dream Hero", link: "https://www.thepaperpilot.org/dream/" },
-            { text: "My Itch Page", link: "https://www.thepaperpilot.itch.io/" }
-          ]
-        },
-        {
-          text: "Downloads",
-          items: [
             { text: "Dice Armor", link: "/projects/dice/" },
             { text: "Capture the Citadel", link: "/projects/citadel/"}
+            { text: "More on Itch", link: "https://www.thepaperpilot.itch.io/" }
           ]
         },
         {
           text: "Non-Games",
           items: [
+            { text: "Profectus", link: "https://moddingtree.com" },
+            { text: "Incremental Social", link: "https://incremental.social" },
             { text: "V-ecs", link: "/projects/vecs/" },
             { text: "OptiSpeech", link: "/projects/optispeech/" },
             { text: "Babble Buds", link: "/projects/babble/" }
