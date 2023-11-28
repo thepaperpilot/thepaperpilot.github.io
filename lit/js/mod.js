@@ -4,7 +4,7 @@ let modInfo = {
 	author: "thepaperpilot",
 	pointsName: "light",
 	discordName: "The Paper Pilot Community Server",
-	discordLink: "https://discord.gg/WzejVAx",
+	discordLink: "https://discord.gg/yJ4fjnjU54",
 	initialStartPoints: new Decimal (0), // Used for hard resets and new players
 
 	offlineLimit: 1,  // In hours

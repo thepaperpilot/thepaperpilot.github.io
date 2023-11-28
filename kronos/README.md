@@ -1,6 +1,6 @@
 # Kronos
 
-Play [here](https://thepaperpilot.org/kronos).
+Play [here](https://www.thepaperpilot.org/kronos).
 
 Updating the website:
 - `git submodule update --remote`

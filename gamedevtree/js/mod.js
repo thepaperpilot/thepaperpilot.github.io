@@ -5,7 +5,7 @@ let modInfo = {
 	pointsName: "hours of work",
 	endgame: new Decimal("e50"),
 	discordName: "The Paper Pilot Community Server",
-	discordLink: "https://discord.gg/WzejVAx",
+	discordLink: "https://discord.gg/yJ4fjnjU54",
 	changelogLink: "https://github.com/thepaperpilot/The-Modding-Tree/blob/gamedevtree/changelog.md",
     offlineLimit: 5,  // In hours
     initialStartPoints: new Decimal (0) // Used for hard resets and new players
