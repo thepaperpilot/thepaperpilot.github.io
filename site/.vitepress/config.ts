@@ -54,7 +54,7 @@ module.exports = {
             { text: "Advent Incremental", link: "https://www.thepaperpilot.org/advent" },
             { text: "Game Dev Tree", link: "https://www.thepaperpilot.org/gamedevtree/" },
             { text: "Dice Armor", link: "/projects/dice/" },
-            { text: "Capture the Citadel", link: "/projects/citadel/"}
+            { text: "Capture the Citadel", link: "/projects/citadel/"},
             { text: "More on Itch", link: "https://www.thepaperpilot.itch.io/" }
           ]
         },
