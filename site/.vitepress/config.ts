@@ -82,6 +82,14 @@ module.exports = {
             { text: "Babble Buds", link: "/projects/babble/" }
           ]
         }
+      ],
+      "garden": [
+        {
+          text: "Garden",
+          items: [
+            { text: "The Small Web", link: "https://www.thepaperpilot.org/garden/the-small-web" }
+          ]
+        }
       ]
     }
   }
