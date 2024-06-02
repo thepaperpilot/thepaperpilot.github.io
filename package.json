@@ -8,7 +8,7 @@
     "build": "rm -rf ./site/garden && rm -rf ./garden-output && yarn run logseq-export && node build_garden.js && vitepress build site",
     "logseq-export": "run-script-os",
     "logseq-export:win32": "logseq-export/logseq-export.exe --logseqFolder ./Garden --outputFolder ./garden-output",
-    "logseq-export:linux": "logseq-export/logseq-export --logseqFolder ./Garden --outputFolder ./garden-output"
+    "logseq-export:linux": "chmod +x logseq-export/logseq-export && logseq-export/logseq-export --logseqFolder ./Garden --outputFolder ./garden-output"
   },
   "repository": "git+https://github.com/thepaperpilot/thepaperpilot.github.io.git",
   "author": "thepaperpilot",
