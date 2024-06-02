@@ -118,7 +118,7 @@ function toSlug(string) {
         // Add title to the top
         data = data.replaceAll(
             /---\n\n/gm,
-            `---\n# ${title}\n\n`);
+            `---\n# ${data.match(/title: "(.+)"/)[1]}\n\n`);
 
         const fd = fs.openSync(filePath, "w+");
         fs.writeSync(fd, data);
