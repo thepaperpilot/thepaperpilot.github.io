@@ -5,14 +5,18 @@
   "scripts": {
     "serve": "vitepress serve site",
     "dev": "vitepress dev site",
-    "build": "vitepress build site"
+    "build": "rm -rf ./site/garden && rm -rf ./garden-output && yarn run logseq-export && node build_garden.js && vitepress build site",
+    "logseq-export": "run-script-os",
+    "logseq-export:win32": "logseq-export/logseq-export.exe --logseqFolder ./Garden --outputFolder ./garden-output",
+    "logseq-export:linux": "logseq-export/logseq-export --logseqFolder ./Garden --outputFolder ./garden-output"
   },
   "repository": "git+https://github.com/thepaperpilot/thepaperpilot.github.io.git",
   "author": "thepaperpilot",
   "license": "ISC",
   "homepage": "https://www.thepaperpilot.org/thepaperpilot.github.io",
   "dependencies": {
-    "vitepress": "^1.0.0-rc.22",
+    "run-script-os": "^1.1.6",
+    "vitepress": "^1.2.2",
     "vue": "^3.3.4"
   },
   "private": true

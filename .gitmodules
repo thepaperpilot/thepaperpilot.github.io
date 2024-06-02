@@ -32,3 +32,6 @@
 	path = site/public/planar
 	url = https://github.com/thepaperpilot/planar-pioneers
 	branch = gh-pages
+[submodule "Garden.git"]
+	path = Garden
+	url = git@code.incremental.social:thepaperpilot/Garden.git
