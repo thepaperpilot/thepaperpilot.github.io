@@ -6,6 +6,8 @@ on:
 jobs:
   build-and-deploy:
     runs-on: docker
+    container:
+      image: node:20-bullseye
     steps:
       - name: Setup RSync
         run: |
