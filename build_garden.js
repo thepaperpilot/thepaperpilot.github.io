@@ -115,6 +115,10 @@ function toSlug(string) {
                 /---\n\n/gm,
                 `---\n\n> Referenced by: ${referencedBy[title].map(tag => `[${tag}](${pageLinks[tag]})`).join(", ")}\n\n`);
         }
+        // Add title to the top
+        data = data.replaceAll(
+            /---\n\n/gm,
+            `---\n# ${title}\n\n`);
 
         const fd = fs.openSync(filePath, "w+");
         fs.writeSync(fd, data);
