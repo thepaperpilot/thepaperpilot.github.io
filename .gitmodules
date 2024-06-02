@@ -34,4 +34,4 @@
 	branch = gh-pages
 [submodule "Garden.git"]
 	path = Garden
-	url = git@code.incremental.social:thepaperpilot/Garden.git
+	url = https://github.com/thepaperpilot/Garden
