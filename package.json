@@ -15,8 +15,10 @@
   "license": "ISC",
   "homepage": "https://www.thepaperpilot.org/thepaperpilot.github.io",
   "dependencies": {
+    "flexsearch": "^0.7.43",
     "run-script-os": "^1.1.6",
     "vitepress": "^1.2.2",
+    "vitepress-plugin-search": "^1.0.4-alpha.22",
     "vue": "^3.3.4"
   },
   "private": true

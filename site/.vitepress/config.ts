@@ -1,7 +1,21 @@
+import { SearchPlugin } from "vitepress-plugin-search";
+import { defineConfig } from "vitepress";
+
 module.exports = {
   lang: "en-US",
   title: 'The Paper Pilot',
   description: 'The Paper Pilot portfolio site',
+  vite: {
+    plugins: [
+      SearchPlugin({
+        previewLength: 62,
+        buttonLabel: "Search",
+        placeholder: "Search website",
+        allow: [],
+        ignore: [],
+      })
+    ]
+  },
   head: [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:ital,wght@0,400;0,600;1,400&display=swap' }],
