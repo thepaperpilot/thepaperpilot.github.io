@@ -19,14 +19,22 @@ function toSlug(string) {
 }
 
 (async () => {
-	const blockRefs = {};
+    const blockRefs = {};
+    const blockLinks = {};
+    const indices = [];
     await walk("./garden-output/logseq-pages", (dir, file, resolve) => {
         const filePath = path.resolve(dir, file);
         const data = fs.readFileSync(filePath).toString();
-        for (const match of data.matchAll(/- (.*)\n\s*id:: (.*)/gm)) {
+        const slug = path.basename(file, ".md").replaceAll('___', '/').replaceAll(/%3F/gi, '').replace('what-is-content-', 'what-is-content');
+        for (const match of data.matchAll(/(.*)\n\s*id:: (.*)/gm)) {
         	const text = match[1];
         	const id = match[2];
-        	blockRefs[id] = `[${text}](/garden/${path.basename(file, ".md")}/index.md#${id})`;
+            const link = `/garden/${slug}/index.md#${id}`;
+            blockLinks[id] = link;
+        	blockRefs[id] = `[${text}](${link})`;
+        }
+        if (data.match(/index: "true"/g)) {
+            indices.push(slug);
         }
         resolve();
     });
@@ -46,15 +54,15 @@ function toSlug(string) {
         }
 
         const name = path.basename(file, ".md").replaceAll('___', '/');
-        const slug = toSlug(name);
+        const slug = toSlug(name).replaceAll(/%3F/gi, '');
         const link = `/garden/${slug}/index.md`;
-        pageLinks[name] = link;
+        pageLinks[name.replaceAll(/%3F/gi, '?')] = link;
 
-        for (match of data.matchAll(/alias:: (.*)/g)) {
+        for (const match of data.matchAll(/alias:: (.*)/g)) {
             match[1].split(", ").forEach(page => (pageLinks[page] = link));
         }
 
-        for (match of data.matchAll(/tags:: (.*)/g)) {
+        for (const match of data.matchAll(/tags:: (.*)/g)) {
             match[1].split(", ").forEach(page => {
                 const pageSlug = toSlug(page);
                 taggedBy[pageSlug] = [...(taggedBy[pageSlug] ?? []), name];
@@ -62,9 +70,11 @@ function toSlug(string) {
             });
         }
 
-        for (match of data.matchAll(/\[\[([^\[\]]*)\]\]/g)) {
-            const pageSlug = toSlug(match[1]);
-            referencedBy[pageSlug] = [...(referencedBy[pageSlug] ?? []), name];
+        if (!indices.includes(slug)) {
+            for (const match of data.matchAll(/\[\[([^\[\]]*)\]\]/g)) {
+                const pageSlug = toSlug(match[1]);
+                referencedBy[pageSlug] = [...(referencedBy[pageSlug] ?? []), name];
+            }
         }
 
         resolve();
@@ -97,6 +107,18 @@ function toSlug(string) {
         data = data.replaceAll(
             /\[\[([^\[\]]*)\]\]/g,
             (_, page) => `[${page}](${pageLinks[page]})`);
+        // Fix internal asset links
+        data = data.replaceAll(
+            /\(\/logseq-assets\/([^\)]*)\)/g,
+            '(/garden/$1)');
+        // Fix logseq block links
+        data = data.replaceAll(
+            /logseq:\/\/graph\/Garden\?block-id=([^\)]*)/g,
+            (_, block) => `${blockLinks[block]})`);
+        // Fix logseq page links
+        data = data.replaceAll(
+            /logseq:\/\/graph\/Garden\?page=([^\)]*)/g,
+            (_, page) => `${pageLinks[page.replaceAll('%20', ' ')]})`);
 		// Add tags and references
         const title = path.basename(file, ".md");
         if (title in tagged) {
@@ -116,6 +138,7 @@ function toSlug(string) {
                 `---\n\n> Referenced by: ${referencedBy[title].map(tag => `[${tag}](${pageLinks[tag]})`).join(", ")}\n\n`);
         }
         // Add title to the top
+        data = data.replaceAll('___', '/');
         data = data.replaceAll(
             /---\n\n/gm,
             `---\n# ${data.match(/title: "(.+)"/)[1]}\n\n`);
@@ -127,18 +150,38 @@ function toSlug(string) {
     });
 
 	fs.mkdirSync("./site/garden");
+    fs.mkdirSync("./site/public/garden");
 
 	// Move everything from ./garden-output/logseq-pages into ./site/garden
     await walk("./garden-output/logseq-pages", (dir, file, resolve) => {
-    	const folder = path.resolve("./site/garden", path.basename(file, ".md"));
+    	const folder = path.resolve("./site/garden", ...path.basename(file, ".md").split('___'));
     	fs.mkdirSync(folder);
     	fs.copyFileSync(path.resolve(dir, file), path.resolve(folder, "index.md"));
         resolve();
     });
 
-	// Move everything from ./garden-output/logseq-assets into ./site/public
+	// Move everything from ./garden-output/logseq-assets into ./site/public/garden
     await walk("./garden-output/logseq-assets", (dir, file, resolve) => {
-    	fs.copyFileSync(path.resolve(dir, file), path.resolve("./site/public", path.basename(file)));
+    	fs.copyFileSync(path.resolve(dir, file), path.resolve("./site/public/garden", ...path.basename(file).split('___')));
         resolve();
     });
+
+    // Copy the guide-to-incrementals pages to the old locations so links don't break
+    fs.mkdirSync('./site/guide-to-incrementals');
+    fs.copyFileSync('./site/garden/guide-to-incrementals/index.md', './site/guide-to-incrementals/index.md');
+    fs.mkdirSync('./site/guide-to-incrementals/design');
+    fs.mkdirSync('./site/guide-to-incrementals/design/criticism');
+    fs.copyFileSync('./site/garden/guide-to-incrementals/navigating-criticism/index.md', './site/guide-to-incrementals/design/criticism/index.md');
+    fs.mkdirSync('./site/guide-to-incrementals/ludology');
+    fs.mkdirSync('./site/guide-to-incrementals/ludology/appeal-developers');
+    fs.copyFileSync('./site/garden/guide-to-incrementals/appeal-to-developers/index.md', './site/guide-to-incrementals/ludology/appeal-developers/index.md');
+    fs.mkdirSync('./site/guide-to-incrementals/ludology/appeal-gamers');
+    fs.copyFileSync('./site/garden/guide-to-incrementals/appeal-to-players/index.md', './site/guide-to-incrementals/ludology/appeal-gamers/index.md');
+    fs.mkdirSync('./site/guide-to-incrementals/ludology/content');
+    // For what is content, also remove the - at the end
+    fs.cpSync('./site/garden/guide-to-incrementals/what-is-content-', './site/garden/guide-to-incrementals/what-is-content', { recursive: true });
+    fs.copyFileSync('./site/garden/guide-to-incrementals/what-is-content-/index.md', './site/guide-to-incrementals/ludology/content/index.md');
+    fs.rmSync('./site/garden/guide-to-incrementals/what-is-content-', { recursive: true });
+    fs.mkdirSync('./site/guide-to-incrementals/ludology/definition');
+    fs.copyFileSync('./site/garden/guide-to-incrementals/defining-the-genre/index.md', './site/guide-to-incrementals/ludology/definition/index.md');
 })();

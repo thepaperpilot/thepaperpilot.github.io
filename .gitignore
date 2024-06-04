@@ -2,4 +2,5 @@ node_modules
 site/.vitepress/dist
 site/.vitepress/cache
 site/garden/
+site/public/garden/
 garden-output/

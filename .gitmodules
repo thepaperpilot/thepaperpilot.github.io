@@ -13,9 +13,6 @@
 [submodule "the_ascension_tree"]
 	path = site/public/the_ascension_tree
 	url = https://github.com/thepaperpilot/the_ascension_tree
-[submodule "guide-to-incrementals"]
-	path = site/guide-to-incrementals
-	url = https://code.incremental.social/thepaperpilot/Guide-to-Incrementals
 [submodule "dream"]
 	path = site/public/dream
 	url = https://github.com/thepaperpilot/Dream-Hero
