@@ -14,7 +14,12 @@ module.exports = {
         allow: [],
         ignore: [],
       })
-    ]
+    ],
+    ssr: {
+      noExternal: [
+        '@nolebase/vitepress-plugin-highlight-targeted-heading'
+      ]
+    }
   },
   sitemap: {
     hostname: 'https://thepaperpilot.org'
@@ -184,7 +189,9 @@ module.exports = {
     sidebar: [
       { text: "My Projects", link: "https://www.thepaperpilot.org/garden/my-projects" },
       { text: "Guide to Incrementals", link: "https://www.thepaperpilot.org/garden/guide-to-incrementals" },
-      { text: "The Small Web", link: "https://www.thepaperpilot.org/garden/the-small-web" }
+      { text: "The Small Web", link: "https://www.thepaperpilot.org/garden/the-small-web" },
+      { text: "Fedi v2", link: "https://www.thepaperpilot.org/garden/fedi-v2" },
+      { text: "Changelog", link: "https://www.thepaperpilot.org/changelog" }
     ]
   }
 }

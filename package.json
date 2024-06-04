@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vitepress serve site",
     "dev": "vitepress dev site",
-    "build": "rm -rf ./site/guide-to-incrementals && rm -rf ./site/public/garden && rm -rf ./site/garden && rm -rf ./garden-output && yarn run logseq-export && node build_garden.js && vitepress build site",
+    "build": "rm -rf ./site/guide-to-incrementals && rm -rf ./site/public/garden && rm -rf ./site/changelog && rm -rf ./site/garden && rm -rf ./garden-output && yarn run logseq-export && node build_garden.js && vitepress build site",
     "logseq-export": "run-script-os",
     "logseq-export:win32": "logseq-export/logseq-export.exe --logseqFolder ./Garden --outputFolder ./garden-output",
     "logseq-export:linux": "chmod +x logseq-export/logseq-export && logseq-export/logseq-export --logseqFolder ./Garden --outputFolder ./garden-output"
@@ -21,5 +21,8 @@
     "vitepress-plugin-search": "^1.0.4-alpha.22",
     "vue": "^3.3.4"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.1.1"
+  }
 }
