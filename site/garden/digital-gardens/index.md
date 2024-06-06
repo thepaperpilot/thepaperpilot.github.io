@@ -8,7 +8,7 @@ next: false
 ---
 # Digital Gardens
 
-> Referenced by: [Chronological](/garden/chronological/index.md), [Commune](/garden/commune/index.md), [Garden-RSS](/garden/garden-rss/index.md), [The Cozy Web](/garden/the-cozy-web/index.md)
+> Referenced by: [Chronological](/garden/chronological/index.md), [Commune](/garden/commune/index.md), [Garden-RSS](/garden/garden-rss/index.md), [The Cozy Web](/garden/the-cozy-web/index.md), [The Small Web](/garden/the-small-web/index.md)
 
 Digital Gardens are [Freeform](/garden/freeform/index.md) collections of information made by an individual or community
 - Alternatives to [Chronological](/garden/chronological/index.md) personal blogs

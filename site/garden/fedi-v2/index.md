@@ -28,7 +28,8 @@ My take on a theoretical successor to federated [Social Media](/garden/social-me
 [Weird](/garden/weird/index.md) may eventually move in the direction of implementing something like this
 - [Next Gen Federation on Iroh: Graph Data & Linked Documents Layers](https://github.com/commune-os/weird/discussions/32)
 
-## [Federated Identity](/garden/federated-identity/index.md)
+## Identity
+- [Federated Identity](/garden/federated-identity/index.md)
 - Private and public keys anyone can create and store how they want
 	- Fully free to create and store with no server dependencies
 - Profile information
