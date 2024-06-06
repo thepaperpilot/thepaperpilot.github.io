@@ -25,3 +25,17 @@
   margin: auto;
   width: unset;
 }
+
+ul > li > ul {
+  position: relative;
+}
+
+ul > li > ul::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: 100%;
+    background: var(--vp-c-text-1);
+    opacity: 0.3;
+    left: -16px;
+}
