@@ -187,10 +187,15 @@ module.exports = {
 ` }, link: "https://incremental.social/u/thepaperpilot" }
     ],
     sidebar: [
-      { text: "My Projects", link: "/garden/my-projects" },
-      { text: "Guide to Incrementals", link: "/garden/guide-to-incrementals" },
-      { text: "The Small Web", link: "/garden/the-small-web" },
-      { text: "Fedi v2", link: "/garden/fedi-v2" },
+      {
+        text: "Recommended Pages",
+        items: [
+          { text: "My Projects", link: "/garden/my-projects" },
+          { text: "Guide to Incrementals", link: "/garden/guide-to-incrementals" },
+          { text: "The Small Web", link: "/garden/the-small-web" },
+          { text: "Fedi v2", link: "/garden/fedi-v2" },
+        ]
+      },
       { text: "Changelog", link: "/changelog" }
     ]
   }
