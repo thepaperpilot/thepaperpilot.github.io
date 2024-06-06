@@ -195,9 +195,11 @@ function toSlug(string) {
     fs.mkdirSync("./site/changelog");
 
     const { stdout } = await exec('git log --after="2024-06-03T0:0:0+0000" --pretty=%H site/garden');
+    console.log(stdout);
     const entries = await Promise.all(stdout.split("\n").filter(p => p).map(hash => new Promise(async (resolve) => {
         const { stdout: title } = await exec(`git show --quiet --format=%s ${hash}`);
         const { stdout: time } = await exec(`git show --quiet --format=%as ${hash}`);
+        console.log(">", hash, title, time)
         let { stdout: changes } = await exec(`git show --format="" --stat=100 --relative ${hash} .`, { cwd: 'site/garden' });
 
         changes = changes.replaceAll(/\/index.md/g, '');
