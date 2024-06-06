@@ -1,6 +1,7 @@
 ---
 title: The Paper Pilot
 layout: home
+sidebar: true
 hero:
   name: The Paper Pilot
   tagline: I'm Anthony, or The Paper Pilot, and I make fun games and tools!

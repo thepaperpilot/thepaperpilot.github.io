@@ -104,6 +104,9 @@ function toSlug(string) {
         	(_, id) => blockRefs[id]);
 		// Remove id:: lines
         data = data.replaceAll(
+            /(#+) (.*)\n\s*id:: (.*)/gm,
+            (_, h, title, id) => `<span id="${id}"><h${h.length}>${title}</h${h.length}></span>`);
+        data = data.replaceAll(
             /(.*)\n\s*id:: (.*)/gm,
             '<span id="$2">$1</span>');
         // Fix internal links with spaces not getting mapped
