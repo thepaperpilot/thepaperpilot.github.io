@@ -2,6 +2,8 @@
 public: "true"
 slug: "the-cozy-web"
 title: "The Cozy Web"
+prev: false
+next: false
 ---
 # The Cozy Web
 

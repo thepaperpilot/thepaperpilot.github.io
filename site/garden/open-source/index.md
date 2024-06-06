@@ -2,6 +2,8 @@
 public: "true"
 slug: "open-source"
 title: "Open Source"
+prev: false
+next: false
 ---
 # Open Source
 

@@ -3,6 +3,8 @@ public: "true"
 slug: "babble-buds"
 tags: [My Projects]
 title: "Babble Buds"
+prev: false
+next: false
 ---
 # Babble Buds
 

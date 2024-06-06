@@ -2,6 +2,8 @@
 public: "true"
 slug: "guide-to-incrementals"
 title: "Guide to Incrementals"
+prev: false
+next: false
 ---
 # Guide to Incrementals
 

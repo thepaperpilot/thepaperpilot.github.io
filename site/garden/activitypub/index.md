@@ -3,6 +3,8 @@ public: "true"
 slug: "activitypub"
 tags: [Decentralized]
 title: "ActivityPub"
+prev: false
+next: false
 ---
 # ActivityPub
 

@@ -2,6 +2,8 @@
 public: "true"
 slug: "guide-to-incrementals/appeal-to-players"
 title: "Guide to Incrementals/Appeal to Players"
+prev: false
+next: false
 ---
 # Guide to Incrementals/Appeal to Players
 
@@ -11,7 +13,7 @@ This is something that has been discussed and analyzed by many people, and to so
 
 This is a very common response to why people enjoy incremental games, although it's not one I find compels me personally, and I suspect it might be a stand-in for [progression](/garden/guide-to-incrementals/appeal-to-players/index.md#665ceed1-704e-4cd0-8263-9a1756b09f4a)) or [Guide to Incrementals/What is Content?](/garden/guide-to-incrementals/what-is-content/index.md). But reportedly, some people do just like _seeing_ big numbers. I must reiterate I suspect the actual cause is seeing big numbers _in context_ though - if you start at 1e1000 of a currency and get to 1e1001, that isn't going to feel as satisfying as going from 1e10 to 1e100, and in any case, I don't think a button that just adds a zero to your number will feel quite satisfying - I believe its the sense of having made progress, and comparing where you are to where you started and feeling like you've earned your way here that is enjoyable.
 
-<span id="665ceed1-704e-4cd0-8263-9a1756b09f4a">## Progression</span>
+<span id="665ceed1-704e-4cd0-8263-9a1756b09f4a"><h2>Progression</h2></span>
 
 Vampire Survivors can be argued to have a comparatively low depth to its combat compared to many other games. I'd argue it has _sufficient_ depth and more than someone might expect who has only played the game for a short while, but it still definitely gets beat out by many other combat-focused games. Instead, a lot of the progression in Vampire Survivors comes from a meta-progression system by which base stats are increased by spending a currency that persists between runs. While it is technically possible to win without this meta-progression system, and indeed in many roguelikes players like to challenge themselves by beating the game without any meta-progression, the criticism can be made that meta-progression de-emphasizes player skill by making it less important to have to beat the game. Certainly, in incremental games, it is often literally impossible to complete a game without taking advantage of the meta-progression systems. I'd argue this does not detract from the game, however, and is actually a part of what makes incremental games, and roguelikes, enjoyable to many players: meta-progression _augments_ the increases in skill the player is naturally gaining as they play. In effect, it's not _replacing_ the skill increase, but _exaggerating_ it to make it feel more real to the player.
 
@@ -23,7 +25,7 @@ Incremental games are so easy, a lot of them even have you progress while you're
 
 If you look at the higher-level play of most games, you'll see them perform difficult feats with ease and speed. They'll achieve a "flow state" that takes all their knowledge and experience of the game and uses it to play the game as instinctively as possible. It's incredible to watch things like Slay the Spire speed runs or competitive DDR-likes. I'd argue the _goal_ of a lot of games with a competitive scene is to get so good that the game _becomes_ effortless. In that sense, a game that allows you to reach that point earlier isn't any less legitimate, but rather lowers the barrier to entry by allowing more people to get "really good" at the game. And to be clear, Vampire Survivors and (most) incremental games aren't _trivially_ easy - they, and to an extent, every game will have _some_ level of learning and improvement over time.
 
-<span id="665ceed1-72a9-49f2-9215-dd690f89aee3">## Addiction</span>
+<span id="665ceed1-72a9-49f2-9215-dd690f89aee3"><h2>Addiction</h2></span>
 
 A lot of these reasons for why incremental games appeal may have reminded you of why _gambling_ appeals to people, particularly those prone to addiction. Indeed, incremental games are quite often criticized for their similarity to a [skinner box](https://www.youtube.com/watch?v=tWtvrPTbQ_c). Some have gone as far as to say incremental games as a genre are commenting that [all games are skinner boxes](/garden/guide-to-incrementals/defining-the-genre/index.md#665cea25-b1e5-40bc-8c82-2296982ce1d1)). The argument goes that some games are not fun, but rather condition players into continuing to play without actually getting anything from the experience. When tied to real-world money this is seen as predatory, and to a lesser extent, even free games may be feeding the addictive sides of people and making them more prone to seek out gambling or micro-transaction heavy games.
 

@@ -2,6 +2,8 @@
 public: "true"
 slug: "this-knowledge-hub"
 title: "This Knowledge Hub"
+prev: false
+next: false
 ---
 # This Knowledge Hub
 
@@ -15,6 +17,7 @@ This is not Wikipedia. My thoughts are biased and argumentative, but to the best
 <span id="6637b86a-3603-45ef-a21e-b33c7d96c529">I'm writing on _something_ essentially every day</span>
 - Most of my pages are private, especially the journal pages
 - I'll only push updates to this site every so often (not an automatic process)
+- Until something like [Garden-RSS](/garden/garden-rss/index.md) exists, we'll have to make do with [/changelog](https://thepaperpilot.org/changelog) which gives a git diff summary for every pushed change, in the form of a [The IndieWeb](/garden/the-small-web/index.md) stream as well as an RSS feed
 
 Written in [Logseq](/garden/logseq/index.md) and rendered with [Vitepress](/garden/vitepress/index.md)
 

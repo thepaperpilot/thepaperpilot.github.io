@@ -2,6 +2,8 @@
 public: "true"
 slug: "forgejo"
 title: "Forgejo"
+prev: false
+next: false
 ---
 # Forgejo
 

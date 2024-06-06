@@ -2,6 +2,8 @@
 public: "true"
 slug: "synapse"
 title: "Synapse"
+prev: false
+next: false
 ---
 # Synapse
 

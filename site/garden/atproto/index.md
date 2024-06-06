@@ -4,6 +4,8 @@ public: "true"
 slug: "atproto"
 tags: [Decentralized]
 title: "ATProto"
+prev: false
+next: false
 ---
 # ATProto
 

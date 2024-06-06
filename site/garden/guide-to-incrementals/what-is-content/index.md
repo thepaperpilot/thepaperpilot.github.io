@@ -2,6 +2,8 @@
 public: "true"
 slug: "guide-to-incrementals/what-is-content-"
 title: "Guide to Incrementals/What is Content?"
+prev: false
+next: false
 ---
 # Guide to Incrementals/What is Content?
 
@@ -33,7 +35,7 @@ We're getting more and more controversial as we go along! Let's talk about how l
 
 This over-complicatedness leading to disengaging the player can _also_ happen from non-linear gameplay. If the web of effects becomes sufficiently complicated and finding the optimal progression route too time-consuming to discover, players will seek out guides from other players who've completed the game. The _second_ they do this, the game effectively becomes linearly following the instructions of the guide and all the above criticisms apply. Similarly to as before, though, this is a spectrum and not everyone will seek out a guide at the same level of difficulty.
 
-<span id="665cf570-e3d3-48f6-9fde-aa94e68a8682">## Automation</span>
+<span id="665cf570-e3d3-48f6-9fde-aa94e68a8682"><h2>Automation</h2></span>
 
 Automation is a staple of the genre, but it has certain implications for the design of the game. Why, when new content is introduced, must the older content be automated away - why is it a chore and it feels rewarding to not have to do it again? Why does the new mechanic have such appeal if we know it too will just be automated away later on, and we'll be happy when that happens? It honestly begs the question of why this framework of introducing content and automating the old content is even enjoyable - and nearly nonexistent in other genres. You're not going to reach a point in a platformer game where they just automate the jumping part - _that's the core mechanic!_ Instead, platformers either add new mechanics that _build_ on the core mechanic or at least re-contextualize the core mechanic. However, in incremental games new content very frequently means _replacing_ older content, as opposed to augmenting it.
 

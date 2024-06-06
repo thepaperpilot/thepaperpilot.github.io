@@ -3,6 +3,8 @@ public: "true"
 slug: "opti-speech"
 tags: [My Projects]
 title: "Opti-Speech"
+prev: false
+next: false
 ---
 # Opti-Speech
 

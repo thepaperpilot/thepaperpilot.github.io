@@ -2,6 +2,8 @@
 public: "true"
 slug: "chat-glue"
 title: "Chat Glue"
+prev: false
+next: false
 ---
 # Chat Glue
 

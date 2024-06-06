@@ -2,6 +2,8 @@
 public: "true"
 slug: "freeform"
 title: "Freeform"
+prev: false
+next: false
 ---
 # Freeform
 

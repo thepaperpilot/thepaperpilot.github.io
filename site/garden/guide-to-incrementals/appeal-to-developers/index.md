@@ -2,6 +2,8 @@
 public: "true"
 slug: "guide-to-incrementals/appeal-to-developers"
 title: "Guide to Incrementals/Appeal to Developers"
+prev: false
+next: false
 ---
 # Guide to Incrementals/Appeal to Developers
 

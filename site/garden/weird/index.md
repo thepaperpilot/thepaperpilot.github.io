@@ -2,6 +2,8 @@
 public: "true"
 slug: "weird"
 title: "Weird"
+prev: false
+next: false
 ---
 # Weird
 

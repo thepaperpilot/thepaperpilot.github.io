@@ -2,6 +2,8 @@
 public: "true"
 slug: "cinny"
 title: "Cinny"
+prev: false
+next: false
 ---
 # Cinny
 

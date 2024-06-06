@@ -3,6 +3,8 @@ public: "true"
 slug: "advent-incremental"
 tags: [My Projects, Profectus]
 title: "Advent Incremental"
+prev: false
+next: false
 ---
 # Advent Incremental
 

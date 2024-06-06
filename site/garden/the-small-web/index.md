@@ -3,6 +3,8 @@ alias: "The IndieWeb, Personal Web, Personal Websites"
 public: "true"
 slug: "the-small-web"
 title: "The Small Web"
+prev: false
+next: false
 ---
 # The Small Web
 

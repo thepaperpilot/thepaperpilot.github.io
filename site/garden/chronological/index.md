@@ -2,6 +2,8 @@
 public: "true"
 slug: "chronological"
 title: "Chronological"
+prev: false
+next: false
 ---
 # Chronological
 

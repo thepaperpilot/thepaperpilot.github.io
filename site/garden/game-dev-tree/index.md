@@ -3,6 +3,8 @@ public: "true"
 slug: "game-dev-tree"
 tags: [My Projects]
 title: "Game Dev Tree"
+prev: false
+next: false
 ---
 # Game Dev Tree
 

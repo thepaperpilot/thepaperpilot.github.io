@@ -2,6 +2,8 @@
 public: "true"
 slug: "guide-to-incrementals/navigating-criticism"
 title: "Guide to Incrementals/Navigating Criticism"
+prev: false
+next: false
 ---
 # Guide to Incrementals/Navigating Criticism
 

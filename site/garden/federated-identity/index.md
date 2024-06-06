@@ -3,6 +3,8 @@ public: "true"
 slug: "federated-identity"
 tags: [Decentralized]
 title: "Federated Identity"
+prev: false
+next: false
 ---
 # Federated Identity
 

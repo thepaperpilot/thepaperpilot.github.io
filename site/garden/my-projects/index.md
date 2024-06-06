@@ -3,6 +3,8 @@ index: "true"
 public: "true"
 slug: "my-projects"
 title: "My Projects"
+prev: false
+next: false
 ---
 # My Projects
 

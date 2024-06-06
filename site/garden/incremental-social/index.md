@@ -2,6 +2,8 @@
 public: "tags:: My Projects"
 slug: "incremental-social"
 title: "Incremental Social"
+prev: false
+next: false
 ---
 # Incremental Social
 

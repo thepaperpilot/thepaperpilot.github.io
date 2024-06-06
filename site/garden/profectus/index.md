@@ -3,6 +3,8 @@ public: "true"
 slug: "profectus"
 tags: [My Projects]
 title: "Profectus"
+prev: false
+next: false
 ---
 # Profectus
 

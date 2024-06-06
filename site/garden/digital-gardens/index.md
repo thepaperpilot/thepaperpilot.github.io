@@ -3,6 +3,8 @@ alias: "Digital Garden, Second Brain, Personal Knowledge Management, The Zettelk
 public: "true"
 slug: "digital-gardens"
 title: "Digital Gardens"
+prev: false
+next: false
 ---
 # Digital Gardens
 

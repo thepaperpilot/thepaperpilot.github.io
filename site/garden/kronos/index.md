@@ -3,6 +3,8 @@ public: "true"
 slug: "kronos"
 tags: [My Projects, Profectus]
 title: "Kronos"
+prev: false
+next: false
 ---
 # Kronos
 

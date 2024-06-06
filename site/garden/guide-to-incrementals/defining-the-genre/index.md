@@ -2,6 +2,8 @@
 public: "true"
 slug: "guide-to-incrementals/defining-the-genre"
 title: "Guide to Incrementals/Defining the Genre"
+prev: false
+next: false
 ---
 # Guide to Incrementals/Defining the Genre
 
@@ -21,7 +23,7 @@ Oftentimes people refer to this genre as idle games and/or clicker games. You'll
 
 While these games do span a spectrum of how active it requires you to be, and sorting games by that metric can be useful for those looking for a particular experience, the borders of when an incremental game counts as an "idler" is too blurry for the term to be useful. "Incremental games" may not be a great descriptive term for the genre (hence this many thousands of words long page on defining what the genre even is), but it's strictly better than calling them "idler" or "clicker" games. This guide will always use the term "incremental games" unless quoting someone else, as it is the term you typically see on all modern games in the genre.
 
-<span id="665cea25-b1e5-40bc-8c82-2296982ce1d1">## Incrementals as Parodies</span>
+<span id="665cea25-b1e5-40bc-8c82-2296982ce1d1"><h2>Incrementals as Parodies</h2></span>
 
 Let's start with one of the most _interesting_ definitions of incremental games. Incremental games appear to be distilled versions of games or genres, "revealing" the naked game design at the core of these games or genres not unlike how parodies comment upon their source material.
 
@@ -47,7 +49,7 @@ While this definition is common because it _feels_ easy to understand, it is dif
 
 Additionally, a lot of incrementals tend to have _some_ theme guiding the gameplay, or at least the names of mechanics. This makes the line blurred between when numbers are going up for their own sake versus for a contextual reason. I believe this point is best illustrated that, while _most_ RPGs are not considered incremental games, there _is_ a sub-genre of "incremental RPGs" that typically relates to RPGs that perform combat automatically. This definition of incremental games does not support RPGs and "incremental RPGs" being on distinct sides of the line if the only difference between them is manual vs automatic combat.
 
-<span id="665cea25-437a-49a4-8445-00422fb9ded1">## Incrementals as Strategies</span>
+<span id="665cea25-437a-49a4-8445-00422fb9ded1"><h2>Incrementals as Strategies</h2></span>
 
 This is a rarer interpretation, but there are similarities between incremental games and strategy games, implying incrementals might just be a sub-genre of strategy games. By this approach, incremental games would be defined by their relation to strategy games, and how they involve player strategy. Incremental games are often large optimization problems - above all else, the actual gameplay the player is performing is deciding what to do next. The consequences of wrong decisions are typically more lenient in incremental games - such as just not making optimal progress - but they _certainly_ get complex.
 

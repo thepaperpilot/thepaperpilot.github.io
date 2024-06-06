@@ -2,6 +2,8 @@
 public: "true"
 slug: "fedi-v2"
 title: "Fedi v2"
+prev: false
+next: false
 ---
 # Fedi v2
 
@@ -9,7 +11,7 @@ title: "Fedi v2"
 
 My take on a theoretical successor to federated [Social Media](/garden/social-media/index.md)
 
-Inspiration:
+## Inspiration
 - [A Plan for Social Media - Rethinking Federation](https://raphael.lullis.net/a-plan-for-social-media-less-fedi-more-webby/)
 	- This article doesn't address many implementation details:
 		- If the server is a relay, can content not be viewed anonymously?
@@ -26,16 +28,32 @@ Inspiration:
 [Weird](/garden/weird/index.md) may eventually move in the direction of implementing something like this
 - [Next Gen Federation on Iroh: Graph Data & Linked Documents Layers](https://github.com/commune-os/weird/discussions/32)
 
-[Federated Identity](/garden/federated-identity/index.md)
+## [Federated Identity](/garden/federated-identity/index.md)
 - Private and public keys anyone can create and store how they want
 	- Fully free to create and store with no server dependencies
 - Profile information
 	- Sent as a signed message through all the relays
 	- How would you trust a username?
 		- [Petnames](https://spritely.institute/static/papers/petnames.html) could be used to display human readable names via contacts or decentralized "naming hubs"
+		- In most conversations online, you can trust their display name and add them as a contact as that display name
+			- You only need to verify they are the same person you interacted with previously
+			- You only need to trust people you want to send money to or otherwise "important identities"
+			- For important identities, you can trust your contacts forming a chain of trust, or a authoritative naming hub
+				- E.g. a white house ran naming hub that verifies the identities of the president and people of Congress
+				- People typically wouldn't reach out to a naming hub, as it's not typically necessary
+			- Contacts supercede naming hubs, so if a naming hub is breached, anyone I've previously added as a contact is still the source of truth
+				- This only fails if the private key itself was breached
+			- I'm just thepaperpilot, my display name. For most online communication, this is sufficient
+				- My website can have a nameserver saying this publickey is the same as the site owner
+				- If I write a paper at a scientific journal, they can say the author of x paper is my publickey
+- How to handle losing your private key
+	- If you do have a naming hub you can verify with, they can say the identity has a new publickey
+	- Contacts can "vouch" for a identity having a new publickey
+	- Clients can decide to trust the new publickey based on contacts and naming hubs saying to
+	- Also applies to stolen or compromised keys
 - I believe [Iroh](https://iroh.computer) works this way
 
-Servers
+## Servers
 - Act as relays, merely storing messages and sending them to any clients or servers that have subscribed
 - May decide to publicly display messages its received
 	- These servers are how discovery would work
@@ -50,7 +68,7 @@ Servers
 	- Any replies to a message created with a specific poster ID
 	- Shallow subscriptions, to lighten the load when subscribing to communities
 
-Content
+## Content
 - Protocol should dictate how to convey text, image, audio, video, and binary content
 - Protocol should include reacting to content with arbitrary text, including a URL
 	- Upvotes and downvotes are implemented with this system
@@ -66,7 +84,7 @@ Content
 	- Subscribing to a community is just subscribing to that message
 	- The original message creator effectively owns the group
 
-Moderation
+## Moderation
 - In general, edits and delete requests are made by replying with a specially flagged message
 - Edit and deletion messages are ignored unless they have the correct public key and signature
 	- Parent messages form a hierarchy of permission - if someone replies to your message, you can send a delete request for that message
@@ -80,7 +98,7 @@ Moderation
 - Clients can also choose to add additional rules for hiding content, such as any reports by followed users
 - Perhaps delete messages pull double duty as public reports in and of themselves?
 
-Problems to solve
+## Problems to solve
 - No anonymity
 	- All upvotes, downvotes, etc. are linked to your public key
 	- Perhaps a client could generate new keypairs for every action for anonymity, but then it'd be hard to determine if such an account and action was a genuine user or a bot

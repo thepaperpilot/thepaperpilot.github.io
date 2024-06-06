@@ -2,6 +2,8 @@
 public: "true"
 slug: "freeform-vs-chronological-dichotomy"
 title: "Freeform vs Chronological Dichotomy"
+prev: false
+next: false
 ---
 # Freeform vs Chronological Dichotomy
 

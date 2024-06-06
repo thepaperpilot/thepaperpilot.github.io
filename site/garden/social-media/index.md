@@ -3,6 +3,8 @@ alias: "Social Web"
 public: "true"
 slug: "social-media"
 title: "Social Media"
+prev: false
+next: false
 ---
 # Social Media
 

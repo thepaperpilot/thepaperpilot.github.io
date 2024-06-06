@@ -2,6 +2,8 @@
 public: "true"
 slug: "commune"
 title: "Commune"
+prev: false
+next: false
 ---
 # Commune
 

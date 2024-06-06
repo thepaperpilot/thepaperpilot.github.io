@@ -3,6 +3,8 @@ public: "true"
 slug: "planar-pioneers"
 tags: [My Projects, Profectus]
 title: "Planar Pioneers"
+prev: false
+next: false
 ---
 # Planar Pioneers
 

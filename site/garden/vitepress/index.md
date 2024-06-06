@@ -2,6 +2,8 @@
 public: "true"
 slug: "vitepress"
 title: "Vitepress"
+prev: false
+next: false
 ---
 # Vitepress
 

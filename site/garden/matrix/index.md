@@ -2,6 +2,8 @@
 public: "true"
 slug: "matrix"
 title: "Matrix"
+prev: false
+next: false
 ---
 # Matrix
 

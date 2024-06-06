@@ -3,6 +3,8 @@ alias: "Federated"
 public: "true"
 slug: "decentralized"
 title: "Decentralized"
+prev: false
+next: false
 ---
 # Decentralized
 

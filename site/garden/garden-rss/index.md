@@ -2,10 +2,12 @@
 public: "true"
 slug: "garden-rss"
 title: "Garden-RSS"
+prev: false
+next: false
 ---
 # Garden-RSS
 
-> Referenced by: [Freeform](/garden/freeform/index.md), [The Small Web](/garden/the-small-web/index.md)
+> Referenced by: [Freeform](/garden/freeform/index.md), [The Small Web](/garden/the-small-web/index.md), [This Knowledge Hub](/garden/this-knowledge-hub/index.md)
 
 A theoretical alternative to RSS that's better for [Freeform](/garden/freeform/index.md) websites (and [Digital Gardens](/garden/digital-gardens/index.md) specifically )
 

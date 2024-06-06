@@ -2,6 +2,8 @@
 public: "true"
 slug: "my-personal-website"
 title: "My Personal Website"
+prev: false
+next: false
 ---
 # My Personal Website
 

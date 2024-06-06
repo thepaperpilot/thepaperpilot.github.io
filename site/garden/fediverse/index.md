@@ -4,6 +4,8 @@ public: "true"
 slug: "fediverse"
 tags: [Decentralized]
 title: "Fediverse"
+prev: false
+next: false
 ---
 # Fediverse
 

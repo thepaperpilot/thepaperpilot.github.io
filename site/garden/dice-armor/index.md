@@ -3,6 +3,8 @@ public: "true"
 slug: "dice-armor"
 tags: [My Projects]
 title: "Dice Armor"
+prev: false
+next: false
 ---
 # Dice Armor
 

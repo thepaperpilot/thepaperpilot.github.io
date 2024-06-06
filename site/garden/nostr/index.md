@@ -3,6 +3,8 @@ public: "true"
 slug: "nostr"
 tags: [Decentralized]
 title: "Nostr"
+prev: false
+next: false
 ---
 # Nostr
 

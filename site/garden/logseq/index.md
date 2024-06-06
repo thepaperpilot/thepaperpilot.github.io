@@ -2,6 +2,8 @@
 public: "true"
 slug: "logseq"
 title: "Logseq"
+prev: false
+next: false
 ---
 # Logseq
 

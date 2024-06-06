@@ -3,6 +3,8 @@ public: "true"
 slug: "v-ecs"
 tags: [My Projects]
 title: "V-ecs"
+prev: false
+next: false
 ---
 # V-ecs
 

@@ -2,6 +2,8 @@
 public: "true"
 slug: "mbin"
 title: "Mbin"
+prev: false
+next: false
 ---
 # Mbin
 

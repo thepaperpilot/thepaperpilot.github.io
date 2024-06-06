@@ -2,6 +2,8 @@
 public: "true"
 slug: "webrings"
 title: "Webrings"
+prev: false
+next: false
 ---
 # Webrings
 

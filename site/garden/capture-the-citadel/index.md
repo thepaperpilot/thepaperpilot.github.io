@@ -3,6 +3,8 @@ public: "true"
 slug: "capture-the-citadel"
 tags: [My Projects]
 title: "Capture the Citadel"
+prev: false
+next: false
 ---
 # Capture the Citadel
 
