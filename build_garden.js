@@ -147,7 +147,7 @@ function toSlug(string) {
         data = data.replaceAll('___', '/');
         data = data.replaceAll(
             /---\n\n/gm,
-            `---\n# ${data.match(/title: "(.+)"/)[1]}\n\n`);
+            `prev: false\nnext: false\n---\n# ${data.match(/title: "(.+)"/)[1]}\n\n`);
 
         const fd = fs.openSync(filePath, "w+");
         fs.writeSync(fd, data);
@@ -238,13 +238,15 @@ ${changes}
     fs.writeSync(fd,
 `---
 title: Changelog
+prev: false
+next: false
 ---
 <section class="h-feed">
 <h1 class="p-name">
 <a href="/changelog" class="u-url">Changelog</a>
 <a href="/changelog.rss"><svg viewBox="0 0 16 16" class="svg octicon-rss" aria-hidden="true" width="16" height="16"><path d="M2.002 2.725a.75.75 0 0 1 .797-.699C8.79 2.42 13.58 7.21 13.974 13.201a.75.75 0 0 1-1.497.098 10.5 10.5 0 0 0-9.776-9.776.747.747 0 0 1-.7-.798ZM2.84 7.05h-.002a7 7 0 0 1 6.113 6.111.75.75 0 0 1-1.49.178 5.5 5.5 0 0 0-4.8-4.8.75.75 0 0 1 .179-1.489M2 13a1 1 0 1 1 2 0 1 1 0 0 1-2 0"></path></svg></a>
 </h1>
-<p>This feed starts when I formatted the site to be a <a href="/garden/digital-garden/">Digital Garden</a>. If you'd like to look further into this site's history, check <a href="https://code.incremental.social/thepaperpilot/pages/commits/branch/master">here</a>!</p>
+<p>This feed starts when I formatted the site to be a <a href="/garden/digital-gardens/">Digital Garden</a>. If you'd like to look further into this site's history, check <a href="https://code.incremental.social/thepaperpilot/pages/commits/branch/master">here</a>!</p>
 
 ${entries.join("\n\n")}
 </section>

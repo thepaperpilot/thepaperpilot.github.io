@@ -31,7 +31,6 @@ module.exports = {
     ['link', { rel: 'alternate', type: "text/mf2+html", href: '/changelog' }],
     ['meta', { name: 'og:description', content: 'The Paper Pilot portfolio site' }]
   ],
-  lastUpdated: true,
   cleanUrls: 'with-subfolders',
   themeConfig: {
     outline: 'deep',
