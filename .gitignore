@@ -3,4 +3,5 @@ site/.vitepress/dist
 site/.vitepress/cache
 site/public/garden/
 site/changelog/index.md
+site/guide-to-incrementals/
 garden-output/
