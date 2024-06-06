@@ -5,3 +5,23 @@
 .main .name .clip {
   font-family: Pacifico, cursive;
 }
+
+.title {
+  justify-content: center;
+}
+
+.title span {
+  font-family: Pacifico;
+  font-size: x-large;
+}
+
+.search {
+  flex-grow: 1;
+  padding-left: 0;
+  display: block;
+}
+
+.DocSearch-Button {
+  margin: auto;
+  width: unset;
+}
