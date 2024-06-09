@@ -16,12 +16,14 @@ Small personal websites created by individuals
 - These pages are diverse and typically won't have ads or marketers
 	- Comparable to [The Cozy Web](/garden/the-cozy-web/index.md) in that way
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/00qwzmMrtok" title="" frameBorder="0" allowFullScreen />
-
 The small web as a whole is [Freeform](/garden/freeform/index.md)
 - Individual sites may be [Chronological](/garden/chronological/index.md) still
 - Individual sites link between each other in ways similar to wikis
 	- These can form [Webrings](/garden/webrings/index.md)
+
+## Browsing the small web
+- Follow [Webrings](/garden/webrings/index.md) or other links from known small websites
+- [Marginalia](https://search.marginalia.nu) is a search engine for non-commercial content with a "random" button and filters for the small web explicitly (amongst other useful filters!)
 
 ## Building personal websites
 
@@ -67,3 +69,9 @@ Hosting can be expensive, but static websites are cheap
 	- Ideally you'd use some sort of system that is easily transferrable to other servers, and possibly even supports nomadic identities
 	- [Free hosting for static websites:](/garden/the-small-web/index.md#665b6ac0-d3ca-41d8-9534-929ac2907c2e)
 - People are creative and love creating things
+
+## Recommended videos about the small web
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/00qwzmMrtok" title="" frameBorder="0" allowFullScreen />
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rTSEr0cRJY8" title="" frameBorder="0" allowFullScreen />
