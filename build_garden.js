@@ -57,7 +57,7 @@ function toSlug(string) {
         }
 
         const name = path.basename(file, ".md").replaceAll('___', '/');
-        const slug = toSlug(name).replaceAll(/%3F/gi, '');
+        const slug = toSlug(name).replaceAll(/%3F/gi, '').replaceAll('\'', '-');
         const link = `/garden/${slug}/index.md`;
         pageLinks[name.replaceAll(/%3F/gi, '?')] = link;
 
