@@ -194,17 +194,10 @@ function toSlug(string) {
     // Build changelog
     fs.mkdirSync("./site/changelog");
 
-    await exec("git fetch --all")
-    console.log("remotes: " + (await exec("git branch -r")).stdout);
-    console.log("head: " + (await exec("git show origin/master")).stdout);
-    console.log("head-1: " + (await exec("git show origin/master~")).stdout);
-    console.log("head-5: " + (await exec("git show origin/master~4")).stdout);
-    const { stdout } = await exec('git log --after="2024-06-03T0:0:0+0000" --pretty=%H origin/HEAD');
-    console.log(stdout);
+    const { stdout } = await exec('git log --after="2024-06-03T0:0:0+0000" --pretty=%H origin/master -- site/garden');
     const entries = await Promise.all(stdout.split("\n").filter(p => p).map(hash => new Promise(async (resolve) => {
         const { stdout: title } = await exec(`git show --quiet --format=%s ${hash}`);
         const { stdout: time } = await exec(`git show --quiet --format=%as ${hash}`);
-        console.log(">", hash, title, time)
         let { stdout: changes } = await exec(`git show --format="" --stat=100 --relative ${hash} .`, { cwd: 'site/garden' });
 
         changes = changes.replaceAll(/\/index.md/g, '');
