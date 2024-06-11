@@ -210,14 +210,15 @@ function toSlug(string) {
         const summary = lines[lines.length - 2];
         changes = lines.slice(0, -2).map(line => {
             const [page, changes] = line.split("|").map(p => p.trim());
-            return `<tr><td><a href="/garden/${page}">${page}</a></td><td>${changes}</td></tr>`;
+            return `<tr><td><a href="/garden/${page}">${page}</a></td><td style="font-family: monospace; white-space: nowrap;">${changes}</td></tr>`;
         }).join("\n");
 
         resolve(
 `<hr/>
 <article class="h-entry">
-<a href="https://code.incremental.social/thepaperpilot/pages/commit/${hash}">Pushed on <time class="dt-published">${time}</time></a>
+<h2 class="p-name">${summary}</h2>
 <p class="p-content">
+<a href="https://code.incremental.social/thepaperpilot/pages/commit/${hash}">Pushed on <time class="dt-published">${time}</time></a>
 <table>
 <thead>
 <tr>
@@ -230,7 +231,6 @@ ${changes}
 </tbody>
 </table>
 </p>
-<p>${summary}</p>
 </article>`);
     })));
     const fd = fs.openSync("site/changelog/index.md", "w+");
