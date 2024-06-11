@@ -196,17 +196,16 @@ function toSlug(string) {
 
     const { stdout } = await exec('git log --after="2024-06-03T0:0:0+0000" --pretty=%H origin/master -- site/garden');
     const entries = await Promise.all(stdout.split("\n").filter(p => p).map(hash => new Promise(async (resolve) => {
-        const { stdout: title } = await exec(`git show --quiet --format=%s ${hash}`);
         const { stdout: time } = await exec(`git show --quiet --format=%as ${hash}`);
-        let { stdout: changes } = await exec(`git show --format="" --stat=100 --relative ${hash} .`, { cwd: 'site/garden' });
+        let { stdout: changes } = await exec(`git show --format="" --stat --relative ${hash} .`, { cwd: 'site/garden' });
 
         changes = changes.replaceAll(/\/index.md/g, '');
         changes = changes.replaceAll(
-            /(\| +[0-9]+ )(\++)/g,
-            '$1<span style="color:#A3BE8C">$2</span>');
-        changes = changes.replaceAll(
             /(\| +[0-9]+ \+*)(-+)/g,
             '$1<span style="color:#BF616A">$2</span>');
+        changes = changes.replaceAll(
+            /(\| +[0-9]+ )(\++)/g,
+            '$1<span style="color:#A3BE8C">$2</span>');
         const lines = changes.split('\n');
         const summary = lines[lines.length - 2];
         changes = lines.slice(0, -2).map(line => {
@@ -215,9 +214,9 @@ function toSlug(string) {
         }).join("\n");
 
         resolve(
-`<article class="h-entry">
-<h2 class="p-name">${title}</h2>
-<p>Pushed on <time class="dt-published">${time}</time></p>
+`<hr/>
+<article class="h-entry">
+<a href="https://code.incremental.social/thepaperpilot/pages/commit/${hash}">Pushed on <time class="dt-published">${time}</time></a>
 <p class="p-content">
 <table>
 <thead>
