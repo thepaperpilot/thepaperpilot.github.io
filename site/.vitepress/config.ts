@@ -6,19 +6,6 @@ module.exports = {
   title: 'The Paper Pilot',
   description: 'The Paper Pilot\'s Digital Garden',
   vite: {
-    plugins: [
-      SearchPlugin({
-        previewLength: 62,
-        buttonLabel: "Search",
-        placeholder: "Search website",
-        allow: [
-          /site\/garden\/.*/g,
-          /site\/changelog\/index.md/g,
-          /site\/index.md/g
-        ],
-        ignore: [],
-      })
-    ],
     ssr: {
       noExternal: [
         '@nolebase/vitepress-plugin-highlight-targeted-heading'
@@ -41,6 +28,18 @@ module.exports = {
   lastUpdated: true,
   cleanUrls: 'with-subfolders',
   themeConfig: {
+    search: {
+      provider: 'local',
+      options: {
+        _render(src, env, md) {
+          const html = md.render(src, env);
+          if (env.frontmatter?.search === false) return '';
+          if (env.relativePath.startsWith('public')) return '';
+          if (env.relativePath.startsWith('guide-to-incrementals')) return '';
+          return html;
+        }
+      }
+    },
     outline: 'deep',
     nav: [
       { text: "Profectus", link: "https://moddingtree.com" },
