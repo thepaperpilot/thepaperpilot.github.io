@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thepaperpilot.org/changelog/</id>
     <title>The Paper Pilot's Digital Garden Changelog</title>
-    <updated>2024-06-11T23:57:16.758Z</updated>
+    <updated>2024-06-11T23:58:16.486Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>The Paper Pilot</name>
@@ -14,11 +14,11 @@
     <subtitle>A feed of updates made to my digital garden!</subtitle>
     <rights>All rights reserved 2024, The Paper Pilot</rights>
     <entry>
-        <title type="html"><![CDATA[ 4 files changed, 72 insertions(+)]]></title>
-        <id>https://code.incremental.social/thepaperpilot/pages/commit/de7fbf829b37d635a3f143abffcc3597135a445a</id>
-        <link href="https://code.incremental.social/thepaperpilot/pages/commit/de7fbf829b37d635a3f143abffcc3597135a445a"/>
-        <updated>2024-06-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ 4 files changed, 72 insertions(+)]]></summary>
+        <title type="html"><![CDATA[ 3 files changed, 48 insertions(+), 38 deletions(-)]]></title>
+        <id>https://code.incremental.social/thepaperpilot/pages/commit/f55b76ee790425e33432c56e398c1d76f8e2e1a6</id>
+        <link href="https://code.incremental.social/thepaperpilot/pages/commit/f55b76ee790425e33432c56e398c1d76f8e2e1a6"/>
+        <updated>2024-06-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ 3 files changed, 48 insertions(+), 38 deletions(-)]]></summary>
         <content type="html"><![CDATA[<table>
 <thead>
 <tr>
@@ -27,10 +27,9 @@
 </tr>
 </thead>
 <tbody>
-<tr><td><a href="/garden/davey-wreden">davey-wreden</a></td><td style="font-family: monospace; white-space: nowrap;">22 <span style="color:#A3BE8C">++++++++++++++++++++++</span></td></tr>
-<tr><td><a href="/garden/ivy-road">ivy-road</a></td><td style="font-family: monospace; white-space: nowrap;">15 <span style="color:#A3BE8C">+++++++++++++++</span></td></tr>
-<tr><td><a href="/garden/the-beginner-s-guide">the-beginner-s-guide</a></td><td style="font-family: monospace; white-space: nowrap;">22 <span style="color:#A3BE8C">++++++++++++++++++++++</span></td></tr>
-<tr><td><a href="/garden/wanderstop">wanderstop</a></td><td style="font-family: monospace; white-space: nowrap;">13 <span style="color:#A3BE8C">+++++++++++++</span></td></tr>
+<tr><td><a href="/garden/digital-gardens">digital-gardens</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
+<tr><td><a href="/garden/fedi-v2">fedi-v2</a></td><td style="font-family: monospace; white-space: nowrap;">3 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
+<tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">81 <span style="color:#A3BE8C">+++++++++++++++++++++++++++</span><span style="color:#BF616A">---------------------</span></td></tr>
 </tbody>
 </table>]]></content>
     </entry>
@@ -99,6 +98,27 @@
 </table>]]></content>
     </entry>
     <entry>
+        <title type="html"><![CDATA[ 4 files changed, 72 insertions(+)]]></title>
+        <id>https://code.incremental.social/thepaperpilot/pages/commit/de7fbf829b37d635a3f143abffcc3597135a445a</id>
+        <link href="https://code.incremental.social/thepaperpilot/pages/commit/de7fbf829b37d635a3f143abffcc3597135a445a"/>
+        <updated>2024-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ 4 files changed, 72 insertions(+)]]></summary>
+        <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th style="align: center">Page</th>
+<th style="align: center">Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><a href="/garden/davey-wreden">davey-wreden</a></td><td style="font-family: monospace; white-space: nowrap;">22 <span style="color:#A3BE8C">++++++++++++++++++++++</span></td></tr>
+<tr><td><a href="/garden/ivy-road">ivy-road</a></td><td style="font-family: monospace; white-space: nowrap;">15 <span style="color:#A3BE8C">+++++++++++++++</span></td></tr>
+<tr><td><a href="/garden/the-beginner-s-guide">the-beginner-s-guide</a></td><td style="font-family: monospace; white-space: nowrap;">22 <span style="color:#A3BE8C">++++++++++++++++++++++</span></td></tr>
+<tr><td><a href="/garden/wanderstop">wanderstop</a></td><td style="font-family: monospace; white-space: nowrap;">13 <span style="color:#A3BE8C">+++++++++++++</span></td></tr>
+</tbody>
+</table>]]></content>
+    </entry>
+    <entry>
         <title type="html"><![CDATA[ 1 file changed, 11 insertions(+), 3 deletions(-)]]></title>
         <id>https://code.incremental.social/thepaperpilot/pages/commit/305386d2f186225a929ee2dfc275569a77a29945</id>
         <link href="https://code.incremental.social/thepaperpilot/pages/commit/305386d2f186225a929ee2dfc275569a77a29945"/>
@@ -113,26 +133,6 @@
 </thead>
 <tbody>
 <tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">14 <span style="color:#A3BE8C">+++++++++++</span><span style="color:#BF616A">---</span></td></tr>
-</tbody>
-</table>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ 3 files changed, 48 insertions(+), 38 deletions(-)]]></title>
-        <id>https://code.incremental.social/thepaperpilot/pages/commit/f55b76ee790425e33432c56e398c1d76f8e2e1a6</id>
-        <link href="https://code.incremental.social/thepaperpilot/pages/commit/f55b76ee790425e33432c56e398c1d76f8e2e1a6"/>
-        <updated>2024-06-06T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ 3 files changed, 48 insertions(+), 38 deletions(-)]]></summary>
-        <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th style="align: center">Page</th>
-<th style="align: center">Changes</th>
-</tr>
-</thead>
-<tbody>
-<tr><td><a href="/garden/digital-gardens">digital-gardens</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
-<tr><td><a href="/garden/fedi-v2">fedi-v2</a></td><td style="font-family: monospace; white-space: nowrap;">3 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
-<tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">81 <span style="color:#A3BE8C">+++++++++++++++++++++++++++</span><span style="color:#BF616A">---------------------</span></td></tr>
 </tbody>
 </table>]]></content>
     </entry>
