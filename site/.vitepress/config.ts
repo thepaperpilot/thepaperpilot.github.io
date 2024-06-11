@@ -11,7 +11,10 @@ module.exports = {
         previewLength: 62,
         buttonLabel: "Search",
         placeholder: "Search website",
-        allow: [],
+        allow: [
+          /\/garden\//g,
+          /\/changelog\/index.html/g
+        ],
         ignore: [],
       })
     ],
