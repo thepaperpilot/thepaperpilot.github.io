@@ -3,6 +3,7 @@ const path = require("path");
 
 const util = require('node:util');
 const exec = util.promisify(require('node:child_process').exec);
+const { Feed } = require('feed');
 
 function walk(dir, cb) {
     const list = fs.readdirSync(dir);
@@ -194,6 +195,29 @@ function toSlug(string) {
     // Build changelog
     fs.mkdirSync("./site/changelog");
 
+    const feed = new Feed({
+        title: "The Paper Pilot's Digital Garden Changelog",
+        description: "A feed of updates made to my digital garden!",
+        id: "https://www.thepaperpilot.org/changelog/",
+        link: "https://www.thepaperpilot.org/changelog/",
+        language: "en", // optional, used only in RSS 2.0, possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
+        // image: "http://example.com/image.png",
+        // favicon: "http://example.com/favicon.ico",
+        copyright: `All rights reserved ${new Date().getFullYear()}, The Paper Pilot`,
+        // updated: new Date(2013, 6, 14), // optional, default = today
+        // generator: "awesome", // optional, default = 'Feed for Node.js'
+        feedLinks: {
+            rss: "https://www.thepaperpilot.org/changelog/rss",
+            json: "https://www.thepaperpilot.org/changelog/json",
+            atom: "https://www.thepaperpilot.org/changelog/atom"
+        },
+        author: {
+            name: "The Paper Pilot",
+            email: "thepaperpilot@incremental.social",
+            link: "https://www.thepaperpilot.org/"
+        }
+    });
+
     const { stdout } = await exec('git log --after="2024-06-03T0:0:0+0000" --pretty=%H origin/master -- site/garden');
     const entries = await Promise.all(stdout.split("\n").filter(p => p).map(hash => new Promise(async (resolve) => {
         const { stdout: time } = await exec(`git show --quiet --format=%as ${hash}`);
@@ -213,11 +237,33 @@ function toSlug(string) {
             return `<tr><td><a href="/garden/${page}">${page}</a></td><td style="font-family: monospace; white-space: nowrap;">${changes}</td></tr>`;
         }).join("\n");
 
+        const commitLink = `https://code.incremental.social/thepaperpilot/pages/commit/${hash}`
+        const content = `<table>
+<thead>
+<tr>
+<th style="align: center">Page</th>
+<th style="align: center">Changes</th>
+</tr>
+</thead>
+<tbody>
+${changes}
+</tbody>
+</table>`;
+
+        feed.addItem({
+            title: summary,
+            id: commitLink,
+            link: commitLink,
+            description: summary,
+            content,
+            date: new Date(time)
+        });
+
         resolve(
 `<article class="h-entry">
 <h2 class="p-name">${summary}</h2>
 <p class="e-content">
-<a class="u-url" href="https://code.incremental.social/thepaperpilot/pages/commit/${hash}">Pushed on <time class="dt-published">${time}</time></a>
+<a class="u-url" href="${commitLink}">Pushed on <time class="dt-published">${time}</time></a>
 <table>
 <thead>
 <tr>
@@ -232,7 +278,8 @@ ${changes}
 </p>
 </article>`);
     })));
-    const fd = fs.openSync("site/changelog/index.md", "w+");
+
+    let fd = fs.openSync("site/changelog/index.md", "w+");
     fs.writeSync(fd,
 `---
 title: Changelog
@@ -248,7 +295,18 @@ next: false
 
 ${entries.join("\n\n")}
 </section>
-`
-);
+`);
+    fs.closeSync(fd);
+
+    fd = fs.openSync("site/public/garden/rss", "w+");
+    fs.writeSync(fd, feed.rss2());
+    fs.closeSync(fd);
+
+    fd = fs.openSync("site/public/garden/atom", "w+");
+    fs.writeSync(fd, feed.atom1());
+    fs.closeSync(fd);
+
+    fd = fs.openSync("site/public/garden/json", "w+");
+    fs.writeSync(fd, feed.json1());
     fs.closeSync(fd);
 })();
