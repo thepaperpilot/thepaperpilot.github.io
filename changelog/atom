@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thepaperpilot.org/changelog/</id>
     <title>The Paper Pilot's Digital Garden Changelog</title>
-    <updated>2024-06-11T04:31:48.408Z</updated>
+    <updated>2024-06-11T12:56:44.909Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>The Paper Pilot</name>
@@ -51,6 +51,24 @@
 <tr><td><a href="/garden/ivy-road">ivy-road</a></td><td style="font-family: monospace; white-space: nowrap;">15 <span style="color:#A3BE8C">+++++++++++++++</span></td></tr>
 <tr><td><a href="/garden/the-beginner-s-guide">the-beginner-s-guide</a></td><td style="font-family: monospace; white-space: nowrap;">22 <span style="color:#A3BE8C">++++++++++++++++++++++</span></td></tr>
 <tr><td><a href="/garden/wanderstop">wanderstop</a></td><td style="font-family: monospace; white-space: nowrap;">13 <span style="color:#A3BE8C">+++++++++++++</span></td></tr>
+</tbody>
+</table>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ 1 file changed, 11 insertions(+), 3 deletions(-)]]></title>
+        <id>https://code.incremental.social/thepaperpilot/pages/commit/305386d2f186225a929ee2dfc275569a77a29945</id>
+        <link href="https://code.incremental.social/thepaperpilot/pages/commit/305386d2f186225a929ee2dfc275569a77a29945"/>
+        <updated>2024-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ 1 file changed, 11 insertions(+), 3 deletions(-)]]></summary>
+        <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th style="align: center">Page</th>
+<th style="align: center">Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">14 <span style="color:#A3BE8C">+++++++++++</span><span style="color:#BF616A">---</span></td></tr>
 </tbody>
 </table>]]></content>
     </entry>
@@ -115,24 +133,6 @@
 <tr><td><a href="/garden/vitepress">vitepress</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">++</span></td></tr>
 <tr><td><a href="/garden/webrings">webrings</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">++</span></td></tr>
 <tr><td><a href="/garden/weird">weird</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">++</span></td></tr>
-</tbody>
-</table>]]></content>
-    </entry>
-    <entry>
-        <title type="html"><![CDATA[ 1 file changed, 11 insertions(+), 3 deletions(-)]]></title>
-        <id>https://code.incremental.social/thepaperpilot/pages/commit/305386d2f186225a929ee2dfc275569a77a29945</id>
-        <link href="https://code.incremental.social/thepaperpilot/pages/commit/305386d2f186225a929ee2dfc275569a77a29945"/>
-        <updated>2024-06-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ 1 file changed, 11 insertions(+), 3 deletions(-)]]></summary>
-        <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th style="align: center">Page</th>
-<th style="align: center">Changes</th>
-</tr>
-</thead>
-<tbody>
-<tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">14 <span style="color:#A3BE8C">+++++++++++</span><span style="color:#BF616A">---</span></td></tr>
 </tbody>
 </table>]]></content>
     </entry>

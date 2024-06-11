@@ -1,0 +1,1 @@
+const e={map:"[{},{},{},{},{},{},{},{},{}]"},t={},a={previewLength:62,buttonLabel:"Search",placeholder:"Search website",allow:[{},{}],ignore:[]},o={INDEX_DATA:e,PREVIEW_LOOKUP:t,Options:a};export{o as default};
