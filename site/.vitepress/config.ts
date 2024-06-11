@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 module.exports = {
   lang: "en-US",
   title: 'The Paper Pilot',
-  description: 'The Paper Pilot Personal Website',
+  description: 'The Paper Pilot\'s Digital Garden',
   vite: {
     plugins: [
       SearchPlugin({
@@ -29,7 +29,10 @@ module.exports = {
     ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:ital,wght@0,400;0,600;1,400&display=swap' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
     ['link', { rel: 'alternate', type: "text/mf2+html", href: '/changelog' }],
-    ['meta', { name: 'og:description', content: 'The Paper Pilot portfolio site' }]
+    ['link', { rel: 'alternate', type: "application/rss+xml", title: 'Changelog', href: '/changelog/rss' }],
+    ['link', { rel: 'alternate', type: "application/atom+xml", title: 'Changelog', href: '/changelog/atom' }],
+    ['link', { rel: 'alternate', type: "application/json+xml", title: 'Changelog', href: '/changelog/json' }],
+    ['meta', { name: 'og:description', content: 'The Paper Pilot\'s Digital Garden' }]
   ],
   lastUpdated: true,
   cleanUrls: 'with-subfolders',
