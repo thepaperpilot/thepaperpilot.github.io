@@ -194,6 +194,7 @@ function toSlug(string) {
     // Build changelog
     fs.mkdirSync("./site/changelog");
 
+    console.log("remotes: " + (await exec("git branch -r -v")).stdout);
     const { stdout } = await exec('git log origin/master --after="2024-06-03T0:0:0+0000" --pretty=%H site/garden');
     console.log(stdout);
     const entries = await Promise.all(stdout.split("\n").filter(p => p).map(hash => new Promise(async (resolve) => {
