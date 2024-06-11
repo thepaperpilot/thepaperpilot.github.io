@@ -214,11 +214,10 @@ function toSlug(string) {
         }).join("\n");
 
         resolve(
-`<hr/>
-<article class="h-entry">
+`<article class="h-entry">
 <h2 class="p-name">${summary}</h2>
-<p class="p-content">
-<a href="https://code.incremental.social/thepaperpilot/pages/commit/${hash}">Pushed on <time class="dt-published">${time}</time></a>
+<p class="e-content">
+<a class="u-url" href="https://code.incremental.social/thepaperpilot/pages/commit/${hash}">Pushed on <time class="dt-published">${time}</time></a>
 <table>
 <thead>
 <tr>
