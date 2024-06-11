@@ -295,6 +295,8 @@ ${entries.join("\n\n")}
 `);
     fs.closeSync(fd);
 
+    fs.mkdirSync("./public/changelog");
+
     fd = fs.openSync("site/public/changelog/rss", "w+");
     fs.writeSync(fd, feed.rss2());
     fs.closeSync(fd);
