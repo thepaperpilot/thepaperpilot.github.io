@@ -12,8 +12,9 @@ module.exports = {
         buttonLabel: "Search",
         placeholder: "Search website",
         allow: [
-          /\/garden\//g,
-          /\/changelog\/index.html/g
+          /site\/garden\/.*/g,
+          /site\/changelog\/index.md/g,
+          /site\/index.md/g
         ],
         ignore: [],
       })
