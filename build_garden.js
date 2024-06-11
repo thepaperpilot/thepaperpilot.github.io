@@ -295,15 +295,15 @@ ${entries.join("\n\n")}
 `);
     fs.closeSync(fd);
 
-    fd = fs.openSync("site/public/garden/rss", "w+");
+    fd = fs.openSync("site/public/changelog/rss", "w+");
     fs.writeSync(fd, feed.rss2());
     fs.closeSync(fd);
 
-    fd = fs.openSync("site/public/garden/atom", "w+");
+    fd = fs.openSync("site/public/changelog/atom", "w+");
     fs.writeSync(fd, feed.atom1());
     fs.closeSync(fd);
 
-    fd = fs.openSync("site/public/garden/json", "w+");
+    fd = fs.openSync("site/public/changelog/json", "w+");
     fs.writeSync(fd, feed.json1());
     fs.closeSync(fd);
 })();
