@@ -7,9 +7,11 @@ next: false
 ---
 # Fedi v2
 
-> Referenced by: [Social Media](/garden/social-media/index.md)
+> Referenced by: [Social Media](/garden/social-media/index.md), [The IndieWeb/Signature Blocks](/garden/the-indieweb/signature-blocks/index.md), [Weird](/garden/weird/index.md)
 
-My take on a theoretical successor to federated [Social Media](/garden/social-media/index.md)
+A placeholder name for a theoretical new federated network that is client-centric, in contrast to the server-centric [Fediverse](/garden/fediverse/index.md)
+
+There are further discussions about actually implementing all this within the [Weird](/garden/weird/index.md) community
 
 ## Inspiration
 - [A Plan for Social Media - Rethinking Federation](https://raphael.lullis.net/a-plan-for-social-media-less-fedi-more-webby/)
@@ -22,11 +24,10 @@ My take on a theoretical successor to federated [Social Media](/garden/social-me
 - The [Commune](/garden/commune/index.md) community
 - Existing protocols:
 	- [Nostr](https://nostr.com)
+		- Currently suffers a culture problem by being associated with alt right and crypto users, making broad adoption more difficult
 	- [ATProto](https://atproto.com)
+		- Focused on a few large instances, to be run by large corporations. Still requires associating your identity with a server you don't own
 - A lot of these ideas are learned lessons from the usenet days
-
-[Weird](/garden/weird/index.md) may eventually move in the direction of implementing something like this
-- [Next Gen Federation on Iroh: Graph Data & Linked Documents Layers](https://github.com/commune-os/weird/discussions/32)
 
 ## Identity
 - [Federated Identity](/garden/federated-identity/index.md)
@@ -52,7 +53,6 @@ My take on a theoretical successor to federated [Social Media](/garden/social-me
 	- Contacts can "vouch" for a identity having a new publickey
 	- Clients can decide to trust the new publickey based on contacts and naming hubs saying to
 	- Also applies to stolen or compromised keys
-- I believe [Iroh](https://iroh.computer) works this way
 
 ## Servers
 - Act as relays, merely storing messages and sending them to any clients or servers that have subscribed
@@ -84,6 +84,8 @@ My take on a theoretical successor to federated [Social Media](/garden/social-me
 	- Posting to a community is just replying to that message
 	- Subscribing to a community is just subscribing to that message
 	- The original message creator effectively owns the group
+- [IndieWeb](/garden/the-small-web/index.md) pages could publish these messages as well, effectively serving as clients within the network
+	- Perhaps use a bit to actually send those messages to other relays within the network
 
 ## Moderation
 - In general, edits and delete requests are made by replying with a specially flagged message
@@ -106,6 +108,7 @@ My take on a theoretical successor to federated [Social Media](/garden/social-me
 - Servers could probably determine the identity of clients sending their messages to them
 	- A client that only ever sends messages with a specific public key is unlikely to be a server
 	- A client that doesn't subscribe to all messages is unlikely to be a server
+	- Perhaps clients and servers can be identified as such, and subscribing to new messages is something you only do to servers, not clients
 - Illegal material will likely be placed on the hard drive at least temporarily
 	- Messages will be downloaded and, even if you follow a moderator bot that looks for illegal material, there's likely to be a delay between receiving the initial message and receiving the bots delete message
 - You have to download all spam messages

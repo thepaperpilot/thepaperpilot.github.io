@@ -1,5 +1,5 @@
 ---
-alias: "The IndieWeb, Personal Web, Personal Websites"
+alias: "The IndieWeb, Personal Web, Personal Websites, IndieWeb"
 public: "true"
 slug: "the-small-web"
 title: "The Small Web"
@@ -58,6 +58,10 @@ How viable would it be to include chat messages in a stream as well?
 These sites may be useful to occasionally check up on rather than get notifications from on every post/change
 - Although [Garden-RSS](/garden/garden-rss/index.md) could allow those who want to receive notifications to do so
 
+### The future
+
+[The Internet is a series of webs](https://aramzs.xyz/essays/the-internet-is-a-series-of-webs/) talks about transitioning from our current consolidated web back to the indie web
+
 ## Why people want the small web
 
 There are tools these days that make making websites incredibly easy
@@ -68,7 +72,7 @@ Hosting can be expensive, but static websites are cheap
 - There are plenty of free options out there for hosting static websites
 	- Ideally you'd use some sort of system that is easily transferrable to other servers, and possibly even supports nomadic identities
 	- [Free hosting for static websites:](/garden/the-small-web/index.md#665b6ac0-d3ca-41d8-9534-929ac2907c2e)
-- People are creative and love creating things
+	- People are creative and love creating things
 
 ## Recommended videos about the small web
 

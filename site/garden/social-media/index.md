@@ -8,7 +8,7 @@ next: false
 ---
 # Social Media
 
-> Referenced by: [Commune](/garden/commune/index.md), [Fedi v2](/garden/fedi-v2/index.md), [Fediverse](/garden/fediverse/index.md)
+> Referenced by: [Commune](/garden/commune/index.md), [Fediverse](/garden/fediverse/index.md)
 
 Traditional social media
 - Not [Decentralized](/garden/decentralized/index.md)

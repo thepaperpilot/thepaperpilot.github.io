@@ -9,7 +9,7 @@ next: false
 ---
 # Fediverse
 
-> Referenced by: [ATProto](/garden/atproto/index.md), [Decentralized](/garden/decentralized/index.md), [Incremental Social](/garden/incremental-social/index.md), [Mbin](/garden/mbin/index.md), [Weird](/garden/weird/index.md)
+> Referenced by: [ATProto](/garden/atproto/index.md), [Decentralized](/garden/decentralized/index.md), [Fedi v2](/garden/fedi-v2/index.md), [Incremental Social](/garden/incremental-social/index.md), [Mbin](/garden/mbin/index.md), [Weird](/garden/weird/index.md)
 
 > Tags: [Decentralized](/garden/decentralized/index.md)
 

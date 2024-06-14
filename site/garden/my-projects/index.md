@@ -8,6 +8,8 @@ next: false
 ---
 # My Projects
 
+> Referenced by: [My Personal Website](/garden/my-personal-website/index.md)
+
 > Tagged by: [Advent Incremental](/garden/advent-incremental/index.md), [Babble Buds](/garden/babble-buds/index.md), [Capture the Citadel](/garden/capture-the-citadel/index.md), [Dice Armor](/garden/dice-armor/index.md), [Game Dev Tree](/garden/game-dev-tree/index.md), [Incremental Social](/garden/incremental-social/index.md), [Kronos](/garden/kronos/index.md), [Opti-Speech](/garden/opti-speech/index.md), [Planar Pioneers](/garden/planar-pioneers/index.md), [Profectus](/garden/profectus/index.md), [V-ecs](/garden/v-ecs/index.md)
 
 I like making games and tools!

@@ -156,13 +156,12 @@ function toSlug(string) {
         resolve();
     });
 
-	fs.mkdirSync("./site/garden");
-    fs.mkdirSync("./site/public/garden");
+    fs.mkdirSync("./site/public/garden", { recursive: true });
 
 	// Move everything from ./garden-output/logseq-pages into ./site/garden
     await walk("./garden-output/logseq-pages", (dir, file, resolve) => {
     	const folder = path.resolve("./site/garden", ...path.basename(file, ".md").split('___'));
-    	fs.mkdirSync(folder);
+    	fs.mkdirSync(folder, { recursive: true });
     	fs.copyFileSync(path.resolve(dir, file), path.resolve(folder, "index.md"));
         resolve();
     });

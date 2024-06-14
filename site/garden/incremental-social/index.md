@@ -7,7 +7,7 @@ next: false
 ---
 # Incremental Social
 
-> Referenced by: [Federated Identity](/garden/federated-identity/index.md), [My Personal Website](/garden/my-personal-website/index.md), [Webrings](/garden/webrings/index.md)
+> Referenced by: [Federated Identity](/garden/federated-identity/index.md), [Webrings](/garden/webrings/index.md)
 
 > Tags: [My Projects](/garden/my-projects/index.md)
 
