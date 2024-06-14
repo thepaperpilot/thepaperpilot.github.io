@@ -1,6 +1,16 @@
 import { SearchPlugin } from "vitepress-plugin-search";
 import { defineConfig } from "vitepress";
 
+const fs = require("fs");
+const path = require("path");
+
+const filePath = path.resolve("./Garden/logseq/config.edn");
+const data = fs.readFileSync(filePath).toString();
+let favorites = [];
+for (const match of data.matchAll(/:favorites \["([^\]]+)"\]/g)) {
+  favorites = match[1].split("\" \"").map(page => ({ title: page, link: `/garden/${page.toLowerCase().replaceAll(' ', '-')}` }));
+}
+
 module.exports = {
   lang: "en-US",
   title: 'The Paper Pilot',
@@ -53,12 +63,7 @@ module.exports = {
     sidebar: [
       {
         text: "Recommended Pages",
-        items: [
-          { text: "My Projects", link: "/garden/my-projects" },
-          { text: "Guide to Incrementals", link: "/garden/guide-to-incrementals" },
-          { text: "The Small Web", link: "/garden/the-small-web" },
-          { text: "Fedi v2", link: "/garden/fedi-v2" },
-        ]
+        items: favorites
       },
       { text: "Changelog", link: "/changelog" }
     ]
