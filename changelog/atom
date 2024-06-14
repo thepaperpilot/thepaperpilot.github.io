@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thepaperpilot.org/changelog/</id>
     <title>The Paper Pilot's Digital Garden Changelog</title>
-    <updated>2024-06-11T23:58:16.486Z</updated>
+    <updated>2024-06-14T03:55:23.484Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>The Paper Pilot</name>
@@ -98,11 +98,11 @@
 </table>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[ 4 files changed, 72 insertions(+)]]></title>
-        <id>https://code.incremental.social/thepaperpilot/pages/commit/de7fbf829b37d635a3f143abffcc3597135a445a</id>
-        <link href="https://code.incremental.social/thepaperpilot/pages/commit/de7fbf829b37d635a3f143abffcc3597135a445a"/>
-        <updated>2024-06-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ 4 files changed, 72 insertions(+)]]></summary>
+        <title type="html"><![CDATA[ 20 files changed, 274 insertions(+), 16 deletions(-)]]></title>
+        <id>https://code.incremental.social/thepaperpilot/pages/commit/34f8298829d6d9ddc73eae8c01c1147ba1ad2573</id>
+        <link href="https://code.incremental.social/thepaperpilot/pages/commit/34f8298829d6d9ddc73eae8c01c1147ba1ad2573"/>
+        <updated>2024-06-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ 20 files changed, 274 insertions(+), 16 deletions(-)]]></summary>
         <content type="html"><![CDATA[<table>
 <thead>
 <tr>
@@ -111,10 +111,26 @@
 </tr>
 </thead>
 <tbody>
-<tr><td><a href="/garden/davey-wreden">davey-wreden</a></td><td style="font-family: monospace; white-space: nowrap;">22 <span style="color:#A3BE8C">++++++++++++++++++++++</span></td></tr>
-<tr><td><a href="/garden/ivy-road">ivy-road</a></td><td style="font-family: monospace; white-space: nowrap;">15 <span style="color:#A3BE8C">+++++++++++++++</span></td></tr>
-<tr><td><a href="/garden/the-beginner-s-guide">the-beginner-s-guide</a></td><td style="font-family: monospace; white-space: nowrap;">22 <span style="color:#A3BE8C">++++++++++++++++++++++</span></td></tr>
-<tr><td><a href="/garden/wanderstop">wanderstop</a></td><td style="font-family: monospace; white-space: nowrap;">13 <span style="color:#A3BE8C">+++++++++++++</span></td></tr>
+<tr><td><a href="/garden/artificial-intelligence">artificial-intelligence</a></td><td style="font-family: monospace; white-space: nowrap;">28 <span style="color:#A3BE8C">++++++++++++++++</span></td></tr>
+<tr><td><a href="/garden/command-palettes">command-palettes</a></td><td style="font-family: monospace; white-space: nowrap;">25 <span style="color:#A3BE8C">++++++++++++++</span></td></tr>
+<tr><td><a href="/garden/fedi-v2">fedi-v2</a></td><td style="font-family: monospace; white-space: nowrap;">15 <span style="color:#A3BE8C">+++++</span><span style="color:#BF616A">----</span></td></tr>
+<tr><td><a href="/garden/fediverse">fediverse</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
+<tr><td><a href="/garden/guide-to-incrementals">guide-to-incrementals</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">++</span></td></tr>
+<tr><td><a href="/garden/incremental-social">incremental-social</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
+<tr><td><a href="/garden/life-is-strange">life-is-strange</a></td><td style="font-family: monospace; white-space: nowrap;">60 <span style="color:#A3BE8C">++++++++++++++++++++++++++++++++++</span></td></tr>
+<tr><td><a href="/garden/logseq">logseq</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
+<tr><td><a href="/garden/mtx">mtx</a></td><td style="font-family: monospace; white-space: nowrap;">13 <span style="color:#A3BE8C">++++++++</span></td></tr>
+<tr><td><a href="/garden/my-personal-website">my-personal-website</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
+<tr><td><a href="/garden/my-projects">my-projects</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">++</span></td></tr>
+<tr><td><a href="/garden/pre-order-bonuses">pre-order-bonuses</a></td><td style="font-family: monospace; white-space: nowrap;">28 <span style="color:#A3BE8C">++++++++++++++++</span></td></tr>
+<tr><td><a href="/garden/premium-currency">premium-currency</a></td><td style="font-family: monospace; white-space: nowrap;">19 <span style="color:#A3BE8C">+++++++++++</span></td></tr>
+<tr><td><a href="/garden/social-media">social-media</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
+<tr><td><a href="/garden/the-beginner-s-guide">the-beginner-s-guide</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
+<tr><td><a href="/garden/the-indieweb/amplification">the-indieweb/amplification</a></td><td style="font-family: monospace; white-space: nowrap;">14 <span style="color:#A3BE8C">++++++++</span></td></tr>
+<tr><td><a href="/garden/the-indieweb/signature-blocks">the-indieweb/signature-blocks</a></td><td style="font-family: monospace; white-space: nowrap;">10 <span style="color:#A3BE8C">++++++</span></td></tr>
+<tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">8 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">--</span></td></tr>
+<tr><td><a href="/garden/video-game-monetization">video-game-monetization</a></td><td style="font-family: monospace; white-space: nowrap;">43 <span style="color:#A3BE8C">++++++++++++++++++++++++</span></td></tr>
+<tr><td><a href="/garden/weird">weird</a></td><td style="font-family: monospace; white-space: nowrap;">11 <span style="color:#A3BE8C">+++++</span><span style="color:#BF616A">--</span></td></tr>
 </tbody>
 </table>]]></content>
     </entry>
@@ -133,6 +149,27 @@
 </thead>
 <tbody>
 <tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">14 <span style="color:#A3BE8C">+++++++++++</span><span style="color:#BF616A">---</span></td></tr>
+</tbody>
+</table>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ 4 files changed, 72 insertions(+)]]></title>
+        <id>https://code.incremental.social/thepaperpilot/pages/commit/de7fbf829b37d635a3f143abffcc3597135a445a</id>
+        <link href="https://code.incremental.social/thepaperpilot/pages/commit/de7fbf829b37d635a3f143abffcc3597135a445a"/>
+        <updated>2024-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ 4 files changed, 72 insertions(+)]]></summary>
+        <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th style="align: center">Page</th>
+<th style="align: center">Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><a href="/garden/davey-wreden">davey-wreden</a></td><td style="font-family: monospace; white-space: nowrap;">22 <span style="color:#A3BE8C">++++++++++++++++++++++</span></td></tr>
+<tr><td><a href="/garden/ivy-road">ivy-road</a></td><td style="font-family: monospace; white-space: nowrap;">15 <span style="color:#A3BE8C">+++++++++++++++</span></td></tr>
+<tr><td><a href="/garden/the-beginner-s-guide">the-beginner-s-guide</a></td><td style="font-family: monospace; white-space: nowrap;">22 <span style="color:#A3BE8C">++++++++++++++++++++++</span></td></tr>
+<tr><td><a href="/garden/wanderstop">wanderstop</a></td><td style="font-family: monospace; white-space: nowrap;">13 <span style="color:#A3BE8C">+++++++++++++</span></td></tr>
 </tbody>
 </table>]]></content>
     </entry>
