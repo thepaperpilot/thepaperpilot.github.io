@@ -86,6 +86,7 @@ function toSlug(string) {
     Object.keys(referencedBy).forEach(page => {
         referencedBy[page] = Array.from(new Set(referencedBy[page]));
     });
+    pageLinks["NOW"] = "/now/index";
 
     await walk("./garden-output/logseq-pages", (dir, file, resolve) => {
         const filePath = path.resolve(dir, file);
@@ -144,6 +145,8 @@ function toSlug(string) {
                 /---\n\n/gm,
                 `---\n\n> Referenced by: ${referencedBy[title].map(tag => `[${tag}](${pageLinks[tag]})`).join(", ")}\n\n`);
         }
+        // Fix links to /now
+        data = data.replace('[NOW]', '[/now]')
         // Add title to the top
         data = data.replaceAll('___', '/');
         data = data.replaceAll(
@@ -190,6 +193,9 @@ function toSlug(string) {
     fs.rmSync('./site/garden/guide-to-incrementals/what-is-content-', { recursive: true });
     fs.mkdirSync('./site/guide-to-incrementals/ludology/definition');
     fs.copyFileSync('./site/garden/guide-to-incrementals/defining-the-genre/index.md', './site/guide-to-incrementals/ludology/definition/index.md');
+
+    fs.mkdirSync('./site/now');
+    fs.renameSync('./site/garden/now/index.md', './site/now/index.md');
 
     // Build changelog
     fs.mkdirSync("./site/changelog");

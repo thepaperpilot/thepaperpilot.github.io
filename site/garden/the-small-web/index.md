@@ -8,7 +8,7 @@ next: false
 ---
 # The Small Web
 
-> Referenced by: [This Knowledge Hub](/garden/this-knowledge-hub/index.md)
+> Referenced by: [/now](/now/index), [This Knowledge Hub](/garden/this-knowledge-hub/index.md)
 
 Small personal websites created by individuals
 - [My Personal Website](/garden/my-personal-website/index.md)

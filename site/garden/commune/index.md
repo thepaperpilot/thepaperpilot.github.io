@@ -7,7 +7,7 @@ next: false
 ---
 # Commune
 
-> Referenced by: [Federated Identity](/garden/federated-identity/index.md), [Fedi v2](/garden/fedi-v2/index.md), [My Personal Website](/garden/my-personal-website/index.md), [Webrings](/garden/webrings/index.md), [Weird](/garden/weird/index.md)
+> Referenced by: [Federated Identity](/garden/federated-identity/index.md), [Fedi v2](/garden/fedi-v2/index.md), [My Personal Website](/garden/my-personal-website/index.md), [/now](/now/index), [Webrings](/garden/webrings/index.md), [Weird](/garden/weird/index.md)
 
 An [Open Source](/garden/open-source/index.md) [Matrix](/garden/matrix/index.md) web client built to be better for communities than anything else out there
 - Currently in development

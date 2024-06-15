@@ -82,6 +82,7 @@ module.exports = {
         text: "Recommended Pages",
         items: favorites
       },
+      { text: "/now", link: "/now" },
       { text: "Changelog", link: "/changelog" }
     ]
   }
