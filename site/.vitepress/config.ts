@@ -49,8 +49,8 @@ module.exports = {
       const pageStart = code.indexOf("</h1>");
       const firstCommit = (await exec(`git log -n 1 --diff-filter=A --format="<a href='https://code.incremental.social/thepaperpilot/pages/commit/%H' title='%ad'><time class='dt-published' datetime='%ad'>%ar</time></a>" site/${context.page}`)).stdout;
       const lastCommit = (await exec(`git log -n 1 --diff-filter=M --format="<a href='https://code.incremental.social/thepaperpilot/pages/commit/%H' title='%ad'><time class='dt-updated' datetime='%ad'>%ar</time></a>" site/${context.page}`)).stdout;
-      const header = code.slice(0, pageStart < 0 ? 0 : pageStart + 5).replace('<h1 ', '<h1 class="p-name" ');
-      return `<article class="h-entry">${header + `<p>${wc} words, ~${Math.round(wc / 183)} minute read. Planted ${firstCommit}.${lastCommit ? ` Last tended to ${lastCommit}.` : ''}</p><hr/><div class="e-content">` + code.slice(pageStart + 5)}</div></article>`;
+      const header = code.slice(0, pageStart < 0 ? 0 : pageStart + 5).replace('<h1 ', '<article class="h-entry"><h1 class="p-name" ');
+      return header + `<p>${wc} words, ~${Math.round(wc / 183)} minute read. Planted ${firstCommit}.${lastCommit ? ` Last tended to ${lastCommit}.` : ''}</p><hr/><div class="e-content">` + code.slice(pageStart + 5).replace('</main>', '</div></article></main>');
     }
     return code;
   },
