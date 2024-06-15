@@ -1,9 +1,10 @@
 :root {
-  --vp-font-family-mono: Roboto Mono, monospace;
+  --vp-font-family-base: Inter;
+  --vp-font-family-mono: Roboto Mono;
 }
 
 .main .name .clip {
-  font-family: Pacifico, cursive;
+  font-family: Pacifico;
 }
 
 .title {
