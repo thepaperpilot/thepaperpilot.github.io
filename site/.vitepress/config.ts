@@ -34,7 +34,7 @@ module.exports = {
   },
   head: [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
-    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:ital,wght@0,400;0,600;1,400&display=swap' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:ital,wght@0,400;0,600;1,400&display=block' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
     ['link', { rel: 'alternate', type: "text/mf2+html", href: '/changelog' }],
     ['link', { rel: 'alternate', type: "application/rss+xml", title: 'Changelog', href: '/changelog/rss' }],
