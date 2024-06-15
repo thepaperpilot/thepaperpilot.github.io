@@ -146,7 +146,7 @@ function toSlug(string) {
                 `---\n\n> Referenced by: ${referencedBy[title].map(tag => `[${tag}](${pageLinks[tag]})`).join(", ")}\n\n`);
         }
         // Fix links to /now
-        data = data.replace('[NOW]', '[/now]')
+        data = data.replace('NOW', '/now')
         // Add title to the top
         data = data.replaceAll('___', '/');
         data = data.replaceAll(

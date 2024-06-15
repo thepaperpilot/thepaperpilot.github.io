@@ -1,11 +1,11 @@
 ---
 public: "true"
 slug: "now"
-title: "NOW"
+title: "/now"
 prev: false
 next: false
 ---
-# NOW
+# /now
 
 > Referenced by: [My Personal Website](/garden/my-personal-website/index.md)
 
