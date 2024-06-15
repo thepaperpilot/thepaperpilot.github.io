@@ -1,8 +1,12 @@
 import { SearchPlugin } from "vitepress-plugin-search";
 import { defineConfig } from "vitepress";
+import wordCounting from "word-counting";
 
 const fs = require("fs");
 const path = require("path");
+
+const util = require('node:util');
+const exec = util.promisify(require('node:child_process').exec);
 
 const filePath = path.resolve("./Garden/logseq/config.edn");
 const data = fs.readFileSync(filePath).toString();
@@ -35,8 +39,19 @@ module.exports = {
     ['link', { rel: 'alternate', type: "application/json+xml", title: 'Changelog', href: '/changelog/json' }],
     ['meta', { name: 'og:description', content: 'The Paper Pilot\'s Digital Garden' }]
   ],
-  lastUpdated: true,
+  lastUpdated: false,
   cleanUrls: 'with-subfolders',
+  async transformHtml(code, id, context) {
+    if (context.page.startsWith("garden") && fs.existsSync("site/" + context.page)) {
+      const wc = wordCounting(code, { isHtml: true }).wordsCount;
+      const pageStart = code.indexOf("</h1>");
+      const firstCommit = (await exec(`git log -n 1 --diff-filter=A --format="<a href='https://code.incremental.social/thepaperpilot/pages/commit/%H' title='%ad'><time class='dt-published' datetime='%ad'>%ar</time></a>" site/${context.page}`)).stdout;
+      const lastCommit = (await exec(`git log -n 1 --diff-filter=M --format="<a href='https://code.incremental.social/thepaperpilot/pages/commit/%H' title='%ad'><time class='dt-updated' datetime='%ad'>%ar</time></a>" site/${context.page}`)).stdout;
+      const header = code.slice(0, pageStart < 0 ? 0 : pageStart - 5).replace('<h1 ', '<h1 class="p-name" ');
+      return `<article class="h-entry">${header + `<p>${wc} words, ~${Math.round(wc / 183)} minute read. Planted ${firstCommit}.${lastCommit ? ` Last tended to ${lastCommit}.` : ''}</p><hr/><div class="e-content">` + code.slice(pageStart + 5)}</div></article>`;
+    }
+    return code;
+  },
   themeConfig: {
     search: {
       provider: 'local',
