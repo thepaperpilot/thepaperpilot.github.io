@@ -7,8 +7,6 @@ next: false
 ---
 # /now
 
-> Referenced by: [My Personal Website](/garden/my-personal-website/index.md)
-
 This "now page" offers a big picture glimpse into what I’m focused on at this point in my life. [What is a now page](https://nownownow.com/about)?
 
 ## Life

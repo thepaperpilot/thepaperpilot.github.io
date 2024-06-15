@@ -51,10 +51,15 @@ function toSlug(string) {
     // The logseq-export README made it sound like even the title property is transformed sometimes
     await walk("./Garden/pages", (dir, file, resolve) => {
         const filePath = path.resolve(dir, file);
-        const data = fs.readFileSync(filePath).toString();
+        let data = fs.readFileSync(filePath).toString();
         if (!data.match(/public::/g)) {
             resolve();
             return;
+        }
+
+        const startPrivate = data.indexOf("- private");
+        if (startPrivate > 0) {
+            data = data.slice(0, startPrivate);
         }
 
         const name = path.basename(file, ".md").replaceAll('___', '/');

@@ -7,7 +7,7 @@ next: false
 ---
 # Chat Glue
 
-> Referenced by: [Commune](/garden/commune/index.md), [My Personal Website](/garden/my-personal-website/index.md), [The Small Web](/garden/the-small-web/index.md)
+> Referenced by: [Commune](/garden/commune/index.md), [The Small Web](/garden/the-small-web/index.md)
 
 A theoretical chat system designed to solve the problems of transcribing branching conversations into linear timelines.
 

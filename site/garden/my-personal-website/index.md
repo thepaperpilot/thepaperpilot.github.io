@@ -7,6 +7,6 @@ next: false
 ---
 # My Personal Website
 
-> Referenced by: [My Personal Website](/garden/my-personal-website/index.md), [The Small Web](/garden/the-small-web/index.md)
+> Referenced by: [The Small Web](/garden/the-small-web/index.md)
 
 A [Personal Websites](/garden/the-small-web/index.md) for myself, available at https://thepaperpilot.org

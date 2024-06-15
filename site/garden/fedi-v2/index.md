@@ -7,7 +7,7 @@ next: false
 ---
 # Fedi v2
 
-> Referenced by: [Social Media](/garden/social-media/index.md), [The IndieWeb/Signature Blocks](/garden/the-indieweb/signature-blocks/index.md), [Weird](/garden/weird/index.md)
+> Referenced by: [Social Media](/garden/social-media/index.md), [Weird](/garden/weird/index.md)
 
 A placeholder name for a theoretical new federated network that is client-centric, in contrast to the server-centric [Fediverse](/garden/fediverse/index.md)
 
