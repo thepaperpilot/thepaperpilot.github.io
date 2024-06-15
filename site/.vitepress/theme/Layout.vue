@@ -27,8 +27,8 @@ import util from 'node:util'
 import child_process from 'node:child_process';
 const exec = util.promisify(child_process.exec);
 
-const commitLink = (await exec(`git log -n 1 --format="https://code.incremental.social/thepaperpilot/pages/commit/%H"`)).stdout;
-const commitTime = (await exec(`git log -n 1 --date=format:"%A, %B %d, %Y at %X" --format=%ad`)).stdout;
+const commitLink = (await exec(`git log -n 1 --format="https://code.incremental.social/thepaperpilot/pages/commit/%H"`)).stdout.replaceAll(/\n$/g, '');
+const commitTime = (await exec(`git log -n 1 --date=format:"%A, %B %d, %Y at %X" --format=%ad`)).stdout.replaceAll(/\n$/g, '');
 </script>
 
 <style scoped>
