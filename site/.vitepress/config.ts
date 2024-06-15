@@ -20,6 +20,7 @@ module.exports = {
   lang: "en-US",
   title: 'The Paper Pilot',
   description: 'The Paper Pilot\'s Digital Garden',
+  mpa: true,
   vite: {
     ssr: {
       noExternal: [
