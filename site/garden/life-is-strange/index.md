@@ -21,6 +21,8 @@ Playthroughs I enjoyed:
 	- ![ce7b2612-2ddb-423e-82eb-95c2ed08c4da.png](/garden/ce7b2612-2ddb-423e-82eb-95c2ed08c4da_1718332277410_0.png)
 - [LiS Voice Actors](https://www.youtube.com/watch?v=zvQmqdnFkZA)
 
+Around the start of Haley and I's relationship, we'd play through LiS1 on projectors in our's classrooms
+
 ## The ending
 
 I was not a huge fan of the ending of Life is Strange. Of the two endings, one very clearly got a lot more resources spent on it, but I think Max's story has a better conclusion under the other.
