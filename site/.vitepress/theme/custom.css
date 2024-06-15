@@ -3,6 +3,11 @@
   --vp-font-family-mono: Roboto Mono;
 }
 
+@font-face {
+  font-family: Inter;
+  font-display: block;
+}
+
 .main .name .clip {
   font-family: Pacifico;
 }
