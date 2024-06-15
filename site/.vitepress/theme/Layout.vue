@@ -4,8 +4,8 @@
       <NolebaseHighlightTargetedHeading />
     </template>
     <template #layout-bottom>
-    	<footer>
-			<div>CC {{ new Date().getFullYear() }} The Paper Pilot. <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</div>
+    	<footer class="vp-doc">
+			<div>CC {{ new Date().getFullYear() }} The Paper Pilot. <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</div>
 			<div>Any and all opinions listed here are my own and not representative of my employers; future, past and present.</div>
 			<div><a href="https://resume.incremental.social/thepaperpilot/thepaperpilot">Resume</a> (not actively seeking new opportunities).</div>
 			<div>Site built from <a :href="commitLink">this commit</a> on <time>{{ commitTime }}</time>.</div>
@@ -30,3 +30,13 @@ const exec = util.promisify(child_process.exec);
 const commitLink = (await exec(`git log -n 1 --format="https://code.incremental.social/thepaperpilot/pages/commit/%H"`)).stdout;
 const commitTime = (await exec(`git log -n 1 --date=format:"%A, %B %d, %Y at %X" --format=%ad`)).stdout;
 </script>
+
+<style scoped>
+footer {
+    padding: 2em;
+    z-index: 26;
+    position: relative;
+    font-size: small;
+    background: var(--vp-c-bg-elv);
+}
+</style>
