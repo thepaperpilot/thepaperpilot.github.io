@@ -1,6 +1,7 @@
 import { SearchPlugin } from "vitepress-plugin-search";
 import { defineConfig } from "vitepress";
 import wordCounting from "word-counting";
+import vueJsx from '@vitejs/plugin-vue-jsx'
 
 const fs = require("fs");
 const path = require("path");
@@ -24,7 +25,8 @@ module.exports = {
       noExternal: [
         '@nolebase/vitepress-plugin-highlight-targeted-heading'
       ]
-    }
+    },
+    plugins: [vueJsx()]
   },
   sitemap: {
     hostname: 'https://thepaperpilot.org'
