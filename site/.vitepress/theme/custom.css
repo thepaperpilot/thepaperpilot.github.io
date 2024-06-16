@@ -45,3 +45,17 @@ ul > li > ul::before {
     opacity: 0.3;
     left: -16px;
 }
+
+
+.VPSidebar {
+  opacity: 1 !important;
+}
+
+/* Required due to no JS */
+button[aria-haspopup="true"]:focus + .menu {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+.VPLocalNav:has(button[aria-expanded="false"]:focus) + .VPSidebar {
+  transform: unset !important;
+}
