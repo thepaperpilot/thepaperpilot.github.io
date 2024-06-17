@@ -272,7 +272,7 @@ ${changes}
         resolve(
 `<article class="h-entry">
 <h2 class="p-name">${summary}</h2>
-<p class="e-content">
+<div class="e-content">
 <a class="u-url" href="${commitLink}">Pushed on <time class="dt-published">${time}</time></a>
 <table>
 <thead>
@@ -285,7 +285,7 @@ ${changes}
 ${changes}
 </tbody>
 </table>
-</p>
+</div>
 </article>`);
     })));
 

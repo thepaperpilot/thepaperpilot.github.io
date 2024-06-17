@@ -9,7 +9,6 @@ html {
   --vp-font-family-mono: Roboto Mono;
   --vp-layout-max-width: 1080px;
   --vp-nav-height: 48px;
-  --vp-z-index-nav: 0;
 }
 
 footer {
@@ -167,20 +166,15 @@ ul > li > ul::before {
 }
 
 .VPNav {
-  left: 32px !important;
-  right: 64px !important;
+  left: 96px !important;
+  right: 32px !important;
   width: unset !important;
   position: absolute !important;
+  overflow: hidden;
 }
 
 .wrapper {
-  padding: 0 64px !important;
-}
-
-@media (min-width: 960px) {
-  .wrapper {
-    padding: 0 16px !important;
-  }
+  padding: 0 !important;
 }
 
 .VPNavBar {
@@ -198,13 +192,18 @@ ul > li > ul::before {
 .VPNav .content-body {
   height: unset !important;
   align-items: flex-end !important;
+  column-gap: unset !important;
+}
+
+.VPNavBarHamburger {
+  width: unset !important;
 }
 
 .title {
   height: unset !important;
 }
 
-.VPNav a, .DocSearch-Button, .VPNav button {
+a.title, .VPNavBarMenuLink, .VPNavBarSocialLinks a, .DocSearch-Button, .VPNav button {
   height: 36px !important;
   border-radius: 10px 10px 0 0;
   padding: 8px !important;
@@ -224,11 +223,11 @@ a.title {
   background-color: #ffff00 !important;
 }
 
-.VPNav .link[href="https://moddingtree.com"] {
+.VPNav .VPNavBarMenuLink[href="https://moddingtree.com"] {
   background-color: #00ff00;
 }
 
-.VPNav .link[href="https://incremental.social"] {
+.VPNav .VPNavBarMenuLink[href="https://incremental.social"] {
   background: #ff00ff;
 }
 
@@ -236,15 +235,15 @@ a.title {
   background: #ff0000;
 }
 
-.VPNav [href="https://code.incremental.social/thepaperpilot"] {
+.VPNav .VPNavBarSocialLinks [href="https://code.incremental.social/thepaperpilot"] {
   background: #ff7700;
 }
 
-.VPNav [href="https://matrix.to/#/@thepaperpilot:incremental.social"] {
+.VPNav .VPNavBarSocialLinks [href="https://matrix.to/#/@thepaperpilot:incremental.social"] {
   background: #3c9a3c;
 }
 
-.VPNav [href="https://incremental.social/u/thepaperpilot"] {
+.VPNav .VPNavBarSocialLinks [href="https://incremental.social/u/thepaperpilot"] {
   background: #a75aff;
 }
 
@@ -269,18 +268,45 @@ a.title {
   display: flex !important;
 }
 
+.VPNavScreenSocialLinks a,
+.VPNavScreenMenuLink,
+.VPNavScreenMenuLink::after {
+  color: var(--vp-c-bg-alt) !important;
+}
+
+@media (max-width: 500px) {
+  .VPNavBarSocialLinks {
+    display: none !important;
+  }
+}
+
+@media (min-width: 501px) {
+  .VPNavScreenSocialLinks {
+    display: none !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .title span {
+    width: 60px;
+  }
+
+  .title span::before {
+    content: "Home .";
+  }
+}
+
 .VPContent {
   padding-top: 0 !important;
   margin-top: var(--vp-nav-height) !important;
   padding-right: calc((100vw - var(--vp-layout-max-width)) / 2) !important;
   padding-left: calc((100vw - var(--vp-layout-max-width)) / 2) !important;
-  z-index: 1;
 }
 
 @media (min-width: 960px) {
   .VPNav {
-    right: calc(max(0px, (100vw - var(--vp-layout-max-width)) / 2) + 16px) !important;
-    left: calc(max(-15px, (100vw - var(--vp-layout-max-width)) / 2 + var(--vp-sidebar-width)) + 16px) !important;
+    right: calc(max(0px, (100vw - var(--vp-layout-max-width)) / 2) + 32px) !important;
+    left: calc(max(-15px, (100vw - var(--vp-layout-max-width)) / 2 + var(--vp-sidebar-width)) + 32px) !important;
   }
 
   .VPContent {
@@ -290,6 +316,9 @@ a.title {
 
 .vp-doc .header-anchor {
   margin-left: calc(-1em - 23px);
+}
+
+.vp-doc :not(h1) > .header-anchor {
   top: 24px;
 }
 
@@ -306,14 +335,23 @@ a.title {
   pointer-events: none;
 }
 
+.VPLocalNav .container {
+  align-items: flex-start !important;
+  flex-direction: column !important;
+}
+
 .VPLocalNav > .container > * {
   pointer-events: all;
 }
 
 .VPLocalNav .menu {
   background: #7afcff;
-  padding: 4px 8px 4px 30px;
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 10px;
+  height: 30px;
+  width: 90px;
+  padding: 0 !important;
+  padding-left: 8px !important;
 }
 
 .VPLocalNav button:not(.menu) {
@@ -323,11 +361,27 @@ a.title {
 }
 
 .VPLocalNavOutlineDropdown {
-  padding-right: 0 !important;
+  padding: 0 !important;
+  margin-top: 10px;
+  width: 90px;
+  height: 30px;
+}
+
+.VPLocalNavOutlineDropdown button {
+  padding: 0 !important;
+  margin-top: 10px;
+  width: 90px;
+  height: 30px;
 }
 
 .curtain {
   display: none;
+}
+
+@media (max-width: 840px) {
+  .DocSearch-Button-Keys {
+    display: none !important;
+  }
 }
 
 @media (max-width: 959px) {
@@ -339,6 +393,7 @@ a.title {
     background: linear-gradient(to bottom, var(--vp-sidebar-bg-color) 29px, var(--vp-c-divider) 1px);
     background-size: 100% 30px;
     line-height: 30px;
+    width: calc(100vw - 128px);
   }
 }
 
@@ -363,18 +418,25 @@ a.title {
 }
 
 .VPContent .content {
-  padding: 30px !important;
-  padding-top: 0px !important;
+  padding: 0 30px !important;
 }
 
 .content-container {
   border-left: double 7px var(--vp-c-divider);
-  padding-left: 8px;
+  padding: 30px 0 30px 8px;
   max-width: unset !important;
 }
 
 article {
   padding-top: 30px;
+}
+
+.vp-doc .h-feed :has(+ article) {
+  padding-bottom: 0px !important;
+}
+
+.vp-doc h2 + .e-content {
+  margin-top: 0 !important;
 }
 
 .VPDoc h1, .VPDoc h2, .VPDoc h3, .VPDoc h4, .VPDoc h5, .VPDoc h6 {
@@ -448,6 +510,26 @@ hr {
   border-image: url(/button.svg) 10 10 10 10 stretch stretch !important;
   padding-top: 23px !important;
   margin-top: -3px !important;
+}
+
+table {
+  margin: 30px 0 !important;
+}
+
+#app .vp-doc tr {
+  background-color: var(--vp-c-gray-2);
+}
+
+#app .vp-doc tr:nth-child(2n) {
+  background-color: var(--vp-c-bg-soft);
+}
+
+#app .vp-doc th, #app .vp-doc td {
+  font-size: unset !important;
+  font-weight: unset !important;
+  color: unset !important;
+  padding: 0 8px !important;
+  line-height: 29px;
 }
 
 .VPSidebarItem {
