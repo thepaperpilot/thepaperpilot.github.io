@@ -452,14 +452,3 @@ hr {
 .e-content > :last-child {
   margin-bottom: 0 !important;
 }
-
-/* Required due to no JS */
-button[aria-haspopup="true"]:focus + .menu,
-.menu:has(:focus) {
-    opacity: 1 !important;
-    visibility: visible !important;
-}
-.VPLocalNav:has(button[aria-expanded="false"]:focus) + .VPSidebar,
-.VPSidebar:has(:focus) {
-  transform: rotate(1.4deg) !important;
-}

@@ -20,7 +20,9 @@ module.exports = {
   lang: "en-US",
   title: 'The Paper Pilot',
   description: 'The Paper Pilot\'s Digital Garden',
-  mpa: true,
+  // Solves content sometimes not updating correctly when navigating between links,
+  // but at the cost of local search, the "on this page" section, etc.
+  // mpa: true,
   appearance: false,
   vite: {
     ssr: {
