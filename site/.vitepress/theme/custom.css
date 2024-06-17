@@ -400,13 +400,14 @@ a.title {
 @media (min-width: 960px) {
   .VPSidebar {
     transform: rotate(1.4deg) !important;
-    top: calc(var(--vp-nav-height) + 2em) !important;
+    top: 1em !important;
     bottom: unset !important;
-    --vp-sidebar-width: 300px !important;
+    --vp-sidebar-width: 250px !important;
     background: #feff9c !important;
     padding: 30px !important;
     width: var(--vp-sidebar-width) !important;
     margin-left: max(-15px, calc((100% - (var(--vp-layout-max-width) - 60px)) / 2)) !important;
+    max-height: 25vh;
   }
 }
 
@@ -536,6 +537,6 @@ table {
   padding-bottom: 0 !important;
 }
 
-.e-content > :last-child {
+p:last-child {
   margin-bottom: 0 !important;
 }
