@@ -21,6 +21,7 @@ module.exports = {
   title: 'The Paper Pilot',
   description: 'The Paper Pilot\'s Digital Garden',
   mpa: true,
+  appearance: false,
   vite: {
     ssr: {
       noExternal: [
@@ -34,7 +35,7 @@ module.exports = {
   },
   head: [
     ['link', { rel: 'preconnect', href: 'https://fonts.googleapis.com' }],
-    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto+Mono:ital,wght@0,400;0,600;1,400&display=block' }],
+    ['link', { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Itim&family=Roboto+Mono:ital,wght@0,400;0,600;1,400&display=block' }],
     ['link', { rel: 'manifest', href: '/site.webmanifest' }],
     ['link', { rel: 'alternate', type: "text/mf2+html", href: '/changelog' }],
     ['link', { rel: 'alternate', type: "application/rss+xml", title: 'Changelog', href: '/changelog/rss' }],
@@ -51,7 +52,8 @@ module.exports = {
       const firstCommit = (await exec(`git log -n 1 --diff-filter=A --format="<a href='https://code.incremental.social/thepaperpilot/pages/commit/%H' title='%ad'><time class='dt-published' datetime='%ad'>%ar</time></a>" site/${context.page}`)).stdout;
       const lastCommit = (await exec(`git log -n 1 --diff-filter=M --format="<a href='https://code.incremental.social/thepaperpilot/pages/commit/%H' title='%ad'><time class='dt-updated' datetime='%ad'>%ar</time></a>" site/${context.page}`)).stdout;
       const header = code.slice(0, pageStart < 0 ? 0 : pageStart + 5).replace('<h1 ', '<article class="h-entry"><h1 class="p-name" ');
-      return header + `<p>${wc} words, ~${Math.round(wc / 183)} minute read. Planted ${firstCommit}.${lastCommit ? ` Last tended to ${lastCommit}.` : ''}</p><hr/><div class="e-content">` + code.slice(pageStart + 5).replace('</main>', '</div></article></main>');
+      code = header + `<p>${wc} words, ~${Math.round(wc / 183)} minute read. Planted ${firstCommit}.${lastCommit ? ` Last tended to ${lastCommit}.` : ''}</p><hr/><div class="e-content">` + code.slice(pageStart + 5).replace('</main>', '</div></article></main>');
+      code = code.replaceAll(/<img[^<>]*<\/img>|<img[^<>]*>(?!<\/img)/g, text => `<div class="img-container">${text}</div>`);
     }
     return code;
   },

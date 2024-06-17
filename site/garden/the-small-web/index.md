@@ -22,8 +22,10 @@ The small web as a whole is [Freeform](/garden/freeform/index.md)
 	- These can form [Webrings](/garden/webrings/index.md)
 
 ## Browsing the small web
-- Follow [Webrings](/garden/webrings/index.md) or other links from known small websites
-- [Marginalia](https://search.marginalia.nu) is a search engine for non-commercial content with a "random" button and filters for the small web explicitly (amongst other useful filters!)
+
+Follow [Webrings](/garden/webrings/index.md) or other links from known small websites
+
+[Marginalia](https://search.marginalia.nu) is a search engine for non-commercial content with a "random" button and filters for the small web explicitly (amongst other useful filters!)
 
 ## Building personal websites
 
@@ -76,6 +78,6 @@ Hosting can be expensive, but static websites are cheap
 
 ## Recommended videos about the small web
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/00qwzmMrtok" title="" frameBorder="0" allowFullScreen />
+[The web has lost its soul](https://www.youtube.com/watch?v=00qwzmMrtok)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rTSEr0cRJY8" title="" frameBorder="0" allowFullScreen />
+[You should check out the indie web](https://www.youtube.com/watch?v=rTSEr0cRJY8)

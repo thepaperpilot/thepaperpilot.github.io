@@ -21,5 +21,7 @@ This is not Wikipedia. My thoughts are biased and argumentative, but to the best
 
 Written in [Logseq](/garden/logseq/index.md) and rendered with [Vitepress](/garden/vitepress/index.md)
 
+I want to utilize the strategies described in [Andy's working notes](https://notes.andymatuschak.org/About_these_notes?stackedNotes=zPKTSiU725W9WQCqoVPBcxm) to help improve my digital garden
+
 Suggested pages:
 - [The Small Web](/garden/the-small-web/index.md)
