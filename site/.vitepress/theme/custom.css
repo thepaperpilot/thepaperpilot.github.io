@@ -168,7 +168,7 @@ ul > li > ul::before {
 
 .VPNav {
   left: 32px !important;
-  right: 32px !important;
+  right: 64px !important;
   width: unset !important;
   position: absolute !important;
 }
@@ -253,7 +253,8 @@ a.title {
 }
 
 .VPSocialLinks {
-  align-items: flex-end;
+  align-items: flex-end !important;
+  margin-right: 0 !important;
 }
 
 .VPSocialLinks::before {
@@ -261,7 +262,11 @@ a.title {
 }
 
 .VPNavBarExtra {
-  margin: 0 !important;
+  display: none !important;
+}
+
+.VPNavBarSocialLinks {
+  display: flex !important;
 }
 
 .VPContent {
@@ -274,8 +279,8 @@ a.title {
 
 @media (min-width: 960px) {
   .VPNav {
-    right: calc(max(0px, (100vw - var(--vp-layout-max-width)) / 2) + 32px) !important;
-    left: calc(max(-15px, (100vw - var(--vp-layout-max-width)) / 2 + var(--vp-sidebar-width)) + 32px) !important;
+    right: calc(max(0px, (100vw - var(--vp-layout-max-width)) / 2) + 16px) !important;
+    left: calc(max(-15px, (100vw - var(--vp-layout-max-width)) / 2 + var(--vp-sidebar-width)) + 16px) !important;
   }
 
   .VPContent {
@@ -357,14 +362,14 @@ a.title {
   box-shadow: 0 0 10px 1px #0003 !important;
 }
 
-.content {
-  padding: 0 32px !important;
+.VPContent .content {
+  padding: 30px !important;
+  padding-top: 0px !important;
 }
 
 .content-container {
   border-left: double 7px var(--vp-c-divider);
   padding-left: 8px;
-  padding-bottom: 30px;
   max-width: unset !important;
 }
 
