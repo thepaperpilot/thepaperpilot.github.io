@@ -318,4 +318,15 @@ ${entries.join("\n\n")}
     fd = fs.openSync("site/public/changelog/json", "w+");
     fs.writeSync(fd, feed.json1());
     fs.closeSync(fd);
+
+    // Update commit info in footer
+    const commitLink = (await exec(`git log -n 1 --format="https://code.incremental.social/thepaperpilot/pages/commit/%H"`)).stdout.replaceAll(/\n$/g, '');
+    const commitTime = (await exec(`git log -n 1 --date=format:"%A, %B %d, %Y at %X" --format=%ad`)).stdout.replaceAll(/\n$/g, '');
+
+    fd = fs.openSync("site/.vitepress/theme/Layout.vue", "w+");
+    let layoutData = fs.readFileSync("site/.vitepress/theme/Layout.vue.in").toString();
+    layoutData = layoutData.replace(/COMMIT_LINK/g, commitLink);
+    layoutData = layoutData.replace(/COMMIT_TIME/g, commitTime);
+    fs.writeSync(fd, layoutData);
+    fs.closeSync(fd);
 })();
