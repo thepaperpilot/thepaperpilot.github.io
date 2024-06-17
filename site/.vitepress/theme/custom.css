@@ -363,13 +363,10 @@ a.title {
 .VPLocalNavOutlineDropdown {
   padding: 0 !important;
   margin-top: 10px;
-  width: 90px;
-  height: 30px;
 }
 
 .VPLocalNavOutlineDropdown button {
   padding: 0 !important;
-  margin-top: 10px;
   width: 90px;
   height: 30px;
 }
@@ -397,6 +394,10 @@ a.title {
   }
 }
 
+.aside-curtain {
+  display: none !important;
+}
+
 @media (min-width: 960px) {
   .VPSidebar {
     transform: rotate(1.4deg) !important;
@@ -407,7 +408,52 @@ a.title {
     padding: 30px !important;
     width: var(--vp-sidebar-width) !important;
     margin-left: max(-15px, calc((100% - (var(--vp-layout-max-width) - 60px)) / 2)) !important;
-    max-height: 25vh;
+    max-height: 40vh;
+  }
+
+  .VPLocalNavOutlineDropdown {
+    display: none;
+  }
+
+  .VPDoc .aside {
+    display: block !important;
+    transform: rotate(1.4deg) !important;
+    position: fixed;
+    top: calc(40vh + 2em);
+    left: 0;
+    --vp-sidebar-width: 250px !important;
+    background: #feff9c !important;
+    width: var(--vp-sidebar-width) !important;
+    padding: 0 !important;
+    margin-left: max(-15px, calc((100% - (var(--vp-layout-max-width) - 60px)) / 2)) !important;
+    max-height: 40vh;
+  }
+
+  .VPDoc .aside-container {
+    position: unset !important;
+    height: unset !important;
+    overflow: unset !important;
+    padding-top: unset !important;
+    width: unset !important;
+  }
+
+  .VPDoc .aside-content {
+    min-height: unset !important;
+    padding: 0 !important;
+  }
+
+  .VPDoc .aside-content .content {
+    padding: 30px !important;
+  }
+
+  .outline-title {
+    font-size: 14px;
+    font-weight: 700 !important;
+    line-height: 30px !important;
+  }
+
+  .VPDoc .aside ul>li>ul:before {
+    display: none;
   }
 }
 
@@ -432,8 +478,8 @@ article {
   padding-top: 30px;
 }
 
-.vp-doc .h-feed :has(+ article) {
-  padding-bottom: 0px !important;
+.vp-doc .h-feed article {
+  padding-top: 0px !important;
 }
 
 .vp-doc h2 + .e-content {
@@ -514,7 +560,8 @@ hr {
 }
 
 table {
-  margin: 30px 0 !important;
+  margin: 0 !important;
+  margin-top: 30px !important;
 }
 
 #app .vp-doc tr {
