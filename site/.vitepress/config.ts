@@ -69,6 +69,7 @@ export default {
         text: "Recommended Pages",
         items: favorites
       },
+      { text: "About Me", link: "/about" },
       { text: "/now", link: "/now" },
       { text: "Site Changelog", link: "/changelog" }
     ]

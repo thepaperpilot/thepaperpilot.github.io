@@ -16,10 +16,6 @@ const pageData = useData();
 
 This "now page" offers a big picture glimpse into what I’m focused on at this point in my life. [What is a now page](https://nownownow.com/about)?
 
-## Life
-
-I'm living in DFW with my wife and baby son. I work at Topaz Labs LLC as a software developer, where I develop their flagship product Topaz Photo AI.
-
 ## IndieWeb
 
 I've been learning a lot about [The Small Web](/garden/the-small-web/index.md) (or the various other names it goes by). I've been working on this website and implementing the various IndieWeb building blocks
