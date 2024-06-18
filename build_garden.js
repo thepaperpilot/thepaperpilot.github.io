@@ -172,10 +172,22 @@ function moveImportStatementUp(filePath, times = 1) {
         // Fix links to /now
         data = data.replace('NOW', '/now')
         // Add header to the top
+        data = data.replaceAll('___', '/');
         const relPath = path.relative("./garden-output/logseq-pages", path.resolve(...filePath.split("___"))).replaceAll(/%3F/gi, '').replace('what-is-content-', 'what-is-content').replace('.md', '/index.md');
         data = data.replaceAll(
             /---\n\n/gm,
-            `prev: false\nnext: false\n---\n<script setup>\nimport { data } from '${path.relative(path.resolve("site", relPath), path.resolve("site", "git.data.ts")).replaceAll('\\', '/')}';\nimport { useData } from 'vitepress';\nconst pageData = useData();\n</script>\n<h1 class="p-name">${data.match(/title: "(.+)"/)[1]}</h1>\n<p>${wc} words, ~${Math.round(wc / 183)} minute read. <span v-html="data[\`site/\${pageData.page.value.relativePath}\`]" /></p>\n<hr/>\n\n`);
+`prev: false
+next: false
+---
+<script setup>
+import { data } from '${path.relative(path.resolve("site", relPath), path.resolve("site", "git.data.ts")).replaceAll('\\', '/')}';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">${data.match(/title: "(.+)"/)[1]}</h1>
+<p>${wc} words, ~${Math.round(wc / 183)} minute read. <span v-html="data[\`site/\${pageData.page.value.relativePath}\`]" /></p>
+<hr/>
+\n`);
 
         const fd = fs.openSync(filePath, "w+");
         fs.writeSync(fd, data);

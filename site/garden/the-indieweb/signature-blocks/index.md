@@ -1,7 +1,7 @@
 ---
 public: "true"
-slug: "the-indieweb___signature-blocks"
-title: "The IndieWeb___Signature Blocks"
+slug: "the-indieweb/signature-blocks"
+title: "The IndieWeb/Signature Blocks"
 prev: false
 next: false
 ---
@@ -10,7 +10,7 @@ import { data } from '../../../git.data.ts';
 import { useData } from 'vitepress';
 const pageData = useData();
 </script>
-<h1 class="p-name">The IndieWeb___Signature Blocks</h1>
+<h1 class="p-name">The IndieWeb/Signature Blocks</h1>
 <p>14 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 

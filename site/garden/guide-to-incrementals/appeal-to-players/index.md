@@ -1,7 +1,7 @@
 ---
 public: "true"
-slug: "guide-to-incrementals___appeal-to-players"
-title: "Guide to Incrementals___Appeal to Players"
+slug: "guide-to-incrementals/appeal-to-players"
+title: "Guide to Incrementals/Appeal to Players"
 prev: false
 next: false
 ---
@@ -10,7 +10,7 @@ import { data } from '../../../git.data.ts';
 import { useData } from 'vitepress';
 const pageData = useData();
 </script>
-<h1 class="p-name">Guide to Incrementals___Appeal to Players</h1>
+<h1 class="p-name">Guide to Incrementals/Appeal to Players</h1>
 <p>2400 words, ~13 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 

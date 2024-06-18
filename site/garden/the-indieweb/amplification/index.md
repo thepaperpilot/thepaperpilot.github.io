@@ -1,7 +1,7 @@
 ---
 public: "true"
-slug: "the-indieweb___amplification"
-title: "The IndieWeb___Amplification"
+slug: "the-indieweb/amplification"
+title: "The IndieWeb/Amplification"
 prev: false
 next: false
 ---
@@ -10,7 +10,7 @@ import { data } from '../../../git.data.ts';
 import { useData } from 'vitepress';
 const pageData = useData();
 </script>
-<h1 class="p-name">The IndieWeb___Amplification</h1>
+<h1 class="p-name">The IndieWeb/Amplification</h1>
 <p>57 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 

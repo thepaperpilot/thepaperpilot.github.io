@@ -5,7 +5,7 @@ const util = require('node:util');
 const exec = util.promisify(require('node:child_process').exec);
 
 export default {
-  watch: ['site/garden/**/*'],
+  watch: ['site/garden/**/*', 'site/now/**/*'],
   async load(files: string[]): Record<string, string> {
     const ret: Record<string, string> = {};
     await Promise.all(files.map(e => new Promise<void>(async (resolve) => {
@@ -22,6 +22,16 @@ export default {
         ret[e] = `Planted ${firstCommit}.${lastCommit ? ` Last tended to ${lastCommit}.` : ''}`;
         resolve();
     })));
+    console.log(ret)
+
+    // Map pages just like build_garden does
+    ret['site/guide-to-incrementals/index.md'] = ret['site/garden/guide-to-incrementals/index.md'];
+    ret['site/guide-to-incrementals/design/criticism/index.md'] = ret['site/garden/guide-to-incrementals/navigating-criticism/index.md'];
+    ret['site/guide-to-incrementals/ludology/appeal-developers/index.md'] = ret['site/garden/guide-to-incrementals/appeal-to-developers/index.md'];
+    ret['site/guide-to-incrementals/ludology/appeal-gamers/index.md'] = ret['site/garden/guide-to-incrementals/appeal-to-players/index.md'];
+    ret['site/guide-to-incrementals/ludology/content/index.md'] = ret['site/garden/guide-to-incrementals/what-is-content/index.md'];
+    ret['site/guide-to-incrementals/ludology/definition/index.md'] = ret['site/garden/guide-to-incrementals/defining-the-genre/index.md'];
+
     return ret;
   }
 };
