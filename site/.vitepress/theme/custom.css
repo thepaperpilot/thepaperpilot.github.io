@@ -123,7 +123,7 @@ ul > li > ul::before {
   padding: 0 32px !important;
 }
 
-.vp-doc a:not(.u-uid) {
+.vp-doc a {
   color: unset;
   text-decoration: unset;
   font-weight: unset;
@@ -142,7 +142,7 @@ ul > li > ul::before {
   box-decoration-break: clone;
 }
 
-.vp-doc a:not(.u-uid):hover {
+.vp-doc a:hover {
   color: unset;
   background-image: linear-gradient(
     to right,
