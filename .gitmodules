@@ -1,33 +1,33 @@
 [submodule "gamedevtree"]
 	path = site/public/gamedevtree
-	url = git@code.incremental.social/thepaperpilot/The-Modding-Tree.git
+	url = git@code.incremental.social:thepaperpilot/The-Modding-Tree.git
 	branch = gamedevtree
 [submodule "kronos"]
 	path = site/public/kronos
-	url = git@code.incremental.social/thepaperpilot/The-Modding-Tree.git
+	url = git@code.incremental.social:thepaperpilot/The-Modding-Tree.git
 	branch = kronos
 [submodule "lit"]
 	path = site/public/lit
-	url = git@code.incremental.social/thepaperpilot/The-Modding-Tree.git
+	url = git@code.incremental.social:thepaperpilot/The-Modding-Tree.git
 	branch = lit
 [submodule "the_ascension_tree"]
 	path = site/public/the_ascension_tree
-	url = git@code.incremental.social/thepaperpilot/the_ascension_tree.git
+	url = git@code.incremental.social:thepaperpilot/the_ascension_tree.git
 [submodule "dream"]
 	path = site/public/dream
-	url = git@code.incremental.social/thepaperpilot/Dream-Hero.git
+	url = git@code.incremental.social:thepaperpilot/Dream-Hero.git
 	branch = gh-pages
 [submodule "Advent-Incremental.git"]
 	path = site/public/advent
-	url = git@code.incremental.social/thepaperpilot/Advent-Incremental.git
+	url = git@code.incremental.social:thepaperpilot/Advent-Incremental.git
 	branch = gh-pages
 [submodule "ludwig"]
 	path = site/public/ludwig
-	url = git@code.incremental.social/thepaperpilot/Super-Auto-Coots.git
+	url = git@code.incremental.social:thepaperpilot/Super-Auto-Coots.git
 	branch = gh-pages
 [submodule "site/public/planar"]
 	path = site/public/planar
-	url = git@code.incremental.social/thepaperpilot/Planar-Pioneers.git
+	url = git@code.incremental.social:thepaperpilot/Planar-Pioneers.git
 	branch = gh-pages
 [submodule "Garden.git"]
 	path = Garden
