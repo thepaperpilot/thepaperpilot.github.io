@@ -325,12 +325,12 @@ ${changes}
     let fd = fs.openSync("site/changelog/index.md", "w+");
     fs.writeSync(fd,
 `---
-title: Changelog
+title: Site Changelog
 prev: false
 next: false
 ---
 <section class="h-feed">
-<h1 class="p-name">Changelog</h1>
+<h1 class="p-name">Site Changelog</h1>
 <p>This feed starts when I formatted the site to be a <a href="/garden/digital-gardens/">Digital Garden</a>. If you'd like to look further into this site's history, check <a href="https://code.incremental.social/thepaperpilot/pages/commits/branch/master">here</a>!</p>
 
 ${entries.join("\n\n")}

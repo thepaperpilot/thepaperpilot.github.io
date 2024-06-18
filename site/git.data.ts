@@ -22,7 +22,6 @@ export default {
         ret[e] = `Planted ${firstCommit}.${lastCommit ? ` Last tended to ${lastCommit}.` : ''}`;
         resolve();
     })));
-    console.log(ret)
 
     // Map pages just like build_garden does
     ret['site/guide-to-incrementals/index.md'] = ret['site/garden/guide-to-incrementals/index.md'];

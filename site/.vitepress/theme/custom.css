@@ -122,7 +122,7 @@ ul > li > ul::before {
   padding: 0 32px !important;
 }
 
-.vp-doc a {
+.vp-doc a:not(.u-uid) {
   color: unset;
   text-decoration: unset;
   font-weight: unset;
@@ -141,7 +141,7 @@ ul > li > ul::before {
   box-decoration-break: clone;
 }
 
-.vp-doc a:hover {
+.vp-doc a:not(.u-uid):hover {
   color: unset;
   background-image: linear-gradient(
     to right,
@@ -587,4 +587,38 @@ table {
 
 p:last-child {
   margin-bottom: 0 !important;
+}
+
+.hero {
+  width: 60%;
+  margin: auto;
+}
+
+@property --anim-bg {
+  syntax: '<color>';
+  initial-value: transparent;
+  inherits: false;
+}
+
+@keyframes vp-nolebase-highlight-targeted-heading-animation {
+  0% {
+    --anim-bg: transparent;
+  }
+
+  10%,35% {
+    --anim-bg: var(--vp-c-brand-soft);
+  }
+
+  99% {
+    --anim-bg: transparent;
+  }
+
+  to {
+    --anim-bg: transparent;
+  }
+}
+
+.VPNolebaseHighlightTargetedHeadingAnimated {
+  animation: vp-nolebase-highlight-targeted-heading-animation 1.5s ease-in-out;
+  background: linear-gradient(0deg, var(--anim-bg) 55%, transparent 45%) repeat-x;
 }

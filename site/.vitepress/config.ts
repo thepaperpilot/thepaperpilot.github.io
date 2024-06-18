@@ -70,7 +70,7 @@ export default {
         items: favorites
       },
       { text: "/now", link: "/now" },
-      { text: "Changelog", link: "/changelog" }
+      { text: "Site Changelog", link: "/changelog" }
     ]
   },
   contentProps: {
