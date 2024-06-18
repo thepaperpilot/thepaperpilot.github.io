@@ -5,7 +5,14 @@ title: "Freeform vs Chronological Dichotomy"
 prev: false
 next: false
 ---
-# Freeform vs Chronological Dichotomy
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Freeform vs Chronological Dichotomy</h1>
+<p>10 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Chronological](/garden/chronological/index.md), [Freeform](/garden/freeform/index.md)
 

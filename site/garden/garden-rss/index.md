@@ -5,7 +5,14 @@ title: "Garden-RSS"
 prev: false
 next: false
 ---
-# Garden-RSS
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Garden-RSS</h1>
+<p>59 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Freeform](/garden/freeform/index.md), [The Small Web](/garden/the-small-web/index.md), [This Knowledge Hub](/garden/this-knowledge-hub/index.md)
 

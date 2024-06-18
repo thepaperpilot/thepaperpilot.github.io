@@ -1,11 +1,18 @@
 ---
 public: "true"
-slug: "guide-to-incrementals/navigating-criticism"
-title: "Guide to Incrementals/Navigating Criticism"
+slug: "guide-to-incrementals___navigating-criticism"
+title: "Guide to Incrementals___Navigating Criticism"
 prev: false
 next: false
 ---
-# Guide to Incrementals/Navigating Criticism
+<script setup>
+import { data } from '../../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Guide to Incrementals___Navigating Criticism</h1>
+<p>747 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 Developing games is fun and exciting and teaches a lot of wonderful skills - I enthusiastically encourage anyone with an interest in game development to try it out - and incremental games are a wonderful way to get started. However, there are many challenges young and inexperienced developers have to face, and I think the hardest one - harder than coding, debugging, balancing, etc. - is handling criticism. When you put your heart and soul into a game it is natural to feel very vulnerable. While I think there's a lot communities can do to ensure they're welcoming, positive and constructive with their criticisms, inevitably you will eventually read some, and potentially a lot, of comments that can deeply affect you. No one is immune to this, from young incremental game developers to the largest content creators you can think of. That's why it's important to be able to process and navigate criticism, because ultimately collecting feedback is essential to the journey to becoming a better developer. On this page, we'll explore how to embrace criticism, grow from it, and continue to post your games publicly with confidence.
 

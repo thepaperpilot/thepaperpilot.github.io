@@ -5,7 +5,14 @@ title: "Davey Wreden"
 prev: false
 next: false
 ---
-# Davey Wreden
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Davey Wreden</h1>
+<p>37 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Ivy Road](/garden/ivy-road/index.md), [The Beginner's Guide](/garden/the-beginner-s-guide/index.md)
 

@@ -5,7 +5,14 @@ title: "Life is Strange"
 prev: false
 next: false
 ---
-# Life is Strange
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Life is Strange</h1>
+<p>654 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 A series of narrative driven video games with a focus on player choices
 
@@ -17,8 +24,8 @@ Playthroughs I enjoyed:
 - [Laura Kate](https://www.youtube.com/playlist?list=PLD0NeEbRY7VR3Vl35qtQyexV9edtlkODU)
 - [Jesse and Dodger](https://www.youtube.com/playlist?list=PLFx-KViPXIkFWTwFCBku5KNgv_rsmPh-r)
 	- I got a shirt they made for this series signed by Jesse at PAX South 2017
-	- ![6346b024-885e-45e0-9df6-5ee0311133f7.png](/garden/6346b024-885e-45e0-9df6-5ee0311133f7_1718332409063_0.png)
-	- ![ce7b2612-2ddb-423e-82eb-95c2ed08c4da.png](/garden/ce7b2612-2ddb-423e-82eb-95c2ed08c4da_1718332277410_0.png)
+	- <div class="img-container"><img src="/garden/6346b024-885e-45e0-9df6-5ee0311133f7_1718332409063_0.png" title="6346b024-885e-45e0-9df6-5ee0311133f7.png"/></div>
+	- <div class="img-container"><img src="/garden/ce7b2612-2ddb-423e-82eb-95c2ed08c4da_1718332277410_0.png" title="ce7b2612-2ddb-423e-82eb-95c2ed08c4da.png"/></div>
 - [LiS Voice Actors](https://www.youtube.com/watch?v=zvQmqdnFkZA)
 
 Around the start of Haley and I's relationship, we'd play through LiS1 on projectors in our's classrooms

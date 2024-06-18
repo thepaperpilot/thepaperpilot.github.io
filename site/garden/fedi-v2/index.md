@@ -5,7 +5,14 @@ title: "Fedi v2"
 prev: false
 next: false
 ---
-# Fedi v2
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Fedi v2</h1>
+<p>1274 words, ~7 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Social Media](/garden/social-media/index.md), [Weird](/garden/weird/index.md)
 

@@ -1,11 +1,18 @@
 ---
 public: "true"
-slug: "guide-to-incrementals/defining-the-genre"
-title: "Guide to Incrementals/Defining the Genre"
+slug: "guide-to-incrementals___defining-the-genre"
+title: "Guide to Incrementals___Defining the Genre"
 prev: false
 next: false
 ---
-# Guide to Incrementals/Defining the Genre
+<script setup>
+import { data } from '../../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Guide to Incrementals___Defining the Genre</h1>
+<p>3429 words, ~19 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 Video games are placed into genres for a variety of reasons. They can give a mental shorthand to set the player's expectations up, they can help a game market itself by its similarities to other, already popular games, and honestly, people just love categorization for its own sake. For this guide, it's important to define the genre so it is clear what games it's even talking about.
 

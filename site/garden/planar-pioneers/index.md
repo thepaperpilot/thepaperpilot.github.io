@@ -6,7 +6,14 @@ title: "Planar Pioneers"
 prev: false
 next: false
 ---
-# Planar Pioneers
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Planar Pioneers</h1>
+<p>25 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Tags: [My Projects](/garden/my-projects/index.md), [Profectus](/garden/profectus/index.md)
 

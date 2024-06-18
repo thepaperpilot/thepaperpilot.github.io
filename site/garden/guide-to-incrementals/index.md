@@ -5,7 +5,14 @@ title: "Guide to Incrementals"
 prev: false
 next: false
 ---
-# Guide to Incrementals
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Guide to Incrementals</h1>
+<p>251 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 This is a comprehensive guide to Incremental Games, a genre of video games. It will explore defining the genre, why it's appealing, and how to design and build your own incremental game. Along the way will be ~~interactive examples~~, snippets from other creators, and relevant material to contextualize everything.
 

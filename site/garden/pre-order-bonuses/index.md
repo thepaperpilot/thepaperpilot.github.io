@@ -5,7 +5,14 @@ title: "Pre-Order Bonuses"
 prev: false
 next: false
 ---
-# Pre-Order Bonuses
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Pre-Order Bonuses</h1>
+<p>98 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Video Game Monetization](/garden/video-game-monetization/index.md)
 

@@ -6,7 +6,14 @@ title: "Opti-Speech"
 prev: false
 next: false
 ---
-# Opti-Speech
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Opti-Speech</h1>
+<p>312 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Tags: [My Projects](/garden/my-projects/index.md)
 
@@ -16,7 +23,7 @@ In college I continued development on the Opti-Speech project, originally built 
 
 The Optispeech project involves designing and testing a real-time tongue model that can be viewed in a transparent head while a subject talks — for the purposes of treating speech errors and teaching foreign language sounds. This work has been conducted in partnership with Vulintus and with support from the National Institutes of Health (NIH).
 
-![system-architecture-600.jpg](/garden/system-architecture-600_1717384793933_0.jpg)
+<div class="img-container"><img src="/garden/system-architecture-600_1717384793933_0.jpg" title="system-architecture-600.jpg"/></div>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9uHqIRs7ZjM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="display: block; margin: auto;"></iframe>
 
@@ -30,10 +37,10 @@ This video shows an American talker learning a novel sound not found in English.
 
 As the sole programmer at UT Dallas Speech Production Lab at the time, my changes involved updating to a more modern version of Unity, improving the interface, in general cleaning up tech debt so it can more easily support new features, and added support for additional EMA systems, namely the Carstens AG501.
 
-![new-interface.png](/garden/new-interface_1717384734845_0.png)
+<div class="img-container"><img src="/garden/new-interface_1717384734845_0.png" title="new-interface.png"/></div>
 
 In addition, the program now includes documentation and unit tests to improve program stability and maintainability going forward.
 
-![documentation.png](/garden/documentation_1717384823218_0.png)
+<div class="img-container"><img src="/garden/documentation_1717384823218_0.png" title="documentation.png"/></div>
 
-![unittests.png](/garden/unittests_1717384825666_0.png)
+<div class="img-container"><img src="/garden/unittests_1717384825666_0.png" title="unittests.png"/></div>

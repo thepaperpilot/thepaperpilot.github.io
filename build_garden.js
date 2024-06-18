@@ -1,5 +1,6 @@
 const fs = require("fs");
 const path = require("path");
+const wordCounting = require("word-counting");
 
 const util = require('node:util');
 const exec = util.promisify(require('node:child_process').exec);
@@ -20,6 +21,16 @@ function walk(dir, cb) {
 
 function toSlug(string) {
     return string.toLowerCase().replaceAll(' ', '-');
+}
+
+function moveImportStatementUp(filePath, times = 1) {
+    let data = fs.readFileSync(filePath).toString();
+    const fd = fs.openSync(filePath, "w+");
+    for (let i = 0; i < times; i++) {
+        data = data.replace(/'\.\.\//g, '\'');
+    }
+    fs.writeSync(fd, data);
+    fs.closeSync(fd);
 }
 
 (async () => {
@@ -93,9 +104,13 @@ function toSlug(string) {
     });
     pageLinks["NOW"] = "/now/index";
 
-    await walk("./garden-output/logseq-pages", (dir, file, resolve) => {
+    await walk("./garden-output/logseq-pages", async (dir, file, resolve) => {
         const filePath = path.resolve(dir, file);
         let data = fs.readFileSync(filePath).toString();
+
+        // Count word counts with a special set of transformations that should make it more accurate
+        const strippedData = data.replace(/---\n[\S\s]*\n---/gm, '').replaceAll(/.*::.*/g, '').replaceAll(/\[([^\]]*)\]\(.*\)/g, '$1');
+        const wc = wordCounting(strippedData).wordsCount;
 
 		// Replace youtube embeds
         data = data.replaceAll(
@@ -132,6 +147,10 @@ function toSlug(string) {
         data = data.replaceAll(
             /logseq:\/\/graph\/Garden\?page=([^\)]*)/g,
             (_, page) => `${pageLinks[page.replaceAll('%20', ' ')]})`);
+        // Wrap images
+        data = data.replaceAll(
+            /!\[([^\]]*)\]\(([^\)]*)\)/g,
+            (_, title, src) => `<div class="img-container"><img src="${src}" title="${title}"/></div>`)
 		// Add tags and references
         const title = path.basename(file, ".md");
         if (title in tagged) {
@@ -152,11 +171,11 @@ function toSlug(string) {
         }
         // Fix links to /now
         data = data.replace('NOW', '/now')
-        // Add title to the top
-        data = data.replaceAll('___', '/');
+        // Add header to the top
+        const relPath = path.relative("./garden-output/logseq-pages", path.resolve(...filePath.split("___"))).replaceAll(/%3F/gi, '').replace('what-is-content-', 'what-is-content').replace('.md', '/index.md');
         data = data.replaceAll(
             /---\n\n/gm,
-            `prev: false\nnext: false\n---\n# ${data.match(/title: "(.+)"/)[1]}\n\n`);
+            `prev: false\nnext: false\n---\n<script setup>\nimport { data } from '${path.relative(path.resolve("site", relPath), path.resolve("site", "git.data.ts")).replaceAll('\\', '/')}';\nimport { useData } from 'vitepress';\nconst pageData = useData();\n</script>\n<h1 class="p-name">${data.match(/title: "(.+)"/)[1]}</h1>\n<p>${wc} words, ~${Math.round(wc / 183)} minute read. <span v-html="data[\`site/\${pageData.page.value.relativePath}\`]" /></p>\n<hr/>\n\n`);
 
         const fd = fs.openSync(filePath, "w+");
         fs.writeSync(fd, data);
@@ -183,6 +202,7 @@ function toSlug(string) {
     // Copy the guide-to-incrementals pages to the old locations so links don't break
     fs.mkdirSync('./site/guide-to-incrementals');
     fs.copyFileSync('./site/garden/guide-to-incrementals/index.md', './site/guide-to-incrementals/index.md');
+    moveImportStatementUp('./site/guide-to-incrementals/index.md');
     fs.mkdirSync('./site/guide-to-incrementals/design');
     fs.mkdirSync('./site/guide-to-incrementals/design/criticism');
     fs.copyFileSync('./site/garden/guide-to-incrementals/navigating-criticism/index.md', './site/guide-to-incrementals/design/criticism/index.md');
@@ -201,6 +221,7 @@ function toSlug(string) {
 
     fs.mkdirSync('./site/now');
     fs.renameSync('./site/garden/now/index.md', './site/now/index.md');
+    moveImportStatementUp('./site/now/index.md');
 
     // Build changelog
     fs.mkdirSync("./site/changelog");

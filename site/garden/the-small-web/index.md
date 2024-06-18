@@ -6,7 +6,14 @@ title: "The Small Web"
 prev: false
 next: false
 ---
-# The Small Web
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">The Small Web</h1>
+<p>437 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [/now](/now/index), [This Knowledge Hub](/garden/this-knowledge-hub/index.md)
 

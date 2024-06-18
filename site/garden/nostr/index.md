@@ -6,7 +6,14 @@ title: "Nostr"
 prev: false
 next: false
 ---
-# Nostr
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Nostr</h1>
+<p>8 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Fediverse](/garden/fediverse/index.md)
 

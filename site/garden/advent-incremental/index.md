@@ -6,7 +6,14 @@ title: "Advent Incremental"
 prev: false
 next: false
 ---
-# Advent Incremental
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Advent Incremental</h1>
+<p>104 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Tags: [My Projects](/garden/my-projects/index.md), [Profectus](/garden/profectus/index.md)
 

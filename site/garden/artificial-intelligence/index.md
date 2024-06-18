@@ -5,7 +5,14 @@ title: "Artificial Intelligence"
 prev: false
 next: false
 ---
-# Artificial Intelligence
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Artificial Intelligence</h1>
+<p>101 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Command Palettes](/garden/command-palettes/index.md)
 

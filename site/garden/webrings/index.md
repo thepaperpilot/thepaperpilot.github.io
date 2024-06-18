@@ -5,7 +5,14 @@ title: "Webrings"
 prev: false
 next: false
 ---
-# Webrings
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Webrings</h1>
+<p>139 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [The Small Web](/garden/the-small-web/index.md)
 

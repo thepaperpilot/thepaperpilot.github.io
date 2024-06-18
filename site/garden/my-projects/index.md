@@ -6,7 +6,14 @@ title: "My Projects"
 prev: false
 next: false
 ---
-# My Projects
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">My Projects</h1>
+<p>72 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Tagged by: [Advent Incremental](/garden/advent-incremental/index.md), [Babble Buds](/garden/babble-buds/index.md), [Capture the Citadel](/garden/capture-the-citadel/index.md), [Dice Armor](/garden/dice-armor/index.md), [Game Dev Tree](/garden/game-dev-tree/index.md), [Incremental Social](/garden/incremental-social/index.md), [Kronos](/garden/kronos/index.md), [Opti-Speech](/garden/opti-speech/index.md), [Planar Pioneers](/garden/planar-pioneers/index.md), [Profectus](/garden/profectus/index.md), [V-ecs](/garden/v-ecs/index.md)
 

@@ -6,7 +6,14 @@ title: "Capture the Citadel"
 prev: false
 next: false
 ---
-# Capture the Citadel
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Capture the Citadel</h1>
+<p>39 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Tags: [My Projects](/garden/my-projects/index.md)
 
@@ -14,4 +21,4 @@ A 3D VR re-envisioning of a Slay the Spire-style game by Anthony Lawn and Grant 
 
 For more details, visit [Grant's page on the game](https://grantcbarbee.github.io/conquer-the-citadel.html).
 
-![screenshot.png](/garden/screenshot_1717381273245_0.png)
+<div class="img-container"><img src="/garden/screenshot_1717381273245_0.png" title="screenshot.png"/></div>

@@ -5,7 +5,14 @@ title: "Weird"
 prev: false
 next: false
 ---
-# Weird
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Weird</h1>
+<p>114 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Commune](/garden/commune/index.md), [Fedi v2](/garden/fedi-v2/index.md), [The Small Web](/garden/the-small-web/index.md)
 

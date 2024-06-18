@@ -6,7 +6,14 @@ title: "Social Media"
 prev: false
 next: false
 ---
-# Social Media
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Social Media</h1>
+<p>98 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Commune](/garden/commune/index.md), [Fediverse](/garden/fediverse/index.md)
 

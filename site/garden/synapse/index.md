@@ -5,7 +5,14 @@ title: "Synapse"
 prev: false
 next: false
 ---
-# Synapse
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Synapse</h1>
+<p>2 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Incremental Social](/garden/incremental-social/index.md)
 

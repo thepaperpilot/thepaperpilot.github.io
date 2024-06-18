@@ -5,7 +5,14 @@ title: "Freeform"
 prev: false
 next: false
 ---
-# Freeform
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Freeform</h1>
+<p>46 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Commune](/garden/commune/index.md), [Digital Gardens](/garden/digital-gardens/index.md), [Freeform vs Chronological Dichotomy](/garden/freeform-vs-chronological-dichotomy/index.md), [Garden-RSS](/garden/garden-rss/index.md), [The Small Web](/garden/the-small-web/index.md)
 

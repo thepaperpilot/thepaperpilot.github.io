@@ -6,7 +6,14 @@ title: "Babble Buds"
 prev: false
 next: false
 ---
-# Babble Buds
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Babble Buds</h1>
+<p>113 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Tags: [My Projects](/garden/my-projects/index.md)
 

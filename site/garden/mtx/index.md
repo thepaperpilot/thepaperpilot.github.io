@@ -6,7 +6,14 @@ title: "MTX"
 prev: false
 next: false
 ---
-# MTX
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">MTX</h1>
+<p>10 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Premium Currency](/garden/premium-currency/index.md), [Video Game Monetization](/garden/video-game-monetization/index.md)
 

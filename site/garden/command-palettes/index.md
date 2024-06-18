@@ -5,7 +5,14 @@ title: "Command Palettes"
 prev: false
 next: false
 ---
-# Command Palettes
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Command Palettes</h1>
+<p>117 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 Command palettes are a design pattern where apps expose functionality through a search bar
 

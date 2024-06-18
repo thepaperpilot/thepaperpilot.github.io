@@ -6,7 +6,14 @@ title: "Decentralized"
 prev: false
 next: false
 ---
-# Decentralized
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Decentralized</h1>
+<p>80 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Commune](/garden/commune/index.md), [Fedi v2](/garden/fedi-v2/index.md), [Matrix](/garden/matrix/index.md), [Social Media](/garden/social-media/index.md)
 

@@ -409,6 +409,7 @@ a.title {
     width: var(--vp-sidebar-width) !important;
     margin-left: max(-15px, calc((100% - (var(--vp-layout-max-width) - 60px)) / 2)) !important;
     max-height: 40vh;
+    transition-duration: 0s !important;
   }
 
   .VPLocalNavOutlineDropdown {
@@ -427,6 +428,7 @@ a.title {
     padding: 0 !important;
     margin-left: max(-15px, calc((100% - (var(--vp-layout-max-width) - 60px)) / 2)) !important;
     max-height: 40vh;
+    overflow-y: auto;
   }
 
   .VPDoc .aside-container {
@@ -560,8 +562,7 @@ hr {
 }
 
 table {
-  margin: 0 !important;
-  margin-top: 30px !important;
+  margin: 30px 0 !important;
 }
 
 #app .vp-doc tr {

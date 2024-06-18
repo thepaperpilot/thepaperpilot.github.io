@@ -1,11 +1,18 @@
 ---
 public: "true"
-slug: "guide-to-incrementals/appeal-to-players"
-title: "Guide to Incrementals/Appeal to Players"
+slug: "guide-to-incrementals___appeal-to-players"
+title: "Guide to Incrementals___Appeal to Players"
 prev: false
 next: false
 ---
-# Guide to Incrementals/Appeal to Players
+<script setup>
+import { data } from '../../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Guide to Incrementals___Appeal to Players</h1>
+<p>2400 words, ~13 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 This is something that has been discussed and analyzed by many people, and to some extent, I feel like everything that can be said on the topic already has. However, a lot of these analyses are from the perspective of those with not as much experience and involvement within the genre as I'd argue would be necessary for a fully contextualized answer. I recently watched a video about Vampire Survivors, which has since been taken down due to drawing negative attention, which made me think about some interesting arguments about what games _are_, and what makes them _good_. The video's argument that "Vampire Survivors is not a video game" mirrors a claim by the developer of Cookie Clicker that his games are ["non-games"](https://www.polygon.com/2013/9/30/4786780/the-cult-of-the-cookie-clicker-when-is-a-game-not-a-game). Using Vampire Survivors and the video made on it as a framework, I'll be answering why incremental games appeal to players. Since the video has been taken down, I'll do my best to contextualize and generalize the arguments of the video without requiring the reader to watch it. For what it's worth, while I disagreed with the video I actually liked a lot of the way it went about thinking about games, and I consider this a continuation of that discussion.
 

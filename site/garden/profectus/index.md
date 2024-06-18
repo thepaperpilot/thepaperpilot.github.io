@@ -6,7 +6,14 @@ title: "Profectus"
 prev: false
 next: false
 ---
-# Profectus
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Profectus</h1>
+<p>73 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Advent Incremental](/garden/advent-incremental/index.md), [Planar Pioneers](/garden/planar-pioneers/index.md)
 

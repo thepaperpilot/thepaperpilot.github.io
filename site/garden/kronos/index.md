@@ -6,7 +6,14 @@ title: "Kronos"
 prev: false
 next: false
 ---
-# Kronos
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Kronos</h1>
+<p>60 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [V-ecs](/garden/v-ecs/index.md)
 

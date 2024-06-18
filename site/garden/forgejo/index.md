@@ -5,7 +5,14 @@ title: "Forgejo"
 prev: false
 next: false
 ---
-# Forgejo
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Forgejo</h1>
+<p>5 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Incremental Social](/garden/incremental-social/index.md)
 

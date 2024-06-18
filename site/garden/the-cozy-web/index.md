@@ -5,7 +5,14 @@ title: "The Cozy Web"
 prev: false
 next: false
 ---
-# The Cozy Web
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">The Cozy Web</h1>
+<p>45 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Digital Gardens](/garden/digital-gardens/index.md), [The Small Web](/garden/the-small-web/index.md)
 

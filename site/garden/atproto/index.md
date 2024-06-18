@@ -7,7 +7,14 @@ title: "ATProto"
 prev: false
 next: false
 ---
-# ATProto
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">ATProto</h1>
+<p>31 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Fediverse](/garden/fediverse/index.md)
 

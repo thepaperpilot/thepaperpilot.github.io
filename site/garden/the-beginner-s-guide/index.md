@@ -6,7 +6,14 @@ title: "The Beginner's Guide"
 prev: false
 next: false
 ---
-# The Beginner's Guide
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">The Beginner's Guide</h1>
+<p>70 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Tags: [Davey Wreden](/garden/davey-wreden/index.md)
 

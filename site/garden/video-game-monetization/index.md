@@ -5,7 +5,14 @@ title: "Video Game Monetization"
 prev: false
 next: false
 ---
-# Video Game Monetization
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Video Game Monetization</h1>
+<p>123 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Life is Strange](/garden/life-is-strange/index.md)
 

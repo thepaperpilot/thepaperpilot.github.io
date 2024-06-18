@@ -6,9 +6,6 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 const fs = require("fs");
 const path = require("path");
 
-const util = require('node:util');
-const exec = util.promisify(require('node:child_process').exec);
-
 const filePath = path.resolve("./Garden/logseq/config.edn");
 const data = fs.readFileSync(filePath).toString();
 let favorites = [];
@@ -16,13 +13,10 @@ for (const match of data.matchAll(/:favorites \["([^\]]+)"\]/g)) {
   favorites = match[1].split("\" \"").map(page => ({ text: page, link: `/garden/${page.toLowerCase().replaceAll(' ', '-')}` }));
 }
 
-module.exports = {
+export default {
   lang: "en-US",
   title: 'The Paper Pilot',
   description: 'The Paper Pilot\'s Digital Garden',
-  // Solves content sometimes not updating correctly when navigating between links,
-  // but at the cost of local search, the "on this page" section, etc.
-  // mpa: true,
   appearance: false,
   vite: {
     ssr: {
@@ -47,18 +41,6 @@ module.exports = {
   ],
   lastUpdated: false,
   cleanUrls: 'with-subfolders',
-  async transformHtml(code, id, context) {
-    if (context.page.startsWith("garden") && fs.existsSync("site/" + context.page)) {
-      const wc = wordCounting(code, { isHtml: true }).wordsCount;
-      const pageStart = code.indexOf("</h1>");
-      const firstCommit = (await exec(`git log -n 1 --diff-filter=A --format="<a href='https://code.incremental.social/thepaperpilot/pages/commit/%H' title='%ad'><time class='dt-published' datetime='%ad'>%ar</time></a>" site/${context.page}`)).stdout;
-      const lastCommit = (await exec(`git log -n 1 --diff-filter=M --format="<a href='https://code.incremental.social/thepaperpilot/pages/commit/%H' title='%ad'><time class='dt-updated' datetime='%ad'>%ar</time></a>" site/${context.page}`)).stdout;
-      const header = code.slice(0, pageStart < 0 ? 0 : pageStart + 5).replace('<h1 ', '<article class="h-entry"><h1 class="p-name" ');
-      code = header + `<p>${wc} words, ~${Math.round(wc / 183)} minute read. Planted ${firstCommit}.${lastCommit ? ` Last tended to ${lastCommit}.` : ''}</p><hr/><div class="e-content">` + code.slice(pageStart + 5).replace('</main>', '</div></article></main>');
-      code = code.replaceAll(/<img[^<>]*<\/img>|<img[^<>]*>(?!<\/img)/g, text => `<div class="img-container">${text}</div>`);
-    }
-    return code;
-  },
   themeConfig: {
     search: {
       provider: 'local',
@@ -90,5 +72,10 @@ module.exports = {
       { text: "/now", link: "/now" },
       { text: "Changelog", link: "/changelog" }
     ]
+  },
+  contentProps: {
+    class: {
+      "h-entry": true
+    }
   }
 }

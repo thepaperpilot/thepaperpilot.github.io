@@ -5,7 +5,14 @@ title: "This Knowledge Hub"
 prev: false
 next: false
 ---
-# This Knowledge Hub
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">This Knowledge Hub</h1>
+<p>135 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Referenced by: [Digital Gardens](/garden/digital-gardens/index.md)
 

@@ -1,11 +1,18 @@
 ---
 public: "true"
-slug: "guide-to-incrementals/appeal-to-developers"
-title: "Guide to Incrementals/Appeal to Developers"
+slug: "guide-to-incrementals___appeal-to-developers"
+title: "Guide to Incrementals___Appeal to Developers"
 prev: false
 next: false
 ---
-# Guide to Incrementals/Appeal to Developers
+<script setup>
+import { data } from '../../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Guide to Incrementals___Appeal to Developers</h1>
+<p>636 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 There are a lot of developers in the incremental games community - the genre seems to draw them in, and convert a lot of players _into_ developers. Let's explore the reasons why this genre appeals to developers.
 

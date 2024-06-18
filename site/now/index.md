@@ -5,7 +5,14 @@ title: "/now"
 prev: false
 next: false
 ---
-# /now
+<script setup>
+import { data } from '../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">/now</h1>
+<p>212 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 This "now page" offers a big picture glimpse into what I’m focused on at this point in my life. [What is a now page](https://nownownow.com/about)?
 

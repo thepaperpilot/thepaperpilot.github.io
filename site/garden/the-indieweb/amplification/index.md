@@ -1,11 +1,18 @@
 ---
 public: "true"
-slug: "the-indieweb/amplification"
-title: "The IndieWeb/Amplification"
+slug: "the-indieweb___amplification"
+title: "The IndieWeb___Amplification"
 prev: false
 next: false
 ---
-# The IndieWeb/Amplification
+<script setup>
+import { data } from '../../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">The IndieWeb___Amplification</h1>
+<p>57 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 Refers to reblogging (and re-hosting, sometimes) of someone else's content on your own site
 

@@ -6,7 +6,14 @@ title: "Game Dev Tree"
 prev: false
 next: false
 ---
-# Game Dev Tree
+<script setup>
+import { data } from '../../git.data.ts';
+import { useData } from 'vitepress';
+const pageData = useData();
+</script>
+<h1 class="p-name">Game Dev Tree</h1>
+<p>34 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<hr/>
 
 > Tags: [My Projects](/garden/my-projects/index.md)
 
