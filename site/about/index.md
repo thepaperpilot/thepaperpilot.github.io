@@ -7,6 +7,9 @@ next: false
 # About Me
 
 <div class="h-card">
+<!-- Hidden link just to ensure this counts as the h-card that represents the page -->
+<a class="u-url u-uid" style="display: none;"></a>
+
 <span class="p-note">I'm a software developer who likes making games and tools! I have a variety of interests, from <a href="/garden/my-projects#games">game development</a> to the <a href="/garden/fediverse">fediverse</a> to <a href="/garden/digital-gardens">digital gardens</a>.</span>
 
 <div class="img-container"><img class="u-photo" src="/me.jpg" /></div>
