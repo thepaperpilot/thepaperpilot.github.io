@@ -17,6 +17,7 @@ next: false
 I live in <span class="p-locality">Dallas</span>, <span class="p-region">Texas</span>, <span class="p-country-name">USA</span> with my wife and baby son. <span class="p-org h-card">I work at <span class="p-name">Topaz Labs LLC</span> as a <span class="p-job-title">Product Engineer</span>. <span class="p-role">I develop their flagship product Topaz Photo AI</span>.</span>
 
 Reach out to me:
+<!-- If updating these links, make sure to add them to the site's <head> as well -->
 <ul>
 	<li>Email: <a class="u-email" href="mailto:thepaperpilot@incremental.social" rel="me">thepaperpilot@incremental.social</a></li>
 	<li>Fediverse: <a class="u-url" href="https://incremental.social/u/thepaperpilot" rel="me">thepaperpilot@incremental.social</a></li>

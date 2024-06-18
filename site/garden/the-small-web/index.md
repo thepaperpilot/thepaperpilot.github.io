@@ -12,13 +12,13 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">The Small Web</h1>
-<p>437 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>443 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 > Referenced by: [/now](/now/index), [This Knowledge Hub](/garden/this-knowledge-hub/index.md)
 
 Small personal websites created by individuals
-- [My Personal Website](/garden/my-personal-website/index.md)
+- [My Personal Website](/garden/my-personal-website/index.md) is part of the small web
 - A callback to how the web was before social media, which homogenized content
 - These pages are diverse and typically won't have ads or marketers
 	- Comparable to [The Cozy Web](/garden/the-cozy-web/index.md) in that way
