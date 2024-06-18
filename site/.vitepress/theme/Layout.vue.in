@@ -5,7 +5,7 @@
     </template>
     <template #layout-bottom>
     	<footer class="vp-doc">
-			<div>CC {{ new Date().getFullYear() }} <a class="h-card" href="/about"><img src="/me.jpg" alt="" />The Paper Pilot</a>. <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</div>
+			<div>CC {{ new Date().getFullYear() }} <a class="h-card u-uid" href="/about"><img src="/me.jpg" alt="" />The Paper Pilot</a>. <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a>.</div>
 			<div>Any and all opinions listed here are my own and not representative of my employers; future, past and present.</div>
 			<div><a href="https://resume.incremental.social/thepaperpilot/thepaperpilot">Resume</a> (not actively seeking new opportunities).</div>
 			<div>Site built from <a href="COMMIT_LINK">this commit</a> on <time>COMMIT_TIME</time>.</div>
