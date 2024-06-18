@@ -11,9 +11,7 @@ next: false
 
 <div class="img-container"><img class="u-photo" src="/me.jpg" /></div>
 
-I live in <span class="p-locality">Dallas</span>, <span class="p-region">Texas</span>, <span class="p-country-name">USA</span> with my wife and baby son.
-
-<span class="p-org h-card">I work at <span class="p-name">Topaz Labs LLC</span> as a <span class="p-job-title">Product Engineer</span>. <span class="p-role">I develop their flagship product Topaz Photo AI</span>.</span>
+I live in <span class="p-locality">Dallas</span>, <span class="p-region">Texas</span>, <span class="p-country-name">USA</span> with my wife and baby son. <span class="p-org h-card">I work at <span class="p-name">Topaz Labs LLC</span> as a <span class="p-job-title">Product Engineer</span>. <span class="p-role">I develop their flagship product Topaz Photo AI</span>.</span>
 
 Reach out to me:
 <ul>
