@@ -395,6 +395,30 @@ a.title {
   }
 }
 
+.VPLocalNavOutlineDropdown .items {
+  background: linear-gradient(to bottom, var(--vp-sidebar-bg-color) 29px, var(--vp-c-divider) 1px);
+  background-size: 100% 30px;
+  top: 85px;
+  border-radius: 0;
+}
+
+.VPLocalNavOutlineDropdown ul>li>ul:before {
+  left: 0;
+}
+
+.VPLocalNavOutlineDropdown .header,
+.VPLocalNavOutlineDropdown .outline {
+  background: none !important;
+  padding: 0 !important;
+}
+
+.VPLocalNavOutlineDropdown .top-link,
+.VPLocalNavOutlineDropdown .outline-link {
+  line-height: 30px !important;
+  font-size: unset !important;
+  font-weight: unset !important;
+}
+
 .aside-curtain {
   display: none !important;
 }
