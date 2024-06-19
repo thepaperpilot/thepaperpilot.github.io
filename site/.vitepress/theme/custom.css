@@ -9,6 +9,8 @@ html {
   --vp-font-family-mono: Roboto Mono;
   --vp-layout-max-width: 1080px;
   --vp-nav-height: 48px;
+
+  --vp-local-search-bg: var(--vp-c-bg-alt);
 }
 
 footer {
@@ -658,4 +660,25 @@ footer img {
 .VPNolebaseHighlightTargetedHeadingAnimated {
   animation: vp-nolebase-highlight-targeted-heading-animation 1.5s ease-in-out;
   background: linear-gradient(0deg, var(--anim-bg) 55%, transparent 45%) repeat-x;
+}
+
+.title-icon {
+  line-height: 30px
+}
+
+.excerpt {
+  margin: 8px 0 !important;
+  background: var(--docsearch-searchbox-background);
+}
+
+.excerpt-gradient-top {
+  background: var(--docsearch-searchbox-background) !important;
+  clip-path: polygon(0% 0%, 5% 100%, 10% 0%, 15% 100%, 20% 0%, 25% 100%, 30% 0%, 35% 100%, 40% 0%, 45% 100%, 50% 0%, 55% 100%, 60% 0%, 65% 100%, 70% 0%, 75% 100%, 80% 0%, 85% 100%, 90% 0%, 95% 100%, 100% 0%);
+  transform: translateY(-7px) rotateZ(180deg);
+}
+
+.excerpt-gradient-bottom {
+  background: var(--docsearch-searchbox-background) !important;
+  clip-path: polygon(0% 0%, 5% 100%, 10% 0%, 15% 100%, 20% 0%, 25% 100%, 30% 0%, 35% 100%, 40% 0%, 45% 100%, 50% 0%, 55% 100%, 60% 0%, 65% 100%, 70% 0%, 75% 100%, 80% 0%, 85% 100%, 90% 0%, 95% 100%, 100% 0%);
+  transform: translateY(7px);
 }
