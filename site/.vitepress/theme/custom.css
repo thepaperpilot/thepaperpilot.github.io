@@ -361,6 +361,10 @@ a.title {
   box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
+.outline-marker {
+  left: 16px !important;
+}
+
 .VPLocalNavOutlineDropdown {
   padding: 0 !important;
   margin-top: 10px;
