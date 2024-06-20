@@ -1,24 +1,21 @@
 <template>
-<div class="background">
-    <TresCanvas>
-        <TresOrthographicCamera ref="camera" :position="[0, 0, 10]" />
-        <TresGroup ref="blobRef">
-          <TresMesh v-for="i in rows * cols" :position="[((i % cols) - cols / 2) * 304, (Math.floor((i - 1) / cols) - rows / 2) * 304, 0]" >
-            <TresShapeGeometry :args="[shapes]" />
-            <TresShaderMaterial :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" :blending="AdditiveBlending" />
-          </TresMesh>
-        </TresGroup>
-        <TresAmbientLight :intensity="1" />
-        <OrbitControls />
-    </TresCanvas>
-</div>
+  <TresCanvas>
+      <TresOrthographicCamera ref="camera" :position="[0, 0, 10]" />
+      <TresGroup ref="blobRef">
+        <TresMesh v-for="i in rows * cols" :position="[((i % cols) - cols / 2) * 304, (Math.floor((i - 1) / cols) - rows / 2) * 304, 0]" >
+          <TresShapeGeometry :args="[shapes]" />
+          <TresShaderMaterial :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" :blending="AdditiveBlending" />
+        </TresMesh>
+      </TresGroup>
+      <TresAmbientLight :intensity="1" />
+  </TresCanvas>
+  <div ref="resizeListener" class="resize-listener" />
 </template>
 
 <script setup lang="ts">
 import { computed, ref, shallowRef, onMounted, onUnmounted, watch } from "vue";
 import { TresCanvas, useLoader, useRenderLoop } from '@tresjs/core';
 import { SVGLoader } from "three/examples/jsm/loaders/SVGLoader.js";
-import OrbitControls from './OrbitControls.vue';
 import noise from "./noise.glsl?raw";
 import { AdditiveBlending, Vector2 } from "three";
 
@@ -29,13 +26,16 @@ const { paths } = await useLoader(SVGLoader, '/circuit-board.svg');
 const shapes = paths.map(path => SVGLoader.createShapes(path)).reduce((acc, curr) => [...acc, ...curr]);
 
 // Handle canvas size
-const width = ref(window.innerWidth);
-const height = ref(window.innerHeight);
+const width = ref(0);
+const height = ref(0);
 const rows = computed(() => Math.ceil(height.value / 304));
 const cols = computed(() => Math.ceil(width.value / 304));
+const resizeObserver = new ResizeObserver(updateSize);
+const resizeListener = ref<Element | null>(null);
 function updateSize() {
-    width.value = window.innerWidth;
-    height.value = window.innerHeight;
+    const rect = resizeListener.value?.getBoundingClientRect();
+    width.value = rect?.width ?? 0;
+    height.value = rect?.height ?? 0;
 }
 watch([width, height, camera], ([width, height, camera]) => {
   if (camera) {
@@ -70,18 +70,19 @@ function handleMouseLeave(event: MouseEvent) {
 
 // Setup window listeners
 onMounted(() => {
-    window.addEventListener("resize", updateSize);
+    if (resizeListener.value != null) {
+        resizeObserver.observe(resizeListener.value);
+    }
     window.addEventListener("mousemove", updateMousePos);
     window.addEventListener("mouseout", handleMouseLeave);
 });
 onUnmounted(() => {
-    window.removeEventListener("resize", updateSize);
     window.removeEventListener("mousemove", updateMousePos);
     window.removeEventListener("mouseout", handleMouseLeave);
 });
 
 // Shaders
-const blobRef = shallowRef(null);
+const blobRef = shallowRef<Element | null>(null);
 
 const uniforms = {
   uTime: { value: 0 },
@@ -124,13 +125,13 @@ onLoop(({ elapsed }) => {
 </script>
 
 <style scoped>
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    overflow: hidden;
+.resize-listener {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  right: -4px;
+  bottom: 5px;
+  z-index: -10;
+  pointer-events: none;
 }
 </style>

@@ -4,7 +4,9 @@
       <NolebaseHighlightTargetedHeading />
       <ClientOnly>
         <Suspense>
-          <Background />
+          <div class="background">
+            <Background />
+          </div>
         </Suspense>
       </ClientOnly>
     </template>
@@ -28,6 +30,16 @@ import Background from './Background.vue'
 </script>
 
 <style scoped>
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+}
+
 footer {
     padding: 2em;
     z-index: 26;
