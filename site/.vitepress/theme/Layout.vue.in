@@ -2,6 +2,11 @@
   <DefaultTheme.Layout>
     <template #layout-top>
       <NolebaseHighlightTargetedHeading />
+      <ClientOnly>
+        <Suspense>
+          <Background />
+        </Suspense>
+      </ClientOnly>
     </template>
     <template #layout-bottom>
     	<footer class="vp-doc">
@@ -19,6 +24,7 @@ import DefaultTheme from 'vitepress/theme'
 import { NolebaseHighlightTargetedHeading } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
 import './custom.css'
+import Background from './Background.vue'
 </script>
 
 <style scoped>

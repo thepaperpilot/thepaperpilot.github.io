@@ -15,16 +15,19 @@
   "license": "ISC",
   "homepage": "https://www.thepaperpilot.org/thepaperpilot.github.io",
   "dependencies": {
+    "@tresjs/core": "^4.0.2",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
     "feed": "^4.2.2",
     "flexsearch": "^0.7.43",
     "run-script-os": "^1.1.6",
+    "three": "^0.165.0",
     "vitepress": "^1.2.2",
     "vue": "^3.3.4",
     "word-counting": "^1.1.4"
   },
   "private": true,
   "devDependencies": {
-    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.1.1"
+    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.1.1",
+    "@types/three": "^0.165.0"
   }
 }
