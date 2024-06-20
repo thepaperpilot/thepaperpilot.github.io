@@ -3,11 +3,15 @@
     <template #layout-top>
       <NolebaseHighlightTargetedHeading />
       <ClientOnly>
-        <Suspense>
-          <div class="background">
-            <Background />
-          </div>
-        </Suspense>
+        <div class="background">
+          <TresCanvas>
+            <Camera />
+            <TresAmbientLight :intensity="1" />
+            <Suspense>
+              <Background />
+            </Suspense>
+          </TresCanvas>
+        </div>
       </ClientOnly>
     </template>
     <template #layout-bottom>
@@ -22,11 +26,14 @@
 </template>
 
 <script setup lang="tsx">
-import DefaultTheme from 'vitepress/theme'
 import { NolebaseHighlightTargetedHeading } from '@nolebase/vitepress-plugin-highlight-targeted-heading/client'
+import { TresCanvas } from '@tresjs/core'
 import '@nolebase/vitepress-plugin-highlight-targeted-heading/client/style.css'
-import './custom.css'
+import DefaultTheme from 'vitepress/theme'
 import Background from './Background.vue'
+import Camera from './Camera.vue'
+import OrbitControls from './OrbitControls.vue'
+import './custom.css'
 </script>
 
 <style scoped>

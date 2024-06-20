@@ -12,16 +12,3 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 extend({ OrbitControls });
 const { camera, renderer } = useTresContext();
 </script>
-
-<style scoped>
-.background {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-    overflow: hidden;
-}
-</style>
-    
