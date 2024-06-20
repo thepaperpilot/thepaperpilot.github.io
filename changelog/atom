@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thepaperpilot.org/changelog/</id>
     <title>The Paper Pilot's Digital Garden Changelog</title>
-    <updated>2024-06-19T04:17:50.412Z</updated>
+    <updated>2024-06-20T11:29:13.837Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>The Paper Pilot</name>
@@ -13,6 +13,30 @@
     <link rel="self" href="https://www.thepaperpilot.org/changelog/atom"/>
     <subtitle>A feed of updates made to my digital garden!</subtitle>
     <rights>All rights reserved 2024, The Paper Pilot</rights>
+    <entry>
+        <title type="html"><![CDATA[ 7 files changed, 21 insertions(+), 21 deletions(-)]]></title>
+        <id>https://code.incremental.social/thepaperpilot/pages/commit/411de1d59fe75b3e56de49dd5209b0b0b9a8616c</id>
+        <link href="https://code.incremental.social/thepaperpilot/pages/commit/411de1d59fe75b3e56de49dd5209b0b0b9a8616c"/>
+        <updated>2024-06-18T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ 7 files changed, 21 insertions(+), 21 deletions(-)]]></summary>
+        <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th style="align: center">Page</th>
+<th style="align: center">Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><a href="/garden/guide-to-incrementals/appeal-to-developers">guide-to-incrementals/appeal-to-developers</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
+<tr><td><a href="/garden/guide-to-incrementals/appeal-to-players">guide-to-incrementals/appeal-to-players</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
+<tr><td><a href="/garden/guide-to-incrementals/defining-the-genre">guide-to-incrementals/defining-the-genre</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
+<tr><td><a href="/garden/guide-to-incrementals/navigating-criticism">guide-to-incrementals/navigating-criticism</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
+<tr><td><a href="/garden/guide-to-incrementals/what-is-content">guide-to-incrementals/what-is-content</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
+<tr><td><a href="/garden/the-indieweb/amplification">the-indieweb/amplification</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
+<tr><td><a href="/garden/the-indieweb/signature-blocks">the-indieweb/signature-blocks</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
+</tbody>
+</table>]]></content>
+    </entry>
     <entry>
         <title type="html"><![CDATA[ 2 files changed, 8 insertions(+), 4 deletions(-)]]></title>
         <id>https://code.incremental.social/thepaperpilot/pages/commit/b18e47a2eff9b8710f5538734b0863be16425aa5</id>
@@ -191,25 +215,6 @@
 </table>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[ 2 files changed, 4 insertions(+), 4 deletions(-)]]></title>
-        <id>https://code.incremental.social/thepaperpilot/pages/commit/75b36b72ed7e7f2cc2fcd8d19f3b06b6448e3009</id>
-        <link href="https://code.incremental.social/thepaperpilot/pages/commit/75b36b72ed7e7f2cc2fcd8d19f3b06b6448e3009"/>
-        <updated>2024-06-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ 2 files changed, 4 insertions(+), 4 deletions(-)]]></summary>
-        <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th style="align: center">Page</th>
-<th style="align: center">Changes</th>
-</tr>
-</thead>
-<tbody>
-<tr><td><a href="/garden/digital-gardens">digital-gardens</a></td><td style="font-family: monospace; white-space: nowrap;">4 <span style="color:#A3BE8C">++</span><span style="color:#BF616A">--</span></td></tr>
-<tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">4 <span style="color:#A3BE8C">++</span><span style="color:#BF616A">--</span></td></tr>
-</tbody>
-</table>]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[ 60 files changed, 513 insertions(+), 93 deletions(-)]]></title>
         <id>https://code.incremental.social/thepaperpilot/pages/commit/14a570c17b9fb881c611ae5e1aad8e4200ca8b30</id>
         <link href="https://code.incremental.social/thepaperpilot/pages/commit/14a570c17b9fb881c611ae5e1aad8e4200ca8b30"/>
@@ -287,11 +292,11 @@
 </table>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[ 7 files changed, 21 insertions(+), 21 deletions(-)]]></title>
-        <id>https://code.incremental.social/thepaperpilot/pages/commit/411de1d59fe75b3e56de49dd5209b0b0b9a8616c</id>
-        <link href="https://code.incremental.social/thepaperpilot/pages/commit/411de1d59fe75b3e56de49dd5209b0b0b9a8616c"/>
+        <title type="html"><![CDATA[ 2 files changed, 4 insertions(+), 4 deletions(-)]]></title>
+        <id>https://code.incremental.social/thepaperpilot/pages/commit/75b36b72ed7e7f2cc2fcd8d19f3b06b6448e3009</id>
+        <link href="https://code.incremental.social/thepaperpilot/pages/commit/75b36b72ed7e7f2cc2fcd8d19f3b06b6448e3009"/>
         <updated>2024-06-18T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ 7 files changed, 21 insertions(+), 21 deletions(-)]]></summary>
+        <summary type="html"><![CDATA[ 2 files changed, 4 insertions(+), 4 deletions(-)]]></summary>
         <content type="html"><![CDATA[<table>
 <thead>
 <tr>
@@ -300,13 +305,8 @@
 </tr>
 </thead>
 <tbody>
-<tr><td><a href="/garden/guide-to-incrementals/appeal-to-developers">guide-to-incrementals/appeal-to-developers</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
-<tr><td><a href="/garden/guide-to-incrementals/appeal-to-players">guide-to-incrementals/appeal-to-players</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
-<tr><td><a href="/garden/guide-to-incrementals/defining-the-genre">guide-to-incrementals/defining-the-genre</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
-<tr><td><a href="/garden/guide-to-incrementals/navigating-criticism">guide-to-incrementals/navigating-criticism</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
-<tr><td><a href="/garden/guide-to-incrementals/what-is-content">guide-to-incrementals/what-is-content</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
-<tr><td><a href="/garden/the-indieweb/amplification">the-indieweb/amplification</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
-<tr><td><a href="/garden/the-indieweb/signature-blocks">the-indieweb/signature-blocks</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++</span><span style="color:#BF616A">---</span></td></tr>
+<tr><td><a href="/garden/digital-gardens">digital-gardens</a></td><td style="font-family: monospace; white-space: nowrap;">4 <span style="color:#A3BE8C">++</span><span style="color:#BF616A">--</span></td></tr>
+<tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">4 <span style="color:#A3BE8C">++</span><span style="color:#BF616A">--</span></td></tr>
 </tbody>
 </table>]]></content>
     </entry>
