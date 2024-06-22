@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "vitepress serve site",
     "dev": "vitepress dev site",
-    "build": "rm -rf ./site/guide-to-incrementals && rm -rf ./site/public/garden && rm -rf ./site/public/changelog && rm -rf ./site/changelog && rm -rf ./site/now && rm -rf ./site/garden && rm -rf ./garden-output && yarn run logseq-export && node build_garden.js && vitepress build site",
+    "build": "rm -rf ./garden-output && yarn run logseq-export && node build_garden.js && vitepress build site",
     "logseq-export": "run-script-os",
     "logseq-export:win32": "logseq-export/logseq-export.exe --logseqFolder ./Garden --outputFolder ./garden-output",
     "logseq-export:linux": "chmod +x logseq-export/logseq-export && logseq-export/logseq-export --logseqFolder ./Garden --outputFolder ./garden-output"
@@ -15,6 +15,7 @@
   "license": "ISC",
   "homepage": "https://www.thepaperpilot.org/thepaperpilot.github.io",
   "dependencies": {
+    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.1.1",
     "@tresjs/core": "^4.0.2",
     "@vitejs/plugin-vue-jsx": "^4.0.0",
     "feed": "^4.2.2",
@@ -26,7 +27,6 @@
   },
   "private": true,
   "devDependencies": {
-    "@nolebase/vitepress-plugin-highlight-targeted-heading": "^2.1.1",
     "@types/three": "^0.165.0"
   }
 }
