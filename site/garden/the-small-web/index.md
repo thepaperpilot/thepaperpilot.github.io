@@ -12,14 +12,12 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">The Small Web</h1>
-<p>801 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>771 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 > Referenced by: [/now](/now/index), [This Knowledge Hub](/garden/this-knowledge-hub/index.md)
 
-The small web (also known as the indie web, personal web, the web revival movement, and other terms) refers to small, personal, independent websites. It is seen as a direct alternative to the centralized and homogenized websites like X, Meta, and TikTok.
-
-[My Personal Website](/garden/my-personal-website/index.md) is part of the small web!
+The small web (also known as the indie web, personal web, the web revival movement, and other terms) refers to small, personal, independent websites. It is seen as a direct alternative to the centralized and homogenized websites like X, Meta, and TikTok. [My Personal Website](/garden/my-personal-website/index.md) is part of the small web!
 
 ## Motivation behind the small web
 
@@ -65,14 +63,11 @@ The [Tildeverse](https://tildeverse.org/) contains a large set of personal websi
 
 ## Building personal websites
 
-[IndieWeb](https://indieweb.org/) contains various resources
-- Their [building blocks](https://indieweb.org/Category:building-blocks) are standards people can use to help the small web connect with each other consistently
+[IndieWeb](https://indieweb.org/) contains various information and resources on building personal websites that use open standards to better interact with readers and other sites consistently. Check out [IndieWebify Me](https://indiewebify.me/) to get assistance implementing their standards.
 
 <span id="665b6ac0-d3ca-41d8-9534-929ac2907c2e">Free hosting for static websites:</span>
-- [Neocities](https://neocities.org)
-	- Also check out their tutorials to [Learn How to Make Websites!](https://neocities.org/tutorials)
-- [Codeberg pages](https://codeberg.page) (and any other [pages-server](https://codeberg.org/Codeberg/pages-server) instance)
-	- Like on [Incremental Social](https://incremental.social/pages)!
+- [Neocities](https://neocities.org). Also check out their tutorials to [Learn How to Make Websites!](https://neocities.org/tutorials)
+- [Codeberg pages](https://codeberg.page) (and any other [pages-server](https://codeberg.org/Codeberg/pages-server) instance - like on [Incremental Social](https://incremental.social/pages)!)
 - [Github pages](https://pages.github.com)
 - [Weird](/garden/weird/index.md) (in development)
 
