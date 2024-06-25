@@ -372,7 +372,7 @@ ${entries.join("\n\n")}
     fs.closeSync(fd);
 
     // Write licenses to /licenses
-    fd = fs.openSync("site/public/licenses.md", "w+");
+    fd = fs.openSync("site/public/licenses.txt", "w+");
     const licenses = (await exec(`yarn licenses generate-disclaimer --frozen-lockfile`)).stdout;
     fs.writeSync(fd,
 `# Licenses
