@@ -14,7 +14,7 @@ const pageData = useData();
 <p>20 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Federated Identity](/garden/federated-identity/index.md), [/now](/now/index), [Webrings](/garden/webrings/index.md)
+> Referenced by: [Federated Identity](/garden/federated-identity/index.md), [My Personal Website](/garden/my-personal-website/index.md), [/now](/now/index), [Webrings](/garden/webrings/index.md)
 
 > Tags: [My Projects](/garden/my-projects/index.md)
 

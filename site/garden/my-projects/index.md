@@ -19,14 +19,14 @@ const pageData = useData();
 
 I like making games and tools!
 
-## Games
+<span id="665e3a7a-395f-4493-8f3a-482f136ea157"><h2>Games</h2></span>
 - [Planar Pioneers](/garden/planar-pioneers/index.md) ([play](https://thepaperpilot.org/planar))
 - [Advent Incremental](/garden/advent-incremental/index.md) ([play](https://thepaperpilot.org/advent))
 - [Game Dev Tree](/garden/game-dev-tree/index.md) ([play](https://thepaperpilot.org/gamedevtree))
 - [Dice Armor](/garden/dice-armor/index.md)
 - [Capture the Citadel](/garden/capture-the-citadel/index.md)
 - I have more you can find on [my Itch.io page](https://thepaperpilot.itch.io/)
-- ... And several more in development! Most aren't going to have their own pages on here, but a long-term project of mine called [Kronos](/garden/kronos/index.md) is the exception!
+	- ... And several more in development! Most aren't going to have their own pages on here, but a long-term project of mine called [Kronos](/garden/kronos/index.md) is the exception!
 
 ## Tools (and other non-games)
 - [Profectus](/garden/profectus/index.md)
