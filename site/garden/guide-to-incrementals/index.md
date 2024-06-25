@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Guide to Incrementals</h1>
-<p>251 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>230 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 > Referenced by: [My Personal Website](/garden/my-personal-website/index.md)
@@ -19,8 +19,6 @@ const pageData = useData();
 This is a comprehensive guide to Incremental Games, a genre of video games. It will explore defining the genre, why it's appealing, and how to design and build your own incremental game. Along the way will be ~~interactive examples~~, snippets from other creators, and relevant material to contextualize everything.
 
 > Note: This is an incomplete document. I want to keep adding opinions and opposing views from other incremental games developers, and add interactive examples to illustrate various points regarding game design and balancing. Consider this a living document - and see the changelog at the end.
-
-> Note: This was made before my switch to a digital garden, and is written as prose.  Hope you don't mind!
 
 ## Why am I making this?
 
