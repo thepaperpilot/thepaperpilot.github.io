@@ -321,8 +321,8 @@ a.title {
   margin-left: calc(-1em - 23px);
 }
 
-.vp-doc :not(h1) > .header-anchor {
-  top: 24px;
+.vp-doc .header-anchor {
+  top: 0 !important;
 }
 
 .VPSidebar {
@@ -530,11 +530,9 @@ article {
 }
 
 .VPDoc h2, .VPDoc h3, .VPDoc h4, .VPDoc h5, .VPDoc h6 {
-  margin-top: -3px !important;
-  padding-top: 23px !important;
-  border-top-style: solid !important;
-  border-top-width: 10px !important;
-  border-image: url(/button.svg) 10 10 10 10 stretch stretch !important;
+  margin-top: 30px !important;
+  margin-bottom: -30px !important;
+  border: none !important;
 }
 
 ul {
