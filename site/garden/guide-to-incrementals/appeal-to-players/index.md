@@ -14,6 +14,8 @@ const pageData = useData();
 <p>2166 words, ~12 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+> Referenced by: [Digital Gardens](/garden/digital-gardens/index.md), [Incremental Social](/garden/incremental-social/index.md), [Kronos](/garden/kronos/index.md), [My Personal Website](/garden/my-personal-website/index.md), [Social Media](/garden/social-media/index.md)
+
 This is something that has been discussed and analyzed by many people, and to some extent, I feel like everything that can be said on the topic already has. However, a lot of these analyses are from the perspective of those with not as much experience and involvement within the genre as I'd argue would be necessary for a fully contextualized answer. I'm interested in ludology and part of that includes interpreting games as art, and to that end what constitutes a game, let alone a "good game". Incremental games  are oft criticized, unfairly in my biased opinion, of not even constituting games, such as was posited by [this polygon article](https://www.polygon.com/2013/9/30/4786780/the-cult-of-the-cookie-clicker-when-is-a-game-not-a-game).
 
 ## Numbers Going Up

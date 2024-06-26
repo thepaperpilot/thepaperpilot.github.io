@@ -16,7 +16,7 @@ const pageData = useData();
 <p>29 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [ATProto](/garden/atproto/index.md), [Decentralized](/garden/decentralized/index.md), [Fedi v2](/garden/fedi-v2/index.md), [Incremental Social](/garden/incremental-social/index.md), [Mbin](/garden/mbin/index.md), [Weird](/garden/weird/index.md)
+> Referenced by: [ActivityPub](/garden/activitypub/index.md), [ATProto](/garden/atproto/index.md), [Decentralized](/garden/decentralized/index.md), [Fedi v2](/garden/fedi-v2/index.md), [Incremental Social](/garden/incremental-social/index.md), [Mbin](/garden/mbin/index.md), [Nostr](/garden/nostr/index.md), [Social Media](/garden/social-media/index.md), [The Small Web](/garden/the-small-web/index.md), [Weird](/garden/weird/index.md)
 
 > Tags: [Decentralized](/garden/decentralized/index.md)
 

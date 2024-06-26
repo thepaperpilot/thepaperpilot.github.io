@@ -15,7 +15,7 @@ const pageData = useData();
 <p>771 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [/now](/now/index), [This Knowledge Hub](/garden/this-knowledge-hub/index.md)
+> Referenced by: [Commune](/garden/commune/index.md), [Federated Identity](/garden/federated-identity/index.md), [Fedi v2](/garden/fedi-v2/index.md), [My Personal Website](/garden/my-personal-website/index.md), [/now](/now/index), [The IndieWeb/Signature Blocks](/garden/the-indieweb/signature-blocks/index.md), [This Knowledge Hub](/garden/this-knowledge-hub/index.md), [Webrings](/garden/webrings/index.md), [Weird](/garden/weird/index.md)
 
 The small web (also known as the indie web, personal web, the web revival movement, and other terms) refers to small, personal, independent websites. It is seen as a direct alternative to the centralized and homogenized websites like X, Meta, and TikTok. [My Personal Website](/garden/my-personal-website/index.md) is part of the small web!
 

@@ -14,6 +14,8 @@ const pageData = useData();
 <p>3429 words, ~19 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+> Referenced by: [Digital Gardens](/garden/digital-gardens/index.md), [Incremental Social](/garden/incremental-social/index.md), [Kronos](/garden/kronos/index.md), [My Personal Website](/garden/my-personal-website/index.md), [Social Media](/garden/social-media/index.md)
+
 Video games are placed into genres for a variety of reasons. They can give a mental shorthand to set the player's expectations up, they can help a game market itself by its similarities to other, already popular games, and honestly, people just love categorization for its own sake. For this guide, it's important to define the genre so it is clear what games it's even talking about.
 
 This poses a problem. "Incremental" is a _horribly_ vague way to define games. _Most_ games have numbers going up in some form or another. We need a more specific definition - similar to how "strategy" can't just mean any game with _any_ amount of strategy because that would be _most_ games. What specifically differentiates incremental games from the rest?

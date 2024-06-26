@@ -71,7 +71,7 @@ function moveImportStatementUp(filePath, times = 1) {
     await walk("./Garden/pages", (dir, file, resolve) => {
         const filePath = path.resolve(dir, file);
         let data = fs.readFileSync(filePath).toString();
-        if (!data.match(/public::/g)) {
+        if (data.match(/public::/g) == null) {
             resolve();
             return;
         }
@@ -98,9 +98,22 @@ function moveImportStatementUp(filePath, times = 1) {
             });
         }
 
+        resolve();
+    });
+    await walk("./Garden/pages", (dir, file, resolve) => {
+        const filePath = path.resolve(dir, file);
+        let data = fs.readFileSync(filePath).toString();
+        if (data.match(/public::/g) == null) {
+            resolve();
+            return;
+        }
+
+        const name = path.basename(file, ".md").replaceAll('___', '/');
+        const slug = toSlug(name).replaceAll(/%3F/gi, '').replaceAll('\'', '-');
+
         if (!indices.includes(slug)) {
             for (const match of data.matchAll(/\[\[([^\[\]]*)\]\]/g)) {
-                const pageSlug = toSlug(match[1]);
+                const pageSlug = pageLinks[match[1]];
                 referencedBy[pageSlug] = [...(referencedBy[pageSlug] ?? []), name];
             }
         }
@@ -172,10 +185,11 @@ function moveImportStatementUp(filePath, times = 1) {
                 `---\n\n> Tagged by: ${taggedBy[title].map(tag => `[${tag}](${pageLinks[tag]})`).join(", ")}\n\n`);
         }
         // TODO show context on references? Perhaps in a `::: info` block?
-        if (title in referencedBy) {
+        const pageTitle = data.match(/title: "(.+)"/)[1];
+        if (pageLinks[pageTitle] in referencedBy) {
             data = data.replaceAll(
                 /---\n\n/gm,
-                `---\n\n> Referenced by: ${referencedBy[title].map(tag => `[${tag}](${pageLinks[tag]})`).join(", ")}\n\n`);
+                `---\n\n> Referenced by: ${referencedBy[pageLinks[pageTitle]].map(tag => `[${tag}](${pageLinks[tag]})`).join(", ")}\n\n`);
         }
         // Fix links to /now
         data = data.replace('NOW', '/now')
@@ -192,7 +206,7 @@ import { data } from '${path.relative(path.resolve("site", relPath), path.resolv
 import { useData } from 'vitepress';
 const pageData = useData();
 </script>
-<h1 class="p-name">${data.match(/title: "(.+)"/)[1]}</h1>
+<h1 class="p-name">${pageTitle}</h1>
 <p>${wc} words, ~${Math.round(wc / 183)} minute read. <span v-html="data[\`site/\${pageData.page.value.relativePath}\`]" /></p>
 <hr/>
 \n`);

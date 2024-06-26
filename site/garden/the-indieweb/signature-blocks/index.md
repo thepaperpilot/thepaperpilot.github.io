@@ -14,4 +14,6 @@ const pageData = useData();
 <p>14 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+> Referenced by: [Digital Gardens](/garden/digital-gardens/index.md), [Incremental Social](/garden/incremental-social/index.md), [Kronos](/garden/kronos/index.md), [My Personal Website](/garden/my-personal-website/index.md), [Social Media](/garden/social-media/index.md)
+
 A proposal I want to write for posting signed content on your [IndieWeb](/garden/the-small-web/index.md) website

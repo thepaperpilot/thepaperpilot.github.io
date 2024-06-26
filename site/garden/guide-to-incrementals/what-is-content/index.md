@@ -14,6 +14,8 @@ const pageData = useData();
 <p>2092 words, ~11 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+> Referenced by: [Digital Gardens](/garden/digital-gardens/index.md), [Incremental Social](/garden/incremental-social/index.md), [Kronos](/garden/kronos/index.md), [My Personal Website](/garden/my-personal-website/index.md), [Social Media](/garden/social-media/index.md)
+
 If you've been in the incremental games community for any amount of time, you'll quickly find the number one thing players want is _content_. They want as much of it as possible! The most popular incremental games have tons of content, so they just keep stretching on and on and on, introducing mechanic after mechanic, and players love it. In fact, players seem to value the _amount_ of content over the quality of any _specific_ content. However, there's a bit of a lack of understanding concerning _what_ content is, and I'd like to explore what counts as content, and how we measure it. As a baseline definition, I think "content" can just be described as the parts of the game that engage the player, but to truly understand it we need to contextualize what that means and how it affects the gameplay experience.
 
 To clarify the purpose of this page, my goal is not to get (too) nitpicky or to attack games with "low content". There's nothing wrong with short / low-content games - I'm quite a big fan of those games myself! This is mostly targeted toward those who _ask_ for content and settle for "long" games, and those who _want_ to provide content but want to make sure they're not just artificially inflating the game. Ultimately, I suppose the goal is to just reduce the amount of artificially inflated content for the sake of having a "longer" game.

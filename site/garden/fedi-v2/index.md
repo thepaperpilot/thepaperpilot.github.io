@@ -14,7 +14,7 @@ const pageData = useData();
 <p>1652 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Social Media](/garden/social-media/index.md), [Weird](/garden/weird/index.md)
+> Referenced by: [Social Media](/garden/social-media/index.md), [The IndieWeb/Signature Blocks](/garden/the-indieweb/signature-blocks/index.md), [Weird](/garden/weird/index.md)
 
 A placeholder name for a theoretical new federated network that is client-centric, in contrast to the server-centric [Fediverse](/garden/fediverse/index.md). Many of the ideas here will be implemented as described or similarly by people much smarter than me as part of [Agentic Federation on Iroh](https://github.com/commune-os/weird/discussions/32), an initiative by the [Weird](/garden/weird/index.md) developers.
 

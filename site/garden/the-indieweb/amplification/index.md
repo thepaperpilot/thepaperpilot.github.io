@@ -14,6 +14,8 @@ const pageData = useData();
 <p>57 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+> Referenced by: [Digital Gardens](/garden/digital-gardens/index.md), [Incremental Social](/garden/incremental-social/index.md), [Kronos](/garden/kronos/index.md), [My Personal Website](/garden/my-personal-website/index.md), [Social Media](/garden/social-media/index.md)
+
 Refers to reblogging (and re-hosting, sometimes) of someone else's content on your own site
 
 [The Internet is a series of webs](https://aramzs.xyz/essays/the-internet-is-a-series-of-webs/)  discusses some ideas and best practices for amplification

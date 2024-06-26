@@ -14,6 +14,8 @@ const pageData = useData();
 <p>636 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+> Referenced by: [Digital Gardens](/garden/digital-gardens/index.md), [Incremental Social](/garden/incremental-social/index.md), [Kronos](/garden/kronos/index.md), [My Personal Website](/garden/my-personal-website/index.md), [Social Media](/garden/social-media/index.md)
+
 There are a lot of developers in the incremental games community - the genre seems to draw them in, and convert a lot of players _into_ developers. Let's explore the reasons why this genre appeals to developers.
 
 ## Incrementals are Easy to Make

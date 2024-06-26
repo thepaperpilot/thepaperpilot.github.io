@@ -14,7 +14,7 @@ const pageData = useData();
 <p>23 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Commune](/garden/commune/index.md)
+> Referenced by: [Commune](/garden/commune/index.md), [My Personal Website](/garden/my-personal-website/index.md), [The Small Web](/garden/the-small-web/index.md)
 
 A theoretical chat system designed to solve the problems of transcribing branching conversations into linear timelines.
 
