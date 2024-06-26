@@ -1,4 +1,5 @@
 ---
+alias: "Decentralized Identity"
 public: "true"
 slug: "federated-identity"
 tags: [Decentralized]
@@ -15,7 +16,7 @@ const pageData = useData();
 <p>68 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Commune](/garden/commune/index.md), [Fedi v2](/garden/fedi-v2/index.md), [Weird](/garden/weird/index.md)
+> Referenced by: [Commune](/garden/commune/index.md), [Weird](/garden/weird/index.md)
 
 > Tags: [Decentralized](/garden/decentralized/index.md)
 

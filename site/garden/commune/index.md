@@ -14,7 +14,7 @@ const pageData = useData();
 <p>144 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Federated Identity](/garden/federated-identity/index.md), [Fedi v2](/garden/fedi-v2/index.md), [/now](/now/index), [Webrings](/garden/webrings/index.md), [Weird](/garden/weird/index.md)
+> Referenced by: [Federated Identity](/garden/federated-identity/index.md), [/now](/now/index), [Webrings](/garden/webrings/index.md), [Weird](/garden/weird/index.md)
 
 An [Open Source](/garden/open-source/index.md) [Matrix](/garden/matrix/index.md) web client built to be better for communities than anything else out there
 - Currently in development

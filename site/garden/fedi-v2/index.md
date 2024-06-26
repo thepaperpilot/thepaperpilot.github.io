@@ -11,114 +11,61 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Fedi v2</h1>
-<p>1274 words, ~7 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1652 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 > Referenced by: [Social Media](/garden/social-media/index.md), [Weird](/garden/weird/index.md)
 
-A placeholder name for a theoretical new federated network that is client-centric, in contrast to the server-centric [Fediverse](/garden/fediverse/index.md)
+A placeholder name for a theoretical new federated network that is client-centric, in contrast to the server-centric [Fediverse](/garden/fediverse/index.md). Many of the ideas here will be implemented as described or similarly by people much smarter than me as part of [Agentic Federation on Iroh](https://github.com/commune-os/weird/discussions/32), an initiative by the [Weird](/garden/weird/index.md) developers.
 
-There are further discussions about actually implementing all this within the [Weird](/garden/weird/index.md) community
+## Motivation
 
-## Inspiration
-- [A Plan for Social Media - Rethinking Federation](https://raphael.lullis.net/a-plan-for-social-media-less-fedi-more-webby/)
-	- This article doesn't address many implementation details:
-		- If the server is a relay, can content not be viewed anonymously?
-		- How to handle storing large amounts of data on every client?
-		- Don't you still need to associate with a server for people to direct their messages to?
-- [Single-user Mastodon Instance is a Bad Idea](https://mull.net/mastodon)
-	- Focuses on the non-feasibility of self hosting, contributing to [Federated Social Media](/garden/fediverse/index.md) not actually having all the upsides it should theoretically have by virtue of being [Decentralized](/garden/decentralized/index.md)
-- The [Commune](/garden/commune/index.md) community
-- Existing protocols:
-	- [Nostr](https://nostr.com)
-		- Currently suffers a culture problem by being associated with alt right and crypto users, making broad adoption more difficult
-	- [ATProto](https://atproto.com)
-		- Focused on a few large instances, to be run by large corporations. Still requires associating your identity with a server you don't own
-- A lot of these ideas are learned lessons from the usenet days
+The current fediverse, while in theory fully [Decentralized](/garden/decentralized/index.md), in practice suffers many of the issues associated with centralization. This is primarily caused by the friction of having to pick a server and the non feasibility of individuals buying a domain and setting up a single user instance - both the causes lead to a handful of large servers with the bulk of the users. You can see this in action by looking up the relative sizes of lemmy and mastodon instances. [Single-user Mastodon Instance is a Bad Idea](https://mull.net/mastodon) goes over the non feasibility of self hosting and how it contributes to a handful of servers having the majority of the users.
+
+The promise of federation is the ability to interact with the whole network, while being able to fully choose and customize how you yourself interact with the network. In practice though, clients are severely limited to what they can do based on the server software. Of particular note, Lemmy and Mastodon show content in different formats (threads vs microblogs), and no clients allow changing how they're displayed, or respecting the format of the source of the content. Clients also are unable to change sorting algorithms or how downvotes are handled - those are all dependent on the server. [A Plan for Social Media - Rethinking Federation](https://raphael.lullis.net/a-plan-for-social-media-less-fedi-more-webby/) similarly criticizes how much of the decisions are dependent on the server, which most people won't be able to or willing to self host.
+
+The pick a server problem is such a problem because not only do you have to pick what server has moderation policies you align with, but that you're also linking your identity with that server. Smaller servers tend to be more focused or niche, which is unlikely to fully encompass any person's entire identity. Why would I confine myself to being `thepaperpilot@writinglovers.com` if I'm more than a writing lover? Additionally, I'm risking that the community at that instance won't grow away from things I want to associate with, such as fascism or crypto. My identity could end up being associated with things I drastically don't want it to be.
+
+[Nostr](https://nostr.com/) fixes the pick a server problem with a properly decentralized identity, however it's done so by associating itself with crypto and the alt right, and fixing that culture problem is more effort than it's worth. It'll be difficult to gain broad adoption as anyone using the platform will have to take care to explain how they're using nostr but aren't alt right.
+
+[ATProto](https://atproto.com/) by bluesky offers a version of federation built for a handful of large instances, but allowing smaller servers to be spun up that can implement custom sorting algorithms, views, etc. This fixes a couple of the problems where you're unable to change certain things dictated by the servers, but doesn't quite go far enough - and of particular note, you still have to associate your identity with a specific server.
 
 ## Identity
-- [Federated Identity](/garden/federated-identity/index.md)
-- Private and public keys anyone can create and store how they want
-	- Fully free to create and store with no server dependencies
-- Profile information
-	- Sent as a signed message through all the relays
-	- How would you trust a username?
-		- [Petnames](https://spritely.institute/static/papers/petnames.html) could be used to display human readable names via contacts or decentralized "naming hubs"
-		- In most conversations online, you can trust their display name and add them as a contact as that display name
-			- You only need to verify they are the same person you interacted with previously
-			- You only need to trust people you want to send money to or otherwise "important identities"
-			- For important identities, you can trust your contacts forming a chain of trust, or a authoritative naming hub
-				- E.g. a white house ran naming hub that verifies the identities of the president and people of Congress
-				- People typically wouldn't reach out to a naming hub, as it's not typically necessary
-			- Contacts supercede naming hubs, so if a naming hub is breached, anyone I've previously added as a contact is still the source of truth
-				- This only fails if the private key itself was breached
-			- I'm just thepaperpilot, my display name. For most online communication, this is sufficient
-				- My website can have a nameserver saying this publickey is the same as the site owner
-				- If I write a paper at a scientific journal, they can say the author of x paper is my publickey
-- How to handle losing your private key
-	- If you do have a naming hub you can verify with, they can say the identity has a new publickey
-	- Contacts can "vouch" for a identity having a new publickey
-	- Clients can decide to trust the new publickey based on contacts and naming hubs saying to
-	- Also applies to stolen or compromised keys
+
+The new fediverse should have a fully [Decentralized Identity](/garden/federated-identity/index.md), where it's completely attached to the client rather than any server(s). This means you don't have to pick a server, worry about your chosen server going down, or that yout identity will become associated with an undesired community. It can properly allow you to engage in your variety of interests without having to associate any as core enough to attach your identity to.
+
+This identity can be accomplished by the client merely generating a private and public key, which can then be stored however the user pleases. Reasonably, there's be default options to back up the private key to Google drive or alternatives, as most users will not desire to go the extra effort of backing up their identity without relying on big storage websites. But for those who wish, you could keep the identity solely on the device, or choose your own method of storage and backup.
+
+The client can sign messages using the private key and distribute it through whatever means they wish, and it can be verified as sent by that identity using the public key to decode the message. In this context, messages could also refer to any other signed information, such as a bundle of profile information.
+
+For casual conversation, a nickname in the profile data should be sufficient. Once a client interacts with someone, they can be added as a contact as a way of verifying the next conversation with someone with that username is actually the same person as before. For situations where you want to verify an identity actually has a credentials they claim, you can query a nameserver that vouches for them. For example, whitehouse.gov would have a nameserver that specifies which identity is the actual president of the United States (and other government officials). There could be nameservers that allow you to openly "register" your identity with them to get a unique human readable username you can include on billboards or other visual media where you want someone to be able to memorize the identifier, rather than scan a QR code or something. For more details on how these decentralized usernames would work, check out [Petnames](https://spritely.institute/static/papers/petnames.html).
+
+Through cryptography, you can be confident messages are verifiably sent by someone with access to the private key, and that the message was not tampered with. These are guarantees you can't make with the current server centric fediverse.
+
+If you lose access to your account, it's gone forever. That is why I think there should be defaults to backup your private key to existing reliable servers, even if they're owned by large corporations. Otherwise I would see someone have their phone stolen, lost, or upgraded and be surprised when their account is now inaccessible.
+
+If you do lose your account and create a new identity, you could have others "vouch" for the new identity being an alias for the previous identity. You could verify your new identity with people IRL, and then other clients can see those vouches publicly and, after sufficient quantity, just implicitly assume they're the same (although with some sort of indicator, so if this gets abused, users are at least aware of the possibility of impersonation.
 
 ## Servers
-- Act as relays, merely storing messages and sending them to any clients or servers that have subscribed
-- May decide to publicly display messages its received
-	- These servers are how discovery would work
-	- Different servers may offer unique displays, filters, etc.
-- Users can send their content to any server - no authentication or account required, as the identity suffices
-	- Even replies can work this way - no need to know from where a given message originated
-- Private servers could require some password when sending messages or subscribing to things
-	- Useful for a school or other entity that wants an internal social network
-- Different ways to subscribe to a server's messages
-	- All messages the relay hears about (new relays essentially subscribe like this to some existing relay)
-	- All messages from a specific poster ID
-	- Any replies to a message created with a specific poster ID
-	- Shallow subscriptions, to lighten the load when subscribing to communities
+
+Servers would act as mere relays, whose job it is is to store messages and send them to any other clients or servers that have requested to hear about any new messages. Some relays may also display these messages in a web interface, so that you can still share links to messages online. Because your identity isn't attached to any specific server, you could send your messages out to any servers you wish, and change that list as often as you'd like. It's extremely resilient to individual servers going down.
+
+If you want a private network, say for a school or job, you could setup a relay server that requires some sort of password when sending them messages, and then have that server not federate with the rest of the fediverse.
+
+Servers would give clients ways to subscribe to subsets of all received messages - e.g. all messages, all messages from a specific user, any replies to messages from a specific user, or "shallow" subscriptions to a message, meaning it'll send you only 1 level of replies to that message.
 
 ## Content
-- Protocol should dictate how to convey text, image, audio, video, and binary content
-- Protocol should include reacting to content with arbitrary text, including a URL
-	- Upvotes and downvotes are implemented with this system
-- Each message contains fields for the poster's ID (public key) and a signature that verifies the content was made by that poster
-	- That signature serves as an ID for the message itself
-		- Anything can be replied to using the ID as the "parent" property in a new post
-- Edits are handled as replies with some flag to indicate it's updating the parent messages' content
-	- Naturally, this reply would only be respected if it matches the same creator ID
-	- Servers should replace the original message entirely with this one and indicate its an edited message
-		- Some servers will inevitably keep a full history though
-- Groups/communities are just specially flagged messages
-	- Posting to a community is just replying to that message
-	- Subscribing to a community is just subscribing to that message
-	- The original message creator effectively owns the group
-- [IndieWeb](/garden/the-small-web/index.md) pages could publish these messages as well, effectively serving as clients within the network
-	- Perhaps use a bit to actually send those messages to other relays within the network
+
+The protocol should be fairly content agnostic, and allow arbitrary metadata on messages that can be used by the community to come up with their own new forms of content to transmit over the protocol. For example, perhaps there's a body field that could include arbitrary text _or_ binary data, and for binary data another field could clarify if its audio, video, an image, or something else.
+
+The signature of the message acts as the de facto ID of that message, for replying purposes. Edits and reactions would be handled by "replying" to a message with a metadata flag indicating what the message actually represents. Edit messages should typically be ignored if they're not from the same author as the original message. We should assume some servers will always make an edit history fully public. Reactions should just be replies without any actual body, and a tag for what the reaction is - either binary image data or a code representing an emoji, like "+1" or "laughing". Upvotes and downvotes could be implemented via reactions.
+
+Groups/communities could also be specially flagged messages, effectively allowing for subreddit-style content. Posting to the community is just replying to the message. Subscribing to that community is just subscribing to that message. The original message creator can send edits to update stuff like the description of the community. Perhaps they can also send a message detailing other identities to trust for editing or moderating the community.
+
+A bot could fairly easily be setup to make [IndieWeb](/garden/the-small-web/index.md) posts and web mentions use this protocol. Indeed, this protocol is very POSSE-friendly because you could have your original content on the website, and the messages can be spread across the network while allowing clients to verify it was untampered with and definitely came from that website. I plan on writing a proposal for IndieWeb posts to include [The IndieWeb/Signature Blocks](/garden/the-indieweb/signature-blocks/index.md) to enable this.
 
 ## Moderation
-- In general, edits and delete requests are made by replying with a specially flagged message
-- Edit and deletion messages are ignored unless they have the correct public key and signature
-	- Parent messages form a hierarchy of permission - if someone replies to your message, you can send a delete request for that message
-	- Relay owners cannot fully delete messages, but can choose to stop relaying replies etc. of messages as the server owner wishes
-- Posts can be publicly reported with a specially flagged reply
-	- How to make anonymous reports?
-- Users can send deletion or edit messages even without a matching public key, and clients (or relays) can choose to respect those messages if that public key is whitelisted as a moderator
-	- Messages (and by extension, groups) can have replies granting or removing permission to other public IDs at that hierarchy level
-	- People can setup accounts with their desired heuristic for sending delete messages, such as looking at public reports or analyzing the content with AI
-		- This way clients can effectively customize their preferred moderation
-- Clients can also choose to add additional rules for hiding content, such as any reports by followed users
-- Perhaps delete messages pull double duty as public reports in and of themselves?
 
-## Problems to solve
-- No anonymity
-	- All upvotes, downvotes, etc. are linked to your public key
-	- Perhaps a client could generate new keypairs for every action for anonymity, but then it'd be hard to determine if such an account and action was a genuine user or a bot
-- Servers could probably determine the identity of clients sending their messages to them
-	- A client that only ever sends messages with a specific public key is unlikely to be a server
-	- A client that doesn't subscribe to all messages is unlikely to be a server
-	- Perhaps clients and servers can be identified as such, and subscribing to new messages is something you only do to servers, not clients
-- Illegal material will likely be placed on the hard drive at least temporarily
-	- Messages will be downloaded and, even if you follow a moderator bot that looks for illegal material, there's likely to be a delay between receiving the initial message and receiving the bots delete message
-- You have to download all spam messages
-	- For redundancy, you'd likely subscribe to multiple relay servers
-	- You cannot trust several relay servers to have identical rules on not relaying messages that don't pass whatever moderation heuristic
-	- Therefore, the filtering out of spam has to be done by the client, after downloading it all
+Anyone can send edit and delete requests as replies to messages, but they'll typically be ignored since they'd be coming from a different identity. However, you could have clients or even servers honor those requests based on various heuristics - deleting anything that's gotten X delete requests, or trust specific identities to act as moderators. Since individual clients could choose which identities to honor, the moderation is effectively fully decentralized. Clients will probably have a couple identities trusted by default, to check for illegal content or that would otherwise prevent the app from breaking the app store's TOS.
+
+Anyone can spin up their own bots that just automatically send out delete requests based on custom logic, like checking for images that match the CSAM hash list, or messages that ChatGPT says are non-constructive. Through this, the ecosystem will over time allow people to further customize their experience by filtering out unwanted content more and more precisely.
