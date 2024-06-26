@@ -15,9 +15,9 @@ const pageData = useData();
 <p>80 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Commune](/garden/commune/index.md), [Fedi v2](/garden/fedi-v2/index.md), [Matrix](/garden/matrix/index.md), [Social Media](/garden/social-media/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/matrix/index.md">Matrix</a><a href="/garden/social-media/index.md">Social Media</a></details>
 
-> Tagged by: [ActivityPub](/garden/activitypub/index.md), [ATProto](/garden/atproto/index.md), [Federated Identity](/garden/federated-identity/index.md), [Fediverse](/garden/fediverse/index.md), [Nostr](/garden/nostr/index.md)
+<details><summary>Tagged by:</summary><a href="/garden/activitypub/index.md">ActivityPub</a><a href="/garden/atproto/index.md">ATProto</a><a href="/garden/federated-identity/index.md">Federated Identity</a><a href="/garden/fediverse/index.md">Fediverse</a><a href="/garden/nostr/index.md">Nostr</a></details>
 
 Something with no central source of authority
 

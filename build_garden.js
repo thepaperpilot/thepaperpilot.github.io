@@ -177,19 +177,19 @@ function moveImportStatementUp(filePath, times = 1) {
         if (title in tagged) {
             data = data.replaceAll(
                 /---\n\n/gm,
-                `---\n\n> Tags: ${tagged[title].map(tag => `[${tag}](${pageLinks[tag]})`).join(", ")}\n\n`);
+                `---\n\n<details><summary>Tags:</summary>${tagged[title].map(tag => `<a href="${pageLinks[tag]}">${tag}</a>`).join("")}</details>\n\n`);
         }
         if (title in taggedBy) {
             data = data.replaceAll(
                 /---\n\n/gm,
-                `---\n\n> Tagged by: ${taggedBy[title].map(tag => `[${tag}](${pageLinks[tag]})`).join(", ")}\n\n`);
+                `---\n\n<details><summary>Tagged by:</summary>${taggedBy[title].map(tag => `<a href="${pageLinks[tag]}">${tag}</a>`).join("")}</details>\n\n`);
         }
         // TODO show context on references? Perhaps in a `::: info` block?
         const pageTitle = data.match(/title: "(.+)"/)[1];
         if (pageLinks[pageTitle] in referencedBy) {
             data = data.replaceAll(
                 /---\n\n/gm,
-                `---\n\n> Referenced by: ${referencedBy[pageLinks[pageTitle]].map(tag => `[${tag}](${pageLinks[tag]})`).join(", ")}\n\n`);
+                `---\n\n<details><summary>Referenced by:</summary>${referencedBy[pageLinks[pageTitle]].map(tag => `<a href="${pageLinks[tag]}">${tag}</a>`).join("")}</details>\n\n`);
         }
         // Fix links to /now
         data = data.replace('NOW', '/now')
@@ -206,7 +206,7 @@ import { data } from '${path.relative(path.resolve("site", relPath), path.resolv
 import { useData } from 'vitepress';
 const pageData = useData();
 </script>
-<h1 class="p-name">${pageTitle}</h1>
+<h1 class="p-name">${pageTitle.replace("NOW", "/now")}</h1>
 <p>${wc} words, ~${Math.round(wc / 183)} minute read. <span v-html="data[\`site/\${pageData.page.value.relativePath}\`]" /></p>
 <hr/>
 \n`);

@@ -15,7 +15,7 @@ const pageData = useData();
 <p>39 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Tags: [My Projects](/garden/my-projects/index.md)
+<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
 
 A 3D VR re-envisioning of a Slay the Spire-style game by Anthony Lawn and Grant Barbee for their VR class in college's final project.
 

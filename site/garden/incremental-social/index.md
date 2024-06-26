@@ -14,9 +14,9 @@ const pageData = useData();
 <p>20 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Federated Identity](/garden/federated-identity/index.md), [My Personal Website](/garden/my-personal-website/index.md), [/now](/now/index), [Webrings](/garden/webrings/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/federated-identity/index.md">Federated Identity</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/now/index">/now</a><a href="/garden/webrings/index.md">Webrings</a></details>
 
-> Tags: [My Projects](/garden/my-projects/index.md)
+<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
 
 [Incremental Social](https://incremental.social/) is a [Fediverse](/garden/fediverse/index.md) website hosted by me!
 

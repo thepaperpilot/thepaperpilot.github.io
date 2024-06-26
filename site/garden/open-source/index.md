@@ -14,7 +14,7 @@ const pageData = useData();
 <p>25 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Advent Incremental](/garden/advent-incremental/index.md), [Cinny](/garden/cinny/index.md), [Commune](/garden/commune/index.md), [Dice Armor](/garden/dice-armor/index.md), [Forgejo](/garden/forgejo/index.md), [Game Dev Tree](/garden/game-dev-tree/index.md), [Logseq](/garden/logseq/index.md), [Mbin](/garden/mbin/index.md), [Planar Pioneers](/garden/planar-pioneers/index.md), [Profectus](/garden/profectus/index.md), [Synapse](/garden/synapse/index.md), [Vitepress](/garden/vitepress/index.md), [Weird](/garden/weird/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/advent-incremental/index.md">Advent Incremental</a><a href="/garden/cinny/index.md">Cinny</a><a href="/garden/commune/index.md">Commune</a><a href="/garden/dice-armor/index.md">Dice Armor</a><a href="/garden/forgejo/index.md">Forgejo</a><a href="/garden/game-dev-tree/index.md">Game Dev Tree</a><a href="/garden/logseq/index.md">Logseq</a><a href="/garden/mbin/index.md">Mbin</a><a href="/garden/planar-pioneers/index.md">Planar Pioneers</a><a href="/garden/profectus/index.md">Profectus</a><a href="/garden/synapse/index.md">Synapse</a><a href="/garden/vitepress/index.md">Vitepress</a><a href="/garden/weird/index.md">Weird</a></details>
 
 Projects with the source code publicly accessible
 

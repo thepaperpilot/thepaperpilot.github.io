@@ -14,7 +14,7 @@ const pageData = useData();
 <p>139 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [The Small Web](/garden/the-small-web/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/the-small-web/index.md">The Small Web</a></details>
 
 A collection of [Personal Websites](/garden/the-small-web/index.md) that link to each other
 - These websites are all endorsing each other

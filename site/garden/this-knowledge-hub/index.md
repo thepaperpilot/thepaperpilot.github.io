@@ -14,7 +14,7 @@ const pageData = useData();
 <p>135 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Digital Gardens](/garden/digital-gardens/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/digital-gardens/index.md">Digital Gardens</a></details>
 
 This is my knowledge hub!
 - It's a [Digital Garden](/garden/digital-gardens/index.md) collecting my thoughts in varying levels of completeness on basically anything I have interest in

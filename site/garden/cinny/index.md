@@ -14,6 +14,6 @@ const pageData = useData();
 <p>3 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Incremental Social](/garden/incremental-social/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/incremental-social/index.md">Incremental Social</a></details>
 
 [Cinny](https://cinny.in) is an [Open Source](/garden/open-source/index.md) web client for the [Matrix](/garden/matrix/index.md) messaging protocol

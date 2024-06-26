@@ -14,7 +14,7 @@ const pageData = useData();
 <p>98 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Video Game Monetization](/garden/video-game-monetization/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/video-game-monetization/index.md">Video Game Monetization</a></details>
 
 Pre-order bonuses are benefits given to players who buy a game before it comes out
 

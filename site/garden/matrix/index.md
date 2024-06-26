@@ -14,6 +14,6 @@ const pageData = useData();
 <p>2 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Cinny](/garden/cinny/index.md), [Commune](/garden/commune/index.md), [Synapse](/garden/synapse/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/cinny/index.md">Cinny</a><a href="/garden/commune/index.md">Commune</a><a href="/garden/synapse/index.md">Synapse</a></details>
 
 [Matrix](https://matrix.org) is a protocol for [Decentralized](/garden/decentralized/index.md) messaging

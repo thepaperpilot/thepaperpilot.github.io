@@ -14,7 +14,7 @@ const pageData = useData();
 <p>250 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Life is Strange](/garden/life-is-strange/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/life-is-strange/index.md">Life is Strange</a></details>
 
 ## AAA games
 

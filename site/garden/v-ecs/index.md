@@ -15,7 +15,7 @@ const pageData = useData();
 <p>209 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Tags: [My Projects](/garden/my-projects/index.md)
+<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
 
 <div class="img-container"><img src="/garden/screenshot_1717383987886_0.png" title="screenshot.png"/></div>
 

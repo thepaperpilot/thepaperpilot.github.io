@@ -15,7 +15,7 @@ const pageData = useData();
 <p>98 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Commune](/garden/commune/index.md), [Fediverse](/garden/fediverse/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/fediverse/index.md">Fediverse</a></details>
 
 Traditional social media
 - Not [Decentralized](/garden/decentralized/index.md)

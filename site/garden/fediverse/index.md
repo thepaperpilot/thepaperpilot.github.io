@@ -16,9 +16,9 @@ const pageData = useData();
 <p>29 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [ActivityPub](/garden/activitypub/index.md), [ATProto](/garden/atproto/index.md), [Decentralized](/garden/decentralized/index.md), [Fedi v2](/garden/fedi-v2/index.md), [Incremental Social](/garden/incremental-social/index.md), [Mbin](/garden/mbin/index.md), [Nostr](/garden/nostr/index.md), [Social Media](/garden/social-media/index.md), [The Small Web](/garden/the-small-web/index.md), [Weird](/garden/weird/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/activitypub/index.md">ActivityPub</a><a href="/garden/atproto/index.md">ATProto</a><a href="/garden/decentralized/index.md">Decentralized</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/mbin/index.md">Mbin</a><a href="/garden/nostr/index.md">Nostr</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/the-small-web/index.md">The Small Web</a><a href="/garden/weird/index.md">Weird</a></details>
 
-> Tags: [Decentralized](/garden/decentralized/index.md)
+<details><summary>Tags:</summary><a href="/garden/decentralized/index.md">Decentralized</a></details>
 
 A collection of [Social Media](/garden/social-media/index.md) websites that can all talk to each other by virtue of a shared protocol
 

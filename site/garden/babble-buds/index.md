@@ -15,7 +15,7 @@ const pageData = useData();
 <p>113 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Tags: [My Projects](/garden/my-projects/index.md)
+<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
 
 [Babble Buds](http://babblebuds.xyz) is a tool for creating puppets and interacting with puppets controlled by others on a shared stage
 

@@ -10,11 +10,11 @@ import { data } from '../../../git.data.ts';
 import { useData } from 'vitepress';
 const pageData = useData();
 </script>
-<h1 class="p-name">Guide to Incrementals/Appeal to Developers</h1>
+<h1 class="p-name">Guide to Incrementals___Appeal to Developers</h1>
 <p>636 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Digital Gardens](/garden/digital-gardens/index.md), [Incremental Social](/garden/incremental-social/index.md), [Kronos](/garden/kronos/index.md), [My Personal Website](/garden/my-personal-website/index.md), [Social Media](/garden/social-media/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/digital-gardens/index.md">Digital Gardens</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/social-media/index.md">Social Media</a></details>
 
 There are a lot of developers in the incremental games community - the genre seems to draw them in, and convert a lot of players _into_ developers. Let's explore the reasons why this genre appeals to developers.
 

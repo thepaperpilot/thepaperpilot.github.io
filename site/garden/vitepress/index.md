@@ -14,6 +14,6 @@ const pageData = useData();
 <p>4 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [My Personal Website](/garden/my-personal-website/index.md), [This Knowledge Hub](/garden/this-knowledge-hub/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
 
 [Vitepress](https://vitepress.dev) is an [Open Source](/garden/open-source/index.md) static site generator

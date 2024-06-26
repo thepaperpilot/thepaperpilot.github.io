@@ -687,3 +687,18 @@ footer img {
 .selected .excerpt-gradient-bottom {
   opacity: 1;
 }
+
+.vp-doc details {
+    border-bottom: solid 1px var(--vp-c-border) !important;
+    margin-bottom: -1px !important;
+}
+
+.vp-doc details a {
+  margin-right: 8px !important;
+}
+
+.vp-doc summary {
+    margin: 29px 0 0 0 !important;
+    border-top: solid 1px var(--vp-c-border) !important;
+    cursor: pointer !important;
+}

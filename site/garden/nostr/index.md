@@ -15,8 +15,8 @@ const pageData = useData();
 <p>8 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Fediverse](/garden/fediverse/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/fediverse/index.md">Fediverse</a></details>
 
-> Tags: [Decentralized](/garden/decentralized/index.md)
+<details><summary>Tags:</summary><a href="/garden/decentralized/index.md">Decentralized</a></details>
 
 [Nostr](https://nostr.com) is a protocol for [Federated Social Media](/garden/fediverse/index.md)

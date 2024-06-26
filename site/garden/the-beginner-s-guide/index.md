@@ -15,9 +15,9 @@ const pageData = useData();
 <p>70 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Davey Wreden](/garden/davey-wreden/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/davey-wreden/index.md">Davey Wreden</a></details>
 
-> Tags: [Davey Wreden](/garden/davey-wreden/index.md)
+<details><summary>Tags:</summary><a href="/garden/davey-wreden/index.md">Davey Wreden</a></details>
 
 My favorite video game of all time, bar none. Created by [Davey Wreden](/garden/davey-wreden/index.md)
 

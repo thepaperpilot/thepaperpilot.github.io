@@ -10,11 +10,11 @@ import { data } from '../../../git.data.ts';
 import { useData } from 'vitepress';
 const pageData = useData();
 </script>
-<h1 class="p-name">Guide to Incrementals/What is Content?</h1>
+<h1 class="p-name">Guide to Incrementals___What is Content?</h1>
 <p>2092 words, ~11 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Digital Gardens](/garden/digital-gardens/index.md), [Incremental Social](/garden/incremental-social/index.md), [Kronos](/garden/kronos/index.md), [My Personal Website](/garden/my-personal-website/index.md), [Social Media](/garden/social-media/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/digital-gardens/index.md">Digital Gardens</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/social-media/index.md">Social Media</a></details>
 
 If you've been in the incremental games community for any amount of time, you'll quickly find the number one thing players want is _content_. They want as much of it as possible! The most popular incremental games have tons of content, so they just keep stretching on and on and on, introducing mechanic after mechanic, and players love it. In fact, players seem to value the _amount_ of content over the quality of any _specific_ content. However, there's a bit of a lack of understanding concerning _what_ content is, and I'd like to explore what counts as content, and how we measure it. As a baseline definition, I think "content" can just be described as the parts of the game that engage the player, but to truly understand it we need to contextualize what that means and how it affects the gameplay experience.
 

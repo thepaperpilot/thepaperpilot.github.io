@@ -14,7 +14,7 @@ const pageData = useData();
 <p>45 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Digital Gardens](/garden/digital-gardens/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/digital-gardens/index.md">Digital Gardens</a></details>
 
 The Cozy Web is an extension of the dark forest theory of the Internet
 

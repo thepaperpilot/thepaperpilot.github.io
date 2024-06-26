@@ -15,11 +15,11 @@ const pageData = useData();
 <p>73 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Advent Incremental](/garden/advent-incremental/index.md), [Planar Pioneers](/garden/planar-pioneers/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/advent-incremental/index.md">Advent Incremental</a><a href="/garden/planar-pioneers/index.md">Planar Pioneers</a></details>
 
-> Tagged by: [Advent Incremental](/garden/advent-incremental/index.md), [Kronos](/garden/kronos/index.md), [Planar Pioneers](/garden/planar-pioneers/index.md)
+<details><summary>Tagged by:</summary><a href="/garden/advent-incremental/index.md">Advent Incremental</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/planar-pioneers/index.md">Planar Pioneers</a></details>
 
-> Tags: [My Projects](/garden/my-projects/index.md)
+<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
 
 [Profectus](https://moddingtree.com) is an [Open Source](/garden/open-source/index.md) game engine I made, loosely based on The Modding Tree by Acamaeda
 

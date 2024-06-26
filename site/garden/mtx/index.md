@@ -15,6 +15,6 @@ const pageData = useData();
 <p>10 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Premium Currency](/garden/premium-currency/index.md), [Video Game Monetization](/garden/video-game-monetization/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/premium-currency/index.md">Premium Currency</a><a href="/garden/video-game-monetization/index.md">Video Game Monetization</a></details>
 
 Purchaseable items in video games that cost real life currencies

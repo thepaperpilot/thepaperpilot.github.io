@@ -16,9 +16,9 @@ const pageData = useData();
 <p>68 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Commune](/garden/commune/index.md), [Fedi v2](/garden/fedi-v2/index.md), [Weird](/garden/weird/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/weird/index.md">Weird</a></details>
 
-> Tags: [Decentralized](/garden/decentralized/index.md)
+<details><summary>Tags:</summary><a href="/garden/decentralized/index.md">Decentralized</a></details>
 
 Allow for validating one's identity without relying on a specific centralized server
 

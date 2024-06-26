@@ -15,9 +15,9 @@ const pageData = useData();
 <p>963 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Babble Buds](/garden/babble-buds/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/babble-buds/index.md">Babble Buds</a></details>
 
-> Tags: [My Projects](/garden/my-projects/index.md)
+<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
 
 Download it [here](https://drive.google.com/open?id=18rwqEIdMChdGtB-9LdI4wiqeM5C5ViOL)
 

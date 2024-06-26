@@ -15,7 +15,7 @@ const pageData = useData();
 <p>34 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Tags: [My Projects](/garden/my-projects/index.md)
+<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
 
 Play it [here](https://thepaperpilot.org/gamedevtree)!
 

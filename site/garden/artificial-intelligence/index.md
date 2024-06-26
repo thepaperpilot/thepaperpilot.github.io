@@ -14,7 +14,7 @@ const pageData = useData();
 <p>101 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Command Palettes](/garden/command-palettes/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/command-palettes/index.md">Command Palettes</a></details>
 
 Catch all term that refers to many different things
 

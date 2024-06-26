@@ -15,7 +15,7 @@ const pageData = useData();
 <p>72 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Tagged by: [Advent Incremental](/garden/advent-incremental/index.md), [Babble Buds](/garden/babble-buds/index.md), [Capture the Citadel](/garden/capture-the-citadel/index.md), [Dice Armor](/garden/dice-armor/index.md), [Game Dev Tree](/garden/game-dev-tree/index.md), [Incremental Social](/garden/incremental-social/index.md), [Kronos](/garden/kronos/index.md), [Opti-Speech](/garden/opti-speech/index.md), [Planar Pioneers](/garden/planar-pioneers/index.md), [Profectus](/garden/profectus/index.md), [V-ecs](/garden/v-ecs/index.md)
+<details><summary>Tagged by:</summary><a href="/garden/advent-incremental/index.md">Advent Incremental</a><a href="/garden/babble-buds/index.md">Babble Buds</a><a href="/garden/capture-the-citadel/index.md">Capture the Citadel</a><a href="/garden/dice-armor/index.md">Dice Armor</a><a href="/garden/game-dev-tree/index.md">Game Dev Tree</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/opti-speech/index.md">Opti-Speech</a><a href="/garden/planar-pioneers/index.md">Planar Pioneers</a><a href="/garden/profectus/index.md">Profectus</a><a href="/garden/v-ecs/index.md">V-ecs</a></details>
 
 I like making games and tools!
 

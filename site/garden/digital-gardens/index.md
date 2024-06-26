@@ -15,7 +15,7 @@ const pageData = useData();
 <p>67 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Chronological](/garden/chronological/index.md), [Commune](/garden/commune/index.md), [Garden-RSS](/garden/garden-rss/index.md), [The Cozy Web](/garden/the-cozy-web/index.md), [The Small Web](/garden/the-small-web/index.md), [This Knowledge Hub](/garden/this-knowledge-hub/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/chronological/index.md">Chronological</a><a href="/garden/commune/index.md">Commune</a><a href="/garden/garden-rss/index.md">Garden-RSS</a><a href="/garden/the-cozy-web/index.md">The Cozy Web</a><a href="/garden/the-small-web/index.md">The Small Web</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
 
 Digital Gardens are [Freeform](/garden/freeform/index.md) collections of information made by an individual or community
 - Alternatives to [Chronological](/garden/chronological/index.md) personal blogs

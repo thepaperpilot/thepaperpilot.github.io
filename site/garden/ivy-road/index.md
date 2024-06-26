@@ -15,8 +15,8 @@ const pageData = useData();
 <p>6 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [Davey Wreden](/garden/davey-wreden/index.md), [Wanderstop](/garden/wanderstop/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/davey-wreden/index.md">Davey Wreden</a><a href="/garden/wanderstop/index.md">Wanderstop</a></details>
 
-> Tags: [Davey Wreden](/garden/davey-wreden/index.md)
+<details><summary>Tags:</summary><a href="/garden/davey-wreden/index.md">Davey Wreden</a></details>
 
 [Ivy Road](https://www.ivyroad.fun/) is a indie game studio created by [Davey Wreden](/garden/davey-wreden/index.md), Karla Kimonja, and C418

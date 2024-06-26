@@ -15,9 +15,9 @@ const pageData = useData();
 <p>60 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Referenced by: [V-ecs](/garden/v-ecs/index.md)
+<details><summary>Referenced by:</summary><a href="/garden/v-ecs/index.md">V-ecs</a></details>
 
-> Tags: [My Projects](/garden/my-projects/index.md), [Profectus](/garden/profectus/index.md)
+<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a><a href="/garden/profectus/index.md">Profectus</a></details>
 
 My largest and most ambitious incremental game I've ever made
 - A magnum opus, of sorts ;P

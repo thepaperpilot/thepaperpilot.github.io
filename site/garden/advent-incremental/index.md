@@ -15,7 +15,7 @@ const pageData = useData();
 <p>104 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-> Tags: [My Projects](/garden/my-projects/index.md), [Profectus](/garden/profectus/index.md)
+<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a><a href="/garden/profectus/index.md">Profectus</a></details>
 
 Play it [here](https://thepaperpilot.org/advent)!
 
