@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">The Small Web</h1>
-<p>771 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>778 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/federated-identity/index.md">Federated Identity</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/now/index">/now</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a><a href="/garden/webrings/index.md">Webrings</a><a href="/garden/weird/index.md">Weird</a></details>
@@ -67,6 +67,7 @@ The [Tildeverse](https://tildeverse.org/) contains a large set of personal websi
 
 <span id="665b6ac0-d3ca-41d8-9534-929ac2907c2e">Free hosting for static websites:</span>
 - [Neocities](https://neocities.org). Also check out their tutorials to [Learn How to Make Websites!](https://neocities.org/tutorials)
+- [mmm.page — Your Corner of the Internet](https://mmm.page/)
 - [Codeberg pages](https://codeberg.page) (and any other [pages-server](https://codeberg.org/Codeberg/pages-server) instance - like on [Incremental Social](https://incremental.social/pages)!)
 - [Github pages](https://pages.github.com)
 - [Weird](/garden/weird/index.md) (in development)
