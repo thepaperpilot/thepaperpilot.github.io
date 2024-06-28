@@ -1,6 +1,3 @@
-import { SearchPlugin } from "vitepress-plugin-search";
-import { defineConfig } from "vitepress";
-import wordCounting from "word-counting";
 import vueJsx from '@vitejs/plugin-vue-jsx'
 
 const fs = require("fs");
@@ -49,6 +46,20 @@ export default {
     ['link', { rel: 'me', href: 'https://twitter.com/ThePaperPilot' }],
     ['meta', { name: 'og:description', content: 'The Paper Pilot\'s Digital Garden' }]
   ],
+  async transformHead(context) {
+    context.head.push(["meta", { name: "og:title", content: context.pageData.title }]);
+    context.head.push(["meta", { name: "og:description", content: context.pageData.description }]);
+    context.head.push(["meta", { name: "og:image", content: "https://www.thepaperpilot.org/paperpilot.png" }]);
+    context.head.push(["meta", { name: "og:site_name", content: context.siteData.description }]);
+    if (context.pageData.relativePath.startsWith("garden")) {
+      context.head.push(["meta", { name: "og:type", content: "article" }]);
+      context.head.push(["meta", { name: "article:author", content: "https://www.thepaperpilot.org/about" }]);
+      const published = context.content.match(/<time class='dt-published' datetime='[^']+'>([0-9-]+)<\/time>/)[1];
+      const updated = context.content.match(/<time class='dt-updated' datetime='[^']+'>([0-9-]+)<\/time>/)[1];
+      context.head.push(["meta", { name: "article:published_time", content: published }]);
+      context.head.push(["meta", { name: "article:modified_time", content: updated }]);
+    }
+  },
   lastUpdated: false,
   cleanUrls: 'with-subfolders',
   themeConfig: {
