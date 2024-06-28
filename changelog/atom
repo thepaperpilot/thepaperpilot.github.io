@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thepaperpilot.org/changelog/</id>
     <title>The Paper Pilot's Digital Garden Changelog</title>
-    <updated>2024-06-28T04:15:28.749Z</updated>
+    <updated>2024-06-28T13:26:15.305Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>The Paper Pilot</name>
@@ -359,24 +359,6 @@
 </table>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[ 1 file changed, 11 insertions(+), 3 deletions(-)]]></title>
-        <id>https://code.incremental.social/thepaperpilot/pages/commit/305386d2f186225a929ee2dfc275569a77a29945</id>
-        <link href="https://code.incremental.social/thepaperpilot/pages/commit/305386d2f186225a929ee2dfc275569a77a29945"/>
-        <updated>2024-06-09T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ 1 file changed, 11 insertions(+), 3 deletions(-)]]></summary>
-        <content type="html"><![CDATA[<table>
-<thead>
-<tr>
-<th style="align: center">Page</th>
-<th style="align: center">Changes</th>
-</tr>
-</thead>
-<tbody>
-<tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">14 <span style="color:#A3BE8C">+++++++++++</span><span style="color:#BF616A">---</span></td></tr>
-</tbody>
-</table>]]></content>
-    </entry>
-    <entry>
         <title type="html"><![CDATA[ 3 files changed, 48 insertions(+), 38 deletions(-)]]></title>
         <id>https://code.incremental.social/thepaperpilot/pages/commit/f55b76ee790425e33432c56e398c1d76f8e2e1a6</id>
         <link href="https://code.incremental.social/thepaperpilot/pages/commit/f55b76ee790425e33432c56e398c1d76f8e2e1a6"/>
@@ -397,11 +379,11 @@
 </table>]]></content>
     </entry>
     <entry>
-        <title type="html"><![CDATA[ 2 files changed, 9 insertions(+), 4 deletions(-)]]></title>
-        <id>https://code.incremental.social/thepaperpilot/pages/commit/d4d1e112feca180efdcc10b4465211fbbec4e6a5</id>
-        <link href="https://code.incremental.social/thepaperpilot/pages/commit/d4d1e112feca180efdcc10b4465211fbbec4e6a5"/>
-        <updated>2024-06-27T00:00:00.000Z</updated>
-        <summary type="html"><![CDATA[ 2 files changed, 9 insertions(+), 4 deletions(-)]]></summary>
+        <title type="html"><![CDATA[ 1 file changed, 11 insertions(+), 3 deletions(-)]]></title>
+        <id>https://code.incremental.social/thepaperpilot/pages/commit/305386d2f186225a929ee2dfc275569a77a29945</id>
+        <link href="https://code.incremental.social/thepaperpilot/pages/commit/305386d2f186225a929ee2dfc275569a77a29945"/>
+        <updated>2024-06-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ 1 file changed, 11 insertions(+), 3 deletions(-)]]></summary>
         <content type="html"><![CDATA[<table>
 <thead>
 <tr>
@@ -410,8 +392,7 @@
 </tr>
 </thead>
 <tbody>
-<tr><td><a href="/garden/fedi-v2">fedi-v2</a></td><td style="font-family: monospace; white-space: nowrap;">10 <span style="color:#A3BE8C">+++++++</span><span style="color:#BF616A">---</span></td></tr>
-<tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">3 <span style="color:#A3BE8C">++</span><span style="color:#BF616A">-</span></td></tr>
+<tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">14 <span style="color:#A3BE8C">+++++++++++</span><span style="color:#BF616A">---</span></td></tr>
 </tbody>
 </table>]]></content>
     </entry>
@@ -487,6 +468,25 @@
 <tr><td><a href="/garden/wanderstop">wanderstop</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
 <tr><td><a href="/garden/webrings">webrings</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
 <tr><td><a href="/garden/weird">weird</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
+</tbody>
+</table>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ 2 files changed, 9 insertions(+), 4 deletions(-)]]></title>
+        <id>https://code.incremental.social/thepaperpilot/pages/commit/d4d1e112feca180efdcc10b4465211fbbec4e6a5</id>
+        <link href="https://code.incremental.social/thepaperpilot/pages/commit/d4d1e112feca180efdcc10b4465211fbbec4e6a5"/>
+        <updated>2024-06-27T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[ 2 files changed, 9 insertions(+), 4 deletions(-)]]></summary>
+        <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th style="align: center">Page</th>
+<th style="align: center">Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><a href="/garden/fedi-v2">fedi-v2</a></td><td style="font-family: monospace; white-space: nowrap;">10 <span style="color:#A3BE8C">+++++++</span><span style="color:#BF616A">---</span></td></tr>
+<tr><td><a href="/garden/the-small-web">the-small-web</a></td><td style="font-family: monospace; white-space: nowrap;">3 <span style="color:#A3BE8C">++</span><span style="color:#BF616A">-</span></td></tr>
 </tbody>
 </table>]]></content>
     </entry>
