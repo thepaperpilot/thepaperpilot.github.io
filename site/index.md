@@ -8,7 +8,17 @@ next: false
 I'm Anthony, or The Paper Pilot, and welcome to my [digital garden](/garden/digital-gardens/index.md)!
 
 <div class="hero-wrapper">
-  <div class="hole"></div>
+  <TresCanvas :stencil="true" >
+    <TresOrthographicCamera :position="[0, 0, 10]" />
+    <TresAmbientLight :intensity="1" />
+    <TresMesh>
+      <TresTorusGeometry :args="[1, 0.5, 16, 32]" />
+      <TresMeshBasicMaterial color="orange" />
+    </TresMesh>
+    <Suspense>
+      <Hole />
+    </Suspense>
+  </TresCanvas>
   <img class="hero" src="/paperpilot.png" :style="`--x-offset: ${xOffset * 20}%`" />
 </div>
 
@@ -32,6 +42,8 @@ This is a public website collecting all my (public) thoughts and projects all in
 
 <script setup>
   import { ref, onMounted, onUnmounted } from "vue";
+  import { TresCanvas } from '@tresjs/core'
+  import Hole from "./.vitepress/theme/Hole.vue";
 
   const xOffset = ref(0);
   function mouseMoveHandler(event) {
@@ -67,18 +79,6 @@ This is a public website collecting all my (public) thoughts and projects all in
     .hero-wrapper {
       height: 9lh;
     }
-  }
-
-  .hole {
-    height: 80%;
-    aspect-ratio: 1;
-    border: solid 10px lightgrey;
-    border-radius: 50%;
-    background: #3b4252;
-    position: absolute;
-    left: 33%;
-    transform: translateX(-50%);
-    filter: url(#displacementFilter);
   }
 
   .hero {

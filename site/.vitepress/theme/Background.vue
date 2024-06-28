@@ -1,20 +1,24 @@
 <template>
-    <TresGroup ref="groupRef" v-if="renderer">
-      <TresMesh v-for="i in rows * cols" :position="[((i % cols) - cols / 2) * 304, (Math.floor((i - 1) / cols) - rows / 2) * 304, 0]" >
+    <TresGroup ref="groupRef" v-if="renderer" :renderOrder="1">
+      <TresMesh v-for="i in rows * cols" :position="[((i % cols) - cols / 2) * 304, (Math.floor((i - 1) / cols) - rows / 2) * 304, 1]">
         <TresShapeGeometry :args="[shapes]" />
-        <TresShaderMaterial :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" :blending="AdditiveBlending" />
+        <TresShaderMaterial :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" :blending="AdditiveBlending" :stencilWrite="mask != null" :stencilRef="mask ?? 0" :stencilFunc="EqualStencilFunc" :stencilFail="KeepStencilOp" :stencilZFail="KeepStencilOp" :stencilZPass="KeepStencilOp" />
       </TresMesh>
     </TresGroup>
 </template>
 
 <script setup lang="ts">
 import { useLoader, useRenderLoop, useTresContext } from '@tresjs/core';
-import { AdditiveBlending, Group, Vector2 } from "three";
+import { AdditiveBlending, EqualStencilFunc, Group, KeepStencilOp, Vector2, Vector3 } from "three";
 import { SVGLoader } from "three/examples/jsm/loaders/SVGLoader.js";
 import { computed, onMounted, onUnmounted, ref, shallowRef } from "vue";
 import noise from "./noise.glsl?raw";
 
 const { renderer, sizes } = useTresContext();
+
+const props = defineProps<{
+  mask?: number;
+}>();
 
 // Load SVG
 const { paths } = await useLoader(SVGLoader, '/circuit-board.svg');
@@ -26,7 +30,8 @@ const cols = computed(() => Math.ceil(sizes.width.value / 304));
 // Handle mouse position
 const mousePos = ref(new Vector2(Infinity, Infinity));
 function updateMousePos(event: MouseEvent) {
-  mousePos.value = new Vector2(event.screenX, window.screen.availHeight - event.screenY);
+  const {x, y, height} = renderer.value.domElement.getBoundingClientRect();
+  mousePos.value = new Vector2(event.screenX - x, height + y + (window.outerHeight - window.innerHeight) - event.screenY);
   if (groupRef.value) {
     groupRef.value.children.forEach(child => {
       child.material.uniforms.uMouse.value = mousePos.value;
@@ -54,10 +59,20 @@ onUnmounted(() => {
   window.removeEventListener("mouseout", handleMouseLeave);
 });
 
+const { onLoop } = useRenderLoop();
+onLoop(({ elapsed }) => {
+  if (groupRef.value) {
+    groupRef.value.children.forEach(child => {
+      child.material.uniforms.uTime.value = elapsed;
+    });
+  }
+});
+
 // Shaders
 const groupRef = shallowRef<Group | null>(null);
 
 const uniforms = {
+  uColor: computed(() => props.mask == null ? new Vector3() : new Vector3(0.23, 0.26, 0.32)),
   uTime: { value: 0 },
   uMouse: { value: new Vector2(Infinity, Infinity) }
 }
@@ -72,26 +87,19 @@ void main() {
   vUv = uv;
 }
 `;
-const fragmentShader = noise + `
+const fragmentShader = `
+${noise}
 precision mediump float;
 uniform float uTime;
 uniform vec2 uMouse;
+uniform vec3 uColor;
 varying vec2 vUv;
 
 void main() {
   float dist = distance(gl_FragCoord.xy, uMouse);
   float alpha = max(0., 1. - dist / 304.);
   alpha += max(0., snoise(vec3(gl_FragCoord.xy / 304., uTime / 4.)));
-  gl_FragColor = vec4(0, 0, 0, alpha);
+  gl_FragColor = vec4(mix(uColor, vec3(0.), alpha), uColor == vec3(0.) ? alpha : 1.);
 }
 `;
-
-const { onLoop } = useRenderLoop();
-onLoop(({ elapsed }) => {
-  if (groupRef.value) {
-    groupRef.value.children.forEach(child => {
-      child.material.uniforms.uTime.value = elapsed;
-    });
-  }
-});
 </script>

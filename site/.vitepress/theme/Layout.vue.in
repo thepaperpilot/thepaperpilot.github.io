@@ -5,7 +5,7 @@
       <ClientOnly>
         <div class="background">
           <TresCanvas>
-            <Camera />
+            <TresOrthographicCamera :position="[0, 0, 10]" />
             <TresAmbientLight :intensity="1" />
             <Suspense>
               <Background />
