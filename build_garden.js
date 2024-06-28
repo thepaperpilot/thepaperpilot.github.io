@@ -185,7 +185,7 @@ function moveImportStatementUp(filePath, times = 1) {
                 `---\n\n<details><summary>Tagged by:</summary>${taggedBy[title].map(tag => `<a href="${pageLinks[tag]}">${tag}</a>`).join("")}</details>\n\n`);
         }
         // TODO show context on references? Perhaps in a `::: info` block?
-        const pageTitle = data.match(/title: "(.+)"/)[1];
+        const pageTitle = data.match(/title: "(.+)"/)[1].replaceAll('___', '/');
         if (pageLinks[pageTitle] in referencedBy) {
             data = data.replaceAll(
                 /---\n\n/gm,
@@ -195,7 +195,7 @@ function moveImportStatementUp(filePath, times = 1) {
         data = data.replace('NOW', '/now')
         // Add header to the top
         data = data.replaceAll('___', '/');
-        const relPath = path.relative("./garden-output/logseq-pages", path.resolve(...filePath.split("___"))).replaceAll(/%3F/gi, '').replace('what-is-content-', 'what-is-content').replace('.md', '/index.md');
+        const relPath = path.relative("./garden-output/logseq-pages", path.resolve(...filePath.split("___"))).replaceAll(/%3F/gi, '').replace('what-is-content-', 'what-is-content').replace('.md', '/index.html');
         data = data.replaceAll(
             /---\n\n/gm,
 `prev: false
