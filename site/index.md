@@ -11,10 +11,6 @@ I'm Anthony, or The Paper Pilot, and welcome to my [digital garden](/garden/digi
   <TresCanvas :stencil="true" >
     <TresOrthographicCamera :position="[0, 0, 10]" />
     <TresAmbientLight :intensity="1" />
-    <TresMesh>
-      <TresTorusGeometry :args="[1, 0.5, 16, 32]" />
-      <TresMeshBasicMaterial color="orange" />
-    </TresMesh>
     <Suspense>
       <Hole />
     </Suspense>

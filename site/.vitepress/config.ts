@@ -44,12 +44,11 @@ export default {
     ['link', { rel: 'me', href: 'https://www.reddit.com/user/ThePaperPilot/' }],
     ['link', { rel: 'me', href: 'https://github.com/thepaperpilot' }],
     ['link', { rel: 'me', href: 'https://twitter.com/ThePaperPilot' }],
-    ['meta', { name: 'og:description', content: 'The Paper Pilot\'s Digital Garden' }]
   ],
   async transformHead(context) {
     context.head.push(["meta", { name: "og:title", content: context.pageData.title }]);
     context.head.push(["meta", { name: "og:description", content: context.pageData.description }]);
-    context.head.push(["meta", { name: "og:image", content: "https://www.thepaperpilot.org/paperpilot.png" }]);
+    context.head.push(["meta", { name: "og:image", content: "https://www.thepaperpilot.org/paperpilot_thumb.png" }]);
     context.head.push(["meta", { name: "og:site_name", content: context.siteData.description }]);
     if (context.pageData.relativePath.startsWith("garden")) {
       context.head.push(["meta", { name: "og:type", content: "article" }]);
