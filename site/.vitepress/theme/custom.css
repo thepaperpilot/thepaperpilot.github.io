@@ -125,6 +125,34 @@ ul > li > ul::before {
   padding: 0 32px !important;
 }
 
+.VPDoc .container {
+  position: relative;
+}
+
+.VPDoc .container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 30px;
+  background:
+    radial-gradient(5px 5px at 50% 50%, var(--vp-c-bg) 0%, var(--vp-c-bg) 100%, #0000 100%);
+  background-size: 100% 30px;
+}
+
+.VPDoc .container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -15px;
+  width: 30px;
+  z-index: 1;
+  background: linear-gradient(to bottom, transparent 11px, #333 11px, #333 13px, transparent 13px,transparent 17px, #333 17px, #333 19px, transparent 19px);
+  background-size: 100% 30px;
+}
+
 .vp-doc a {
   color: unset;
   text-decoration: unset;
