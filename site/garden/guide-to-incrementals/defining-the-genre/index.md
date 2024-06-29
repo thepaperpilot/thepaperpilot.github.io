@@ -10,7 +10,7 @@ import { data } from '../../../git.data.ts';
 import { useData } from 'vitepress';
 const pageData = useData();
 </script>
-<h1 class="p-name">Guide to Incrementals___Defining the Genre</h1>
+<h1 class="p-name">Guide to Incrementals/Defining the Genre</h1>
 <p>3429 words, ~19 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
