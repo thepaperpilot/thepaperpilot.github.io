@@ -52,6 +52,7 @@ export default {
     ['link', { rel: 'me', href: 'https://www.reddit.com/user/ThePaperPilot/' }],
     ['link', { rel: 'me', href: 'https://github.com/thepaperpilot' }],
     ['link', { rel: 'me', href: 'https://twitter.com/ThePaperPilot' }],
+    ['script', { 'data-goatcounter': 'https://thepaperpilot.goatcounter.com/count', async: true, src: '//gc.zgo.at/count.js' }],
   ],
   async transformHead(context) {
     context.head.push(["meta", { name: "og:title", content: context.pageData.title }]);
@@ -99,7 +100,7 @@ export default {
       },
       { text: "About Me", link: "/about" },
       { text: "/now", link: "/now" },
-      { text: "Site Changelog", link: "/changelog" }
+      { text: "Garden Changelog", link: "/changelog" }
     ]
   },
   contentProps: {

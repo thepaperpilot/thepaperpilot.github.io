@@ -544,7 +544,7 @@ article {
 }
 
 .vp-doc h2 + .e-content {
-  margin-top: 0 !important;
+  margin-top: 30px !important;
 }
 
 .VPDoc h1, .VPDoc h2, .VPDoc h3, .VPDoc h4, .VPDoc h5, .VPDoc h6 {
