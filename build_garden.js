@@ -113,8 +113,8 @@ function moveImportStatementUp(filePath, times = 1) {
 
         if (!indices.includes(slug)) {
             for (const match of data.matchAll(/\[\[([^\[\]]*)\]\]/g)) {
-                const pageSlug = pageLinks[match[1]];
-                referencedBy[pageSlug] = [...(referencedBy[pageSlug] ?? []), name];
+                const pageSlug = pageLinks[match[1].replaceAll(/%3F/gi, '?')];
+                referencedBy[pageSlug] = [...(referencedBy[pageSlug] ?? []), name.replaceAll(/%3F/gi, '?')];
             }
         }
 
@@ -286,6 +286,7 @@ const pageData = useData();
     const { stdout } = await exec('git log --after="2024-06-03T0:0:0+0000" --pretty=%H origin/master -- site/garden');
     const entries = await Promise.all(stdout.split("\n").filter(p => p).map(hash => new Promise(async (resolve) => {
         const { stdout: time } = await exec(`git show --quiet --format=%as ${hash}`);
+        const { stdout: fullTime } = await exec(`git show --quiet --format=%ad ${hash}`);
         let { stdout: changes } = await exec(`git show --format="" --stat --relative ${hash} .`, { cwd: 'site/garden' });
 
         changes = changes.replaceAll(/\/index.md/g, '');
@@ -321,14 +322,14 @@ ${changes}
             link: commitLink,
             description: summary,
             content,
-            date: new Date(time)
+            date: new Date(fullTime)
         });
 
         resolve(
 `<article class="h-entry">
 <h2 class="p-name">${summary}</h2>
 <div class="e-content">
-<a class="u-url" href="${commitLink}">Pushed on <time class="dt-published">${time}</time></a>
+<a class="u-url" href="${commitLink}">Pushed on <time class="dt-published" datetime="${fullTime}">${time}</time></a>
 <table>
 <thead>
 <tr>

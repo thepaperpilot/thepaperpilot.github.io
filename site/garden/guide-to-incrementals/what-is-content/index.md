@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Guide to Incrementals/What is Content?</h1>
-<p>2092 words, ~11 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>2272 words, ~12 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/digital-gardens/index.md">Digital Gardens</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/social-media/index.md">Social Media</a></details>
@@ -53,6 +53,15 @@ Admittedly, the above paragraph ignores the obvious answer that separates increm
 So, what's the problem? Even if this trend is justified and easy to implement, there are some other effects it has on the game design. First off, and this is probably a neutral point, incremental games with this cycle of replacing old mechanics with new ones trend towards more and more abstract and further away from any narrative throughline as they add layers. There are only so many justifications for resetting progress, so if a game wants to have several of these layers they're inevitably going to become generic or increasingly loosely associated with the original content. It's most unfortunate, in my opinion when an interesting or innovative core mechanic gets fully automated once a generic "prestige" layer is unlocked.
 
 A recent example is [Really Grass Cutting Incremental](https://mrredshark77.github.io/Really-Grass-Cutting-Incremental/), an incremental game about cutting grass (although I'm really criticizing the Roblox game it's based on). Except, it doesn't _continue_ to be about cutting grass. After you buy enough upgrades to increase your grass cutting and level up sufficiently you "prestige", an abstract term that in this case means you reset all your progress to get some currency to buy upgrades that do the same things as the original upgrades, but these won't reset on future prestiges.  You'll eventually be able to "crystallize", which means you reset all your progress to get some currency to buy upgrades that do the same things as the original upgrades (and a couple of new ones) and won't reset on future crystallizes. Fine. You'll progress a bit, complete some challenges, and finally get to... grasshop? Grasshopping is this mechanic where you reset all your progress to get some resource that _isn't_ for buying upgrades - this time you just unlock different modifiers on everything based on their amount. You may have gotten the point by now, but there are also "steelie" resets which give you steel for some reason, before unlocking a factory with various machines - none of which are directly tied to cutting grass, and start gathering things like oil and reset for rocket parts and reset to go to space and so on and so on. Throughout all of this there is absolutely no narrative justification or throughline for the direction the game is going, or why cutting grass is still relevant when we're collecting things like rocket parts. I may be going a little hard on GCI, but it is far from alone.
+
+## Ending the Game
+
+Incremental games do not often have a planned out narrative or ending,, such that each content update is approached as its own unit of narrative and gameplay. This prevents content updates from wrapping up the game nicely - it always has to leave something open for another content layer; be it another mechanic, reset layer, etc. This cycle will continue until the updates just stop, at which point the game will just have an unsatisfying conclusion that will never get the next thing it was supposed to be leading into. This reminds me of a Leonardo Da Vinci quote about how [Art is Never Complete](/garden/art-is-never-complete/index.md):
+
+> Art is never finished, only abandoned.
+> \- Leonardo Da Vinci
+
+For what its worth, there are exceptions here (including several of [My Projects](/garden/my-projects/index.md)). I believe this practice is actually fairly reasonable, considering how many incremental game developers are learning game design and programming - keeping the scope small and expanding if it still interests you is a great way to keep learning without letting things like perfectionism or sunk cost fallacies get in the way.
 
 ## Tips for Developers
 

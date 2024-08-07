@@ -4,8 +4,8 @@
   "description": "The Paper Pilot Portfolio",
   "scripts": {
     "serve": "vitepress serve site",
-    "dev": "vitepress dev site",
-    "build": "rm -rf ./garden-output && yarn run logseq-export && node build_garden.js && vitepress build site",
+    "dev": "set NODE_OPTIONS=\"--max-old-space-size=32768\" && vitepress dev site",
+    "build": "set NODE_OPTIONS=\"--max-old-space-size=32768\" && rm -rf ./garden-output && yarn run logseq-export && node build_garden.js && vitepress build site",
     "logseq-export": "run-script-os",
     "logseq-export:win32": "logseq-export/logseq-export.exe --logseqFolder ./Garden --outputFolder ./garden-output",
     "logseq-export:linux": "chmod +x logseq-export/logseq-export && logseq-export/logseq-export --logseqFolder ./Garden --outputFolder ./garden-output"

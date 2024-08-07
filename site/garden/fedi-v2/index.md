@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Fedi v2</h1>
-<p>1835 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>2566 words, ~14 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/weird/index.md">Weird</a></details>
@@ -30,7 +30,7 @@ The pick a server problem is such a problem because not only do you have to pick
 
 [ATProto](https://atproto.com/) by bluesky offers a version of federation built for a handful of large instances, but allowing smaller servers to be spun up that can implement custom sorting algorithms, views, etc. This fixes a couple of the problems where you're unable to change certain things dictated by the servers, but doesn't quite go far enough - and of particular note, you still have to associate your identity with a specific server.
 
-## Identity
+<span id="66527b3e-58af-41c4-8345-5c0951e42f54"><h2>Identity</h2></span>
 
 The new fediverse should have a fully [Decentralized Identity](/garden/federated-identity/index.md), where it's completely attached to the client rather than any server(s). This means you don't have to pick a server, worry about your chosen server going down, or that yout identity will become associated with an undesired community. It can properly allow you to engage in your variety of interests without having to associate any as core enough to attach your identity to.
 
@@ -60,6 +60,8 @@ The protocol should be fairly content agnostic, and allow arbitrary metadata on 
 
 The signature of the message acts as the de facto ID of that message, for replying purposes. Edits and reactions would be handled by "replying" to a message with a metadata flag indicating what the message actually represents. Edit messages should typically be ignored if they're not from the same author as the original message. We should assume some servers will always make an edit history fully public. Reactions should just be replies without any actual body, and a tag for what the reaction is - either binary image data or a code representing an emoji, like "+1" or "laughing". Upvotes and downvotes could be implemented via reactions.
 
+Edit replies could be sent by people other than the original poster as well. Perhaps some clients would trust edits from a list of identities, but the original poster could also reply to an edit message with an "accepted" message as a form of officially accepting/endorsing that edit suggestion. Clients could also potentially include a list of "proposed edits" that haven't been accepted.
+
 Groups/communities could also be specially flagged messages, effectively allowing for subreddit-style content. Posting to the community is just replying to the message. Subscribing to that community is just subscribing to that message. The original message creator can send edits to update stuff like the description of the community. Perhaps they can also send a message detailing other identities to trust for editing or moderating the community.
 
 A bot could fairly easily be setup to make [IndieWeb](/garden/the-small-web/index.md) posts and web mentions use this protocol. Indeed, this protocol is very POSSE-friendly because you could have your original content on the website, and the messages can be spread across the network while allowing clients to verify it was untampered with and definitely came from that website. I plan on writing a proposal for IndieWeb posts to include [The IndieWeb/Signature Blocks](/garden/the-indieweb/signature-blocks/index.md) to enable this. Within this framework, Fedi v2 would not just be a other social media silo. It would be the source of truth, fully controlled by the author. Even if the author cross posts to other social media (silos), we'd effectively still be the original copy.
@@ -73,3 +75,46 @@ Anyone can spin up their own bots that just automatically send out delete reques
 ## Success
 
 I believe the main benefits of this new fediverse are mostly going to apply to the techy power users who will appreciate the increased control over their identity and browsing experience. As far as the general public goes, I think the main benefit will be verified authorship and guaranteeing lack of tampering. Specifically, I think this will appeal to notable figures who have to be wary of concerns like that. Reddit and Twitter could edit your content or stifle it in the algorithm, or any other sort of malicious actions. So I think success of this platform will mostly come from seeing notable figures switching to it, and treating is as the source of truth (even if they cross post it to other platforms for increased outreach). Ideally, they even host their messages on their own website.
+
+## Component Definitions
+
+The agentic fediverse is currently being designed such that messages are entities in a Entity-Component relationship. Component schemas can then be formally defined and then implemented in clients, without the need of a centralized authority releasing formal spec bumps. In theory _anyone_ could propose a new schema.
+
+Here's some initial ideas for components I currently plan on proposing and perhaps even implementing:
+- **Community** (placeholder name): Marks that replies to this message should be displayed like a collection of threads, reddit-style.
+- **Delete**: Marks that this message is a deletion request to the message its a reply to.
+	- Can be used to delete specific components in the parent message.
+- **Edit**: Marks that this message is an edit request to the message its a reply to.
+	- Can be used to edit specific components in the parent message.
+- **Accept**: Marks that any requests in the message this message is a reply to were accepted.
+	- Takes an optional schema property to identify which specific request component of the parent message was accepted.
+- **Reaction**: Marks that this message is a reaction to the message its a reply to.
+- **Ascii**: Describes a text component to be rendered.
+- **Unicode**: Describes a text component to be rendered.
+- **Image**: Describes an image component to be rendered. (Or perhaps specific file formats should have their own schemas)
+- **Audio**: Describes an audio component to be rendered. (Or perhaps specific file formats should have their own schemas)
+- **Video**: Describes a video component to be rendered. (Or perhaps specific file formats should have their own schemas)
+- **Topics**: Describes a list of topics/tags this message is relevant to, for use in client searching and filtering.
+- **Editors**: Describes a list of identities who have the power to edit this message, or accept edit requests to this message.
+- **Deleters**: Describes a list of identities who have the power to delete this message, or accept deletion requests to this message.
+- **No Discovery**: Marks that this message should not be included in any global feeds or search results. Servers should only send it to servers and clients that subscribe to messages like this one.
+
+### Chatting
+
+The agentic fediverse could theoretically also implement chat rooms, bringing advantages (like divorcing identity from servers) that current decentralized chat protocols like matrix don't offer.
+
+Here are some of the components that could be used to represent a chat room:
+- **Chat room**: Marks that replies to this message should be shown as messages in a chat room.
+- **Bridge**: Marks that this _identity_ is a bridge for an account on another service. Implies that the verification of authorship may not be preserved.
+
+### Games
+
+The agentic fediverse could support sharing games using a Game component that includes a url or raw html required to play a game. In theory they could even support "cloud saves" by signing a message of their save data that only they can decrypt and sending it as a reply to the game message. Clients could handle displaying the game alongside the usual filtering and sorting features.
+
+## Local identity and contact management
+
+If I have multiple apps that use the agentic fediverse (e.g. one for reddit like content, one for Twitter, discord, Google drive, etc.), I'd like to easily have them all use the same identity(s), as well as a shared contact list (so I know the person I saw do something on one app is the same as the person that did something on another app).
+
+To that end, there should be an app/program that manages your identities and contacts on that device. It sets up your initial identity, any cloud backups, etc., and the other apps talk to it as needed. That could be sending it individual messages to sign or asking for a key that can be used to do limited functionality.
+
+Contacts could be signed such that they're only readable by us, and then sent over the network so I can have multiple devices that keep their contact list synced between them
