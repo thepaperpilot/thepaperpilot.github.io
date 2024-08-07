@@ -31,7 +31,7 @@ const cols = computed(() => Math.ceil(sizes.width.value / 304));
 const mousePos = ref(new Vector2(Infinity, Infinity));
 function updateMousePos(event: MouseEvent) {
   const {x, y, height} = renderer.value.domElement.getBoundingClientRect();
-  mousePos.value = new Vector2(event.screenX - x, height + y + (window.outerHeight - window.innerHeight) - event.screenY);
+  mousePos.value = new Vector2(event.x - x, height + y - event.y);
   if (groupRef.value) {
     groupRef.value.children.forEach(child => {
       child.material.uniforms.uMouse.value = mousePos.value;
