@@ -62,10 +62,10 @@ export default {
     if (context.pageData.relativePath.startsWith("garden")) {
       context.head.push(["meta", { name: "og:type", content: "article" }]);
       context.head.push(["meta", { name: "article:author", content: "https://www.thepaperpilot.org/about" }]);
-      const published = context.content.match(/<time class='dt-published' datetime='[^']+'>([0-9-]+)<\/time>/)[1];
-      const updated = context.content.match(/<time class='dt-updated' datetime='[^']+'>([0-9-]+)<\/time>/)[1];
-      context.head.push(["meta", { name: "article:published_time", content: published }]);
-      context.head.push(["meta", { name: "article:modified_time", content: updated }]);
+      const published = context.content.match(/<time class="dt-published" datetime="[^']+">([0-9-]+)<\/time>/)?.[1];
+      if (published) context.head.push(["meta", { name: "article:published_time", content: published }]);
+      const updated = context.content.match(/<time class="dt-updated" datetime="[^']+">([0-9-]+)<\/time>/)?.[1];
+      if (updated) context.head.push(["meta", { name: "article:modified_time", content: updated }]);
     }
   },
   lastUpdated: false,
