@@ -10,6 +10,22 @@ for (const match of data.matchAll(/:favorites \["([^\]]+)"\]/g)) {
   favorites = match[1].split("\" \"").map(page => ({ text: page, link: `/garden/${page.toLowerCase().replaceAll(' ', '-')}` }));
 }
 
+function collectPosts(path, text) {
+  const years = fs.readdirSync(path);
+  if (years.length === 1 && years[0] === "index.md") {
+    return { text, link: path.slice(6) };
+  }
+
+  const items: any[] = [];
+  for (const year of years) {
+    items.push({
+      text: year,
+      link: `${path.slice(6)}/${year}`
+    });
+  }
+  return { text, items, collapsed: true };
+}
+
 export default {
   lang: "en-US",
   title: 'The Paper Pilot',
@@ -42,6 +58,9 @@ export default {
     ['link', { rel: 'alternate', type: "application/rss+xml", title: 'Changelog', href: '/changelog/rss' }],
     ['link', { rel: 'alternate', type: "application/atom+xml", title: 'Changelog', href: '/changelog/atom' }],
     ['link', { rel: 'alternate', type: "application/json+xml", title: 'Changelog', href: '/changelog/json' }],
+    ['link', { rel: 'alternate', type: "application/rss+xml", title: 'Posts', href: '/posts/rss' }],
+    ['link', { rel: 'alternate', type: "application/atom+xml", title: 'Posts', href: '/posts/atom' }],
+    ['link', { rel: 'alternate', type: "application/json+xml", title: 'Posts', href: '/posts/json' }],
     ['link', { rel: 'me', href: 'mailto:thepaperpilot@incremental.social' }],
     ['link', { rel: 'me', href: 'https://incremental.social/u/thepaperpilot' }],
     ['link', { rel: 'me', href: 'https://matrix.to/#/@thepaperpilot:incremental.social' }],
@@ -75,10 +94,17 @@ export default {
       provider: 'local',
       options: {
         _render(src, env, md) {
-          const html = md.render(src, env);
-          if (env.frontmatter?.search === false) return '';
           if (env.relativePath.startsWith('public')) return '';
           if (env.relativePath.startsWith('guide-to-incrementals')) return '';
+          if (env.relativePath.startsWith('tags')) return '';
+          if (env.relativePath.startsWith('types')) return '';
+          if (env.relativePath.startsWith('timeline')) return '';
+          if (env.relativePath.startsWith('posts')) return '';
+          if (env.relativePath.match(/type\/.*\/[^1]/)) return '';
+          if (env.relativePath.match(/tag\/.*\/[^1]/)) return '';
+          const html = md.render(src, env);
+          if (env.frontmatter?.search === false) return '';
+          console.log(env.relativePath)
           return html;
         }
       }
@@ -99,9 +125,22 @@ export default {
         text: "Recommended Pages",
         items: favorites
       },
-      { text: "About Me", link: "/about" },
-      { text: "/now", link: "/now" },
-      { text: "Garden Changelog", link: "/changelog" }
+      {
+        text: "Posts",
+        items: [
+          { text: "Timeline", link: "/timeline/1" },
+          { text: "Tags", link: "/tags" },
+          { text: "Types", link: "/types" }
+        ]
+      },
+      {
+        text: "Meta",
+        items: [
+          { text: "About Me", link: "/about" },
+          { text: "/now", link: "/now" },
+          { text: "Garden Changelog", link: "/changelog" }
+        ]
+      }
     ]
   },
   contentProps: {

@@ -14,7 +14,7 @@ const pageData = useData();
 <p>98 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/video-game-monetization/index.md">Video Game Monetization</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/video-game-monetization">Video Game Monetization</a></details>
 
 Pre-order bonuses are benefits given to players who buy a game before it comes out
 
@@ -29,7 +29,7 @@ Common bonuses:
 - Digital goods:
 	- Soundtrack
 	- Cosmetics
-	- [Premium Currency](/garden/premium-currency/index.md)
+	- [Premium Currency](/garden/premium-currency)
 - Physical goods:
 	- Typically pins, keychains, etc.
 	- Typically only included in physical editions of the game

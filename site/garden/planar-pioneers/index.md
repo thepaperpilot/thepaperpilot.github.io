@@ -15,10 +15,10 @@ const pageData = useData();
 <p>25 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a><a href="/garden/profectus/index.md">Profectus</a></details>
+<details><summary>Tags:</summary><a href="/garden/my-projects">My Projects</a><a href="/garden/profectus">Profectus</a></details>
 
 Play it [here](https://thepaperpilot.org/planar)!
 
-An [Open Source](/garden/open-source/index.md) game designed to show off [Profectus](/garden/profectus/index.md)' dynamic layer system!
+An [Open Source](/garden/open-source) game designed to show off [Profectus](/garden/profectus)' dynamic layer system!
 
 The [TV Tropes](https://tvtropes.org/pmwiki/pmwiki.php/VideoGame/PlanarPioneers) page on this game mentions some of the cool things about this game

@@ -15,7 +15,7 @@ const pageData = useData();
 <p>209 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
+<details><summary>Tags:</summary><a href="/garden/my-projects">My Projects</a></details>
 
 <div class="img-container"><img src="/garden/screenshot_1717383987886_0.png" title="screenshot.png"/></div>
 
@@ -31,4 +31,4 @@ Instead, I made a couple of worlds by myself - an infinite procedurally generate
 
 <div class="img-container"><img src="/garden/sandsoftime_1717383994964_0.png" title="sandsoftime.png"/></div>
 
-The gameplay of Sands of Time was replicated in [Kronos](/garden/kronos/index.md) Chapter 2!
+The gameplay of Sands of Time was replicated in [Kronos](/garden/kronos) Chapter 2!

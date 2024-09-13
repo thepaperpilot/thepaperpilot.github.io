@@ -36,9 +36,14 @@ I'm Anthony, or The Paper Pilot, and welcome to my [digital garden](/garden/digi
 
 This is a public website collecting all my (public) thoughts and projects all in one place. There are a lot of pages here, that link to each other wiki-style. I suggest starting your browsing with one of the recommended pages that most closely align with your interests :).
 
+## Most Recent Activity
+
+<div style="margin-top: 60px" class="post-feed" v-html="data.join('')" />
+
 <script setup>
   import { ref, onMounted, onUnmounted } from "vue";
   import { TresCanvas } from '@tresjs/core'
+  import { data } from "./recent-posts.data.ts";
   import Hole from "./.vitepress/theme/Hole.vue";
 
   const xOffset = ref(0);

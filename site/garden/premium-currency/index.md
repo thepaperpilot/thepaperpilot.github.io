@@ -14,9 +14,9 @@ const pageData = useData();
 <p>71 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/pre-order-bonuses/index.md">Pre-Order Bonuses</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/pre-order-bonuses">Pre-Order Bonuses</a></details>
 
-A popular form of [MTX](/garden/mtx/index.md) where instead of receiving a useful item or effect directly, you receive a currency that is then spent on an in game store
+A popular form of [MTX](/garden/mtx) where instead of receiving a useful item or effect directly, you receive a currency that is then spent on an in game store
 
 Reasons companies use them
 - Abstracts the real world price of items

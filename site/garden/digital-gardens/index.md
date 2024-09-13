@@ -15,13 +15,13 @@ const pageData = useData();
 <p>67 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/chronological/index.md">Chronological</a><a href="/garden/commune/index.md">Commune</a><a href="/garden/garden-rss/index.md">Garden-RSS</a><a href="/garden/the-cozy-web/index.md">The Cozy Web</a><a href="/garden/the-small-web/index.md">The Small Web</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/chronological">Chronological</a><a href="/garden/commune">Commune</a><a href="/garden/garden-rss">Garden-RSS</a><a href="/now/index">/now</a><a href="/garden/the-cozy-web">The Cozy Web</a><a href="/garden/the-small-web">The Small Web</a><a href="/garden/this-knowledge-hub">This Knowledge Hub</a></details>
 
-Digital Gardens are [Freeform](/garden/freeform/index.md) collections of information made by an individual or community
-- Alternatives to [Chronological](/garden/chronological/index.md) personal blogs
-- Exist in a middleground between the dark forest and [The Cozy Web](/garden/the-cozy-web/index.md)
+Digital Gardens are [Freeform](/garden/freeform) collections of information made by an individual or community
+- Alternatives to [Chronological](/garden/chronological) personal blogs
+- Exist in a middleground between the dark forest and [The Cozy Web](/garden/the-cozy-web)
 
-[This Knowledge Hub](/garden/this-knowledge-hub/index.md) is a digital garden
+[This Knowledge Hub](/garden/this-knowledge-hub) is a digital garden
 
 Collections of digital gardens and resources for creating them:
 - **[https://github.com/MaggieAppleton/digital-gardeners](https://github.com/MaggieAppleton/digital-gardeners)**

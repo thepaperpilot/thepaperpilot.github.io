@@ -14,13 +14,13 @@ const pageData = useData();
 <p>59 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/freeform/index.md">Freeform</a><a href="/garden/the-small-web/index.md">The Small Web</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/freeform">Freeform</a><a href="/garden/the-small-web">The Small Web</a><a href="/garden/this-knowledge-hub">This Knowledge Hub</a></details>
 
-A theoretical alternative to RSS that's better for [Freeform](/garden/freeform/index.md) websites (and [Digital Gardens](/garden/digital-gardens/index.md) specifically )
+A theoretical alternative to RSS that's better for [Freeform](/garden/freeform) websites (and [Digital Gardens](/garden/digital-gardens) specifically )
 
 Why is it useful?
 - [Feeds are not fit for gardening](https://v5.chriskrycho.com/essays/feeds-are-not-fit-for-gardening/)
-	- Describes the issues with RSS for [Digital Gardens](/garden/digital-gardens/index.md)
+	- Describes the issues with RSS for [Digital Gardens](/garden/digital-gardens)
 	- Proposes creating an alternative, which they call `grdn`
 
 How should it work?

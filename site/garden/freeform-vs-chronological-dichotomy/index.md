@@ -14,6 +14,6 @@ const pageData = useData();
 <p>10 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/chronological/index.md">Chronological</a><a href="/garden/freeform/index.md">Freeform</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/chronological">Chronological</a><a href="/garden/freeform">Freeform</a></details>
 
-Describes a dichotomy between displaying information in a [Freeform](/garden/freeform/index.md) vs [Chronological](/garden/chronological/index.md) manner
+Describes a dichotomy between displaying information in a [Freeform](/garden/freeform) vs [Chronological](/garden/chronological) manner

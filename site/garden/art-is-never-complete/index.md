@@ -14,7 +14,7 @@ const pageData = useData();
 <p>92 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/guide-to-incrementals/what-is-content/index.md">Guide to Incrementals/What is Content?</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/guide-to-incrementals/what-is-content">Guide to Incrementals/What is Content?</a></details>
 
 > Art is never finished, only abandoned.
 > \- Leonardo Da Vinci

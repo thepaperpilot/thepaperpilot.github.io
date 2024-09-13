@@ -15,9 +15,9 @@ const pageData = useData();
 <p>778 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/federated-identity/index.md">Federated Identity</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/now/index">/now</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a><a href="/garden/webrings/index.md">Webrings</a><a href="/garden/weird/index.md">Weird</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/commune">Commune</a><a href="/garden/federated-identity">Federated Identity</a><a href="/garden/fedi-v2">Fedi v2</a><a href="/garden/my-personal-website">My Personal Website</a><a href="/now/index">/now</a><a href="/garden/the-indieweb/signature-blocks">The IndieWeb/Signature Blocks</a><a href="/garden/this-knowledge-hub">This Knowledge Hub</a><a href="/garden/webrings">Webrings</a><a href="/garden/weird">Weird</a></details>
 
-The small web (also known as the indie web, personal web, the web revival movement, and other terms) refers to small, personal, independent websites. It is seen as a direct alternative to the centralized and homogenized websites like X, Meta, and TikTok. [My Personal Website](/garden/my-personal-website/index.md) is part of the small web!
+The small web (also known as the indie web, personal web, the web revival movement, and other terms) refers to small, personal, independent websites. It is seen as a direct alternative to the centralized and homogenized websites like X, Meta, and TikTok. [My Personal Website](/garden/my-personal-website) is part of the small web!
 
 ## Motivation behind the small web
 
@@ -53,7 +53,7 @@ These are videos and articles that continue expanding on the values and motivati
 
 ## Browsing the small web
 
-Follow [Webrings](/garden/webrings/index.md) or other links from known small websites.
+Follow [Webrings](/garden/webrings) or other links from known small websites.
 
 [Marginalia](https://search.marginalia.nu) is a search engine for non-commercial content with a "random" button and filters for the small web explicitly (amongst other useful filters!)
 
@@ -70,23 +70,23 @@ The [Tildeverse](https://tildeverse.org/) contains a large set of personal websi
 - [mmm.page — Your Corner of the Internet](https://mmm.page/)
 - [Codeberg pages](https://codeberg.page) (and any other [pages-server](https://codeberg.org/Codeberg/pages-server) instance - like on [Incremental Social](https://incremental.social/pages)!)
 - [Github pages](https://pages.github.com)
-- [Weird](/garden/weird/index.md) (in development)
+- [Weird](/garden/weird) (in development)
 
 Other resources:
 - [32-bit cafe](https://32bit.cafe/)
 
 ### [Streams](https://indieweb.org/stream)
 
-[Microsub](https://indieweb.org/Microsub) is a proposed protocol to support hosting streams of content on personal websites in a way they can be consistently ingested by microsub clients. This way, people could subscribe to multiple streams on independent websites and get them in one feed. Through this, the indie web becomes a [Federated Social Media](/garden/fediverse/index.md).
+[Microsub](https://indieweb.org/Microsub) is a proposed protocol to support hosting streams of content on personal websites in a way they can be consistently ingested by microsub clients. This way, people could subscribe to multiple streams on independent websites and get them in one feed. Through this, the indie web becomes a [Federated Social Media](/garden/fediverse).
 
 Streams also allow your personal website to be the one source of truth for your posted content, in a concept called [POSSE](https://indieweb.org/POSSE) - Publish (on your) Own Site, Syndicate Elsewhere (other social media sites). This would effectively solve the problems described in [Hey Creators, Please Make Firehoses!](https://jonbell.medium.com/hey-creators-please-make-firehoses-8d0c48c075e4)
 
 Multiple streams can be hosted by one site/person so people can subscribe to the kind of content they're interested in.
 
-### [Digital Gardens](/garden/digital-gardens/index.md)
+### [Digital Gardens](/garden/digital-gardens)
 
 These sites may be useful to occasionally check up on rather than get notifications from on every post/change
-- Although [Garden-RSS](/garden/garden-rss/index.md) could allow those who want to receive notifications to do so
+- Although [Garden-RSS](/garden/garden-rss) could allow those who want to receive notifications to do so
 
 ### The future
 

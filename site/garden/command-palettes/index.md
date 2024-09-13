@@ -20,7 +20,7 @@ Typing what you want is almost certainly easier and faster than finding the acti
 - Especially with fuzzy search that also looks through descriptions of actions
 - Command palettes scale very well with large amounts of actions
 
-[Artificial Intelligence](/garden/artificial-intelligence/index.md) will make command palettes increasingly powerful
+[Artificial Intelligence](/garden/artificial-intelligence) will make command palettes increasingly powerful
 - Eventually these may become conversational interfaces
 
 Maggie Appleton discusses this pattern in her article on [Command K Bars](https://maggieappleton.com/command-bar)
@@ -28,5 +28,5 @@ Maggie Appleton discusses this pattern in her article on [Command K Bars](https:
 
 Many softwares I use have some form of command palette
 - Linear
-- [Logseq](/garden/logseq/index.md)
+- [Logseq](/garden/logseq)
 - Visual Studio Code

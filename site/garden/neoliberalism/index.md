@@ -14,9 +14,9 @@ const pageData = useData();
 <p>133 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/local-communities/index.md">Local Communities</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anarchism">Anarchism</a><a href="/garden/local-communities">Local Communities</a></details>
 
-Neoliberalism is a conservative political philosophy that emphasizes [Individualism](/garden/individualism/index.md) and is resistant to change/progress. It became popular with the advent of President Raegan and his sweeping changes to the US economy and government (replacing the comparatively socialist polices of the New Deal and the Great Society), and affects both the Republican and Democratic US political parties.
+Neoliberalism is a conservative political philosophy that emphasizes [Individualism](/garden/individualism) and is resistant to change/progress. It became popular with the advent of President Raegan and his sweeping changes to the US economy and government (replacing the comparatively socialist polices of the New Deal and the Great Society), and affects both the Republican and Democratic US political parties.
 
 I believe neoliberalism primarily affected the boomer generation and generation x. This lines up with [trends in protest participation](https://nealcaren.org/publication/caren-social-2011/caren-social-2011.pdf), which dipped during that time (by birth cohort) and picked back up starting with Millenials. The government is still largely controlled by those generations and still very neoliberal, despite increasingly progressive and left-leaning youth demographics.
 

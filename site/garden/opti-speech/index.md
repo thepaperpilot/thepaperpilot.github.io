@@ -15,7 +15,7 @@ const pageData = useData();
 <p>312 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
+<details><summary>Tags:</summary><a href="/garden/my-projects">My Projects</a></details>
 
 In college I continued development on the Opti-Speech project, originally built alongside the scientific paper [Opti-speech: a real-time, 3d visual feedback system for speech training](https://www.researchgate.net/profile/Thomas-Campbell-11/publication/354182612_Opti-speech_a_real-time_3d_visual_feedback_system_for_speech_training/links/6424679ca1b72772e4360fa2/Opti-speech-a-real-time-3d-visual-feedback-system-for-speech-training.pdf)
 

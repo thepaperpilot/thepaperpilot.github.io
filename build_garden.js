@@ -6,18 +6,7 @@ const util = require('node:util');
 const exec = util.promisify(require('node:child_process').exec);
 const { Feed } = require('feed');
 
-function walk(dir, cb) {
-    const list = fs.readdirSync(dir);
-    return Promise.all(list.map(file => {
-        const resolvedFile = path.resolve(dir, file);
-        const stat = fs.statSync(resolvedFile);
-        if (stat.isDirectory()) {
-            return walk(resolvedFile, cb);
-        } else {
-            return new Promise((resolve) => cb(dir, resolvedFile, resolve));
-        }
-    }));
-}
+const { walk } = require("./utils");
 
 function toSlug(string) {
     return string.toLowerCase().replaceAll(' ', '-');
@@ -52,7 +41,7 @@ function moveImportStatementUp(filePath, times = 1) {
         for (const match of data.matchAll(/(.*)\n\s*id:: (.*)/gm)) {
         	const text = match[1];
         	const id = match[2];
-            const link = `/garden/${slug}/index.md#${id}`;
+            const link = `/garden/${slug}#${id}`;
             blockLinks[id] = link;
         	blockRefs[id] = `[${text}](${link})`;
         }
@@ -83,7 +72,7 @@ function moveImportStatementUp(filePath, times = 1) {
 
         const name = path.basename(file, ".md").replaceAll('___', '/');
         const slug = toSlug(name).replaceAll(/%3F/gi, '').replaceAll('\'', '-');
-        const link = `/garden/${slug}/index.md`;
+        const link = `/garden/${slug}`;
         pageLinks[name.replaceAll(/%3F/gi, '?')] = link;
 
         for (const match of data.matchAll(/alias:: (.*)/g)) {
@@ -140,7 +129,7 @@ function moveImportStatementUp(filePath, times = 1) {
         // Replace internal links
         data = data.replaceAll(
         	/]\(\/logseq-pages\/([^\)]*)\)/g,
-        	'](/garden/$1/index.md)');
+        	'](/garden/$1)');
 		// Replace block links
         data = data.replaceAll(
         	/\(\((.*)\)\)/g,

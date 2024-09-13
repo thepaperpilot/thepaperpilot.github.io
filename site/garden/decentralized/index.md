@@ -15,16 +15,16 @@ const pageData = useData();
 <p>80 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/matrix/index.md">Matrix</a><a href="/garden/social-media/index.md">Social Media</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/commune">Commune</a><a href="/garden/fedi-v2">Fedi v2</a><a href="/garden/matrix">Matrix</a><a href="/garden/social-media">Social Media</a></details>
 
-<details><summary>Tagged by:</summary><a href="/garden/activitypub/index.md">ActivityPub</a><a href="/garden/atproto/index.md">ATProto</a><a href="/garden/federated-identity/index.md">Federated Identity</a><a href="/garden/fediverse/index.md">Fediverse</a><a href="/garden/nostr/index.md">Nostr</a></details>
+<details><summary>Tagged by:</summary><a href="/garden/activitypub">ActivityPub</a><a href="/garden/atproto">ATProto</a><a href="/garden/federated-identity">Federated Identity</a><a href="/garden/fediverse">Fediverse</a><a href="/garden/nostr">Nostr</a></details>
 
 Something with no central source of authority
 
 Common examples:
 - RSS
 - Email
-- The [Fediverse](/garden/fediverse/index.md)
+- The [Fediverse](/garden/fediverse)
 
 In practice, the "pick a server" problem causes email and the fediverse to trend towards a handful of large servers that still suffer from some of the issues of centralization
 

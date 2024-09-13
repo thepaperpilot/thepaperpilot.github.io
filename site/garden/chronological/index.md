@@ -14,16 +14,16 @@ const pageData = useData();
 <p>73 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/digital-gardens/index.md">Digital Gardens</a><a href="/garden/freeform-vs-chronological-dichotomy/index.md">Freeform vs Chronological Dichotomy</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/digital-gardens">Digital Gardens</a><a href="/garden/freeform-vs-chronological-dichotomy">Freeform vs Chronological Dichotomy</a></details>
 
 A collection of information that is tied to its creation or edit date
 
-Part of the [Freeform vs Chronological Dichotomy](/garden/freeform-vs-chronological-dichotomy/index.md)
+Part of the [Freeform vs Chronological Dichotomy](/garden/freeform-vs-chronological-dichotomy)
 
 Anything with a "timeline" or "feed" is considered chronological
 - Even if there's algorithmic sortings that take things other than creation or edit date into account!
 
-Chronological displays are less suitable as stores of knowledge ([Digital Gardens](/garden/digital-gardens/index.md))
+Chronological displays are less suitable as stores of knowledge ([Digital Gardens](/garden/digital-gardens))
 
 Social media overuses timelines and feeds
 

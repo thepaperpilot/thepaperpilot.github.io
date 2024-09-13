@@ -16,12 +16,12 @@ const pageData = useData();
 <p>31 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/fediverse/index.md">Fediverse</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/fediverse">Fediverse</a></details>
 
-<details><summary>Tags:</summary><a href="/garden/decentralized/index.md">Decentralized</a></details>
+<details><summary>Tags:</summary><a href="/garden/decentralized">Decentralized</a></details>
 
-The [AT Protocol](https://atproto.com) is a protocol for [Federated Social Media](/garden/fediverse/index.md)
+The [AT Protocol](https://atproto.com) is a protocol for [Federated Social Media](/garden/fediverse)
 
 Currently only used by [Bluesky](https://bsky.app)
 
-In comparison to other [Fediverse](/garden/fediverse/index.md) protocols, ATProto is designed for a small number of large instances
+In comparison to other [Fediverse](/garden/fediverse) protocols, ATProto is designed for a small number of large instances

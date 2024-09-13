@@ -15,8 +15,8 @@ const pageData = useData();
 <p>8 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/fediverse/index.md">Fediverse</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/fediverse">Fediverse</a></details>
 
-<details><summary>Tags:</summary><a href="/garden/decentralized/index.md">Decentralized</a></details>
+<details><summary>Tags:</summary><a href="/garden/decentralized">Decentralized</a></details>
 
-[ActivityPub](https://activitypub.rocks) is a protocol for [Federated Social Media](/garden/fediverse/index.md)
+[ActivityPub](https://activitypub.rocks) is a protocol for [Federated Social Media](/garden/fediverse)

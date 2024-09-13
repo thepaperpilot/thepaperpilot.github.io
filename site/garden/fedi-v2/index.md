@@ -1,4 +1,5 @@
 ---
+alias: "Agentic Fediverse"
 public: "true"
 slug: "fedi-v2"
 title: "Fedi v2"
@@ -11,16 +12,16 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Fedi v2</h1>
-<p>2566 words, ~14 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>3376 words, ~18 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/weird/index.md">Weird</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/social-media">Social Media</a><a href="/garden/the-indieweb/signature-blocks">The IndieWeb/Signature Blocks</a><a href="/garden/weird">Weird</a></details>
 
-A placeholder name for a theoretical new federated network that is client-centric, in contrast to the server-centric [Fediverse](/garden/fediverse/index.md). Many of the ideas here will be implemented as described or similarly by people much smarter than me as part of [Agentic Federation on Iroh](https://github.com/commune-os/weird/discussions/32), an initiative by the [Weird](/garden/weird/index.md) developers.
+A placeholder name for a theoretical new federated network that is client-centric, in contrast to the server-centric [Fediverse](/garden/fediverse). Many of the ideas here will be implemented as described or similarly by people much smarter than me as part of [Agentic Federation on Iroh](https://github.com/commune-os/weird/discussions/32), an initiative by the [Weird](/garden/weird) developers.
 
 ## Motivation
 
-The current fediverse, while in theory fully [Decentralized](/garden/decentralized/index.md), in practice suffers many of the issues associated with centralization. This is primarily caused by the friction of having to pick a server and the non feasibility of individuals buying a domain and setting up a single user instance - both of these causes lead to a handful of large servers with the bulk of the users. You can see this in action by looking up the relative sizes of lemmy and mastodon instances. [Single-user Mastodon Instance is a Bad Idea](https://mull.net/mastodon) goes over the non feasibility of self hosting and how it contributes to a handful of servers having the majority of the users.
+The current fediverse, while in theory fully [Decentralized](/garden/decentralized), in practice suffers many of the issues associated with centralization. This is primarily caused by the friction of having to pick a server and the non feasibility of individuals buying a domain and setting up a single user instance - both of these causes lead to a handful of large servers with the bulk of the users. You can see this in action by looking up the relative sizes of lemmy and mastodon instances. [Single-user Mastodon Instance is a Bad Idea](https://mull.net/mastodon) goes over the non feasibility of self hosting and how it contributes to a handful of servers having the majority of the users.
 
 The promise of federation is the ability to interact with the whole network, while being able to fully choose and customize how you yourself interact with the network. In practice though, clients are severely limited to what they can do based on the server software. Of particular note, Lemmy and Mastodon show content in different formats (threads vs microblogs), and no clients allow changing how they're displayed, or respecting the format of the source of the content. Clients also are unable to change sorting algorithms or how downvotes are handled - those are all dependent on the server. [A Plan for Social Media - Rethinking Federation](https://raphael.lullis.net/a-plan-for-social-media-less-fedi-more-webby/) similarly criticizes how much of the decisions are dependent on the server, which most people won't be able to or willing to self host.
 
@@ -30,9 +31,11 @@ The pick a server problem is such a problem because not only do you have to pick
 
 [ATProto](https://atproto.com/) by bluesky offers a version of federation built for a handful of large instances, but allowing smaller servers to be spun up that can implement custom sorting algorithms, views, etc. This fixes a couple of the problems where you're unable to change certain things dictated by the servers, but doesn't quite go far enough - and of particular note, you still have to associate your identity with a specific server.
 
+[NextGraph](https://docs.nextgraph.org/en/introduction/) looks very similar to what we're trying to build. My only note is really that it gives a bit of a crypto vibe through decisions like calling identities "wallets" that I think may make it fall into the same problems nostr has, but conceptually its _really_ similar to everything discussed here, which is great! It should be incredibly easy to interoperate, at the very least.
+
 <span id="66527b3e-58af-41c4-8345-5c0951e42f54"><h2>Identity</h2></span>
 
-The new fediverse should have a fully [Decentralized Identity](/garden/federated-identity/index.md), where it's completely attached to the client rather than any server(s). This means you don't have to pick a server, worry about your chosen server going down, or that yout identity will become associated with an undesired community. It can properly allow you to engage in your variety of interests without having to associate any as core enough to attach your identity to.
+The new fediverse should have a fully [Decentralized Identity](/garden/federated-identity), where it's completely attached to the client rather than any server(s). This means you don't have to pick a server, worry about your chosen server going down, or that yout identity will become associated with an undesired community. It can properly allow you to engage in your variety of interests without having to associate any as core enough to attach your identity to.
 
 This identity can be accomplished by the client merely generating a private and public key, which can then be stored however the user pleases. Reasonably, there's be default options to back up the private key to Google drive or alternatives, as most users will not desire to go the extra effort of backing up their identity without relying on big storage websites. But for those who wish, you could keep the identity solely on the device, or choose your own method of storage and backup.
 
@@ -64,7 +67,7 @@ Edit replies could be sent by people other than the original poster as well. Per
 
 Groups/communities could also be specially flagged messages, effectively allowing for subreddit-style content. Posting to the community is just replying to the message. Subscribing to that community is just subscribing to that message. The original message creator can send edits to update stuff like the description of the community. Perhaps they can also send a message detailing other identities to trust for editing or moderating the community.
 
-A bot could fairly easily be setup to make [IndieWeb](/garden/the-small-web/index.md) posts and web mentions use this protocol. Indeed, this protocol is very POSSE-friendly because you could have your original content on the website, and the messages can be spread across the network while allowing clients to verify it was untampered with and definitely came from that website. I plan on writing a proposal for IndieWeb posts to include [The IndieWeb/Signature Blocks](/garden/the-indieweb/signature-blocks/index.md) to enable this. Within this framework, Fedi v2 would not just be a other social media silo. It would be the source of truth, fully controlled by the author. Even if the author cross posts to other social media (silos), we'd effectively still be the original copy.
+A bot could fairly easily be setup to make [IndieWeb](/garden/the-small-web) posts and web mentions use this protocol. Indeed, this protocol is very POSSE-friendly because you could have your original content on the website, and the messages can be spread across the network while allowing clients to verify it was untampered with and definitely came from that website. I plan on writing a proposal for IndieWeb posts to include [The IndieWeb/Signature Blocks](/garden/the-indieweb/signature-blocks) to enable this. Within this framework, Fedi v2 would not just be a other social media silo. It would be the source of truth, fully controlled by the author. Even if the author cross posts to other social media (silos), we'd effectively still be the original copy.
 
 ## Moderation
 
@@ -98,6 +101,9 @@ Here's some initial ideas for components I currently plan on proposing and perha
 - **Editors**: Describes a list of identities who have the power to edit this message, or accept edit requests to this message.
 - **Deleters**: Describes a list of identities who have the power to delete this message, or accept deletion requests to this message.
 - **No Discovery**: Marks that this message should not be included in any global feeds or search results. Servers should only send it to servers and clients that subscribe to messages like this one.
+- **Timestamp Requested**: Marks that this message would like to receive a response from a trusted server (optionally defined in the component data) once it is delivered. May also include a schema ID that represents what the timestamp represents. Defaults to referring to the published date.
+- **Calendar Event**: Describes a calendar event.
+- **RSVP**: Marks that you [are, might be, or aren't] participating in whatever a linked entity is describing.
 
 ### Chatting
 
@@ -111,6 +117,10 @@ Here are some of the components that could be used to represent a chat room:
 
 The agentic fediverse could support sharing games using a Game component that includes a url or raw html required to play a game. In theory they could even support "cloud saves" by signing a message of their save data that only they can decrypt and sending it as a reply to the game message. Clients could handle displaying the game alongside the usual filtering and sorting features.
 
+I'd also be excited in seeing a sort of MMO style game on the agentic fediverse. So you see other players and there's a shared game state, calculated on the client based on the actions recorded by the various different players. And since the rules would have to be defined by the components, people could create their own copies of the world (e.g. to play with a friend group or solo), or even make their own mods of the game. I'd like to look into that. I'll perhaps rethink [Chromatic Lattice](/garden/chromatic-lattice) to work on such a framework, although it may be too complicated for this idea.
+
+Having the game state be calculatable by the client like that would also allow trophies and achievements to work verifiably. People could probably still write software to copy someone else's events at the right times and effectively replicate their save, but I think that won't happen commonly enough to matter.
+
 ## Local identity and contact management
 
 If I have multiple apps that use the agentic fediverse (e.g. one for reddit like content, one for Twitter, discord, Google drive, etc.), I'd like to easily have them all use the same identity(s), as well as a shared contact list (so I know the person I saw do something on one app is the same as the person that did something on another app).
@@ -118,3 +128,21 @@ If I have multiple apps that use the agentic fediverse (e.g. one for reddit like
 To that end, there should be an app/program that manages your identities and contacts on that device. It sets up your initial identity, any cloud backups, etc., and the other apps talk to it as needed. That could be sending it individual messages to sign or asking for a key that can be used to do limited functionality.
 
 Contacts could be signed such that they're only readable by us, and then sent over the network so I can have multiple devices that keep their contact list synced between them
+
+An identity management app could also work as a link handler for the `leaf` protocol. It could take a schema ID as another path component, which then describes the purpose of the URI and the expected remaining data in the URI. The identity management app can then pass the message along to any app that has specified it knows how to handle that schema.
+
+## Sustainability
+
+Servers are expensive, especially as they get popular. Most current fediverse instances are free and funded by donations. Things like ads or paying for an account are difficult to do due to the nature of federation. This is a pretty major problem because if a server becomes too expensive to host, it will shut down, along with all the accounts associated with it. Fedi v2 makes individual servers going down not be an issue anymore, since identities aren't attached to them. However, it's an issue if _all_ the instances go down, and if there's no way to pay for them still, why would _any_ instance stay up?
+
+Since instance nodes do not have to do filtering, sorting, or really any other processing, but rather just serving the events and sending out notifications to clients, the cost will be cheaper than the current fediverse. It's really just a file server, which is cheap. For example, idrive charges $40 per tb per year, which is enough for a LOT of content. So I expect some instance nodes to have fairly generous free tiers that will suffice for a lot of users. Idrive also doesn't have egress charges, so the cost only scales with how much content is being published, not downloaded.
+
+For power users, instance nodes could accept payments to store data above the free quota. This would likely most often happen for people wishing to upload high resolution images or videos. A user could also switch nodes after filling a quota on one node - you don't have to delete your content on the old instance. You could also do this to backup your content on multiple nodes (although you should also keep a local copy of all your content).
+
+I assume this aspect of Fedi v2 will be the most controversial - people really like free services, and are expecting it. Knowing they might eventually need to pay to post more will perhaps require a cultural shift. I think it's worth it to not have ads or tracking, and in general we should be supporting sustainable services.
+
+## What about Incremental Social?
+
+Well, the agentic fediverse is a long ways out. But eventually I'd probably like to replace mbin with an Iroh node and ActivityPub <=> Fedi v2 bridge, transitioning all existing accounts.
+
+The bridge would work by looking for a signed message to register a handle on the server. If that handle is not taken nor reserved, the AP actor is created and posts from the identity get bridged. The actor will have some metadata linking to the Fedi v2 identity, thus allowing both fediverses to know the identities are linked.

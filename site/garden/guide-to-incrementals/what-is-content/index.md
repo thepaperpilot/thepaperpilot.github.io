@@ -14,7 +14,7 @@ const pageData = useData();
 <p>2272 words, ~12 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/digital-gardens/index.md">Digital Gardens</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/social-media/index.md">Social Media</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/digital-gardens">Digital Gardens</a><a href="/garden/incremental-social">Incremental Social</a><a href="/garden/kronos">Kronos</a><a href="/garden/my-political-journey">My Political Journey</a><a href="/now/index">/now</a><a href="/garden/social-media">Social Media</a></details>
 
 If you've been in the incremental games community for any amount of time, you'll quickly find the number one thing players want is _content_. They want as much of it as possible! The most popular incremental games have tons of content, so they just keep stretching on and on and on, introducing mechanic after mechanic, and players love it. In fact, players seem to value the _amount_ of content over the quality of any _specific_ content. However, there's a bit of a lack of understanding concerning _what_ content is, and I'd like to explore what counts as content, and how we measure it. As a baseline definition, I think "content" can just be described as the parts of the game that engage the player, but to truly understand it we need to contextualize what that means and how it affects the gameplay experience.
 
@@ -30,7 +30,7 @@ Let's take a look at the opposite end of the spectrum - interaction that is so f
 
 ### Repeatable Purchases
 
-Imagine an entity in a game that you can purchase multiple times, each time it performs the same thing but for a higher cost. These are incredibly common, from the buildings in [cookie clicker](https://orteil.dashnet.org/cookieclicker/) to the units in [swarm sim](https://www.swarmsim.com/) to the IP and EP multipliers in [antimatter dimensions](https://ivark.github.io/). However, how much content is each specific purchase? Is it content beyond the first purchase? Does it have diminishing returns? What if you are oscillating between two different repeatable purchases? How much content is lost when you [automate](/garden/guide-to-incrementals/what-is-content/index.md#665cf570-e3d3-48f6-9fde-aa94e68a8682)) away a repeatable purchase?
+Imagine an entity in a game that you can purchase multiple times, each time it performs the same thing but for a higher cost. These are incredibly common, from the buildings in [cookie clicker](https://orteil.dashnet.org/cookieclicker/) to the units in [swarm sim](https://www.swarmsim.com/) to the IP and EP multipliers in [antimatter dimensions](https://ivark.github.io/). However, how much content is each specific purchase? Is it content beyond the first purchase? Does it have diminishing returns? What if you are oscillating between two different repeatable purchases? How much content is lost when you [automate](/garden/guide-to-incrementals/what-is-content#665cf570-e3d3-48f6-9fde-aa94e68a8682)) away a repeatable purchase?
 
 I don't want to take too harsh a stance against repeatable purchases. They're useful tools and can be used in a myriad of interesting ways. I feel they do become "stale" or less meaningful content over time, and this happens exponentially quickly the more frequently it can be purchased. A classic example that I believe goes too far is the IP/EP multipliers in Antimatter Dimensions. I would go as far as to say they are a chore and do not provide any meaningful content after you've bought them a couple of times. It's a method for inflating numbers (effectively making every OOM a 5x step instead of 10x), that punishes the player progression-wise whenever they forget to max it again, and eventually gets automated away as a _reward_ to the player for making enough progress.
 
@@ -56,12 +56,12 @@ A recent example is [Really Grass Cutting Incremental](https://mrredshark77.gith
 
 ## Ending the Game
 
-Incremental games do not often have a planned out narrative or ending,, such that each content update is approached as its own unit of narrative and gameplay. This prevents content updates from wrapping up the game nicely - it always has to leave something open for another content layer; be it another mechanic, reset layer, etc. This cycle will continue until the updates just stop, at which point the game will just have an unsatisfying conclusion that will never get the next thing it was supposed to be leading into. This reminds me of a Leonardo Da Vinci quote about how [Art is Never Complete](/garden/art-is-never-complete/index.md):
+Incremental games do not often have a planned out narrative or ending,, such that each content update is approached as its own unit of narrative and gameplay. This prevents content updates from wrapping up the game nicely - it always has to leave something open for another content layer; be it another mechanic, reset layer, etc. This cycle will continue until the updates just stop, at which point the game will just have an unsatisfying conclusion that will never get the next thing it was supposed to be leading into. This reminds me of a Leonardo Da Vinci quote about how [Art is Never Complete](/garden/art-is-never-complete):
 
 > Art is never finished, only abandoned.
 > \- Leonardo Da Vinci
 
-For what its worth, there are exceptions here (including several of [My Projects](/garden/my-projects/index.md)). I believe this practice is actually fairly reasonable, considering how many incremental game developers are learning game design and programming - keeping the scope small and expanding if it still interests you is a great way to keep learning without letting things like perfectionism or sunk cost fallacies get in the way.
+For what its worth, there are exceptions here (including several of [My Projects](/garden/my-projects)). I believe this practice is actually fairly reasonable, considering how many incremental game developers are learning game design and programming - keeping the scope small and expanding if it still interests you is a great way to keep learning without letting things like perfectionism or sunk cost fallacies get in the way.
 
 ## Tips for Developers
 

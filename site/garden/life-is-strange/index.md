@@ -66,4 +66,4 @@ This game was announced to come with premium editions that get access to the gam
 - I think this is a horrible anti-consumer practice
 - Since this game is narratively driven, it is prone to spoilers
 - They're getting more money from their biggest fans without providing any tangible value to them, other than making the experience worse for everyone who plays but doesn't cough up that money
-- I hope other narratively driven games find other ways to do [Video Game Monetization](/garden/video-game-monetization/index.md)
+- I hope other narratively driven games find other ways to do [Video Game Monetization](/garden/video-game-monetization)

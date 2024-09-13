@@ -15,7 +15,7 @@ const pageData = useData();
 <p>113 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
+<details><summary>Tags:</summary><a href="/garden/my-projects">My Projects</a></details>
 
 [Babble Buds](http://babblebuds.xyz) is a tool for creating puppets and interacting with puppets controlled by others on a shared stage
 
@@ -27,5 +27,5 @@ Intended for use in RPG Campaigns
 
 The renderer was separated into its own project, [babble.js](https://github.com/thepaperpilot/babble.js), so it could be used for stuff like cutscenes
 
-I ported the engine to C# and used it for the cutscenes in [Dice Armor](/garden/dice-armor/index.md)
+I ported the engine to C# and used it for the cutscenes in [Dice Armor](/garden/dice-armor)
 - I don't believe I ever separated it out into its own project, but you can find the code [here](https://github.com/sreynoldsdesign/dice_armor/tree/master/Assets/Scripts/babble.cs)

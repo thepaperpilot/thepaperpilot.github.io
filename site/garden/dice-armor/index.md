@@ -15,9 +15,9 @@ const pageData = useData();
 <p>963 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/babble-buds/index.md">Babble Buds</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/babble-buds">Babble Buds</a></details>
 
-<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
+<details><summary>Tags:</summary><a href="/garden/my-projects">My Projects</a></details>
 
 Download it [here](https://drive.google.com/open?id=18rwqEIdMChdGtB-9LdI4wiqeM5C5ViOL)
 
@@ -61,4 +61,4 @@ The dice rolling uses the physics engine and detects once the dice have stopped 
 
 During certain events like winning the game or having the face of a die broken, the players' portraits will flash an emotion for a second. After winning, a random living die from the winning player is chosen to play their "finisher move", a flashy and dramatic effect to end the game. Shown is the arcane mechana's finisher, "Missile Storm".
 
-After development stopped, the project became [Open Source](/garden/open-source/index.md) - check it out [here](https://github.com/sreynoldsdesign/dice_armor/tree/master/Assets/Scripts/babble.cs)
+After development stopped, the project became [Open Source](/garden/open-source) - check it out [here](https://github.com/sreynoldsdesign/dice_armor/tree/master/Assets/Scripts/babble.cs)

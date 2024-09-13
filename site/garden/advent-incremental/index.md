@@ -15,11 +15,11 @@ const pageData = useData();
 <p>104 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a><a href="/garden/profectus/index.md">Profectus</a></details>
+<details><summary>Tags:</summary><a href="/garden/my-projects">My Projects</a><a href="/garden/profectus">Profectus</a></details>
 
 Play it [here](https://thepaperpilot.org/advent)!
 
-An [Open Source](/garden/open-source/index.md) game made in [Profectus](/garden/profectus/index.md) over the course of 1 month by myself and other devs I know in the Incremental Games community!
+An [Open Source](/garden/open-source) game made in [Profectus](/garden/profectus) over the course of 1 month by myself and other devs I know in the Incremental Games community!
 
 I had the idea of an advent-style game that unlocked new pieces of content every real-life day a couple days before December started.
 

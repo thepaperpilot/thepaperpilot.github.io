@@ -15,11 +15,11 @@ const pageData = useData();
 <p>144 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/davey-wreden/index.md">Davey Wreden</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/davey-wreden">Davey Wreden</a></details>
 
-<details><summary>Tags:</summary><a href="/garden/davey-wreden/index.md">Davey Wreden</a></details>
+<details><summary>Tags:</summary><a href="/garden/davey-wreden">Davey Wreden</a></details>
 
-My favorite video game of all time, bar none. Created by [Davey Wreden](/garden/davey-wreden/index.md)
+My favorite video game of all time, bar none. Created by [Davey Wreden](/garden/davey-wreden)
 
 The game broadly comments on the relationship between creators and consumers, and it can apply to all forms of art
 - Perhaps also an important commentary on parasocial relationships

@@ -14,6 +14,6 @@ const pageData = useData();
 <p>5 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/incremental-social/index.md">Incremental Social</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/incremental-social">Incremental Social</a></details>
 
-[Forgejo](https://forgejo.org) is an [Open Source](/garden/open-source/index.md) code repository hosting software
+[Forgejo](https://forgejo.org) is an [Open Source](/garden/open-source) code repository hosting software

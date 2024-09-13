@@ -14,6 +14,6 @@ const pageData = useData();
 <p>3 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/command-palettes/index.md">Command Palettes</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/command-palettes">Command Palettes</a><a href="/garden/my-personal-website">My Personal Website</a><a href="/garden/this-knowledge-hub">This Knowledge Hub</a></details>
 
-[Logseq](https://logseq.com) is an [Open Source](/garden/open-source/index.md) outlining software
+[Logseq](https://logseq.com) is an [Open Source](/garden/open-source) outlining software

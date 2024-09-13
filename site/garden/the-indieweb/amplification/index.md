@@ -14,10 +14,10 @@ const pageData = useData();
 <p>57 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/digital-gardens/index.md">Digital Gardens</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/social-media/index.md">Social Media</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/digital-gardens">Digital Gardens</a><a href="/garden/incremental-social">Incremental Social</a><a href="/garden/kronos">Kronos</a><a href="/garden/my-political-journey">My Political Journey</a><a href="/now/index">/now</a><a href="/garden/social-media">Social Media</a></details>
 
 Refers to reblogging (and re-hosting, sometimes) of someone else's content on your own site
 
 [The Internet is a series of webs](https://aramzs.xyz/essays/the-internet-is-a-series-of-webs/)  discusses some ideas and best practices for amplification
 
-To ensure the rehosted content actually came from the claimed author and was not tampered with, all content should be signed using [The IndieWeb/Signature Blocks](/garden/the-indieweb/signature-blocks/index.md)
+To ensure the rehosted content actually came from the claimed author and was not tampered with, all content should be signed using [The IndieWeb/Signature Blocks](/garden/the-indieweb/signature-blocks)

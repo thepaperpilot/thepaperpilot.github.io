@@ -14,8 +14,8 @@ const pageData = useData();
 <p>12 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/incremental-social/index.md">Incremental Social</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/incremental-social">Incremental Social</a></details>
 
-[Mbin](https://github.com/MbinOrg/mbin) is an [Open Source](/garden/open-source/index.md) [Fediverse](/garden/fediverse/index.md) software
+[Mbin](https://github.com/MbinOrg/mbin) is an [Open Source](/garden/open-source) [Fediverse](/garden/fediverse) software
 
 Can show both twitter-style posts and reddit-style threads

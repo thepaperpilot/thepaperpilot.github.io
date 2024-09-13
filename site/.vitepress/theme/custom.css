@@ -93,7 +93,7 @@ ul > li > ul::before {
   margin: auto;
 }
 
-.img-container img {
+.img-container > img {
   clip-path: polygon(18px 0%, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%, 0% 18px);
   height: 100%;
   object-fit: contain;
@@ -153,7 +153,8 @@ ul > li > ul::before {
   background-size: 100% 30px;
 }
 
-.vp-doc a {
+.vp-doc a,
+.old-warning a {
   color: unset;
   text-decoration: unset;
   font-weight: unset;
@@ -172,6 +173,10 @@ ul > li > ul::before {
   box-decoration-break: clone;
 }
 
+._tags a {
+  white-space: nowrap;
+}
+
 .vp-doc a:hover {
   color: unset;
   background-image: linear-gradient(
@@ -181,7 +186,7 @@ ul > li > ul::before {
     rgba(255, 225, 0, 0.3)
   );
 }
-.vp-doc a[href^="http"]:after {
+.vp-doc a[href^="http"]:not(:has(> .e-content))::after {
   content: "";
   display: inline-block;
   margin-top: -1px;
@@ -518,15 +523,35 @@ a.title {
   }
 }
 
-.VPContent .container {
+.NotFound {
+  padding: 60px 24px 90px !important;
+}
+
+@media (min-width: 768px) {
+  .NotFound {
+      padding: 90px 32px 150px !important;
+  }
+}
+
+.VPContent .container,
+.NotFound {
   background: linear-gradient(to bottom, var(--vp-sidebar-bg-color) 29px, var(--vp-c-divider) 1px);
   background-size: 100% 30px;
   line-height: 30px;
   box-shadow: 0 0 10px 1px #0003 !important;
 }
 
+.NotFound .quote {
+  margin: 42px auto !important;
+}
+
 .VPContent .content {
   padding: 0 30px !important;
+}
+
+.NotFound .divider,
+.NotFound .action {
+  display: none;
 }
 
 .content-container {
@@ -610,12 +635,8 @@ hr {
 }
 
 .group + .group {
-  /* Adapted from https://github.com/chr15m/DoodleCSS */
-  border-top-style: solid !important;
-  border-top-width: 10px !important;
-  border-image: url(/button.svg) 10 10 10 10 stretch stretch !important;
-  padding-top: 23px !important;
-  margin-top: -3px !important;
+  border-top-style: none !important;
+  margin-top: 30px !important;
 }
 
 table {
@@ -689,7 +710,7 @@ footer img {
 }
 
 .title-icon {
-  line-height: 30px
+  line-height: 30px;
 }
 
 .excerpt {
@@ -729,4 +750,318 @@ footer img {
     margin: 29px 0 0 0 !important;
     border-top: solid 1px var(--vp-c-border) !important;
     cursor: pointer !important;
+}
+
+.post .content {
+  padding: 0 !important;
+  flex-grow: 1;
+}
+
+.post .content-container {
+  border-left: none;
+  padding: 0 30px 0 0;
+  display: flex;
+}
+
+.post .content-container .h-card {
+  width: 120px;
+  margin-top: 15px;
+  margin-right: 30px;
+  flex-shrink: 0;
+}
+
+.post .content-container .avatar .u-url {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.post .content-container .u-url {
+  line-height: 30px;
+  display: block;
+  padding: 0 .4em;
+}
+
+.post .content-container .h-card a::after,
+.post .content-container .description a::after {
+  display: none !important;
+}
+
+.post .photo {
+  position: relative;
+}
+
+.post .photo img {
+  border-radius: 50%;
+}
+
+.post .action-description .photo img {
+  width: 30px;
+  height: 30px;
+}
+
+.post .content-container .photo img {
+  width: 105px;
+  height: 105px;
+  margin: 15px;
+}
+
+.post .photo .action {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--vp-c-bg);
+  display: flex;
+  justify-content: center;
+  z-index: 1;
+}
+
+.post .avatar .p-name {
+  text-align: center;
+  overflow-wrap: break-word;
+}
+
+.post:not(.content) > .h-card {
+  bottom: unset;
+  top: 0;
+}
+
+.post .syndications {
+  display: flex;
+  justify-content: center;
+}
+
+.post .syndications a:not(.u-url) {
+  width: 30px;
+  padding: 0;
+  background-image: none;
+}
+
+.post .syndications a:not(.u-url) svg {
+  stroke: black;
+  fill: rgba(255, 225, 0, 0.35);
+  stroke-width: 1;
+}
+
+.post .avatar .photo {
+  position: relative;
+}
+
+.post .avatar time {
+  line-height: 30px;
+  height: 30px;
+  display: block;
+  text-align: center;
+}
+
+.post .tags {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+}
+
+.post .tags li::before {
+  content: "#";
+}
+
+.u-url > .e-content h2 {
+  vertical-align: middle;
+  margin-top: -7px !important;
+  margin-bottom: 0 !important;
+}
+
+.u-url > .e-content img {
+  display: inline;
+  margin: 0 10px;
+  transform: translateY(7px);
+}
+
+.u-url > .e-content div:last-child {
+  margin-bottom: -30px;
+}
+
+.post .u-in-reply-to .h-card,
+.post .u-comment .h-card {
+  margin-top: 0;
+}
+
+.post .u-in-reply-to .h-card .u-photo,
+.post .u-comment .h-card .u-photo {
+  width: 60px;
+  height: 60px;
+  margin: 0 auto;
+}
+
+.u-comment + .u-comment {
+  margin-top: 30px;
+}
+
+:not(.u-comment) + .u-comment {
+  margin-top: 60px;
+  position: relative;
+}
+
+:not(.u-comment) + .u-comment::before {
+  content: "Comments";
+  position: absolute;
+  top: -45px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.u-in-reply-to + .content-container .avatar {
+  margin-bottom: 30px;
+}
+
+h2:has(+ .post) {
+  margin-bottom: 0 !important;
+}
+
+h1 ~ .post .u-comment {
+  display: none;
+}
+
+.post blockquote {
+  border-left: none;
+}
+
+.post .img-container {
+  height: unset;
+  background: white;
+  clip-path: polygon(-30px -30px, calc(100% + 30px) -30px, calc(100% + 30px) calc(100% - 75px), calc(100% - 75px) calc(100% + 30px), -30px calc(100% + 30px));
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.post .img-container a,
+.post .img-container pre {
+  white-space: break-spaces;
+  word-break: break-word;
+}
+
+.post .img-container > img {
+  clip-path: none;
+  max-height: 11lh;
+}
+
+.post h2 > img {
+  display: inline-block;
+  vertical-align: bottom;
+  margin-right: 10px;
+  width: 30px;
+  height: 30px;
+}
+
+.post .img-container:after {
+  border: 75px solid transparent;
+}
+
+.post .img-container:before {
+  visibility: hidden;
+}
+
+.post .img-container:before {  
+  top: -105px;
+  left: -105px;
+}
+
+.post .img-container:after {  
+  bottom: -105px;
+  right: -105px;
+}
+
+.img-container > h2:first-child {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+h1 ~ .post .description {
+  max-height: 180px;
+  mask-image: linear-gradient(to bottom, white 150px, transparent);
+  overflow: hidden;
+}
+
+h1 ~ .post iframe {
+  display: none;
+}
+
+.post .description {
+  word-break: break-word;
+}
+
+.post .description:not(:first-child) {
+  margin-top: 15px;
+}
+
+.post .description > div:first-child > p:first-child {
+  margin: 0 !important;
+}
+
+.post .description h2:first-child,
+.post .description pre {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  display: block;
+}
+
+.action-description > a + a {
+  margin: 0 2px;
+}
+
+.action-description > .action {
+  margin-right: 4px;
+}
+
+.yearLink {
+  margin-right: 4px;
+}
+
+p > a:has(+ a) {
+  margin-right: 10px !important;
+}
+
+.img-container > div:first-child > p:first-child {
+  margin-top: 0 !important;
+}
+
+.old-warning {
+  background: red;
+  padding: 15px;
+  margin-bottom: 30px;
+  font-size: 24px;
+  background: white;
+  border: red dashed 10px;
+  position: relative;
+  padding-left: 130px;
+  min-height: 150px;
+}
+
+.old-warning::before {
+  content: "STOP";
+  position: absolute;
+  --o: calc(50%* tan(-22.5deg));
+  clip-path: polygon(var(--o) 50%, 50% var(--o), calc(100% - var(--o)) 50%, 50% calc(100% - var(--o)));
+  width: 100px;
+  height: 100px;
+  background: red;
+  left: 15px;
+  top: 15px;
+  text-align: center;
+  color: white;
+  padding-top: 32px;
+  font-size: 32px;
+  font-family: 'Roboto Mono';
+  font-weight: 900;
+}
+
+.u-in-reply-to ~ .content-container > .e-content {
+  padding-top: 30px !important;
+}
+
+.u-in-reply-to ~ .content-container > .avatar {
+  margin-top: 30px;
+  margin-bottom: 15px;
 }

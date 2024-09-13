@@ -14,6 +14,6 @@ const pageData = useData();
 <p>2 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/incremental-social/index.md">Incremental Social</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/incremental-social">Incremental Social</a></details>
 
-[Synapse](https://github.com/element-hq/synapse) is an [Open Source](/garden/open-source/index.md) server software for the [Matrix](/garden/matrix/index.md) protocol
+[Synapse](https://github.com/element-hq/synapse) is an [Open Source](/garden/open-source) server software for the [Matrix](/garden/matrix) protocol

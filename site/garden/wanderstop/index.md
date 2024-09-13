@@ -15,6 +15,6 @@ const pageData = useData();
 <p>8 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Tags:</summary><a href="/garden/davey-wreden/index.md">Davey Wreden</a></details>
+<details><summary>Tags:</summary><a href="/garden/davey-wreden">Davey Wreden</a></details>
 
-[Wanderstop](https://www.wanderstopgame.com/) is the first game by [Ivy Road](/garden/ivy-road/index.md). It's a narrative focused cozy game
+[Wanderstop](https://www.wanderstopgame.com/) is the first game by [Ivy Road](/garden/ivy-road). It's a narrative focused cozy game
