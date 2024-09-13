@@ -1,6 +1,8 @@
 node_modules
 site/.vitepress/dist
 site/.vitepress/cache
+site/garden/
+site/now/
 site/public/garden/
 site/public/changelog/
 site/changelog/index.md
