@@ -45,10 +45,9 @@ const TAGS_MAP = {
             embed = await getEmbed(game, uploadsResponse);
         }
 
-        const d = new Date(timestamp);
         let path;
         for (timestamp--; path == null || fs.existsSync(path);) {
-            path  = `./site/article/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+            path  = `./site/article/${getTimestampPath(++timestamp)}`;
         }
         fs.mkdirSync(path, { recursive: true });
         const fd = fs.openSync(path + "/index.md", "w+");

@@ -214,10 +214,9 @@ async function process(auth) {
             continue;
         }
 
-        const d = new Date(timestamp);
         let path;
         for (timestamp--; path == null || fs.existsSync(path);) {
-            path  = `./site/reply/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+            path  = `./site/reply/${getTimestampPath(++timestamp)}`;
         }
         fs.mkdirSync(path, { recursive: true });
         const fd = fs.openSync(path + "/index.md", "w+");
@@ -355,10 +354,9 @@ tags: [${encodeString(tag, 2)}]
     </div>
 </div>`;
 
-        const d = new Date(timestamp);
         let path;
         for (timestamp--; path == null || fs.existsSync(path);) {
-            path  = `./site/bookmark/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+            path  = `./site/bookmark/${getTimestampPath(++timestamp)}`;
         }
         fs.mkdirSync(path, { recursive: true });
         const fd = fs.openSync(path + "/index.md", "w+");
@@ -695,10 +693,9 @@ async function likeVideo({ videoId, auth, kind }) {
     </div>
 </div>`;
 
-    const d = new Date(timestamp);
     let path;
     for (timestamp--; path == null || fs.existsSync(path);) {
-        path  = `./site/${kind}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+        path  = `./site/${kind}/${getTimestampPath(++timestamp)}`;
     }
     fs.mkdirSync(path, { recursive: true });
     const fd = fs.openSync(path + "/index.md", "w+");

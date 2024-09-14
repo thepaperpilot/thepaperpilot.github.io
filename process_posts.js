@@ -53,10 +53,9 @@ const feed = new Feed({
             let frontmatter = data.match(/---\n([\S\s]*?\n)---/m)[1];
             const { kind, published } = YAML.parse(frontmatter);
             let timestamp = parseInt(published);
-            const d = new Date(timestamp);
             let path;
             for (timestamp--; path == null || fs.existsSync(path);) {
-                path  = `./site/${kind}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+                path  = `./site/${kind}/${getTimestampPath(++timestamp)}`;
             }
             fs.mkdirSync(path, { recursive: true });
             fs.copyFileSync(filePath, path + "/index.md");
@@ -180,8 +179,7 @@ function processPost(dir, file, resolve) {
 
         const content = data.match(/---\n[\S\s]*?\n---\n([\S\s]*)/m)[1];
         
-        const d = new Date(timestamp);
-        const link = `https://www.thepaperpilot.org/${kind}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${timestamp}`;
+        const link = `https://www.thepaperpilot.org/${kind}/${getTimestampPath(timestamp)}`;
         feed.addItem({
             title: title ?? kind,
             id: link,
@@ -214,8 +212,7 @@ function insertByDate(posts, kind, timestamp) {
 }
 
 function getContentFromTimestamp({ kind, timestamp }) {
-    const d = new Date(timestamp);
-    const filePath = `./site/${kind}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${timestamp}/index.md`;
+    const filePath = `./site/${kind}/${getTimestampPath(timestamp)}/index.md`;
     const data = fs.readFileSync(filePath).toString();
     return data.match(/---\n[\S\s]*?\n---\n([\S\s]*)/m)[1]
         .replace(/<iframe.*<\/iframe>/, '')

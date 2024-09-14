@@ -10,7 +10,7 @@ const KIND_ACTIONS_MAP = {
     bookmark: "❤️",
     favorite: "⭐",
     reply: "💬",
-    "": "📝"
+    [undefined]: "📝"
 }
 
 const KIND_VERBS_MAP = {
@@ -42,7 +42,7 @@ function getActionDescription({ kind, timestamp }) {
     ` on <time class="dt-published" datetime="${tsString}" title="${tsString}">
         ${ts.toLocaleDateString()}
     </time>` : '';
-    const path = `/posts/${ts.getFullYear()}/${ts.getMonth()}/${ts.getDate()}/${timestamp}`;
+    const path = `/${kind}/${getTimestampPath(timestamp)}`;
     return `<div class="action-description">
     <span class="action">${KIND_ACTIONS_MAP[kind]}</span>
     <a class="p-name u-url h-card" href="/about">The Paper Pilot</a>
@@ -239,6 +239,11 @@ function linkify(str) {
         '<a href="$&">$&</a>');
 }
 
+function getTimestampPath(timestamp) {
+    const d = new Date(timestamp);
+    return `${d.getFullYear()}/${d.getMonth() + 1}/${d.getDate() + 1}/${timestamp}`;
+}
+
 function monthString(month) {
     return ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"][month];
 }
@@ -275,5 +280,6 @@ module.exports = {
     getArchivePreview,
     getMediaUrl,
     linkify,
-    sanitize
+    sanitize,
+    getTimestampPath
  };

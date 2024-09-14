@@ -104,10 +104,9 @@ let createdPosts = 0;
 
         const tag = slugify(aliases_map[subreddit.toLowerCase()] ?? subreddit);
 
-        const d = new Date(timestamp);
         let path;
         for (timestamp--; path == null || fs.existsSync(path);) {
-            path  = `./site/${body ? 'article' : 'bookmark'}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+            path  = `./site/${body ? 'article' : 'bookmark'}/${getTimestampPath(++timestamp)}`;
         }
         fs.mkdirSync(path, { recursive: true });
         const fd = fs.openSync(path + "/index.md", "w+");
@@ -225,10 +224,9 @@ tags: [${encodeString(tag, 2)}]
         })) ?? []);
 
         const tag = slugify(aliases_map[subreddit.toLowerCase()] ?? subreddit);
-        const d = new Date(timestamp);
         let path;
         for (timestamp--; path == null || fs.existsSync(path);) {
-            path  = `./site/reply/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+            path  = `./site/reply/${getTimestampPath(++timestamp)}`;
         }
         fs.mkdirSync(path, { recursive: true });
         const fd = fs.openSync(path + "/index.md", "w+");
@@ -393,10 +391,9 @@ async function like_post(id, permalink, action = "auto") {
     const author = extractUsername(await submission.author);
     const subreddit = await extractSubreddit(submission.subreddit);
 
-    const d = new Date(timestamp);
     let path;
     for (timestamp--; path == null || fs.existsSync(path);) {
-        path  = `./site/${action}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+        path  = `./site/${action}/${getTimestampPath(++timestamp)}`;
     }
     fs.mkdirSync(path, { recursive: true });
     const fd = fs.openSync(path + "/index.md", "w+");
@@ -451,10 +448,9 @@ async function like_comment(id, permalink, action = "repost") {
     const author = extractUsername(await comment.author);
     const subreddit = await extractSubreddit(submission.subreddit);
 
-    const d = new Date(timestamp);
     let path;
     for (timestamp--; path == null || fs.existsSync(path);) {
-        path  = `./site/${action}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+        path  = `./site/${action}/${getTimestampPath(++timestamp)}`;
     }
     fs.mkdirSync(path, { recursive: true });
     const fd = fs.openSync(path + "/index.md", "w+");
