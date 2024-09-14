@@ -4,6 +4,24 @@ const sanitizeHtml = require('sanitize-html');
 
 const { getLinkPreview } = require("link-preview-js");
 
+const KIND_ACTIONS_MAP = {
+    article: "📝",
+    repost: "🔁",
+    bookmark: "❤️",
+    favorite: "⭐",
+    reply: "💬",
+    "": "📝"
+}
+
+const KIND_VERBS_MAP = {
+    article: "wrote",
+    repost: "shared",
+    bookmark: "bookmarked",
+    favorite: "favorited",
+    reply: "replied to",
+    "": "wrote"
+}
+
 function walk(dir, cb) {
     const list = fs.readdirSync(dir);
     return Promise.all(list.map(file => {
@@ -17,22 +35,23 @@ function walk(dir, cb) {
     }));
 }
 
-function getActionDescription({ action, verb, timestamp }) {
+function getActionDescription({ kind, timestamp }) {
     const ts = new Date(timestamp);
     const tsString = ts.toLocaleString();
     const timeDisplay = timestamp ?
     ` on <time class="dt-published" datetime="${tsString}" title="${tsString}">
         ${ts.toLocaleDateString()}
     </time>` : '';
+    const path = `/posts/${ts.getFullYear()}/${ts.getMonth()}/${ts.getDate()}/${timestamp}`;
     return `<div class="action-description">
-    ${action ? `<span class="action">${action}</span>` : ""}
+    <span class="action">${KIND_ACTIONS_MAP[kind]}</span>
     <a class="p-name u-url h-card" href="/about">The Paper Pilot</a>
-    <a class="u-url" href="/posts/${timestamp}">${verb}</a>
+    <a class="u-url" href="${path}">${KIND_VERBS_MAP[kind]}</a>
     <span>this post${timeDisplay}:</span>
 </div>`;
 }
 
-async function getAvatar({ photo, name, url, syndications, timestamp, tags, action, linkClasses }) {
+async function getAvatar({ photo, name, url, syndications, timestamp, tags, kind, linkClasses }) {
     url ??= "https://www.thepaperpilot.org/about/";
     name ??= "The Paper Pilot";
     photo ??= "https://www.thepaperpilot.org/me.jpg";
@@ -40,7 +59,7 @@ async function getAvatar({ photo, name, url, syndications, timestamp, tags, acti
     <a class="u-url ${linkClasses ?? ''}" href="${url}">
         <div class="photo">
             <img class="u-photo" src="${await getMediaUrl(photo)}" />
-            ${action ? `<div class="action">${action}</div>` : ""}
+            <span class="action">${KIND_ACTIONS_MAP[kind]}</span>
         </div>
         <div class="p-name">${name}</div>
     </a>

@@ -15,7 +15,7 @@
     "logseq-export:win32": "logseq-export/logseq-export.exe --logseqFolder ./Garden --outputFolder ./garden-output",
     "logseq-export:linux": "chmod +x logseq-export/logseq-export && logseq-export/logseq-export --logseqFolder ./Garden --outputFolder ./garden-output",
     "add-like": "node add_like.js",
-    "dev:all": "rm -r ./site/posts && node process_reddit.js && node process_youtube.js && node process_itch.js && node process_posts.js && yarn run dev"
+    "dev:all": "node clean.js && node process_reddit.js && node process_youtube.js && node process_itch.js && node process_posts.js && yarn run dev"
   },
   "repository": "git+https://github.com/thepaperpilot/thepaperpilot.github.io.git",
   "author": "thepaperpilot",

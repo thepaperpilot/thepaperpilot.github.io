@@ -13,9 +13,9 @@ prev: false
 ---
 <div class="post">
     <div class="action-description">
-        <span class="action">🔁</span>
+        <span class="action">❤️</span>
         <a class="p-name u-url h-card" href="/about">The Paper Pilot</a>
-        <a class="u-url" href="/posts/1721393946619">shared</a>
+        <a class="u-url" href="/posts/1721393946619">bookmarked</a>
         <span>this post on <time class="dt-published" datetime="7/19/2024, 7:59:06 AM" title="7/19/2024, 7:59:06 AM">
             7/19/2024
         </time>:</span>
@@ -25,7 +25,7 @@ prev: false
             <a class="u-url " href="https://www.thepaperpilot.org/about/">
                 <div class="photo">
                     <img class="u-photo" src="https://www.thepaperpilot.org/me.jpg" />
-                    <div class="action">🔁</div>
+                    <div class="action">❤️</div>
                 </div>
                 <div class="p-name">The Paper Pilot</div>
             </a>
@@ -36,7 +36,7 @@ prev: false
                 <li>videos</li>
             </ul>
         </div>
-        <div class="content e-content h-cite u-repost-of">
+        <div class="content e-content h-cite u-bookmark-of">
             <div class="img-container">
                 <img src="/media/2135914855.png" />
                 <div class="description">

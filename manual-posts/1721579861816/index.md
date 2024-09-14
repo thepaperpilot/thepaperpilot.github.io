@@ -7,9 +7,9 @@ prev: false
 ---
 <div class="post">
     <div class="action-description">
-        <span class="action">🔁</span>
+        <span class="action">❤️</span>
         <a class="p-name u-url h-card" href="/about">The Paper Pilot</a>
-        <a class="u-url" href="/posts/1721579861816">shared</a>
+        <a class="u-url" href="/posts/1721579861816">bookmarked</a>
         <span>this post on <time class="dt-published" datetime="7/21/2024, 11:37:41 AM" title="7/21/2024, 11:37:41 AM">
             7/21/2024
         </time>:</span>
@@ -19,7 +19,7 @@ prev: false
             <a class="u-url " href="https://www.thepaperpilot.org/about/">
                 <div class="photo">
                     <img class="u-photo" src="https://www.thepaperpilot.org/me.jpg" />
-                    <div class="action">🔁</div>
+                    <div class="action">❤️</div>
                 </div>
                 <div class="p-name">The Paper Pilot</div>
             </a>
@@ -30,7 +30,7 @@ prev: false
                 <li>games</li><li>philosophy</li>
             </ul>
         </div>
-        <div class="content e-content h-cite u-repost-of">
+        <div class="content e-content h-cite u-bookmark-of">
             <div class="img-container">
                 <img src="/media/1229267454.png" />
                 <div class="description">

@@ -37,9 +37,6 @@ let skippedPosts = 0;
 let createdPosts = 0;
 
 (async () => {
-    if (!fs.existsSync("./site/posts")) {
-        fs.mkdirSync("./site/posts");
-    }
     if (!fs.existsSync("./cache")) {
         fs.mkdirSync("./cache");
     }
@@ -83,7 +80,7 @@ let createdPosts = 0;
             continue;
         }
 
-        const replies = submission.comments.map(comment => ({
+        const replies = submission.selftext_html ? submission.comments.map(comment => ({
             content: processContent(comment.body_html),
             published: comment.created * 1000,
             url: `https://reddit.com${comment.permalink}`,
@@ -92,7 +89,7 @@ let createdPosts = 0;
                 url: `https://reddit.com/u/${extractUsername(comment.author)}`,
                 photo: getRedditAvatar(comment.author)
             }
-        })) ?? [];
+        })) ?? [] : [];
 
         let content;
         if (submission.selftext_html) {
@@ -105,17 +102,17 @@ let createdPosts = 0;
             content = await generateLinkPreview(processedUrl, timestamp, await getSubmissionFallback(submission), title);
         }
 
-        while (fs.existsSync("./site/posts/" + timestamp)) {
-            timestamp++;
-            continue;
-        }
-        fs.mkdirSync("./site/posts/" + timestamp);
-
         const tag = slugify(aliases_map[subreddit.toLowerCase()] ?? subreddit);
 
-        const fd = fs.openSync("./site/posts/" + timestamp + "/index.md", "w+");
+        const d = new Date(timestamp);
+        let path;
+        for (timestamp--; path == null || fs.existsSync(path);) {
+            path  = `./site/${body ? 'article' : 'bookmark'}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+        }
+        fs.mkdirSync(path, { recursive: true });
+        const fd = fs.openSync(path + "/index.md", "w+");
         fs.writeSync(fd, preparePost(`---
-kind: ${body ? 'article' : 'repost'}
+kind: ${body ? 'article' : 'bookmark'}
 title: ${encodeString(title, 2)}
 published: ${timestamp}
 next: false
@@ -123,15 +120,15 @@ prev: false
 tags: [${encodeString(tag, 2)}]
 ---
 <div class="post">
-    ${getActionDescription({ timestamp, action: body ? "📝" : "🔁", verb: body ? "wrote" : "shared" })}
+    ${getActionDescription({ timestamp, kind: body ? "article" : "bookmark" })}
     <div class="content-container">
         ${await getAvatar({
             timestamp,
             tags: [tag],
             syndications: [{ type: REDDIT_SVG, url: permalink }],
-            action: body ? '📝' : '🔁'
+            kind: body ? "article" : "bookmark"
         })}
-        <div class="content e-content ${body ? '' : 'h-cite u-repost-of'}">${content}</div>
+        <div class="content e-content ${body ? '' : 'h-cite u-bookmark-of'}">${content}</div>
     </div>
     ${(await Promise.all(replies.filter(c => c.author.name !== '[deleted]').map(async ({ content, published, url, author }) => `
     <div class="content-container u-comment h-cite">
@@ -227,11 +224,14 @@ tags: [${encodeString(tag, 2)}]
             }
         })) ?? []);
 
-        if (!fs.existsSync("./site/posts/" + timestamp)) {
-            fs.mkdirSync("./site/posts/" + timestamp);
-        }
         const tag = slugify(aliases_map[subreddit.toLowerCase()] ?? subreddit);
-        const fd = fs.openSync("./site/posts/" + timestamp + "/index.md", "w+");
+        const d = new Date(timestamp);
+        let path;
+        for (timestamp--; path == null || fs.existsSync(path);) {
+            path  = `./site/reply/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+        }
+        fs.mkdirSync(path, { recursive: true });
+        const fd = fs.openSync(path + "/index.md", "w+");
         fs.writeSync(fd, preparePost(`---
 kind: reply
 title: I wrote a comment on r/${subreddit}
@@ -241,7 +241,7 @@ prev: false
 tags: [${encodeString(tag, 2)}]
 ---
 <div class="post">
-    ${getActionDescription({ timestamp, action: "💬", verb: "replied to" })}
+    ${getActionDescription({ timestamp, kind: "reply" })}
     <div class="content-container u-in-reply-to">
         ${await getAvatar({
             ...parentInfo.author,
@@ -254,7 +254,8 @@ tags: [${encodeString(tag, 2)}]
     <div class="content-container">
         ${await getAvatar({
             timestamp,
-            syndications: [{ type: REDDIT_SVG, url: permalink }]
+            syndications: [{ type: REDDIT_SVG, url: permalink }],
+            kind: "reply"
         })}
         <div class="content e-content">${content}</div>
     </div>
@@ -358,7 +359,7 @@ async function generateLinkPreview(url, timestamp, fallback, title) {
     return linkPreview ? processLinkPreview(linkPreview, title) : undefined;
 }
 
-async function like_post(id, permalink, action = "like") {
+async function like_post(id, permalink, action = "auto") {
     const submission = await getSubmission(id);
     if (isError(submission)) {
         skippedPosts++;
@@ -368,9 +369,15 @@ async function like_post(id, permalink, action = "like") {
     let content;
     if (await submission.selftext_html) {
         content = processContent(await submission.selftext_html, await submission.title);
+        if (action === "auto") {
+            action = "repost";
+        }
     } else if (await submission.url) {
         content = await generateLinkPreview(await submission.url, await submission.created,
             await getSubmissionFallback(submission), await submission.title);
+        if (action === "auto") {
+            action = "bookmark";
+        }
     } else {
         console.warn("Unsure how to handle like to this submission", submission);
     }
@@ -380,16 +387,19 @@ async function like_post(id, permalink, action = "like") {
     }
 
     let timestamp = await submission.created_utc * 1000;
-    while (fs.existsSync("./site/posts/" + timestamp)) {
+    while (fs.existsSync("./site/" + action + "/" + timestamp)) {
         timestamp++;
     }
     const author = extractUsername(await submission.author);
     const subreddit = await extractSubreddit(submission.subreddit);
 
-    if (!fs.existsSync("./site/posts/" + timestamp)) {
-        fs.mkdirSync("./site/posts/" + timestamp);
+    const d = new Date(timestamp);
+    let path;
+    for (timestamp--; path == null || fs.existsSync(path);) {
+        path  = `./site/${action}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
     }
-    const fd = fs.openSync("./site/posts/" + timestamp + "/index.md", "w+");
+    fs.mkdirSync(path, { recursive: true });
+    const fd = fs.openSync(path + "/index.md", "w+");
     fs.writeSync(fd, preparePost(`---
 kind: ${action}
 title: ${encodeString(submission.title, 2)}
@@ -399,8 +409,8 @@ prev: false
 tags: [${encodeString(subreddit, 2)}]
 ---
 <div class="post">
-    ${getActionDescription({ timestamp, action: action === "favorite" ? "⭐" : "❤️", verb: action === "favorite" ? "favorited" : "liked" })}
-    <div class="content-container h-cite u-like-of">
+    ${getActionDescription({ timestamp, kind: action })}
+    <div class="content-container h-cite u-${action === 'favorite' ? 'like' : 'bookmark'}-of">
         ${await getAvatar({
             photo: getRedditAvatar(author),
             name: author,
@@ -416,11 +426,11 @@ tags: [${encodeString(subreddit, 2)}]
     fs.closeSync(fd);
     createdPosts++;
     if (createdPosts % 100 === 0) {
-        console.log(`Created ${createdPosts} reddit activity posts (currently ${action.slice(0, -1)}ing submissions)`);
+        console.log(`Created ${createdPosts} reddit activity posts (currently ${action}ing submissions)`);
     }
 }
 
-async function like_comment(id, permalink, action = "like") {
+async function like_comment(id, permalink, action = "repost") {
     const comment = await getComment(id);
     if (isError(comment)) {
         skippedPosts++;
@@ -435,27 +445,30 @@ async function like_comment(id, permalink, action = "like") {
 
     const content = processContent(await comment.body_html);
     let timestamp = await comment.created_utc * 1000;
-    while (fs.existsSync("./site/posts/" + timestamp)) {
+    while (fs.existsSync("./site/" + action + "/" + timestamp)) {
         timestamp++;
     }
     const author = extractUsername(await comment.author);
     const subreddit = await extractSubreddit(submission.subreddit);
 
-    if (!fs.existsSync("./site/posts/" + timestamp)) {
-        fs.mkdirSync("./site/posts/" + timestamp);
+    const d = new Date(timestamp);
+    let path;
+    for (timestamp--; path == null || fs.existsSync(path);) {
+        path  = `./site/${action}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
     }
-    const fd = fs.openSync("./site/posts/" + timestamp + "/index.md", "w+");
+    fs.mkdirSync(path, { recursive: true });
+    const fd = fs.openSync(path + "/index.md", "w+");
     fs.writeSync(fd, preparePost(`---
 kind: ${action}
-title: I liked a comment on r/${subreddit}
+title: I ${action === "favorite" ? "favorited" : "liked" } a comment on r/${subreddit}
 published: ${timestamp}
 next: false
 prev: false
 tags: [${encodeString(subreddit, 2)}]
 ---
 <div class="post">
-    ${getActionDescription({ timestamp, action: action === "favorite" ? "⭐" : "❤️", verb: action === "favorite" ? "favorited" : "liked" })}
-    <div class="content-container h-cite u-like-of">
+    ${getActionDescription({ timestamp, kind: action === "favorite" ? "favorite" : "repost" })}
+    <div class="content-container h-cite u-${action === 'favorite' ? 'like' : 'repost'}-of">
         ${await getAvatar({
             photo: getRedditAvatar(author),
             name: author,
@@ -471,7 +484,7 @@ tags: [${encodeString(subreddit, 2)}]
     fs.closeSync(fd);
     createdPosts++;
     if (createdPosts % 100 === 0) {
-        console.log(`Created ${createdPosts} reddit activity posts (currently ${action.slice(0, -1)}ing comments)`);
+        console.log(`Created ${createdPosts} reddit activity posts (currently ${action}ing comments)`);
     }
 }
 

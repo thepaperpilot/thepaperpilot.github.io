@@ -107,7 +107,6 @@ export default {
           if (env.relativePath.match(/tag\/.*\/[^1]/)) return '';
           const html = md.render(src, env);
           if (env.frontmatter?.search === false) return '';
-          console.log(env.relativePath)
           return html;
         }
       }

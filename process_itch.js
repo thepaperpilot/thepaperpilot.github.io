@@ -19,10 +19,6 @@ const TAGS_MAP = {
 };
 
 (async () => {
-    if (!fs.existsSync("./site/posts")) {
-        fs.mkdirSync("./site/posts");
-    }
-
     const url = `https://itch.io/api/1/${KEY}/my-games`;
     const resp = await fetch(url).then(r => r.text());
     let response;
@@ -40,7 +36,7 @@ const TAGS_MAP = {
     console.log(`Checking ${response.games.length} games`);
     for await (const game of response.games) {
         if (!game.published) continue;
-        const timestamp = new Date(game.published_at).getTime();
+        let timestamp = new Date(game.published_at).getTime();
         const tag = TAGS_MAP[game.id] ?? "gaming";
 
         let embed = '';
@@ -49,8 +45,13 @@ const TAGS_MAP = {
             embed = await getEmbed(game, uploadsResponse);
         }
 
-        fs.mkdirSync("./site/posts/" + timestamp, { recursive: true });
-        const fd = fs.openSync("./site/posts/" + timestamp + "/index.md", "w+");
+        const d = new Date(timestamp);
+        let path;
+        for (timestamp--; path == null || fs.existsSync(path);) {
+            path  = `./site/article/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+        }
+        fs.mkdirSync(path, { recursive: true });
+        const fd = fs.openSync(path + "/index.md", "w+");
         fs.writeSync(fd, preparePost(`---
 kind: article
 title: ${encodeString(game.title)}
@@ -60,13 +61,13 @@ prev: false
 tags: [${encodeString(tag, 2)}]
 ---
 <div class="post">
-    ${getActionDescription({ timestamp, action: "🎮", verb: "released" })}
+    ${getActionDescription({ timestamp, kind: "article" })}
     <div class="content-container">
         ${await getAvatar({
             timestamp,
             tags: [tag],
             syndications: [{ type: ITCH_SVG, url: game.url }],
-            action: '🎮'
+            kind: 'article'
         })}
         <div class="content e-content">
             <div class="img-container">
@@ -82,7 +83,7 @@ tags: [${encodeString(tag, 2)}]
 </div>
 `));
         fs.closeSync(fd);
-        console.log(`Created post for "${game.title}": /posts/${timestamp}/index.md`);
+        console.log(`Created post for "${game.title}": ${path}/index.md`);
     }
 })();
 

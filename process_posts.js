@@ -9,96 +9,71 @@ const { walk, preparePost } = require("./utils");
 
 const numFormat = Intl.NumberFormat("en-US");
 
+let processed = 0;
+// We can't load all posts into memory, so focus on organizing them first (just storing timestamps)
+const mostRecentPosts = [];
+const postsByDate = {};
+const postsByTag = {};
+const postsByType = {
+    article: [],
+    repost: [],
+    bookmark: [],
+    favorite: [],
+    reply: []
+};
+
+const feed = new Feed({
+    title: "The Paper Pilot's Posts",
+    description: "A feed of my activity across the internet - posts, comments, replies, and reactions!",
+    id: "https://www.thepaperpilot.org/posts/",
+    link: "https://www.thepaperpilot.org/posts/",
+    language: "en", // optional, used only in RSS 2.0, possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
+    // image: "http://example.com/image.png",
+    // favicon: "http://example.com/favicon.ico",
+    copyright: `All rights reserved ${new Date().getFullYear()}, The Paper Pilot`,
+    // updated: new Date(2013, 6, 14), // optional, default = today
+    // generator: "awesome", // optional, default = 'Feed for Node.js'
+    feedLinks: {
+        rss: "https://www.thepaperpilot.org/posts/rss",
+        json: "https://www.thepaperpilot.org/posts/json",
+        atom: "https://www.thepaperpilot.org/posts/atom"
+    },
+    author: {
+        name: "The Paper Pilot",
+        email: "thepaperpilot@incremental.social",
+        link: "https://www.thepaperpilot.org/"
+    }
+});
+
 (async () => {
-    // We can't load all posts into memory, so focus on organizing them first (just storing timestamps)
-    const mostRecentPosts = [];
-    const postsByDate = {};
-    const postsByTag = {};
-    const postsByType = {
-        article: [],
-        repost: [],
-        like: [],
-        favorite: [],
-        reply: []
-    };
-
-    const feed = new Feed({
-        title: "The Paper Pilot's Posts",
-        description: "A feed of my activity across the internet - posts, comments, replies, and reactions!",
-        id: "https://www.thepaperpilot.org/posts/",
-        link: "https://www.thepaperpilot.org/posts/",
-        language: "en", // optional, used only in RSS 2.0, possible values: http://www.w3.org/TR/REC-html40/struct/dirlang.html#langcodes
-        // image: "http://example.com/image.png",
-        // favicon: "http://example.com/favicon.ico",
-        copyright: `All rights reserved ${new Date().getFullYear()}, The Paper Pilot`,
-        // updated: new Date(2013, 6, 14), // optional, default = today
-        // generator: "awesome", // optional, default = 'Feed for Node.js'
-        feedLinks: {
-            rss: "https://www.thepaperpilot.org/posts/rss",
-            json: "https://www.thepaperpilot.org/posts/json",
-            atom: "https://www.thepaperpilot.org/posts/atom"
-        },
-        author: {
-            name: "The Paper Pilot",
-            email: "thepaperpilot@incremental.social",
-            link: "https://www.thepaperpilot.org/"
-        }
-    });
-
     fs.readdirSync("./manual-posts").forEach(filename => {
-        if (!fs.existsSync("./site/posts/" + filename)) {
-            fs.mkdirSync("./site/posts/" + filename);
-        }
-        fs.copyFileSync("./manual-posts/" + filename + "/index.md", "./site/posts/" + filename + "/index.md")
-    });
-
-    let processed = 0;
-    const totalPosts = fs.readdirSync("./site/posts").length;
-    process.stdout.write(`Processed 0/${totalPosts} posts...`);
-    await walk("./site/posts", (dir, file, resolve) => {
-        const filePath = path.resolve(dir, file);
+        const filePath = path.resolve("./manual-posts", filename, "index.md");
         const data = fs.readFileSync(filePath).toString();
-        
         try {        
             let frontmatter = data.match(/---\n([\S\s]*?\n)---/m)[1];
-            // frontmatter = frontmatter.replaceAll(/\\([a-zA-Z<>\.])/g, '\\\\$1');
-            const { kind, published, tags, title } = YAML.parse(frontmatter);
-            const timestamp = parseInt(published);
-
-            mostRecentPosts.push(timestamp);
-            mostRecentPosts.sort((a, b) => b - a);
-            mostRecentPosts.splice(9, 10);
-
-            insertByDate(postsByDate, timestamp);
-            insertByDate(postsByType[kind], timestamp);
-            tags?.forEach(tag => {
-                postsByTag[tag] = postsByTag[tag] ?? [];
-                insertByDate(postsByTag[tag], timestamp);
-            })
-
-            const content = data.match(/---\n[\S\s]*?\n---\n([\S\s]*)/m)[1];
-            
-            feed.addItem({
-                title: title ?? kind,
-                id: `https://www.thepaperpilot.org/posts/${timestamp}`,
-                link: `https://www.thepaperpilot.org/posts/${timestamp}`,
-                content,
-                date: new Date(published),
-                category: { name: kind }
-            });
-
-            process.stdout.clearLine(0);
-            process.stdout.cursorTo(0);
-            process.stdout.write(`Processed ${++processed}/${totalPosts} posts...`);
-
-            resolve();
+            const { kind, published } = YAML.parse(frontmatter);
+            let timestamp = parseInt(published);
+            const d = new Date(timestamp);
+            let path;
+            for (timestamp--; path == null || fs.existsSync(path);) {
+                path  = `./site/${kind}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+            }
+            fs.mkdirSync(path, { recursive: true });
+            fs.copyFileSync(filePath, path + "/index.md");
         } catch (e) {
             console.log("\nFailed to process post", filePath, e);
         }
     });
+
+    process.stdout.write(`Processed 0 posts...`);
+    await walk("./site/article", processPost);
+    await walk("./site/repost", processPost);
+    await walk("./site/bookmark", processPost);
+    await walk("./site/favorite", processPost);
+    await walk("./site/reply", processPost);
     process.stdout.clearLine(0);
     process.stdout.cursorTo(0);
-    process.stdout.write(`Processed ${totalPosts}/${totalPosts} posts... Processed all posts!\n`);
+    process.stdout.write(`Processed all ${processed} posts!\n`);
 
     console.log("Writing recent posts", mostRecentPosts);
     fd = fs.openSync("site/recent-posts.data.ts", "w+");
@@ -182,17 +157,65 @@ There are ${numFormat.format(totalPosts)} [${title.toLowerCase()}](/type/${kind}
     fs.closeSync(fd);
 })();
 
-function insertByDate(posts, timestamp) {
+function processPost(dir, file, resolve) {
+    const filePath = path.resolve(dir, file);
+    const data = fs.readFileSync(filePath).toString();
+    
+    try {        
+        let frontmatter = data.match(/---\n([\S\s]*?\n)---/m)[1];
+        // frontmatter = frontmatter.replaceAll(/\\([a-zA-Z<>\.])/g, '\\\\$1');
+        const { kind, published, tags, title } = YAML.parse(frontmatter);
+        const timestamp = parseInt(published);
+
+        mostRecentPosts.push({ kind, timestamp });
+        mostRecentPosts.sort((a, b) => b.timestamp - a.timestamp);
+        mostRecentPosts.splice(9, 10);
+
+        insertByDate(postsByDate, kind, timestamp);
+        insertByDate(postsByType[kind], kind, timestamp);
+        tags?.forEach(tag => {
+            postsByTag[tag] = postsByTag[tag] ?? [];
+            insertByDate(postsByTag[tag], kind, timestamp);
+        })
+
+        const content = data.match(/---\n[\S\s]*?\n---\n([\S\s]*)/m)[1];
+        
+        const d = new Date(timestamp);
+        const link = `https://www.thepaperpilot.org/${kind}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${timestamp}`;
+        feed.addItem({
+            title: title ?? kind,
+            id: link,
+            link,
+            content,
+            date: new Date(published),
+            category: { name: kind }
+        });
+
+        process.stdout.clearLine(0);
+        process.stdout.cursorTo(0);
+        processed++;
+        if (processed % 100 === 0) {
+            console.log(`Processed ${processed} posts...`);
+        }
+
+        resolve();
+    } catch (e) {
+        console.log("\nFailed to process post", filePath, e);
+    }
+}
+
+function insertByDate(posts, kind, timestamp) {
     const d = new Date(timestamp);
     const year = d.getFullYear();
     const month = d.getMonth();
     posts[year] = posts[year] ?? {};
     posts[year][month] = posts[year][month] ?? [];
-    posts[year][month].push(timestamp);
+    posts[year][month].push({ timestamp, kind });
 }
 
-function getContentFromTimestamp(timestamp) {
-    const filePath = `./site/posts/${timestamp}/index.md`;
+function getContentFromTimestamp({ kind, timestamp }) {
+    const d = new Date(timestamp);
+    const filePath = `./site/${kind}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${timestamp}/index.md`;
     const data = fs.readFileSync(filePath).toString();
     return data.match(/---\n[\S\s]*?\n---\n([\S\s]*)/m)[1]
         .replace(/<iframe.*<\/iframe>/, '')

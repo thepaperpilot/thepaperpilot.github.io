@@ -143,10 +143,6 @@ function storeToken(token) {
 async function process(auth) {
     service = google.youtube('v3');
 
-    if (!fs.existsSync("./site/posts")) {
-        fs.mkdirSync("./site/posts");
-    }
-
     if (fs.existsSync("./cache/videos-unavailable.json")) {
         unavailable_urls = new Set(JSON.parse(fs.readFileSync("./cache/videos-unavailable.json").toString()));
         console.log(`Loaded ${unavailable_urls.size} unavailable URLs`);
@@ -162,11 +158,6 @@ async function process(auth) {
         const comment = JSON.parse(commentJson);
 
         let timestamp = new Date(timestampDate).getTime();
-        while (fs.existsSync("./site/posts/" + timestamp)) {
-            timestamp++;
-            continue;
-        }
-        fs.mkdirSync("./site/posts/" + timestamp);
 
         const permalink = `https://www.youtube.com/watch?v=${videoId}&lc=${commentId}`;
 
@@ -223,7 +214,13 @@ async function process(auth) {
             continue;
         }
 
-        const fd = fs.openSync("./site/posts/" + timestamp + "/index.md", "w+");
+        const d = new Date(timestamp);
+        let path;
+        for (timestamp--; path == null || fs.existsSync(path);) {
+            path  = `./site/reply/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+        }
+        fs.mkdirSync(path, { recursive: true });
+        const fd = fs.openSync(path + "/index.md", "w+");
         fs.writeSync(fd, preparePost(`---
 kind: reply
 title: I wrote a comment on a video by ${video.snippet.channelTitle ?? ""}
@@ -233,7 +230,7 @@ prev: false
 tags: [${encodeString(tag, 2)}]
 ---
 <div class="post">
-    ${getActionDescription({ timestamp, action: "💬", verb: "replied to" })}
+    ${getActionDescription({ timestamp, kind: "reply" })}
     <div class="content-container u-in-reply-to">
         ${await getAvatar({
             ...parentInfo.author,
@@ -329,11 +326,6 @@ tags: [${encodeString(tag, 2)}]
             continue;
         }
         let timestamp = new Date(parseInt(lastModified.slice(0, -3))).getTime();
-        while (fs.existsSync("./site/posts/" + timestamp)) {
-            timestamp++;
-            continue;
-        }
-        fs.mkdirSync("./site/posts/" + timestamp);
         
         const channel = await getChannel(song.artist.artistId, auth);
         if (channel.error) {
@@ -363,9 +355,15 @@ tags: [${encodeString(tag, 2)}]
     </div>
 </div>`;
 
-        const fd = fs.openSync("./site/posts/" + timestamp + "/index.md", "w+");
+        const d = new Date(timestamp);
+        let path;
+        for (timestamp--; path == null || fs.existsSync(path);) {
+            path  = `./site/bookmark/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+        }
+        fs.mkdirSync(path, { recursive: true });
+        const fd = fs.openSync(path + "/index.md", "w+");
         fs.writeSync(fd, preparePost(`---
-kind: like
+kind: bookmark
 title: ${encodeString(title, 2)}
 published: ${timestamp}
 next: false
@@ -373,7 +371,7 @@ prev: false
 tags: ["music"]
 ---
 <div class="post">
-    ${getActionDescription({ timestamp, action: "❤️", verb: "liked" })}
+    ${getActionDescription({ timestamp, kind: "bookmark" })}
     <div class="content-container u-in-reply-to">
         ${await getAvatar({
             ...author,
@@ -387,14 +385,14 @@ tags: ["music"]
         fs.closeSync(fd);
         createdPosts++;
         if (createdPosts % 100 === 0) {
-            console.log(`Created ${createdPosts} youtube activity posts (currently liking songs)`);
+            console.log(`Created ${createdPosts} youtube activity posts (currently bookmarking songs)`);
         }
     }
 
     // Liked videos
     nextPageToken = undefined;
     const allLikedVideos = new Set(JSON.parse(fs.readFileSync("./youtube-export/liked_videos.json").toString()));
-    console.log(`Loaded ${allLikedVideos.size} liked videos`);
+    console.log(`Loaded ${allLikedVideos.size} bookmarked videos`);
     do {
         const liked_videos = await service.playlistItems.list({
             auth,
@@ -423,7 +421,7 @@ tags: ["music"]
         let hasInsertedNone = true;
         liked_videos.data.items.map(video => {
             if (!allLikedVideos.has(video.snippet.resourceId.videoId)) {
-                console.log("Found newly liked video", `https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`);
+                console.log("Found newly bookmarked video", `https://www.youtube.com/watch?v=${video.snippet.resourceId.videoId}`);
             }
             hasInsertedNone &= !allLikedVideos.has(video.snippet.resourceId.videoId);
             allLikedVideos.add(video.snippet.resourceId.videoId);
@@ -439,7 +437,7 @@ tags: ["music"]
     fs.writeSync(fd, JSON.stringify(Array.from(allLikedVideos)));
     fs.closeSync(fd);
     for await (const videoId of allLikedVideos) {
-        await likeVideo({ videoId, auth, kind: "like" });
+        await likeVideo({ videoId, auth, kind: "bookmark" });
     }
 
     console.log(`Created ${createdPosts} posts.`);
@@ -674,11 +672,6 @@ async function likeVideo({ videoId, auth, kind }) {
     }
 
     let timestamp = new Date(video.snippet.publishedAt).getTime();
-    while (fs.existsSync("./site/posts/" + timestamp)) {
-        timestamp++;
-        continue;
-    }
-    fs.mkdirSync("./site/posts/" + timestamp);
     const tag = VIDEO_CATEGORIES[video.snippet.categoryId];
         
     const channel = await getChannel(video.snippet.channelId, auth);
@@ -702,7 +695,13 @@ async function likeVideo({ videoId, auth, kind }) {
     </div>
 </div>`;
 
-    const fd = fs.openSync("./site/posts/" + timestamp + "/index.md", "w+");
+    const d = new Date(timestamp);
+    let path;
+    for (timestamp--; path == null || fs.existsSync(path);) {
+        path  = `./site/${kind}/${d.getFullYear()}/${d.getMonth()}/${d.getDate()}/${++timestamp}`;
+    }
+    fs.mkdirSync(path, { recursive: true });
+    const fd = fs.openSync(path + "/index.md", "w+");
     fs.writeSync(fd, preparePost(`---
 kind: ${kind}
 title: ${encodeString(video.snippet.title, 2)}
@@ -712,8 +711,8 @@ prev: false
 tags: [${encodeString(tag, 2)}]
 ---
 <div class="post">
-    ${getActionDescription({ timestamp, action: kind === "favorite" ? "⭐" : "❤️", verb: kind === "favorite" ? "favorited" : "liked" })}
-    <div class="content-container h-cite u-like-of">
+    ${getActionDescription({ timestamp, kind })}
+    <div class="content-container h-cite u-${kind === 'favorite' ? 'like' : 'bookmark'}-of">
         ${await getAvatar({
             ...author,
             syndications: [{ type: YOUTUBE_SVG, url: permalink }],
@@ -727,7 +726,7 @@ tags: [${encodeString(tag, 2)}]
     fs.closeSync(fd);
     createdPosts++;
     if (createdPosts % 100 === 0) {
-        console.log(`Created ${createdPosts} youtube activity posts (currently ${kind.slice(0, -1)}ing videos)`);
+        console.log(`Created ${createdPosts} youtube activity posts (currently ${kind}ing videos)`);
     }
 }
 

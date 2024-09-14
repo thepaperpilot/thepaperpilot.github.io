@@ -36,12 +36,12 @@ next: false
 prev: false
 ---
 <div class="post">
-    ${getActionDescription({ timestamp, action: "🔁", verb: "shared" })}
+    ${getActionDescription({ timestamp, kind: "bookmark" })}
     <div class="content-container">
         ${await getAvatar({
             timestamp,
             tags,
-            action: '🔁'
+            kind: 'bookmark'
         })}
         <div class="content e-content h-cite u-repost-of">${content}</div>
     </div>
