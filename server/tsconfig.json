@@ -1,0 +1,8 @@
+{
+    "extends": "../.nuxt/tsconfig.server.json",  
+    "compilerOptions": {
+        "paths": {
+            "#content/server": [ "./node_modules/@nuxt/content/dist/runtime/server" ],
+        }
+    }
+}
