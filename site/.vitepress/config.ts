@@ -52,6 +52,10 @@ export default {
     ['link', { rel: 'me', href: 'https://www.reddit.com/user/ThePaperPilot/' }],
     ['link', { rel: 'me', href: 'https://github.com/thepaperpilot' }],
     ['link', { rel: 'me', href: 'https://twitter.com/ThePaperPilot' }],
+    ['link', { rel: 'authorization_endpoint', href: 'https://indie.incremental.social/auth' }],
+    ['link', { rel: 'token_endpoint', href: 'https://indie.incremental.social/auth/token' }],
+    ['link', { rel: 'micropub', href: 'https://indie.incremental.social/micropub' }],
+    ['link', { rel: 'indieauth', href: 'https://indie.incremental.social/.well-known/oauth-authorization-server' }],
     ['script', { 'data-goatcounter': 'https://thepaperpilot.goatcounter.com/count', async: true, src: '//gc.zgo.at/count.js' }],
   ],
   async transformHead(context) {
