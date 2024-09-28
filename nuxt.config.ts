@@ -152,6 +152,10 @@ export default async () => {
                     },
                     { rel: 'token_endpoint', href: 'https://indie.incremental.social/auth/token' },
                     { rel: 'micropub', href: 'https://indie.incremental.social/micropub' },
+                    {
+                        rel: 'indieauth-metadata',
+                        href: 'https://indie.incremental.social/.well-known/oauth-authorization-server'
+                    },
 
                     /** Feeds */
                     { ...feedProps, href: '/posts', title: 'All posts' },

@@ -7,7 +7,7 @@ export interface Post extends ParsedContent {
     description?: string;
     url?: string;
     published: number;
-    author?: Author;
+    author?: Partial<Author>;
     image?: string;
     imageAlt?: string;
     tags: string[];

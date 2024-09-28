@@ -13,3 +13,10 @@ assets/tags.json
 public/changelog
 public/garden
 public/licenses.txt
+
+syndications/cache
+syndications/indiekit_token.json
+syndications/liked_songs.json
+syndications/media_urls.json
+syndications/youtube_credentials.json
+syndications/youtube_token.json

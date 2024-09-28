@@ -11,7 +11,8 @@
     "serve": "bun run ./.output/server/index.mjs",
     "logseq-export": "run-script-os",
     "logseq-export:win32": ".\\logseq-export\\logseq-export.exe --logseqFolder ./Garden --outputFolder ./garden-output",
-    "logseq-export:linux": "chmod +x logseq-export/logseq-export && logseq-export/logseq-export --logseqFolder ./Garden --outputFolder ./garden-output"
+    "logseq-export:linux": "chmod +x logseq-export/logseq-export && logseq-export/logseq-export --logseqFolder ./Garden --outputFolder ./garden-output",
+    "update:youtube": "bun run syndications/update_youtube.ts"
   },
   "dependencies": {
     "@iconify-json/cib": "^1.2.0",
@@ -28,8 +29,13 @@
     "sass-embedded": "^1.79.2"
   },
   "devDependencies": {
+    "@types/bun": "^1.1.10",
+    "dotenv": "^16.4.5",
     "feed": "^4.2.2",
+    "file-type": "^19.5.0",
     "generate-license-file": "^3.5.1",
+    "googleapis": "^144.0.0",
+    "open": "^10.1.0",
     "run-script-os": "^1.1.6",
     "word-counting": "^1.1.4"
   }
