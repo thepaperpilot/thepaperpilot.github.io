@@ -1,6 +1,7 @@
 ---
-public: "tags:: My Projects"
+public: "true"
 slug: "incremental-social"
+tags: [My Projects]
 title: "Incremental Social"
 prev: false
 next: false
