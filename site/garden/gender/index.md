@@ -15,7 +15,7 @@ const pageData = useData();
 <p>741 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/gender-performativity/index.md">Gender Performativity</a><a href="/garden/trans-athletes-in-sports/index.md">Trans athletes in sports</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/gender-performativity/index.md">Gender Performativity</a><a href="/garden/social-constructs/index.md">Social Constructs</a><a href="/garden/trans-athletes-in-sports/index.md">Trans athletes in sports</a></details>
 
 Gender is a tricky subject, and there are many conflicting frameworks that have been proposed for defining gender and measuring its impact, and other such aspects of it. Judith Butler, for example, controversially describes [gender as a performance](/garden/gender-performativity/index.md)); We observe how people act, what they seem to enjoy, and what roles they fill in society based on their gender, and then we (often subconsciously) perform similarly, perpetuating the cycle. That makes gender a [Social Construct](/garden/social-constructs/index.md).
 

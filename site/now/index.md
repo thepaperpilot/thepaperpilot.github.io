@@ -30,7 +30,7 @@ I'd like to make it host an iroh node for hosting agentic fediverse content, man
 
 ## Chromatic Lattice
 
-I'm working on a multiplayer incremental game called [Chromatic Lattice](/garden/chromatic-lattice/index.md) . It's still largely in the concept phase, and may even be built on the [Agentic fediverse](undefined).
+I'm working on a multiplayer incremental game called [Chromatic Lattice](/garden/chromatic-lattice/index.md) . It's still largely in the concept phase, and may even be built on the [Agentic Fediverse](/garden/fedi-v2/index.md).
 
 ## Kronos
 

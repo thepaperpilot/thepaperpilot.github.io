@@ -14,7 +14,7 @@ const pageData = useData();
 <p>3429 words, ~19 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/social-constructs/index.md">Social Constructs</a><a href="/garden/social-media/index.md">Social Media</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/social-media/index.md">Social Media</a></details>
 
 Video games are placed into genres for a variety of reasons. They can give a mental shorthand to set the player's expectations up, they can help a game market itself by its similarities to other, already popular games, and honestly, people just love categorization for its own sake. For this guide, it's important to define the genre so it is clear what games it's even talking about.
 

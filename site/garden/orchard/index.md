@@ -49,7 +49,7 @@ LLMs could also be given the topics as context and be able to query the network 
 
 ## Tech Stack
 
-The client will be a matrix client that stores all the messages locally. It'll use [Fedi v2](/garden/fedi-v2/index.md) to store the messages and other data, making the whole app [Local-First Software](undefined). The rest of the app will be a web-based UI, using [Neutralino.js](https://neutralino.js.org/) or an alternative.
+The client will be a matrix client that stores all the messages locally. It'll use [Fedi v2](/garden/fedi-v2/index.md) to store the messages and other data, making the whole app [Local-First Software](/garden/local-first-software/index.md). The rest of the app will be a web-based UI, using [Neutralino.js](https://neutralino.js.org/) or an alternative.
 
 Actually, [tauri](https://v2.tauri.app/) apparently doesn't require rust per-say, and has things like mobile support and a better dev experience.
 
