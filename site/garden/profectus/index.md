@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Profectus</h1>
-<p>73 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>27 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/advent-incremental/index.md">Advent Incremental</a><a href="/garden/planar-pioneers/index.md">Planar Pioneers</a></details>
@@ -21,11 +21,7 @@ const pageData = useData();
 
 <details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
 
-[Profectus](https://moddingtree.com) is an [Open Source](/garden/open-source/index.md) game engine I made, loosely based on The Modding Tree by Acamaeda
-
-Technically it's more of a template for making web games
-
-It centers around using Vue's reactivity and is designed with the intent to not restrain developers into making games that only look or behave "one way"
+[Profectus](https://moddingtree.com) is an [Open Source](/garden/open-source/index.md) game engine I made, loosely based on The Modding Tree by Acamaeda. It centers around using Vue's reactivity and is designed with the intent to not restrain developers into making games that only look or behave "one way". Also, technically it's more of a template (rather than engine) for making web games.
 
 Games made with Profectus:
 - Everything in this garden tagged with this page!

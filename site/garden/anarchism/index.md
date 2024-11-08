@@ -12,16 +12,18 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Anarchism</h1>
-<p>966 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1043 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/individualism/index.md">Individualism</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/representative-democracy/index.md">Representative Democracy</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/individualism/index.md">Individualism</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a><a href="/garden/representative-democracy/index.md">Representative Democracy</a><a href="/garden/technocracy/index.md">Technocracy</a></details>
 
-I'm not a full-blown anarchist, but closely align to anarchist values and would like to see them influence policy. Anarchists believe that states are inherently immoral, and societies should be structured to have as minimal of a hierarchy as possible. This entails focusing on [Local Communities](/garden/local-communities/index.md) and spreading power as thinly as possible, to avoid the possibility of individuals becoming corrupt and abusing their power.
+I like and appreciate a lot of the anarchist values and would like to see them influence policy. Anarchists believe that states are inherently immoral, and societies should be structured to have as minimal of a hierarchy as possible. This entails focusing on [Local Communities](/garden/local-communities/index.md) and spreading power as thinly as possible, to avoid the possibility of individuals becoming corrupt and abusing their power.
 
 Anarchism is anti-authoritarian, and explicitly denounces any use of violence to enforce rules, thus requiring [Police Abolition](/garden/abolitionism/index.md). By similar logic, anarchists tend to oppose imperialism and capitalism and the respective hierarchies they create. There are those who consider themselves "anarcho-capitalists" without realizing (or are ignoring) the hierarchies created by wealth inequality. These are incompatible views, and the person is likely actually authoritarian.
 
 Democracy is a form of electoralism that is typically compatible with Anarchism, although some definitions of anarchism disallow any form of rules, even when agreed upon unanimously. There are different forms of democracy, with [Direct Democracy](/garden/direct-democracy/index.md) and [Consensus Democracy](/garden/consensus-democracy/index.md) being the most popular variants that are compatible with anarchism. The US government is a [Representative Democracy](/garden/representative-democracy/index.md), which is NOT anarchistic. Representatives abstract policy making from the views of the people. If we're supposed to vote on the representative that will most closely vote to how we feel on all issues, then the theoretical perfect representative would just be ourselves - and at that point, we should just be voting on the issues directly. Therefore if striving for anarchism, you should not use a representative democracy as in its theoretical ideal its still only just as good as any other variant of Democracy, and in practice will be much worse.
+
+A core principle of anarchism is "free association", referring to how individuals should be able to freely move between anarchist organizations to find one they're compatible with, or even frequently move between several communities they like. This can cause concerns of encouraging segregation, so I think its important for these communities to encourage diversity as much as they can. They can also refuse to associate with other bigoted communities, theoretically discouraging those bigoted views through social and material isolation.
 
 Anarchistic organizations can still appoint roles to people. For example, if a nation like America were to be made anarchistic, it would likely maintain some roles of the President, such as that of Commander-In-Chief. It is primarily the law making and enforcing that would need to be democratized, and of course making sure those appointed roles are elected democratically.
 

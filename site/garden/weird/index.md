@@ -14,7 +14,7 @@ const pageData = useData();
 <p>114 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/the-small-web/index.md">The Small Web</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/the-small-web/index.md">The Small Web</a></details>
 
 [Weird](https://weird.one) is an [Open Source](/garden/open-source/index.md) project by the [Commune](/garden/commune/index.md) team currently in development
 

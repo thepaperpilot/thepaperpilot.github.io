@@ -17,7 +17,7 @@ const pageData = useData();
 
 <details><summary>Referenced by:</summary><a href="/garden/guide-to-incrementals/what-is-content/index.md">Guide to Incrementals/What is Content?</a></details>
 
-<details><summary>Tagged by:</summary><a href="/garden/advent-incremental/index.md">Advent Incremental</a><a href="/garden/babble-buds/index.md">Babble Buds</a><a href="/garden/capture-the-citadel/index.md">Capture the Citadel</a><a href="/garden/dice-armor/index.md">Dice Armor</a><a href="/garden/game-dev-tree/index.md">Game Dev Tree</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/opti-speech/index.md">Opti-Speech</a><a href="/garden/planar-pioneers/index.md">Planar Pioneers</a><a href="/garden/profectus/index.md">Profectus</a><a href="/garden/v-ecs/index.md">V-ecs</a></details>
+<details><summary>Tagged by:</summary><a href="/garden/advent-incremental/index.md">Advent Incremental</a><a href="/garden/babble-buds/index.md">Babble Buds</a><a href="/garden/capture-the-citadel/index.md">Capture the Citadel</a><a href="/garden/dice-armor/index.md">Dice Armor</a><a href="/garden/game-dev-tree/index.md">Game Dev Tree</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/opti-speech/index.md">Opti-Speech</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/planar-pioneers/index.md">Planar Pioneers</a><a href="/garden/profectus/index.md">Profectus</a><a href="/garden/v-ecs/index.md">V-ecs</a></details>
 
 I like making games and tools!
 

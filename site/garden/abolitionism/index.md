@@ -15,7 +15,7 @@ const pageData = useData();
 <p>1493 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/consensus-democracy/index.md">Consensus Democracy</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/consensus-democracy/index.md">Consensus Democracy</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a></details>
 
 I'm a supporter of the police abolition movement, which calls for police and prisons to be abolished. It argues that there are many inherent problems with policing and incarcerating people that cannot be fixed with just further training or restrictions - the entire system must be entirely abolished. In this way, it is a more extreme version of the police reform or defund the police movements. The movement also posits that there are alternatives to policing and incarceration that can be more effective at reducing crime.
 
