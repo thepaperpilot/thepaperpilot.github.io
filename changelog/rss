@@ -4,7 +4,7 @@
         <title>The Paper Pilot's Digital Garden Changelog</title>
         <link>https://www.thepaperpilot.org/changelog/</link>
         <description>A feed of updates made to my digital garden!</description>
-        <lastBuildDate>Sat, 09 Nov 2024 14:06:59 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 09 Nov 2024 16:54:11 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <language>en</language>
@@ -719,6 +719,24 @@
 </table>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[ 1 file changed, 7 deletions(-)]]></title>
+            <link>https://code.incremental.social/thepaperpilot/pages/commit/cec440f3f7b38fff1838832cc042bd77558ba624</link>
+            <guid>https://code.incremental.social/thepaperpilot/pages/commit/cec440f3f7b38fff1838832cc042bd77558ba624</guid>
+            <pubDate>Sat, 09 Nov 2024 13:25:28 GMT</pubDate>
+            <description><![CDATA[ 1 file changed, 7 deletions(-)]]></description>
+            <content:encoded><![CDATA[<table>
+<thead>
+<tr>
+<th style="align: center">Page</th>
+<th style="align: center">Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><a href="/garden/a-plea-to-organize">a-plea-to-organize</a></td><td style="font-family: monospace; white-space: nowrap;">7 <span style="color:#BF616A">-------</span></td></tr>
+</tbody>
+</table>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[ 47 files changed, 124 insertions(+), 13 deletions(-)]]></title>
             <link>https://code.incremental.social/thepaperpilot/pages/commit/91e757f7ccbeb570d900aaa5b49e6e4874d19b2f</link>
             <guid>https://code.incremental.social/thepaperpilot/pages/commit/91e757f7ccbeb570d900aaa5b49e6e4874d19b2f</guid>
@@ -783,6 +801,24 @@
 </table>]]></content:encoded>
         </item>
         <item>
+            <title><![CDATA[ 1 file changed, 11 insertions(+), 11 deletions(-)]]></title>
+            <link>https://code.incremental.social/thepaperpilot/pages/commit/7458b7f6f0983e9713e9d5bfe8cfb16e62d22f63</link>
+            <guid>https://code.incremental.social/thepaperpilot/pages/commit/7458b7f6f0983e9713e9d5bfe8cfb16e62d22f63</guid>
+            <pubDate>Sat, 09 Nov 2024 16:53:11 GMT</pubDate>
+            <description><![CDATA[ 1 file changed, 11 insertions(+), 11 deletions(-)]]></description>
+            <content:encoded><![CDATA[<table>
+<thead>
+<tr>
+<th style="align: center">Page</th>
+<th style="align: center">Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><a href="/garden/a-plea-to-organize">a-plea-to-organize</a></td><td style="font-family: monospace; white-space: nowrap;">22 <span style="color:#A3BE8C">+++++++++++</span><span style="color:#BF616A">-----------</span></td></tr>
+</tbody>
+</table>]]></content:encoded>
+        </item>
+        <item>
             <title><![CDATA[ 1 file changed, 16 insertions(+), 16 deletions(-)]]></title>
             <link>https://code.incremental.social/thepaperpilot/pages/commit/e5532cb445fe271942e5fe095a791178c1500b56</link>
             <guid>https://code.incremental.social/thepaperpilot/pages/commit/e5532cb445fe271942e5fe095a791178c1500b56</guid>
@@ -797,24 +833,6 @@
 </thead>
 <tbody>
 <tr><td><a href="/garden/a-plea-to-organize">a-plea-to-organize</a></td><td style="font-family: monospace; white-space: nowrap;">32 <span style="color:#A3BE8C">++++++++++++++++</span><span style="color:#BF616A">----------------</span></td></tr>
-</tbody>
-</table>]]></content:encoded>
-        </item>
-        <item>
-            <title><![CDATA[ 1 file changed, 7 deletions(-)]]></title>
-            <link>https://code.incremental.social/thepaperpilot/pages/commit/cec440f3f7b38fff1838832cc042bd77558ba624</link>
-            <guid>https://code.incremental.social/thepaperpilot/pages/commit/cec440f3f7b38fff1838832cc042bd77558ba624</guid>
-            <pubDate>Sat, 09 Nov 2024 13:25:28 GMT</pubDate>
-            <description><![CDATA[ 1 file changed, 7 deletions(-)]]></description>
-            <content:encoded><![CDATA[<table>
-<thead>
-<tr>
-<th style="align: center">Page</th>
-<th style="align: center">Changes</th>
-</tr>
-</thead>
-<tbody>
-<tr><td><a href="/garden/a-plea-to-organize">a-plea-to-organize</a></td><td style="font-family: monospace; white-space: nowrap;">7 <span style="color:#BF616A">-------</span></td></tr>
 </tbody>
 </table>]]></content:encoded>
         </item>
