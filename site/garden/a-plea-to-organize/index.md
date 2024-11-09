@@ -11,10 +11,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">A Plea to Organize</h1>
-<p>1086 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1098 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-If you take one message from this letter, let it be this: **Organize!** Seek out a local mutual aid group via [Mutual Aid Hub](https://www.mutualaidhub.org/) or join a leftist political organization like the [PSL](https://pslweb.org/). Whether you're providing aid, receiving it, or working alongside fellow progressives, solidarity is our strongest tool.
+If you take one message from this letter, let it be this: **Organize!** Seek out a local mutual aid group via [Mutual Aid Hub](https://www.mutualaidhub.org/) or join a progressive political organization like the [DSA](https://www.dsausa.org/). Whether you're providing aid, receiving it, or working alongside fellow progressives, solidarity is our strongest tool.
 
 The following is both a call to action and a guide for building a socialist movement that will not only resist but overcome the regressive forces steering our nation.
 
@@ -29,7 +29,7 @@ While the Biden administration touts economic recovery, [public sentiment doesn'
 
 Harris' platform was not even _socially_ progressive, as evidenced by their [non-action on trans rights](https://www.thenation.com/article/politics/kamala-harris-trans-rights-platform/). Harris dodging a question a month before the election about protecting trans rights by saying "[follow the law](https://abcnews.go.com/Politics/election-fact-check-transgender-issues-trump-harris/story?id=115349047)", despite the law currently being transphobic and actively getting worse in many states. She then took a transmedicalist stance on trans rights, saying she only supported gender-affirming care when a doctor deemed it "medically necessary".
 
-Harris campaigned on unity and included courting Republican figures like [Liz Cheney](https://www.the-independent.com/news/world/americas/us-politics/harris-campaign-liz-cheney-election-b2644062.html). This underscores the Democrats' strategy: appeal to the right, even at the expense of progressive values. This is why "pushing the party left" is a pipe dream - Democrat party leadership would rather lose elections than adopt a truly progressive platform. The DNC has the most clear history of such resistance to progressivism, such as when they ensured Bernie Sanders [could not win](https://www.goodreads.com/book/show/36505419-what-happened-to-bernie-sanders) the 2016 primaries.
+Harris campaigned on unity, which to her meant courting Republican figures, most notably Dick Cheney and his daughter [Liz Cheney](https://www.the-independent.com/news/world/americas/us-politics/harris-campaign-liz-cheney-election-b2644062.html). This underscores the Democrats' strategy: appeal to the right, even at the expense of progressive values. This is why "pushing the party left" is a pipe dream - the DNC would rather lose elections than adopt a truly progressive platform. The most clear example of such resistance to progressivism is when they ensured Bernie Sanders [could not win](https://www.goodreads.com/book/show/36505419-what-happened-to-bernie-sanders) the 2016 primaries.
 
 ## We Need a Progressive Movement
 
@@ -40,11 +40,11 @@ America is at a crossroads. The re-election of Trump signals a dangerous shift t
 
 Direct action, especially mutual aid efforts, will be crucial in the coming years. Many marginalized communities will be targeted by the state, and we must be ready to provide support outside of traditional systems that have repeatedly failed them. You can find local mutual aid groups through [Mutual Aid Hub](https://www.mutualaidhub.org/), and help your local community.
 
-Joining local socialist organizations, such as the Party for Socialism and Liberation ([PSL](https://pslweb.org/)), will help build a strong foundation for a larger political movement. These organizations can serve as vehicles for collective action, allowing us to pool resources, share knowledge, and coordinate efforts on a larger scale.
+Joining local progressive organizations, such as the Democratic Socialists of America ([DSA](https://www.dsausa.org/)) or even fully socialist ones like the Party for Socialism and Liberation ([PSL](https://pslweb.org/)), will help build a strong foundation for a larger political movement. These organizations can serve as vehicles for collective action, allowing us to pool resources, share knowledge, and coordinate efforts on a larger scale.
 
-If you have local [unions](https://www.unionplus.org/page/how-join-union) or [cooperatives](https://letsgo.coop/) you can join or support, that will also help your fellow comrades and increase the visibility across America of democratic socialist structures working.
+If you have local [unions](https://www.unionplus.org/page/how-join-union) or [cooperatives](https://letsgo.coop/) you can join or support, that will also help your fellow workers and increase the visibility across America of democratic socialist structures working.
 
-Eventually, our goal must be to replace the Democrat party with a legitimately progressive party. Various progressive policies and ideals are gaining popularity across the nation, regardless of political affiliation: impactful policies like [protecting abortion rights](https://www.pewresearch.org/religion/fact-sheet/public-opinion-on-abortion/), [raising the minimum wage](https://www.pewresearch.org/short-reads/2021/04/22/most-americans-support-a-15-federal-minimum-wage/), [universal healthcare](https://news.gallup.com/poll/468401/majority-say-gov-ensure-healthcare.aspx), or [protecting trans people](https://www.kff.org/other/press-release/poll-large-majorities-including-republicans-oppose-discrimination-against-lesbian-gay-bisexual-and-transgender-people-by-employers-and-health-care-providers/). This election campaign has shown us appealing to the right does not bring in new voters, so we must appeal to the left, addressing the material conditions of the working class and uniting people around a shared vision of a better future.
+Eventually, our goal must be to replace the Democrat party with a legitimately progressive party. Various progressive policies and ideals are gaining popularity across the nation, regardless of political affiliation: impactful policies like [protecting abortion rights](https://www.pewresearch.org/religion/fact-sheet/public-opinion-on-abortion/), [raising the minimum wage](https://www.pewresearch.org/short-reads/2021/04/22/most-americans-support-a-15-federal-minimum-wage/), [universal healthcare](https://news.gallup.com/poll/468401/majority-say-gov-ensure-healthcare.aspx), or [protecting trans people](https://www.kff.org/other/press-release/poll-large-majorities-including-republicans-oppose-discrimination-against-lesbian-gay-bisexual-and-transgender-people-by-employers-and-health-care-providers/) are supported by most Americans. This election campaign has shown us appealing to the right does not bring in new voters, so we must appeal to the left, addressing the material conditions of the working class and uniting people around a shared vision of a better future.
 
 ## Don't be Neutral
 
@@ -68,11 +68,11 @@ Mainstream media, owned by the capitalist class, will frame progressive issues a
 
 > The smart way to keep people passive and obedient is to 
     strictly limit the spectrum of acceptable opinion, but allow 
-    very lively debate within that spectrum - even encourage the 
-    more critical and dissident views. That gives people the sense
-    that there's free thinking going on, while all the time the 
-    presuppositions of the system are being reinforced by the 
-    limits put on the range of the debate.
+    very lively debate within that spectrum - even encourage the   
+    more critical and dissident views. That gives people the sense.  
+    that there's free thinking going on, while all the time the   
+    presuppositions of the system are being reinforced by the   
+    limits put on the range of the debate.   
 \- Noam Chomsky
 
 ## Conclusion
