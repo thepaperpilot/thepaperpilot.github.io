@@ -1,8 +1,7 @@
 ---
-alias: "Police Abolition"
 public: "true"
-slug: "abolitionism"
-title: "Abolitionism"
+slug: "police-abolition"
+title: "Police Abolition"
 prev: false
 next: false
 ---
@@ -11,7 +10,7 @@ import { data } from '../../git.data.ts';
 import { useData } from 'vitepress';
 const pageData = useData();
 </script>
-<h1 class="p-name">Abolitionism</h1>
+<h1 class="p-name">Police Abolition</h1>
 <p>1493 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 

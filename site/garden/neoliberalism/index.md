@@ -15,7 +15,7 @@ const pageData = useData();
 <p>133 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/technocracy/index.md">Technocracy</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/individualism/index.md">Individualism</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/technocracy/index.md">Technocracy</a></details>
 
 Neoliberalism is a conservative political philosophy that emphasizes [Individualism](/garden/individualism/index.md) and is resistant to change/progress. It became popular with the advent of President Raegan and his sweeping changes to the US economy and government (replacing the comparatively socialist polices of the New Deal and the Great Society), and affects both the Republican and Democratic US political parties.
 

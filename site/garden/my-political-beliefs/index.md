@@ -30,4 +30,4 @@ I believe in maximizing personal liberties, so long as one is not actively harmf
 
 # Security
 
-I'm against the use of violence by anyone, including the state. I believe in [Police Abolition](/garden/abolitionism/index.md) and am against the military and espionage both foreign and domestic. I believe in the [Anarchist](/garden/anarchism/index.md) value of free association, so I believe we should have fully open borders, both for travel and immigration/emmigration. I am anti-imperialist and believe in a fairly isolationist foreign policy, but am not against humanitarian foreign aid.
+I'm against the use of violence by anyone, including the state. I believe in [Police Abolition](/garden/police-abolition/index.md) and am against the military and espionage both foreign and domestic. I believe in the [Anarchist](/garden/anarchism/index.md) value of free association, so I believe we should have fully open borders, both for travel and immigration/emmigration. I am anti-imperialist and believe in a fairly isolationist foreign policy, but am not against humanitarian foreign aid.
