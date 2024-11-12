@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">A Plea to Organize</h1>
-<p>1098 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1134 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 If you take one message from this letter, let it be this: **Organize!** Seek out a local mutual aid group via [Mutual Aid Hub](https://www.mutualaidhub.org/) or join a progressive political organization like the [DSA](https://www.dsausa.org/). Whether you're providing aid, receiving it, or working alongside fellow progressives, solidarity is our strongest tool.
@@ -39,6 +39,8 @@ Harris campaigned on unity, which to her meant courting Republican figures, most
 America is at a crossroads. The re-election of Trump signals a dangerous shift toward reactionary politics, but we can't rely on the Democratic Party to provide an alternative.
 
 Direct action, especially mutual aid efforts, will be crucial in the coming years. Many marginalized communities will be targeted by the state, and we must be ready to provide support outside of traditional systems that have repeatedly failed them. You can find local mutual aid groups through [Mutual Aid Hub](https://www.mutualaidhub.org/), and help your local community.
+
+Trans rights are currently under attack both nationally and in most states. You can use the [Trans Legislation Tracker](https://translegislation.com/) to keep up to date, and from there you can contact your representatives or join local protests.
 
 Joining local progressive organizations, such as the Democratic Socialists of America ([DSA](https://www.dsausa.org/)) or even fully socialist ones like the Party for Socialism and Liberation ([PSL](https://pslweb.org/)), will help build a strong foundation for a larger political movement. These organizations can serve as vehicles for collective action, allowing us to pool resources, share knowledge, and coordinate efforts on a larger scale.
 
