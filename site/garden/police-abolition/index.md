@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Police Abolition</h1>
-<p>1493 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1624 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/consensus-democracy/index.md">Consensus Democracy</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a></details>
@@ -90,6 +90,10 @@ Societies can and will find alternative ways of preventing any specific crime. A
 With the police abolished, there are likely to still be cases where an individual is a danger to themselves or others. For these situations, there are ideas on how to resolve it without state sanctioned violence, that typically focus on local communities setting up alternative resources. Mobile crisis teams are one such alternative, although not without similar concerns regarding their authority to forcibly incarcerate people in mental health hospitals. There are a lot of alternatives out there, but they're typically specific to local communities and don't really have a "one size fits all" solution. Here's an [article](https://roarmag.org/essays/mental-health-system-abolition/) about a couple such initiatives, and [this article linked earlier](https://gal-dem.com/how-does-police-abolition-work/) also discusses some specific local initiatives.
 
 Another criticism of _prison_ abolitionism specifically is [What do you do with the murderers and rapists?](https://medium.com/@amparker/what-about-the-rapists-and-murderers-7a81955b772c), but as that article describes: we already don't incarcerate many murderers and rapists, especially the significant amount of murderers and rapists who are also officers. It argues the incarceral system already fails in this regard, and focuses on punishing the perpetrator rather than helping the victims, which is something we could do without incarceration.
+
+### Consequences
+
+While punishments are not good deterrents, some consequences for crimes are still justified and can be enforced without requiring incarceration. A victim may be "made whole" (have the damage reversed to the best of our ability) at expense of the perpetrator, or the society itself (using resources its no longer spending on police or prison). If there's a material cause for the crime having taken place, e.g. a hungry person stealing food, those material conditions can be improved. For cases where the perpetrator is chronically exhibiting anti-social behavior, a trip to a rehabilitation facility, which would be operated significantly differently from the PIC, could be warranted. Stuff like anger management courses or resources to help kick addictions would naturally still be present in a society without prisons.
 
 ## Further reading
 

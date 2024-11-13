@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">A Plea to Organize</h1>
-<p>1134 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1135 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 If you take one message from this letter, let it be this: **Organize!** Seek out a local mutual aid group via [Mutual Aid Hub](https://www.mutualaidhub.org/) or join a progressive political organization like the [DSA](https://www.dsausa.org/). Whether you're providing aid, receiving it, or working alongside fellow progressives, solidarity is our strongest tool.
@@ -66,7 +66,7 @@ America's political system, with its electoral college, first-past-the-post voti
 > When I gave food to the poor, they called me a saint. When I asked why the poor have no food, they called me a Communist.   
 > \- Dom Helder Camara
 
-Mainstream media, owned by the capitalist class, will frame progressive issues as divisive or fringe. They will cover our failures but not our successes, and certainly not report on when we need your help. To break out from this bias, use news sources like[Jacobin](https://jacobin.com/), [Current Affairs](https://www.currentaffairs.org/), and [The Intercept](https://theintercept.com/). Educate yourself via accessible resources such as [Second Thought](https://youtube.com/@secondthought) and [Our Changing Climate](https://youtube.com/@ourchangingclimate). And if you have the time, reading political theory and understanding class struggle empowers us to cut through propaganda and equip ourselves for the fight ahead. In a world of influencers and culture war politics, improving our political literacy and seeing beyond the Republican vs Democrat dichotomy is imperative.
+Mainstream media, owned by the capitalist class, will frame progressive issues as divisive or fringe. They will cover our failures but not our successes, and certainly not report on when we need your help. To break out from this bias, use news sources like [Jacobin](https://jacobin.com/), [Current Affairs](https://www.currentaffairs.org/), and [The Intercept](https://theintercept.com/). Check out [FAIR](https://fair.org/), a progressive news source that tackles corporate bias in media. Educate yourself on progressive causes via accessible resources such as [Second Thought](https://youtube.com/@secondthought) and [Our Changing Climate](https://youtube.com/@ourchangingclimate). And if you have the time, reading political theory and understanding class struggle empowers us to cut through propaganda and equip ourselves for the fight ahead. In a world of influencers and culture war politics, improving our political literacy and seeing beyond the Republican vs Democrat dichotomy is imperative.
 
 > The smart way to keep people passive and obedient is to 
     strictly limit the spectrum of acceptable opinion, but allow 
