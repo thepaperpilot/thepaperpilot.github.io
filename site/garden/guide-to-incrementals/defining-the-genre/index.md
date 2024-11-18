@@ -11,18 +11,20 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Guide to Incrementals/Defining the Genre</h1>
-<p>3429 words, ~19 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>3972 words, ~22 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/social-media/index.md">Social Media</a></details>
 
 Video games are placed into genres for a variety of reasons. They can give a mental shorthand to set the player's expectations up, they can help a game market itself by its similarities to other, already popular games, and honestly, people just love categorization for its own sake. For this guide, it's important to define the genre so it is clear what games it's even talking about.
 
-This poses a problem. "Incremental" is a _horribly_ vague way to define games. _Most_ games have numbers going up in some form or another. We need a more specific definition - similar to how "strategy" can't just mean any game with _any_ amount of strategy because that would be _most_ games. What specifically differentiates incremental games from the rest?
+This poses a problem. Genres, being [Social Constructs](/garden/social-constructs/index.md), suffer from the usual issues social constructs have of being vague and shifting over time. "Incremental", in particular, is a _horribly_ vague way to define games. _Most_ games have numbers going up in some form or another. We need a more specific definition - similar to how "strategy" can't just mean any game with _any_ amount of strategy because that would be _most_ games. What specifically differentiates incremental games from the rest?
 
 "Incremental" implies it's a genre defined by a game mechanic, but all those game mechanics it could imply exist in many other games. Having a skill tree or upgrades doesn't make you incremental, and if a reset mechanic is all it takes then every roguelite would be an incremental as well. So clearly there's more to it than that - what makes an incremental an incremental?
 
-I'd like to go over a couple of popular suggestions I've seen on defining the genre here. I have my personal preferences and will state them here, but I don't think there's a truly perfect answer here.
+I'd like to go over a couple of popular suggestions I've seen on defining the genre here. I have my personal preferences and will state them here, but I don't think there's a truly perfect answer.
+
+BTW, if this article made you realize discourse around defining genres is actually a really interesting, even fascinating, topic, I recommend this video essay: [Who Shot Guybrush Threepwood? | Genre and the Adventure Game](https://www.youtube.com/watch?v=tMVl5U3SlS0).
 
 > Disclaimer: I mostly play incremental games on my computer, and my definitions will be heavily biased towards the games I'm familiar with.
 
@@ -80,36 +82,47 @@ I believe this strategy for defining genres can be applied to other genres as we
 
 > Note: The "Temple of the roguelike", an authority within the genre, has since replaced the Berlin Interpretation with a new set of factors here: https://blog.roguetemple.com/what-is-a-traditional-roguelike/
 
-### The Incremental Games Canon
+### A Modern Incremental Games Canon
 
-Alright, time to get controversial. Up til now, I've been trying my best to stay objective and analytical, but now it's time to start making some _opinionated decisions_. Here is a list of games I think could justifiably make up an Incremental Games Canon:
-- [A Dark Room](https://adarkroom.doublespeakgames.com)
-- [Clicker Heroes](https://www.clickerheroes.com)
-- [Crank](https://faedine.com/games/crank/b39/)
-- [Increlution](https://store.steampowered.com/app/1593350/Increlution/)
-- [Kitten's Game](https://kittensgame.com/web/)
-- [NGU Idle](https://store.steampowered.com/app/1147690/NGU_IDLE/)
-- [Realm Grinder](https://store.steampowered.com/app/610080/Realm_Grinder/)
-- [Synergism](https://pseudo-corp.github.io/SynergismOfficial/)
+Alright, time to get controversial. Up til now, I've been trying my best to stay objective and analytical, but now it's time to start making some _opinionated decisions_. I've created a list of games I think could be justified in making up a modern incremental games canon.
+
+Before I mention the list, let's establish how I got to this list. First off, I'm really focusing on building a definition of the genre today, so I prefer modern games over traditional ones. A canon of culturally or historically significant titles to the genre would give a different list. Keep in mind the original Berlin interpretation (and the temple's update to it) were trying to define "_traditional_ roguelikes", which is not my objective here. Building a canon that aims to trace the history of the genre is still valid and useful.
+
+I'm also trying to ensure I pick a large breadth of incremental games, so I'm going to approach the list as a list of archetypes, with a single game to represent it but with other titles mentioned as other examples. This approach places each archetype as equally important, even if one only has a couple entries. Besides the impracticality of a canon that just includes every game, it'd be very biased towards games with large modding communities like Cookie Clicker or The Prestige Tree.
+
+With all that behind us, here is a list of games I think could justifiably make up a Modern Incremental Games Canon:
+- [Dodecadragons](https://demonin.com/games/dodecaDragons/)
+	- This game represents incremental games with many prestige layers that often have rapid resets and automate lower layers as more get unlocked. Other examples could also include [The Prestige Tree](https://jacorb90.me/Prestige-Tree/), [Really Grass Cutting Incremental Classic](https://mrredshark77.github.io/RGCI-Classic/), [Distance Incremental](https://jacorb90.me/DistInc.github.io/main.html), or the massive [modding community](https://forums.moddingtree.com/c/mods/8/none/l/top) TPT has. A lot of the games I've personally worked on fall in this group, like [Advent Incremental](https://www.thepaperpilot.org/advent/).
+- [Evolve Idle](https://pmotschmann.github.io/Evolve/)
+	- This game represents incremental games with few prestige layers, very slow resets, and a focus on resource management. Typically involve some sort of worker allocation. Other examples would be [Kitten's Game](https://kittensgame.com/web/) and [Shark Game](https://alpha.shark.tobot.dev/).
+- [(the) Gnorp Apologue](https://gnorp.dev/)
+	- This game represents incremental games with a central mechanic that gets added to by various other mechanics. All the mechanics remain relevant throughout the game, with different ones contributing most over time. Other examples include [Nodebuster](https://store.steampowered.com/app/3107330/Nodebuster/) and [To the Core](https://store.steampowered.com/app/1988550/To_The_Core/). A lot of traditional games also fall in this archetype by having characters or buildings you level up, that each contribute additively to gaining the primary resources. These include [Cookie Clicker](https://orteil.dashnet.org/cookieclicker/), [Clicker Heroes](https://www.clickerheroes.com/play.html), and [Realm Grinder](https://store.steampowered.com/app/610080/Realm_Grinder/). In a way, that makes the modern titles mentioned in this archetype the spiritual successors of those traditional games, and exemplifies how the genre has changed.
+- [Idle Momentum](https://idlemomentum.com/)
+	- This game represents incremental games that include polynomial growth as a central mechanic that is then built upon. Other examples include [Antimatter Dimensions](https://ivark.github.io/AntimatterDimensions/), [Swarm Simulator](https://www.swarmsim.com/), and [Derivative Clicker](https://gzgreg.github.io/DerivativeClicker/).
+- [Melvor Idle](https://melvoridle.com/)
+	- This game represents incremental games that are essentially a genre blend between incremental games and RPGs. Compared to other types of RPGs, these games have a focus on progressing while idle. Other examples would be [IdleOn](https://store.steampowered.com/app/1476970/IdleOn__The_Idle_RPG/) and a _very large_ amount of mobile RPGs.
+- [Stuck in Time](https://store.steampowered.com/app/1814010/Stuck_In_Time/)
+	- This game represents incremental games that include a reset mechanic where there are pre-defined decisions being made during the course of the run. There's typically a concept of a playable character, whose actions are being "queued up" during a run, and these runs become longer or otherwise more productive as the game progresses. There are a lot of examples of this genre, including [Cavernous II](https://nucaranlaeg.github.io/incremental/CavernousII/), [Increlution](https://store.steampowered.com/app/1593350/Increlution/), [Progress Knight](https://ihtasham42.github.io/progress-knight/), [Idle Loops](https://stopsign.github.io/idleLoops/), and [Groundhog Life](https://mogron.itch.io/groundhog-life).
 - [Universal Paperclips](https://www.decisionproblem.com/paperclips/)
-- [Learn to Fly](https://www.coolmathgames.com/0-learn-to-fly)
-- ~~Hades~~ _Just Kidding!_
+	- This game represents incremental games that involve several phases of completely distinct gameplay that fully replace the previous, called "paradigm shifts". Prestige layers are also often paradigm shifts, but this game represents paradigm shifts that are not reset mechanics but still transform the gameplay. Other examples would be [Crank](https://faedine.com/games/crank/b39/) or [A Dark Room](https://adarkroom.doublespeakgames.com/). [Spore](https://www.spore.com/) would be an example that's not typically considered an incremental.
+- [Unnamed Space Idle](https://store.steampowered.com/app/2471100/Unnamed_Space_Idle/)
+	- This game represents incremental games that focus on unlocking many different independent progression systems that boost each other, and all remain relevant throughout the course of the game. Other examples include [NGU Idle](https://store.steampowered.com/app/1147690/NGU_IDLE/), [Anti-Idle](https://drive.google.com/drive/folders/1yE8OxD0P0Tx1B5JyGpEaLJ7KOuayMd9s), [Idle Skilling](https://store.steampowered.com/app/1048370/Idle_Skilling/), and [Idle Wizard](https://store.steampowered.com/app/992070/Idle_Wizard/).
 
-I chose a variety of games here, biasing towards newer games, purposefully to avoid making a narrow or "traditional" definition. The genre is growing and shouldn't be constrained by the traits of the early popular titles. A lot of these could easily be replaced with other games that are mechanically congruent, so ultimately I'm sure if you asked 10 people for their canon list you'd just get 10 different answers, but I think this should sufficiently allow us to determine what factors make a game have higher "incrementalness".
+It may look like I've just shifted the problem down a level - rather than defining the genre, I'm now defining a bunch of sub-genres. However, the methods used here for defining the canon, and my attempt at ensuring a breadth of games by determining distinct archetypes, is just my approach. This list is additionally biased towards games I'm more familiar with, which will differ person to person. The only hard and fast rule is that every game on the list should be nearly universally accepted as an incremental game. So long as you do that, the factors should be relatively similar, although ofc individuals will still likely have small differences, as is the nature of socially constructed definitions.
 
-### The Paradigm Shift
+### Unfolding
 
-The Paradigm Shift is probably the _highest_ possible value factor for an incremental. It's so common that for a while people referred to incrementals that exhibit this trait as "unfolding" games, to the point of trying to _replace_ the term incremental due to their popularity. Paradigm shifts refer to when the gameplay significantly changes. There are too many examples to list here, but notably, every single reset mechanic is typically going to be a paradigm shift. Examples of games with paradigm shifts that _aren't_ tied to reset mechanics include [Universal Paperclips](https://www.decisionproblem.com/paperclips/) and [A Dark Room](http://adarkroom.doublespeakgames.com/).
+There are several related concepts mentioned in the canon - unfolding, prestige layers, and paradigm shifts. Unfolding is the umbrella term which includes the other two, and is clearly the _highest_ possible value factor for an incremental. It's so common that for a while people referred to incrementals that exhibit this trait as "unfolding" games, to the point of trying to _replace_ the term incremental due to their popularity.
 
-There are many reasons for the appeal of paradigm shifts. Oftentimes each mechanic builds on top of the existing mechanics, increasing the complexity of the game in steps so the player can follow along. They provide a sense of mystery, with the player anticipating what will happen next. They shake up the gameplay before it gets too stale - allowing the game to entertain for longer before the sense of [Guide to Incrementals/What is Content?](/garden/guide-to-incrementals/what-is-content/index.md) dissipates. Of the canon games selected above, I would argue _every single one_ contains a paradigm shift (although I could see someone disagreeing with that statement wrt Increlution).
+There are many reasons for the appeal of unfolding mechanics. Oftentimes each mechanic builds on top of the existing mechanics, increasing the complexity of the game in steps so the player can follow along. They provide a sense of mystery, with the player anticipating what will happen next. They shake up the gameplay before it gets too stale - allowing the game to entertain for longer before the sense of [Guide to Incrementals/What is Content?](/garden/guide-to-incrementals/what-is-content/index.md) dissipates. Of the canon games selected above, I would argue _every single one_ contains unfolding to some degree.
 
-I should take a moment to say that while I'm hyping up this specific factor, we cannot just reduce the genre definition to "does it have paradigm shifts". Many games have paradigm shifts that are not incremental, so it's just an _indicator_ of incrementalness. Additionally, it can become quite hard to determine how large of a shift is a "paradigm" shift. Take, for example, any game with a skill tree. In some games, each skill node might have a large impact on how you play with the game, and qualify as a paradigm shift for some players. In other games, each skill node might just be a small percentage modifier on some stat that doesn't really impact much more than a slight bias towards an already established mechanic that's newly buffed. Every single canon game may show that it's common amongst incremental games, but could just as easily indicate that they're common in games in general.
+I should take a moment to say that while I'm hyping up this specific factor, we cannot just reduce the genre definition to "does it introduce new mechanics over time". Many games have paradigm shifts that are not incremental, so it's just an _indicator_ of incrementalness. Every single canon game may show that it's common amongst incremental games, but could just as easily indicate that they're common in games in general.
 
 ### High-Value Factors
 
 I won't take as long to discuss the high and low-value factors, as you've already seen most of them brought up earlier on this page. As a reminder, a game does NOT need all of these to be an incremental game, but these are factors that each indicate a strong possibility the game is an incremental, so having several of these means they probably are. These factors apply to most of the canon incremental games.
 
-**"Pure UI" Display**. Incrementals typically have a textual presentation of the game state - there isn't a visual representation of the entities within the game. The interface is closer to what would be just the UI of a game in another genre or the control panel of a plane. If there _is_ a visual representation, the player is often still interacting with non-diegetic game elements.
+**"Pure UI" Display**. Incrementals typically have a data-driven interface of the game state - there isn't a visual representation of the entities within the game. The interface resembles what might be a control panel in another genre, with a focus on numbers, buttons, and readouts rather than animated sprites or scenes. Even when there are visual elements, like item icons or simple enemy images, the player's main interaction is with non-diegetic, UI-focused components rather than immersive game visuals.
 
 **Reduced Consequences**. Incrementals tend to have reduced repurcussions for misplaying. They very rarely have fail states, where often the largest consequence is simply _not_ progressing - never _losing_ progress.
 
@@ -137,7 +150,7 @@ The meta-progression of an incremental game could arguably be considered a parad
 
 ## Sub-Genres
 
-There are some trends in incremental games that go beyond just being a commonly used mechanic, such that they deeply affect the rest of the game design. These trends can be used to determine sub-genres within the incremental games umbrella:
+There are some trends in incremental games that go beyond just being a commonly used mechanic, such that they deeply affect the rest of the game design. To a degree each of the games in the canon could arguably be part of distinct sub-genres, but I think these 4 deserve specific mentions:
 
 **Loops** games are a sub-genre defined by having a core mechanic related to a loop, where the player is deciding the actions taken per loop. Notable examples include [Idle Loops](https://omsi6.github.io/loops), [Stuck in Time](https://store.steampowered.com/app/1814010/Stuck_In_Time/), [Cavernous II](https://nucaranlaeg.github.io/incremental/CavernousII/), and [Increlution](https://store.steampowered.com/app/1593350/Increlution/). You may also argue [Groundhog Life](https://mogron.itch.io/groundhog-life) and [Progress Knight](https://ihtasham42.github.io/progress-knight/) fall into this sub-genre.
 
