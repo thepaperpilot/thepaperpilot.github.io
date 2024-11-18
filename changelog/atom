@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://www.thepaperpilot.org/changelog/</id>
     <title>The Paper Pilot's Digital Garden Changelog</title>
-    <updated>2024-11-13T13:24:15.419Z</updated>
+    <updated>2024-11-18T12:12:09.520Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <author>
         <name>The Paper Pilot</name>
@@ -835,6 +835,25 @@
 <tr><td><a href="/garden/a-plea-to-organize">a-plea-to-organize</a></td><td style="font-family: monospace; white-space: nowrap;">4 <span style="color:#A3BE8C">++</span><span style="color:#BF616A">--</span></td></tr>
 <tr><td><a href="/garden/anarchism">anarchism</a></td><td style="font-family: monospace; white-space: nowrap;">20 <span style="color:#A3BE8C">+++++++++++</span><span style="color:#BF616A">---------</span></td></tr>
 <tr><td><a href="/garden/police-abolition">police-abolition</a></td><td style="font-family: monospace; white-space: nowrap;">6 <span style="color:#A3BE8C">+++++</span><span style="color:#BF616A">-</span></td></tr>
+</tbody>
+</table>]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[ 2 files changed, 37 insertions(+), 24 deletions(-)]]></title>
+        <id>https://code.incremental.social/thepaperpilot/pages/commit/ec5b2e2a4b6733e340c6553e7bb504530d713aab</id>
+        <link href="https://code.incremental.social/thepaperpilot/pages/commit/ec5b2e2a4b6733e340c6553e7bb504530d713aab"/>
+        <updated>2024-11-18T12:09:56.000Z</updated>
+        <summary type="html"><![CDATA[ 2 files changed, 37 insertions(+), 24 deletions(-)]]></summary>
+        <content type="html"><![CDATA[<table>
+<thead>
+<tr>
+<th style="align: center">Page</th>
+<th style="align: center">Changes</th>
+</tr>
+</thead>
+<tbody>
+<tr><td><a href="/garden/guide-to-incrementals/defining-the-genre">guide-to-incrementals/defining-the-genre</a></td><td style="font-family: monospace; white-space: nowrap;">59 <span style="color:#A3BE8C">++++++++++++++</span><span style="color:#BF616A">---------</span></td></tr>
+<tr><td><a href="/garden/social-constructs">social-constructs</a></td><td style="font-family: monospace; white-space: nowrap;">2 <span style="color:#A3BE8C">+</span><span style="color:#BF616A">-</span></td></tr>
 </tbody>
 </table>]]></content>
     </entry>
