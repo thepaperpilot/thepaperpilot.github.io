@@ -7,7 +7,7 @@ const filePath = path.resolve("./Garden/logseq/config.edn");
 const data = fs.readFileSync(filePath).toString();
 let favorites = [];
 for (const match of data.matchAll(/:favorites \["([^\]]+)"\]/g)) {
-  favorites = match[1].split("\" \"").map(page => ({ text: page, link: `/garden/${page.toLowerCase().replaceAll(' ', '-')}` }));
+  favorites = match[1].split("\" \"").map(page => ({ text: page.toLowerCase(), link: `/garden/${page.toLowerCase().replaceAll(' ', '-')}` }));
 }
 
 export default {

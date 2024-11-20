@@ -12,14 +12,14 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Anarchism</h1>
-<p>1751 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1821 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/individualism/index.md">Individualism</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a><a href="/garden/representative-democracy/index.md">Representative Democracy</a></details>
 
-Anarchism is a political philosophy centered around the idea that authoritative hierarchies are unjust, and aim for a society completely devoid of a state. Marx described how socialism, as it approaches its end goal of communism, would see the state [naturally wither away](https://www.marxists.org/archive/lenin/works/1917/staterev/ch05.htm), reaching anarcho-communism, just one of the flavors of anarchism.
+Anarchism is a political philosophy centered around the idea that authoritative hierarchies are unjust, and aim for a society completely devoid of a state. They see a state as inherently self-preservationist and oppressive, thus that it has no place in society nor the transition to an egalitarian society.
 
-Broadly speaking, flavors of anarchism can fall into 3 categories: collectivist anarchism, which includes the aforementioned anarcho-communism; individualist anarchism, which are right-wing versions of anarchism based on [Individualism](/garden/individualism/index.md); and modern anarchism, which are adaptations of collectivist communism to include additional hierarchies, such as anarcha-feminism which seeks to abolish the patriarchy in addition to class hierarchy. I'm personally biased against individualist anarchism but align with the values present in many collectivist and modern flavors of anarchism. I believe an ideal society is one with strong [Local Communities](/garden/local-communities/index.md) that operate as a collective; spreading power as thinly as possible to avoid the possibility of any individuals becoming corrupt and abusing their power.
+Broadly speaking, flavors of anarchism can fall into 3 categories: collectivist anarchism, which is what this article will focus on; individualist anarchism, which are right-wing versions of anarchism based on [Individualism](/garden/individualism/index.md); and modern anarchism, which are adaptations of collectivist communism to include additional hierarchies, such as anarcha-feminism which seeks to abolish the patriarchy in addition to class hierarchy. I'm personally biased against individualist anarchism but align with the values present in many collectivist and modern flavors of anarchism. I believe an ideal society is one with strong [Local Communities](/garden/local-communities/index.md) that operate as a collective; spreading power as thinly as possible to avoid the possibility of any individuals becoming corrupt and abusing their power.
 
 ## Decision Making in Anarchy
 
@@ -56,6 +56,8 @@ After meeting everyone's needs, crimes should essentially go away. When accident
 A core principle of anarchism is "free association", referring to how individuals should be able to freely enter and leave agreements between anarchist organizations. This is freedom to collaborate with whoever and however you like. These organizations are then typically considered rather ephemeral; temporary arrangements that can dissolve at any time as the needs and desires of those within the arrangement change. Scaling this up, it applies to communities/polities as well. A community can freely enter or leave agreements with other communities, and individuals can freely enter and leave those communities.
 
 One thing to be wary of with free association, is that it can incidentally support segregation. It's therefore important for communities to encourage diversity as much as they can, and refuse to associate with bigoted communities, theoretically discouraging those bigoted views through social and material isolation.
+
+Bookchin, a philosopher who was anarchist but abandoned the term while remaining anti-statist, described a society called Communalism which effectively operated as a confederacy of communes. The communes would operate via consensus, and the confederacy by majoritarian rule, dictating things like allowing communes to join or leave the confederacy. This was an attempt at an alternative to anarchism that would more easily scale up, but is considered fairly controversial amongst anarchists.
 
 There is an organizational concept called sociocracy that has roots in several proto-anarchist thinkers. Sociocracy For All describes it as "one particular way to put anarchist values into practice" in [Sociocracy and Anarchism](https://www.sociocracyforall.org/sociocracy-and-anarchism/). Their structure closely resembles what I've described and advocated for here, and they've provided guides enabling many organizations to uphold anarchist values.
 
