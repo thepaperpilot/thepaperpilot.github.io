@@ -14,6 +14,8 @@ const pageData = useData();
 <p>1135 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+<details><summary>Referenced by:</summary><a href="/garden/leftism/index.md">Leftism</a></details>
+
 If you take one message from this letter, let it be this: **Organize!** Seek out a local mutual aid group via [Mutual Aid Hub](https://www.mutualaidhub.org/) or join a progressive political organization like the [DSA](https://www.dsausa.org/). Whether you're providing aid, receiving it, or working alongside fellow progressives, solidarity is our strongest tool.
 
 The following is both a call to action and a guide for building a socialist movement that will not only resist but overcome the regressive forces steering our nation.

@@ -18,7 +18,7 @@ const pageData = useData();
 
 # Government
 
-I'm definitely a [Leftist](undefined), and believe our end goal should be a classless, stateless, moneyless society, but acknowledge the role of the state in defending against, at the very least, [Imperialist](undefined) forces abroad, so long as they exist.
+I'm definitely a [Leftist](/garden/leftism/index.md), and believe our end goal should be a classless, stateless, moneyless society, but acknowledge the role of the state in defending against, at the very least, [Imperialist](undefined) forces abroad, so long as they exist.
 
 I want to eventually reach a society structured as decentralized local communities that operate through [Consensus Democracy](/garden/consensus-democracy/index.md) , and freely associate with other communities for larger scale organizing, such as building and maintaining a rail line.
 
