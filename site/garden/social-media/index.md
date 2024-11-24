@@ -12,23 +12,15 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Social Media</h1>
-<p>98 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>206 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/fediverse/index.md">Fediverse</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fediverse/index.md">Fediverse</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a></details>
 
-Traditional social media
-- Not [Decentralized](/garden/decentralized/index.md)
-	- Can't choose your own rules, sorting methods, data queries, etc.
-- Overrun by scams and ads and influencers
+Social media is how we interact with people online. It's also increasingly becoming how we discover and discuss news and ideas. It's incredibly important, but flawed. A lot of pages in this digital garden criticize and attempt to solve these flaws.
 
-[Federated Social Media](/garden/fediverse/index.md)
-- Partially [Decentralized](/garden/decentralized/index.md)
-	- Self hosting is too hard for everyone to do
-	- Still subject to instance's moderation, limitations, etc.
-- Users need to pick an instance, associating their identity with one specific group
-	- People belong to many groups
-	- The person is permanently associated with that one group
-	- You have to pick before getting a "trial period" to ensure you actually like that group/instance
+Traditional social media is centralized, meaning you have to trust the central authority to be acting in your best interests. It also means you likely won't have control over the moderation rules, sorting methods, filters, or other aspects of the platform. Traditional social media is also overrun by entities trying to accumulate wealth in the "attention economy", meaning feeds are littered with influencers, advertisers, and scams. It's not a safe place to be and its not conducive to health conversations.
 
-My take on an ideal social media [Fedi v2](/garden/fedi-v2/index.md)
+[Federated Social Media](/garden/fediverse/index.md) is partially [Decentralized](/garden/decentralized/index.md), and includes services like Mastodon or Lemmy. These require self hosting, leading to it being a federation of smaller centralized authorities. Most people still won't have control over the platform, but may find a platform that's more tolerable to them. However, the process of doing so greatly increases the barrier of entry into the network, and stifles their adoption.
+
+I personally advocate for a full decentralized social media, as described in [Fedi v2](/garden/fedi-v2/index.md). It should give full agency to the individual, and perhaps even introduce the concept of [Digital Locality](/garden/digital-locality/index.md).

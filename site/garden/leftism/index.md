@@ -15,7 +15,7 @@ const pageData = useData();
 <p>1794 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a><a href="/garden/my-political-journey/index.md">My Political Journey</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a><a href="/garden/my-political-journey/index.md">My Political Journey</a></details>
 
 [My Political Journey](/garden/my-political-journey/index.md) has brought me to the broad label of being a leftist. Leftism encompasses many ideologies, each with unique visions for an egalitarian society and strategies to achieve it. These pages are my tool to test my understanding by articulating these ideas in my own terms. I don't care to label myself any further than leftist, as in my mind I'm still a student of leftist ideologies and have personally been finding insight across the spectrum of leftist ideologies. As a reminder, this digital garden is a perpetual work in progress and only reflects my understanding of a topic at time of writing.
 

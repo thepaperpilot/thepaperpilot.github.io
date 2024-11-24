@@ -15,7 +15,7 @@ const pageData = useData();
 <p>1821 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/individualism/index.md">Individualism</a><a href="/garden/leftism/index.md">Leftism</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a><a href="/garden/representative-democracy/index.md">Representative Democracy</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/individualism/index.md">Individualism</a><a href="/garden/leftism/index.md">Leftism</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a><a href="/garden/representative-democracy/index.md">Representative Democracy</a></details>
 
 Anarchism is a political philosophy centered around the idea that authoritative hierarchies are unjust, and aim for a society completely devoid of a state. They see a state as inherently self-preservationist and oppressive, thus that it has no place in society nor the transition to an egalitarian society.
 

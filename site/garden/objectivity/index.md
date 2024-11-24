@@ -11,18 +11,16 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Objectivity</h1>
-<p>629 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>589 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/scientific-constructivism/index.md">Scientific Constructivism</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/scientific-constructivism/index.md">Scientific Constructivism</a></details>
 
-Objectivity is a myth. All we have are our subjective experiences, which are shaped by our environments and it's [Social Constructs](/garden/social-constructs/index.md).
+Objectivity is a myth. All we have are our subjective experiences, which are shaped by our environments and it's [Social Constructs](/garden/social-constructs/index.md). Often something _appearing_ objective more likely means its biased towards either your pre-conceived opinion, or the "status quo" opinion of the society or culture the work was created in.
 
 When a social construct becomes sufficiently ingrained within society to the point it's not recognized as a construct, it can begin to be considered an "objective truth", which can lead to harmful results.
 
-These social constructs form echo chambers around the entire society. In this way, echo chambers fractal within each other. That's not inherently a bad thing, but it's often difficult to recognize echo chambers from inside, and we're all ultimately inside at least one.
-
-> "The smart way to keep people passive and obedient is to strictly limit the spectrum of acceptable opinion, but allow very lively debate within that spectrum—even encourage the more critical and dissident views. That gives people the sense that there's free thinking going on, while all the time the presuppositions of the system are being reinforced by the limits put on the range of the debate." - Noam Chomsky
+These social constructs form [Echo Chambers](/garden/filter-bubbles/index.md) around the entire society. In this way, echo chambers fractal within each other. That's not inherently a bad thing, but it's often difficult to recognize echo chambers from inside, and we're all ultimately inside at least one.
 
 In practice, the idea that objectivity doesn't exist doesn't really impact anything. Our shared experiences are similar enough that our truths about most every day things are compatible. Where this most applies is when there's an argument between two people who are reaching different conclusions despite the same level of knowledge about the topic. In theory, you could probably find a shared common ground and determine that specific logical step in which you diverge. That divergence may be explained by our subjective perspectives on the world, mixed with our personal values. However, a side may _claim_ their side of the divergence is the correct one due to some "objective truth". This is simply not so, but is all too often used to justify bigoted arguments.
 

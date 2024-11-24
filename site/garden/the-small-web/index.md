@@ -15,7 +15,7 @@ const pageData = useData();
 <p>778 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/federated-identity/index.md">Federated Identity</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a><a href="/garden/webrings/index.md">Webrings</a><a href="/garden/weird/index.md">Weird</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/federated-identity/index.md">Federated Identity</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a><a href="/garden/webrings/index.md">Webrings</a><a href="/garden/weird/index.md">Weird</a></details>
 
 The small web (also known as the indie web, personal web, the web revival movement, and other terms) refers to small, personal, independent websites. It is seen as a direct alternative to the centralized and homogenized websites like X, Meta, and TikTok. [My Personal Website](/garden/my-personal-website/index.md) is part of the small web!
 
