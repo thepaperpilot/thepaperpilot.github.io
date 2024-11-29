@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Video Essays</h1>
-<p>542 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>561 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 Video essayists are an interesting case study here. I _love_ video essays, they're often entertaining and you can tell the effort and care put into them. A lot of my favorite creators are video essayists, like [hbomberguy](https://www.youtube.com/c/hbomberguy), [Folding Ideas](https://www.youtube.com/@FoldingIdeas), and [Philosophy Tube](https://www.youtube.com/@PhilosophyTube) (and probably more - its hard to keep track of my favorites since they upload infrequently). Unfortunately, video essays have now been recognized as successful ways to make videos with high watch time which has led to an explosion of video essays, with varying levels of skill, ethics, and effort put into researching the topics.
@@ -35,3 +35,5 @@ Part of my feelings towards video essays, and indeed such strong feelings as to 
 ## Further Reading
 
 Hey, did you know there's video essays about how video essays are bad? Well of course they are, a natural extension of the "thing bad" trend exemplified in the media analysis video essays and in Youtube culture at large. Anyways, I enjoyed [this video](https://www.youtube.com/watch?v=Wx635p4tSfo) covering other criticisms of video essays on Youtube.
+
+Perhaps tangential, but I like Noodle's videos and he has one about [critiquing video games](https://www.youtube.com/watch?v=EPohAvSfcxU), particularly popular titles.

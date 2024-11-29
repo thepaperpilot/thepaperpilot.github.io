@@ -11,55 +11,64 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Digital Locality</h1>
-<p>1648 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1803 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/social-media/index.md">Social Media</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/decentralized-moderation/index.md">Decentralized Moderation</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/virality/index.md">Virality</a></details>
 
-## The Problem with Global Social Media
+A locality is a physical area or neighborhood where people live and regularly see each other. In the same way I believe strong [Local Communities](/garden/local-communities/index.md) are highly important in real life, I think [Social Media](/garden/social-media/index.md) would benefit from having _digital_ localities.
 
-Digital spaces ([Social Media](/garden/social-media/index.md)) lack locality. If you see a post or thread, you'll see comments and replies from all sorts of people from all across the world and across the ideological spectrum, and you won't recognize a single one. There are no neighbors in cyberspace. This leads to interactions feeling a bit impersonal, as both the interaction and the other person only matter for this brief period of time, and you'll likely never interact again.
+A digital locality will have a higher concentration of recognition between its members, leading to more meaningful relationships. This is achieved by operating similar to a physical neighborhood, where you're able to "look outside" and perhaps see a couple neighbors quite regularly, but with additional effort you can always "walk" further and further out to see a larger variety of people, and similarly others may "walk" to find you. This makes individual reach rely on a gradient of effort, keeping influence spread thin.
 
-The only exception to this are influencers and people who are highly active within specific communities, who will gain a reputation through their name recognition. However, for people who aren't influencers or aren't highly active, these will be one-sided relationships (parasocial). The systems have been designed, often intentionally, to elevate a handful of accounts to celebrity status, a form of class struggle in the attention economy.
+The motivations behind digital locality are aligned with the findings of Dunbar and his research on the cognitive limit for how many people we can maintain meaningful relationships with. He discusses his research and how it's held up over the years in [this article](https://theconversation.com/dunbars-number-why-my-theory-that-humans-can-only-maintain-150-friendships-has-withstood-30-years-of-scrutiny-160676).
 
-The virality sought after by influencers can sometimes happen to "normal" users as well (essentially randomly and non-consensually). This results in the phenomomen of people having their posts "blow up", reaching a much larger audience than intended and with it a lot more attention than intended. People who fall victim to this receive large amounts of negative attention that can seriously impact their mental well-being.
+## Important Aspects
 
-## Networks with Digital Locality
+### Porosity
 
-I believe healthier communities should allow for a higher concentration of recognition, as that will lead to more meaningful relationships. This would mean a shift to smaller communities that aren't dominated by a couple personalities. Ones where you see the same people regularly. This would be in alignment with Dunbar's research on communities, which found there's a cognitive limit to how many people we can meaningfully "know". He discusses his research and how it's held up over the years in [this article](https://theconversation.com/dunbars-number-why-my-theory-that-humans-can-only-maintain-150-friendships-has-withstood-30-years-of-scrutiny-160676).
-
-Discord creates an environment like I describe, at least within it's smaller servers, but introduces a new issue in doing so: Discord servers aren't porous. You're either in the server or not, and you can only reach outside a server by fully joining another. This means that it's more difficult to actually discover people with which to form these meaningful relationships.
-
-A network based on digital locality should operate more similarly to neighborhoods in the real world - you're most likely to see those living closest to you, but you can still see others by just going a little further out. It's "porous" in the sense that you aren't limited to your immediate neighbors; It's a gradient, where more effort will always allow you to reach more people, rather than hitting a wall.
-  > Unfortunately, with car dependent society this analogy breaks down a bit, as now people are covering such a large physical area regularly that its still rare to see a familiar face while, for example, buying groceries.
-
-On a forums for discussing design of social spaces, [this post](https://discuss.coding.social/t/discuss-sx-anti-pattern-reply-sigh-aka-reply-guy/531/2) describes how a sense of locality could improve social interactions online, due to social media not having discrete concepts of "living room" discussion versus "public square" discussion. We're both getting at this idea of limiting the reach of posts, or at least making it more intentional to make a post to be shown to everyone.
-
-## Building the Network
-
-There are various values and principles to keep in mind when building this network.
+The most important aspect of digital locality should be that one's neighborhood has no discrete walls, only continuous gradients. For example, if our goal was merely small communities where you see the same people regularly, any small discord server would fit the bill. But in discord if you want to reach out to "nearby" users, you have to join an entire new discord server. In other words, communities on discord are not "porous", letting users freely "leak" between each other. The neighborhood metaphor for digital locality would mean having no discrete walls around any community, thus being fully "porous". This allows you to more easily expand your network and meet people with whom to form meaningful relationships.
 
 ### Decentralization
 
-It should already be clear by how I've described this network, but a lot of its design is specifically trying to limit the reach of individuals. Philosophically, this network is opposed to centralization. The same way no user should accumulate power and influence over other users, the network itself, and whoever runs/maintains it, shouldn't either. Centralized ownership and moderation over the network leaves it vulnerable to enshittification and [other problems](https://www.rand.org/pubs/commentary/2023/01/the-digital-town-square-problem.html).
+A large motivation behind this concept is spreading influence thin. In the same way digital locality directly opposes the centralization of influence in the hands of the few, it opposes all sorts of centralization. Centralized ownership and moderation over the network leaves it vulnerable to [Enshittification](/garden/enshittification/index.md) and [other problems](https://www.rand.org/pubs/commentary/2023/01/the-digital-town-square-problem.html). In practice, this means such a network should be [Decentralized](/garden/decentralized/index.md), ideally built on something like the [Agentic Fediverse](/garden/fedi-v2/index.md).
 
-In practice, this likely means using something like the [Agentic Fediverse](/garden/fedi-v2/index.md) as a base. Either way, ensure servers are only useful as relays; replaceable and without authority. Also design the protocol so that it can be improved and built upon without the need for a central authority. This goes beyond the efforts of AcivityPub and AtProto, which enable federations of smaller centralized authorities, not full decentralization.
+Social media must be moderated, which means a network with digital locality will need [Decentralized Moderation](/garden/decentralized-moderation/index.md). There's several approaches discussed there, but ultimately the way digital locality works should overall mean users are significantly less likely to see unwanted content from influencers, advertisers, bots, spammers, or those who wish them harm. Users won't need to worry about their post going viral leading to a very large and unexpected amount of attention, including negative attention, directed their way.
 
-### Moderation
+### Democratized [Virality](/garden/virality/index.md)
 
-Being decentralized does not mean it cannot be organized and moderated. Decentralization is not an excuse to not moderate, and stopping the spread of hateful content does shouldn't be objected to on the principles of free speech.
+A network with digital locality would make individual people or posts have limited reach, and thus prevent those from "going viral". However, movements and ideas can still spread largely uninhibited, and even empower individuals to help spread the movement moreso than traditional social media. They can put more effort into being heard by moving further and further out through the network, whereas on traditional social media you can only hope the algorithm spreads your post.
 
-I discuss how to organize without introducing authoritarian hierarchies while exploring the philosophy behind [Anarchism](/garden/anarchism/index.md). I explore decentralized moderation in my proposal for [Fedi v2](/garden/fedi-v2/index.md). The network of vouches idea I describe in the moderation section is prototypical of the principles of locality describe here.
+### Synchronous vs Asynchronous Interactions
 
-Moderation is pretty tricky though, and while I believe the above can be quite effective, particularly at eliminating spam, this is something that will need review and iterations. No social media has solved the moderation problem. As [this article](https://privacy.thenexus.today/blocklists-in-the-fediverse/#centralize-power) points out, it's easy for moderation to have unintended side effects, particularly for marginalized groups.
+Exactly how such a network looks and behaves will differ based on if it's going for synchronous vs asynchronous communication. Synchronous is the easier one, as that's essentially just a network of chat rooms with links to other chat rooms. Users explore the network through those links and just have realtime conversations with the people they find.
 
-For specifically tackling the problem of keeping fascism out of a community, I recommend [this video](https://youtu.be/P55t6eryY3g) (and the whole series) by Innuendo Studios.
+Asynchronous interactions are a bit trickier, and I'm not fully convinced on how it should work. It'll be important to work this out since that's how a lot of social media operates - any social media where you make posts, essentially. We'll go over a couple approaches to how it could work, keeping mind neither are perfect.
 
-### Avoiding [Filter Bubbles](/garden/filter-bubbles/index.md) (or echo chambers)
+#### Local Feeds
 
-The natural argument against what I'm describing here is that it would encourage the creation of filter bubbles. But I'd like to counter that argument by saying you're tackling the wrong issue, and that filter bubbles are typically innocuous and abolishing them would be actively harmful to marginalized communities. I've written a lot about filter bubbles on their own page, so I recommend you check it out.
+Having a feed of posts that's just those you follow and the stuff they've liked or shared works fairly well and can be done today in most existing social media apps. However, seeing the exact post that has gone through a very long chain of shares to get to you means the author of that post may be receiving more attention than they desired. Additionally, this method may not have enough throughout if you read a lot of posts or don't follow active people.
 
-## Related Concepts
+The network of vouches approach to [Decentralized Moderation](/garden/decentralized-moderation/index.md) sort of expands on this type of feed, giving the user content from longer following chains and much more control over who is let into the network. It's also auditable, unlike algorithmic feeds.
+
+#### Communal wiki editing
+
+A more radical approach would be treating social media more like communal wiki editing. That is, if engaging with a post was, rather than liking or sharing it, proposing edits to communal wiki pages it relates to. This would be a process of message gardening, and would likely help distributing corrections to articles, which typically spread much less far than the original incorrect information. It's for that reason I brought this idea up at the end of [Filter Bubbles](/garden/filter-bubbles/index.md) as a potential way to combat the spread of misinformation.
+
+However, wiki editing requires a lot more effort than liking or sharing currently does. It's also not clear how this would preserve locality without making discrete communities. [Commune](/garden/commune/index.md) is related to this idea but would have discrete communities (although with a bit of porosity through shared channels). Perhaps discrete communities could be avoided by allowing anyone to create pages, but then allow them to enter [Anarchist](/garden/anarchism/index.md) collectives that manage the page together. Anyone (or perhaps those within a network of vouches) can comment or propose edits to it, and through that the information spreads to members and anyone else who follows that page.
+
+## Obstacles
+
+### The Network Effect
+
+The biggest obstacle, as with any alternative social media, is the network effect. People want to be on a platform that's already popular, thus preserving the status quo. Social Media typically succeeds by enabling some new medium, like Twitter for microplogging, vine for videos (and later Snapchat once vine shut down), or Musically for lip syncing.  The exceptions are existing platforms with large user bases expanding into one of those new mediums, like Instagram or Musically rebranding as Tiktok.
+
+There's an issue here, though. I'm not describing a new medium here. The unique selling point is that by limiting influence accumulation and making it so you're more likely to see the same not-popular people regularly, we're actually fighting against part of what makes social media interesting for so many people: the concept of this meritocratic space where anyone can become a celebrity if they just make good enough content. That it could become a job, even, where they get paid a lot to make content and receive free stuff and other perks for doing so. This is the classic American Dream argument that American culture has already been conditioned into supporting. So success for this platform may hinge on convincing people becoming a social media influencer is not a good thing to strive for, both for how unhealthy the mindset is, and how unlikely it is for any individual to "make it". Needless to say, that's a very tall order.
+
+### Avoiding [Filter Bubbles](/garden/filter-bubbles/index.md) (or Echo Chambers)
+
+An anticipated argument against what I'm describing here is that it would encourage the creation of filter bubbles. But I'd like to counter that argument by saying you're tackling the wrong issue, and that filter bubbles are typically innocuous and abolishing them would be actively harmful to marginalized communities. Indeed, I think digital locality would help fight against a lot of the root problems that are often attributes to echo chambers, as I describe on the [Filter Bubbles](/garden/filter-bubbles/index.md) page .
+
+## Influences
 
 ### Webrings
 
@@ -77,20 +86,8 @@ Personal websites form a fully decentralized social network called the indie web
 
 What I'm describing is also a lot like a MUD, classic online games where players existed in a world of connected rooms, where they interacted via a command line interface, including local and global chat. If it were decentralized and people all had control over their own room, it would look a lot like what I am describing (but much nerdier and less modern). It's a big inspiration for a lot of these ideas.
 
-## The [Chromatic Lattice](/garden/chromatic-lattice/index.md) Experiment
+## Where to Start
 
-I've been working on designing a game, chromatic lattice, that will involve social elements and be a "living game". It would avoid issues with the network effect by justifying it's existence with it's gameplay, similar to how many MMOs work. This makes it a great testing grounds for some of the ideas discussed in this document, particularly with respect to a community with digital locality.
+There are so many competing protocols out there at the moment, and the network effect has made them all struggle to find a foothold. I don't think anything described in here would be the unique selling point to just immediately attract a large user base. With that in mind, I think the approach should be to make something thats with using for reasons other than social media, and attach the social media experiment to it. That can serve as a proof of concept to prove the ideas here work, although ideas that don't work to be iterated upon, and collect public interest in whatever the next step is.
 
-A person's board will act as their profile page, and will include a local chat room (as opposed to the global one), a description, a list of people actively on the page, and a friends list that can be broken down into categories. Cursors also appear on the board for all users, although those can be toggled off in settings.
-
-The idea is that whenever someone isn't actively working on improving their design, they can be visiting other players and chatting. They should still be able to see their resource amounts and buy upgrades while "abroad".
-
-These chats will need some system for messages being reported, and users banned or silenced. No private chats - those will have to be taken to matrix, which every player will have.
-
-The friend lists effectively work as the links between nodes, creating locality. Everyone has a link to their own board accessible at all times, and from there to their friends. All links would also show a count of how many people are on that board.
-
-In addition to friends, you can jump to a players board or to wherever the player is by right clicking their name in global chat. You can also share links to your board off platform as well.
-
-In theory, by making friends public and mutual, and showing the count of who is actively there, we should see clusters forming. My concern would be everyone just joining a single board, but hopefully stuff like wanting to discuss different topics can naturally prevent that from occurring.
-
-I'll consider this experiment a success if people actually explore the network by jumping between boards, and if there are more messages sent in local chat than global chat. I'd like the average amount of players in a non empty room to be close to log_2(active players).
+With the above in mind, let me introduce [Chromatic Lattice](/garden/chromatic-lattice/index.md), an incremental game I've been designing that would need social features to work anyways. Specifically, it will have boards for each player, where the actual gameplay happens. These boards can be linked to publicly, so you can show off your boards. When a player is visiting someone else's board, their cursor will be visible to others there, and their will be local chat to just people on that page, a form of  ambient copresence. These boards can be customized, including links to other boards. Thus locality is introduced - we now have synchronous chat rooms that every player has, and they can explore the network by jumping through these links. There are more details on the chromatic lattice page.

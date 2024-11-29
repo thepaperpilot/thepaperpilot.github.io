@@ -18,7 +18,7 @@ const pageData = useData();
 
 [Weird](https://weird.one) is an [Open Source](/garden/open-source/index.md) project by the [Commune](/garden/commune/index.md) team currently in development
 
-Aims to make creating [Personal Websites](/garden/the-small-web/index.md) with [Federated Identity](/garden/federated-identity/index.md) available to everyone
+Aims to make creating [Personal Websites](/garden/the-small-web/index.md) with [Decentralized Identity](/garden/decentralized-identity/index.md) available to everyone
 - Also plans on having paid tiers for giving people access to single user instances of various [Fediverse](/garden/fediverse/index.md) tools
 
 Long term, Weird wants to build a new better fediverse

@@ -12,10 +12,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">The Small Web</h1>
-<p>778 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>731 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/federated-identity/index.md">Federated Identity</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a><a href="/garden/webrings/index.md">Webrings</a><a href="/garden/weird/index.md">Weird</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/decentralized-identity/index.md">Decentralized Identity</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a><a href="/garden/webrings/index.md">Webrings</a><a href="/garden/weird/index.md">Weird</a></details>
 
 The small web (also known as the indie web, personal web, the web revival movement, and other terms) refers to small, personal, independent websites. It is seen as a direct alternative to the centralized and homogenized websites like X, Meta, and TikTok. [My Personal Website](/garden/my-personal-website/index.md) is part of the small web!
 
@@ -29,7 +29,7 @@ The modern web is dominated by a handful of large websites, sometimes referred t
 
 The corporate web is designed for consuming content created by a few large/popular creators. This manifests in the near-ubiquitous infinitely scrolling feed of algorithmically chosen posts, optimized to keep you on the site for as long as possible, to the detriment of society.
 
-Websites this large are expensive and, due to Capitalism, must forever be making more money than before - which means if they're not growing users, they must grow how much money they're making per user. This process typically means corporate websites become worse for their users over time, and was coined as [Enshittification](https://pluralistic.net/2023/01/21/potemkin-ai/) by Cory Doctorow.
+Large websites, due to the profit motive, will naturally [Enshittify](/garden/enshittification/index.md).
 
 ### The old web was good
 

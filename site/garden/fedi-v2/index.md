@@ -12,10 +12,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Fedi v2</h1>
-<p>3918 words, ~21 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>3033 words, ~17 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/decentralized/index.md">Decentralized</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/weird/index.md">Weird</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/decentralized/index.md">Decentralized</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/weird/index.md">Weird</a></details>
 
 A placeholder name for a theoretical new federated network that is client-centric, in contrast to the server-centric [Fediverse](/garden/fediverse/index.md). Many of the ideas here will be implemented as described or similarly by people much smarter than me as part of [Agentic Federation on Iroh](https://github.com/commune-os/weird/discussions/32), an initiative by the [Weird](/garden/weird/index.md) developers.
 
@@ -33,21 +33,11 @@ The pick a server problem is such a problem because not only do you have to pick
 
 [NextGraph](https://docs.nextgraph.org/en/introduction/) looks very similar to what we're trying to build. My only note is really that it gives a bit of a crypto vibe through decisions like calling identities "wallets" that I think may make it fall into the same problems nostr has, but conceptually its _really_ similar to everything discussed here, which is great! It should be incredibly easy to interoperate, at the very least.
 
-<span id="66527b3e-58af-41c4-8345-5c0951e42f54"><h2>Identity</h2></span>
+<span id="66527b3e-58af-41c4-8345-5c0951e42f54"><h2>[Decentralized Identity](/garden/decentralized-identity/index.md)</h2></span>
 
-The new fediverse should have a fully [Decentralized Identity](/garden/federated-identity/index.md), where it's completely attached to the client rather than any server(s). This means you don't have to pick a server, worry about your chosen server going down, or that yout identity will become associated with an undesired community. It can properly allow you to engage in your variety of interests without having to associate any as core enough to attach your identity to.
+The decentralized fediverse should have a fully decentralized identity, where it's completely attached to the client rather than any server(s). This means you don't have to pick a server, worry about your chosen server going down, or that your identity will become associated with an undesired community. It can properly allow you to engage in your variety of interests without having to associate your identity with just one.
 
-This identity can be accomplished by the client merely generating a private and public key, which can then be stored however the user pleases. Reasonably, there's be default options to back up the private key to Google drive or alternatives, as most users will not desire to go the extra effort of backing up their identity without relying on big storage websites. But for those who wish, you could keep the identity solely on the device, or choose your own method of storage and backup.
-
-The client can sign messages using the private key and distribute it through whatever means they wish, and it can be verified as sent by that identity using the public key to decode the message. In this context, messages could also refer to any other signed information, such as a bundle of profile information.
-
-For casual conversation, a nickname in the profile data should be sufficient. Once a client interacts with someone, they can be added as a contact as a way of verifying the next conversation with someone with that username is actually the same person as before. For situations where you want to verify an identity actually has a credentials they claim, you can query a nameserver that vouches for them. For example, whitehouse.gov would have a nameserver that specifies which identity is the actual president of the United States (and other government officials). There could be nameservers that allow you to openly "register" your identity with them to get a unique human readable username you can include on billboards or other visual media where you want someone to be able to memorize the identifier, rather than scan a QR code or something. For more details on how these decentralized usernames would work, check out [Petnames](https://spritely.institute/static/papers/petnames.html).
-
-Through cryptography, you can be confident messages are verifiably sent by someone with access to the private key, and that the message was not tampered with. These are guarantees you can't make with the current server centric fediverse.
-
-If you lose access to your account, it's gone forever. That is why I think there should be defaults to backup your private key to existing reliable servers, even if they're owned by large corporations. Otherwise I would see someone have their phone stolen, lost, or upgraded and be surprised when their account is now inaccessible.
-
-If you do lose your account and create a new identity, you could have others "vouch" for the new identity being an alias for the previous identity. You could verify your new identity with people IRL, and then other clients can see those vouches publicly and, after sufficient quantity, just implicitly assume they're the same (although with some sort of indicator, so if this gets abused, users are at least aware of the possibility of impersonation.
+By relying on signed messages, content (posts, profile information, etc.) is also not attached to any specific delivery system. Relay servers, a USB stick, or QR code could all work and still have the guarantees it was written by someone with the private key and has not been tampered with. It should be noted that none of the major social media platforms existing today can give verifiable proof a message was not tampered with.
 
 ## Servers
 
@@ -71,15 +61,7 @@ Groups/communities could also be specially flagged messages, effectively allowin
 
 A bot could fairly easily be setup to make [IndieWeb](/garden/the-small-web/index.md) posts and web mentions use this protocol. Indeed, this protocol is very POSSE-friendly because you could have your original content on the website, and the messages can be spread across the network while allowing clients to verify it was untampered with and definitely came from that website. I plan on writing a proposal for IndieWeb posts to include [The IndieWeb/Signature Blocks](/garden/the-indieweb/signature-blocks/index.md) to enable this. Within this framework, Fedi v2 would not just be a other social media silo. It would be the source of truth, fully controlled by the author. Even if the author cross posts to other social media (silos), we'd effectively still be the original copy.
 
-## Moderation
-
-Anyone can send edit and delete requests as replies to messages, but they'll typically be ignored since they'd be coming from a different identity. However, you could have clients or even servers honor those requests based on various heuristics - deleting anything that's gotten X delete requests, or trust specific identities to act as moderators. Since individual clients could choose which identities to honor, the moderation is effectively fully decentralized. Clients will probably have a couple identities trusted by default, to check for illegal content or that would otherwise prevent the app from breaking the app store's TOS.
-
-Anyone can spin up their own bots that just automatically send out delete requests based on custom logic, like checking for images that match the CSAM hash list, or messages that ChatGPT says are non-constructive. Through this, the ecosystem will over time allow people to further customize their experience by filtering out unwanted content more and more precisely.
-
-As an alternative or complementary solution, identities could have a system by which they vouch for or against other identities, and clients could use this network of vouches to filter posts to display or retrieve. For example, a user may say they only want to see posts made by identities within a chain of 10 vouches to themselves. Upon account creation, users could be prompted to vouch for IRL friends or some popular figures within topics they care about to get started. In theory the longer the chain can be, the more varied the content a user will see, and the more likely for it to be something they disagree with. This would allow users to customize how narrow their feed is at a given time by just changing the max chain length. They can also continue vouching for more people to more precisely expand their feed. This would essentially be an alternative to how current fediverse applications block entire instances as a heuristic, so they can get rid of undesirable content while minimizing how much of it they need to see before doing so. Except in this model, you can always reach people regardless of what server they decided to use, and the controls of in the hands of the individual.
-
-Clients could include tools to analyze their network of vouches, such as displaying all the identities within certain max lengths, or viewing what chain was followed for a specific post to have been displayed. Clients could also add additional tools to customize the chain, like being able to ignore a specific user's vouches or reposts/reblogs. They could allow specific entities, such as one representing a reddit-like community, to display all replies rather than use the network of trust, and offer controls like only counting likes from within the network when sorting the replies. They could also allow for overriding the max chain length for different contexts, such as when used for counting likes.
+## [Decentralized Moderation](/garden/decentralized-moderation/index.md)
 
 ## Success
 

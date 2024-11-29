@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Police Abolition</h1>
-<p>1624 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1641 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/consensus-democracy/index.md">Consensus Democracy</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a></details>
@@ -77,7 +77,7 @@ Officers themselves perpetrate [a lot of crime](https://policecrime.bgsu.edu/) (
 
 ## How to abolish police
 
-There are many ways to reduce the need of police until it's eventually zero. Immediately, perpetratore of victimless crimes should be let out of prison. You can also reduce most root causes of crime, rather than spending the money on incarcerating the perpetrators
+There are many ways to reduce the need of police until it's eventually zero. Immediately, perpetratore of victimless crimes should be let out of prison. You can also reduce most root causes of crime, rather than spending the money on incarcerating the perpetrators.
 
 ### Crime reduction
 
@@ -100,3 +100,5 @@ While punishments are not good deterrents, some consequences for crimes are stil
 I have not finished reading it yet myself, but I recommend [We Do This ‘Til We Free Us](https://www.haymarketbooks.org/books/1664-we-do-this-til-we-free-us) by Mariame Kaba based on [this NBC article on the book and author](https://www.nbcnews.com/think/opinion/abolishing-police-prisons-lot-more-practical-critics-claim-ncna1258659).
 
 [How police make up the law](https://youtu.be/Vica_-UEg0Q) by Philosophy Tube is a very well produced look at how police got their de facto supreme authority, and it's implications. They have several other videos on the police I recommend, and any other videos they've made :).
+
+[Abolition notes](https://abolitionnotes.org/) contains a lot of public documents and guides on prison abolition and related leftist causes.

@@ -14,7 +14,7 @@ const pageData = useData();
 <p>144 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/federated-identity/index.md">Federated Identity</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/webrings/index.md">Webrings</a><a href="/garden/weird/index.md">Weird</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/webrings/index.md">Webrings</a><a href="/garden/weird/index.md">Weird</a></details>
 
 An [Open Source](/garden/open-source/index.md) [Matrix](/garden/matrix/index.md) web client built to be better for communities than anything else out there
 - Currently in development
@@ -26,7 +26,7 @@ Created by [Erlend Sogge Heggen](https://writing.exchange/@erlend), a ex-employe
 - Also maintains a [Personal Blog](https://blog.erlend.sh) about similar topics
 
 The Commune community is very interested in various topics and how they can relate together:
-- [Federated Identity](/garden/federated-identity/index.md)
+- [Decentralized Identity](/garden/decentralized-identity/index.md)
 - [Personal Web](/garden/the-small-web/index.md)
 - [Digital Gardens](/garden/digital-gardens/index.md)
 - [Social Media](/garden/social-media/index.md)

@@ -14,7 +14,7 @@ const pageData = useData();
 <p>589 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/scientific-constructivism/index.md">Scientific Constructivism</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/everything-is-political/index.md">Everything is Political</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/scientific-constructivism/index.md">Scientific Constructivism</a></details>
 
 Objectivity is a myth. All we have are our subjective experiences, which are shaped by our environments and it's [Social Constructs](/garden/social-constructs/index.md). Often something _appearing_ objective more likely means its biased towards either your pre-conceived opinion, or the "status quo" opinion of the society or culture the work was created in.
 

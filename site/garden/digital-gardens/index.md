@@ -15,7 +15,7 @@ const pageData = useData();
 <p>67 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/chronological/index.md">Chronological</a><a href="/garden/commune/index.md">Commune</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/garden-rss/index.md">Garden-RSS</a><a href="/garden/network-of-knowledge/index.md">Network of Knowledge</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/the-cozy-web/index.md">The Cozy Web</a><a href="/garden/the-small-web/index.md">The Small Web</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/chronological/index.md">Chronological</a><a href="/garden/commune/index.md">Commune</a><a href="/garden/debate/index.md">Debate</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/garden-rss/index.md">Garden-RSS</a><a href="/garden/network-of-knowledge/index.md">Network of Knowledge</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/the-cozy-web/index.md">The Cozy Web</a><a href="/garden/the-small-web/index.md">The Small Web</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
 
 Digital Gardens are [Freeform](/garden/freeform/index.md) collections of information made by an individual or community
 - Alternatives to [Chronological](/garden/chronological/index.md) personal blogs

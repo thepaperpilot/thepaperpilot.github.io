@@ -14,7 +14,7 @@ const pageData = useData();
 <p>302 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/individualism/index.md">Individualism</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/individualism/index.md">Individualism</a></details>
 
 Strongly connected local communities are important to have. They satisfy our social needs for in-person connections, and help organize mutual aid. These needs cannot be sufficiently satisfied exclusively by online friends/communities - of particular note, new parents need help raising their kid.
 

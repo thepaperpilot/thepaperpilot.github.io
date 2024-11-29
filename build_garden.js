@@ -20,7 +20,7 @@ function walk(dir, cb) {
 }
 
 function toSlug(string) {
-    return string.toLowerCase().replaceAll(' ', '-');
+    return string.toLowerCase().replaceAll(' ', '-').replaceAll(/-$|^-/gi, '').replaceAll(/-\/|\/-/gi, '/');
 }
 
 function moveImportStatementUp(filePath, times = 1) {
@@ -48,7 +48,7 @@ function moveImportStatementUp(filePath, times = 1) {
     await walk("./garden-output/logseq-pages", (dir, file, resolve) => {
         const filePath = path.resolve(dir, file);
         const data = fs.readFileSync(filePath).toString();
-        const slug = path.basename(file, ".md").replaceAll('___', '/').replaceAll(/%3F/gi, '').replace('what-is-content-', 'what-is-content');
+        const slug = path.basename(file, ".md").replaceAll('___', '/').replaceAll(/%3F|%22/gi, '').replaceAll(/-$|^-/gi, '').replaceAll(/-\/|\/-/gi, '/');
         for (const match of data.matchAll(/(.*)\n\s*id:: (.*)/gm)) {
         	const text = match[1];
         	const id = match[2];
@@ -82,9 +82,9 @@ function moveImportStatementUp(filePath, times = 1) {
         }
 
         const name = path.basename(file, ".md").replaceAll('___', '/');
-        const slug = toSlug(name).replaceAll(/%3F/gi, '').replaceAll('\'', '-');
+        const slug = toSlug(name.replaceAll(/%3F|%22/gi, '').replaceAll('\'', '-'));
         const link = `/garden/${slug}/index.md`;
-        pageLinks[name.replaceAll(/%3F/gi, '?')] = link;
+        pageLinks[name.replaceAll(/%3F/gi, '?').replaceAll(/%22/gi, '"')] = link;
 
         for (const match of data.matchAll(/alias:: (.*)/g)) {
             match[1].split(", ").forEach(page => (pageLinks[page] = link));
@@ -109,12 +109,12 @@ function moveImportStatementUp(filePath, times = 1) {
         }
 
         const name = path.basename(file, ".md").replaceAll('___', '/');
-        const slug = toSlug(name).replaceAll(/%3F/gi, '').replaceAll('\'', '-');
+        const slug = toSlug(name).replaceAll(/%3F|%22/gi, '').replaceAll('\'', '-');
 
         if (!indices.includes(slug)) {
             for (const match of data.matchAll(/\[\[([^\[\]]*)\]\]/g)) {
-                const pageSlug = pageLinks[match[1].replaceAll(/%3F/gi, '?')];
-                referencedBy[pageSlug] = [...(referencedBy[pageSlug] ?? []), name.replaceAll(/%3F/gi, '?')];
+                const pageSlug = pageLinks[match[1].replaceAll(/%3F/gi, '?').replaceAll(/%22/gi, '"')];
+                referencedBy[pageSlug] = [...(referencedBy[pageSlug] ?? []), name.replaceAll(/%3F/gi, '?').replaceAll(/%22/gi, '"')];
             }
         }
 
@@ -140,7 +140,7 @@ function moveImportStatementUp(filePath, times = 1) {
         // Replace internal links
         data = data.replaceAll(
         	/]\(\/logseq-pages\/([^\)]*)\)/g,
-        	'](/garden/$1/index.md)');
+        	(_, page) => `](/garden/${page.replaceAll(/-$|^-/gi, '')}/index.md)`);
 		// Replace block links
         data = data.replaceAll(
         	/\(\((.*)\)\)/g,
@@ -155,7 +155,7 @@ function moveImportStatementUp(filePath, times = 1) {
         // Fix internal links with spaces not getting mapped
         data = data.replaceAll(
             /\[\[([^\[\]]*)\]\]/g,
-            (_, page) => `[${page}](${pageLinks[page]})`);
+            (_, page) => console.log("!!?", filePath, page, pageLinks[page]) || `[${page}](${pageLinks[page]})`);
         // Fix internal asset links
         data = data.replaceAll(
             /\(\/logseq-assets\/([^\)]*)\)/g,
@@ -177,25 +177,25 @@ function moveImportStatementUp(filePath, times = 1) {
         if (title in tagged) {
             data = data.replaceAll(
                 /---\n\n/gm,
-                `---\n\n<details><summary>Tags:</summary>${tagged[title].map(tag => `<a href="${pageLinks[tag]}">${tag}</a>`).join("")}</details>\n\n`);
+                `---\n\n<details><summary>Tags:</summary>${tagged[title].map(tag => `<a href="${pageLinks[tag].replace(".html", "")}">${tag}</a>`).join("")}</details>\n\n`);
         }
         if (title in taggedBy) {
             data = data.replaceAll(
                 /---\n\n/gm,
-                `---\n\n<details><summary>Tagged by:</summary>${taggedBy[title].map(tag => `<a href="${pageLinks[tag]}">${tag}</a>`).join("")}</details>\n\n`);
+                `---\n\n<details><summary>Tagged by:</summary>${taggedBy[title].map(tag => `<a href="${pageLinks[tag].replace(".html", "")}">${tag}</a>`).join("")}</details>\n\n`);
         }
         // TODO show context on references? Perhaps in a `::: info` block?
         const pageTitle = data.match(/title: "(.+)"/)[1];
         if (pageLinks[pageTitle] in referencedBy) {
             data = data.replaceAll(
                 /---\n\n/gm,
-                `---\n\n<details><summary>Referenced by:</summary>${referencedBy[pageLinks[pageTitle]].map(tag => `<a href="${pageLinks[tag]}">${tag}</a>`).join("")}</details>\n\n`);
+                `---\n\n<details><summary>Referenced by:</summary>${referencedBy[pageLinks[pageTitle]].map(tag => `<a href="${pageLinks[tag].replace(".html", "")}">${tag}</a>`).join("")}</details>\n\n`);
         }
         // Fix links to /now
         data = data.replace('NOW', '/now')
         // Add header to the top
         data = data.replaceAll('___', '/');
-        const relPath = path.relative("./garden-output/logseq-pages", path.resolve(...filePath.split("___"))).replaceAll(/%3F/gi, '').replace('what-is-content-', 'what-is-content').replace('.md', '/index.html');
+        const relPath = path.relative("./garden-output/logseq-pages", path.resolve(...filePath.split("___"))).replaceAll(/%3F|%22/gi, '').replaceAll(/-$|^-/gi, '').replaceAll(/-\/|\/-/gi, '/').replace('.md', '/index.html');
         data = data.replaceAll(
             /---\n\n/gm,
 `prev: false
@@ -221,7 +221,7 @@ const pageData = useData();
 
 	// Move everything from ./garden-output/logseq-pages into ./site/garden
     await walk("./garden-output/logseq-pages", (dir, file, resolve) => {
-    	const folder = path.resolve("./site/garden", ...path.basename(file, ".md").split('___'));
+    	const folder = path.resolve("./site/garden", ...path.basename(file, ".md").split('___').map(f => f.replaceAll(/-$|^-/gi, '')));
     	fs.mkdirSync(folder, { recursive: true });
     	fs.copyFileSync(path.resolve(dir, file), path.resolve(folder, "index.md"));
         resolve();
@@ -246,10 +246,7 @@ const pageData = useData();
     fs.mkdirSync('./site/guide-to-incrementals/ludology/appeal-gamers');
     fs.copyFileSync('./site/garden/guide-to-incrementals/appeal-to-players/index.md', './site/guide-to-incrementals/ludology/appeal-gamers/index.md');
     fs.mkdirSync('./site/guide-to-incrementals/ludology/content');
-    // For what is content, also remove the - at the end
-    fs.cpSync('./site/garden/guide-to-incrementals/what-is-content-', './site/garden/guide-to-incrementals/what-is-content', { recursive: true });
-    fs.copyFileSync('./site/garden/guide-to-incrementals/what-is-content-/index.md', './site/guide-to-incrementals/ludology/content/index.md');
-    fs.rmSync('./site/garden/guide-to-incrementals/what-is-content-', { recursive: true });
+    fs.copyFileSync('./site/garden/guide-to-incrementals/what-is-content/index.md', './site/guide-to-incrementals/ludology/content/index.md');
     fs.mkdirSync('./site/guide-to-incrementals/ludology/definition');
     fs.copyFileSync('./site/garden/guide-to-incrementals/defining-the-genre/index.md', './site/guide-to-incrementals/ludology/definition/index.md');
 
