@@ -155,7 +155,7 @@ function moveImportStatementUp(filePath, times = 1) {
         // Fix internal links with spaces not getting mapped
         data = data.replaceAll(
             /\[\[([^\[\]]*)\]\]/g,
-            (_, page) => console.log("!!?", filePath, page, pageLinks[page]) || `[${page}](${pageLinks[page]})`);
+            (_, page) => `[${page}](${pageLinks[page]})`);
         // Fix internal asset links
         data = data.replaceAll(
             /\(\/logseq-assets\/([^\)]*)\)/g,
@@ -206,7 +206,7 @@ import { data } from '${path.relative(path.resolve("site", relPath), path.resolv
 import { useData } from 'vitepress';
 const pageData = useData();
 </script>
-<h1 class="p-name">${pageTitle.replace("NOW", "/now").replaceAll('___', '/')}</h1>
+<h1 class="p-name">${pageTitle.replace("NOW", "/now").replaceAll('___', '/').replaceAll("\\\"", "\"")}</h1>
 <p>${wc} words, ~${Math.round(wc / 183)} minute read. <span v-html="data[\`site/\${pageData.page.value.relativePath}\`]" /></p>
 <hr/>
 \n`);

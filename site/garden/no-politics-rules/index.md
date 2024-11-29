@@ -11,8 +11,8 @@ import { data } from '../../git.data.ts';
 import { useData } from 'vitepress';
 const pageData = useData();
 </script>
-<h1 class="p-name">\"No Politics\" Rules</h1>
-<p>959 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<h1 class="p-name">"No Politics" Rules</h1>
+<p>960 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a></details>
@@ -51,7 +51,7 @@ Moderators may also introduce their own biases, so even if you don't believe the
 ## Alternatives to "no politics" rules
 
 Needless to say, all communities are different and there's no "one size fits all" solution. That said, I think every rule of this list should apply to any and all communities:
-- _Be kind to each other_. Intolerance is prohibited and will be met with decisive action.
+> 1. _Be kind to each other_. Intolerance is prohibited and will be met with decisive action.
 
 And that's it! That's the one rule that should fully encapsulate all the forms of speech you don't want in your community, without upholding existing power structures like capitalism, patriarchy, or white supremacy. It's simple, and certainly not novel, but it's all you need. It's similarity to the golden rule should be noted, as essentially every culture in the world has arrived at essentially the same conclusion, that this rule is of the upmost importance.
 
