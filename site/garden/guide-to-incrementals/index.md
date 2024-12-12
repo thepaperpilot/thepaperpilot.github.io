@@ -22,7 +22,7 @@ This is a comprehensive guide to Incremental Games, a genre of video games. It w
 
 ## Why am I making this?
 
-That's a good question! What authority do I have to be making this guide? I haven't made the best incremental games, nor the most incremental games, certainly not the most popular ones either. But I do have some formal education in game development, know a lot of incremental game devs (as well as other game devs), and have a passionate interest in ludology, classifying genres, etc. I've also made [a couple of incremental games](/garden/my-projects/index.md)) myself.
+That's a good question! What authority do I have to be making this guide? I haven't made the best incremental games, nor the most incremental games, certainly not the most popular ones either. But I do have some formal education in game development, know a lot of incremental game devs (as well as other game devs), and have a passionate interest in ludology, classifying genres, etc. I've also made [a couple of incremental games](/garden/my-projects/index.md) myself.
 
 If you have any additional questions about my credentials or anything on this site, feel free to reach out!
 

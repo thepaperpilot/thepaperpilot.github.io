@@ -163,11 +163,11 @@ function moveImportStatementUp(filePath, times = 1) {
         // Fix logseq block links
         data = data.replaceAll(
             /logseq:\/\/graph\/Garden\?block-id=([^\)]*)/g,
-            (_, block) => `${blockLinks[block]})`);
+            (_, block) => `${blockLinks[block]}`);
         // Fix logseq page links
         data = data.replaceAll(
             /logseq:\/\/graph\/Garden\?page=([^\)]*)/g,
-            (_, page) => `${pageLinks[page.replaceAll('%20', ' ')]})`);
+            (_, page) => `${pageLinks[page.replaceAll('%20', ' ')]}`);
         // Wrap images
         data = data.replaceAll(
             /!\[([^\]]*)\]\(([^\)]*)\)/g,

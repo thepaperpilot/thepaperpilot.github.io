@@ -66,7 +66,7 @@ There's an issue here, though. I'm not describing a new medium here. The unique 
 
 ### Avoiding [Filter Bubbles](/garden/filter-bubbles/index.md) (or Echo Chambers)
 
-An anticipated argument against what I'm describing here is that it would encourage the creation of filter bubbles. But I'd like to counter that argument by saying you're tackling the wrong issue, and that filter bubbles are typically innocuous and abolishing them would be actively harmful to marginalized communities. Indeed, I think digital locality would help fight against a lot of the root problems that are often attributes to echo chambers, as I describe on the [Filter Bubbles](/garden/filter-bubbles/index.md) page .
+An anticipated argument against what I'm describing here is that it would encourage the creation of filter bubbles. But I'd like to counter that argument by saying you're tackling the wrong issue, and that filter bubbles are typically innocuous and abolishing them would be actively harmful to marginalized communities. Indeed, I think digital locality would help fight against a lot of the root problems that are often attributed to echo chambers, as I describe on the [Filter Bubbles](/garden/filter-bubbles/index.md) page.
 
 ## Influences
 

@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Political Quizzes</h1>
-<p>841 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1007 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 Political quizzes are a bit of a guilty pleasure of mine. I really enjoy getting my beliefs distilled into a handful of labels, and getting forced to think about issues I may not have thought about that thoroughly. I often take issue with the wording of various questions though, and certainly have opinions on some quizzes being better than others.
@@ -56,9 +56,21 @@ I took the [4Orbs](https://theghostofinky.github.io/4orbs/index.html) quiz on 20
 
 I like that this quiz gives live feedback, as it helped me introspect on the differences between my self-reported positions versus positions political quizzes assign me (for example, I usually think I'm way closer to anarchist than these tests usually put me, although funnily enough this quiz probably gave me one of the strongest anarchist score of any test I've taken). I also like that the creator is an anarchist themselves, which is likely uncommon across political quiz writers. I also felt like a lot of the questions were phrased in quite interesting ways.
 
-I took the [spekr](https://jarick.works/spekr/) quiz on 2023-05-17:
+I took the [spekr](https://jarick.works/spekr/) quiz on 2024-12-3:
+
+<div class="img-container"><img src="/garden/2024-12-03-13-37-56.jpeg" title="2024-12-03-13-37-56.jpeg"/></div>
+
+I'd previously taken it on 2023-05-17, where I was significantly closer to the center:
 
 <div class="img-container"><img src="/garden/image_1725597384430_0.png" title="image.png"/></div>
+
+# MultiPolarValues
+
+This quiz is quite interesting, with a vertical axis that seems to be revolutionaries on the top and reformists on the bottom, or perhaps anti-statists on the top and statists on the bottom. It seems to have placed anarchists and communists in the top left since they show communism but anarchists would certainly also lean left, with top right being presumably anarcho-capitalists due to them being economically right, but the chaos symbol is a bit confusing. The bottom sections are both identified by reformist parties, democratic socialism and Democrats/Republicans, respectively. Besides the confusion over what the vertical axis represents, I liked the quiz and it was interesting getting results in the far left edge, which doesn't happen in most quizzes.
+
+I took the [test](https://multipolarist.github.io/MultipolarValues.github.io/) on 2024-12-3 and got:
+
+<div class="img-container"><img src="/garden/2024-12-03-13-43-22.jpeg" title="2024-12-03-13-43-22.jpeg"/></div>
 
 # isidewith
 

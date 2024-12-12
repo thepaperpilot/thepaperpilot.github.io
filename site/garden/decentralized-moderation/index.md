@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Decentralized Moderation</h1>
-<p>661 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>748 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/moderation/index.md">Moderation</a><a href="/garden/virality/index.md">Virality</a></details>
@@ -30,11 +30,11 @@ For specifically tackling the problem of keeping fascism out of a community, I r
 
 [ATProto](/garden/atproto/index.md) designed a system of labelers that anyone can create and follow. Labeling services mark accounts or posts as NSFW, gore, etc. These will cause the post to either be hidden entirely or obscured until the user clicks through a warning. These labelers can be configured by the app designer or the user themselves. The labelers can be linked to reporting services or setup to label based on arbitrary criteria, such as sending each reported post to an LLM for judgement.
 
-I have several concerns with this system. Firstly, these labelers are likely to accumulate influence as the popular ones get used more and thus become more popular. This centralizes power.
+I have several concerns with this system. Firstly, these labelers are likely to accumulate influence as the popular ones get used more and thus become more popular. This centralizes power. Also, sites like clearsky just show a list of lists a user has been placed on. If a list has strong language not backed up by rigorous verification, for example a list that claims to only contain pedophiles that in practice is just people the list creator dislikes, it will unjustly mar people's reputation.
 
-The second concern is with malicious labelers. If a labeler decides to create a list of people known to be a member of a specific marginalized community, there's little to no action anyone can do to stop it.
+The second concern is with malicious labelers. If a labeler decides to create a list of people known to be a member of a specific marginalized community, there's little to no action anyone can do to stop it. While such lists can be used to help members of that community find each other, it can absolutely be used maliciously, effectively allowing -phobes to share a public target list with impunity.
 
-Lastly, this is moderation through the use of blocklists. This isn't inherently bad, but it's a double edged sword, as I discuss [here](/garden/moderation/index.md#674531bb-952c-4346-8f0d-febf15e24879)).
+Lastly, this is moderation through the use of blocklists. This isn't inherently bad, but it's a double edged sword, as I discuss [here](/garden/moderation/index.md#674531bb-952c-4346-8f0d-febf15e24879).
 
 ### Network of vouches
 

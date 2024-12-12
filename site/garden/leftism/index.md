@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Leftism</h1>
-<p>1794 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1864 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/debate/index.md">Debate</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a><a href="/garden/my-political-journey/index.md">My Political Journey</a></details>
@@ -90,6 +90,8 @@ Leftist infighting has long been a meme. While their disagreements are inevitabl
 The status quo creates an aligning force for similar ideologies, and makes any ideologies far away from the status quo feel comparatively dissimilar.
 
 Marxist-Leninists advocate for a concept called democratic centralism to combat infighting. It mandates unity of action while allowing for internal debate and discussion. It's particularly useful and relevant for a vanguard party to ensure it is clear who has taken power following a revolution, rather than creating a power vacuum that can be exploited by imperialist powers. However, critics argue democratic centralism can stifle dissent and foster authoritarianism.
+
+Also, you may have gotten the impression there are just a handful of leftist ideologies based on this document, so I want to clarify that there are a _ton_. It would take a very long time to learn about the differences of each one, and I'm not an expert, but I'll recommend [this video](https://www.youtube.com/watch?v=zICHHhalRFI) as a nice introduction to many of these differences in a very digestible way.
 
 ## Moving Forward
 
