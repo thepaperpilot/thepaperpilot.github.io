@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Everything is Political</h1>
-<p>1100 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1196 words, ~7 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a></details>
@@ -27,12 +27,6 @@ Engaging in our market economy is both a necessity for our survival, and normali
 With so many things becoming commodified, this effect becomes stronger with time. Our culture, love, attention have all been commodified. Everything being for sale means politics affects everything.
 
 [The Search For The Apolitical Video Game](https://youtu.be/X_234m1zGf4) goes over how essentially everything is political, through the framework of searching for an "apolitical" video game. The arguments they make for video games trivially apply to all forms of media. If all media is political, so is the act of consuming it. Even news will always have a bias, as [Objectivity](/garden/objectivity/index.md) doesn't exist.
-
-### r/NonPoliticalTwitter
-
-This is a subreddit that claims to only allow non-political content. Naturally, this is a good case study to argue why the concept of non-political content doesn't exist. They have an interesting interpretation of politics, wherein content can [even involve political figures](https://www.reddit.com/r/NonPoliticalTwitter/comments/1asphum/addressing_the_community_regarding_the_no/), if the focus of the post isn't considered political. This leads to one of the top posts at the time of writing being about [Jimmy Carter giving a speech in Japan](https://www.reddit.com/r/NonPoliticalTwitter/comments/1fu46li/lost_in_translation/). So its a post about a US president engaging in politics abroad, but the post focuses on how an interpreter handled a joke, so it's not political. There's naturally no discussion on why Carter was in Japan or putting this event in a broader context of the relationship between the US and Japan after WW2 and Carter's role in repairing it.
-
-Even when they don't involve US presidents, nearly every post on that subreddit can be associated with politics. Complaining about [subscription costs ](https://www.reddit.com/r/NonPoliticalTwitter/comments/1foaezt/anyone_know_if_this_works/) and how support agents can reduce the prices to keep you from leaving is apolitical, as is [discussing how childrens cereal is so unhealthy ants disregard it as food](https://www.reddit.com/r/NonPoliticalTwitter/comments/1g1e8ph/what_do_they_put_in_those_things/). Apparently [criticizing the lies told to us by our education system](https://www.reddit.com/r/NonPoliticalTwitter/comments/1fql6eq/scam/) is apolitical, just like [voicing distaste with how much advertising corporations spam](https://www.reddit.com/r/NonPoliticalTwitter/comments/1f6dbg2/ive_been_dying_to_talk_about_the_mail_with_you/). These _are_ political issues, and they're only able to pass as apolitical by maintaining a lack of awareness on how politics shape society.
 
 ## Inaction is political
 
@@ -51,3 +45,19 @@ In practice these midpoints don't even make much sense to uphold. If the left sa
 Today, centrism in America is not even talking about the midpoint between the rightist and leftist ideologies, but rather the Republicans and Democrats. These are arbitrary points dictated by the Overton Window that make the midpoint even more arbitrary.  What is the midpoint between socialism and capitalism? The former is defined by private property not existing, the latter the opposite. Any midpoint is clearly still just capitalism, just with some regulations to temporarily stave off crises caused by capitalism's contradictions. The two US parties are both in defense of private ownership of the means of production, so the midpoint was never really going to be anywhere close to the left. This is why Bernie Sanders was called a "true" centrist because, by being further left than the Democrats, he actually was closer to whatever the actual midpoint between the far left and far right would be. Even then, the other arguments against centrism still apply.
 
 Like political apathy, centrism is really just a bias towards the status quo, which I shall remind you is shaped by unjust power structures like capitalism, patriarchy, and white supremacy. All my arguments, both here and in my page against ["No Politics" Rules](/garden/no-politics-rules/index.md), apply equally to centrists as they do the politically apathetic. The Angela Davis quote once again comes to mind: "In a racist society it is not enough to be non-racist, we must be anti-racist."
+
+## Examples
+
+### r/NonPoliticalTwitter
+
+This is a subreddit that claims to only allow non-political content. Naturally, this is a good case study to argue why the concept of non-political content doesn't exist. They have an interesting interpretation of politics, wherein content can [even involve political figures](https://www.reddit.com/r/NonPoliticalTwitter/comments/1asphum/addressing_the_community_regarding_the_no/), if the focus of the post isn't considered political. This leads to one of the top posts at the time of writing being about [Jimmy Carter giving a speech in Japan](https://www.reddit.com/r/NonPoliticalTwitter/comments/1fu46li/lost_in_translation/). So its a post about a US president engaging in politics abroad, but the post focuses on how an interpreter handled a joke, so it's not political. There's naturally no discussion on why Carter was in Japan or putting this event in a broader context of the relationship between the US and Japan after WW2 and Carter's role in repairing it.
+
+Even when they don't involve US presidents, nearly every post on that subreddit can be associated with politics. Complaining about [subscription costs ](https://www.reddit.com/r/NonPoliticalTwitter/comments/1foaezt/anyone_know_if_this_works/) and how support agents can reduce the prices to keep you from leaving is apolitical, as is [discussing how childrens cereal is so unhealthy ants disregard it as food](https://www.reddit.com/r/NonPoliticalTwitter/comments/1g1e8ph/what_do_they_put_in_those_things/). Apparently [criticizing the lies told to us by our education system](https://www.reddit.com/r/NonPoliticalTwitter/comments/1fql6eq/scam/) is apolitical, just like [voicing distaste with how much advertising corporations spam](https://www.reddit.com/r/NonPoliticalTwitter/comments/1f6dbg2/ive_been_dying_to_talk_about_the_mail_with_you/). These _are_ political issues, and they're only able to pass as apolitical by maintaining a lack of awareness on how politics shape society.
+
+### Randy Fine
+
+Randy is a US senator who is trying to ban "politically partisan flags", such as the pride flag or BLM flag, from government buildings. This is clearly politically motivated to preserve the status quo and will only target the flags of progressive causes that wish to change the status quo.
+
+The biggest example of this is this tweet from Randy himself, where he clearly makes the (political) statement that the Israel flag is apolitical, despite the current tension over America's role in funding Israel's genocide:
+
+https://x.com/VoteRandyFine/status/1869068718472654999

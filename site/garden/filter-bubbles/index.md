@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Filter Bubbles</h1>
-<p>2668 words, ~15 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>2733 words, ~15 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/objectivity/index.md">Objectivity</a></details>
@@ -21,7 +21,7 @@ Filter bubbles refer to how users may be intellectually isolated as a result of 
 
 ## Are you in a filter bubble?
 
-Absolutely, and without a doubt. Filter bubbles fractal inside each other, and most of them are entirely innocuous - they're not the scary boogeyman they've been portrayed as. If your search results are primarily English - you may be in a filter bubble. If the news you watch covers domestic issues within your country more than domestic issues in other countries - you may be in a filter bubble. If the local news you watch covers the weather in your local area but not in areas halfway across the globe - you may be in a filter bubble. These are not significantly contributing to the "intellectual isolation" filter bubbles are said to create, and no one is arguing we must be equally aware of the local weather across the world.
+Absolutely, and without a doubt. Filter bubbles fractal inside each other, and most of them are entirely innocuous - they're not the scary boogeyman they've been portrayed as. If your search results are primarily English - you may be in a filter bubble. If the news you watch covers domestic issues within your country more than domestic issues in other countries - you may be in a filter bubble. If the local news you watch covers the weather in your local area but not in areas halfway across the globe - you may be in a filter bubble. If you avoid spoilers for media you wish to consume - you may be in a filter bubble. These are not significantly contributing to the "intellectual isolation" filter bubbles are said to create, and no one is arguing we must be equally aware of the local weather across the world.
 
 So yes, you're in a filter bubble - likely many, even. But that's not the right question to be asking; We must delve deeper into filter bubbles' causes and manifestations to determine what their negative aspects are and ultimately how to fix them.
 
@@ -93,6 +93,8 @@ On an individual level, we can try to improve our media literacy and spread accu
 On a systemic level, a new social media can be designed so they are more protected from misinformation spreading. For example, by allowing users to publicly "vouch" for other users for writing and sharing accurate posts, forming a web of trust/reputation. Also designing the network so those who are popular are not prioritized in algorithmic feeds, essentially centralizing influence into the hands of the few. I explore this topic and other aspects to a radical new social media network in [Fedi v2](/garden/fedi-v2/index.md) and [Digital Locality](/garden/digital-locality/index.md).
 
 Taking a step back, several of these issues described - clickbait and spam, specifically - only exist due to financial incentives brought on by our capitalist system. Additionally, Capitalism is the reason for people not having the time, energy, or motivation to more healthily approach social media and combat misinformation. Therefore, we need a [Leftist](/garden/leftism/index.md) shift to fix these problems and bring us to a more media literate society free of influencers and advertisers. It's the only long term solution.
+
+And I must reiterate that if something is neither hateful nor misinformation, it is okay for the message to exist and also so for an individual to not wish to see it. So long as its neither hateful nor misinformation, there are no bad values, only different values.
 
 ### Message gardening
 

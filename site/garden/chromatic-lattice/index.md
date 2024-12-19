@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Chromatic Lattice</h1>
-<p>189 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>205 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a></details>
@@ -20,6 +20,6 @@ A multiplayer game I have in development. It'll be about optimizing a board of t
 
 A person's board will act as their profile page, and will include a local chat room (in addition to the global one), a description, a list of people currently on the page, and a friends list that can be broken down into categories. Your cursor also appears on the board for all other users, although those can be toggled off in settings.
 
-The friend lists effectively work as the links between nodes, creating locality. Everyone has a link to their own board accessible at all times, and from there to their friends. All links would also show a count of how many people are on that board.
+The friend lists effectively work as the links between nodes, creating locality. Everyone has a link to their own board accessible at all times, and from there to their friends. You'd also be able to see a list of "adjacent" rooms with an active conversation, as well as what rooms your friends are in, with the ability to join them.
 
 In addition to friends, you can jump to a players board or to wherever the player is by right clicking their name in global chat. You can also share links to your board off platform as well.

@@ -11,10 +11,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Digital Locality</h1>
-<p>1803 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1818 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/decentralized-moderation/index.md">Decentralized Moderation</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/virality/index.md">Virality</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/decentralized-moderation/index.md">Decentralized Moderation</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/virality/index.md">Virality</a></details>
 
 A locality is a physical area or neighborhood where people live and regularly see each other. In the same way I believe strong [Local Communities](/garden/local-communities/index.md) are highly important in real life, I think [Social Media](/garden/social-media/index.md) would benefit from having _digital_ localities.
 
@@ -91,3 +91,5 @@ What I'm describing is also a lot like a MUD, classic online games where players
 There are so many competing protocols out there at the moment, and the network effect has made them all struggle to find a foothold. I don't think anything described in here would be the unique selling point to just immediately attract a large user base. With that in mind, I think the approach should be to make something thats with using for reasons other than social media, and attach the social media experiment to it. That can serve as a proof of concept to prove the ideas here work, although ideas that don't work to be iterated upon, and collect public interest in whatever the next step is.
 
 With the above in mind, let me introduce [Chromatic Lattice](/garden/chromatic-lattice/index.md), an incremental game I've been designing that would need social features to work anyways. Specifically, it will have boards for each player, where the actual gameplay happens. These boards can be linked to publicly, so you can show off your boards. When a player is visiting someone else's board, their cursor will be visible to others there, and their will be local chat to just people on that page, a form of  ambient copresence. These boards can be customized, including links to other boards. Thus locality is introduced - we now have synchronous chat rooms that every player has, and they can explore the network by jumping through these links. There are more details on the chromatic lattice page.
+
+After Chromatic Lattice, I have plans for a larger experiment in the form of [Orchard](/garden/orchard/index.md).

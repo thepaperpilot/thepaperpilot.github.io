@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Decentralized Moderation</h1>
-<p>748 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>915 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/moderation/index.md">Moderation</a><a href="/garden/virality/index.md">Virality</a></details>
@@ -49,3 +49,13 @@ This would essentially be an alternative to how current fediverse applications b
 ### [Digital Locality](/garden/digital-locality/index.md)
 
 Similar to the network of vouches, a network with digital locality naturally limits the amount of content you'll see, essentially eliminating bots and spam as well as organically filtering the content you see based on the people you interact with.
+
+### Proof of work
+
+If interacting with a person, such as tagging them, replying, or reacting, "cost" the user by requiring them to solve an expensive cryptography challenge, that could make bot farms infeasible while not significantly impacting normal users.
+
+For normal users, you'd just have a queue of messages being sent - an outbox. Once the challenge is passed, the message sends. Since the user is interacting at human speeds, it shouldn't ever become too large.
+
+For bots, sending those messages out quickly to a lot of people will cost an enormous amount of resources, making it infeasible.
+
+In theory this system should be customizable, where a user can change the difficulty of the challenge based on groups of people (e.g. people you follow, or are within a chain of followers) as well as per action taken. It should be able to completely disable challenges for certain users or in contexts like replying to you in a thread where you've already replied to them.
