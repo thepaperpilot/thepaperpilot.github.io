@@ -14,7 +14,7 @@ const pageData = useData();
 <p>396 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/orchard/index.md">Orchard</a></details>
 
 Virality is the ability of something to "go viral" on a network - spread far and wide throughout the network. On traditional social media, this refers to how influencers and advertisers will have their content spread, but also specific posts from smaller posters can get picked up by the algorithm and spread as well.
 

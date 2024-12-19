@@ -14,7 +14,7 @@ const pageData = useData();
 <p>1818 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/decentralized-moderation/index.md">Decentralized Moderation</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/virality/index.md">Virality</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/decentralized-moderation/index.md">Decentralized Moderation</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/virality/index.md">Virality</a></details>
 
 A locality is a physical area or neighborhood where people live and regularly see each other. In the same way I believe strong [Local Communities](/garden/local-communities/index.md) are highly important in real life, I think [Social Media](/garden/social-media/index.md) would benefit from having _digital_ localities.
 

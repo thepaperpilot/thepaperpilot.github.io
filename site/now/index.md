@@ -11,26 +11,32 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">/now</h1>
-<p>186 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>304 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 This "now page" offers a big picture glimpse into what I’m focused on at this point in my life. [What is a now page](https://nownownow.com/about)?
 
-## Digital Gardens
+## Profectus
 
-I'm building (at least) a mockup for [Orchard](/garden/orchard/index.md), an app for message gardening into a [Network of Knowledge](/garden/network-of-knowledge/index.md).
+I'm currently working on wrapping up a large update to [Profectus](/garden/profectus/index.md), which simplifies how features are made and makes parts of them more modular and composable. This update also includes a rewrite to how boards work that will make them far more robust and usable in a variety of situations.
 
-Ultimately, I think this project could have some implications on how _this_ digital garden operates, so I've decided to stop further indieweb integrations like webmentions for now. I'd like to see a server be able to bridge indieweb and agentic fediverse posts, and start using the agentic fediverse posts as my new source of truth.
+## Timeline on this website
 
-## Incremental Social
+I'm working on a large update to this website that'll include a new global feed of my activity across many websites going back an entire decade. It also replaces Vitepress with Nuxt.JS and no longer using a (heavily) modified template, instead just having the whole thing implemented by me. It'll also include features like better search and a graph of garden pages.
 
-I'm running and improving the social media site [Incremental Social](/garden/incremental-social/index.md), along with CardboardEmpress.
+## Digital locality
 
-I'd like to make it host an iroh node for hosting agentic fediverse content, managing a keypair for each account (with options for migration).
+I've been thinking a lot about social media design and how it could be improved, which has distilled into my writeup on what I call [Digital Locality](/garden/digital-locality/index.md), which I believe is the solution to decentralized moderation that combats hate and misinformation.
 
-## Chromatic Lattice
+I have plans for two experiments into digital locality:
 
-I'm working on a multiplayer incremental game called [Chromatic Lattice](/garden/chromatic-lattice/index.md) . It's still largely in the concept phase, and may even be built on the [Agentic Fediverse](/garden/fedi-v2/index.md).
+### [Chromatic Lattice](/garden/chromatic-lattice/index.md)
+
+A multiplayer co-operative incremental game on the [Agentic Fediverse](/garden/fedi-v2/index.md). This will come alongside various improvements to [Incremental Social](/garden/incremental-social/index.md), such as making it operate as an iroh node.
+
+### [Orchard](/garden/orchard/index.md)
+
+An app for message gardening into a [Network of Knowledge](/garden/network-of-knowledge/index.md) and represents my vision for an alternative approach to social media that is better at not making people angry or doomscroll, combat misinformation, and encourage stronger relationships with those you meet online, rather than just wading through an ocean of strangers.
 
 ## Kronos
 

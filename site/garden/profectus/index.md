@@ -15,7 +15,7 @@ const pageData = useData();
 <p>27 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/advent-incremental/index.md">Advent Incremental</a><a href="/garden/planar-pioneers/index.md">Planar Pioneers</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/advent-incremental/index.md">Advent Incremental</a><a href="/now/index">/now</a><a href="/garden/planar-pioneers/index.md">Planar Pioneers</a></details>
 
 <details><summary>Tagged by:</summary><a href="/garden/advent-incremental/index.md">Advent Incremental</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/planar-pioneers/index.md">Planar Pioneers</a></details>
 

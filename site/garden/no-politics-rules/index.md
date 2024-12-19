@@ -15,7 +15,7 @@ const pageData = useData();
 <p>985 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a><a href="/garden/orchard/index.md">Orchard</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a></details>
 
 Communities - be they discord servers, forums, message boards, etc. - tend to have rules, and you'll likely see the same rules come up often. One of these common rules is the "no politics" rule. These rules may vary slightly in wording, but all share in being highly contentious. These are easily the rules most often broken and most often fought over - for _and_ against.
 

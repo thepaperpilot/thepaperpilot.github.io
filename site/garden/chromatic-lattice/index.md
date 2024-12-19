@@ -14,7 +14,7 @@ const pageData = useData();
 <p>205 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a></details>
 
 A multiplayer game I have in development. It'll be about optimizing a board of tiles to create certain patterns to improve resource gains. Players will work collaboratively to construct monuments. It will be built on the [Agentic Fediverse](/garden/fedi-v2/index.md) and experiment with [Digital Locality](/garden/digital-locality/index.md).
 
