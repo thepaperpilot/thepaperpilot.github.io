@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Orchard</h1>
-<p>1026 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1086 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/now/index">/now</a></details>
@@ -21,7 +21,7 @@ const pageData = useData();
 
 This is an [Agentic Fediverse](/garden/fedi-v2/index.md) app I'm designing and at least building a mock for. The purpose of the app is to organize and grow a [Network of Knowledge](/garden/network-of-knowledge/index.md) (or [Digital Garden](/garden/digital-gardens/index.md)) sorted by topic. It achieves this through a concept called message gardening, the process of converting casual conversations into formal, referenceable stores of knowledge. It would be an experiment in [Digital Locality](/garden/digital-locality/index.md) and perhaps represent an alternative to traditional [Social Media](/garden/social-media/index.md).
 
-The original problem I was trying to solve is having a lot of conversations about various topics stretching back far into the past and across many platforms. I often want to review something I said on a given topic and find it difficult to do so. This app would make it far easier to retrieve my notes on any topic, and collect those notes into a useful resource about that topic. It's different than a traditional note-taking app because it works with conversations directly, which is how my "notes" on a topic initially start out.
+The original problem I was trying to solve is having a lot of conversations about various topics stretching back far into the past and across many platforms. I often want to review something I said on a given topic and find it difficult to do so. This app would make it far easier to retrieve my notes on any topic, and collect those notes into a useful resource about that topic (a process called "message gardening"). It's different than a traditional note-taking app because it works with conversations directly, which is useful because discourse is typically what prompts me to collect my thoughts on a topic in the first place.
 
 Core to this project is improving how conversations online are carried out. It's inspired by sort of mashing up [The IndieWeb](/garden/the-small-web/index.md) and [Commune](/garden/commune/index.md), and would follow a lot of the recommendations in the  [chat glue](https://a9.io/glue-comic/) comic. Contrary to each person having to own a personal website, this platform should in theory be more accessible by allowing people to skip the step of finding a domain to semi-permanently attach their identity to, and not having to pay a subscription cost to maintain it. See the page on the [Agentic Fediverse](/garden/fedi-v2/index.md) for details on how to run it sustainably and still offer free tiers to users.
 
@@ -57,7 +57,7 @@ We'll need to be careful sharing notes doesn't lead to centralizing power. I thi
 
 ## LLMs
 
-A local LLM could assist in marking topic changes automatically, allowing you to get the benefits of the conversation being broken up for catching up even while on a non-commune chat.
+A local LLM could assist in marking topic changes automatically, making it so chat participants don't have to themselves. Since being broken down into topics is particularly useful for "catching up" on a conversation (allowing you to skip topics you're not interested in), this feature would be particularly useful on chats from platforms that don't support topics themselves, such as discord or slack. Jigsaw's [sensemaking-tools](https://medium.com/jigsaw/making-sense-of-large-scale-online-conversations-b153340bda55) project could slot in here particularly well.
 
 LLMs could also be given the topics as context and be able to query the network for knowledge.
 
