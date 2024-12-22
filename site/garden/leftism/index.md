@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Leftism</h1>
-<p>1864 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1870 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/debate/index.md">Debate</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a><a href="/garden/my-political-journey/index.md">My Political Journey</a></details>
@@ -27,7 +27,7 @@ Leftism refers to a wide range of political ideologies that share a general oppo
 
 ### Marxism-Leninism
 
-Marxist-Leninists believe the way towards communism - a classless, stateless, moneyless society - requires a transitionary phase called the "dictatorship of the proletariat". This involves a revolutionary vanguard party seizing control of the state to protect against counter-revolutionary forces and reorganize society along socialist lines. The vanguard party will typically do so by taking advantage of a crisis brought on by the contradictions of capitalism. As material abundance is achieved and exploitation becomes structurally impossible, the state will "wither away," giving rise to communism.
+Marxist-Leninists believe the way towards communism - a classless, stateless, moneyless society - requires a transitionary phase called the "dictatorship of the proletariat". This involves a revolutionary vanguard party seizing control of the state to protect against counter-revolutionary forces, teach the underlying theories behind communism, and reorganize society along socialist lines. The vanguard party will typically do so by taking advantage of a crisis brought on by the contradictions of capitalism. As material abundance is achieved and exploitation becomes structurally impossible, the state will "wither away," giving rise to communism.
 
 Examples of MLism include the Soviet Union and other 20th century communist movements.
 
@@ -45,7 +45,7 @@ Critics of anarchism often point to decentralized systems being harder to "scale
 
 The page dedicated to anarchism will philosophically explore what a stateless society looks like, but does not really cover the process of transitioning from capitalism to anarchism, as I have little confidence such a process is truly possible without a state to protect it, so long as capitalists and other reactionary powers exist.
 
-### Market Socialisms and Reformism
+### Market Socialism and Reformism
 
 In contrast to anarchism and communism, these ideologies see markets as a tool for innovation and resource allocation, and argue for transitioning an existing state towards socialism without a vanguard party or revolution.
 

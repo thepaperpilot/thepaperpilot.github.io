@@ -12,10 +12,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Orchard</h1>
-<p>1086 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1135 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/now/index">/now</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/now/index">/now</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
 
@@ -49,7 +49,7 @@ Links can also be manually created, and all links can be labeled to display a re
 
 ## Sharing Notes
 
-You can jump to other people's gardens and see their public notes (via a friends list or via a mutual chat room). You should be able to take any of those notes or the whole graph and include it in your own, so they are part of your graph and queries. There'll need to be a good way of displaying changes, aliasing topics, and proposing edits to other peoples' pages. A user should also be able to "fork" someone's notes so they can modify them, and maintain a link to the original note but no longer auto-update them.
+You can jump to other people's gardens and see their public notes (via a friends list or via a mutual chat room). You should be able to take any of those notes or the whole graph and include it in your own, so they are part of your graph and queries. There'll need to be a good way of displaying changes, aliasing topics, and proposing edits to other peoples' pages. A user should also be able to "fork" someone's notes so they can modify them, and maintain a link to the original note but no longer auto-update them. Unread notes should appear similar to unread chats, which will improve the ability to use Orchard as a method of learning. In fact, breaking down books by topic and adding them to an Orchard graph is something I think would be worth looking into, once the project is usable.
 
 I think a conversation should show a sidebar of notes from both the user's network as well as any public notes from any other active participants' networks that relate to the set of topics being discussed. I think this would help encourage message gardening and assist with distributing information. We could go a step further and notify participants when those notes get added to or edited, which could help with corrections to articles getting spread to those who saw the original incorrect information (something that traditional media doesn't do well).
 

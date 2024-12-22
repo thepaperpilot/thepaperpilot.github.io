@@ -15,7 +15,7 @@ const pageData = useData();
 <p>225 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/decentralized-moderation/index.md">Decentralized Moderation</a><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/matrix/index.md">Matrix</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/virality/index.md">Virality</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/commune/index.md">Commune</a><a href="/garden/decentralized-moderation/index.md">Decentralized Moderation</a><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/matrix/index.md">Matrix</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/virality/index.md">Virality</a></details>
 
 <details><summary>Tagged by:</summary><a href="/garden/decentralized-identity/index.md">Decentralized Identity</a><a href="/garden/decentralized-moderation/index.md">Decentralized Moderation</a><a href="/garden/nostr/index.md">Nostr</a></details>
 

@@ -15,7 +15,7 @@ const pageData = useData();
 <p>114 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/webrings/index.md">Webrings</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/my-personal-website/index.md">My Personal Website</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/webrings/index.md">Webrings</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a></details>
 
