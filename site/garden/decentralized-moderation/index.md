@@ -36,7 +36,7 @@ The second concern is with malicious labelers. If a labeler decides to create a 
 
 Lastly, this is moderation through the use of blocklists. This isn't inherently bad, but it's a double edged sword, as I discuss [here](/garden/moderation/index.md#674531bb-952c-4346-8f0d-febf15e24879).
 
-### Network of vouches
+<span id="67525178-9f33-400c-9452-0a60d5e0f3a0"><h3>Network of vouches</h3></span>
 
 Identities could have a system by which they vouch for or against other identities that they are human and make content worth looking at, and clients could use this network of vouches to filter posts to display or retrieve. For example, a user may say they only want to see posts made by identities within a chain of 4 vouches to themselves. Upon account creation, users could be prompted to vouch for IRL friends or some popular figures within topics they care about to get started. In theory the longer the chain can be, the more varied the content a user will see, and the more likely for it to be something they disagree with. This would allow users to customize how narrow their feed is at a given time by just changing the max chain length. They can also continue vouching for more people to more precisely expand their feed.
 

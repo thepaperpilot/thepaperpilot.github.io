@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Chromatic Lattice</h1>
-<p>1467 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1468 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a></details>
@@ -72,7 +72,7 @@ This is a very centralized approach, and is the most common approach for multipl
 
 This would make the game run on the [Agentic Fediverse](/garden/fedi-v2/index.md). Initially the private keys would likely be managed by incremental social, which would also be the default iroh node clients would connect to.
 
-My concern with this approach is that it would be difficult to operate in a way that doesn't centralize the power. Being a multiplayer game it's important to ensure people can't just fabricate a history of actions with fake timestamps. In theory the fix for this would be something like the [Network of Vouches](undefined), but we're a long ways off from that being viable.
+My concern with this approach is that it would be difficult to operate in a way that doesn't centralize the power. Being a multiplayer game it's important to ensure people can't just fabricate a history of actions with fake timestamps. In theory the fix for this would be something like the [network of vouches](/garden/decentralized-moderation/index.md#67525178-9f33-400c-9452-0a60d5e0f3a0) approach, but we're a long ways off from that being viable.
 
 I'm also concerned about it's efficiency in regards to creating and maintaining entities to store each player's current mouse position.
 
