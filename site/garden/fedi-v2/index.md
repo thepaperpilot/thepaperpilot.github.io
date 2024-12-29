@@ -1,7 +1,8 @@
 ---
-alias: "Agentic Fediverse"
+alias: "Agentic Fediverse, Leaf"
 public: "true"
 slug: "fedi-v2"
+tags: [Decentralized]
 title: "Fedi v2"
 prev: false
 next: false
@@ -12,12 +13,14 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Fedi v2</h1>
-<p>3033 words, ~17 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>3001 words, ~16 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/decentralized/index.md">Decentralized</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/weird/index.md">Weird</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/decentralized/index.md">Decentralized</a><a href="/garden/erlend-heggen/index.md">Erlend Heggen</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/weird/index.md">Weird</a></details>
 
-A placeholder name for a theoretical new federated network that is client-centric, in contrast to the server-centric [Fediverse](/garden/fediverse/index.md). Many of the ideas here will be implemented as described or similarly by people much smarter than me as part of [Agentic Federation on Iroh](https://github.com/commune-os/weird/discussions/32), an initiative by the [Weird](/garden/weird/index.md) developers.
+<details><summary>Tags:</summary><a href="/garden/decentralized/index.md">Decentralized</a></details>
+
+Leaf is a decentralized network in development by [Erlend Heggen](/garden/erlend-heggen/index.md) and company that would be a client-centric alternative to the server-centric [Fediverse](/garden/fediverse/index.md). I'm really interested in seeing this develop, so have put my own thought on the vision of this project here, under the more generic term "Fedi v2". You can see the official plans and implementation on the [Agentic Fediverse repo](https://github.com/muni-town/agentic-fediverse).
 
 ## Motivation
 
@@ -105,7 +108,7 @@ Here are some of the components that could be used to represent a chat room:
 
 The agentic fediverse could support sharing games using a Game component that includes a url or raw html required to play a game. In theory they could even support "cloud saves" by signing a message of their save data that only they can decrypt and sending it as a reply to the game message. Clients could handle displaying the game alongside the usual filtering and sorting features.
 
-I'd also be excited in seeing a sort of MMO style game on the agentic fediverse. So you see other players and there's a shared game state, calculated on the client based on the actions recorded by the various different players. And since the rules would have to be defined by the components, people could create their own copies of the world (e.g. to play with a friend group or solo), or even make their own mods of the game. I'd like to look into that. I'll perhaps rethink [Chromatic Lattice](/garden/chromatic-lattice/index.md) to work on such a framework, although it may be too complicated for this idea.
+I'd also be excited in seeing a sort of MMO style game on the agentic fediverse. So you see other players and there's a shared game state, calculated on the client based on the actions recorded by the various different players. And since the rules would have to be defined by the components, people could create their own copies of the world (e.g. to play with a friend group or solo), or even make their own mods of the game. I'd like to look into that.
 
 Having the game state be calculatable by the client like that would also allow trophies and achievements to work verifiably. People could probably still write software to copy someone else's events at the right times and effectively replicate their save, but I think that won't happen commonly enough to matter.
 

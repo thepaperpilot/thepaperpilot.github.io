@@ -11,10 +11,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Chromatic Lattice</h1>
-<p>1468 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1483 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a></details>
 
 A multiplayer [Incremental Game](/garden/guide-to-incrementals/index.md) I have in development. It'll be about optimizing a board of tiles to create certain patterns to improve resource gains. Players will work collaboratively to construct monuments. It will also include an experiment on [Digital Locality](/garden/digital-locality/index.md).
 
@@ -58,7 +58,7 @@ The friend lists effectively work as the links between nodes, creating locality.
 
 ## Tech Stack
 
-I haven't determined the stack entirely yet, other than that I want both the server and client code to use typescript due to my familiarity with it and because of how accessible web apps are. My goals are to have assurance that players are obeying the rules of the game, have an eventually consistent state of the game, reasonable protection against bot accounts, and realtime display of cursors to other players. I'd rather make this properly [Decentralized](/garden/decentralized/index.md) and [Local-First Software](/garden/local-first-software/index.md), but that isn't strictly required.
+I haven't determined the stack entirely yet, other than that I want both the server and client code to use typescript due to my familiarity with it and because of how accessible web apps are. My goals are to have assurance that players are obeying the rules of the game, have an eventually consistent state of the game, reasonable protection against bot accounts, and realtime display of cursors to other players. I'd rather make this properly decentralized, but that isn't strictly required.
 
 Oh, and to be clear, the frontend will definitely just be a website, using [Profectus](/garden/profectus/index.md).
 
@@ -70,9 +70,9 @@ This is a very centralized approach, and is the most common approach for multipl
 
 ### Leaf
 
-This would make the game run on the [Agentic Fediverse](/garden/fedi-v2/index.md). Initially the private keys would likely be managed by incremental social, which would also be the default iroh node clients would connect to.
+This would make the game run on the agentic fediverse. Initially the private keys would likely be managed by incremental social, which would also be the default iroh node clients would connect to.
 
-My concern with this approach is that it would be difficult to operate in a way that doesn't centralize the power. Being a multiplayer game it's important to ensure people can't just fabricate a history of actions with fake timestamps. In theory the fix for this would be something like the [network of vouches](/garden/decentralized-moderation/index.md#67525178-9f33-400c-9452-0a60d5e0f3a0) approach, but we're a long ways off from that being viable.
+My concern with this approach is that it would be difficult to operate in a way that doesn't centralize the power. Being a multiplayer game it's important to ensure people can't just fabricate a history of actions with fake timestamps.
 
 I'm also concerned about it's efficiency in regards to creating and maintaining entities to store each player's current mouse position.
 
@@ -82,4 +82,4 @@ Additionally, loading times for both your own board and other peoples' would lik
 
 [Rivet](https://rivet.gg/) is a library for realtime applications (originally games). This would be similar to the traditional approach, but with a larger library that handles more of the work for us, enabling more advanced features like horizontal scaling and concurrency. It also has support for local-first sync, which could be useful in the future if we find a way for the game to work without needing a consistent connection for ensuring people are playing properly.
 
-There's other similar libraries, like [Jazz](https://jazz.tools/). In fact, Jazz will eventually have things like the cursors I want as an out-of-box feature. But unfortunately, it seems to be quite early in development and it along with many other features won't be ready for awhile. Although one of their example projects, [Learn Anything](https://learn-anything.xyz/), reminds me of some of the motivations I have behind [Orchard](/garden/orchard/index.md).
+There's other similar libraries, like [Jazz](https://jazz.tools/). In fact, Jazz will eventually have things like the cursors I want as an out-of-box feature. But unfortunately, it seems to be quite early in development and it along with many other features won't be ready for awhile.

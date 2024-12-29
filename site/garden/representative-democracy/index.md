@@ -1,6 +1,7 @@
 ---
 public: "true"
 slug: "representative-democracy"
+tags: [Decision Making]
 title: "Representative Democracy"
 prev: false
 next: false
@@ -11,11 +12,11 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Representative Democracy</h1>
-<p>87 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>91 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/political-quizzes/index.md">Political Quizzes</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/decision-making/index.md">Decision Making</a><a href="/garden/political-quizzes/index.md">Political Quizzes</a></details>
 
-A form of democracy where people vote for representatives who then vote on the actual issues. The US has a representative democracy. By virtue of representatives not perfectly reflecting the views of their constituents, and by forming a hierarchy of power, this is a form of Democracy that is not [Anarchistic](/garden/anarchism/index.md).
+<details><summary>Tags:</summary><a href="/garden/decision-making/index.md">Decision Making</a></details>
 
-Representative forms of government were once useful for their logistical simplifications, but now primarily serve as a way to limit the range of acceptable political opinions/options and to perpetuate the reign of those in power.
+A form of democracy where people vote for representatives who then vote on the actual issues. The US has a representative democracy. Representative forms of government were once useful for their logistical simplifications, but now primarily serve as a way to limit the range of acceptable political opinions/options and to perpetuate the reign of those in power. A representative will never be able to truly represent all the held opinions of all their constituents, and even if they could, they'd still have all the issues associated with [Majoritarian Democracy](/garden/direct-democracy/index.md).

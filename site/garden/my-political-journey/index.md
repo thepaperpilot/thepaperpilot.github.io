@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">My Political Journey</h1>
-<p>714 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>758 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/leftism/index.md">Leftism</a><a href="/garden/political-quizzes/index.md">Political Quizzes</a></details>
@@ -34,4 +34,6 @@ I migrated a LOT of posts to this website for the sake of having them all in one
 
 I believe a lot of things contributed to my radicalization, which happened sometime in the early 2020s. Ultimately I think I was just aware that I didn't really like the views I was being exposed to, the direction that media was trying to to pull me, and slowly over time just engaged less and less with that kind of content. I'd always been very economically leftist, so just needed to get over my edgy/cringe phase. I think what put the nail in the coffin was watching through the [alt right playbook](https://youtube.com/playlist?list=PLJA_jUddXvY7v0VkYRbANnTnzkA_HMFtQ), a great series I highly recommend. I also started really enjoying a lot of leftist creators, like [hasanabi](https://twitch.tv/hasanabi), [philosophy tube](https://youtube.com/@philosophytube), and others. The people around me also affect my views, and after leaving college I think I interacted with nicer people on average. Of particular note here is my wife, who had their own political journey which has similarly culminated in us sort of having a positive feedback loop further and further left. Certain events like the BLM protests following George Floyd similarly cemented our position further and further left.
 
-I actually want to also point out I've found a lot of people in this space to be very accepting of people who previously held problematic beliefs. It's largely why I feel comfortable (enough) having a lot of my history public both on this page and the site in general, and being able to describe how my political journey got me to where I am today, a very radical [Leftist](/garden/leftism/index.md).
+I actually want to also point out I've found a lot of people in this space to be very accepting of people who previously held problematic beliefs. It's largely why I feel comfortable (enough) having a lot of my history public both on this page and the site in general, and being able to describe how my political journey got me to where I am today, a radical [Leftist](/garden/leftism/index.md).
+
+Today I'm still learning and exploring the various leftist political ideologies, and finding what I align most with. I use this garden as a way of engaging with what I read, to gauge my understanding and provide the impetus for me collecting my thoughts.

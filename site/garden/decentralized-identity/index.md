@@ -16,7 +16,7 @@ const pageData = useData();
 <p>532 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/nostr/index.md">Nostr</a><a href="/garden/weird/index.md">Weird</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/nostr/index.md">Nostr</a><a href="/garden/weird/index.md">Weird</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/decentralized/index.md">Decentralized</a></details>
 

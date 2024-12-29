@@ -1,6 +1,7 @@
 ---
 public: "true"
 slug: "technocracy"
+tags: [Decision Making]
 title: "Technocracy"
 prev: false
 next: false
@@ -13,6 +14,10 @@ const pageData = useData();
 <h1 class="p-name">Technocracy</h1>
 <p>296 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
+
+<details><summary>Referenced by:</summary><a href="/garden/decision-making/index.md">Decision Making</a></details>
+
+<details><summary>Tags:</summary><a href="/garden/decision-making/index.md">Decision Making</a></details>
 
 Technocracies are a form of government where technical experts make the decisions. It sounds appealing and like a solution to the "problem" of "How can Democracy be good if most people are stupid?". Well I don't think that's really a problem in the first place, as it implies some sort of objective knowledge and truth, when really the best decision _is_ the one those affected by the decision most agree with. However, even under the premise that tyranny of the majority is a problem worth addressing, technocracies don't hold up under critical analysis.
 

@@ -1,6 +1,7 @@
 ---
 public: "true"
 slug: "consensus-democracy"
+tags: [Decision Making]
 title: "Consensus Democracy"
 prev: false
 next: false
@@ -14,7 +15,9 @@ const pageData = useData();
 <p>213 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/gerrymandering/index.md">Gerrymandering</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/decision-making/index.md">Decision Making</a><a href="/garden/gerrymandering/index.md">Gerrymandering</a><a href="/garden/local-communities/index.md">Local Communities</a></details>
+
+<details><summary>Tags:</summary><a href="/garden/decision-making/index.md">Decision Making</a></details>
 
 A form of democracy similar to [Direct Democracy](/garden/direct-democracy/index.md) but with higher requirements for passing policies, typically requiring unanimity or near-unanimity. This helps reduce (although doesn't eliminate) the possibility of a majority group oppressing a minority group.
 

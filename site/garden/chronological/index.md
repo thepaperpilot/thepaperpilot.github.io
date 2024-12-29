@@ -1,4 +1,5 @@
 ---
+alias: "Feeds"
 public: "true"
 slug: "chronological"
 title: "Chronological"
@@ -11,20 +12,11 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Chronological</h1>
-<p>73 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>82 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/digital-gardens/index.md">Digital Gardens</a><a href="/garden/freeform-vs-chronological-dichotomy/index.md">Freeform vs Chronological Dichotomy</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/freeform/index.md">Freeform</a></details>
 
-A collection of information that is tied to its creation or edit date
+A collection of information that is displayed as a feed or timeline, as opposed to [Freeform](/garden/freeform/index.md) content . These are not suitable as stores of knowledge, but work well with RSS.
 
-Part of the [Freeform vs Chronological Dichotomy](/garden/freeform-vs-chronological-dichotomy/index.md)
-
-Anything with a "timeline" or "feed" is considered chronological
-- Even if there's algorithmic sortings that take things other than creation or edit date into account!
-
-Chronological displays are less suitable as stores of knowledge ([Digital Gardens](/garden/digital-gardens/index.md))
-
-Social media overuses timelines and feeds
-
-RSS feeds work really well with this form of content
+Feeds can also refer to algorithmic feeds, despite them not being chronological. I think algorithmic feeds caused a lot of the problems with [Social Media](/garden/social-media/index.md) today, and hope freeform will do better. That's not to say feeds have no use or utility, just that they're overused to our collective detriment.

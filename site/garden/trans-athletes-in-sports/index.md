@@ -14,7 +14,7 @@ const pageData = useData();
 <p>288 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/everything-is-political/index.md">Everything is Political</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/apoliticism/index.md">Apoliticism</a></details>
 
 Sports are meant to be competitions with winners and losers, which means intrinsically that one has to be better than the other. But we've determined certain advantages as "fair" ones and others as not, without fully acknowledging how fairness is just a [Social Construct](/garden/social-constructs/index.md).
 

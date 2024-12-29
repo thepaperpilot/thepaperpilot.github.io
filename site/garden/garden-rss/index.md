@@ -11,12 +11,12 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Garden-RSS</h1>
-<p>59 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>60 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/freeform/index.md">Freeform</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/the-small-web/index.md">The Small Web</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/the-small-web/index.md">The Small Web</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
 
-A theoretical alternative to RSS that's better for [Freeform](/garden/freeform/index.md) websites (and [Digital Gardens](/garden/digital-gardens/index.md) specifically )
+A theoretical alternative to RSS that's better for [Freeform](/garden/freeform/index.md) content.
 
 Why is it useful?
 - [Feeds are not fit for gardening](https://v5.chriskrycho.com/essays/feeds-are-not-fit-for-gardening/)

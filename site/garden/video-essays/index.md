@@ -11,10 +11,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Video Essays</h1>
-<p>561 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>563 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-Video essayists are an interesting case study here. I _love_ video essays, they're often entertaining and you can tell the effort and care put into them. A lot of my favorite creators are video essayists, like [hbomberguy](https://www.youtube.com/c/hbomberguy), [Folding Ideas](https://www.youtube.com/@FoldingIdeas), and [Philosophy Tube](https://www.youtube.com/@PhilosophyTube) (and probably more - its hard to keep track of my favorites since they upload infrequently). Unfortunately, video essays have now been recognized as successful ways to make videos with high watch time which has led to an explosion of video essays, with varying levels of skill, ethics, and effort put into researching the topics.
+Video essayists are something I feel a bit conflicted on. I _love_ video essays, they're often entertaining and you can tell the effort and care put into them. A lot of my favorite creators are video essayists, like [hbomberguy](https://www.youtube.com/c/hbomberguy), [Folding Ideas](https://www.youtube.com/@FoldingIdeas), and [Philosophy Tube](https://www.youtube.com/@PhilosophyTube) (and probably more - its hard to keep track of my favorites since they upload infrequently). Unfortunately, video essays have now been recognized as successful ways to make videos with high watch time which has led to an explosion of video essays, with varying levels of skill, ethics, and effort put into researching the topics.
 
 The format of video essays makes them feel credible - being longform, speaking authoritatively, and including relevant footage all contribute to this. However, none of those actually necessitate the creator being a subject matter expert.
 

@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Filter Bubbles</h1>
-<p>2733 words, ~15 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>2730 words, ~15 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/objectivity/index.md">Objectivity</a></details>
@@ -57,7 +57,7 @@ In the previous section I proposed that allowing people to decide what they want
 
 A lot of political topics are deeply personal and emotionally exhausting to engage with, particularly for those marginalized under the current power structures. For example, trans rights are an extremely important political issue, but demanding that trans people continually defend their very existence against reactionary attacks amounts to a form of re-traumatization. People not being exposed to these kinds of upsetting things is not a problem to be solved, and democracy can survive while allowing people to filter out political topics or perspectives they don't want to see. You do not need to tolerate the intolerant (as argued by Karl Popper, who coined the term "[paradox of tolerance](https://en.wikipedia.org/wiki/Paradox_of_tolerance)").
 
-Admittedly, as a [Leftist](/garden/leftism/index.md), I desire revolutionary change and see such transformation as necessary before this framework of consent can fully hold true. Today, the drive to filter out politics often stems from alienation or reactionary thinking—a symptom of a capitalist system designed to depoliticize and pacify the masses. That's why I object to blanket policies like ["No Politics" Rules](/garden/no-politics-rules/index.md) that promote political apathy.
+Admittedly, I desire revolutionary change and see such transformation as necessary before this framework of consent can fully hold true. Today, the drive to filter out politics often stems from alienation or reactionary thinking—a symptom of a capitalist system designed to depoliticize and pacify the masses. That's why I object to blanket policies like ["No Politics" Rules](/garden/no-politics-rules/index.md) that promote political apathy.
 
 ### Radicalization
 
@@ -92,7 +92,7 @@ On an individual level, we can try to improve our media literacy and spread accu
 
 On a systemic level, a new social media can be designed so they are more protected from misinformation spreading. For example, by allowing users to publicly "vouch" for other users for writing and sharing accurate posts, forming a web of trust/reputation. Also designing the network so those who are popular are not prioritized in algorithmic feeds, essentially centralizing influence into the hands of the few. I explore this topic and other aspects to a radical new social media network in [Fedi v2](/garden/fedi-v2/index.md) and [Digital Locality](/garden/digital-locality/index.md).
 
-Taking a step back, several of these issues described - clickbait and spam, specifically - only exist due to financial incentives brought on by our capitalist system. Additionally, Capitalism is the reason for people not having the time, energy, or motivation to more healthily approach social media and combat misinformation. Therefore, we need a [Leftist](/garden/leftism/index.md) shift to fix these problems and bring us to a more media literate society free of influencers and advertisers. It's the only long term solution.
+Taking a step back, several of these issues described - clickbait and spam, specifically - only exist due to financial incentives brought on by our capitalist system. Additionally, Capitalism is the reason for people not having the time, energy, or motivation to more healthily approach social media and combat misinformation. Therefore, we need a leftist shift to fix these problems and bring us to a more media literate society free of influencers and advertisers. It's the only long term solution.
 
 And I must reiterate that if something is neither hateful nor misinformation, it is okay for the message to exist and also so for an individual to not wish to see it. So long as its neither hateful nor misinformation, there are no bad values, only different values.
 

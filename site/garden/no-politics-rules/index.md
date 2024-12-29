@@ -12,12 +12,12 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">"No Politics" Rules</h1>
-<p>985 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1023 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/garden/kronos/index.md">Kronos</a></details>
 
-Communities - be they discord servers, forums, message boards, etc. - tend to have rules, and you'll likely see the same rules come up often. One of these common rules is the "no politics" rule. These rules may vary slightly in wording, but all share in being highly contentious. These are easily the rules most often broken and most often fought over - for _and_ against.
+Communities - be they discord servers, forums, message boards, etc. - tend to have rules, and you'll likely see similar rules come up often. One of these common rules is the "no politics" rule. These rules may vary slightly in wording, but all share in being highly contentious. These are easily the rules most often broken and most often fought over - for _and_ against.
 
 ## Apolitical spaces' appeal
 
@@ -40,11 +40,11 @@ I think moderation should be heavy handed when it comes to protecting community 
 
 [Debate](/garden/debate/index.md) is not about solving the issues in society and is typically rhetorical sport that cares more about winning the conversation than building consensus. It has been shown to be ineffective at changing minds, and even more rarely for the right reasons (underlying philosophy rather than rhetorical performance). Honestly, this is a great justification for disallowing politics, although later on I'll add some nuance to this point so it doesn't stifle legitimately constructive conversation.
 
-## The issues with banning politics
+## The issues with apoliticism
 
-[Everything is Political](/garden/everything-is-political/index.md). So what "no politics" really means is very subjective and likely to differ between different moderators, and will definitely differ from at least some community members. What this really amounts to is banning controversial ideas. As described in [How to radicalize a normie](https://www.youtube.com/watch?v=P55t6eryY3g), that means both statements like "Nazis are bad" _and_ "Nazis are good" can be apolitical, as the community has a consensus that Nazis are bad and the second statement is _probably_ just a joke. But once something is controversial it becomes political, so a statement like "feminism is good" would be disallowed. In practice, since the non-controversial stances typically mean upholding existing power structures (like capitalism, patriarchy, and white supremacy), you reach a situation where conversative or fascist viewpoints are allowed (despite the "probably just a joke" argument gets weaker and weaker) but progressive statements aren't.
+I go over this in detail on my page over [Apoliticism](/garden/apoliticism/index.md), but to summarize: everything is political, "apoliticism" is really taking a stance against change, and therefore trying to abstain from politics is a privilege unique to those who benefit from the existing power structures (capitalism, patriarchy, and white supremacy). To be clear, I'm not saying those who add "no politics" rules support those power structures, but that what they see as creating a place of escapism from politics is likely subtly reinforcing oppression.
 
-To be clear, I'm not saying those who add "no politics" rules support those power structures.
+Additionally, what is deemed as "political" will in practice differ between moderators and can easily lead to the scenario described in [How to radicalize a normie](https://www.youtube.com/watch?v=P55t6eryY3g) where fascism can take over a community over time.
 
 Moderators may also introduce their own biases, so even if you don't believe the above arguments will hold true for your community. There will still likely be uneven enforcement of the no politics rule due to the subjective differences in what is and isn't political. This will mean the line is still drawn _somewhere_, and wherever that line is _will_ be a political statement, it just might not be clear where it's drawn to the members and even moderators of the community, which will cause confusion and conflict.
 
@@ -71,4 +71,4 @@ You'll note I don't mention punishments here, but just how the situation should 
 
 ### Decentralized Moderation
 
-This whole conversation should be contextualized as referring to discrete communities with designated moderators. That's not the only option though! I personally think social media should incorporate porous or continuous communities through [Digital Locality](/garden/digital-locality/index.md), which by necessity would then have [Decentralized Moderation](/garden/decentralized-moderation/index.md) that makes essentially everything you've read here no longer relevant. Oops.
+Another solution would be fully decentralized moderation, which would forego rules and discrete communities and instead just rely on people having autonomy over the kind of content they want to see.

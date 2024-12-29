@@ -49,7 +49,7 @@ Being conversational, participants can come and go and anyone can try initiating
 
 ### Improving your understanding
 
-If you want to better understand these issues and have an open mind, then read a book. Those who you would be arguing against will not have as good an understanding of political theory as books written by the experts. It won't give you the pleasure of having "beaten someone in the free market of ideas", but it's the best way for you to actually understand the underlying philosophies that compose different political ideologies. Ask me if you'd like any recommendations for getting into [Leftist](/garden/leftism/index.md) thought 🙂.
+If you want to better understand these issues and have an open mind, then read a book. Those who you would be arguing against will not have as good an understanding of political theory as books written by the experts. It won't give you the pleasure of having "beaten someone in the free market of ideas", but it's the best way for you to actually understand the underlying philosophies that compose different political ideologies. Ask me if you'd like any recommendations for getting into leftist thought 🙂.
 
 In general, become skeptical of political discourse you see in the media, mainstream or social or otherwise. Keep in mind these are people trying to "win" and change minds, and are likely not delving into underlying theory. Clips of gotcha moments or isolated "good points" may feel good to share, but they are unlikely to change minds.
 

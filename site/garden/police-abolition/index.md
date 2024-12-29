@@ -11,10 +11,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Police Abolition</h1>
-<p>1641 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1697 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/consensus-democracy/index.md">Consensus Democracy</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/consensus-democracy/index.md">Consensus Democracy</a><a href="/garden/free-association/index.md">Free Association</a><a href="/garden/materialism/index.md">Materialism</a></details>
 
 I'm a supporter of the police abolition movement, which calls for police and prisons to be abolished. It argues that there are many inherent problems with policing and incarcerating people that cannot be fixed with just further training or restrictions - the entire system must be entirely abolished. In this way, it is a more extreme version of the police reform or defund the police movements. The movement also posits that there are alternatives to policing and incarceration that can be more effective at reducing crime.
 
@@ -30,7 +30,7 @@ I'll generally just say police or prison abolition, but I'm still referring to p
 
 ## Why abolish police?
 
-There are a variety of reasons for abolishing the police, from its controversial origins to its pervasive discrimination to its overall lack of effectiveness. Ultimately though, I would argue this movement stems from anarchistic principles and values. Anarchism posits that no person should hold power over another (a simplification sufficient for this document), which would include the use of force or imprisonment. Anarchists argue the State has no right to exist, let alone that it has no right to call it's violence legitimate. From this premise, any form of policing or incarceration is unjust. However, let's explore additional problems within the specific context of the US:
+There are a variety of reasons for abolishing the police, from its controversial origins to its pervasive discrimination to its overall lack of effectiveness. Ultimately though, I would argue this movement stems from anarchistic principles and values. Anarchism posits that no person should hold power over another (a simplification sufficient for this document), which would include the use of force or imprisonment. Anarchists argue the State has no right to exist, let alone that it has no right to call it's violence legitimate, as can be seen in [Prisons: A Social Crime and Failure](https://theanarchistlibrary.org/library/emma-goldman-anarchism-and-other-essays#toc6) by Emma Goldman. From this premise, any form of policing or incarceration is unjust. However, let's explore additional problems within the specific context of the US:
 
 ### Origins of policing
 
@@ -81,7 +81,7 @@ There are many ways to reduce the need of police until it's eventually zero. Imm
 
 ### Crime reduction
 
-Abolitionists still want to ensure public safety, just not through policing and incarceration. They believe, since most crime is not born of malice, that improving society by ensuring everyone's needs are met would evaporate the majority of crimes as well - at least as many as are prevented by the current system. Police are incredibly over funded, enough to buy things like [surplus tanks](https://www.aclu.org/news/national-security/towns-dont-need-tanks-they-have-them) from the US military. That money can  instead go to social programs that would solve the root causes that lead to crimes.
+Abolitionists still want to ensure public safety, just not through policing and incarceration. They believe, since most crime is not born of malice, that improving society by ensuring everyone's needs are met would evaporate the majority of crimes as well - at least as many as are prevented by the current system. This is an idea fundamentally aligned with [Materialism](/garden/materialism/index.md). Police are incredibly over funded, enough to buy things like [surplus tanks](https://www.aclu.org/news/national-security/towns-dont-need-tanks-they-have-them) from the US military. That money can  instead go to social programs that would solve the root causes that lead to crimes.
 
 Societies can and will find alternative ways of preventing any specific crime. An often used example is if you have a drunk friend who is about to drive home, you typically will help get them a ride (driving yourself if you're sober, or calling them a cab or uber otherwise) rather than calling the police on them. Abolitionism finds policing as only required by those who lack the political imagination to find other solutions - basically, cure the diseases rather than treat the symptoms. At a systemic level, drunk driving can be reduced or eliminated by improving public transit.
 
@@ -94,6 +94,8 @@ Another criticism of _prison_ abolitionism specifically is [What do you do with 
 ### Consequences
 
 While punishments are not good deterrents, some consequences for crimes are still justified and can be enforced without requiring incarceration. A victim may be "made whole" (have the damage reversed to the best of our ability) at expense of the perpetrator, or the society itself (using resources its no longer spending on police or prison). If there's a material cause for the crime having taken place, e.g. a hungry person stealing food, those material conditions can be improved. For cases where the perpetrator is chronically exhibiting anti-social behavior, a trip to a rehabilitation facility, which would be operated significantly differently from the PIC, could be warranted. Stuff like anger management courses or resources to help kick addictions would naturally still be present in a society without prisons.
+
+A society can go even further and rely entirely on social consequences to deter anti-social behavior, which is a concept called [Free Association](/garden/free-association/index.md). Essentially, by only interacting with people individuals deem to be in good standing, people will be incentivized to maintain a positive reputation.
 
 ## Further reading
 

@@ -11,25 +11,15 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">My Political Beliefs</h1>
-<p>213 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>314 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/my-political-journey/index.md">My Political Journey</a><a href="/garden/political-quizzes/index.md">Political Quizzes</a></details>
 
 # Government
 
-I'm definitely a [Leftist](/garden/leftism/index.md), and believe our end goal should be a classless, stateless, moneyless society, but acknowledge the role of the state in defending against, at the very least, [Imperialist](/garden/imperialism/index.md) forces abroad, so long as they exist.
+I'm definitely a [Leftist](/garden/leftism/index.md), and believe our end goal should be a classless, stateless, moneyless society. This society should be based on [Free Association](/garden/free-association/index.md) to handle both decision making and ensuring people act pro-socially. This would be a post-scarcity society where everyone's needs are met via mutual aid, and likely a good deal of automation. I believe in maximizing personal liberties so long as one is not actively harmful to others, which includes disallowing most forms of discrimination. A society built on free association would have no need for police.
 
-I want to eventually reach a society structured as decentralized local communities that operate through [Consensus Democracy](/garden/consensus-democracy/index.md) , and freely associate with other communities for larger scale organizing, such as building and maintaining a rail line.
+I'm less certain on the journey to reaching that society. I'm anti-[Imperialist](/garden/imperialism/index.md) and believe imperialism will greatly hinder our progress towards that society. I'm not sure if we would need a transitionary state like MLs suggest, but I'm fairly confident one way or the other, a revolution will be necessary (hopefully a peaceful one). I think the BLM protests of 2020 may have been the closest the US has gotten to a peaceful revolution in a long time, and am hopeful that perhaps the general strike of 2028 will be our next big change at it.
 
-# Economy
-
-I believe we should eventually arrive at communism; a post-scarcity society where everyone's needs are met via automation and without the need for currency. Along the way there I expect us to democratize the workplace and work towards nationalizing every idustry.
-
-# Society
-
-I believe in maximizing personal liberties, so long as one is not actively harmful to others, including most forms of discrimination.
-
-# Security
-
-I'm against the use of violence by anyone, including the state. I believe in [Police Abolition](/garden/police-abolition/index.md) and am against the military and espionage both foreign and domestic. I believe in the [Anarchist](/garden/anarchism/index.md) value of free association, so I believe we should have fully open borders, both for travel and immigration/emigration. I am anti-imperialist and believe in a fairly isolationist foreign policy, but am not against humanitarian foreign aid.
+Until the revolution, I'd support policies that bring us closer to the ideal society. Market socialism essentially outlines my goals for reformist policies until the revolution. I also think pay should be equalized across everyone in the same role. This would help reduce race and gender pay disparity and allow people to take a break from their career (having a baby, going back to college, experimenting with another industry, taking a sabbatical, etc.) with reduced negative impact. Working hard would still be incentivized due to the collective ownership of the means of production. I'd also support open borders, defunding the police, and not getting involved in foreign conflicts, including stopping the destabilization of successful socialist projects.

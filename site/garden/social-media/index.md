@@ -15,7 +15,7 @@ const pageData = useData();
 <p>222 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/commune/index.md">Commune</a><a href="/garden/decentralized-moderation/index.md">Decentralized Moderation</a><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fediverse/index.md">Fediverse</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/moderation/index.md">Moderation</a><a href="/garden/orchard/index.md">Orchard</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/chronological/index.md">Chronological</a><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fediverse/index.md">Fediverse</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/moderation/index.md">Moderation</a><a href="/garden/orchard/index.md">Orchard</a></details>
 
 Social media is how we interact with people online. It's also increasingly becoming how we discover and discuss news and ideas. It's incredibly important, but flawed. A lot of pages in this digital garden criticize and attempt to solve these flaws.
 

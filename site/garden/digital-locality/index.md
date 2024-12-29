@@ -1,6 +1,7 @@
 ---
 public: "true"
 slug: "digital-locality"
+tags: [Decentralized]
 title: "Digital Locality"
 prev: false
 next: false
@@ -11,10 +12,12 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Digital Locality</h1>
-<p>1818 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1791 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/decentralized-moderation/index.md">Decentralized Moderation</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/virality/index.md">Virality</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/garden/decentralized-moderation/index.md">Decentralized Moderation</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/virality/index.md">Virality</a></details>
+
+<details><summary>Tags:</summary><a href="/garden/decentralized/index.md">Decentralized</a></details>
 
 A locality is a physical area or neighborhood where people live and regularly see each other. In the same way I believe strong [Local Communities](/garden/local-communities/index.md) are highly important in real life, I think [Social Media](/garden/social-media/index.md) would benefit from having _digital_ localities.
 
@@ -30,7 +33,7 @@ The most important aspect of digital locality should be that one's neighborhood 
 
 ### Decentralization
 
-A large motivation behind this concept is spreading influence thin. In the same way digital locality directly opposes the centralization of influence in the hands of the few, it opposes all sorts of centralization. Centralized ownership and moderation over the network leaves it vulnerable to [Enshittification](/garden/enshittification/index.md) and [other problems](https://www.rand.org/pubs/commentary/2023/01/the-digital-town-square-problem.html). In practice, this means such a network should be [Decentralized](/garden/decentralized/index.md), ideally built on something like the [Agentic Fediverse](/garden/fedi-v2/index.md).
+A large motivation behind this concept is spreading influence thin. In the same way digital locality directly opposes the centralization of influence in the hands of the few, it opposes all sorts of centralization. Centralized ownership and moderation over the network leaves it vulnerable to enshittification and [other problems](https://www.rand.org/pubs/commentary/2023/01/the-digital-town-square-problem.html). In practice, this means such a network should be [Decentralized](/garden/decentralized/index.md).
 
 Social media must be moderated, which means a network with digital locality will need [Decentralized Moderation](/garden/decentralized-moderation/index.md). There's several approaches discussed there, but ultimately the way digital locality works should overall mean users are significantly less likely to see unwanted content from influencers, advertisers, bots, spammers, or those who wish them harm. Users won't need to worry about their post going viral leading to a very large and unexpected amount of attention, including negative attention, directed their way.
 
@@ -48,13 +51,13 @@ Asynchronous interactions are a bit trickier, and I'm not fully convinced on how
 
 Having a feed of posts that's just those you follow and the stuff they've liked or shared works fairly well and can be done today in most existing social media apps. However, seeing the exact post that has gone through a very long chain of shares to get to you means the author of that post may be receiving more attention than they desired. Additionally, this method may not have enough throughout if you read a lot of posts or don't follow active people.
 
-The network of vouches approach to [Decentralized Moderation](/garden/decentralized-moderation/index.md) sort of expands on this type of feed, giving the user content from longer following chains and much more control over who is let into the network. It's also auditable, unlike algorithmic feeds.
+The [Network of Vouches](/garden/network-of-vouches/index.md) approach to decentralized moderation sort of expands on this type of feed, giving the user content from longer following chains and much more control over who is let into the network. It's also auditable, unlike algorithmic feeds.
 
 #### Communal wiki editing
 
 A more radical approach would be treating social media more like communal wiki editing. That is, if engaging with a post was, rather than liking or sharing it, proposing edits to communal wiki pages it relates to. This would be a process of message gardening, and would likely help distributing corrections to articles, which typically spread much less far than the original incorrect information. It's for that reason I brought this idea up at the end of [Filter Bubbles](/garden/filter-bubbles/index.md) as a potential way to combat the spread of misinformation.
 
-However, wiki editing requires a lot more effort than liking or sharing currently does. It's also not clear how this would preserve locality without making discrete communities. [Commune](/garden/commune/index.md) is related to this idea but would have discrete communities (although with a bit of porosity through shared channels). Perhaps discrete communities could be avoided by allowing anyone to create pages, but then allow them to enter [Anarchist](/garden/anarchism/index.md) collectives that manage the page together. Anyone (or perhaps those within a network of vouches) can comment or propose edits to it, and through that the information spreads to members and anyone else who follows that page.
+However, wiki editing requires a lot more effort than liking or sharing currently does. It's also not clear how this would preserve locality without making discrete communities. [Commune](/garden/commune/index.md) is related to this idea but would have discrete communities (although with a bit of porosity through shared channels). I describe my own vision for how this could look without discrete communities in [Orchard](/garden/orchard/index.md).
 
 ## Obstacles
 
