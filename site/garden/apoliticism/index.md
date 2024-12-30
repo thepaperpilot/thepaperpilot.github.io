@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Apoliticism</h1>
-<p>1777 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1779 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a><a href="/garden/materialism/index.md">Materialism</a></details>
@@ -51,7 +51,7 @@ Today, centrism in America is not even talking about the midpoint between the ri
 
 ## "Anti-woke"
 
-One of the most significant examples of apoliticism is the "anti-woke" crowd. These are a group of online users across various platforms that decry progressive politics being introduced into media (especially media related to "nerdy" hobbies, like movies, games, and comics). However, while framing their intent as wanting to "keep politics out of <media>", they'll typically be referring specifically to things like diverse representation. This has been made fun of by suggesting the two genders are "male" and "political", two races "white" and "political", etc.
+One of the most significant examples of apoliticism is the "anti-woke" crowd. These are a group of online users across various platforms that decry progressive politics being introduced into media (especially media related to "nerdy" hobbies, like movies, games, and comics). However, while framing their intent as wanting to "keep politics out of games/movies/etc.", they'll typically be referring specifically to things like diverse representation. This has been made fun of by suggesting the two genders are "male" and "political", two races "white" and "political", etc.
 
 When discussing what media is _not_ considered woke, they've often recommended things that are very overtly political, letting things slide if they reinforce conservative values or include fan service or power fantasies. And sometimes they just ignore the politics and call games non-woke because they're good games, like Metal Gear Solid. I recommend browsing [The Woke Detector](https://wokedetector.cirnoslab.me/full-list) to see what games have been considered not woke and what ridiculous reasons games have been added to that list for.
 
