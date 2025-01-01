@@ -336,6 +336,7 @@ export async function addEdit(edit: {
     published?: Date;
     parents?: string[];
     originalUrl?: string;
+    category: string | string[];
 }) {
     return await sendPost(edit);
 }

@@ -154,7 +154,8 @@ async function updateCommits() {
                 published: new Date(commit.commit.committer.date),
                 parents: commit.parents.map(p => p.sha),
                 diff: await
-                    getDiff(commit.repository.owner.login, commit.repository.name, commit.sha)
+                    getDiff(commit.repository.owner.login, commit.repository.name, commit.sha),
+                category: "programming"
             });
         }
 
