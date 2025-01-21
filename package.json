@@ -12,7 +12,9 @@
     "logseq-export": "run-script-os",
     "logseq-export:win32": ".\\logseq-export\\logseq-export.exe --logseqFolder ./Garden --outputFolder ./garden-output",
     "logseq-export:linux": "chmod +x logseq-export/logseq-export && logseq-export/logseq-export --logseqFolder ./Garden --outputFolder ./garden-output",
-    "update:youtube": "bun run syndications/update_youtube.ts"
+    "update:youtube": "bun run syndications/update_youtube.ts",
+    "update:reddit": "bun run syndications/update_reddit.ts",
+    "update:github": "bun run syndications/update_github.ts"
   },
   "dependencies": {
     "@iconify-json/cib": "^1.2.0",
@@ -25,6 +27,8 @@
     "@nuxt/image": "latest",
     "@nuxtjs/sitemap": "latest",
     "@tresjs/nuxt": "latest",
+    "@types/markdown-it": "^14.1.2",
+    "markdown-it": "^14.1.0",
     "nuxt": "^3.13.0",
     "octokat": "^0.10.0",
     "sass-embedded": "^1.79.2"

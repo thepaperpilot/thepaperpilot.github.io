@@ -15,7 +15,7 @@ function encode(value: unknown): string {
         value = value.toISOString();
     } else if (value && typeof value === "object") {
         const obj = value as Record<string, unknown>;
-        return Object.keys(obj).map(key => {
+        return Object.keys(obj).filter(k => obj[k] != null).map(key => {
             if (Array.isArray(obj[key])) {
                 return obj[key].map(v => `${key}[]=${encode(v)}`).join("&");
             }
@@ -46,8 +46,8 @@ async function authenticate() {
         me: "https://www.thepaperpilot.org/",
         client_id: "https://indie.incremental.social",
         redirect_uri: "https://indie.incremental.social/session/auth",
-        state: Date.now(),
-        scope: "create media",
+        state: `${Date.now()}`,
+        scope: "create media update",
         response_type: "code"
     });
     console.log('Need to authorize app with indiekit. Opening oauth url...:', authUrl);
@@ -124,14 +124,15 @@ export async function sendMessage(body: string): Promise<Response> {
 }
 
 async function sendPost(body: Record<string, unknown>) {
-    await sendMessage(JSON.stringify({ type: "h-entry", properties: body }))
+    return await sendMessage(JSON.stringify({ type: "h-entry", properties: body }))
         .then(async res => {
             if (res.status === 202) {
                 console.log(await res.json().then(r => r.success_description as string));
             } else {
-                console.warn("Failed to send message to indiekit", res, await res.text());
+                console.warn("Failed to send message to indiekit", res, await res.text(), body);
                 throw res;
             }
+            return res;
         });
 }
 
@@ -249,7 +250,7 @@ export async function addArticle(article: {
 }) {
     const { photo, ...body } = article;
     const preview = photo == null ? undefined : await uploadMedia(photo);
-    await sendPost({ ...body, preview });
+    return await sendPost({ ...body, preview });
 }
 
 export async function addBookmark(bookmark: {
@@ -259,7 +260,7 @@ export async function addBookmark(bookmark: {
     published?: Date;
     category: string | string[];
     photo?: string;
-    author?: Partial<Author>;
+    author?: Author;
 }) {
     const { photo, author, ...body } = bookmark;
     const preview = photo == null ? undefined : await uploadMedia(photo);
@@ -267,7 +268,7 @@ export async function addBookmark(bookmark: {
         author.image = author.image == null ? undefined : await uploadMedia(author.image);
     }
     const archiveUrl = await getArchiveUrl(bookmark["bookmark-of"], bookmark.published?.getTime());
-    await sendPost({ ...body, author, preview, archiveUrl });
+    return await sendPost({ ...body, author, preview, archiveUrl });
 }
 
 export async function addFavorite(favorite: {
@@ -277,15 +278,15 @@ export async function addFavorite(favorite: {
     published?: Date;
     category: string | string[];
     photo?: string;
-    author?: Partial<Author>;
+    author?: Author;
 }) {
     const { photo, author, ...body } = favorite;
     const preview = photo == null ? undefined : await uploadMedia(photo);
-    if (author) {
-        author.image = author.image == null ? undefined : await uploadMedia(author.image);
+    if (author?.image) {
+        author.image = await uploadMedia(author.image);
     }
     const archiveUrl = await getArchiveUrl(favorite["like-of"], favorite.published?.getTime());
-    await sendPost({ ...body, author, preview, archiveUrl });
+    return await sendPost({ ...body, author, preview, archiveUrl });
 }
 
 export async function addReply(reply: {
@@ -301,14 +302,14 @@ export async function addReply(reply: {
 }) {
     const { photo, parent, ...body } = reply;
     const preview = photo == null ? undefined : await uploadMedia(photo);
-    if (parent.image != null) {
+    if (parent.image) {
         parent.image = await uploadMedia(parent.image);
     }
-    if (parent.author?.image != null) {
+    if (parent.author?.image) {
         parent.author.image = await uploadMedia(parent.author.image);
     }
     const archiveUrl = await getArchiveUrl(reply["in-reply-to"], reply.published?.getTime());
-    await sendPost({ ...body, parent, preview, archiveUrl });
+    return await sendPost({ ...body, parent, preview, archiveUrl });
 }
 
 export async function addRepost(repost: {
@@ -318,13 +319,40 @@ export async function addRepost(repost: {
     published?: Date;
     category: string | string[];
     photo?: string;
-    author?: Partial<Author>;
+    author?: Author;
 }) {
     const { photo, author, ...body } = repost;
     const preview = photo == null ? undefined : await uploadMedia(photo);
-    if (author) {
-        author.image = author.image == null ? undefined : await uploadMedia(author.image);
+    if (author?.image) {
+        author.image = await uploadMedia(author.image);
     }
     const archiveUrl = await getArchiveUrl(repost["repost-of"], repost.published?.getTime());
-    await sendPost({ ...body, author, preview, archiveUrl });
+    return await sendPost({ ...body, author, preview, archiveUrl });
+}
+
+export async function addEdit(edit: {
+    'edit-of': string;
+    diff?: string;
+    published?: Date;
+    parents?: string[];
+    originalUrl?: string;
+}) {
+    return await sendPost(edit);
+}
+
+export async function updatePost(post: string, replace: Record<string, unknown[]>) {
+    return await sendMessage(JSON.stringify({
+        action: "update",
+        url: post,
+        replace
+    }))
+        .then(async res => {
+            if (![200, 201, 204].includes(res.status)) {
+                console.warn("Failed to update post", res, await res.text());
+                throw res;
+            } else {
+                console.log("Updated post at", post);
+            }
+            return res;
+        });
 }

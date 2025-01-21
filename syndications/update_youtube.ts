@@ -20,7 +20,7 @@ async function updateLikes(auth: OAuth2Client) {
     console.log("Checking for new liked videos on YouTube...");
     // TODO switch newVideos back after initial backlog uploaded
     const newVideos = Array.from(allVideos);
-        // Object.keys(await findNewFromPlaylist(auth, "LL", allVideos));
+    // Object.keys(await findNewFromPlaylist(auth, "LL", allVideos));
     if (newVideos.length > 0) {
         for await (const video of (await getVideos(newVideos, auth)) ?? []) {
             const url = `https://www.youtube.com/watch?v=${video.id}`;
@@ -58,7 +58,7 @@ async function updateSongs(auth: OAuth2Client) {
     console.log("Checking for new liked songs on YouTube...");
     // TODO switch newVideos back after initial backlog uploaded
     const newVideos = Array.from(allVideos);
-        // Object.keys(await findNewFromPlaylist(auth, "LM", allVideos));
+    // Object.keys(await findNewFromPlaylist(auth, "LM", allVideos));
     if (newVideos.length > 0) {
         for await (const video of (await getVideos(newVideos, auth)) ?? []) {
             const url = `https://www.youtube.com/watch?v=${video.id}`;
@@ -68,7 +68,7 @@ async function updateSongs(auth: OAuth2Client) {
                 // TODO switch published date after initial backlog uploaded
                 // published: new Date(published++),
                 published: new Date(video.snippet.publishedAt ?? ""),
-                name: "♫ " + video.snippet.title ?? undefined,
+                name: video.snippet.title == undefined ? undefined : "♫ " + video.snippet.title,
                 content: video.snippet.description ?? undefined,
                 photo: getBestThumbnail(video.snippet.thumbnails),
                 author: {
@@ -95,7 +95,7 @@ async function updateFavorites(auth: OAuth2Client) {
     console.log("Checking for new favorites on YouTube...");
     // TODO switch newVideos back after initial backlog uploaded
     const newVideos = Array.from(allVideos);
-        // Object.keys(await findNewFromPlaylist(auth, "FLg1YH1wAWH7JF2-64XYio0A", allVideos));
+    // Object.keys(await findNewFromPlaylist(auth, "FLg1YH1wAWH7JF2-64XYio0A", allVideos));
     if (newVideos.length > 0) {
         for await (const video of (await getVideos(newVideos, auth)) ?? []) {
             const url = `https://www.youtube.com/watch?v=${video.id}`;

@@ -15,6 +15,7 @@ public/garden
 public/licenses.txt
 
 syndications/cache
+syndications/github_token.txt
 syndications/ignored_subreddits.txt
 syndications/indiekit_token.json
 syndications/liked_songs.json

@@ -12,14 +12,14 @@ export interface Post extends ParsedContent {
     imageAlt?: string;
     tags: string[];
     syndications: string[];
-    parent?: Post;
+    parent?: Partial<Post>;
     replies?: Reply[];
 }
 
 export interface Author {
     name: string;
     url: string;
-    image: string;
+    image?: string;
 }
 
 export interface Reply {
