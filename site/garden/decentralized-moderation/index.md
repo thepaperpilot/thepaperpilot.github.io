@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Decentralized Moderation</h1>
-<p>633 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>796 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/fedi-v2/index.md">Fedi v2</a><a href="/garden/moderation/index.md">Moderation</a></details>
@@ -44,7 +44,7 @@ A network that relies on individuals vouching for each other being human or othe
 
 ### [Digital Locality](/garden/digital-locality/index.md)
 
-Similar to the network of vouches, a network with digital locality naturally limits the amount of content you'll see, essentially eliminating bots and spam as well as organically filtering the content you see based on the people you interact with.
+Similar to the network of vouches, a network with digital locality naturally limits the amount of content you'll see, essentially eliminating bots and spam as well as organically filtering the content you see based on the people you interact with. It would also limit the spread of content considered harmful, because people wouldn't want to attach it to their public identity but any new identity wouldn't be part of a network of connections. Notably, this system would not oppress things for just being part of a different culture or value set, since in that case there would still be others to connect with that feel the same way. To more thoroughly prevent the harmful behavior, you'll likely need to fix issues _outside_ of social media as well.
 
 ### Proof of work
 
@@ -55,3 +55,5 @@ For normal users, you'd just have a queue of messages being sent - an outbox. On
 For bots, sending those messages out quickly to a lot of people will cost an enormous amount of resources, making it infeasible.
 
 In theory this system should be customizable, where a user can change the difficulty of the challenge based on groups of people (e.g. people you follow, or are within a chain of followers) as well as per action taken. It should be able to completely disable challenges for certain users or in contexts like replying to you in a thread where you've already replied to them.
+
+The challenges could theoretically be for something useful, rather than just meaningless busywork. For example, hooking this up to Folding@Home or SETI@Home. There's already work being done to enable PoW calculations to have additional utility, and I believe it should be easier for something like this where the challenge is completely arbitrary rather than something like a blockchain where you also need to be hashing the state of the chain.

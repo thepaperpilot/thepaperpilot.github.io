@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Filter Bubbles</h1>
-<p>2730 words, ~15 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>2655 words, ~15 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/objectivity/index.md">Objectivity</a></details>
@@ -64,9 +64,7 @@ Admittedly, I desire revolutionary change and see such transformation as necessa
 "Radicalization" is a nebulous term that's been used for a variety of purposes. The ACLU, for example, [warns against its usage](https://www.aclu.org/documents/qa-myth-radicalization) by saying this:
 > The government’s “radicalization” theory has become a euphemism for religious and ideological profiling. It leads to discrimination and stigmatization, and is fundamentally un-American. Casting suspicion on American faith or belief communities is wrong and does nothing to make us safer.
 
-Personally, I think the term has been decontextualized a bit, as I see it used today to describe people moving to the left or right. In leftist communities, sharing "what radicalized you" is commonplace and not stigmatized. I think what most accurately describes radicalization is that it's the process of people moving outside the spectrum of acceptable opinion, which in American politics goes from the Republican part to the Democratic party. All other opinions are largely seen as extremist or otherwise untenable. Noam Chomsky describes how this framing perpetuates itself like this:
-> The smart way to keep people passive and obedient is to strictly limit the spectrum of acceptable opinion, but allow very lively debate within that spectrum—even encourage the more critical and dissident views. That gives people the sense that there's free thinking going on, while all the time the presuppositions of the system are being reinforced by the limits put on the range of the debate.
-> \- Noam Chomsky
+Personally, I think the term has been decontextualized a bit, as I see it used today to describe people moving to the left or right. In leftist communities, sharing "what radicalized you" is commonplace and not stigmatized. It just means rejecting [Centrism](/garden/centrism/index.md). I think what most accurately describes radicalization is that it's the process of people moving outside the spectrum of acceptable opinion, which in American politics goes from the Republican part to the Democratic party. All other opinions are largely seen as extremist or otherwise untenable.
 
 So, personally, I don't see radicalization as an inherent issue because the current spectrum of acceptable opinion is atrocious (and, separately, an example of a filter bubble that encapsulates most of the US). I'm biased, as by my own definition I'm a radical, but I don't think radicalization should be a reason to fight against filter bubbles. Suppressing it is ultimately a way of enforcing the status quo and enabling those at the top of the status quo to perpetuate their reign.
 

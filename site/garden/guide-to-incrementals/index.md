@@ -1,4 +1,5 @@
 ---
+alias: "Incremental Games, Incremental Game"
 public: "true"
 slug: "guide-to-incrementals"
 title: "Guide to Incrementals"
@@ -14,7 +15,7 @@ const pageData = useData();
 <p>230 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/my-personal-website/index.md">My Personal Website</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/favorite-video-games/index.md">Favorite Video Games</a><a href="/garden/my-personal-website/index.md">My Personal Website</a></details>
 
 This is a comprehensive guide to Incremental Games, a genre of video games. It will explore defining the genre, why it's appealing, and how to design and build your own incremental game. Along the way will be ~~interactive examples~~, snippets from other creators, and relevant material to contextualize everything.
 

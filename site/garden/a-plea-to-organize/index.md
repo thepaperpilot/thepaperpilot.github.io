@@ -87,7 +87,7 @@ Mainstream media, owned by the capitalist class, will frame progressive issues a
 > We have nothing to lose but our chains.   
 > \- Assata Shakur
 
-This is a frightening moment in our nation's history, but we are not powerless. By organizing, educating, and building solidarity, we can lay the foundation for a progressive future. Join an organization, get involved in mutual aid, and prepare to support a new party that prioritizes people over profit.
+This is a frightening moment in our nation's history, but we are not powerless. By organizing, educating, and building solidarity, we can lay the foundation for a progressive future. Join an organization, get involved in [Mutual Aid](/garden/mutual-aid/index.md), and prepare to support a new party that prioritizes people over profit.
 
 The path ahead is not easy, but it is necessary. Together, we will challenge the establishment, demand justice, and build a society that works for everyone. The struggle is just beginning—let's make sure it ends in victory.
 

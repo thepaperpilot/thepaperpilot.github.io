@@ -14,7 +14,7 @@ const pageData = useData();
 <p>628 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/free-association/index.md">Free Association</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/free-association/index.md">Free Association</a><a href="/garden/on-authority/index.md">On Authority</a></details>
 
 <details><summary>Tagged by:</summary><a href="/garden/consensus-democracy/index.md">Consensus Democracy</a><a href="/garden/direct-democracy/index.md">Direct Democracy</a><a href="/garden/representative-democracy/index.md">Representative Democracy</a><a href="/garden/technocracy/index.md">Technocracy</a></details>
 

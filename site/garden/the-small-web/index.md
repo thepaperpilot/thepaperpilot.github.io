@@ -46,10 +46,10 @@ In general, the corporate web seems to have values that align with those of auth
 ### Further reading
 
 These are videos and articles that continue expanding on the values and motivations behind the small web as an alternative to the corporate web:
+- [You should check out the indie web](https://www.youtube.com/watch?v=rTSEr0cRJY8) (I like how this video discusses decentralization and how people are more interested in socialization rather than commodification)
 - [What is the small web?](https://ar.al/2020/08/07/what-is-the-small-web/)
 - [Reweirding the web](https://webdirections.org/blog/reweirding-the-web/)
 - [The web has lost its soul](https://www.youtube.com/watch?v=00qwzmMrtok)
-- [You should check out the indie web](https://www.youtube.com/watch?v=rTSEr0cRJY8)
 
 ## Browsing the small web
 

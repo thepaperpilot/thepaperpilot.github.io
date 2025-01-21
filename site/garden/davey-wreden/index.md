@@ -14,7 +14,7 @@ const pageData = useData();
 <p>37 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/ivy-road/index.md">Ivy Road</a><a href="/garden/the-beginner-s-guide/index.md">The Beginner's Guide</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/ivy-road/index.md">Ivy Road</a></details>
 
 <details><summary>Tagged by:</summary><a href="/garden/ivy-road/index.md">Ivy Road</a><a href="/garden/the-beginner-s-guide/index.md">The Beginner's Guide</a><a href="/garden/wanderstop/index.md">Wanderstop</a></details>
 

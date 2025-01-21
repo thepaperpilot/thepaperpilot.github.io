@@ -14,7 +14,7 @@ const pageData = useData();
 <p>82 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/apoliticism/index.md">Apoliticism</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/apoliticism/index.md">Apoliticism</a><a href="/garden/constructivism/index.md">Constructivism</a></details>
 
 <span id="6637ada3-53a0-4905-ad9f-bfd65c85df17">[Nicky Case](https://ncase.me) is an online creator famous for her various games and explorable explanations, which I regularly reference and think about. They created https://explorable.es to catalogue various explorable explanations and tools for creating them, although I believe they left the explorables community after some drama.</span>
 

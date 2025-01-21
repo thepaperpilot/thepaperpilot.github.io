@@ -14,7 +14,7 @@ const pageData = useData();
 <p>557 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-Copyright is a neoliberal invention designed to ensure corporations can continue making money off the work of individuals. Individuals also support it, but that has more to do with living under a capitalist system where their art is their livelihood. Without the [Profit Motive](/garden/profit-motive/index.md) , there'd be no need to restrain what people can do with art.
+Copyright is a [Neoliberal](/garden/neoliberalism/index.md) invention designed to ensure corporations can continue making money off the work of individuals. Individuals also support it, but that has more to do with living under a capitalist system where their art is their livelihood. Without the [Profit Motive](/garden/profit-motive/index.md) , there'd be no need to restrain what people can do with art.
 
 _However_, I feel personally conflicted by the above typical anti-capitalist stance on copyright, because I think there's more to it than just protecting financial interests. I think art contains a little bit of the artist, and it's natural for them to feel protective of it. Ultimately, if an artist gives you some art with conditions attached, I think respecting that and not straying outside of what you've been given consent to do makes sense.
 

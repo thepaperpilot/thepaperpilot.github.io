@@ -1,7 +1,7 @@
 ---
 public: "true"
 slug: "kronos"
-tags: [My Projects, Profectus]
+tags: [My Projects, Profectus, Incremental Games]
 title: "Kronos"
 prev: false
 next: false
@@ -15,9 +15,9 @@ const pageData = useData();
 <p>60 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/now/index">/now</a><a href="/garden/v-ecs/index.md">V-ecs</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/favorite-video-games/index.md">Favorite Video Games</a><a href="/now/index">/now</a><a href="/garden/v-ecs/index.md">V-ecs</a></details>
 
-<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a><a href="/garden/profectus/index.md">Profectus</a></details>
+<details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a><a href="/garden/profectus/index.md">Profectus</a><a href="/garden/guide-to-incrementals/index.md">Incremental Games</a></details>
 
 My largest and most ambitious incremental game I've ever made
 - A magnum opus, of sorts ;P

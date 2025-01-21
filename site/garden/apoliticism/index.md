@@ -12,10 +12,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Apoliticism</h1>
-<p>1779 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1385 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a><a href="/garden/materialism/index.md">Materialism</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a><a href="/garden/centrism/index.md">Centrism</a><a href="/garden/materialism/index.md">Materialism</a></details>
 
 Politics shape every facet of our lives, but its influence is often so entrenched it becomes invisible unless you're actively trying to be conscious of it. But being conscious of it is important, because otherwise you'll just end up implicitly supporting the current power structures created and maintained by the political status quo, which in the US currently means capitalism, patriarchy, and white supremacy. Our society has guided us towards considering much of it as apolitical apart from a small number of contentious issues. This has led to some people describing themselves or their actions as "apolitical", and in some cases even take pride in their avoidance of what they consider political topics.
 
@@ -38,16 +38,6 @@ A motivation behind apoliticism is seeking to limit conflict. However, absence o
 Ostensibly, both sides are arguing for peace, and the differing terms can lead to confusion and strife. Ultimately I believe we should fight for a positive peace until we live in a truly just society. But until that change actually occurs, those fighting for positive peace are going to be causing conflict without much gain.
 
 This contradiction between the two types of peace leads to the status quo being "sticky", and more likely to change in an instant via revolution than over time via reform. [Nicky Case](/garden/nicky-case/index.md) explores this concept in her project, [Attractor Landscapes](https://ncase.me/attractors/).
-
-## Centrism
-
-Adjacent to people seeking to avoid politics outright are those who hold the belief that our two parties are on polar extremes and hold the belief the correct position is going to be somewhere in the middle, taking aspects of both parties. This is fallacious because the center has no special value that makes it better than the extremes, a lot of the issues centrists want to pull from the different parties never needed to be politicized in the first place, and the two US parties are not on polar extremes anyways.
-
-The center is just the midpoint between two points. That's it. Rejecting both sides doesn't make you intellectually or morally superior. The horseshoe theory was never a good theory to begin with, with the underlying political philosophies between the two sides being fundamentally opposed. I recommend "Blackshirts and Reds" by Michael Parenti if you'd like a better understanding of why the two ideologies are polar opposites, and how they clashed.
-
-In practice these midpoints don't even make much sense to uphold. If the left says trans people should not be discriminated against, and the right says they shouldn't exist, where's the midpoint? We should discriminate against trans people but allow them to exist? Oh, how kind. In practice this is literally the stance liberals take, though: trans people can exist, but how _dare_ you support [Trans athletes in sports](/garden/trans-athletes-in-sports/index.md)!
-
-Today, centrism in America is not even talking about the midpoint between the rightist and leftist ideologies, but rather the Republicans and Democrats. These are arbitrary points dictated by the Overton Window that make the midpoint even more arbitrary.  What is the midpoint between socialism and capitalism? The former is defined by private property not existing, the latter the opposite. Any midpoint is clearly still just capitalism, just with some regulations to temporarily stave off crises caused by capitalism's contradictions. The two US parties are both in defense of private ownership of the means of production, so the midpoint was never really going to be anywhere close to the left. This is why Bernie Sanders was called a "true" centrist because, by being further left than the Democrats, he actually was closer to whatever the actual midpoint between the far left and far right would be. Even then, the other arguments against centrism still apply.
 
 ## "Anti-woke"
 

@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Imperialism</h1>
-<p>770 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>773 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/leftism/index.md">Leftism</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a></details>
@@ -44,3 +44,5 @@ In contrast to the US, China has the Belt and Road Initiative started in 2013 wh
 ## Further Reading
 
 Jason Hickel made a very digestible explanation over the importance of liberating Palestine in the fight against imperialism, which was clipped into [Why a Liberated Palestine Threatens Global Capitalism](https://youtu.be/6dBy4-6pn1M).
+
+[The Jakarta Method](https://vincentbevins.com/book/)

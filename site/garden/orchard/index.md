@@ -12,10 +12,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Orchard</h1>
-<p>1326 words, ~7 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1348 words, ~7 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/now/index">/now</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/efficiency/index.md">Efficiency</a><a href="/now/index">/now</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a><a href="/garden/decentralized/index.md">Decentralized</a></details>
 
@@ -65,12 +65,12 @@ LLMs could also be given the topics as context and be able to query the network 
 
 ## Education
 
-This graph of topics could naturally lead itself to educational purposes. I think people should be able to perhaps describe directed sub graphs that present the topics as a dependency tree. This would enable self paced learning, with the dependencies acting as a guide for what can be learned next.
+This graph of topics could naturally lead itself to educational purposes. I think people should be able to perhaps describe directed sub graphs that present the topics as a dependency tree. This would enable self paced learning, with the dependencies acting as a guide for what can be learned next. This is in alignment with my personal beliefs that we should have [Decentralized Education](/garden/decentralized-education/index.md) using a [Constructivist](/garden/constructivism/index.md) approach.
 
-Couple this with some sort of mastery system and you basically have an alternative to Khan academy or brilliant.
+Couple Orchard with some sort of mastery system and subject dependency tree and you basically have an alternative to Khan Academy or Brilliant.
 
 Flash cards are a good method of memorizing thinks, especially through something like anki. Flash cards are already fairly decentralized, so perhaps annotations on notes should allow mapping them into flash cards that can be easily imported in flash cards apps through standard formats.
 
 ## Tech Stack
 
-It'll use the [Agentic Fediverse](/garden/fedi-v2/index.md) to store the messages and other data, making the whole app [Local-First Software](/garden/local-first-software/index.md). The frontend of the app will be built in [tauri](https://v2.tauri.app/). It'll use [Incremental Social](/garden/incremental-social/index.md) as the default iroh node and handle any other (optional) server side features.
+It'll use the [Agentic Fediverse](/garden/fedi-v2/index.md) to store the messages and other data, making the whole app [Local-First Software](/garden/local-first-software/index.md). The frontend of the app will be built in either [tauri](https://v2.tauri.app/) or perhaps just be a website, using sqlite and service workers to work local-first. It'll use [Incremental Social](/garden/incremental-social/index.md) as the default iroh node and handle any other (optional) server side features.

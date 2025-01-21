@@ -15,7 +15,7 @@ const pageData = useData();
 <p>213 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/decision-making/index.md">Decision Making</a><a href="/garden/gerrymandering/index.md">Gerrymandering</a><a href="/garden/local-communities/index.md">Local Communities</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/decentralized-education/index.md">Decentralized Education</a><a href="/garden/decision-making/index.md">Decision Making</a><a href="/garden/gerrymandering/index.md">Gerrymandering</a><a href="/garden/local-communities/index.md">Local Communities</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/decision-making/index.md">Decision Making</a></details>
 

@@ -11,10 +11,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Objectivity</h1>
-<p>589 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>645 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/apoliticism/index.md">Apoliticism</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/scientific-constructivism/index.md">Scientific Constructivism</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/apoliticism/index.md">Apoliticism</a><a href="/garden/education/index.md">Education</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/scientific-constructivism/index.md">Scientific Constructivism</a></details>
 
 Objectivity is a myth. All we have are our subjective experiences, which are shaped by our environments and it's [Social Constructs](/garden/social-constructs/index.md). Often something _appearing_ objective more likely means its biased towards either your pre-conceived opinion, or the "status quo" opinion of the society or culture the work was created in.
 
@@ -39,3 +39,10 @@ They discuss how claiming objectivity is used to add credibility to an argument.
 CJ the X discusses in [How Jordan Peterson's Suits Taught Me Fashion](https://www.youtube.com/watch?v=LpHFcylNGqg) how the idea that art is subjective hindered his ability to learn fashion as a teenager. He uses the above quote to articulate how contemporary values replacing the oppressive but comparatively well defined fashion values did him a disservice. He was essentially no longer able to learn and get advice on fashion other than through his own individual experimentation. He compares it to a language, where you can learn the grammar and vocabulary, but still be unable to make sensical sentences unless you understand the how and why people put these words together - like understanding the different articles of clothing, but not the why and how they get paired together. Arguing for fashion as a language, and that despite its subjectivity there's still necessarily a learned social component, enables people to be able to teach fashion without feeling like their just upholding old bigoted values. It's also a brilliant argument for why [Social Constructs](/garden/social-constructs/index.md) can be and are useful.
 
 He also describes the history of fashion's values, and how previously there was the idea of a singular "objective" sense of fashion, and that those who disagree are just incorrect. Essentially that meant the goal of fashion was to look like how the elites look. He argues that today fashion is still trying to look how the elites look, but now the elites are fractured - academic elites have their own fashion from, say, the elites of hip hop. This actually sounds a lot like Butler's argument for [Gender Performativity](/garden/gender-performativity/index.md).
+
+## Further Reading
+
+I'm vaguely aware that the idea of truth and the relationship between absolute, objective, and universal truths are an important topic in philosophy, and I want to explore it at some point. I've seen these texts recommended:
+- [Theories of Truth: A Critical Introduction](https://www.amazon.com/Theories-Truth-A-Critical-Introduction/dp/0262611082)
+- [Truth, Paradox, and Nietzschean Perspectivism](https://departments.bloomu.edu/philosophy/pages/content/hales/articlepdf/paradox.pdf) (I've looked into it at a high level already, and it seems to be what I argue for here wrt objectivity not existing because we all only have our subjective experiences of objective reality)
+- [Language, Truth and Logic](https://antilogicalism.com/wp-content/uploads/2017/07/language-truth-and-logic.pdf)

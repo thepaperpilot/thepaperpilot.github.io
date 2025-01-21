@@ -12,10 +12,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Leftism</h1>
-<p>1147 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1170 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a><a href="/garden/my-political-journey/index.md">My Political Journey</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/market-socialism/index.md">Market Socialism</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a><a href="/garden/my-political-journey/index.md">My Political Journey</a></details>
 
 <details><summary>Tagged by:</summary><a href="/garden/anarchism/index.md">Anarchism</a></details>
 
@@ -42,6 +42,8 @@ Some leftists, such as Marxist-Leninists, believe a state is required to facilit
 
 This fundamental disagreement over whether the existence of a transitionary state is justified has historically led to conflicts between communists and anarchists, such as the USSR going after nearby anarchist societies. Both groups saw the other as counter-revolutionaries.
 
+A lot of anarchist values and concepts, like mutual aid and free association, likely also describe the stateless, classless, moneyless society communists want.
+
 ## Reform vs Revolution
 
 Reform is the process of iteratively changing the system from within, and revolution means overthrowing the system entirely (not necessarily violently). Typically when people are referring to communists (MLs) or anarchists, they're referring to revolutionary socialists, as the prevailing opinion is that the system will not willingly allow the existing power structures to be overturned democratically.
@@ -51,7 +53,7 @@ Reform is the process of iteratively changing the system from within, and revolu
 
 Reformists, like syndicalists, market socialists, and democratic socialists, tend to still see capitalism as a useful tool for innovation and resource allocation, and may support it existing for quite some time. They would use things like labor unions, strikes, and occupations to exert political control over the economy. They'll try to get progressive candidates into places of power to pass legislation limiting inequality and expanding social welfare. They'll create networks of mutual aid to assist those not being helped sufficiently by the state.
 
-Personally, I think reform is likely the only way we'll see the kind of change we really need to see. However, reformists ideas are a great gateway into leftist thought. Market socialism is essentially "capitalism but with less exploitation and more meritocracy" by ensuring the surplus labor value remains within control of the workers, which is something I think liberals can be sold upon pretty easily.
+Personally, I think reform is likely the only way we'll see the kind of change we really need to see. However, reformists ideas are a great gateway into leftist thought. [Market Socialism](/garden/market-socialism/index.md) is essentially "capitalism but with less exploitation and more meritocracy" by ensuring the surplus labor value remains within control of the workers, which is something I think liberals can be sold upon pretty easily.
 
 ## Leftist Infighting
 
@@ -63,6 +65,6 @@ Marxist-Leninists advocate for a concept called democratic centralism to combat 
 
 ## Moving Forward
 
-As I describe in [A Plea to Organize](/garden/a-plea-to-organize/index.md), despite differences between the different ideologies, my advice is still the same: **Organize!** Join local communities, regardless of affiliation, and support leftism and the community. Mutual aid efforts are particularly helpful and can be found on [Mutual Aid Hub](https://www.mutualaidhub.org/).
+As I describe in [A Plea to Organize](/garden/a-plea-to-organize/index.md), despite differences between the different ideologies, my advice is still the same: **Organize!** Join local communities, regardless of affiliation, and support leftism and the community. [Mutual Aid](/garden/mutual-aid/index.md) efforts are particularly helpful and can be found on [Mutual Aid Hub](https://www.mutualaidhub.org/).
 
 Additionally: **Study!** Read theory and better understand leftist ideologies of all stripes. It helps you better understand the philosophies underpinning these ideologies and in turn become a better leftist.

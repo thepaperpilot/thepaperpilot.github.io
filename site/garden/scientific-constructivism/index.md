@@ -11,8 +11,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Scientific Constructivism</h1>
-<p>271 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>316 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
+
+<details><summary>Referenced by:</summary><a href="/garden/constructivism/index.md">Constructivism</a></details>
 
 Scientific constructivism is the philosophical idea that science is a [Social Construct](/garden/social-constructs/index.md) , in this case one created socially by scientists.
 
@@ -23,3 +25,7 @@ This [lovely response](https://convincingreasons.wordpress.com/2021/03/25/is-sci
 Science will often be affected by our own biases and come to incorrect conclusions. A classic example of this is phrenology, a racist "science" that used its supposed " [Objectivity](/garden/objectivity/index.md)" to argue for racial differences that didn't exist. You may argue that science has already built in affordances for previous research being determined incorrect, however. We have ([flawed](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1420798/)) peer reviews and regularly ([ish](https://www.vox.com/future-perfect/21504366/science-replication-crisis-peer-review-statistics)) replicate experiments and further verify various historical theories. However even the process of peer reviews, the scientific method, and conducting science at all are social constructs. Academia similarly has arbitrary restrictions, like defining statistical significance at 5% difference, that arbitrarily determine what is science and what is not (and often leads to [data dredging](https://en.wikipedia.org/wiki/Data_dredging)).
 
 While looking online to see people who agree and disagree with science as a social construct, I found some interesting pages that didn't really fit in elsewhere. I found this paper, [Questioning science: how knowledge is socially constructed ](https://pubmed.ncbi.nlm.nih.gov/9314650/), which has a cool sounding abstract but I haven't found the article itself, and considering how little its been cited it seems far from seminal. I also found this entertaining [forum thread](https://www.physicsforums.com/threads/how-to-counter-everything-is-a-construct-worldview.797946/) discussing social constructs and science, which became a good example of how many people believe something being a construct means its not "real", and that therefore anything real/observable must therefore not be a construct. Fortunately, there are some voices in there attempting to clarify the nature of social constructs, and the back and forth was just enjoyable to read.
+
+## Further Reading
+
+I saw a recommendation for a book that rejects scientific constructivism, although from the reviews on Amazon it sounds a bit controversial. It's [Fear of Knowledge: Against Relativism and Constructivism](https://www.amazon.com/Fear-Knowledge-Against-Relativism-Constructivism/dp/0199230412) and I'll likely want to read through it at some point.

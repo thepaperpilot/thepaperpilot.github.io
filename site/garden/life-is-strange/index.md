@@ -1,6 +1,7 @@
 ---
 public: "true"
 slug: "life-is-strange"
+tags: [Favorite Video Games]
 title: "Life is Strange"
 prev: false
 next: false
@@ -13,6 +14,8 @@ const pageData = useData();
 <h1 class="p-name">Life is Strange</h1>
 <p>654 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
+
+<details><summary>Tags:</summary><a href="/garden/favorite-video-games/index.md">Favorite Video Games</a></details>
 
 A series of narrative driven video games with a focus on player choices
 
