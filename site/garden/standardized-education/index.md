@@ -13,7 +13,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Standardized Education</h1>
-<p>593 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>658 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Tags:</summary><a href="/garden/education/index.md">Education</a></details>
@@ -31,6 +31,8 @@ Standardized education has many drawbacks and criticisms, some more valid than o
 Being only partially centralized and leaving contentious topics to increasingly local levels diminishes how transferrable students are, with grades potentially not lining up like they should. I think the problem here is really the rigidity of our education, where your grade level dictates where you are across all subjects. A more robust tracking of mastered subjects and segmenting education into smaller units rather than full terms would potentially allow students to move around and make sure there aren't topics being skipped over or taken additional times.
 
 My issues with standardization go beyond just disagreeing with the current curriculums, though. Obviously I would prefer a larger focus on leftist concepts and critiquing the status quo rather than reinforcing it. But ultimately I oppose standardization because the values used to build the curriculum are going to be fuzzy and shifting, so any curriculum designed will perpetually find itself at odds with the power being subjected to it.
+
+Further, standardization strictly limits diversity and specialization. It enforces conformity over adaptability, and tells us there's only one right way to perceive the world. It gives us all the same base knowledge, rather than something self guided where everyone's path would take them to different topics and make unique connections. Essentially, I think standardized curriculums hinder our ability to create new knowledge (discoveries).
 
 ## Common Core
 

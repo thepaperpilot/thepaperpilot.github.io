@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Centrism</h1>
-<p>2832 words, ~15 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>2830 words, ~15 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a></details>
@@ -58,7 +58,7 @@ That article also discusses how many of them consider themselves pacifists and u
 ## Moral Superiority
 
 > <div class="img-container"><img src="/garden/atheists_1736527911073_0.png" title="atheists.png"/></div>
-> _'But you're using that same tactic to try to feel superior to me, too!' 'Sorry, that accusation expires after one use per conversation.'_
+> 'But you're using that same tactic to try to feel superior to me, too!' 'Sorry, that accusation expires after one use per conversation.'
 > \- Randall Munroe
 
 Politics have become very core parts of our identity, once again in large part due to the intentional polarization done by the political system of turning every issue into an adversarial "us vs them" fight where you need to support your side and attack the other without consideration. Attacks on our political opinions become attacks on our identity and self worth, which does not make for good, healthy debate.
@@ -93,7 +93,7 @@ This resistance to change comes with an idea that our current society is at the 
 
 ### Republicans and Democrats are not Opposites
 
-In America, the Overton window can loosely be defined by the range from the Democrat platform and the Republican platform. This window is in constant motion, but there's a distinct rightwards trend caused by the ratchet effect, and certain ideas, like the overall structure of our government, economy, and society, are not challenged. That's why there's never a viable candidate with a platform of leftist policies like nationalizing industries, defining the police, instituting a UBI, etc.
+In America, the Overton window can loosely be defined by the range from the Democrat platform and the Republican platform. This window is in constant motion, but there's a distinct rightwards trend caused by the ratchet effect, and certain ideas, like the overall structure of our government, economy, and society, are not challenged. That's why there's never a viable candidate with a platform of leftist policies like nationalizing industries, defunding the police, instituting a UBI, etc.
 
 The range of acceptable opinions hasn't just been reinforced through decades of political messaging, its also been polarized. Despite the differences between the two parties still being quite right leaning overall (and increasingly so), people have been conditioned into thinking that both parties are radical extremes and whatever party you're not in is evil. This conditioning has helped cement the two parties and has been leveraged as a weapon against each other.
 

@@ -15,6 +15,8 @@ const pageData = useData();
 <p>359 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+<details><summary>Referenced by:</summary><a href="/garden/parenting/index.md">Parenting</a></details>
+
 <details><summary>Tags:</summary><a href="/garden/parenting/index.md">Parents</a></details>
 
 As new parents we were pressured into restless nights where after getting our son to sleep, we'd try placing him in his bassinet only to wake him in the process and have to start the soothing over. This is an incredibly common experience for new parents in the US due to the [AAP's recommendations](https://publications.aap.org/aapnews/news/20619/New-safe-sleep-recommendations-can-help) and nurses being required to endorse it. The typical advice on preventing this is to train the baby to sleep by ignoring their cries for hours each night until they learn we won't come to help. But to us and many others this sounds like a horrible lesson to teach your child, and we'd much prefer our babies know they can rely on us to help them when they're distressed.

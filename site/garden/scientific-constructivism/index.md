@@ -14,7 +14,7 @@ const pageData = useData();
 <p>316 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/constructivism/index.md">Constructivism</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivism/index.md">Constructivism</a></details>
 
 Scientific constructivism is the philosophical idea that science is a [Social Construct](/garden/social-constructs/index.md) , in this case one created socially by scientists.
 

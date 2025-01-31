@@ -12,14 +12,14 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Decentralized Education</h1>
-<p>1697 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1702 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/education/index.md">Education</a><a href="/garden/learning-styles/index.md">Learning Styles</a><a href="/garden/motivation/index.md">Motivation</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/standardized-education/index.md">Standardized Education</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/education/index.md">Education</a><a href="/garden/learning-styles/index.md">Learning Styles</a><a href="/garden/motivation/index.md">Motivation</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/standardized-education/index.md">Standardized Education</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/education/index.md">Education</a><a href="/garden/decentralized/index.md">Decentralized</a></details>
 
-Decentralized education refers to an education system where instead of a standardized curriculum, everyone is involved in the teaching process and thus helps shape the curriculum. This means everyone shares the role of both teacher and student rather than those being discrete sets of people. The process of learning is then a collaborative and interactive process where all participants are heavily engaged.
+Decentralized education refers to an education system where instead of a standardized curriculum, everyone is involved in the teaching process and thus helps shape the curriculum. It would be self guided, self paced, and mastery focused rather than using grades to coerce students into learning subjects they find uninteresting and unimportant. This process means everyone shares the role of both teacher and student rather than one or the other, and the process of learning becomes a collaborative and interactive process where all participants are heavily engaged.
 
 ## Curriculum
 
@@ -57,10 +57,6 @@ I believe a decentralized educational system could still have places of learning
 
 These institutions would likely be managed by those who use it regularly, via [Consensus Democracy](/garden/consensus-democracy/index.md). There would be no costs for anything and likely no degrees or certifications (although I'm not steadfast on that point).
 
-## Shared Responsibility
-
-Our current system takes a very [Individualist](/garden/individualism/index.md) view that sees _people_ as having failed or succeeded, rather than recognizing its the system itself that has failed people. Instead, replacing this _personal_ responsibility with a _shared_ responsibility to improve society will allow people to better explore their interests and strengths and contribute in whatever way they can without judgement.
-
 ## Sensitive Periods
 
 When humans are young they have higher neuroplasticity that has been linked to things like better language acquisition and other advantages. A decentralized approach like I described would encourage learning at all periods of life, so would still take advantage of that period of time. But it should be made clear that even if it didn't, people learn skills later in life all the time and it's not such a disadvantage as to discourage learning. I think our current system's focus on grades and rigid curriculums and pacing have done much more hindering of learning than decreased neuroplasticity ever could.
@@ -72,3 +68,5 @@ While a lot of what I described here hinges on the idea of an entire society hav
 I'm going to especially highlight Francisco Ferrer and his "Modern School Movement". Ferrer was a Spanish anarchist, and you can read Emma Goldman's thoughts on Ferrer on him and his school [here](https://theanarchistlibrary.org/library/emma-goldman-anarchism-and-other-essays#toc8). Goldman is an influential anarchist herself, and co-founded an association dedicated to spreading Ferrer's ideas on education as a movement. Unfortunately, I can't find any schools existing in the US today that take direct inspiration from Ferrer.
 
 Personally, I think the Montessori method and Reggio Emilio approach both sound solid for young children, and we send our son to a Montessori school (although up until our son can walk and eat, its more of a daycare). The Summerhill School and those inspired by it sound like good systems for older children. Some similar alternative schooling systems, like the Sudbury schools, seem to fall into some more conservative values about meritocracy and how not everyone can make it, which I believe would lead to a lack of diversity and reinforcement of power structures. I'd avoid those, and of course do research on the specifics of any school before you entrust them with your child.
+
+The Zapatistas have a radical approach to education that has a lot of similarities to what I describe here, like giving students a voice in their curricula (via local assembly), eschewing grades and diplomas, and treating education as a lifelong process.

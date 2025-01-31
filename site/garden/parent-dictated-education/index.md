@@ -16,6 +16,8 @@ const pageData = useData();
 <p>409 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a></details>
+
 <details><summary>Tags:</summary><a href="/garden/parenting/index.md">Parenting</a><a href="/garden/education/index.md">Education</a></details>
 
 When looking into alternative schooling systems and such, homeschooling comes up a lot, as well as private education for the purpose of sending them to religiously affiliated schools. I think these share an issue of _restricting_ child autonomy, and I'm not a fan of them. As you can imagine, my desire for the community to be more involved with education (and raising children in general) means I _don't_ like the idea of further reducing the amount of adults a child regularly interacts with. It leads into the [Neoliberal](/garden/neoliberalism/index.md) idea that the parents are solely responsible for their children's development, rather than the community at large. It's still dictating a children's education by a single person or entity.

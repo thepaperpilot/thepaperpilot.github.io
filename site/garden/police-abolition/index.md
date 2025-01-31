@@ -1,4 +1,5 @@
 ---
+alias: "Prison Abolition"
 public: "true"
 slug: "police-abolition"
 title: "Police Abolition"
@@ -11,12 +12,12 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Police Abolition</h1>
-<p>1697 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1539 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/consensus-democracy/index.md">Consensus Democracy</a><a href="/garden/free-association/index.md">Free Association</a><a href="/garden/materialism/index.md">Materialism</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/consensus-democracy/index.md">Consensus Democracy</a><a href="/garden/free-association/index.md">Free Association</a><a href="/garden/materialism/index.md">Materialism</a></details>
 
-I'm a supporter of the police abolition movement, which calls for police and prisons to be abolished. It argues that there are many inherent problems with policing and incarcerating people that cannot be fixed with just further training or restrictions - the entire system must be entirely abolished. In this way, it is a more extreme version of the police reform or defund the police movements. The movement also posits that there are alternatives to policing and incarceration that can be more effective at reducing crime.
+Police abolition refers to replacing the entire justice system with an alternative. It goes beyond what mere reform could do and believes "the *master's tools* will never *dismantle the master's house*" (Audre Lorde). Instead of treating "crime" as individual failings to be dealt with punitively, you would treat anti-social behavior as issues to be resolved with transformative and restorative justice. In this way, it is a more extreme version of the police reform or defund the police movements, calling for the complete abolition of police, courts, and prisons.
 
 ## What is police abolition?
 
@@ -30,7 +31,9 @@ I'll generally just say police or prison abolition, but I'm still referring to p
 
 ## Why abolish police?
 
-There are a variety of reasons for abolishing the police, from its controversial origins to its pervasive discrimination to its overall lack of effectiveness. Ultimately though, I would argue this movement stems from anarchistic principles and values. Anarchism posits that no person should hold power over another (a simplification sufficient for this document), which would include the use of force or imprisonment. Anarchists argue the State has no right to exist, let alone that it has no right to call it's violence legitimate, as can be seen in [Prisons: A Social Crime and Failure](https://theanarchistlibrary.org/library/emma-goldman-anarchism-and-other-essays#toc6) by Emma Goldman. From this premise, any form of policing or incarceration is unjust. However, let's explore additional problems within the specific context of the US:
+There are a variety of reasons for abolishing the police, from its controversial origins to its pervasive discrimination to its overall lack of effectiveness. It treats systemic failings as if they were individual failings.
+
+Ultimately though, I would argue this movement stems from anarchistic principles and values. Anarchism posits that no person should hold power over another (a simplification sufficient for this document), which would include the use of force or imprisonment. Anarchists argue the State has no right to exist, let alone that it has no right to call it's violence legitimate, as can be seen in [Prisons: A Social Crime and Failure](https://theanarchistlibrary.org/library/emma-goldman-anarchism-and-other-essays#toc6) by Emma Goldman. From this premise, any form of policing or incarceration is unjust. However, let's explore additional problems within the specific context of the US:
 
 ### Origins of policing
 
@@ -79,25 +82,23 @@ Officers themselves perpetrate [a lot of crime](https://policecrime.bgsu.edu/) (
 
 There are many ways to reduce the need of police until it's eventually zero. Immediately, perpetratore of victimless crimes should be let out of prison. You can also reduce most root causes of crime, rather than spending the money on incarcerating the perpetrators.
 
-### Crime reduction
+### Transformative Justice
 
 Abolitionists still want to ensure public safety, just not through policing and incarceration. They believe, since most crime is not born of malice, that improving society by ensuring everyone's needs are met would evaporate the majority of crimes as well - at least as many as are prevented by the current system. This is an idea fundamentally aligned with [Materialism](/garden/materialism/index.md). Police are incredibly over funded, enough to buy things like [surplus tanks](https://www.aclu.org/news/national-security/towns-dont-need-tanks-they-have-them) from the US military. That money can  instead go to social programs that would solve the root causes that lead to crimes.
 
 Societies can and will find alternative ways of preventing any specific crime. An often used example is if you have a drunk friend who is about to drive home, you typically will help get them a ride (driving yourself if you're sober, or calling them a cab or uber otherwise) rather than calling the police on them. Abolitionism finds policing as only required by those who lack the political imagination to find other solutions - basically, cure the diseases rather than treat the symptoms. At a systemic level, drunk driving can be reduced or eliminated by improving public transit.
 
+### Restorative Justice
+
+For instances
+
 ### Dangerous incidents
 
 With the police abolished, there are likely to still be cases where an individual is a danger to themselves or others. For these situations, there are ideas on how to resolve it without state sanctioned violence, that typically focus on local communities setting up alternative resources. Mobile crisis teams are one such alternative, although not without similar concerns regarding their authority to forcibly incarcerate people in mental health hospitals. There are a lot of alternatives out there, but they're typically specific to local communities and don't really have a "one size fits all" solution. Here's an [article](https://roarmag.org/essays/mental-health-system-abolition/) about a couple such initiatives, and [this article linked earlier](https://gal-dem.com/how-does-police-abolition-work/) also discusses some specific local initiatives.
 
-Another criticism of _prison_ abolitionism specifically is [What do you do with the murderers and rapists?](https://medium.com/@amparker/what-about-the-rapists-and-murderers-7a81955b772c), but as that article describes: we already don't incarcerate many murderers and rapists, especially the significant amount of murderers and rapists who are also officers. It argues the incarceral system already fails in this regard, and focuses on punishing the perpetrator rather than helping the victims, which is something we could do without incarceration.
-
-### Consequences
-
-While punishments are not good deterrents, some consequences for crimes are still justified and can be enforced without requiring incarceration. A victim may be "made whole" (have the damage reversed to the best of our ability) at expense of the perpetrator, or the society itself (using resources its no longer spending on police or prison). If there's a material cause for the crime having taken place, e.g. a hungry person stealing food, those material conditions can be improved. For cases where the perpetrator is chronically exhibiting anti-social behavior, a trip to a rehabilitation facility, which would be operated significantly differently from the PIC, could be warranted. Stuff like anger management courses or resources to help kick addictions would naturally still be present in a society without prisons.
-
-A society can go even further and rely entirely on social consequences to deter anti-social behavior, which is a concept called [Free Association](/garden/free-association/index.md). Essentially, by only interacting with people individuals deem to be in good standing, people will be incentivized to maintain a positive reputation.
-
 ## Further reading
+
+Another criticism of _prison_ abolitionism specifically is [What do you do with the murderers and rapists?](https://medium.com/@amparker/what-about-the-rapists-and-murderers-7a81955b772c), but as that article describes: we already don't incarcerate many murderers and rapists, especially the significant amount of murderers and rapists who are also officers. It argues the incarceral system already fails in this regard, and focuses on punishing the perpetrator rather than helping the victims, which is something we could do without incarceration.
 
 I have not finished reading it yet myself, but I recommend [We Do This ‘Til We Free Us](https://www.haymarketbooks.org/books/1664-we-do-this-til-we-free-us) by Mariame Kaba based on [this NBC article on the book and author](https://www.nbcnews.com/think/opinion/abolishing-police-prisons-lot-more-practical-critics-claim-ncna1258659).
 

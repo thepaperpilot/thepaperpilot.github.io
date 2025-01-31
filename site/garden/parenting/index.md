@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Parenting</h1>
-<p>1353 words, ~7 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1492 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/individualism/index.md">Individualism</a></details>
@@ -23,13 +23,15 @@ As leftists, my wife and I want to raise our son with certain values that buck t
 
 ## Independence
 
-<span id="6777f9e9-da40-42f7-9ac3-ab9c732be035">To clarify, I am _not_ saying our child must learnt to be independent and exist without aid from my wife and I. To the contrary, I believe its incredibly important for us, as caregivers, to be extremely supportive, nurturing, and of course caring. This may be considered "coddling" or "spoiling", but those are not serious concerns to a child's development. There's a book called [The Myth Of The Spoiled Child](https://www.alfiekohn.org/myth-spoiled-child/) that I want to read that apparently goes into details on why its control that harms development, not indulgence.</span>
+<span id="6777f9e9-da40-42f7-9ac3-ab9c732be035">To clarify, I am _not_ saying our child must quickly learn to be independent and exist without aid from my wife and I. To the contrary, I believe its incredibly important for us, as caregivers, to be extremely supportive, nurturing, and of course caring. This may be considered "coddling" or "spoiling", but those are not serious concerns to a child's development. There's a book called [The Myth Of The Spoiled Child](https://www.alfiekohn.org/myth-spoiled-child/) that I want to read that apparently goes into details on why its _control_ that harms development, not indulgence.</span>
 
 Being dependent is _not_ the same as imposing authority. It only becomes so when you leverage your help to control them. A guide dog is not imposing authority on the person they guide, and neither is providing unconditional food, water, shelter, and love.
 
 ### Autonomy
 
-Autonomy, however, is something our son _will_ have. He has agency, and we're willing to do things like let him sleep with us in bed when he refuses to sleep in the crib (more on that later), and as he gets older we plan on reinforcing bodily autonomy by asking for consent before hugs, picking him up, etc.
+Autonomy, however, is something our son _will_ have. He has agency, and we're willing to do things like [Bed Sharing](/garden/bed-sharing/index.md)  when he refuses to sleep in the crib, and as he gets older we plan on reinforcing bodily autonomy by asking for consent before hugs, picking him up, etc. There's a natural curve to this though - before we can communicate with each other, it can be hard to resolve some of his protests.
+
+And naturally, there are dangerous things I do not plan on letting our son do, especially ones that are present in the home like alcohol or VR. I plan on educating him on why those are particularly harmful for his age range.  On these issues and similar ones there should be a focus on providing relevant information and that if something _were_ to happen that he should come to us so we can help without judging. This is important because trying to keep our son ignorant or under constant control is simply not feasible, not ethical, and doesn't prepare him for life without us.
 
 This view of children having autonomy is particularly relevant when it comes to my thoughts on [Education](/garden/education/index.md).
 
@@ -63,6 +65,7 @@ Books:
 - [Click Clack Moo](https://www.goodreads.com/book/show/766955.Click_Clack_Moo) teaches class consciousness and the power of strikes
 - [The Lorax](https://yale.learningu.org/download/91736886-e31e-47c0-8a3b-f1c1843a6f7c/H3146_The%20Lorax_Storybook.pdf) teaches environmentalism and about unchecked capitalism. It's also way longer than I thought/remembered
 - [Frog and Toad](https://www.amazon.com/Frog-Toad-Collection-Arnold-Lobel/dp/000813622X) shows healthy and positive relationships between friends
+- [A Rule Is To Break](https://www.akpress.org/ruleistobreak.html) is an introduction to child autonomy and and the importance of creativity
 
 ## Further Reading
 

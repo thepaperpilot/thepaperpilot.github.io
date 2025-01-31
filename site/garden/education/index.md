@@ -16,7 +16,7 @@ const pageData = useData();
 
 <details><summary>Referenced by:</summary><a href="/garden/efficiency/index.md">Efficiency</a><a href="/garden/parenting/index.md">Parenting</a></details>
 
-<details><summary>Tagged by:</summary><a href="/garden/clearing-college-debt/index.md">Clearing College Debt</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/decentralized-education/index.md">Decentralized Education</a><a href="/garden/grades/index.md">Grades</a><a href="/garden/learning-styles/index.md">Learning Styles</a><a href="/garden/parent-dictated-education/index.md">Parent Dictated Education</a><a href="/garden/standardized-education/index.md">Standardized Education</a></details>
+<details><summary>Tagged by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/clearing-college-debt/index.md">Clearing College Debt</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/decentralized-education/index.md">Decentralized Education</a><a href="/garden/grades/index.md">Grades</a><a href="/garden/learning-styles/index.md">Learning Styles</a><a href="/garden/parent-dictated-education/index.md">Parent Dictated Education</a><a href="/garden/standardized-education/index.md">Standardized Education</a></details>
 
 I believe education is really important, and our current system flawed. Education has always fascinated me and many of my jobs when I was young involved teaching in some way. Over time my critiques have been increasing in number and at odds with more fundamental aspects of how we approach education.
 
