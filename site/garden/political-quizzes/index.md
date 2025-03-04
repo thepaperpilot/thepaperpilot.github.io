@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Political Quizzes</h1>
-<p>1007 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1344 words, ~7 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 Political quizzes are a bit of a guilty pleasure of mine. I really enjoy getting my beliefs distilled into a handful of labels, and getting forced to think about issues I may not have thought about that thoroughly. I often take issue with the wording of various questions though, and certainly have opinions on some quizzes being better than others.
@@ -24,7 +24,9 @@ With all that said, here I'll discuss some tests I've taken, the results I've go
 
 Made by the six triangles creator, I really like this [test](https://prismquiz.github.io)! It actually might be my favorite. It novelly gives you multiple positions to take on a given issue, rather than a statement you can agree or disagree with. I overall really liked the choices, and nearly always felt one represented my views.
 
-I like the [results](https://prismquiz.github.io/results.html?result=m0QWd0KZP&lang=en) I got on 2024-09-06. I was surprised at my government value being just "direct democracy", when the way I define my views on Government in [My Political Beliefs](/garden/my-political-beliefs/index.md) (at the time of taking the test), which I believe I reflected accurately in my responses here, would probably include at least some points on anarchism and confederationism. That said, I liked these results so much that they inspired me to write that page on my political beliefs, which takes clear inspiration from this test.
+The most recent time I _tried_ to take the quiz was on 2025-02-12, however I found the responses I had to pick from overly pro-statist, to the point where it didn't feel like I was going to get any meaningful results. I really liked this test previously, and honestly it makes me want to make a political quiz in the same style of this one but with a bigger focus on anti-statist positions.
+
+The previous time I took the test I liked the [results](https://prismquiz.github.io/results.html?result=m0QWd0KZP&lang=en) I got on 2024-09-06. I was surprised at my government value being just "direct democracy", when the way I define my views on Government in [My Political Beliefs](/garden/my-political-beliefs/index.md) (at the time of taking the test), which I believe I reflected accurately in my responses here, would probably include at least some points on anarchism and confederationism. That said, I liked these results so much that they inspired me to write that page on my political beliefs, which takes clear inspiration from this test.
 
 <div class="img-container"><img src="/garden/image_1725623164393_0.png" title="image.png"/></div>
 
@@ -101,3 +103,42 @@ I'd gotten similar results on 2022-06-15:
 I only took the short version, but here are my results from taking the [9Axes](https://9axes.github.io/) quiz on 2022-06-15:
 
 <div class="img-container"><img src="/garden/image_1725598637811_0.png" title="image.png"/></div>
+
+# AnarchyValues
+
+An 8values-style test that focused on anarchist values. This allows it to be much shorter, and give ostensibly more meaningful results for someone who already knows they lean anarchist. Although, I think its scope gets a bit _too_ restricted: Anarchists tend to oppose _many_ hierarchies, but this quiz only discusses 4 axes: pro-tech vs anti-tech, individualism vs collectivism, humanism or anti-humanism, and communism or market economy. What about feminist liberation? Does gender get abolished? Couples? Family units? What about justice - what replaces the police? And so on.
+
+I took the [AnarchyValues](https://anarchyvalues.github.io/) test on 2025-02-13 and got [these results](https://anarchyvalues.github.io/results.html?e=70.8&d=72.5&g=57.5&s=10.0):
+
+<div class="img-container"><img src="/garden/Untitled_1739454084803_0.png" title="Untitled.png"/></div>
+
+# LeftValues
+
+Along similar lines, [LeftValues](https://leftvalues.github.io/) is an 8values-style test focused on just leftist values. Ultimately I wasn't really a fan of the results, and particularly thought the ideology mapping ended up being quite inconsistent and not aligned with the axes I was assigned. For example, the amount of communist ideologies I got matched to despite the centralization axis skewing massively towards decentralized (anarchist).
+
+I took the test on 2025-02-12 and got these results:
+
+<div class="img-container"><img src="/garden/rn_image_picker_lib_temp_5665b270-dd98-48a0-9ee0-b7086ff8d27c_1739454232332_0.jpg" title="rn_image_picker_lib_temp_5665b270-dd98-48a0-9ee0-b7086ff8d27c.jpg"/></div>
+
+Additionally, it assigned me these closest matching ideologies:
+- council communism
+- eco anarchist (92.9)
+- eco Marxist (90.8)
+- anarcho communist (90.6)
+- orthodox Marxist (88.5)
+
+# 10Groups
+
+[10groups](https://10groups.github.io/index.html) is a test that assigns you positions on 10 different political compasses and 4 additional axes. I very much disagree with the results I got on several of the placements, and looking through the github issues I get the impression the weights are just legitimately incorrect for several of these questions :/. If I were to take it again I'd probably try [this fork](https://aashishkebab.github.io/10groups/).
+
+I took the test on 2025-02-12 and got these [results](https://10groups.github.io/results.html?y=-3.97&ay=1.63&x=-7.06&ax=-7.06&bx=1.17&by=-7.24&cx=-1.37&cy=-3.23&dx=-8.45&dy=-7.56&ex=0.64&ey=4.50&fx=-2.17&fy=-9.00&gx=3.00&gy=-7.83&hx=1.33&hy=-2.00&ix=7.00&iy=8.25&ja=-2.67&jb=-6.50&jc=-5.67&jd=-5.25), which it suggested most closely matched progressivism, then libertarian socialism then social democracy:
+
+<div class="img-container"><img src="/garden/Untitled_1739454739986_0.png" title="Untitled.png"/></div>
+
+# LiberationValues
+
+[LiberationValues](https://liberationvalues.github.io/) is an 8values-style quiz that focuses on anti-authoritarian positions. Some of the axes, like left-unity vs lib-unity, are actually quite interesting. I thought a lot of my axes were closer to the middle than I'd typically expect, though. Probably just an unavoidable issue with these "how strongly do you agree with this statement" quizzes though.
+
+I took the test on 2025-02-12 and got these [results](https://liberationvalues.github.io/results.html?radi=17.7&coop=59.3&ownr=36.7&glob=38.9&prog=31.0&rebl=29.4&mark=35.4):
+
+<div class="img-container"><img src="/garden/Untitled_1739455581952_0.png" title="Untitled.png"/></div>

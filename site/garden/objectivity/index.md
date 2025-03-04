@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Objectivity</h1>
-<p>645 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>764 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/apoliticism/index.md">Apoliticism</a><a href="/garden/education/index.md">Education</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/scientific-constructivism/index.md">Scientific Constructivism</a></details>
@@ -44,5 +44,6 @@ He also describes the history of fashion's values, and how previously there was 
 
 I'm vaguely aware that the idea of truth and the relationship between absolute, objective, and universal truths are an important topic in philosophy, and I want to explore it at some point. I've seen these texts recommended:
 - [Theories of Truth: A Critical Introduction](https://www.amazon.com/Theories-Truth-A-Critical-Introduction/dp/0262611082)
-- [Truth, Paradox, and Nietzschean Perspectivism](https://departments.bloomu.edu/philosophy/pages/content/hales/articlepdf/paradox.pdf) (I've looked into it at a high level already, and it seems to be what I argue for here wrt objectivity not existing because we all only have our subjective experiences of objective reality)
+- [Truth, Paradox, and Nietzschean Perspectivism](https://departments.bloomu.edu/philosophy/pages/content/hales/articlepdf/paradox.pdf)
+	- Having not read this text specifically, from what I've learned about Nietzsche is that he had a fairly confused relationship with hierarchy. It's fair to consider some of his ideas similar to that of an egoist anarchist (an individualist flavor of anarchism), and he definitely seemed to fight for agency, and perspectivism - that we don't have some objective truth, only interpretations thereof - is a really interesting idea you've probably gathered that I agree with. Buuut, Nietzsche was _not_ actually against anarchy and he was not actually an anarchist. He was a white supremacist anti-semite, who said agency as something exclusive for certain races. Big yikes, definitely makes it hard to talk about his ideas.
 - [Language, Truth and Logic](https://antilogicalism.com/wp-content/uploads/2017/07/language-truth-and-logic.pdf)

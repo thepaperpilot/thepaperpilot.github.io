@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Orchard</h1>
-<p>1348 words, ~7 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1200 words, ~7 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/efficiency/index.md">Efficiency</a><a href="/now/index">/now</a></details>
@@ -27,13 +27,13 @@ Core to this project is improving how conversations online are carried out. It's
 
 ## Implementing [Chat Glue](/garden/chat-glue/index.md)
 
-As you converse in your group chats and DMs, you can specify topic changes. These will break the conversation up into pieces called notes, and each piece gets added to each of the topics it was about (with links to the convo from before and after that one).
+In addition to note pages, orchard will have its own chat glue inspired messaging system, that integrates with the rest of the digital garden.
 
-Notes should also allow specific parts, up to the character level, to reply to, react to, otherwise annotate, or mark as a topic change. This is something to think about with regards to decentralized moderation and things like muting pages or gardens. Plus the matter of displaying the sync to the user.
+While in something like discord we have channels to filter topics and participants, in this system we expose topics directly. So instead conversations "branch" from the topic(s) that the first message brings up. This conversation can be open to the public, or only to specified users. In addition, people can subscribe to both topics and people, or even in combination (e.g. programming conversations involving a specific friend). Users can create groups of friends for ease of specifying who can participate in specific conversations. Conversations have topic sets in lieu of titles.
 
-Exactly where these DMs and group chats are coming from isn't super clear in my mind. I want [Digital Locality](/garden/digital-locality/index.md), which means avoiding large groups of users and limiting the influence of individual posts and posters. We don't want a federation of discrete independently moderated communities, as that will lead to centralizing power and influence. But, organizing communities this way is very common due to its convenience and appeal. If you make, say, an open source library and want people to know where they can go to discuss how to use the library, show off what they used it for, etc. then you're likely to create a discrete community for it.
+Messages can have edits and reactions and other embellishments, which can refer to the message as a whole or just a piece of it. Edits are also shown as messages, which includes edits to garden pages (so someone can start a conversation off that edit).
 
-In theory we could take the Chromatic Lattice's initial approach and just have a chat room tied to each user, but I'm not confident that'll translate well to this project. I'm leaving this open ended, since I expect we'll learn from Chromatic Lattice anyways and find a better solution to this problem.
+Every message is a branch (like how reddit threads converse), and those branches can change topic sets, change user visibility, etc. It's possible to see a message but not its context, or that someone referenced a message but you can't see the contents or even metadata of that message.
 
 ## Non-conversation Notes
 
@@ -49,13 +49,13 @@ Links can also be manually created, and all links can be labeled to display a re
 
 ## Sharing Notes
 
-You can jump to other people's gardens and see their public notes (via a friends list or via a mutual chat room). You should be able to take any of those notes or the whole graph and include it in your own, so they are part of your graph and queries. There'll need to be a good way of displaying changes, aliasing topics, and proposing edits to other peoples' pages. A user should also be able to "fork" someone's notes so they can modify them, and maintain a link to the original note but no longer auto-update them. Unread notes should appear similar to unread chats, which will improve the ability to use Orchard as a method of learning. In fact, breaking down books by topic and adding them to an Orchard graph is something I think would be worth looking into, once the project is usable.
+You can jump to other people's gardens and see their public notes (via a friends list or via a mutual chat room). You'll be notified of changes to your friends' garden so you can read it and perhaps make corresponding updates to your own notes. Unread notes should appear similar to unread chats, which will improve the ability to use Orchard as a method of learning. In fact, breaking down books by topic and adding them to an Orchard graph is something I think would be worth looking into, once the project is usable.
 
 I think a conversation should show a sidebar of notes from both the user's network as well as any public notes from any other active participants' networks that relate to the set of topics being discussed. I think this would help encourage message gardening and assist with distributing information. We could go a step further and notify participants when those notes get added to or edited, which could help with corrections to articles getting spread to those who saw the original incorrect information (something that traditional media doesn't do well).
 
-We'll need to be careful sharing notes doesn't lead to centralizing power. I think if you subscribe/follow someone's graph, it shouldn't include the pages they've followed (although forks would be fine). This would lead to [Digital Locality](/garden/digital-locality/index.md) and all the benefits it entails. However, this might make it harder for movements to spread, because it means it spreading requires people to write new content rather than sharing existing content. I believe (perhaps optimistically) that movements can succeed in this environment, but perhaps instead there's a happy medium we can strike, so high quality notes can be spread without leading to issues like non-consensual virality.
+Having to copy notes over into your own garden is a deliberate decision to prevent misinformation and centralizing power. It forces engagement before spreading information, and prevents a specific poster from their exact post from accumulating influence - thus, this system includes the ideas of [Digital Locality](/garden/digital-locality/index.md) and all the benefits it entails. However, we'll need to make sure it's not such a burden to copy over notes that movements can't spread. In theory this could also allow the note to be iterated upon and become more complete, succinct, or some other quality, based on what's more likely to be copied over by readers.
 
-I think a compromise here might just be letting people copy notes over to their own graph. Instead of suggesting changes to other peoples notes, you just copy the note over and modify it. If the other person is friends with you, they'll see your new (changed) note, and perhaps the app can even highlight the similarity (and importantly, the differences) between that note and the original. This system would be similar to sharing/retweeting a post, but with a bit more effort that I think would strike the right balance between signal boosting good information and limiting influence. Notes would naturally be iterated upon as they spread through the network.
+I think the notification system should look for similarities between your notes and theirs, and make it clear when they just added a note that's similar to a note you already made. In theory, a button could be shown to copy over changes when compatible.
 
 ## LLMs
 

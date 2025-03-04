@@ -51,7 +51,7 @@ Reform is the process of iteratively changing the system from within, and revolu
 > Never be deceived that the rich will allow you to vote away their wealth.   
 > \- Lucy Parsons
 
-Reformists, like syndicalists, market socialists, and democratic socialists, tend to still see capitalism as a useful tool for innovation and resource allocation, and may support it existing for quite some time. They would use things like labor unions, strikes, and occupations to exert political control over the economy. They'll try to get progressive candidates into places of power to pass legislation limiting inequality and expanding social welfare. They'll create networks of mutual aid to assist those not being helped sufficiently by the state.
+Reformists, like syndicalists, market socialists, and democratic socialists, tend to still see capitalism as a useful tool for [Innovation](/garden/innovation/index.md) and resource allocation, and may support it existing for quite some time. They would use things like labor unions, strikes, and occupations to exert political control over the economy. They'll try to get progressive candidates into places of power to pass legislation limiting inequality and expanding social welfare. They'll create networks of mutual aid to assist those not being helped sufficiently by the state.
 
 Personally, I think reform is likely the only way we'll see the kind of change we really need to see. However, reformists ideas are a great gateway into leftist thought. [Market Socialism](/garden/market-socialism/index.md) is essentially "capitalism but with less exploitation and more meritocracy" by ensuring the surplus labor value remains within control of the workers, which is something I think liberals can be sold upon pretty easily.
 

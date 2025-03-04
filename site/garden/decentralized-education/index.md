@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Decentralized Education</h1>
-<p>1702 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>2244 words, ~12 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/education/index.md">Education</a><a href="/garden/learning-styles/index.md">Learning Styles</a><a href="/garden/motivation/index.md">Motivation</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/standardized-education/index.md">Standardized Education</a></details>
@@ -20,6 +20,8 @@ const pageData = useData();
 <details><summary>Tags:</summary><a href="/garden/education/index.md">Education</a><a href="/garden/decentralized/index.md">Decentralized</a></details>
 
 Decentralized education refers to an education system where instead of a standardized curriculum, everyone is involved in the teaching process and thus helps shape the curriculum. It would be self guided, self paced, and mastery focused rather than using grades to coerce students into learning subjects they find uninteresting and unimportant. This process means everyone shares the role of both teacher and student rather than one or the other, and the process of learning becomes a collaborative and interactive process where all participants are heavily engaged.
+
+Sometimes this term gets used to describe American education, because there is no national standardized curriculum. I do not consider this accurate, for much the same reason I don't consider federations to be decentralized. Having multiple centers doesn't avoid the issues of centralization, and true decentralization is when there are _no_ centers. Barring that, it should have each "center" be as small and autonomous as possible - not on the scale of entire states or even entire school districts. But again: ideally, fully decentralized by being based on individual relationships and interactions between people.
 
 ## Curriculum
 
@@ -38,6 +40,20 @@ Now of course, it wouldn't _actually_ be possible for information to die out, si
 It's a bit trickier to learn when you can't get hands on experience, but its more than enough for a lot of people and a lot of topics, at least enough to determine if you'd like to visit somewhere to learn more in-person (much in the same way someone today might go to a university known for having experts on a specific topic). And of course for abstract concepts or computer related concepts, you actually _can_ get equivalently hands on experience via the internet as you would in person.
 
 In this way, the internet would serve as both an archive as well as a way for people to survey topics and find interests that might not have a local presence.
+
+For what it's worth, wikipedia is a centralized body of knowledge that does it's best to allow _everyone_ to contribute. My not requiring some arbitrary credentials or vetting process to edit pages, it allows anyone to contribute, and it tends to work pretty well (with demographic concerns across the editors aside, and that some pages have to be protected due to vandalism). People are able to write about the things they know about, so long as they can back it up with secondary sources.
+
+### Literacy
+
+Literacy is a tricky counter-point to my ideas on decentralization. Literacy is a topic that most people can agree should be some level of dependency for almost all other knowledge, yet even with our current non-decentralized system where reading and writing is part of every state-level curriculum, _[most adult Americans](https://nces.ed.gov/pubs2019/2019179/index.asp)_ are at least partially illiterate. So it's hard to suggest that in a self guided system that literacy would _improve_, right?
+
+Well first off, let's be clear that there's a clear stigmatization of adults with low literacy, and that's a problem. Society _should_ support people with low literacy. While some of it could certainly be resolved by improving education systems and improving everyone's material conditions, there'll likely be some number of people who struggle with literacy into adulthood anyways (for a large variety of reasons!). But of course, it begs the question: if we need to ensure all important information can be accessible without literacy anyways, to what degree _would_ literacy actually be important?
+
+This is admittedly quite the radical idea and I'm not saying the future of education necessarily _will_ go this direction, but it's worth considering that certain skills, even some as "fundamental" as reading and writing, may be replaced as time goes on and new technologies develop and accessibility improved. For literacy specifically, I think the success of audio books, phone calls and video calls over texting, audio alternatives to informational plates in museums, and the general trend of replacing text with easily recognizable symbols show are indicative that literacy may just be some antiquated skill on a long enough timescale. At the very least, we should be open to any and all forms of communication that the future might switch to.
+
+Even important existing books could see this treatment, as even today older books get translated, audiobooks, and adaptations to make them more accessible to modern audiences.
+
+All that said, short term the solution is _definitely_ improving global material conditions; improving access to quality education, centralized or not; and making important information accessible to people regardless of literacy levels (and ideally regardless of known languages).
 
 ## Everyone is a Teacher
 
