@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">A Plea to Organize</h1>
-<p>1140 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1123 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/leftism/index.md">Leftism</a></details>
@@ -87,7 +87,7 @@ Mainstream media, owned by the capitalist class, will frame progressive issues a
 > We have nothing to lose but our chains.   
 > \- Assata Shakur
 
-This is a frightening moment in our nation's history, but we are not powerless. By organizing, educating, and building solidarity, we can lay the foundation for a progressive future. Join an organization, get involved in [Mutual Aid](/garden/mutual-aid/index.md), and prepare to support a new party that prioritizes people over profit.
+This is a frightening moment in our nation's history, but we are not powerless. By organizing, educating, and building [Solidarity](/garden/solidarity/index.md), we can lay the foundation for a progressive future. Join an organization, get involved in [Mutual Aid](/garden/mutual-aid/index.md), and prepare to support a new party that prioritizes people over profit.
 
 The path ahead is not easy, but it is necessary. Together, we will challenge the establishment, demand justice, and build a society that works for everyone. The struggle is just beginning—let's make sure it ends in victory.
 

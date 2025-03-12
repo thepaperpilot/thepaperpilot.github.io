@@ -14,7 +14,7 @@ const pageData = useData();
 <p>90 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/copyright/index.md">Copyright</a><a href="/garden/enshittification/index.md">Enshittification</a><a href="/garden/free-association/index.md">Free Association</a><a href="/garden/innovation/index.md">Innovation</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/copyright/index.md">Copyright</a><a href="/garden/enshittification/index.md">Enshittification</a><a href="/garden/free-association/index.md">Free Association</a><a href="/garden/innovation/index.md">Innovation</a><a href="/garden/mutual-aid/index.md">Mutual Aid</a></details>
 
 Profit motive refers to how, under capitalism, power and influence will naturally trend towards consolidation in an ever decreasing number of hands. This is not a claim that under capitalism are naturally more greedy and profit seeking (although [Materialism](/garden/materialism/index.md) would argue that is, in fact, the case), but rather that the structure of Capitalism will incentivize and therefore inevitably trend towards that consolidation.
 

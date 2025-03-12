@@ -11,14 +11,14 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Local Communities</h1>
-<p>321 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>315 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/individualism/index.md">Individualism</a><a href="/garden/parenting/index.md">Parenting</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/individualism/index.md">Individualism</a><a href="/garden/mutual-aid/index.md">Mutual Aid</a><a href="/garden/parenting/index.md">Parenting</a></details>
 
-Strongly connected local communities are important to have. They satisfy our social needs for in-person connections, and help organize [Mutual Aid](/garden/mutual-aid/index.md) . These needs cannot be sufficiently satisfied exclusively by online friends/communities - of particular note, new parents need help raising their kid.
+Strongly connected local communities (that is, ones with [Solidarity](/garden/solidarity/index.md)) are important to have. They satisfy our social needs for in-person connections, and help support each other through means like [Mutual Aid](/garden/mutual-aid/index.md) . These needs cannot be sufficiently satisfied exclusively by online friends/communities - of particular note, new parents need help raising their kid.
 
-Historically, society has had these strongly connected local communities, via the way society was organized (i.e. tribes, multi-generational households, etc.) or through entities that focused on community (i.e. local churches). Churches in particular would ensure everyone meets up regularly to see each other, connect, and catch up. They'd host community events and services throughout the year, and mobilize the community during emergencies.
+Historically, society has had these strongly connected local communities, via the way society was organized (i.e. tribes, multi-generational households, etc.) or through entities that focused on community (i.e. local churches). Churches in particular would ensure everyone meets up regularly to see each other, connect, and catch up. They'd host community events and services throughout the year, organize support for those who need it, and mobilize the community during emergencies.
 
 The religious aspect of churches was never a requirement for the benefits they contributed to their local communities, and in fact there are mega-churches today that do not confer these benefits despite retaining the religious aspect.
 

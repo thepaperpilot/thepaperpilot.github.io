@@ -14,7 +14,7 @@ const pageData = useData();
 <p>135 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/consumer-boycotts/index.md">Consumer Boycotts</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/consumer-boycotts/index.md">Consumer Boycotts</a><a href="/garden/mutual-aid/index.md">Mutual Aid</a></details>
 
 Direct action is an [Anarchist](/garden/anarchism/index.md) principle arguing people should "be the change they want to see", rather than going through representatives or other authorities. It includes things like protests, [Mutual Aid](/garden/mutual-aid/index.md), and other forms of political or economic change that individuals can participate in, outside of voting.
 

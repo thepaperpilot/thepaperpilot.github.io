@@ -16,7 +16,7 @@ const pageData = useData();
 <p>310 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/decentralized-education/index.md">Decentralized Education</a><a href="/garden/education/index.md">Education</a><a href="/garden/motivation/index.md">Motivation</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/decentralized-education/index.md">Decentralized Education</a><a href="/garden/education/index.md">Education</a><a href="/garden/existence/index.md">Existence</a><a href="/garden/motivation/index.md">Motivation</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/education/index.md">Education</a></details>
 

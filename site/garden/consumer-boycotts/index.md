@@ -11,14 +11,16 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Consumer Boycotts</h1>
-<p>885 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>966 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
+
+<details><summary>Referenced by:</summary><a href="/garden/solidarity/index.md">Solidarity</a></details>
 
 Consumer boycotts are the collective refusal to purchase products from a set of companies for political reasons. They're an example of [Direct Action](/garden/direct-action/index.md).
 
 ## Goals of Consumer Boycotts
 
-Boycotts have many goals. All boycotts are going to exercise solidarity, help us feel like we're truly living up to our values, and demonstrate our collective power as consumers, although those aren't typically the primary goals.
+Boycotts have many goals. All boycotts are going to exercise [Solidarity](/garden/solidarity/index.md), help us feel like we're truly living up to our values, and demonstrate our collective power as consumers, although those aren't typically the primary goals.
 
 Sometimes there are explicit demands trying to be met, such as a law being passed or company policy changes. Famous examples are the [Montgomery Bus Boycott](https://kinginstitute.stanford.edu/montgomery-bus-boycott) that ended bus segregation in the US and [Anti-Apartheid Movement](https://www.aamarchives.org/campaigns/boycott.html) that boycotted goods from South Africa until Apartheid was abolished. You can see a list of recent changes believed to have been caused by boycotts [here](https://www.ethicalconsumer.org/ethicalcampaigns/boycotts/history-successful-boycotts).
 
@@ -47,6 +49,8 @@ If a boycott is sustainable, its demands and goals can be ambitious. As a boycot
 ## Caveats
 
 A lot of the advice here specifically applied to _consumer boycotts_. Other forms of collective action, such as work strikes and rent strikes, do not necessarily play by the same rules. While I still don't agree with having a pre-defined end time, strikes can often be effective much sooner than consumer boycotts, for example.
+
+Additionally, be wary whenever specific companies are championed as the ethical alternative, especially if that company is a giant. Corporations may adopt ethical branding while retaining other exploitative practices. This is called "rainbow capitalism", and includes things like making products that support progressive causes like BLM or trans rights while exploiting child labor or union busting. These companies may try to co-opt those progressive causes by suggesting the solution is "ethical consumption", which is not a replacement for systemic change.
 
 ## Who to Boycott
 

@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Market Socialism</h1>
-<p>653 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>643 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/centrism/index.md">Centrism</a><a href="/garden/leftism/index.md">Leftism</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a></details>
@@ -26,7 +26,7 @@ One particular issue with capitalism that would still be present under market so
 
 Individuals can still have ideas for startups and seek money to help get it off the ground. However, that process will look different. Friends and family can donate money or labor, but money must be gifted, not exchanged for partial ownership of the company. The state can maintain a fund for helping startups, made up of taxes and going to those with successful pitches. An important aspect of all of this is that the initial person is not _the_ owner of the company, and would be at the same level as any other worker, regardless of role and when they joined the company. Founding a company should not and would not give them the ability to exploit the surplus labor value of the other workers. It's okay to not have corporations founded under that motivation, as the real motivation should be individuals seeing a way to improve society and acting upon it.
 
-In a capitalist society, most corporations are owned in large part by capitalists and have a very hierarchical structure. However, even without policy change local worker's co-operatives that are collectively owned by workers can and have existed. These might make concessions to help succeed in a hostile capitalist environment, like not giving ownership to employees until they've met certain requirements. It's still incremental progress towards market socialism and will [help shift society more socialist](https://jacobin.com/2024/05/cooperatives-dsa-left-strategy-solidarity/). If you have any of these around you, support them!
+In a capitalist society, most corporations are owned in large part by capitalists and have a very hierarchical structure. However, even without policy change local worker's co-operatives that are collectively owned by workers can and have existed. These might make concessions to help succeed in a hostile capitalist environment, like not giving ownership to employees until they've met certain requirements. It's still incremental progress towards market socialism and will [help shift society more socialist](https://jacobin.com/2024/05/cooperatives-dsa-left-strategy-solidarity/). If you have any of these around you, support them as an act of [Solidarity](/garden/solidarity/index.md)!
 
 By democratizing how each company operates, technological advancement would shift from helping the owners to the workers (since they are the owners). They're more likely to utilize those improvements to increase pay and reduce hours, and even if they decide to put the additional cashflow into something else, it would have been a democratic decision to do so.
 
