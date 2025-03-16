@@ -15,7 +15,7 @@ const pageData = useData();
 <p>178 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/davey-wreden/index.md">Davey Wreden</a><a href="/garden/video-essays/index.md">Video Essays</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/authorial-intent/index.md">Authorial Intent</a><a href="/garden/davey-wreden/index.md">Davey Wreden</a><a href="/garden/video-essays/index.md">Video Essays</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/davey-wreden/index.md">Davey Wreden</a><a href="/garden/favorite-video-games/index.md">Favorite Video Games</a></details>
 

@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Chromatic Lattice</h1>
-<p>1483 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1495 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a></details>
@@ -47,6 +47,8 @@ One such new mechanic could involve replacing the monuments with a splatoon like
 ## Social Features
 
 The main screen the player will interact with is the "board" page, either their own or someone else's. It acts as a bit of a profile page, and include information about the player like a profile picture, bio, and friends list. It'll also include both a local and global chat. The local chat is only on that specific Board, and can include messages from anyone visiting that Board. People visiting will also have their cursors appear to the other visitors as a from of [ambient co-presence](https://maggieappleton.com/ambient-copresence).
+
+If possible, I'd like to structure the chat like chat glue.
 
 While visiting another board, you'll still have a panel displaying your own board and resources. The goal is to set it up so you're encouraged to spend time on other people's boards and creating informal hang outs.
 
