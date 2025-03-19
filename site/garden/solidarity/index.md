@@ -14,7 +14,7 @@ const pageData = useData();
 <p>436 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/a-plea-to-organize/index.md">A Plea to Organize</a><a href="/garden/consumer-boycotts/index.md">Consumer Boycotts</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/market-socialism/index.md">Market Socialism</a><a href="/garden/mutual-aid/index.md">Mutual Aid</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/a-plea-to-organize/index.md">A Plea to Organize</a><a href="/garden/consumer-boycotts/index.md">Consumer Boycotts</a><a href="/garden/consumerism/index.md">Consumerism</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/market-socialism/index.md">Market Socialism</a><a href="/garden/mutual-aid/index.md">Mutual Aid</a></details>
 
 Solidarity is one's sense of being part of a group that mutually cares for each other. It means acting according to the interests of the group rather than just yourself. Essentially, it's the opposite of [Individualism](/garden/individualism/index.md). Rather than acting solely in your own self interest, solidarity teaches that you can strengthen the network that will, in turn, support you.
 

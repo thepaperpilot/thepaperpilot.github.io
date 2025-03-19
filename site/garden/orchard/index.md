@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Orchard</h1>
-<p>1200 words, ~7 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1373 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/efficiency/index.md">Efficiency</a><a href="/now/index">/now</a></details>
@@ -74,3 +74,19 @@ Flash cards are a good method of memorizing thinks, especially through something
 ## Tech Stack
 
 It'll use the [Agentic Fediverse](/garden/fedi-v2/index.md) to store the messages and other data, making the whole app [Local-First Software](/garden/local-first-software/index.md). The frontend of the app will be built in either [tauri](https://v2.tauri.app/) or perhaps just be a website, using sqlite and service workers to work local-first. It'll use [Incremental Social](/garden/incremental-social/index.md) as the default iroh node and handle any other (optional) server side features.
+
+Consider using [Animata](https://animata.design/) components
+
+Could we have a note type that implements [Potluck](/garden/potluck/index.md)?
+- Might be overkill / out of scope
+- Making it a plugin could make more sense
+- I'd like a potluck app with syncing regardless
+- Potluck pages would likely be fewer in quantity and more frequently returned to than other notes. Might be an indicator its not appropriate, could also mean we'd just need a way to favorite notes
+
+Could we have a note type that allows code and markdown, like [Observable](https://observablehq.com/)?
+- https://tomlarkworthy.github.io/lopecode/webpage.html
+- https://observablehq.com/@tomlarkworthy/hello-golden-layout-2-6-0
+
+## Orchard as a Protocol
+
+I might consider making orchard really just [Garden-RSS](/garden/garden-rss/index.md), built as a handful of leaf schemas that would allow any app to potentially allow users to subscribe to other gardens and see updates, and theoretically update their own garden. This would have to work with arbitrary leaf components that apps can implement support for, and stuff like chat glue would be how I personally manage my digital garden.

@@ -14,7 +14,7 @@ const pageData = useData();
 <p>966 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/solidarity/index.md">Solidarity</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/consumerism/index.md">Consumerism</a><a href="/garden/solidarity/index.md">Solidarity</a></details>
 
 Consumer boycotts are the collective refusal to purchase products from a set of companies for political reasons. They're an example of [Direct Action](/garden/direct-action/index.md).
 
