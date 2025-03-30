@@ -14,6 +14,8 @@ const pageData = useData();
 <p>143 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+<details><summary>Referenced by:</summary><a href="/garden/identity/index.md">Identity</a></details>
+
 I think personality is best explained with a combination of Social Identity Theory and Self Categorization Theory
 - Social Identity Theory
 	- Posits that significant amount of our personality is derived from our membership in various social groups

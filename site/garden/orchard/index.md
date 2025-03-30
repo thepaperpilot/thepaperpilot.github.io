@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Orchard</h1>
-<p>1373 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1478 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/efficiency/index.md">Efficiency</a><a href="/now/index">/now</a></details>
@@ -90,3 +90,7 @@ Could we have a note type that allows code and markdown, like [Observable](https
 ## Orchard as a Protocol
 
 I might consider making orchard really just [Garden-RSS](/garden/garden-rss/index.md), built as a handful of leaf schemas that would allow any app to potentially allow users to subscribe to other gardens and see updates, and theoretically update their own garden. This would have to work with arbitrary leaf components that apps can implement support for, and stuff like chat glue would be how I personally manage my digital garden.
+
+## Orchard as an extension of Roomy
+
+Roomy is a project by Muni Town, who I've referenced a lot here (originally as just the devs behind Commune), and a lot of the features I'd want for orchard will exist in roomy - decentralized identity, portable data with local first syncing, message gardening into threads and articles, etc. Roomy is a [Chatty Community Garden](https://blog.muni.town/chatty-community-gardens/) that'll likely get most of the way to orchard, with just a few missing pieces to implement digital locality and the topic graph. It'll likely make sense for orchard to start as an extension of Roomy and evolve from there.

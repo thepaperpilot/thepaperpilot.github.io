@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Solidarity</h1>
-<p>436 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>443 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/a-plea-to-organize/index.md">A Plea to Organize</a><a href="/garden/consumer-boycotts/index.md">Consumer Boycotts</a><a href="/garden/consumerism/index.md">Consumerism</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/market-socialism/index.md">Market Socialism</a><a href="/garden/mutual-aid/index.md">Mutual Aid</a></details>
@@ -43,3 +43,7 @@ As someone who eats food, try to buy from farmers markets and food co-ops.
 You can participate in any and as many of these ways, or others. The main focus is to help you and those around you realize they can rely on others and together we can all make it better than each of us on our own. Your community and the projects within it are more reliable and resilient than centralized programs that can be taken away on the whim of, say, the president.
 
 Above all, solidarity is about being present within a group. So the best thing you can do is organize - join an org or start one. Personally, I think [starting a computer club](https://startacomputer.club/) is a good idea.
+
+## Further Reading
+
+https://deadsimpletech.com/blog/solidarity

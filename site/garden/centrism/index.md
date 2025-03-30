@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Centrism</h1>
-<p>2830 words, ~15 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>2886 words, ~16 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a></details>
@@ -61,7 +61,7 @@ That article also discusses how many of them consider themselves pacifists and u
 > 'But you're using that same tactic to try to feel superior to me, too!' 'Sorry, that accusation expires after one use per conversation.'
 > \- Randall Munroe
 
-Politics have become very core parts of our identity, once again in large part due to the intentional polarization done by the political system of turning every issue into an adversarial "us vs them" fight where you need to support your side and attack the other without consideration. Attacks on our political opinions become attacks on our identity and self worth, which does not make for good, healthy debate.
+Politics have become very core parts of our [Identity](/garden/identity/index.md), once again in large part due to the intentional polarization done by the political system of turning every issue into an adversarial "us vs them" fight where you need to support your side and attack the other without consideration. Attacks on our political opinions become attacks on our identity and self worth, which does not make for good, healthy debate.
 
 But, to be clear, I'm doing it to! The same way enlightened centrists have found a way to feel superior to both Democrats and Republicans (or rather, believe that they hold the reasonable or pragmatic viewpoint), I'm over here doing the same thing to all 3 groups! I'm still making a "both sides" argument, just from the perspective that both sides (and those who see those two sides as extremes) are all too far to the right. Of course, I have what I feel are legitimate arguments to _why_ we should move to the left and _why_ both sides are really right wing, but it's important to not adopt the same air of superiority I'm criticizing centrists for having.
 
@@ -120,3 +120,6 @@ In any case, I think rather than arguing horseshoe theory is correct, its better
 ## Further Reading
 
 [Destiny and the Liberal Mind Prison](https://www.youtube.com/watch?v=MmhLCy6YmUg)
+
+> When they behave properly, you will say there is no problem. When they complain loudly, you will say they cause their own problems with their impropriety. And when they are driven to extremes, you say you will not reward such actions. What will it take for you to listen?
+> \- Ann Leckie, Ancillary Sword (Imperial Radch, \#2)
