@@ -32,3 +32,6 @@
 [submodule "Garden.git"]
 	path = Garden
 	url = git@code.incremental.social:thepaperpilot/Garden.git
+[submodule "site/public/automaton"]
+	path = site/public/automaton
+	url = https://code.incremental.social/thepaperpilot/Incremental-Automaton.git
