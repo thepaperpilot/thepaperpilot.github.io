@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Consumer Boycotts</h1>
-<p>966 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1063 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/consumerism/index.md">Consumerism</a><a href="/garden/solidarity/index.md">Solidarity</a></details>
@@ -40,7 +40,7 @@ If you need a call to action to start boycotting, consider this an evergreen cal
 
 Boycotts must be done in a way such that they can continue indefinitely. If it can't be sustained for a very long time, it will struggle to actually be effective. The Montgomery bus boycott lasted over a year before successfully ending with bus segregation being abolished.
 
-First, this means you cannot take on too much at once. You must be able to continue life with the boycott, albeit inconvenienced. This is why boycotts are typically targeted. It simply will not be feasible to boycott everything you've determined to be unethical or otherwise not worth supporting. You just find a subset of boycotts that you know you can manage upholding indefinitely. In this regard, boycotts calling to halt "all economic activity" (such as the "economic blackout" on Feb 28, 2025 which was likely offset by increased purchases before or after) are innately unsustainable, barring a handful of homesteaders who are de facto boycotting most things already.
+First, this means you cannot take on too much at once. You must be able to continue life with the boycott, albeit inconvenienced. This is why boycotts are typically targeted. It simply will not be feasible to boycott everything you've determined to be unethical or otherwise not worth supporting (after all, all capitalist businesses are held up by exploitation). You just find a subset of boycotts that you know you can manage upholding indefinitely. In this regard, boycotts calling to halt "all economic activity" (such as the "economic blackout" on Feb 28, 2025 which was likely offset by increased purchases before or after) are innately unsustainable, barring a handful of homesteaders who are de facto boycotting most things already.
 
 If you're approaching boycotts as a difficult but temporary burden, you will eventually burn out. What this means is you need to be able to fully cut this product out from your life, or at least use an alternative to it. This requires fully changing your consumer habits. While it is possible for the boycott to end, you should not assume that day will come, certainly not in the near future. Remember the boycott is a continuous practice and every additional day continues keeping the demand lower and increases the economic pressure on the company. Not purchasing unethically produced goods is itself a victory, even if it doesn't cause the corporation to change its ways.
 
@@ -52,6 +52,8 @@ A lot of the advice here specifically applied to _consumer boycotts_. Other form
 
 Additionally, be wary whenever specific companies are championed as the ethical alternative, especially if that company is a giant. Corporations may adopt ethical branding while retaining other exploitative practices. This is called "rainbow capitalism", and includes things like making products that support progressive causes like BLM or trans rights while exploiting child labor or union busting. These companies may try to co-opt those progressive causes by suggesting the solution is "ethical consumption", which is not a replacement for systemic change.
 
+And overall, keep in mind trying to enact change through consumer habits is an inherently neoliberal idea. Neoliberalism is all about regulation and meritocracy enforced by the free market, and often at the expense of collective political will leading to government regulation. That's not to say consumer boycotts are bad, but they should not be held up as _the_ way to enact change. Ultimately we still need a system that challenges capitalism as a whole.
+
 ## Who to Boycott
 
 Boycotts are most effective when a large number of people participate, so consider joining existing boycotts that follow the advice I've given here, such as the [BDS movement](https://bdsmovement.net/get-involved/what-to-boycott).
@@ -60,6 +62,6 @@ Supporting small businesses instead of corporate giants can slow monopolization,
 
 As far as product groups go, becoming vegetarian or even vegan are really powerful boycotts for protecting animal rights.
 
-If possible, just try to buy less in general. Reuse the things you buy, try to repair before replacing items, and seek out ways to buy things with minimal or even zero waste, such as using refilleries or buying bulk groceries. You can find such stores [here](https://www.litterless.com/wheretoshop).
+If possible, just try to buy less in general. Reuse the things you buy, try to repair before replacing items, and seek out ways to buy things with minimal or even zero waste, such as using refilleries or buying bulk groceries. You can find such stores [here](https://www.litterless.com/wheretoshop). The best alternative to any boycotted item is nothing at all.
 
 Boycotts alone won’t dismantle unjust systems, but when done strategically and sustained over time, they become a powerful tool in the broader fight for change.

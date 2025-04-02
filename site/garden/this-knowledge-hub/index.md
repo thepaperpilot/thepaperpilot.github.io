@@ -14,7 +14,7 @@ const pageData = useData();
 <p>242 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/digital-gardens/index.md">Digital Gardens</a><a href="/garden/efficiency/index.md">Efficiency</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/digital-gardens/index.md">Digital Gardens</a><a href="/garden/efficiency/index.md">Efficiency</a><a href="/garden/logseq/index.md">Logseq</a></details>
 
 This is my knowledge hub! It's a [Digital Garden](/garden/digital-gardens/index.md) collecting my thoughts in varying levels of completeness on basically anything I have interest in. It's wiki-style, but not like Wikipedia. Each page is going to be biased and argumentative, and based on my understanding of the concept at the time of writing (with regular updates to reflect new understandings). On the more fleshed out articles I'll typically adopt the structure of a persuasive essay and include sources.
 

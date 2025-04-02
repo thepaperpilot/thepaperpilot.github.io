@@ -12,10 +12,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Orchard</h1>
-<p>1478 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1665 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/efficiency/index.md">Efficiency</a><a href="/now/index">/now</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/efficiency/index.md">Efficiency</a><a href="/garden/incremental-automaton/index.md">Incremental Automaton</a><a href="/now/index">/now</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a><a href="/garden/decentralized/index.md">Decentralized</a></details>
 
@@ -37,7 +37,7 @@ Every message is a branch (like how reddit threads converse), and those branches
 
 ## Non-conversation Notes
 
-In addition to including conversations, I want to support freeform notes that also discuss one or more topics. Another type of non-conversation note could be excerpts from online articles, which could be automatically cited. Through leaf's compositional structure, in theory any entity should be able to be added to the network.
+In addition to including conversations, I want to support freeform notes that also discuss one or more topics. Another type of non-conversation note could be excerpts from online articles, which could be automatically cited. Through leaf's compositional structure, in theory any entity should be able to be added to the network. Perhaps even just bookmarking links you like, with the ability to highlight excerpts or add notes a la chat glue later. In this regard perhaps there should be a way to later link the bookmark with the original post, if it becomes its own leaf entity.
 
 When allowing these kinds of notes, users should be encouraged to split notes small if possible. This could potentially allow us to avoid or delay the need for something like [Garden-RSS](/garden/garden-rss/index.md), and instead allow us to just mark entire notes as changed.
 
@@ -70,6 +70,14 @@ This graph of topics could naturally lead itself to educational purposes. I thin
 Couple Orchard with some sort of mastery system and subject dependency tree and you basically have an alternative to Khan Academy or Brilliant.
 
 Flash cards are a good method of memorizing thinks, especially through something like anki. Flash cards are already fairly decentralized, so perhaps annotations on notes should allow mapping them into flash cards that can be easily imported in flash cards apps through standard formats.
+
+## Time Spender
+
+We spend a lot of time scrolling algorithmically generated timelines, which I think does a lot of harm and inventivizes content that wastes time rather than provides value. A lot of the above can work as a finite list of things to catch up on in your spare time (much like rss feeds and emails) but what about when the list ends?
+
+This is for time spent "browsing the internet" like the older web. I'm hoping for something like digital locality where you're basically stepping through to friends' graphs and learning about new things or new perspectives on things, and you can move further and further out through these friend connections to find things further and further from your usual interests.
+
+When looking at someone's graph, this likely means highlighting notes or topics most recently active.
 
 ## Tech Stack
 

@@ -1,4 +1,5 @@
 ---
+alias: "Artistic Intent"
 public: "true"
 slug: "authorial-intent"
 title: "Authorial Intent"
@@ -11,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Authorial Intent</h1>
-<p>491 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>500 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 Authorial intent is the meaning an artist tries to imbue into their work. It is, arguably, what makes art art. The act of assembling a piece with intent is what turns a group of materials into art. Even a normal, unnotable, and untouched scene can be turned into art merely by an artist intentionally capturing it in a photograph.
@@ -33,3 +34,5 @@ I'm quite supportive of the death of the author, and it aligns well with my view
 ## Further Reading
 
 I can't discuss the death of the author without mentioning [The Beginner's Guide](/garden/the-beginner-s-guide/index.md). If this topic at all interests you, I strongly urge you to play it without looking up anything about it. Afterwards, that page links to several analyses I also recommend.
+
+https://pluralistic.net/2025/03/25/communicative-intent/#diluted

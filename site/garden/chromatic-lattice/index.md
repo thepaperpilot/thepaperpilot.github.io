@@ -14,7 +14,7 @@ const pageData = useData();
 <p>1495 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/incremental-automaton/index.md">Incremental Automaton</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a></details>
 
 A multiplayer [Incremental Game](/garden/guide-to-incrementals/index.md) I have in development. It'll be about optimizing a board of tiles to create certain patterns to improve resource gains. Players will work collaboratively to construct monuments. It will also include an experiment on [Digital Locality](/garden/digital-locality/index.md).
 
