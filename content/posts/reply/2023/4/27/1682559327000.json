@@ -1,0 +1,23 @@
+{
+    "kind": "reply",
+    "description": "<p>Remaining work would be:</p>\n<ul>\n<li>Update every other feature, and any relevant utilities (like in common.tsx)</li>\n<li>Implement processComputable, or remove it since it might just be redundant now</li>\n<li>Remember to delete the example achievement below the constructor, that I was using to verify typing was working</li>\n<li>This code doesn't work, because <code>feature</code> gets typed as <code>object</code>:</li>\n</ul>\n<pre><code class=\"language-ts\">function myFeature() {\n    return createLazyProxy(() =&gt; {\n        const foo = &quot;bar&quot;;\n        const points = createAchievement(() =&gt; ({\n<pre><code>    }));\n    return {\n        foo, points\n    };\n});\n</code></pre>\n<p>}</p>\n<p>const feature = myFeature();<br>\nfeature;<br>\nfeature.foo;<br>\nfeature.points;<br>\n</code></pre></p>\n<p>Fixes #15</p>",
+    "published": 1682559327000,
+    "tags": [
+        "programming"
+    ],
+    "syndications": [
+        "https://github.com/profectus-engine/Profectus/pull/16"
+    ],
+    "title": "Improve lazy proxy typing",
+    "parent": [
+        {
+            "url": "https://github.com/profectus-engine/Profectus",
+            "description": "Issues · profectus-engine/Profectus",
+            "author": {
+                "name": "profectus-engine",
+                "url": "https://github.com/profectus-engine",
+                "image": "https://v4y3.c12.e2-2.dev/indiekit/png/16dfcad67af4eb76c0a35894dd5ae33d.png"
+            }
+        }
+    ]
+}

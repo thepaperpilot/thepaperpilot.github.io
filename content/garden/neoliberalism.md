@@ -2,8 +2,8 @@
 title: "Neoliberalism"
 wordCount: 133
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Anarchism: /garden/anarchism
   Local Communities: /garden/local-communities

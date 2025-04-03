@@ -2,8 +2,8 @@
 title: "Direct Democracy"
 wordCount: 40
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Anarchism: /garden/anarchism
   Consensus Democracy: /garden/consensus-democracy

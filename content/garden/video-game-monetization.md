@@ -2,8 +2,8 @@
 title: "Video Game Monetization"
 wordCount: 250
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Life is Strange: /garden/life-is-strange
 ---

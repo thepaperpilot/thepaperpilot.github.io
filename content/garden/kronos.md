@@ -2,8 +2,8 @@
 title: "Kronos"
 wordCount: 60
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 tags:
   My Projects: /garden/my-projects
   Profectus: /garden/profectus

@@ -2,8 +2,8 @@
 title: "Premium Currency"
 wordCount: 71
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Pre-Order Bonuses: /garden/pre-order-bonuses
 ---

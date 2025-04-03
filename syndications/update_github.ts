@@ -121,7 +121,8 @@ async function updateIssues() {
                 originalUrl,
                 content,
                 parent,
-                replies
+                replies,
+                name: issue.title
             });
         }
         break;
@@ -148,14 +149,18 @@ async function updateCommits() {
                 break;
             }
             newestCommitSha ??= commit.sha;
+            const diff = await
+                getDiff(commit.repository.owner.login, commit.repository.name, commit.sha);
             await addEdit({
                 "edit-of": commit.repository.html_url,
                 originalUrl: commit.html_url,
                 published: new Date(commit.commit.committer.date),
-                parents: commit.parents.map(p => p.sha),
-                diff: await
-                    getDiff(commit.repository.owner.login, commit.repository.name, commit.sha),
-                category: "programming"
+                title: "Committed changes to " + commit.repository.name,
+                content: commit.commit.message + "\n```git-commit\n" +
+                    (diff.match(/^---\n(.*)\n\n/ms)?.[1] as string) + "\n```",
+                patch: diff,
+                category: "programming",
+                sha: commit.sha
             });
         }
 

@@ -2,8 +2,8 @@
 title: "Political Quizzes"
 wordCount: 841
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 ---
 
 Political quizzes are a bit of a guilty pleasure of mine. I really enjoy getting my beliefs distilled into a handful of labels, and getting forced to think about issues I may not have thought about that thoroughly. I often take issue with the wording of various questions though, and certainly have opinions on some quizzes being better than others.

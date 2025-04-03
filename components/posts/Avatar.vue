@@ -7,7 +7,7 @@
             </div>
         </div>
         <a class="u-url p-name" :href="author.url">{{ author.name }}</a>
-        <time class="dt-published" :datetime="timeString" :title="timeString">
+        <time v-if="props.published" class="dt-published" :datetime="timeString" :title="timeString">
             {{ dateString }}
         </time>
         <ul class="syndications" v-if="syndications.length > 0">
@@ -27,7 +27,7 @@ import { POST_TYPES } from '~/post_types';
 import type { Author, PostType } from '~/types';
 
 const props = withDefaults(defineProps<{
-    author?: Author;
+    author?: Partial<Author>;
     published: number;
     syndications?: string[];
     tags?: string[];

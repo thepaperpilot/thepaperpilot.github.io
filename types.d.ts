@@ -12,8 +12,10 @@ export interface Post extends ParsedContent {
     imageAlt?: string;
     tags: string[];
     syndications: string[];
-    parent?: Partial<Post>;
+    parent?: Partial<Post> | Partial<Post>[];
     replies?: Reply[];
+    patch?: string;
+    sha?: string;
 }
 
 export interface Author {

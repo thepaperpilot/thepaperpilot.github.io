@@ -2,8 +2,8 @@
 title: "Individualism"
 wordCount: 194
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Local Communities: /garden/local-communities
   Neoliberalism: /garden/neoliberalism

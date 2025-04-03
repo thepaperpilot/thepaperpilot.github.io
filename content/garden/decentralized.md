@@ -2,8 +2,8 @@
 title: "Decentralized"
 wordCount: 80
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 taggedBy:
   ActivityPub: /garden/activitypub
   ATProto: /garden/atproto

@@ -2,8 +2,8 @@
 title: "Trans athletes in sports"
 wordCount: 353
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 ---
 
 I believe trans athletes should be allowed in sports. They do not need a separate category, and should be allowed to pick if they compete with those of their gender assigned at birth or how they identify now.

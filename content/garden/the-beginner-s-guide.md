@@ -2,8 +2,8 @@
 title: "The Beginner's Guide"
 wordCount: 144
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 tags:
   Davey Wreden: /garden/davey-wreden
 referencedBy:

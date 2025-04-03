@@ -2,8 +2,8 @@
 title: "Garden-RSS"
 wordCount: 59
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Freeform: /garden/freeform
   The Small Web: /garden/the-small-web

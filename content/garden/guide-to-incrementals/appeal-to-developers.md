@@ -2,8 +2,8 @@
 title: "Guide to Incrementals/Appeal to Developers"
 wordCount: 636
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Digital Gardens: /garden/digital-gardens
   Incremental Social: /garden/incremental-social

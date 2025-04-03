@@ -2,8 +2,8 @@
 title: "Vitepress"
 wordCount: 4
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   My Personal Website: /garden/my-personal-website
   This Knowledge Hub: /garden/this-knowledge-hub

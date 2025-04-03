@@ -5,8 +5,9 @@
             <a class="u-url" :href="url" v-if="url">{{ title }}</a>
             <template v-else>{{ title }}</template>
         </h2>
-        <div class="description e-content" :class="{ fadeDescription }"
-            v-if="description" v-html="description" />
+        <div class="description e-content" :class="{ fadeDescription }" v-if="description">
+            <MDC :value="description" />
+        </div>
         <a class="u-url" v-if="url && !title" :href="url">{{ url }}</a>
     </div>
 </template>
@@ -28,6 +29,7 @@ defineProps<{
     position: relative;
     display: flex;
     flex-direction: column;
+    min-width: 0;
 }
 
 .card.full {

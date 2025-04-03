@@ -1,14 +1,12 @@
 <template>
-    <ClientOnly>
-        <Teleport to="#teleports" v-if="open">
-            <div class="container" @click.self="emits('close')">
-                <Paper class="centered-paper">
-                    <slot />
-                </Paper>
-            </div>
-            <div class="closer" />
-        </Teleport>
-    </ClientOnly>
+    <Teleport to="body">
+        <div class="container" @click.self="emits('close')" v-if="open">
+            <Paper class="centered-paper">
+                <slot />
+            </Paper>
+        </div>
+        <div class="closer" v-if="open" />
+    </Teleport>
 </template>
 
 <script lang="ts" setup>

@@ -2,8 +2,8 @@
 title: "My Political Beliefs"
 wordCount: 228
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   My Political Journey: /garden/my-political-journey
   Political Quizzes: /garden/political-quizzes

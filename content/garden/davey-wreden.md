@@ -2,8 +2,8 @@
 title: "Davey Wreden"
 wordCount: 37
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 taggedBy:
   Ivy Road: /garden/ivy-road
   The Beginner's Guide: /garden/the-beginner-s-guide

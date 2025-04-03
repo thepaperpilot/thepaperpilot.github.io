@@ -2,8 +2,8 @@
 title: "Representative Democracy"
 wordCount: 87
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Anarchism: /garden/anarchism
   Political Quizzes: /garden/political-quizzes

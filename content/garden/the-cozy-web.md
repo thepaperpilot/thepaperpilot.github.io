@@ -2,8 +2,8 @@
 title: "The Cozy Web"
 wordCount: 45
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Digital Gardens: /garden/digital-gardens
 ---

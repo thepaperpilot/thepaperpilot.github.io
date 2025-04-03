@@ -2,8 +2,8 @@
 title: "Wanderstop"
 wordCount: 8
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 tags:
   Davey Wreden: /garden/davey-wreden
 ---

@@ -2,9 +2,12 @@
     <div class="post-header">
         <Icon :name="POST_TYPES[kind].icon" />
         I <NuxtLink class="u-url" :to="`/${kind}/${id}`">{{ POST_TYPES[kind].verb }}</NuxtLink>
-        <span>this post on <time class="dt-published" :datetime="timeString" :title="timeString">
-            {{ dateString }}
-        </time>:</span>
+        <span>
+            {{ POST_TYPES[kind].subject }} on
+            <time class="dt-published" :datetime="timeString" :title="timeString">
+                {{ dateString }}
+            </time>:
+        </span>
     </div>
 </template>
 

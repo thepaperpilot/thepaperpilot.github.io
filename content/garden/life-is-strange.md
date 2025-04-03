@@ -2,8 +2,8 @@
 title: "Life is Strange"
 wordCount: 654
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 ---
 
 A series of narrative driven video games with a focus on player choices

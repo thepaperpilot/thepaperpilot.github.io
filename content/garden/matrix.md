@@ -2,8 +2,8 @@
 title: "Matrix"
 wordCount: 2
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Cinny: /garden/cinny
   Commune: /garden/commune

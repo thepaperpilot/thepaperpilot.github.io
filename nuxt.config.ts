@@ -1,18 +1,23 @@
 import fs from "fs";
-import { walk } from "./utils/fs-utils.js";
 import { POST_TYPES } from "./post_types";
 import type { PostType } from "./types";
+import { walk } from "./utils/fs-utils.js";
 
 const feedProps = { rel: 'alternate', type: "text/mf2+html" };
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default async () => {
     // Get all tags without using Nuxt Content
+    // Nuxt would have to get the list by manually iterating over every file anyways
     const tags: Record<string, number> = {};
-    await walk("./content/posts", (dir, file, resolve) => {
-        const data = fs.readFileSync(file);
-        resolve();
-    });
+    await Promise.all(Object.keys(POST_TYPES).map(async type => 
+        await walk("./content/posts/" + type, (dir, file, resolve) => {
+            const data = fs.readFileSync(file).toString();
+            const fileTags = JSON.parse(data.match(/"tags":(\[[^\]]*\])/)?.[1] ?? "[]") as string[];
+            fileTags.forEach(tag => tags[tag] = (tags[tag] ?? 0) + 1);
+            resolve();
+        })
+    ));
     fs.writeFileSync("./assets/tags.json", JSON.stringify(tags));
 
     return defineNuxtConfig({
@@ -202,9 +207,13 @@ export default async () => {
         content: {
             experimental: {
                 search: true
+            },
+            highlight: {
+                theme: 'github-light',
+                langs: ['json', 'js', 'ts', 'html', 'css', 'vue', 'shell', 'mdc', 'md', 'yaml', 'c', 'cpp', 'python', 'diff', 'git-commit']
             }
         },
-        
+
         compatibilityDate: '2024-09-14'
     });
 }

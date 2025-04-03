@@ -15,6 +15,8 @@ const icon = computed(() => {
         return "ph:youtube-logo";
     } else if (hostname.endsWith("itch.io")) {
         return "cib:itch-io";
+    } else if (hostname.endsWith("github.com")) {
+        return "cib:github";
     }
     return "material-symbols:open-in-new";
 });

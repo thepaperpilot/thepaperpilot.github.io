@@ -241,7 +241,7 @@ export async function getDiff(user: string, repo: string, sha: string) {
     return fetch(`https://api.github.com/repos/${user}/${repo}/commits/${sha}`, {
         headers: {
             Authorization: `Bearer ${GITHUB_API_TOKEN}`,
-            Accept: "application/vnd.github.diff"
+            Accept: "application/vnd.github.patch"
         }
     }).then(r => r.text());
 }

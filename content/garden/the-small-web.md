@@ -2,8 +2,8 @@
 title: "The Small Web"
 wordCount: 778
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Commune: /garden/commune
   Federated Identity: /garden/federated-identity

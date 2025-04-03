@@ -2,8 +2,8 @@
 title: "Commune"
 wordCount: 144
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Federated Identity: /garden/federated-identity
   /now: /garden/now

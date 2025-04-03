@@ -2,8 +2,8 @@
 title: "Freeform vs Chronological Dichotomy"
 wordCount: 10
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Chronological: /garden/chronological
   Freeform: /garden/freeform

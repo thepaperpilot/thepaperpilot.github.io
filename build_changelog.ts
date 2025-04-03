@@ -2,9 +2,10 @@ import fs from "fs";
 
 import util from 'node:util';
 import child_process from 'node:child_process';
-const exec = util.promisify(child_process.exec);
 
 import { Feed } from 'feed';
+
+const exec = util.promisify(child_process.exec);
 
 (async () => {
     const feed = new Feed({

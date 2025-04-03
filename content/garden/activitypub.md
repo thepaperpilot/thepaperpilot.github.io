@@ -2,8 +2,8 @@
 title: "ActivityPub"
 wordCount: 8
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 tags:
   Decentralized: /garden/decentralized
 referencedBy:

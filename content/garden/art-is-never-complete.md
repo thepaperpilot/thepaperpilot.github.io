@@ -2,8 +2,8 @@
 title: "Art is Never Complete"
 wordCount: 92
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Guide to Incrementals/What is Content?: /garden/guide-to-incrementals/what-is-content
 ---

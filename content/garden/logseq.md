@@ -2,8 +2,8 @@
 title: "Logseq"
 wordCount: 3
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Command Palettes: /garden/command-palettes
   My Personal Website: /garden/my-personal-website

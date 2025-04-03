@@ -2,8 +2,8 @@
 title: "Webrings"
 wordCount: 139
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   The Small Web: /garden/the-small-web
 ---

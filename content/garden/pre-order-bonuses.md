@@ -2,8 +2,8 @@
 title: "Pre-Order Bonuses"
 wordCount: 98
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Video Game Monetization: /garden/video-game-monetization
 ---

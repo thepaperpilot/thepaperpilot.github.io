@@ -2,8 +2,8 @@
 title: "Freeform"
 wordCount: 46
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Commune: /garden/commune
   Digital Gardens: /garden/digital-gardens

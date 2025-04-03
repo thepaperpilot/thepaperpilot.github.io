@@ -2,8 +2,8 @@
 title: "Digital Gardens"
 wordCount: 67
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Chronological: /garden/chronological
   Commune: /garden/commune

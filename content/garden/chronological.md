@@ -2,8 +2,8 @@
 title: "Chronological"
 wordCount: 73
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Digital Gardens: /garden/digital-gardens
   Freeform vs Chronological Dichotomy: /garden/freeform-vs-chronological-dichotomy

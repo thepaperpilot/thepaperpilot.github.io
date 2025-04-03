@@ -22,8 +22,8 @@ const id = computed(() => route.params.id as string);
 const { data: post } = await useAsyncData("posts", () => {
     const date = new Date(parseInt(id.value));
     const y = `${date.getFullYear()}`;
-    const m = `${date.getMonth()}`;
-    const d = `${date.getDate()}`;
+    const m = `${date.getMonth() + 1}`;
+    const d = `${date.getDate() + 1}`;
     return queryContent("posts", kind.value, y, m, d, id.value).findOne() as Promise<Post>;
 }, {
     watch: [kind, id],
@@ -38,19 +38,20 @@ if (post.value == null) {
         ]
     });
 } else if (kind.value in POST_TYPES) {
-    const { verb } = POST_TYPES[kind.value];
-    let subject;
+    let { verb, subject } = POST_TYPES[kind.value];
     if (post.value.title) {
         subject = ': ' + post.value.title;
     } else if (post.value.author?.name) {
         subject = ' ' + post.value.author.name;
-    } else if (post.value.url) {
-        subject = ' a link';
-    } else {
-        subject = ' a post';
     }
     const title = `The Paper Pilot ${verb}${subject}`;
     useContentHead(Object.assign({}, post.value,
         { title, image: post.value.image ?? "/paperpilot_thumb.png" }));
 }
 </script>
+
+<style scoped>
+main > .h-entry:first-child {
+    margin-top: 0;
+}
+</style>

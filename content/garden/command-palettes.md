@@ -2,8 +2,8 @@
 title: "Command Palettes"
 wordCount: 117
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 ---
 
 Command palettes are a design pattern where apps expose functionality through a search bar

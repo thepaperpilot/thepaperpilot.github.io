@@ -2,8 +2,8 @@
 title: "Cinny"
 wordCount: 3
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Incremental Social: /garden/incremental-social
 ---

@@ -332,11 +332,13 @@ export async function addRepost(repost: {
 
 export async function addEdit(edit: {
     'edit-of': string;
-    diff?: string;
+    title: string;
+    content: string;
+    patch: string;
     published?: Date;
-    parents?: string[];
     originalUrl?: string;
     category: string | string[];
+    sha: string;
 }) {
     return await sendPost(edit);
 }

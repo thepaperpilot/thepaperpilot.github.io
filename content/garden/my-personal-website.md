@@ -2,8 +2,8 @@
 title: "My Personal Website"
 wordCount: 422
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   The Small Web: /garden/the-small-web
 ---

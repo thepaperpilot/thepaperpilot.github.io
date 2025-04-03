@@ -2,8 +2,8 @@
 title: "Anarchism"
 wordCount: 1043
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Individualism: /garden/individualism
   Local Communities: /garden/local-communities

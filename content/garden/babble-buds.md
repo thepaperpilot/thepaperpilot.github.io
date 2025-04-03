@@ -2,8 +2,8 @@
 title: "Babble Buds"
 wordCount: 113
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 tags:
   My Projects: /garden/my-projects
 ---

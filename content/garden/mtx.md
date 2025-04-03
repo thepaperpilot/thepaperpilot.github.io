@@ -2,8 +2,8 @@
 title: "MTX"
 wordCount: 10
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Premium Currency: /garden/premium-currency
   Video Game Monetization: /garden/video-game-monetization

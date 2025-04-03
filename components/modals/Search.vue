@@ -17,7 +17,7 @@
         
         <div v-for="post in currentPageResults">
             <NuxtLink :to="getUrlFromId(post.id)" @click="open = false">{{ post.title }}</NuxtLink>
-            <div v-html="post.content" />
+            <MDC :value="post.content" />
             <br />
         </div>
 
@@ -35,10 +35,16 @@ const POSTS_PER_PAGE = 20;
 const open = ref(false);
 const search  = ref('');
 const currentPage = ref(1);
-const inputRef = ref(null);
+const inputRef = ref<HTMLElement>();
 
-const results = await searchContent(search);
-const currentPageResults = computed(() => results.value.slice(
+const results = ref<import("minisearch").SearchResult[]>([]);
+const fetchResults = async () => {
+    const res = await searchContent(search.value, {});
+    results.value = res.value;
+}
+watch(search, fetchResults);
+// const results = await searchContent(search);
+const currentPageResults = computed(() => search.value === "" ? [] : results.value.slice(
     (currentPage.value - 1) * POSTS_PER_PAGE,
     currentPage.value * POSTS_PER_PAGE));
 
@@ -68,9 +74,7 @@ const currentPageResults = computed(() => results.value.slice(
 // watch(search, refresh);
 
 watch(inputRef, inputRef => {
-    if (inputRef) {
-        inputRef.focus();
-    }
+    inputRef?.focus();
 });
 
 function getUrlFromId(id: string) {

@@ -2,8 +2,8 @@
 title: "Ivy Road"
 wordCount: 6
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 tags:
   Davey Wreden: /garden/davey-wreden
 referencedBy:

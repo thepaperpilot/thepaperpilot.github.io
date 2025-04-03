@@ -1,6 +1,6 @@
 <template>
     <h1>Tags</h1>
-    <template v-for="(count, tag) in tags" v-if="tags != null">
+    <template v-for="(count, tag) in tags as Record<string, number>" v-if="tags != null">
         <h2>{{ tag[0].toUpperCase() + tag.slice(1) }}</h2>
         <p>
             There {{ count === 1 ? "is" : "are" }}

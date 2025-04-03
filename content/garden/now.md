@@ -2,8 +2,8 @@
 title: "/now"
 wordCount: 229
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 ---
 
 This "now page" offers a big picture glimpse into what I’m focused on at this point in my life. [What is a now page](https://nownownow.com/about)?

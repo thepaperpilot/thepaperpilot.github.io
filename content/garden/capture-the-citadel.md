@@ -2,8 +2,8 @@
 title: "Capture the Citadel"
 wordCount: 39
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 tags:
   My Projects: /garden/my-projects
 ---

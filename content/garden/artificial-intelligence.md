@@ -2,8 +2,8 @@
 title: "Artificial Intelligence"
 wordCount: 101
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Command Palettes: /garden/command-palettes
 ---

@@ -2,8 +2,8 @@
 title: "My Political Journey"
 wordCount: 711
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Political Quizzes: /garden/political-quizzes
 ---

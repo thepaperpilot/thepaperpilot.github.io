@@ -2,8 +2,8 @@
 title: "Consensus Democracy"
 wordCount: 162
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Anarchism: /garden/anarchism
   My Political Beliefs: /garden/my-political-beliefs

@@ -2,7 +2,7 @@
     <div class="h-entry" :class="{ 'h-cite': isParent }">
         <DatedContentWarning v-if="!isParent" :published="post.published" />
         <PostHeader v-if="!isParent" :kind="post.kind" :id="post.published" />
-        <Post v-if="post.parent" :post="post.parent" :isParent="true" />
+        <Post v-if="parent" :post="parent" :isParent="true" />
         <div class="post" :class="{
             'h-cite': ['favorite', 'bookmark', 'repost'].includes(post.kind),
             'u-in-reply-to': post.parent != null,
@@ -19,7 +19,7 @@
             <Card :title="post.title"
                 :image="post.image"
                 :alt="post.imageAlt"
-                :description="post.description"
+                :description="description"
                 :url="post.url"
                 :fadeDescription="fadeDescription" />
         </div>
@@ -48,7 +48,24 @@ const props = withDefaults(defineProps<{
 });
 
 const selfAuthored = computed(() =>
-    props.post.author == null && ['article', 'reply'].includes(props.post.kind));
+    props.post.author == null && ['article', 'reply', 'edit'].includes(props.post.kind));
+
+const description = computed(() => {
+    if (props.post.patch) {
+        return `<a download="${props.post.sha}.patch" href="data:,${encodeURIComponent(props.post.patch)}">Download patch</a>  \n${props.post.description}\n`;
+    }
+    return props.post.description;
+});
+
+const parent = computed(() => {
+    if (props.post.parent == null) {
+        return null;
+    }
+    if (Array.isArray(props.post.parent)) {
+        return props.post.parent[0] as Post;
+    }
+    return props.post.parent as Post;
+});
 </script>
 
 <style lang="css" scoped>

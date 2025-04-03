@@ -2,8 +2,8 @@
 title: "Open Source"
 wordCount: 25
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Advent Incremental: /garden/advent-incremental
   Cinny: /garden/cinny

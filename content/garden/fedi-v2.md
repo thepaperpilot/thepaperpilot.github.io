@@ -2,8 +2,8 @@
 title: "Fedi v2"
 wordCount: 3376
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Social Media: /garden/social-media
   The IndieWeb/Signature Blocks: /garden/the-indieweb/signature-blocks

@@ -2,8 +2,8 @@
 title: "Weird"
 wordCount: 114
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Commune: /garden/commune
   Fedi v2: /garden/fedi-v2

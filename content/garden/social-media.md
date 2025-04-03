@@ -2,8 +2,8 @@
 title: "Social Media"
 wordCount: 98
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Commune: /garden/commune
   Fediverse: /garden/fediverse

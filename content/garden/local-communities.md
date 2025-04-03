@@ -2,8 +2,8 @@
 title: "Local Communities"
 wordCount: 302
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Anarchism: /garden/anarchism
   Individualism: /garden/individualism

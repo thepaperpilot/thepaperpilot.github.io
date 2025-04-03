@@ -3,8 +3,8 @@ index: "true"
 title: "My Projects"
 wordCount: 72
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 taggedBy:
   Advent Incremental: /garden/advent-incremental
   Babble Buds: /garden/babble-buds

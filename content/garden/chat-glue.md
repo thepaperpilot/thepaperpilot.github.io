@@ -2,8 +2,8 @@
 title: "Chat Glue"
 wordCount: 23
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Commune: /garden/commune
   The Small Web: /garden/the-small-web

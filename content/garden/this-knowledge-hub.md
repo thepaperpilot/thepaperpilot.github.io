@@ -2,8 +2,8 @@
 title: "This Knowledge Hub"
 wordCount: 135
 published:
-  hash: 
-  timestamp: NaN
+  hash: abc
+  timestamp: 1000
 referencedBy:
   Digital Gardens: /garden/digital-gardens
 ---
