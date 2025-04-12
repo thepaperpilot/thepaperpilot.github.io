@@ -14,6 +14,8 @@ const pageData = useData();
 <p>262 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+<details><summary>Referenced by:</summary><a href="/garden/idealism/index.md">Idealism</a></details>
+
 What is fascism?
 - Militant authoritarianism, removal of rights
 - Hyper nationalism
@@ -22,6 +24,7 @@ What is fascism?
 	- Hell, the Democrats are making this argument today as they continue to believe success will come from further alienating the left and moving right
 - Fascism is capitalism in decay
 	- Essentially, that fascism arises in response to the contradictions of capitalism resulting in crises
+
 
 ## Anarchism vs Fascism
 

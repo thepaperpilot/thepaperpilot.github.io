@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Chromatic Lattice</h1>
-<p>1495 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1512 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/incremental-automaton/index.md">Incremental Automaton</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a></details>
@@ -57,6 +57,10 @@ Each player will have control over their board, and can disable chat, clear its 
 ### Digital Locality
 
 The friend lists effectively work as the links between nodes, creating locality. Everyone has a link to their own board accessible at all times, and from there to their friends. You'd also be able to see a list of "adjacent" rooms with an active conversation, as well as what rooms your friends are in, with the ability to join them. Initial friends will likely be made from global chat, or by follows on [Incremental Social](/garden/incremental-social/index.md), or linking your board via external sources.
+
+### Cursors
+
+Chat can be done with cursors instead, with live typing and positions. Compared to [Incremental Automaton](/garden/incremental-automaton/index.md)
 
 ## Tech Stack
 

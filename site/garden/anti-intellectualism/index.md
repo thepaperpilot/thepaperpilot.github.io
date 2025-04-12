@@ -42,7 +42,7 @@ The end result is that society still largely considers "truth" to be absolute, u
 
 ## Passive Learning
 
-I believe in the [Constructivist](/garden/constructivism/index.md) theory of education, which argues education is not a passive process, but one that requires the student to be actively processing the information, engaging with it, and challenging their understanding of the world.
+I believe in the [Constructivist Theory of Education](/garden/constructivist-theory-of-education/index.md), which argues education is not a passive process, but one that requires the student to be actively processing the information, engaging with it, and challenging their understanding of the world.
 
 This approach to learning often means questioning what you hear from teachers to resolve conflicts with your existing understanding of the world and figure out how it all connects together. In this way, learning requires critically analyzing information, even from trusted experts in the field.
 

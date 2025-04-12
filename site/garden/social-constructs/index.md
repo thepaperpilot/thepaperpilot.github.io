@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Social Constructs</h1>
-<p>1118 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1135 words, ~6 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/free-association/index.md">Free Association</a><a href="/garden/gender/index.md">Gender</a><a href="/garden/gerrymandering/index.md">Gerrymandering</a><a href="/garden/guide-to-incrementals/defining-the-genre/index.md">Guide to Incrementals/Defining the Genre</a><a href="/garden/objectivity/index.md">Objectivity</a><a href="/garden/prescriptivism-vs-descriptivism/index.md">Prescriptivism vs Descriptivism</a><a href="/garden/scientific-constructivism/index.md">Scientific Constructivism</a><a href="/garden/standardized-education/index.md">Standardized Education</a><a href="/garden/trans-athletes-in-sports/index.md">Trans athletes in sports</a></details>
@@ -34,3 +34,7 @@ Being socially defined basically means social constructs are [Decentralized](/ga
 Similar to how social constructs can have a nice simple definition that doesn't really encapsulate the social definition, the definition of social constructs as "concepts with social definitions" doesn't really explain just how ubiquitous these concepts are . Nearly _everything_ is a social construct; everything from "age" to "bakeries" to "north" to "sandwiches" are social constructs; These concepts that society has built an understanding of over long periods of time, and have been shaped by our shared cultures and values. Even naming those constructs was a social agreement that those concepts are worth pointing out - Why make distinctions between different types of stores? Why distinguish some buildings as stores in the first place? Or call some structures buildings and others, like a fence, not? All of these are social constructs we use to help understand the world, that we learned through our experiences within our given society and culture. They're also all arbitrary and oftentimes you'll see these lines and distinctions differ between peoples. Take color, for example: We have many different colors - red, blue, green, yellow, purple, and so on. But why do we have those specific colors? Why does light red get its own name but not light green? Why is blue a boy color and pink a girl color? Is the dress black and blue or white and gold? Where is the line between dark blue and black? Why does the rainbow only sometimes include an indigo and violet? Well, all these decisions just kinda resolve as society continues to change. Those categories of colors just happened to be the ones our culture uses. But other cultures separate them out in different ways, like caring more about brightness than hue. Some cultures don't even have a concept of color, or might group colors differently than us - like grouping some colors as "like ripe fruit", which may seem just as out of place to us as us grouping green and tan in a category called "camo" would seem out of place to them.
 
 <div class="img-container"><img src="/garden/image_1729082650006_0.png" title="image.png"/></div>
+
+## Further Reading
+
+https://archive.rushkoff.com/articles/if-it-ain-t-real-don-t-fix-it.html

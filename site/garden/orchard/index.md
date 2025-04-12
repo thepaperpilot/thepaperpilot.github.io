@@ -15,7 +15,7 @@ const pageData = useData();
 <p>1665 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/efficiency/index.md">Efficiency</a><a href="/garden/incremental-automaton/index.md">Incremental Automaton</a><a href="/now/index">/now</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructionism/index.md">Constructionism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/efficiency/index.md">Efficiency</a><a href="/garden/incremental-automaton/index.md">Incremental Automaton</a><a href="/now/index">/now</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/my-projects/index.md">My Projects</a><a href="/garden/decentralized/index.md">Decentralized</a></details>
 
@@ -65,7 +65,7 @@ LLMs could also be given the topics as context and be able to query the network 
 
 ## Education
 
-This graph of topics could naturally lead itself to educational purposes. I think people should be able to perhaps describe directed sub graphs that present the topics as a dependency tree. This would enable self paced learning, with the dependencies acting as a guide for what can be learned next. This is in alignment with my personal beliefs that we should have [Decentralized Education](/garden/decentralized-education/index.md) using a [Constructivist](/garden/constructivism/index.md) approach.
+This graph of topics could naturally lead itself to educational purposes. I think people should be able to perhaps describe directed sub graphs that present the topics as a dependency tree. This would enable self paced learning, with the dependencies acting as a guide for what can be learned next. This is in alignment with my personal beliefs that we should have [Decentralized Education](/garden/decentralized-education/index.md) using a [Constructionist](/garden/constructionism/index.md) approach.
 
 Couple Orchard with some sort of mastery system and subject dependency tree and you basically have an alternative to Khan Academy or Brilliant.
 

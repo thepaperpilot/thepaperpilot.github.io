@@ -14,6 +14,8 @@ const pageData = useData();
 <p>427 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+<details><summary>Referenced by:</summary><a href="/garden/fictophilia/index.md">Fictophilia</a></details>
+
 Existence is an interesting philosophical concept. We "exist", and the things around us "exist", but what does that actually mean? Personally, I believe existence is tied to having some sort of effect on a conscious observer, and the scope of that existence is limited to said observed. This aligns well with my views on [Constructivism](/garden/constructivism/index.md) and has interesting interactions with Sartre's Existentialism.
 
 ## Existentialism

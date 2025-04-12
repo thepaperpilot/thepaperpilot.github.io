@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Solidarity</h1>
-<p>443 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>456 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/a-plea-to-organize/index.md">A Plea to Organize</a><a href="/garden/consumer-boycotts/index.md">Consumer Boycotts</a><a href="/garden/consumerism/index.md">Consumerism</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/market-socialism/index.md">Market Socialism</a><a href="/garden/mutual-aid/index.md">Mutual Aid</a></details>
@@ -47,3 +47,5 @@ Above all, solidarity is about being present within a group. So the best thing y
 ## Further Reading
 
 https://deadsimpletech.com/blog/solidarity
+
+https://archive.rushkoff.com/articles/how-cultivating-awe-can-save-the-world.html

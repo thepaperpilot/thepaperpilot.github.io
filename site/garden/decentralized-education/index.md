@@ -15,7 +15,7 @@ const pageData = useData();
 <p>2244 words, ~12 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/education/index.md">Education</a><a href="/garden/learning-styles/index.md">Learning Styles</a><a href="/garden/motivation/index.md">Motivation</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/standardized-education/index.md">Standardized Education</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/education/index.md">Education</a><a href="/garden/learning-styles/index.md">Learning Styles</a><a href="/garden/motivation/index.md">Motivation</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/standardized-education/index.md">Standardized Education</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/education/index.md">Education</a><a href="/garden/decentralized/index.md">Decentralized</a></details>
 
@@ -67,7 +67,7 @@ Structuring education along these lines, and removing the authority of the teach
 
 ## Structure
 
-The structure of this educational system would be very flexible, in order to lean into the idea that students can determine for themselves what they prefer, catering to their own [Learning Styles](/garden/learning-styles/index.md). Some students may prefer the routine of showing up at a specific place at a specific time and learning with the same group of people, despite that no longer being forced upon everyone. Students may also find different approaches useful for different topics, such as using projects to learn programming concepts or lecture halls for physics. For me personally, I think a [Constructivist](/garden/constructivism/index.md) approach would have worked the best, and it's largely how I learn new things today.
+The structure of this educational system would be very flexible, in order to lean into the idea that students can determine for themselves what they prefer, catering to their own [Learning Styles](/garden/learning-styles/index.md). Some students may prefer the routine of showing up at a specific place at a specific time and learning with the same group of people, despite that no longer being forced upon everyone. Students may also find different approaches useful for different topics, such as using projects to learn programming concepts or lecture halls for physics. For me personally, I think a [Constructionist](/garden/constructionism/index.md) approach would have worked the best, and it's largely how I learn new things today.
 
 I believe a decentralized educational system could still have places of learning. While there would certainly be a focus on learning through normal every day life, places of learning could help be an environment for learning, containing various educational resources and likely being the place where more abstract concepts are researched and discussed.
 

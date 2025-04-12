@@ -1,4 +1,5 @@
 ---
+alias: "Objective"
 public: "true"
 slug: "objectivity"
 title: "Objectivity"
@@ -11,10 +12,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Objectivity</h1>
-<p>764 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>884 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/apoliticism/index.md">Apoliticism</a><a href="/garden/education/index.md">Education</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/scientific-constructivism/index.md">Scientific Constructivism</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/apoliticism/index.md">Apoliticism</a><a href="/garden/education/index.md">Education</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/idealism/index.md">Idealism</a><a href="/garden/scientific-constructivism/index.md">Scientific Constructivism</a></details>
 
 Objectivity is a myth. All we have are our subjective experiences, which are shaped by our environments and it's [Social Constructs](/garden/social-constructs/index.md). Often something _appearing_ objective more likely means its biased towards either your pre-conceived opinion, or the "status quo" opinion of the society or culture the work was created in.
 
@@ -25,6 +26,14 @@ These social constructs form [Echo Chambers](/garden/filter-bubbles/index.md) ar
 In practice, the idea that objectivity doesn't exist doesn't really impact anything. Our shared experiences are similar enough that our truths about most every day things are compatible. Where this most applies is when there's an argument between two people who are reaching different conclusions despite the same level of knowledge about the topic. In theory, you could probably find a shared common ground and determine that specific logical step in which you diverge. That divergence may be explained by our subjective perspectives on the world, mixed with our personal values. However, a side may _claim_ their side of the divergence is the correct one due to some "objective truth". This is simply not so, but is all too often used to justify bigoted arguments.
 
 Zoe Bee, in [The Language War of Politics: How Metaphors Shape Our Thinking](https://www.youtube.com/watch?v=4pPNV_B-Hpc), discusses how reality is subjective and shaped by our experiences. This is framed by how metaphors take advantage of this concept to direct how we think about the tenor (the subject of the metaphor).
+
+## Illusions
+
+The existence of illusions proves our senses are fallible and do not perfectly recreate objective reality. Our limited senses they can't detect things other species can, like infrared, similarly show our senses, even if infallible, wouldn't perfectly recreate reality. Our tendency to forget things and fill them in with plausible memories - like the whole Mandela effect - means if we our sense could observe everything about reality infallibly, we couldn't trust our own memories of it!
+
+In essence, observing reality is an active process - one that projects our own perspective and experiences onto the world, which is then reflected back to us.
+
+<div class="img-container"><img src="/garden/2025-04-09-22-47-11.jpeg" title="2025-04-09-22-47-11.jpeg"/></div>
 
 ## Economics
 
@@ -41,6 +50,8 @@ CJ the X discusses in [How Jordan Peterson's Suits Taught Me Fashion](https://ww
 He also describes the history of fashion's values, and how previously there was the idea of a singular "objective" sense of fashion, and that those who disagree are just incorrect. Essentially that meant the goal of fashion was to look like how the elites look. He argues that today fashion is still trying to look how the elites look, but now the elites are fractured - academic elites have their own fashion from, say, the elites of hip hop. This actually sounds a lot like Butler's argument for [Gender Performativity](/garden/gender-performativity/index.md).
 
 ## Further Reading
+
+The various pages I have here on [Constructivism](/garden/constructivism/index.md)
 
 I'm vaguely aware that the idea of truth and the relationship between absolute, objective, and universal truths are an important topic in philosophy, and I want to explore it at some point. I've seen these texts recommended:
 - [Theories of Truth: A Critical Introduction](https://www.amazon.com/Theories-Truth-A-Critical-Introduction/dp/0262611082)

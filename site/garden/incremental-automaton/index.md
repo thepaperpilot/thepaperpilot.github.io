@@ -11,8 +11,10 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Incremental Automaton</h1>
-<p>1800 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1812 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
+
+<details><summary>Referenced by:</summary><a href="/garden/chromatic-lattice/index.md">Chromatic Lattice</a><a href="/now/index">/now</a></details>
 
 Play the game [here](https://tpp.rocks/automaton)!
 
@@ -32,7 +34,7 @@ Also, I really liked this as an April fools joke. It was a bit like a social exp
 
 ### Live typing is really cool
 
-I think seeing people type their messages live, with typos and backspaces and all, made things feel a lot more "real"; like they had a stronger sense of presence than in typical chat rooms.
+I think seeing people type their messages live, with typos and backspaces and all, made things feel a lot more "real"; like they had a stronger sense of presence than in typical chat rooms. Like seeing an avatar of someone, who continues to exist between messages.
 
 The live typing, along with the 30 character limit, also made people get creative and use slang and abbreviations more often than typical. That's likely a part of why it felt nostalgic for the early internet, where things like needing to use T9 encouraged the usage of small messages.
 

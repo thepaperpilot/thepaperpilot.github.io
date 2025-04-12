@@ -17,7 +17,7 @@ const pageData = useData();
 
 <details><summary>Referenced by:</summary><a href="/garden/individualism/index.md">Individualism</a></details>
 
-<details><summary>Tagged by:</summary><a href="/garden/anti-natalism/index.md">Anti Natalism</a><a href="/garden/child-free/index.md">Child Free</a><a href="/garden/parent-dictated-education/index.md">Parent Dictated Education</a></details>
+<details><summary>Tagged by:</summary><a href="/garden/anti-natalism/index.md">Anti Natalism</a><a href="/garden/child-free/index.md">Child Free</a><a href="/garden/children-on-the-internet/index.md">Children on the Internet</a><a href="/garden/parent-dictated-education/index.md">Parent Dictated Education</a></details>
 
 As leftists, my wife and I want to raise our son with certain values that buck the trend in modern (apolitical) discourse. Most significant of these values is autonomy: we believe our child has agency and, despite them being dependent on us for their survival, they do not deserve to be on the tail end of an authoritarian hierarchy of parent over child.
 

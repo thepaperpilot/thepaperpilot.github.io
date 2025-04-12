@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Political Quizzes</h1>
-<p>1344 words, ~7 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1375 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 Political quizzes are a bit of a guilty pleasure of mine. I really enjoy getting my beliefs distilled into a handful of labels, and getting forced to think about issues I may not have thought about that thoroughly. I often take issue with the wording of various questions though, and certainly have opinions on some quizzes being better than others.
@@ -41,6 +41,14 @@ The [results](https://sixtriangles.github.io/results.html?xzacdiqqqqfrqqlqbnwoip
 <div class="img-container"><img src="/garden/image_1725595248824_0.png" title="image.png"/></div>
 
 <div class="img-container"><img src="/garden/image_1725595266970_0.png" title="image.png"/></div>
+
+# Political Scales
+
+I liked this test: good questions and I like how the results are framed.
+
+I took the test on [2025-04-05](https://politiscales.party/results?ZTE9MjkmZTA9NjImYjA9MTAwJnAwPTg2JnAxPTEyJmMwPTk1JnQxPTEyJnQwPTc0Jm0wPTg2Jm0xPTUmYW5hcj0xMDAmZmVtaT04NiZzMD04NiZzMT01JmowPTkwJmoxPTUmdmVnYT0xMDAmY29tcD02Nw==):
+
+<div class="img-container"><img src="/garden/2025-04-05-14-47-00.jpeg" title="2025-04-05-14-47-00.jpeg"/></div>
 
 # SapplyValues
 

@@ -14,7 +14,7 @@ const pageData = useData();
 <p>60 words, ~0 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/the-small-web/index.md">The Small Web</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/rss/index.md">RSS</a><a href="/garden/the-small-web/index.md">The Small Web</a><a href="/garden/this-knowledge-hub/index.md">This Knowledge Hub</a></details>
 
 A theoretical alternative to RSS that's better for [Freeform](/garden/freeform/index.md) content.
 

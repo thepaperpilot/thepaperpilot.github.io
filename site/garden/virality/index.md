@@ -18,7 +18,7 @@ const pageData = useData();
 
 Virality is the ability of something to "go viral" on a network - spread far and wide throughout the network. On traditional social media, this refers to how influencers and advertisers will have their content spread, but also specific posts from smaller posters can get picked up by the algorithm and spread as well.
 
-Since there's only so much of people's attention to go around, social media has been described as an "attention economy". Under this framework, one could argue that social media is designed for "wealth accumulation", elevating a handful of accounts to celebrity status and limiting the reach of the masses. This dynamic much reflects the class antagonisms in a capitalist economy.
+Since there's only so much of people's attention to go around, social media has been described as an "attention economy". Under this framework, one could argue that social media is designed for "wealth accumulation", elevating a handful of accounts to celebrity status and limiting the reach of the masses. This dynamic much reflects the class antagonisms in a [Neoliberal](/garden/neoliberalism/index.md) economy.
 
 ## Non-consensual virality
 

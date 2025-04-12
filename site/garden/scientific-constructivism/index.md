@@ -1,6 +1,7 @@
 ---
 public: "true"
 slug: "scientific-constructivism"
+tags: [Constructivism]
 title: "Scientific Constructivism"
 prev: false
 next: false
@@ -14,7 +15,9 @@ const pageData = useData();
 <p>316 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivism/index.md">Constructivism</a><a href="/garden/fascism/index.md">Fascism</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructivist-theory-of-education/index.md">Constructivist Theory of Education</a><a href="/garden/fascism/index.md">Fascism</a></details>
+
+<details><summary>Tags:</summary><a href="/garden/constructivism/index.md">Constructivism</a></details>
 
 Scientific constructivism is the philosophical idea that science is a [Social Construct](/garden/social-constructs/index.md) , in this case one created socially by scientists.
 

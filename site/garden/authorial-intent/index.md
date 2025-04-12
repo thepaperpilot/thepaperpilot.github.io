@@ -29,7 +29,7 @@ It means art can take on meanings beyond the author's original intent, and poten
 
 Knowledge of how others interpret a work may "lock you in" to that interpretation and make it more difficult to form a new one. The mere knowledge of what themes are at play, the context surrounding how the piece was made, and of course your own experiences prior to consuming the work all play a part in your experience and interpretation of it. Beyond just art, this is something prudent to keep in mind when reading things like news articles, which can be interpreted and essentially distorted merely due to our pre existing biases.
 
-I'm quite supportive of the death of the author, and it aligns well with my views on [Constructionism](/garden/constructivism/index.md). Essentially I believe knowledge, or in this case meaning, is not transferred passively from a teacher/artist but rather is fully dependent on an active student/interpreter, who adapts their mental model as it is challenged by these new experiences, gaining nuance but always remaining an imperfect reproduction of what they experienced.
+I'm quite supportive of the death of the author, and it aligns well with my views on [Constructionism](/garden/constructionism/index.md). Essentially I believe knowledge, or in this case meaning, is not transferred passively from a teacher/artist but rather is fully dependent on an active student/interpreter, who adapts their mental model as it is challenged by these new experiences, gaining nuance but always remaining an imperfect reproduction of what they experienced.
 
 ## Further Reading
 

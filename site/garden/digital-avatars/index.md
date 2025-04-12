@@ -14,8 +14,6 @@ const pageData = useData();
 <p>130 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/identity/index.md">Identity</a></details>
-
 I'm a big fan of digital avatars, although I don't really have one for myself and I don't use the social apps where they'd be useful
 
 Digital avatars can allow for experimenting with [Gender](/garden/gender/index.md) and self expression, or reflecting how people want to be perceived changing on a regular basis

@@ -16,7 +16,7 @@ const pageData = useData();
 <p>932 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Referenced by:</summary><a href="/garden/direct-action/index.md">Direct Action</a><a href="/garden/fascism/index.md">Fascism</a><a href="/garden/free-association/index.md">Free Association</a><a href="/garden/individualism/index.md">Individualism</a><a href="/garden/mutual-aid/index.md">Mutual Aid</a><a href="/garden/on-authority/index.md">On Authority</a></details>
+<details><summary>Referenced by:</summary><a href="/garden/direct-action/index.md">Direct Action</a><a href="/garden/fascism/index.md">Fascism</a><a href="/garden/free-association/index.md">Free Association</a><a href="/garden/individualism/index.md">Individualism</a><a href="/garden/materialism/index.md">Materialism</a><a href="/garden/mutual-aid/index.md">Mutual Aid</a><a href="/garden/on-authority/index.md">On Authority</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/leftism/index.md">Leftism</a></details>
 
