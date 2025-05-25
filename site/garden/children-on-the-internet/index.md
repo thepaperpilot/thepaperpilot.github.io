@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Children on the Internet</h1>
-<p>220 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>241 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Tags:</summary><a href="/garden/parenting/index.md">Parenting</a></details>
@@ -26,3 +26,5 @@ These spaces should naturally still have parental supervision, and focus on teac
 ## Further Reading
 
 https://archive.rushkoff.com/articles/why-protecting-kids-from-social-media-may-make-things-worse.html
+
+https://drdevonprice.substack.com/p/interact-with-minors argues there should even be places where children and adults can freely socialize

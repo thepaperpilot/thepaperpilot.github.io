@@ -13,7 +13,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Fedi v2</h1>
-<p>3001 words, ~16 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>3025 words, ~17 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/decentralized-social-media/index.md">Decentralized Social Media</a><a href="/garden/decentralized/index.md">Decentralized</a><a href="/garden/erlend-heggen/index.md">Erlend Heggen</a><a href="/garden/filter-bubbles/index.md">Filter Bubbles</a><a href="/garden/incremental-social/index.md">Incremental Social</a><a href="/now/index">/now</a><a href="/garden/orchard/index.md">Orchard</a><a href="/garden/social-media/index.md">Social Media</a><a href="/garden/the-indieweb/signature-blocks/index.md">The IndieWeb/Signature Blocks</a><a href="/garden/weird/index.md">Weird</a></details>
@@ -145,3 +145,7 @@ I assume this aspect of Fedi v2 will be the most controversial - people really l
 I think Incremental Social can operate similarly to weird.one, hosting an iroh node and storing events for the agentic fediverse for users of the site. We'll generate and manage a keypair for the user, with the possibility of the user migrating their identity.
 
 I suspect the way the identity management app will work to support sites like weird.one and incremental.social is by passing the request for a delegate key to incremental.social, which will then show the consent screen before passing the key back to the app which sends it to the actual fediverse app.
+
+## Further Reading
+
+https://deadsuperhero.com/my-dream-fediverse-platform/ has a lot of ideas that sound a LOT like what we're planning here!

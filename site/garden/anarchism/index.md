@@ -13,14 +13,14 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Anarchism</h1>
-<p>932 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>960 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/direct-action/index.md">Direct Action</a><a href="/garden/fascism/index.md">Fascism</a><a href="/garden/free-association/index.md">Free Association</a><a href="/garden/individualism/index.md">Individualism</a><a href="/garden/materialism/index.md">Materialism</a><a href="/garden/mutual-aid/index.md">Mutual Aid</a><a href="/garden/on-authority/index.md">On Authority</a></details>
 
 <details><summary>Tags:</summary><a href="/garden/leftism/index.md">Leftism</a></details>
 
-Anarchism is a political philosophy centered around the idea that authoritative hierarchies are unjust, and aim for a society completely devoid of a state. They see a state as inherently self-preservationist and oppressive, thus that it has no place in society nor the transition to an egalitarian society.
+Anarchism is a political philosophy centered around the idea that authoritative hierarchies are unjust, and aim for a society completely devoid of a state. They see a state as inherently self-preservationist and oppressive, thus that it has no place in society nor the transition to an egalitarian society. It's founded on two basic principles that people can self organize, and that power corrupts. If those sound pretty reasonable to you, [you might be an anarchist](https://theanarchistlibrary.org/library/david-graeber-are-you-an-anarchist-the-answer-may-surprise-you).
 
 As you'd expect, anarchists don't try to centralize their beliefs, allowing what _exactly_ anarchism means to be up to the individual. Broadly speaking, flavors of anarchism can fall into 2 main categories: collectivist flavors, which is what this article will focus on; and individualist flavors, which are based on [Individualism](/garden/individualism/index.md) and take a more cynical approach to collaboration and for some any form of society at all.
 

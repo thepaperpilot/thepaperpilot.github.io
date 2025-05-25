@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Police Abolition</h1>
-<p>1699 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1385 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/consensus-democracy/index.md">Consensus Democracy</a><a href="/garden/free-association/index.md">Free Association</a><a href="/garden/materialism/index.md">Materialism</a></details>
@@ -80,21 +80,9 @@ Officers themselves perpetrate [a lot of crime](https://policecrime.bgsu.edu/) (
 
 ## How to abolish police
 
-There are many ways to reduce the need of police until it's eventually zero. Immediately, perpetratore of victimless crimes should be let out of prison. You can also reduce most root causes of crime, rather than spending the money on incarcerating the perpetrators.
+There are many ways to reduce the need of police until it's eventually zero. Immediately, perpetrators of victimless crimes should be let out of prison. You can also reduce most root causes of crime, rather than spending the money on incarcerating the perpetrators.
 
-### Transformative Justice
-
-Abolitionists still want to ensure public safety, just not through policing and incarceration. They believe, since most crime is not born of malice, that improving society by ensuring everyone's needs are met would evaporate the majority of crimes as well - at least as many as are prevented by the current system. This is an idea fundamentally aligned with [Materialism](/garden/materialism/index.md). Police are incredibly over funded, enough to buy things like [surplus tanks](https://www.aclu.org/news/national-security/towns-dont-need-tanks-they-have-them) from the US military. That money can  instead go to social programs that would solve the root causes that lead to crimes.
-
-Societies can and will find alternative ways of preventing any specific crime. An often used example is if you have a drunk friend who is about to drive home, you typically will help get them a ride (driving yourself if you're sober, or calling them a cab or uber otherwise) rather than calling the police on them. Abolitionism finds policing as only required by those who lack the political imagination to find other solutions - basically, cure the diseases rather than treat the symptoms. At a systemic level, drunk driving can be reduced or eliminated by improving public transit.
-
-### Restorative Justice
-
-For instances of crimes of passion, which are believed to occur independent of material conditions, the crime should still be dealt with in a way that isn't punitive. Restorative justice views the anti social behavior as being caused by the person being alienated from their community, and aims to restore that connection.
-
-This typically involves some sort of mediation process, involving those close to both the perpetrator and the victim. The process could be as simple as hearing everyone out and coming to a mutual understanding of what happened and of each other, apologies exchanged, and society continues. This could also involve something like the perpetrator agreeing to reparations of some sort, to help undo or mitigate the harm done. It could involve the perpetrator seeking mental health help, such as voluntarily checking into a mental health institution. The point here is that the goal is on helping undo the damage and restoring the perpetrators connection with their community - not punishment.
-
-### Dangerous incidents
+Punitive justice should then be progressively diminished as we apply [Transformative Justice](/garden/transformative-justice/index.md) in its stead. Finally, [Restorative Justice](/garden/restorative-justice/index.md) should be employed for the remaining crimes that cannot be prevented via transformative justice. At that point there should be no involuntary incarceration.
 
 With the police abolished, there are likely to still be cases where an individual is a danger to themselves or others. For these situations, there are ideas on how to resolve it without state sanctioned violence, that typically focus on local communities setting up alternative resources. Mobile crisis teams are one such alternative, although not without similar concerns regarding their authority to forcibly incarcerate people in mental health hospitals. There are a lot of alternatives out there, but they're typically specific to local communities and don't really have a "one size fits all" solution. Here's an [article](https://roarmag.org/essays/mental-health-system-abolition/) about a couple such initiatives, and [this article linked earlier](https://gal-dem.com/how-does-police-abolition-work/) also discusses some specific local initiatives.
 

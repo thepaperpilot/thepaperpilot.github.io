@@ -11,16 +11,20 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">/now</h1>
-<p>300 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>324 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 This "now page" offers a big picture glimpse into what I’m focused on at this point in my life. [What is a now page](https://nownownow.com/about)?
+
+## Moving
+
+I'm part-way through moving (just a few neighborhoods down), and that is taking up a LOT of my time lately.
 
 ## Timeline on this website
 
 I'm working on a large update to this website that'll include a new global feed of my activity across many websites going back an entire decade. It also replaces Vitepress with Nuxt.JS and no longer using a (heavily) modified template, instead just having the whole thing implemented by me. It'll also include features like better search and a graph of garden pages.
 
-As part of this migration, I'm usingeaf entities as the CMS, including building out some parts of the leaf ecosystem I need.
+As part of this migration, I'm using leaf entities as the CMS, including building out some parts of the leaf ecosystem I need.
 
 ## Digital locality
 

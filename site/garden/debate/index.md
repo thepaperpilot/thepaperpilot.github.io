@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Debate</h1>
-<p>986 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>992 words, ~5 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/no-politics-rules/index.md">"No Politics" Rules</a></details>
@@ -62,3 +62,7 @@ If you want to convince others to shift their political stance, then recommendin
 Rather than having political discourse for its own sake, apply the topic to something that can be acted upon, such as changing a rule within the community (might I suggest discussing a replacement or set of replacement rules to get rid of an existing ["No Politics" Rule](/garden/no-politics-rules/index.md) 😉). These are much more likely to work constructively towards finding consensus, and can actually lead to productive changes that affect the participants. You'll see issues raised and be able to find ways to solve them amicably rather than trying to dismiss them. Naturally this only applies in certain contexts and discussing current events won't often be translatable to the community directly.
 
 Also, don't neglect your physical community. All of this article has been centering on online conversations, but if your goal is to be productive and make meaningful change, then go out and do something! Join a local org - I recommend checking out [Mutual Aid Hub](https://www.mutualaidhub.org/), but a local political org can also help with mobilizing for protests and other events, which supports the cause far more than arguing with strangers on the internet. The specific org doesn't matter too much - one's political journey will likely involve multiple orgs - but meeting up with comrades offline at all will provide useful and fulfilling experiences. There's a list of leftist organizations [here](https://abolitionnotes.org/leftist-organizations) to help you in your search; it has a lot of other useful resources as well.
+
+## Further Reading
+
+https://youtu.be/_WcBJNHcrHs

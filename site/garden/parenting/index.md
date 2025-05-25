@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Parenting</h1>
-<p>1492 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1555 words, ~8 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/individualism/index.md">Individualism</a></details>
@@ -72,3 +72,7 @@ Books:
 [No! Against Adult Supremacy](https://archive.org/details/no-against-adult-supremacy/page/n5/mode/2up) is a tome of various essays regarding the rights of children and specifically about abolishing the power dynamics between them and adults. It goes beyond parenting and talks about children and adults more generally.
 
 A video essay called [Wife Swap, Supernanny & How We Discriminate Against Kids](https://www.youtube.com/watch?v=ySAP3d0Gh8U) also discusses adult supremacy and how media that portrays parenting reveal how our culture currently treats kids.
+
+[Grow Up. Why Does Everyone Hate Children](https://youtu.be/iy53s5b3xkA) Makes a great argument against adult supremacy. I'm actually a _massive_ fan of this video and all the points it makes, including parts on the use of insults and their ability to reproduce hierarchies and it's critiques of [Centralized Education](/garden/standardized-education/index.md), particularly western schooling.
+
+https://drdevonprice.substack.com/p/its-okay-if-child-liberation-and

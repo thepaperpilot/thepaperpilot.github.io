@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Orchard</h1>
-<p>1665 words, ~9 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>1768 words, ~10 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/anti-intellectualism/index.md">Anti-Intellectualism</a><a href="/garden/constructionism/index.md">Constructionism</a><a href="/garden/digital-locality/index.md">Digital Locality</a><a href="/garden/efficiency/index.md">Efficiency</a><a href="/garden/incremental-automaton/index.md">Incremental Automaton</a><a href="/now/index">/now</a></details>
@@ -91,9 +91,16 @@ Could we have a note type that implements [Potluck](/garden/potluck/index.md)?
 - I'd like a potluck app with syncing regardless
 - Potluck pages would likely be fewer in quantity and more frequently returned to than other notes. Might be an indicator its not appropriate, could also mean we'd just need a way to favorite notes
 
+ProseKit for making a rich text editor with export to loro (for leaf entities)
+
+Quasar?
+- https://quasar.dev/vue-components/tree
+
 Could we have a note type that allows code and markdown, like [Observable](https://observablehq.com/)?
 - https://tomlarkworthy.github.io/lopecode/webpage.html
 - https://observablehq.com/@tomlarkworthy/hello-golden-layout-2-6-0
+
+https://github.com/unplugin/unplugin-icons
 
 ## Orchard as a Protocol
 
@@ -102,3 +109,7 @@ I might consider making orchard really just [Garden-RSS](/garden/garden-rss/inde
 ## Orchard as an extension of Roomy
 
 Roomy is a project by Muni Town, who I've referenced a lot here (originally as just the devs behind Commune), and a lot of the features I'd want for orchard will exist in roomy - decentralized identity, portable data with local first syncing, message gardening into threads and articles, etc. Roomy is a [Chatty Community Garden](https://blog.muni.town/chatty-community-gardens/) that'll likely get most of the way to orchard, with just a few missing pieces to implement digital locality and the topic graph. It'll likely make sense for orchard to start as an extension of Roomy and evolve from there.
+
+## Orchard as a replacement of logseq
+
+I currently use logseq for journaling and updating the garden pages. This comes with a couple issues - namely that private notes all have to be at the end of a page, or making the entire page private, and there's sometimes sync issues between my devices. Chat glue and merging leaf entities would solve those issues, so I'd like to migrate from logseq to orchard when that's viable.

@@ -11,7 +11,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Mutual Aid</h1>
-<p>422 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>461 words, ~3 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Referenced by:</summary><a href="/garden/a-plea-to-organize/index.md">A Plea to Organize</a><a href="/garden/anarchism/index.md">Anarchism</a><a href="/garden/direct-action/index.md">Direct Action</a><a href="/garden/leftism/index.md">Leftism</a><a href="/garden/local-communities/index.md">Local Communities</a><a href="/garden/my-political-beliefs/index.md">My Political Beliefs</a><a href="/garden/solidarity/index.md">Solidarity</a></details>
@@ -33,3 +33,8 @@ Mutual aid would be how people get rid of excess by removing the profit motive a
 Historically, people who are not in good standing, such as not contributing, will still at least be gifted the necessities to continue living. The cost is negligible enough and our sense of humanity great enough to ensure people don't die preventably. Due to technology and productivity being at an all time high, the entire population can trivially be sustained even with some portion of it being unable or unwilling to contribute.
 
 While particularly associated with [Anarchism](/garden/anarchism/index.md), communism in any form would likely involve mutual aid. It's the epitome of Marx' famous slogan "from each according to his ability, to each according to his need".
+
+## Further Reading
+
+https://youtu.be/d5mO-obJdTQ
+- Also really loved the point at the end about the same $20 bill being passed around. It's something I've thought about regularly about indie creators and stuff like [this post](https://www.reddit.com/r/gamedev/comments/5b2s78/are_we_just_buying_each_others_games/).

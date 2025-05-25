@@ -14,6 +14,8 @@ const pageData = useData();
 <p>302 words, ~2 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+<details><summary>Referenced by:</summary><a href="/garden/generative-ai/index.md">Generative AI</a></details>
+
 Fictophilia is a romantic or sexual attraction to non-real people. It's not something I personally have, but I think its interesting as a form of attraction that hasn't been normalized in today's society, yet seems fairly reasonable. From what I've seen online there are some resources on "overcoming" fictophilia, but on the whole it seems to be accepted as something relatively innocuous and not concerning.
 
 Typically fictophilia refers to the attraction to characters from media. This is similar to "waifus", but with fully realized attraction. But I think it could similarly to relationships with LLMs, like Replika and similar services.

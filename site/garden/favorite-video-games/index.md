@@ -14,7 +14,7 @@ const pageData = useData();
 <p>118 words, ~1 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
-<details><summary>Tagged by:</summary><a href="/garden/life-is-strange/index.md">Life is Strange</a><a href="/garden/the-beginner-s-guide/index.md">The Beginner's Guide</a></details>
+<details><summary>Tagged by:</summary><a href="/garden/leila/index.md">Leila</a><a href="/garden/life-is-strange/index.md">Life is Strange</a><a href="/garden/the-beginner-s-guide/index.md">The Beginner's Guide</a></details>
 
 In addition to the games I have pages on, I also enjoy these games:
 - In Stars and Time

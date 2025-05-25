@@ -12,7 +12,7 @@ import { useData } from 'vitepress';
 const pageData = useData();
 </script>
 <h1 class="p-name">Life is Strange</h1>
-<p>654 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
+<p>720 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
 <details><summary>Tags:</summary><a href="/garden/favorite-video-games/index.md">Favorite Video Games</a></details>
@@ -39,6 +39,8 @@ I was not a huge fan of the ending of Life is Strange. Of the two endings, one v
 
 In my mind, Max's arc (and major themes of the last chapter) was about learning not to rely on her powers, and to learn to live with the consequences of her actions. To that end, having the game end with her taking responsibility and living with the consequences of such a major event is a fitting thematic conclusion to the game and her character arc. In contrast, the other ending shows Max relying on her powers once again and, in my opinion, portrays Max as having not grown nor learned any lessons throughout the entire series. I think its a disservice this ending got so much more attention, with unique outfits and a song dedicated to it.
 
+That said, I can see the argument for why perhaps _both_ endings complete the arc. The save the bay ending obviously still has consequences, and you're undoing Max's first rewind, and presumably never rewinding after that point. I don't like that you rewind in order to do that, but in both cases the takeaway is certainly to stop relying on the rewind power.
+
 ## Life is Strange: Before the Storm
 
 I really enjoyed this story. I didn't get _quite_ as invested, perhaps due to it being a condensed 3 chapters rather than 5, but the characters will still just as amazing, which is what makes LiS so good. The ending didn't have as much of a punch as LiS1 - in fact, the entire back half of episode 3 didn't quite meet the bar in my eyes. At the time, I enjoyed these threads discussing criticisms levied at that part of the game:
@@ -55,7 +57,7 @@ I enjoyed the demo, and it certainly got me hyped for LiS2 (although I would've 
 
 Unfortunately, I've only played the first chapter of this game. I wanted to play through it with Haley, but we haven't found time to do so.
 
-LATER Skip the rest of LiS1 and play LiS2 with Haley
+LATER Skip the rest of LiS1 and play LiS2 with Lee
 
 ## Life is Strange: True Colors
 

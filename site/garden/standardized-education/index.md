@@ -16,6 +16,8 @@ const pageData = useData();
 <p>658 words, ~4 minute read. <span v-html="data[`site/${pageData.page.value.relativePath}`]" /></p>
 <hr/>
 
+<details><summary>Referenced by:</summary><a href="/garden/parenting/index.md">Parenting</a></details>
+
 <details><summary>Tags:</summary><a href="/garden/education/index.md">Education</a></details>
 
 Standardized education is when a central authority dictates what can, and in some cases what _can't_, be taught across a region. The US has a partially standardized education through the Common Core, which states are able to opt in or out of. The argument for standardized education is to ensure a solid knowledge baseline that all adults can be assumed to meet, and to make it easier for kids to transfer between schools, even across states.
