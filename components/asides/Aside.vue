@@ -14,5 +14,16 @@
     padding: 1em;
     color: var(--nord1);
     margin-top: 18px;
+    position: relative;
+}
+
+.aside::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: rgba(0, 0, 0, 0.1);
+  height: 60px;
 }
 </style>
