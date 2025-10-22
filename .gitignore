@@ -7,11 +7,7 @@ node_modules
 .data
 .env
 dist
-garden-output
-assets/favorites.json
-assets/tags.json
-public/changelog
-public/garden
+garden_export
 public/licenses.txt
 
 syndications/cache

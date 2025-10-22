@@ -5,11 +5,11 @@
             <Icon name="material-symbols:vertical-align-top" /> Top
         </NuxtLink>
         <ul>
-            <li v-for="({ id, text }) in doc.body.toc.links">
-                <NuxtLink :to="`#${id}`">{{ text }}</NuxtLink>
+            <li v-for="(text, link) in doc.toc">
+                <NuxtLink :to="`#${link}`">{{ text }}</NuxtLink>
             </li>
             <li v-if="doc.referencedBy">
-                <NuxtLink to="#referenced-by">Pages that reference "{{ doc.title }}"</NuxtLink>
+                <NuxtLink to="#referenced-by">Pages that reference "{{ doc.name }}"</NuxtLink>
             </li>
         </ul>
     </Aside>
@@ -17,10 +17,9 @@
 
 <script setup lang="ts">
 import Aside from "~/components/asides/Aside.vue";
-import type { ParsedContent } from '@nuxt/content';
 
 defineProps<{
-    doc: ParsedContent;
+    doc: GardenDocument;
 }>();
 </script>
 

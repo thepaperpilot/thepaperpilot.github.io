@@ -29,6 +29,3 @@
 	path = public/planar
 	url = git@code.incremental.social:thepaperpilot/Planar-Pioneers.git
 	branch = gh-pages
-[submodule "Garden.git"]
-	path = Garden
-	url = git@code.incremental.social:thepaperpilot/Garden.git

@@ -34,21 +34,11 @@
     <p>
         This is a public website collecting all my (public) thoughts and projects all in one place. There are a lot of pages here, that link to each other wiki-style. I suggest starting your browsing with one of the recommended pages that most closely align with your interests :).
     </p>
-
-    <div class="h-feed" id="most-recent-activity">
-        <NuxtLink class="u-url" to="#most-recent-activity" style="display: none"></NuxtLink>
-        <h2 class="p-name contains-link">
-            Most recent <NuxtLink to="/posts" class="u-uid u-url">posts</NuxtLink>
-        </h2>
-        <VuePost v-for="post in posts" :post="post" :fadeDescription="true" />
-    </div>
 </template>
 
 <script setup lang="ts">
 import { TresCanvas } from '@tresjs/core';
-import VuePost from '~/components/posts/Post.vue';
 import Hole from "~/components/Hole.vue";
-import type { Post } from '~/types';
 
 const xOffset = ref(0);
 function mouseMoveHandler(event: MouseEvent) {
@@ -59,13 +49,6 @@ onMounted(() => {
 });
 onUnmounted(() => {
     window.removeEventListener("mousemove", mouseMoveHandler);
-});
-
-const { data: posts } = await useAsyncData("recent", () => 
-    queryContent("posts")
-        .sort({ published: -1, $numeric: true })
-        .limit(10).find() as Promise<Post[]>, {
-    dedupe: 'defer'
 });
 
 useHead({

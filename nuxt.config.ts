@@ -1,28 +1,10 @@
-import fs from "fs";
-import { POST_TYPES } from "./post_types";
-import type { PostType } from "./types";
-import { walk } from "./utils/fs-utils.js";
-
-const feedProps = { rel: 'alternate', type: "text/mf2+html" };
+import { defineNuxtConfig } from "nuxt/config";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default async () => {
-    // Get all tags without using Nuxt Content
-    // Nuxt would have to get the list by manually iterating over every file anyways
-    const tags: Record<string, number> = {};
-    await Promise.all(Object.keys(POST_TYPES).map(async type => 
-        await walk("./content/posts/" + type, (dir, file, resolve) => {
-            const data = fs.readFileSync(file).toString();
-            const fileTags = JSON.parse(data.match(/"tags":(\[[^\]]*\])/)?.[1] ?? "[]") as string[];
-            fileTags.forEach(tag => tags[tag] = (tags[tag] ?? 0) + 1);
-            resolve();
-        })
-    ));
-    fs.writeFileSync("./assets/tags.json", JSON.stringify(tags));
-
     return defineNuxtConfig({
         devtools: { enabled: true },
-        modules: ['@nuxt/content', '@tresjs/nuxt', '@nuxt/icon', '@nuxt/image', '@nuxtjs/sitemap'],
+        modules: ['@tresjs/nuxt', '@nuxt/icon', '@nuxt/image', '@nuxtjs/sitemap', '@nuxtjs/mdc'],
         
         site: {
             url: "https://thepaperpilot.org",
@@ -33,7 +15,6 @@ export default async () => {
             sitemaps: {
                 pages: {
                     includeAppSources: true,
-                    sources: [ '/api/sitemap/tags' ],
                     urls: [
                         "advent",
                         "dream",
@@ -45,16 +26,7 @@ export default async () => {
                         "skilltreetest",
                         "the_ascension_tree"
                     ]
-                },
-                garden: {
-                    sources: [ '/api/sitemap/garden' ]
-                },
-                ...Object.keys(POST_TYPES).reduce((acc, curr) => {
-                    acc[POST_TYPES[curr as PostType].plural] = {
-                        sources: [ `/api/sitemap/${POST_TYPES[curr as PostType].plural}` ]
-                    };
-                    return acc;
-                }, {} as Record<string, unknown>)
+                }
             }
         },
         
@@ -62,20 +34,9 @@ export default async () => {
             /** Pre-rendererd pages */
             '/': { prerender: true },
             '/about': { prerender: true },
-            '/tags': { static: true },
-            '/types': { prerender: true },
             
             /** Cached pages */
-            '/garden/**': { swr: true },
-            '/__sitemap__/**': { swr: true },
-            '/posts': { swr: true },
-            '/tags/**': { swr: true },
-            '/changelog': { swr: true },
-            ...Object.keys(POST_TYPES).reduce((acc, curr) => {
-                acc[`/${POST_TYPES[curr as PostType].plural}`] = { swr: true };
-                acc[`/${POST_TYPES[curr as PostType].plural}/**`] = { swr: 3600 };
-                return acc;
-            }, {} as Record<string, unknown>),
+            // '/garden/**': { swr: true },
             
             /** Redirects */
             '/guide-to-incrementals': { redirect: '/garden/guide-to-incrementals' },
@@ -91,7 +52,7 @@ export default async () => {
             '/guide-to-incrementals/ludology/content': {
                 redirect: '/garden/guide-to-incrementals/what-is-content'
             },
-            '/guide-to-incrementals/ludology/defintion': {
+            '/guide-to-incrementals/ludology/definition': {
                 redirect: '/garden/guide-to-incrementals/defining-the-genre'
             },
             '/now': { redirect: '/garden/now' },
@@ -110,36 +71,6 @@ export default async () => {
                     {
                         rel: 'stylesheet',
                         href: 'https://fonts.googleapis.com/css2?family=Itim&display=block'
-                    },
-                    {
-                        rel: 'alternate',
-                        type: "application/rss+xml",
-                        title: 'Garden Changelog',
-                        href: '/changelog/rss'
-                    },
-                    {
-                        rel: 'alternate',
-                        type: "application/json+xml",
-                        title: 'Garden Changelog',
-                        href: '/changelog/json'
-                    },
-                    {
-                        rel: 'alternate',
-                        type: "application/rss+xml",
-                        title: 'Posts',
-                        href: '/posts/rss'
-                    },
-                    {
-                        rel: 'alternate',
-                        type: "application/atom+xml",
-                        title: 'Posts',
-                        href: '/posts/atom'
-                    },
-                    {
-                        rel: 'alternate',
-                        type: "application/json+xml",
-                        title: 'Posts',
-                        href: '/posts/json'
                     },
                     { rel: 'me', href: 'mailto:thepaperpilot@incremental.social' },
                     { rel: 'me', href: 'https://incremental.social/u/thepaperpilot' },
@@ -160,38 +91,8 @@ export default async () => {
                     {
                         rel: 'indieauth-metadata',
                         href: 'https://indie.incremental.social/.well-known/oauth-authorization-server'
-                    },
-
-                    /** Feeds */
-                    { ...feedProps, href: '/posts', title: 'All posts' },
-                    { ...feedProps, href: '/changelog', title: 'Garden changelog' },
-                    ...Object.keys(POST_TYPES).map(type => ({
-                        ...feedProps,
-                        href: `/${POST_TYPES[type as PostType].plural}`,
-                        title: POST_TYPES[type as PostType].plural[0].toUpperCase() +
-                            POST_TYPES[type as PostType].plural.slice(1)
-                    })),
-                    ...Object.keys(tags).map(tag => ({
-                        ...feedProps,
-                        href: `/tags/${tag}`,
-                        title: tag[0].toUpperCase() + tag.slice(1)
-                    }))
-                ],
-                script: [
-                    {
-                        async: true,
-                        src: '//gc.zgo.at/count.js',
-                        'data-goatcounter': 'https://thepaperpilot.goatcounter.com/count'
                     }
                 ]
-            }
-        },
-        
-        runtimeConfig: {
-            public: {
-                buildCommitHash: process.env.GITHUB_SHA || "COMMIT_SHA",
-                buildTime: new Date().toLocaleDateString() + " at " +
-                new Date().toLocaleTimeString("en-US", { hour: '2-digit', minute:'2-digit' })
             }
         },
         

@@ -1,25 +1,67 @@
 <template>
-    <TresMesh :position="[Math.min(sizes.width.value, sizes.height.value) / 2 * .05,Math.min(sizes.width.value, sizes.height.value) / 2 * .05,0]">
-        <TresCircleGeometry :args="[Math.min(sizes.width.value, sizes.height.value) / 2 * .9, 360]" />
-        <TresShaderMaterial :vertexShader="vertexShader" :fragmentShader="fragmentShader" :uniforms="uniforms" :blending="NormalBlending" :transparent="true"  />
-    </TresMesh>
-    <TresMesh :position="[Math.min(sizes.width.value, sizes.height.value) / 2 * .05,Math.min(sizes.width.value, sizes.height.value) / 2 * .05,0]" :renderOrder="0">
-        <TresCircleGeometry :args="[Math.min(sizes.width.value, sizes.height.value) / 2 * .9, 360]" />
-        <TresShaderMaterial :vertexShader="vertexShader" :fragmentShader="fragmentShaderBorderless" :uniforms="uniforms" :blending="NormalBlending" :colorWrite="false" :depthWrite="false" :depthTest="false" :stencilWrite="true" :stencilRef="1" :stencilFunc="AlwaysStencilFunc" :stencilFail="KeepStencilOp" :stencilZFail="KeepStencilOp" :stencilZPass="ReplaceStencilOp" />
-    </TresMesh>
-    <TilingCircuitBoard :mask="1" />
+  <TresMesh
+    :position="[
+      (Math.min(sizes.width.value, sizes.height.value) / 2) * 0.05,
+      (Math.min(sizes.width.value, sizes.height.value) / 2) * 0.05,
+      0,
+    ]"
+  >
+    <TresCircleGeometry
+      :args="[(Math.min(sizes.width.value, sizes.height.value) / 2) * 0.9, 360]"
+    />
+    <TresShaderMaterial
+      :vertexShader="vertexShader"
+      :fragmentShader="fragmentShader"
+      :uniforms="uniforms"
+      :blending="NormalBlending"
+      :transparent="true"
+    />
+  </TresMesh>
+  <TresMesh
+    :position="[
+      (Math.min(sizes.width.value, sizes.height.value) / 2) * 0.05,
+      (Math.min(sizes.width.value, sizes.height.value) / 2) * 0.05,
+      0,
+    ]"
+    :renderOrder="0"
+  >
+    <TresCircleGeometry
+      :args="[(Math.min(sizes.width.value, sizes.height.value) / 2) * 0.9, 360]"
+    />
+    <TresShaderMaterial
+      :vertexShader="vertexShader"
+      :fragmentShader="fragmentShaderBorderless"
+      :uniforms="uniforms"
+      :blending="NormalBlending"
+      :colorWrite="false"
+      :depthWrite="false"
+      :depthTest="false"
+      :stencilWrite="true"
+      :stencilRef="1"
+      :stencilFunc="AlwaysStencilFunc"
+      :stencilFail="KeepStencilOp"
+      :stencilZFail="KeepStencilOp"
+      :stencilZPass="ReplaceStencilOp"
+    />
+  </TresMesh>
+  <TilingCircuitBoard :mask="1" />
 </template>
 
 <script setup lang="ts">
-import { useTresContext } from '@tresjs/core';
-import { AlwaysStencilFunc, KeepStencilOp, NormalBlending, ReplaceStencilOp, Vector3 } from "three";
+import {
+  AlwaysStencilFunc,
+  KeepStencilOp,
+  NormalBlending,
+  ReplaceStencilOp,
+  Vector3,
+} from "three";
 import noise from "~/assets/noise.glsl";
 
-const { sizes } = useTresContext();
+const { sizes } = useTres();
 
 const uniforms = {
-    uColor: { value: new Vector3(0.23, 0.26, 0.32) },
-    uSeed: { value: Math.random() *  100 }
+  uColor: { value: new Vector3(0.23, 0.26, 0.32) },
+  uSeed: { value: Math.random() * 100 },
 };
 
 const vertexShader = `

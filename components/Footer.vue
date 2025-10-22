@@ -21,18 +21,11 @@
 
         <p>
             <span>
-                Site built from <a class="p-right" :href="`https://code.incremental.social/thepaperpilot/pages/commit/${buildCommitHash}`">this commit</a> on <time>{{ buildTime }}</time>.
-            </span>
-            <span>
                 (Thorough) <NuxtLink to="https://www.thepaperpilot.org/licenses.txt">legal disclaimers</NuxtLink>.
             </span>
         </p>
     </footer>
 </template>
-
-<script setup lang="ts">
-const { buildCommitHash, buildTime } = useRuntimeConfig().public;
-</script>
 
 <style lang="css" scoped>
 footer {

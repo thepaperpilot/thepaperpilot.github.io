@@ -109,7 +109,11 @@
 .paper blockquote {
     border-left: dashed 2px var(--nord9);
     padding-left: 1em;
-    margin: 0 1em;
+    margin: 30px 1em;
+
+    &:first-child {
+        margin-top: 0;
+    }
 }
 
 .paper .h-entry {

@@ -15,7 +15,7 @@
             <Card image="/profile.png" />
         </div>
 
-        I live in <span class="p-locality">Dallas</span>, <span class="p-region">Texas</span>, <span class="p-country-name">USA</span> with <a href="https://linktr.ee/myotherheart">my wife</a> and baby son. <span class="p-org h-card">I work at <span class="p-name">Topaz Labs LLC</span> as a <span class="p-job-title">Product Engineer</span>. <span class="p-role">I develop their flagship product Topaz Photo AI</span>.</span>
+        I live in <span class="p-locality">Dallas</span>, <span class="p-region">Texas</span>, <span class="p-country-name">USA</span> with <a href="https://linktr.ee/myotherheart">my wife</a> and baby son. <span class="p-org h-card">I work at <span class="p-name">Topaz Labs LLC</span> as a <span class="p-job-title">Product Engineer</span>. <span class="p-role">I currently work on their web products; Express, Bloom, and Mosaic</span>.</span>
 
         Reach out to me:
         <!-- If updating these links, make sure to add them to the site's <head> as well -->
@@ -33,13 +33,13 @@
             <li>Lemmy: <a class="u-url" href="https://beehaw.org/u/thepaperpilot" rel="me">thepaperpilot@beehaw.org</a></li>
             <li>Reddit: <a class="u-url" href="https://www.reddit.com/user/ThePaperPilot/" rel="me">thepaperpilot</a></li>
             <li>Github: <a class="u-url" href="https://github.com/thepaperpilot" rel="me">thepaperpilot</a></li>
-            <li>Twitter: <a class="u-url" href="https://twitter.com/ThePaperPilot" rel="me">@thepaperpilot</a></li>
+            <li>X: <a class="u-url" href="https://x.com/ThePaperPilot" rel="me">@thepaperpilot</a></li>
         </ul>
     </div>
 </template>
 
 <script setup lang="ts">
-import Card from '~/components/posts/Card.global.vue';
+import Card from '~/components/Card.global.vue';
 
 useHead({
     title: "About me"

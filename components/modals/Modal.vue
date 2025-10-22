@@ -1,11 +1,11 @@
 <template>
     <Teleport to="body">
-        <div class="container" @click.self="emits('close')" v-if="open">
+        <div class="container" v-if="open">
             <Paper class="centered-paper">
                 <slot />
             </Paper>
         </div>
-        <div class="closer" v-if="open" />
+        <div class="closer" @click.self="emits('close')" v-if="open" />
     </Teleport>
 </template>
 
@@ -34,18 +34,19 @@ const emits = defineEmits<{
 .container {
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
+    left: calc((100vw - min(800px, 95vw)) / 2 - 20px);
+    right: calc((100vw - min(800px, 95vw)) / 2 - 20px);
     bottom: 0;
     overflow-y: auto;
+    overflow-x: visible;
     z-index: 10;
-    cursor: pointer;
+    pointer-events: none;
 }
 
 .centered-paper {
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    margin-left: calc((100vw - min(800px, 95vw)) / 2);
+    margin: 5vh auto;
     cursor: auto;
+    max-width: unset;
+    pointer-events: all;
 }
 </style>
