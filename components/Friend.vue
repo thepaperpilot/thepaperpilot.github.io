@@ -1,5 +1,9 @@
 <template>
-  <div class="babble-container">
+  <div
+    class="babble-container"
+    ref="container"
+    :class="puppetOptions.position > 3 ? 'padRight' : 'padLeft'"
+  >
     <Babble
       :numCharacters="4"
       :puppetScale="0.5"
@@ -20,6 +24,13 @@
             :style="`transition-delay: ${i * 250}ms`"
           />
         </Transition>
+        <ul v-if="links" class="inline">
+          <Transition appear v-for="({ text, link }, i) in links">
+            <li v-if="finished" :style="`transition-delay: ${i * 250}ms`">
+              <a :href="link">{{ text }}</a>
+            </li>
+          </Transition>
+        </ul>
       </div>
     </Admonition>
   </div>
@@ -33,8 +44,12 @@ const props = withDefaults(
   defineProps<{
     puppetOptions: PuppetOptions;
     blurb: string;
-    buttons: {
+    buttons?: {
       image: string;
+      link: string;
+    }[];
+    links?: {
+      text: string;
       link: string;
     }[];
     canStart?: boolean;
@@ -44,27 +59,42 @@ const props = withDefaults(
   }
 );
 
+const visibleInViewport = ref(false);
+const observer = new IntersectionObserver((e) => {
+  visibleInViewport.value = e.some((e) => e.isIntersecting);
+}, {});
+
 const babble = useTemplateRef("babble");
+const container = useTemplateRef("container");
 const puppet = shallowRef<Puppet>();
 const finished = ref(false);
 const currentBlurb = ref("");
 
-function onReady() {
+watch(container, (container) => {
+  observer.disconnect();
+  container && observer.observe(container);
+});
+
+defineExpose({ visibleInViewport, finished });
+
+async function onReady() {
   const stage = babble.value!.stage!;
-  function traverseLayers(layer: Layer) {
+  async function traverseLayers(layer: Layer) {
+    const promises: Promise<void>[] = [];
     if (layer.id) {
-      stage.addAsset(
-        layer.id,
+      promises.push(new Promise(resolve => stage.addAsset(
+        layer.id!,
         allAssets[layer.id as keyof typeof allAssets],
-        () => {}
-      );
+        resolve
+      )));
     }
     if (layer.children) {
-      layer.children.forEach(traverseLayers);
+      promises.push(...layer.children.map(traverseLayers));
     }
+    await Promise.all(promises);
   }
 
-  props.puppetOptions.layers.children.forEach(traverseLayers);
+  await Promise.all(props.puppetOptions.layers.children.map(traverseLayers));
   stage.clearPuppets();
   puppet.value = stage.addPuppet(props.puppetOptions, props.puppetOptions.name);
   if (puppet.value) {
@@ -73,12 +103,12 @@ function onReady() {
     const actor = puppet.value;
     new Promise(async () => {
       await new Promise<void>((resolve) => {
-        if (props.canStart) {
+        if (props.canStart && visibleInViewport.value) {
           resolve();
           return;
         }
         const canStartHandle = watch(
-          () => props.canStart,
+          () => props.canStart && visibleInViewport.value,
           (canStart) => {
             if (canStart) {
               canStartHandle();
@@ -118,10 +148,17 @@ function onReady() {
   display: flex;
   flex-direction: column;
   height: 240px;
-  padding-right: 240px;
   padding-top: 30px;
   z-index: 1;
   box-sizing: border-box;
+}
+
+.padLeft {
+  padding-left: 240px;
+}
+
+.padRight {
+  padding-right: 240px;
 }
 
 .babble-container > div:has(canvas) {

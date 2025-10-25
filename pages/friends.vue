@@ -7,13 +7,26 @@
 
   <ClientOnly>
     <Friend
+      :puppetOptions="{ ...myotherheart, position: 0, facingLeft: false }"
+      blurb="Howdy! I'm an Indie Dev - Digital & Traditional 2D Artist - Gamer - Earth Science Nerd - I hand cut all of my prints, stickers, and key chains with love. <3"
+      :links="[
+        { text: 'linktree', link: 'https://linktr.ee/myotherheart' },
+        {
+          text: 'gayvampiremansion',
+          link: 'https://www.tumblr.com/gayvampiremansion/',
+        },
+      ]"
+      ref="myotherheartFriend"
+    />
+
+    <Friend
       :puppetOptions="{ ...yhvr, position: 5, facingLeft: true }"
       blurb="howdy! my name is yhvr. i make incremental games and other things i find interesting."
-      :buttons="[
-        { image: '/yhvr.gif', link: 'https://yhvr.me/' },
-        { image: '/galaxy.png', link: 'https://galaxy.click/' },
-        { image: '/goat-rest.gif', link: 'https://goat.rest/' },
-      ]"
+      :buttons="yhvrButtons"
+      :canStart="
+        preloadedYhvrButtons &&
+        (myotherheartFriend?.finished || !myotherheartFriend?.visibleInViewport)
+      "
     />
   </ClientOnly>
 
@@ -51,8 +64,33 @@
 <script setup lang="ts">
 import WebButton from "~/components/WebButton.vue";
 import yhvr from "../public/babble/characters/1.json";
+import myotherheart from "../public/babble/characters/2.json";
+
+const myotherheartFriend = useTemplateRef("myotherheartFriend");
 
 useHead({
   title: "Friends | The Paper Pilot",
+});
+
+const yhvrButtons = [
+  { image: "/yhvr.gif", link: "https://yhvr.me/" },
+  { image: "/galaxy.png", link: "https://galaxy.click/" },
+  { image: "/goat-rest.gif", link: "https://goat.rest/" },
+];
+const preloadedYhvrButtons = ref(false);
+onMounted(() => {
+  preloadedYhvrButtons.value = false;
+  Promise.all(
+    yhvrButtons.map(({ image }) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = image;
+        img.onload = resolve;
+        img.onerror = reject;
+      });
+    })
+  ).then(() => {
+    preloadedYhvrButtons.value = true;
+  });
 });
 </script>
