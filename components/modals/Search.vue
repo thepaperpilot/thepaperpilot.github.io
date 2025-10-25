@@ -76,10 +76,7 @@ onBeforeUnmount(() => {
   document.removeEventListener("keydown", keyHandler);
 });
 
-const { data } = await useFetch("/api/search", {
-  server: true,
-  lazy: false,
-});
+const { data, execute } = await useFetch("/api/search");
 const miniSearch = ref<MiniSearch>();
 const results = ref<SearchResult[]>([]);
 const suggestions = ref<string[]>([]);
@@ -120,6 +117,12 @@ const currentPageResults = computed(() =>
 watch(inputRef, (inputRef) => {
   inputRef?.focus();
 });
+
+watch([open, data], ([open, data]) => {
+  if (open && data == null) {
+    execute();
+  }
+})
 
 function keyHandler(e: KeyboardEvent) {
   if (e.key == "k" && e.ctrlKey) {
