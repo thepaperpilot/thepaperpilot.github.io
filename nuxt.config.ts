@@ -90,6 +90,7 @@ export default async () => {
           { rel: "me", href: "https://www.reddit.com/user/ThePaperPilot/" },
           { rel: "me", href: "https://github.com/thepaperpilot" },
           { rel: "me", href: "https://twitter.com/ThePaperPilot" },
+          { rel: "me", href: "https://galaxy.click/user/3" },
           {
             rel: "authorization_endpoint",
             href: "https://indie.incremental.social/auth",

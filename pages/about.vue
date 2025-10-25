@@ -24,8 +24,10 @@
             <li>Fediverse: <a class="u-url" href="https://incremental.social/u/thepaperpilot" rel="me">thepaperpilot@incremental.social</a></li>
             <li>Matrix: <a class="u-url" href="https://matrix.to/#/@thepaperpilot:incremental.social" rel="me">@thepaperpilot:incremental.social</a></li>
             <li>Forgejo: <a class="u-url" href="https://code.incremental.social/thepaperpilot" rel="me">thepaperpilot</a></li>
+            <li>Galaxy: <a class="u-url" href="https://galaxy.click/user/3" rel="me">thepaperpilot</a></li>
             <li>LinkedIn: <a class="u-url" href="https://www.linkedin.com/in/anthony-lawn/" rel="me">Anthony Lawn</a></li>
         </ul>
+        <br/>
 
         These are old accounts I don't use anymore, but they are me:
         <ul>
