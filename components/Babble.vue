@@ -12,6 +12,10 @@ const props = defineProps<{
   assetsPath: string;
 }>();
 
+const emits = defineEmits<{
+  ready: [];
+}>();
+
 const stageId = generateUUID();
 const stage = ref<babble.Stage>();
 const stageRef = useTemplateRef("stage");
@@ -19,11 +23,10 @@ const stageRef = useTemplateRef("stage");
 defineExpose({ stage });
 
 const observer = new ResizeObserver((entries) => {
-    const size = entries[0]?.contentRect;
-    if (stage.value && size) {
-
-  stage.value.resize(null, size.width, size.height);
-    }
+  const size = entries[0]?.contentRect;
+  if (stage.value && size) {
+    stage.value.resize(null, size.width, size.height);
+  }
 });
 
 onMounted(() => {
@@ -32,11 +35,11 @@ onMounted(() => {
     {
       numCharacters: props.numCharacters,
       puppetScale: props.puppetScale,
-      assets: []
+      assets: [],
     },
     {},
     props.assetsPath,
-    () => {}
+    () => emits("ready")
   );
 
   observer.observe(stageRef.value!);
