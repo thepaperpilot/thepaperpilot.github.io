@@ -45,7 +45,7 @@
   <h2>Other friends</h2>
   <p>
     And here are some people who are otherwise very cool despite not having a
-    web button ;).
+    <a href="https://indieweb.org/88x31">web button</a> ;).
   </p>
   <ul class="inline">
     <li><a href="https://semenar.am/">Semenar</a></li>
