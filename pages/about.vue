@@ -42,7 +42,7 @@
 import Card from '~/components/Card.global.vue';
 
 useHead({
-    title: "About me"
+    title: "About me | The Paper Pilot"
 });
 </script>
 

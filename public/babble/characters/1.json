@@ -1,0 +1,350 @@
+{
+    "deadbonesStyle": false,
+    "name": "yhvr",
+    "layers": {
+        "children": [
+            {
+                "name": "head",
+                "children": [
+                    {
+                        "name": "variant-20",
+                        "rotation": 0,
+                        "scaleX": 1,
+                        "scaleY": 1,
+                        "x": 0,
+                        "y": -534,
+                        "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:183",
+                        "leaf": true,
+                        "inherit": {},
+                        "path": [
+                            0,
+                            0
+                        ]
+                    },
+                    {
+                        "name": "variant-03",
+                        "rotation": 0,
+                        "scaleX": 1,
+                        "scaleY": 1,
+                        "x": 0,
+                        "y": -534,
+                        "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:107",
+                        "leaf": true,
+                        "inherit": {},
+                        "path": [
+                            0,
+                            1
+                        ]
+                    },
+                    {
+                        "name": "variant-04",
+                        "rotation": 0,
+                        "scaleX": 1,
+                        "scaleY": 1,
+                        "x": 0,
+                        "y": -534,
+                        "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:112",
+                        "leaf": true,
+                        "inherit": {},
+                        "path": [
+                            0,
+                            2
+                        ]
+                    },
+                    {
+                        "name": "variant-04",
+                        "rotation": 0,
+                        "scaleX": 1,
+                        "scaleY": 1,
+                        "x": 0,
+                        "y": -534,
+                        "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:119",
+                        "leaf": true,
+                        "inherit": {},
+                        "path": [
+                            0,
+                            3
+                        ]
+                    },
+                    {
+                        "name": "variant-09",
+                        "rotation": 0,
+                        "scaleX": 1,
+                        "scaleY": 1,
+                        "x": 0,
+                        "y": -534,
+                        "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:154",
+                        "leaf": true,
+                        "inherit": {},
+                        "path": [
+                            0,
+                            4
+                        ]
+                    },
+                    {
+                        "name": "variant-20-top",
+                        "rotation": 0,
+                        "scaleX": 1,
+                        "scaleY": 1,
+                        "x": 0,
+                        "y": -534,
+                        "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:268",
+                        "leaf": true,
+                        "inherit": {},
+                        "path": [
+                            0,
+                            5
+                        ]
+                    }
+                ],
+                "inherit": {},
+                "path": [
+                    0
+                ]
+            },
+            {
+                "name": "emotes",
+                "head": true,
+                "children": [
+                    {
+                        "name": "default",
+                        "emote": 0,
+                        "children": [
+                            {
+                                "name": "variant-16",
+                                "rotation": 0,
+                                "scaleX": 1,
+                                "scaleY": 1,
+                                "x": 0,
+                                "y": -534,
+                                "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:137",
+                                "leaf": true,
+                                "inherit": {
+                                    "head": true,
+                                    "emote": 0
+                                },
+                                "path": [
+                                    1,
+                                    0,
+                                    0
+                                ],
+                                "emoteLayer": "eyes"
+                            },
+                            {
+                                "name": "happy-08",
+                                "rotation": 0,
+                                "scaleX": 1,
+                                "scaleY": 1,
+                                "x": 0,
+                                "y": -534,
+                                "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:65",
+                                "leaf": true,
+                                "inherit": {
+                                    "head": true,
+                                    "emote": 0
+                                },
+                                "path": [
+                                    1,
+                                    0,
+                                    1
+                                ],
+                                "emoteLayer": "mouth"
+                            }
+                        ],
+                        "inherit": {
+                            "head": true
+                        },
+                        "path": [
+                            1,
+                            0
+                        ]
+                    },
+                    {
+                        "name": "shocked",
+                        "rotation": 0,
+                        "scaleX": 1,
+                        "scaleY": 1,
+                        "x": 0,
+                        "y": 0,
+                        "children": [
+                            {
+                                "name": "variant-13",
+                                "rotation": 0,
+                                "scaleX": 1,
+                                "scaleY": 1,
+                                "x": 0,
+                                "y": -534,
+                                "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:134",
+                                "leaf": true,
+                                "inherit": {
+                                    "head": true,
+                                    "emote": 1
+                                },
+                                "path": [
+                                    1,
+                                    1,
+                                    0
+                                ],
+                                "emoteLayer": "eyes"
+                            },
+                            {
+                                "name": "sad-01",
+                                "rotation": 0,
+                                "scaleX": 1,
+                                "scaleY": 1,
+                                "x": 0,
+                                "y": -534,
+                                "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:76",
+                                "leaf": true,
+                                "inherit": {
+                                    "head": true,
+                                    "emote": 1
+                                },
+                                "path": [
+                                    1,
+                                    1,
+                                    1
+                                ],
+                                "emoteLayer": "mouth"
+                            }
+                        ],
+                        "inherit": {
+                            "head": true
+                        },
+                        "path": [
+                            1,
+                            1
+                        ],
+                        "emote": 1
+                    },
+                    {
+                        "name": "bemused",
+                        "rotation": 0,
+                        "scaleX": 1,
+                        "scaleY": 1,
+                        "x": 0,
+                        "y": 0,
+                        "children": [
+                            {
+                                "name": "variant-03",
+                                "rotation": 0,
+                                "scaleX": 1,
+                                "scaleY": 1,
+                                "x": 0,
+                                "y": -534,
+                                "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:124",
+                                "leaf": true,
+                                "inherit": {
+                                    "head": true,
+                                    "emote": 2
+                                },
+                                "path": [
+                                    1,
+                                    2,
+                                    0
+                                ],
+                                "emoteLayer": "eyes"
+                            },
+                            {
+                                "name": "sad-05",
+                                "rotation": 0,
+                                "scaleX": 1,
+                                "scaleY": 1,
+                                "x": 0,
+                                "y": -534,
+                                "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:80",
+                                "leaf": true,
+                                "inherit": {
+                                    "head": true,
+                                    "emote": 2
+                                },
+                                "path": [
+                                    1,
+                                    2,
+                                    1
+                                ],
+                                "emoteLayer": "mouth"
+                            }
+                        ],
+                        "inherit": {
+                            "head": true
+                        },
+                        "path": [
+                            1,
+                            2
+                        ],
+                        "emote": 2
+                    },
+                    {
+                        "name": "wink",
+                        "rotation": 0,
+                        "scaleX": 1,
+                        "scaleY": 1,
+                        "x": 0,
+                        "y": 0,
+                        "children": [
+                            {
+                                "name": "variant-15",
+                                "rotation": 0,
+                                "scaleX": 1,
+                                "scaleY": 1,
+                                "x": 0,
+                                "y": -534,
+                                "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:136",
+                                "leaf": true,
+                                "inherit": {
+                                    "head": true,
+                                    "emote": 3
+                                },
+                                "path": [
+                                    1,
+                                    3,
+                                    0
+                                ],
+                                "emoteLayer": "eyes"
+                            },
+                            {
+                                "name": "happy-06",
+                                "rotation": 0,
+                                "scaleX": 1,
+                                "scaleY": 1,
+                                "x": 11,
+                                "y": -542,
+                                "id": "47027bbc-eed0-47a9-84cb-578c34fc8c46:63",
+                                "leaf": true,
+                                "inherit": {
+                                    "head": true,
+                                    "emote": 3
+                                },
+                                "path": [
+                                    1,
+                                    3,
+                                    1
+                                ],
+                                "emoteLayer": "mouth"
+                            }
+                        ],
+                        "inherit": {
+                            "head": true
+                        },
+                        "path": [
+                            1,
+                            3
+                        ],
+                        "emote": 3
+                    }
+                ],
+                "inherit": {},
+                "path": [
+                    1
+                ]
+            }
+        ]
+    },
+    "id": 1,
+    "emote": 0,
+    "creator": "47027bbc-eed0-47a9-84cb-578c34fc8c46",
+    "creatorNick": "Stella",
+    "oc": "47027bbc-eed0-47a9-84cb-578c34fc8c46",
+    "ocNick": "Stella"
+}

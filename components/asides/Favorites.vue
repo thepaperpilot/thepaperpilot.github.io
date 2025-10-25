@@ -9,6 +9,7 @@
         <h3>Meta</h3>
         <ul>
             <li><NuxtLink to="/about">About me</NuxtLink></li>
+            <li><NuxtLink to="/friends">Friends</NuxtLink></li>
             <li><NuxtLink to="/blogroll">Blogroll</NuxtLink></li>
             <li><NuxtLink to="/garden/now">/now</NuxtLink></li>
         </ul>

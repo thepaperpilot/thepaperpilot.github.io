@@ -19,6 +19,6 @@
 
 <script setup lang="ts">
 useHead({
-    title: "Blogroll"
+    title: "Blogroll | The Paper Pilot"
 });
 </script>
