@@ -50,7 +50,6 @@
   <ul class="inline">
     <li><a href="https://semenar.am/">Semenar</a></li>
     <li><a href="https://jacorb90.me/">Jacorb</a></li>
-    <li><a href="https://semenar.am/">Semenar</a></li>
     <li><a href="https://nxf.me/">Flame</a></li>
     <li><a href="https://linktr.ee/Drillur">Drillur</a></li>
     <li><a href="https://en.pronouns.page/@unpingabot">unpingabot</a></li>
