@@ -69,6 +69,10 @@ export default async () => {
       "/projects": { redirect: "/garden/my-projects" },
       "/babble": { redirect: "/garden/babble-buds" },
       "/themoddingtree": { redirect: "/garden/profectus" },
+      "/garden/the-beginner-s-guide": { redirect: "/garden/the-beginners-guide" },
+      "/garden/the-indieweb/amplification": { redirect: "/garden/amplification" },
+      "/garden/the-indieweb/signature-blocks": { redirect: "/garden/signature-blocks" },
+      "/garden/the-small-web": { redirect: "/garden/small-web" },
     },
 
     app: {
