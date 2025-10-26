@@ -45,7 +45,10 @@ watch([graphEl, data], ([graphEl, data]) => {
       elements: {
         nodes: [
           ...Object.keys(data.pages ?? {}).map((key) => ({
-            data: { id: key, label: data.pages[key] },
+            data: {
+              id: key,
+              label: data.pages[key]?.split("/").at(-1),
+            },
           })),
           { data: { id: "home", label: "Home", url: "/" } },
           { data: { id: "about", label: "About Me", url: "/about" } },
