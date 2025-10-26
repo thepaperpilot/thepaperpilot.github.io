@@ -1,20 +1,26 @@
 <template>
-    <ClientOnly>
-        <Teleport to="#asides">
-            <div class="aside">
-                <slot />
-            </div>
-        </Teleport>
-    </ClientOnly>
+  <ClientOnly>
+    <Teleport to="#asides">
+      <div class="aside" :style="{ order }">
+        <slot />
+      </div>
+    </Teleport>
+  </ClientOnly>
 </template>
+
+<script setup lang="ts">
+defineProps<{
+  order: number;
+}>();
+</script>
 
 <style lang="css" scoped>
 .aside {
-    background: #feff9c !important;
-    padding: 1em;
-    color: var(--nord1);
-    margin-top: 18px;
-    position: relative;
+  background: #feff9c !important;
+  padding: 1em;
+  color: var(--nord1);
+  margin-top: 18px;
+  position: relative;
 }
 
 .aside::before {

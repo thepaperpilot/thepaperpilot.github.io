@@ -1,5 +1,5 @@
 <template>
-  <Aside v-if="doc.taggedBy">
+  <Aside v-if="doc.taggedBy" :order="200">
     <h3>Pages tagged "{{ doc.name }}":</h3>
     <ul>
       <li v-for="(text, link) in doc.taggedBy">

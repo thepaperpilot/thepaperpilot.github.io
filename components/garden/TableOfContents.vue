@@ -1,5 +1,5 @@
 <template>
-    <Aside>
+    <Aside :order="300">
         <h3>Outline</h3>
         <NuxtLink to="#top" class="to-top">
             <Icon name="material-symbols:vertical-align-top" /> Top

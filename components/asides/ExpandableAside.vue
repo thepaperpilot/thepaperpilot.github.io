@@ -1,7 +1,12 @@
 <template>
   <ClientOnly>
     <Teleport to="#asides">
-      <div ref="placeholder" class="graph-placeholder" @click="open"></div>
+      <div
+        ref="placeholder"
+        class="graph-placeholder"
+        :style="{ order }"
+        @click="open"
+      ></div>
     </Teleport>
 
     <Teleport to="body">
@@ -17,6 +22,10 @@
 </template>
 
 <script setup lang="ts">
+defineProps<{
+  order: number;
+}>();
+
 const placeholder = useTemplateRef("placeholder");
 const parentEl = ref<HTMLElement>();
 

@@ -1,5 +1,5 @@
 <template>
-    <Aside>
+    <Aside :order="100">
         <h3>Recommended Pages</h3>
         <ul>
             <li v-for="url in data?.favorites">

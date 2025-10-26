@@ -1,5 +1,5 @@
 <template>
-  <ExpandableAside>
+  <ExpandableAside :order="1000">
     <div class="graph" ref="graphEl"></div>
   </ExpandableAside>
 </template>
