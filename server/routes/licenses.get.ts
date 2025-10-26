@@ -1,24 +1,24 @@
-const fs = require("fs");
+import glf from "generate-license-file";
 
-// TODO When importing this as a module, I get a type-error from arborist
-const glf = require("generate-license-file");
-
-(async () => {
-    // Write licenses to /licenses
-    const fd = fs.openSync("public/licenses.txt", "w+");
-    const licenses = await glf.getLicenseFileText("./package.json", {
-        replace: {
-            "rc@1.2.8": "./node_modules/rc/LICENSE.MIT",
-            "bare-path@2.1.3": "./node_modules/bare-path/LICENSE",
-            "type-fest@3.13.1": "https://raw.githubusercontent.com/sindresorhus/type-fest/refs/heads/main/license-mit",
-            "@cloudflare/kv-asset-handler@0.3.4": "https://raw.githubusercontent.com/cloudflare/workers-sdk/refs/heads/main/LICENSE-MIT",
-            "only@0.0.2": "https://raw.githubusercontent.com/tj/node-only/refs/heads/master/LICENSE"
-        },
-        exclude: [
-            "@tresjs/nuxt"
-        ]
-    });
-    fs.writeSync(fd, licenses + `
+export default defineEventHandler(async (event) => {
+  const licenses = await glf.getLicenseFileText("./package.json", {
+    replace: {
+      "rc@1.2.8": "./node_modules/rc/LICENSE.MIT",
+      "bare-path@2.1.3": "./node_modules/bare-path/LICENSE",
+      "type-fest@3.13.1":
+        "https://raw.githubusercontent.com/sindresorhus/type-fest/refs/heads/main/license-mit",
+      "@cloudflare/kv-asset-handler@0.3.4":
+        "https://raw.githubusercontent.com/cloudflare/workers-sdk/refs/heads/main/LICENSE-MIT",
+      "only@0.0.2":
+        "https://raw.githubusercontent.com/tj/node-only/refs/heads/master/LICENSE",
+    },
+    exclude: ["@tresjs/nuxt"],
+  });
+  
+  setHeader(event, "Content-Type", "text/markdown");
+  return (
+    licenses +
+    `
         
 -----------
         
@@ -473,7 +473,6 @@ understandings, or agreements concerning use of licensed material. For
 the avoidance of doubt, this paragraph does not form part of the
 public licenses.
       
-Creative Commons may be contacted at creativecommons.org.`);
-        fs.closeSync(fd);
-})();
-    
+Creative Commons may be contacted at creativecommons.org.`
+  );
+});

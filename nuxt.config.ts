@@ -44,6 +44,7 @@ export default async () => {
 
       /** Cached pages */
       // '/garden/**': { swr: true },
+      '/licenses': { swr: true },
 
       /** Redirects */
       "/guide-to-incrementals": { redirect: "/garden/guide-to-incrementals" },

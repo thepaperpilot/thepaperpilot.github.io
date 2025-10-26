@@ -2,9 +2,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build:licenses": "set NODE_OPTIONS=--max-old-space-size=32768 && node build_licenses.cjs",
-    "build": "npm run build:licenses && nuxt build",
-    "dev": "set NODE_OPTIONS=--max-old-space-size=32768 && nuxt dev",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
     "preview": "nuxt preview"
   },
   "dependencies": {
