@@ -6,6 +6,9 @@
     </Container>
     <Background />
     <Footer />
+    <ClientOnly>
+        <Graph />
+    </ClientOnly>
     <Favorites />
 </template>
 
@@ -13,6 +16,7 @@
 import AsidesContainer from "~/components/asides/AsidesContainer.vue";
 import Favorites from "~/components/asides/Favorites.vue";
 import type { NuxtError } from '#app';
+import Graph from "./components/asides/Graph.vue";
 
 defineProps<{
     error: NuxtError;

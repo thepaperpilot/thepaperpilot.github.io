@@ -7,12 +7,16 @@
     </Container>
     <Background />
     <Footer />
+    <ClientOnly>
+        <Graph />
+    </ClientOnly>
     <Favorites />
 </template>
 
 <script setup lang="ts">
 import AsidesContainer from "~/components/asides/AsidesContainer.vue";
 import Favorites from "~/components/asides/Favorites.vue";
+import Graph from "./components/asides/Graph.vue";
 </script>
 
 <style lang="css">

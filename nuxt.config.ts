@@ -4,6 +4,7 @@ import { nodePolyfills } from "vite-plugin-node-polyfills";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default async () => {
   return defineNuxtConfig({
+    logLevel: "verbose",
     devtools: { enabled: true },
     modules: [
       "@tresjs/nuxt",
@@ -41,6 +42,7 @@ export default async () => {
       /** Pre-rendererd pages */
       "/": { prerender: true },
       "/about": { prerender: true },
+      '/api/search': { prerender: true },
 
       /** Cached pages */
       // '/garden/**': { swr: true },
