@@ -1,17 +1,14 @@
 <template>
   <ClientOnly>
     <Teleport to="#asides">
-      <div ref="placeholder" class="graph-placeholder"></div>
+      <div ref="placeholder" class="graph-placeholder" @click="open"></div>
     </Teleport>
 
     <Teleport to="body">
-      <div
-        class="graph-paper"
-        :class="{ expanded }"
-        :style="graphStyle"
-        @click="open"
-      >
-        <slot />
+      <div class="asides-container">
+        <div class="graph-paper" :class="{ expanded }" :style="graphStyle">
+          <slot />
+        </div>
       </div>
 
       <div v-if="expanded" class="closer" @click.self="close" />
@@ -97,10 +94,29 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="css" scoped>
+.asides-container:not(:has(.expanded)) {
+  width: 300px;
+  height: calc(100% - 180px);
+  position: fixed;
+  left: calc((100% - 310px - min(800px, 0.95 * (100% - 310px))) / 2);
+  top: 18px;
+  padding-bottom: 30px;
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0px,
+    white 18px,
+    white calc(100% - 30px),
+    transparent
+  );
+  overflow-y: auto;
+  pointer-events: none;
+}
+
 .graph-placeholder {
   width: 100%;
   height: 300px;
   margin-top: 18px;
+  cursor: pointer;
 }
 
 .graph-paper {
@@ -116,14 +132,6 @@ onBeforeUnmount(() => {
   transition: all 0.3s ease;
   z-index: 10;
   overflow: hidden;
-}
-
-.graph-paper:not(.expanded) {
-  cursor: pointer;
-}
-
-.graph-paper:not(.expanded) > * {
-  pointer-events: none;
 }
 
 .graph-paper.expanded {
