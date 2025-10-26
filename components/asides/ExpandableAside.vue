@@ -5,7 +5,7 @@
     </Teleport>
 
     <Teleport to="body">
-      <div class="asides-container">
+      <div class="asides-container" :class="{ masking }">
         <div class="graph-paper" :class="{ expanded }" :style="graphStyle">
           <slot />
         </div>
@@ -22,6 +22,17 @@ const parentEl = ref<HTMLElement>();
 
 const expanded = ref(false);
 const startRect = ref<DOMRect>();
+const masking = ref(true);
+
+let timeoutId: NodeJS.Timeout | undefined = undefined;
+watch(expanded, (expanded) => {
+  clearTimeout(timeoutId);
+  if (expanded) {
+    masking.value = false;
+  } else {
+    timeoutId = setTimeout(() => (masking.value = true), 300);
+  }
+});
 
 const graphStyle = computed(() => {
   if (expanded.value || !startRect.value) return {};
@@ -94,7 +105,7 @@ onBeforeUnmount(() => {
 </script>
 
 <style lang="css" scoped>
-.asides-container:not(:has(.expanded)) {
+.asides-container.masking {
   width: 300px;
   height: calc(100% - 180px);
   position: fixed;
@@ -108,7 +119,6 @@ onBeforeUnmount(() => {
     white calc(100% - 30px),
     transparent
   );
-  overflow-y: auto;
   pointer-events: none;
 }
 

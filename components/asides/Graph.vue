@@ -26,8 +26,6 @@ const currentPage = computed(() => {
   return route.path.slice(1);
 });
 
-const observer = new ResizeObserver(centerOnCurrentPage);
-
 function centerOnCurrentPage() {
   const node = cy.value?.$id(currentPage.value);
   if (node && node.nonempty()) {
@@ -42,9 +40,6 @@ watch(currentPage, centerOnCurrentPage);
 watch([graphEl, data], ([graphEl, data]) => {
   cy.value?.destroy();
   if (graphEl != null && data != null) {
-    observer.disconnect();
-    observer.observe(graphEl);
-
     cy.value = cytoscape({
       container: graphEl,
       elements: {
@@ -220,8 +215,11 @@ watch([graphEl, data], ([graphEl, data]) => {
 
 <style lang="css" scoped>
 .graph {
-  width: calc(100% + 60px);
-  height: calc(100% + 60px);
-  margin: -30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90vw;
+  height: 90vh;
+  transform: translate(-50%, -50%);
 }
 </style>
