@@ -80,7 +80,7 @@ useHead({
     }
 }
 
-.hero {
+:deep(.hero) {
     height: 80%;
     width: unset;
     margin: auto;
