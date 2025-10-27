@@ -4,8 +4,6 @@ import { nodePolyfills } from "vite-plugin-node-polyfills";
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default async () => {
   return defineNuxtConfig({
-    logLevel: "verbose",
-    devtools: { enabled: true },
     modules: [
       "@tresjs/nuxt",
       "@nuxt/icon",
@@ -22,7 +20,7 @@ export default async () => {
     sitemap: {
       sitemaps: {
         pages: {
-          includeAppSources: true,
+          // includeAppSources: true,
           urls: [
             "advent",
             "dream",
@@ -42,11 +40,11 @@ export default async () => {
       /** Pre-rendererd pages */
       "/": { prerender: true },
       "/about": { prerender: true },
-      '/api/search': { prerender: true },
+      "/api/search": { prerender: true },
 
       /** Cached pages */
       // '/garden/**': { swr: true },
-      '/licenses': { swr: true },
+      "/licenses": { swr: true },
 
       /** Redirects */
       "/guide-to-incrementals": { redirect: "/garden/guide-to-incrementals" },
@@ -69,9 +67,17 @@ export default async () => {
       "/projects": { redirect: "/garden/my-projects" },
       "/babble": { redirect: "/garden/babble-buds" },
       "/themoddingtree": { redirect: "/garden/profectus" },
-      "/garden/the-beginner-s-guide": { redirect: "/garden/the-beginners-guide" },
-      "/garden/the-indieweb/amplification": { redirect: "/garden/amplification" },
-      "/garden/the-indieweb/signature-blocks": { redirect: "/garden/signature-blocks" },
+
+      /** Page renames */
+      "/garden/the-beginner-s-guide": {
+        redirect: "/garden/the-beginners-guide",
+      },
+      "/garden/the-indieweb/amplification": {
+        redirect: "/garden/amplification",
+      },
+      "/garden/the-indieweb/signature-blocks": {
+        redirect: "/garden/signature-blocks",
+      },
       "/garden/the-small-web": { redirect: "/garden/small-web" },
 
       /** CORS */
@@ -125,32 +131,6 @@ export default async () => {
 
     tres: {
       glsl: true,
-    },
-
-    content: {
-      experimental: {
-        search: true,
-      },
-      highlight: {
-        theme: "github-light",
-        langs: [
-          "json",
-          "js",
-          "ts",
-          "html",
-          "css",
-          "vue",
-          "shell",
-          "mdc",
-          "md",
-          "yaml",
-          "c",
-          "cpp",
-          "python",
-          "diff",
-          "git-commit",
-        ],
-      },
     },
 
     compatibilityDate: "2024-09-14",
