@@ -4,7 +4,7 @@
       <span>
         CC {{ new Date().getFullYear() }}
         <a class="h-card" rel="me" href="/about"
-          ><Img
+          ><NuxtImg
             class="p-right"
             src="/me.jpg"
             alt=""

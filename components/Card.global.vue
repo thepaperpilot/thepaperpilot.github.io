@@ -3,13 +3,14 @@
     class="card"
     :class="{ full: title == null && description == null && url == null }"
   >
-    <Img
-      v-if="image"
-      class="u-photo"
-      :src="image.startsWith('/garden/') ? `${reqUrl.origin}${image}` : image"
-      :alt="alt"
-      :height="`${imageHeight}px`"
-    />
+    <div class="img" v-if="image">
+      <Img
+        class="u-photo"
+        :src="image"
+        :alt="alt"
+        :height="`${imageHeight}px`"
+      />
+    </div>
     <h2 v-if="title" class="p-name">
       <a class="u-url" :href="url" v-if="url">{{ title }}</a>
       <template v-else>{{ title }}</template>
@@ -27,8 +28,6 @@
 
 <script setup lang="ts">
 import Img from "./Img.vue";
-
-const reqUrl = useRequestURL()
 
 withDefaults(
   defineProps<{
@@ -53,6 +52,7 @@ withDefaults(
   display: flex;
   flex-direction: column;
   min-width: 0;
+  max-width: 100%;
 }
 
 .card.full {
@@ -105,15 +105,14 @@ withDefaults(
   right: -105px;
 }
 
-.card img {
+.card .img {
   max-height: 11lh;
   height: 100%;
-  object-fit: contain;
   background: white;
   max-width: 100%;
 }
 
-.card.full img {
+.card.full .img {
   clip-path: polygon(
     18px 0%,
     100% 0,
