@@ -4,7 +4,13 @@
       <span>
         CC {{ new Date().getFullYear() }}
         <a class="h-card" rel="me" href="/about"
-          ><img class="p-right" src="/me.jpg" alt="" />The Paper Pilot</a
+          ><Img
+            class="p-right"
+            src="/me.jpg"
+            alt=""
+            width="24px"
+            height="24px"
+          />The Paper Pilot</a
         >.
       </span>
       <span>

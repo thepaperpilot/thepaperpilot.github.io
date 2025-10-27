@@ -73,6 +73,9 @@ export default async () => {
       "/garden/the-indieweb/amplification": { redirect: "/garden/amplification" },
       "/garden/the-indieweb/signature-blocks": { redirect: "/garden/signature-blocks" },
       "/garden/the-small-web": { redirect: "/garden/small-web" },
+
+      /** CORS */
+      "/_ipx/**": { cors: true },
     },
 
     app: {

@@ -12,7 +12,7 @@
                 <Hole />
             </Suspense>
         </TresCanvas>
-        <img class="hero" src="/paperpilot.png" :style="`--x-offset: ${xOffset * 20}%`" />
+        <Img height="480px" class="hero" src="/paperpilot.png" :style="`--x-offset: ${xOffset * 20}%`" />
     </div>
 
     <svg>

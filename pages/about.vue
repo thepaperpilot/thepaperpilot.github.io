@@ -9,10 +9,10 @@
         <Card image="/me.jpg" />
 
         <div class="otherAvatars">
-            <Card image="/avatar.jpg" />
-            <Card image="/haleyDrawing.jpg" />
-            <Card image="/headshot.jpg" />
-            <Card image="/profile.png" />
+            <Card image="/avatar.jpg" :imageHeight="120" />
+            <Card image="/haleyDrawing.jpg" :imageHeight="120" />
+            <Card image="/headshot.jpg" :imageHeight="120" />
+            <Card image="/profile.png" :imageHeight="120" />
         </div>
 
         I live in <span class="p-locality">Dallas</span>, <span class="p-region">Texas</span>, <span class="p-country-name">USA</span> with <a href="https://linktr.ee/myotherheart">my wife</a> and baby son. <span class="p-org h-card">I work at <span class="p-name">Topaz Labs LLC</span> as a <span class="p-job-title">Product Engineer</span>. <span class="p-role">I currently work on their web products; Express, Bloom, and Mosaic</span>.</span>
