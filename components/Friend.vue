@@ -147,18 +147,18 @@ async function onReady() {
   position: relative;
   display: flex;
   flex-direction: column;
-  height: 240px;
+  min-height: 240px;
   padding-top: 30px;
   z-index: 1;
   box-sizing: border-box;
 }
 
 .padLeft {
-  padding-left: 240px;
+  padding-left: calc(min(240px, 25%));
 }
 
 .padRight {
-  padding-right: 240px;
+  padding-right: calc(min(240px, 25%));
 }
 
 .babble-container > div:has(canvas) {
