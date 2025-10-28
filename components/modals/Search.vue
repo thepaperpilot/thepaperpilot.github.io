@@ -1,5 +1,5 @@
 <template>
-  <div class="search" @click="open = true">
+  <div class="search" @pointerdown="open = true">
     <Icon name="material-symbols:search" />Search
   </div>
   <Modal :open="open" @close="open = false">
