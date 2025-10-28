@@ -58,7 +58,7 @@ const open = ref(false);
   }
 
   #asides {
-    z-index: 1;
+    z-index: 10;
     right: 0;
     left: unset;
     top: 75px;
