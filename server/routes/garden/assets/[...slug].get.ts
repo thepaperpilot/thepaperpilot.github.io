@@ -1,5 +1,6 @@
 import fs from "node:fs/promises";
 import getManifest from "../../../utils/manifest";
+import { join } from "node:path";
 
 export default defineEventHandler(async (event) => {
   const path = getRouterParams(event).slug;
@@ -21,7 +22,8 @@ export default defineEventHandler(async (event) => {
 
     setHeader(event, "Content-Type", mime);
     setHeader(event, "Cache-Control", `public, max-age=${15 * 60}`);
-    const buffer = await fs.readFile(`../../garden_export/assets/${path}`);
+    const assetPath = join(process.cwd(), `garden_export/assets/${path}`);
+    const buffer = await fs.readFile(assetPath);
     return buffer;
   }
   return createError({ statusCode: 404, message: "1" });
