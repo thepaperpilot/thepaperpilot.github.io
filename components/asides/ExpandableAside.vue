@@ -140,6 +140,10 @@ onBeforeUnmount(() => {
   }
 }
 
+.asides-container:not(.masking) .graph-paper {
+  transition: all 0.3s ease;
+}
+
 .graph-placeholder {
   width: 100%;
   min-height: 300px;
@@ -157,7 +161,6 @@ onBeforeUnmount(() => {
   line-height: 30px;
   box-shadow: 0 0 10px 1px #0003 !important;
   box-sizing: border-box;
-  transition: all 0.3s ease;
   z-index: 10;
   overflow: hidden;
 }
