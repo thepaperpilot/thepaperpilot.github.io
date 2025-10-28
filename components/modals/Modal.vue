@@ -46,7 +46,7 @@ const emits = defineEmits<{
 .centered-paper {
     margin: 5vh auto;
     cursor: auto;
-    max-width: unset;
+    max-width: 95vw;
     pointer-events: all;
 }
 </style>
