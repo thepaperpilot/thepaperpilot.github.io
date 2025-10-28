@@ -41,7 +41,6 @@ export default async () => {
       /** Pre-rendererd pages */
       "/": { prerender: true },
       "/about": { prerender: true },
-      "/api/search": { prerender: true },
 
       /** Cached pages */
       // '/garden/**': { swr: true },
