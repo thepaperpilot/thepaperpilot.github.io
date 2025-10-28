@@ -20,7 +20,7 @@
         v-for="(suggestion, i) in suggestions"
         :class="selectedIndex === i ? 'selected' : ''"
         style="cursor: pointer"
-        @click="() => search = suggestion"
+        @click="() => (search = suggestion)"
       >
         {{ suggestion }}
       </li>
@@ -95,16 +95,33 @@ watch(
 );
 watch([miniSearch, search], ([miniSearch, search]) => {
   if (miniSearch) {
-    results.value = miniSearch.search(search);
-    suggestions.value =
-      miniSearch.autoSuggest(search, { fuzzy: true })[0]?.terms.slice(0, 10) ?? [];
-    console.log(results.value);
+    const newSuggestions =
+      miniSearch.autoSuggest(search, { fuzzy: true })[0]?.terms.slice(0, 10) ??
+      [];
+    if (
+      suggestions.value.length !== newSuggestions.length ||
+      suggestions.value.some(
+        (suggestion, i) => suggestion !== newSuggestions[i]
+      )
+    ) {
+      suggestions.value = newSuggestions;
+      selectedIndex.value = 0;
+    }
   } else {
     results.value = [];
     suggestions.value = [];
+    selectedIndex.value = 0;
   }
-  selectedIndex.value = 0;
 });
+watch(
+  [search, () => suggestions.value[selectedIndex.value], miniSearch],
+  ([search, suggestion, miniSearch]) => {
+    if ((search || suggestion) && miniSearch) {
+      results.value = miniSearch.search(`${suggestion} ${search}`);
+      console.log(results.value);
+    }
+  }
+);
 const currentPageResults = computed(() =>
   search.value === ""
     ? []
@@ -122,7 +139,7 @@ watch([open, data], ([open, data]) => {
   if (open && data == null) {
     execute();
   }
-})
+});
 
 function keyHandler(e: KeyboardEvent) {
   if (e.key == "k" && e.ctrlKey) {
