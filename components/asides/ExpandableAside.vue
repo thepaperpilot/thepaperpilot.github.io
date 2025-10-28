@@ -137,6 +137,7 @@ onBeforeUnmount(() => {
     left: unset;
     top: 75px;
     height: calc(100% - 300px);
+    z-index: 10;
   }
 }
 
