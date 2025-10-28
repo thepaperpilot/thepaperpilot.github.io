@@ -10,6 +10,7 @@ export default async () => {
       "@nuxt/image",
       "@nuxtjs/sitemap",
       "@nuxtjs/mdc",
+      "nuxt-shiki"
     ],
 
     site: {
