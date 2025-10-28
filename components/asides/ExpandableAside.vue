@@ -131,9 +131,18 @@ onBeforeUnmount(() => {
   pointer-events: none;
 }
 
+@media (max-width: 1000px) {
+  .asides-container.masking {
+    right: 0;
+    left: unset;
+    top: 75px;
+    height: calc(100% - 300px);
+  }
+}
+
 .graph-placeholder {
   width: 100%;
-  height: 300px;
+  min-height: 300px;
   margin-top: 18px;
   cursor: pointer;
 }
