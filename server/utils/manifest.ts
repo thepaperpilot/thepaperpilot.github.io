@@ -1,7 +1,9 @@
 import { readFile } from "node:fs/promises";
+import { join } from "node:path";
 
 export default async function getManifest() {
-  const fileContents = await readFile("../../garden_export/manifest.json", "utf-8");
+  const manifestPath = join(process.cwd(), "garden_export/manifest.json");
+  const fileContents = await readFile(manifestPath, "utf-8");
   return JSON.parse(fileContents) as {
     pages: Record<string, string>;
     assets: string[];
