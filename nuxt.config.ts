@@ -81,15 +81,15 @@ export default async () => {
       "/garden/the-small-web": { redirect: "/garden/small-web" },
 
       /** Games from /public need slashes at end to load properly */
-      "^/advent$": { redirect: "/advent/" },
-      "^/dream$": { redirect: "/dream/" },
-      "^/gamedevtree$": { redirect: "/gamedevtree/" },
-      "^/kronos$": { redirect: "/kronos/" },
-      "^/lit$": { redirect: "/lit/" },
-      "^/ludwig$": { redirect: "/ludwig/" },
-      "^/planar$": { redirect: "/planar/" },
-      "^/skilltreetest$": { redirect: "/skilltreetest/" },
-      "^/the_ascension_tree$": { redirect: "/the_ascension_tree/" },
+      "/advent$": { redirect: "/advent/" },
+      "/dream$": { redirect: "/dream/" },
+      "/gamedevtree$": { redirect: "/gamedevtree/" },
+      "/kronos$": { redirect: "/kronos/" },
+      "/lit$": { redirect: "/lit/" },
+      "/ludwig$": { redirect: "/ludwig/" },
+      "/planar$": { redirect: "/planar/" },
+      "/skilltreetest$": { redirect: "/skilltreetest/" },
+      "/the_ascension_tree$": { redirect: "/the_ascension_tree/" },
 
       /** CORS */
       "/_ipx/**": { cors: true },
