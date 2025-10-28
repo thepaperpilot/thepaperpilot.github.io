@@ -53,6 +53,7 @@
     <li><a href="https://nxf.me/">Flame</a></li>
     <li><a href="https://linktr.ee/Drillur">Drillur</a></li>
     <li><a href="https://en.pronouns.page/@unpingabot">unpingabot</a></li>
+    <li><a href="https://123ishatest.com/">Isha</a></li>
   </ul>
 
   <h2>My button</h2>
