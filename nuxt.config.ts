@@ -10,7 +10,7 @@ export default async () => {
       "@nuxt/image",
       "@nuxtjs/sitemap",
       "@nuxtjs/mdc",
-      "nuxt-shiki"
+      "nuxt-shiki",
     ],
 
     site: {
@@ -135,6 +135,36 @@ export default async () => {
 
     vite: {
       plugins: [nodePolyfills()],
+    },
+
+    mdc: {
+      remarkPlugins: {
+        // Register/Configure remark plugin to extend the parser, e.g.
+        "remark-math": {
+          src: "remark-math",
+          options: {
+            singleDollarTextMath: true,
+          },
+        },
+      },
+      rehypePlugins: {
+        // Register/Configure rehype plugin to extend the parser, e.g.
+        "rehype-mathjax": {
+          src: "rehype-mathjax",
+          options: {
+            tex: {
+              inlineMath: [
+                ["$", "$"],
+                ["\\(", "\\)"],
+              ],
+              displayMath: [
+                ["$$", "$$"],
+                ["\\[", "\\]"],
+              ],
+            },
+          },
+        },
+      },
     },
   });
 };
