@@ -39,12 +39,10 @@ export default async () => {
 
     routeRules: {
       /** Pre-rendererd pages */
-      "/": { prerender: true },
-      "/about": { prerender: true },
+      "/licenses": { prerender: true },
 
       /** Cached pages */
       // '/garden/**': { swr: true },
-      "/licenses": { swr: true },
 
       /** Redirects */
       "/guide-to-incrementals": { redirect: "/garden/guide-to-incrementals" },
@@ -79,17 +77,6 @@ export default async () => {
         redirect: "/garden/signature-blocks",
       },
       "/garden/the-small-web": { redirect: "/garden/small-web" },
-
-      /** Games from /public need slashes at end to load properly */
-      "/advent$": { redirect: "/advent/" },
-      "/dream$": { redirect: "/dream/" },
-      "/gamedevtree$": { redirect: "/gamedevtree/" },
-      "/kronos$": { redirect: "/kronos/" },
-      "/lit$": { redirect: "/lit/" },
-      "/ludwig$": { redirect: "/ludwig/" },
-      "/planar$": { redirect: "/planar/" },
-      "/skilltreetest$": { redirect: "/skilltreetest/" },
-      "/the_ascension_tree$": { redirect: "/the_ascension_tree/" },
 
       /** CORS */
       "/_ipx/**": { cors: true },
@@ -149,9 +136,5 @@ export default async () => {
     vite: {
       plugins: [nodePolyfills()],
     },
-
-    experimental: {
-      strictTrailingSlash: true
-    }
   });
 };
