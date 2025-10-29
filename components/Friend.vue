@@ -172,6 +172,7 @@ async function onReady() {
 
 .babble-links {
   margin-top: 30px;
+  display: flex;
 }
 
 .v-enter-active,
