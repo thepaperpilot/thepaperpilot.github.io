@@ -3,7 +3,7 @@
   <template v-else-if="doc">
     <h1 id="top">{{ doc.name }}</h1>
     <GardenHeader :doc="doc" />
-    <MDC :value="data.content" />
+    <MDC :value="data.content" partial />
     <ReferencedBy :doc="doc" />
     <Tagged :doc="doc" />
     <TableOfContents :doc="doc" />
