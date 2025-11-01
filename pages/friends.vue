@@ -36,11 +36,10 @@
     <a href="/garden/my-projects">projects</a> with or otherwise consider my
     internet friends.
   </p>
-  <WebButton link="https://duducat.moe/" image="/duducat.gif" />
-  <span>
-    (yes there's only one. More people need to make websites and/or website
-    buttons lol)
-  </span>
+  <div class="buttons">
+    <WebButton link="https://duducat.moe/" image="/duducat.gif" />
+    <WebButton link="https://piterpicher.neocities.org/" image="/piterpicher.gif" />
+  </div>
 
   <h2>Other friends</h2>
   <p>
@@ -94,3 +93,10 @@ onMounted(() => {
   });
 });
 </script>
+
+<style scoped>
+.buttons {
+  display: flex;
+  gap: 8px 0;
+}
+</style>
