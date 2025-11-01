@@ -14,7 +14,7 @@ export default async () => {
     ],
 
     site: {
-      url: "https://thepaperpilot.org",
+      url: "https://paperpilot.dev",
       name: "The Paper Pilot",
     },
 
