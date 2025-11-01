@@ -29,3 +29,6 @@
 	path = public/planar
 	url = git@code.incremental.social:thepaperpilot/Planar-Pioneers.git
 	branch = gh-pages
+[submodule "site/public/automaton"]
+	path = site/public/automaton
+	url = git@code.incremental.social:thepaperpilot/Incremental-Automaton.git
