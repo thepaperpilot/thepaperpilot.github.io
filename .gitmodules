@@ -32,3 +32,4 @@
 [submodule "public/automaton"]
 	path = public/automaton
 	url = git@code.incremental.social:thepaperpilot/Incremental-Automaton.git
+	branch = pages
