@@ -6,11 +6,16 @@
         class="graph-placeholder"
         :style="{ order }"
         @click="open"
+        v-show="visible !== false"
       ></div>
     </Teleport>
 
     <Teleport to="body">
-      <div class="asides-container" :class="{ masking }">
+      <div
+        class="asides-container"
+        :class="{ masking }"
+        v-show="visible !== false"
+      >
         <div class="graph-paper" :class="{ expanded }" :style="graphStyle">
           <slot />
         </div>
@@ -24,6 +29,7 @@
 <script setup lang="ts">
 defineProps<{
   order: number;
+  visible?: boolean;
 }>();
 
 const placeholder = useTemplateRef("placeholder");
