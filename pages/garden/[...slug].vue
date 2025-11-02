@@ -1,43 +1,43 @@
 <template>
-  <NotFound v-if="data == null || !('content' in data)" />
-  <template v-else-if="doc">
-    <h1 id="top">{{ doc.name }}</h1>
-    <GardenHeader :doc="doc" />
-    <ClientOnly>
-      <MDC v-if="data?.content" :value="data.content" partial />
-    </ClientOnly>
-    <ReferencedBy :doc="doc" />
-    <Tagged :doc="doc" />
-    <TableOfContents :doc="doc" />
+  <NotFound v-if="error" />
+  <template v-else-if="hasDoc(data)">
+    <h1 id="top">{{ data.doc.name }}</h1>
+    <GardenHeader :doc="data.doc" />
+    <MDCRenderer v-if="data.content" v-bind="data.content" />
+    <ReferencedBy :doc="data.doc" />
+    <Tagged :doc="data.doc" />
+    <TableOfContents :doc="data.doc" />
   </template>
 </template>
 
 <script setup lang="ts">
-import type matter from "gray-matter";
+import type { MDCParserResult } from "@nuxtjs/mdc";
 import GardenHeader from "~/components/garden/GardenHeader.vue";
 import ReferencedBy from "~/components/garden/ReferencedBy.vue";
 import TableOfContents from "~/components/garden/TableOfContents.vue";
 import Tagged from "~/components/garden/Tagged.vue";
 
 const route = useRoute();
-const { data, refresh } = await useFetch<matter.GrayMatterFile<any>>(
+
+const { data, error } = await useFetch(
   () =>
     `/api/garden/${(Array.isArray(route.params.slug)
       ? route.params.slug
       : [route.params.slug]
-    ).join("/")}`
-);
-const doc = computed(() =>
-  data.value?.data ? (data.value.data as GardenDocument) : undefined
+    ).join("/")}`,
+  { server: false, key: () => route.fullPath }
 );
 
-watch(
-  () => route.params.slug,
-  () => refresh(),
-  { deep: true }
-);
+function hasDoc(
+  obj: any
+): obj is { doc: GardenDocument; content: MDCParserResult } {
+  return obj != null && typeof obj === "object" && "doc" in obj;
+}
 
 useHead({
-  title: () => `${doc.value?.name ?? "Garden"} | The Paper Pilot`,
+  title: () =>
+    `${
+      hasDoc(data.value) ? data.value.doc.name ?? "Garden" : "Garden"
+    } | The Paper Pilot`,
 });
 </script>
