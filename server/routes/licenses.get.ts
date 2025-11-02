@@ -3,18 +3,16 @@ import glf from "generate-license-file";
 export default defineEventHandler(async (event) => {
   const licenses = await glf.getLicenseFileText("./package.json", {
     replace: {
-      "rc@1.2.8": "./node_modules/rc/LICENSE.MIT",
-      "bare-path@2.1.3": "./node_modules/bare-path/LICENSE",
-      "type-fest@3.13.1":
-        "https://raw.githubusercontent.com/sindresorhus/type-fest/refs/heads/main/license-mit",
-      "@cloudflare/kv-asset-handler@0.3.4":
+      "@cloudflare/kv-asset-handler@0.4.0":
         "https://raw.githubusercontent.com/cloudflare/workers-sdk/refs/heads/main/LICENSE-MIT",
-      "only@0.0.2":
-        "https://raw.githubusercontent.com/tj/node-only/refs/heads/master/LICENSE",
+      "cytoscape@3.33.1": "./node_modules/cytoscape/license",
+      "rc@1.2.8": "./node_modules/rc/LICENSE.MIT",
+      "type-fest@5.1.0":
+        "https://raw.githubusercontent.com/sindresorhus/type-fest/refs/heads/main/license-mit",
     },
     exclude: ["@tresjs/nuxt"],
   });
-  
+
   setHeader(event, "Content-Type", "text/markdown");
   return (
     licenses +
