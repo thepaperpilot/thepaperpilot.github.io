@@ -57,7 +57,7 @@
   </Modal>
 </template>
 
-<script lang="ts" async setup>
+<script lang="ts" setup>
 import MiniSearch, { type SearchResult } from "minisearch";
 import Modal from "./Modal.vue";
 
@@ -67,6 +67,9 @@ const open = ref(false);
 const search = ref("");
 const currentPage = ref(1);
 const inputRef = ref<HTMLElement>();
+
+// Search button stops working after navigation for some reason unless a watcher like this is added:
+watchEffect(() => open.value);
 
 onBeforeMount(() => {
   document.addEventListener("keydown", keyHandler);
@@ -122,7 +125,7 @@ watch(
     } else {
       results.value = [];
     }
-    currentPage.value = 1
+    currentPage.value = 1;
   }
 );
 const currentPageResults = computed(() =>
