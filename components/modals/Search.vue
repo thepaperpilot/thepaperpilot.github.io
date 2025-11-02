@@ -40,7 +40,7 @@
       <NuxtLink :to="`/garden/${post.id}`" @click="open = false">{{
         post.name
       }}</NuxtLink>
-      <GardenHeader :doc="post as unknown as GardenDocument" />
+      <GardenHeader :doc="post" />
       <ul class="inline" v-if="post.tags">
         <li v-for="tag in post.tags">
           {{ tag }}
@@ -119,7 +119,10 @@ watch(
     if ((search || suggestion) && miniSearch) {
       results.value = miniSearch.search(`${suggestion} ${search}`);
       console.log(results.value);
+    } else {
+      results.value = [];
     }
+    currentPage.value = 1
   }
 );
 const currentPageResults = computed(() =>

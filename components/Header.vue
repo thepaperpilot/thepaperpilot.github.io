@@ -77,7 +77,7 @@ a {
 }
 
 .mobile-menu-toggle {
-    background-color: red;
+    background-color: yellow;
     display: none;
 }
 

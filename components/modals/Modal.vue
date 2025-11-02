@@ -39,7 +39,7 @@ const emits = defineEmits<{
     bottom: 0;
     overflow-y: auto;
     overflow-x: visible;
-    z-index: 10;
+    z-index: 100;
     pointer-events: none;
 }
 
