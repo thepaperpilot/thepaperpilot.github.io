@@ -122,7 +122,23 @@ onMounted(() => {
   const children = raw[0]?.children;
   // @ts-ignore
   const defaultSlot = children.default();
-  code.value = defaultSlot[0].children;
+
+  // Go through each child recursively looking for children properties that are just strings
+  interface Item {
+    children: string | Item[];
+  }
+  const traverse = (item: Item): string  => {
+    if (item == null || typeof item !== "object" || !("children" in item)) return "";
+    if (typeof item.children === "string") {
+        return item.children;
+    }
+    if (Array.isArray(item.children)) {
+        return item.children.map(traverse).join("\n");
+    }
+    return "";
+  }
+  code.value = defaultSlot.map(traverse).join("\n");
+  console.log(defaultSlot, code.value)
 });
 
 watch(
@@ -164,8 +180,8 @@ watch(
   background: var(--nord6);
 }
 
-.plots {
-  border-top: solid 1px var(--nord4);
+.controls {
+  border-bottom: solid 1px var(--nord4);
 }
 
 .controls > :deep(div) {
@@ -198,5 +214,9 @@ watch(
 
 .plots > :deep(figure) {
   margin: 0;
+}
+
+.controls:not(:has(*)) {
+  display: none;
 }
 </style>
